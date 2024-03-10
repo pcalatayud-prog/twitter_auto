@@ -1,31 +1,8 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
-
 
 import pandas as pd
 import requests
 import numpy as np
 import yfinance as yf
-# # Replace 'your_file.csv' with the actual path to your .csv file
-# file_path = 'ticker_info.csv'
-
-# # Read the .csv file into a pandas DataFrames
-# df = pd.read_csv(file_path, index_col=0)
-
-# columns = list(df.keys())
-
-# columns.append("marketCap")
-
-# df_to_fill = pd.DataFrame(columns = columns)
-# df_to_fill
-
-import pandas as pd
-
-import pandas as pd
-
-import pandas as pd
 
 data = {
     "name": ["NVDA", "META", "AMZN", "MSFT", "GOOG", "AAPL", "TSLA"],
