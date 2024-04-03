@@ -1,7 +1,6 @@
-name: Python Package using Conda
+name: Performance_Markets
 
 on:
-  push:
   schedule:
     - cron: "30 9 * * 0" # This cron schedule runs the action every Sunday at 9:30 AM
 
