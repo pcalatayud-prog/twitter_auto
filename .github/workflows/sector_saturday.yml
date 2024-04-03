@@ -1,7 +1,6 @@
-name: Python Package using Conda
+name: sector_saturday
 
 on:
-  push:
   schedule:
     - cron: "30 16 * * 6" # This cron schedule runs the action every Sunday at 9:30 AM
 
