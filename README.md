@@ -8,4 +8,4 @@ Saturdays :
 
 Sundays : 
   * Global Markets -> 9:30
-  * US ALL Companies -> 9:30
+  * US ALL Companies -> 16:30
