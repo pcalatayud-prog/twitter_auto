@@ -7,4 +7,5 @@ Saturdays :
   * Sector -> 16:30
 
 Sundays : 
-  * Global Markets
+  * Global Markets -> 9:30
+  * US ALL Companies -> 9:30
