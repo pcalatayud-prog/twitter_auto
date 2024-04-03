@@ -1,5 +1,5 @@
 # twitter_auto
-Automatization of Twitter Bot Post through GitHub actions
+Automatization of Twitter Bot posts through GitHub actions
 
 
 Saturdays : 
