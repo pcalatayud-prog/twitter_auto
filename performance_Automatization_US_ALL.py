@@ -1540,7 +1540,7 @@ import time
 # In[43]:
 
 
-time.sleep(60*15)
+time.sleep(20)
 
 
 # In[44]:
@@ -1573,7 +1573,7 @@ performance_today(merged_df)
 # In[47]:
 
 
-time.sleep(60*15)
+time.sleep(20)
 
 
 # In[48]:
@@ -1597,7 +1597,7 @@ performance_month(merged_df)
 # In[51]:
 
 
-time.sleep(60*15)
+time.sleep(20)
 
 
 # In[52]:
@@ -1609,7 +1609,7 @@ performance_3month(merged_df)
 # In[53]:
 
 
-time.sleep(60*15)
+time.sleep(20)
 
 
 # In[54]:
@@ -1621,7 +1621,7 @@ performance_hy(merged_df)
 # In[55]:
 
 
-time.sleep(60*15)
+time.sleep(20)
 
 
 # In[56]:
