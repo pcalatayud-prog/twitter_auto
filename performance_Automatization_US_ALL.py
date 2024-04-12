@@ -1567,13 +1567,13 @@ print("Execution time:", hours, "hours", minutes, "minutes", seconds, "seconds")
 # In[46]:
 
 
-performance_today(merged_df)
+#performance_today(merged_df)
 
 
 # In[47]:
 
 
-time.sleep(20)
+#time.sleep(20)
 
 
 # In[48]:
@@ -1585,13 +1585,13 @@ performance_week(merged_df)
 # In[49]:
 
 
-time.sleep(60*15)
+#time.sleep(60*15)
 
 
 # In[50]:
 
 
-performance_month(merged_df)
+#performance_month(merged_df)
 
 
 # In[51]:
@@ -1615,7 +1615,7 @@ time.sleep(20)
 # In[54]:
 
 
-performance_hy(merged_df)
+#performance_hy(merged_df)
 
 
 # In[55]:
