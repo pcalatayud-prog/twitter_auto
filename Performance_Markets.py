@@ -961,13 +961,13 @@ import time
 # In[ ]:
 
 
-performance_today(merged_df)
+#performance_today(merged_df)
 
 
 # In[ ]:
 
 
-time.sleep(60*2)
+#time.sleep(6)
 
 
 # In[ ]:
@@ -979,19 +979,19 @@ performance_week(merged_df)
 # In[ ]:
 
 
-time.sleep(60*2)
+#time.sleep(60*2)
 
 
 # In[ ]:
 
 
-performance_month(merged_df)
+#performance_month(merged_df)
 
 
 # In[ ]:
 
 
-time.sleep(60*2)
+time.sleep(60*1)
 
 
 # In[ ]:
@@ -1003,19 +1003,19 @@ performance_3month(merged_df)
 # In[ ]:
 
 
-time.sleep(60*2)
+time.sleep(60*1)
 
 
 # In[ ]:
 
 
-performance_hy(merged_df)
+#performance_hy(merged_df)
 
 
 # In[ ]:
 
 
-time.sleep(60*2)
+#time.sleep(60*2)
 
 
 # In[ ]:
