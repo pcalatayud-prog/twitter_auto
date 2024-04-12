@@ -858,13 +858,13 @@ merged_df
 # In[35]:
 
 
-performance_today(merged_df)
+#performance_today(merged_df)
 
 
 # In[36]:
 
 
-time.sleep(60*5)
+#time.sleep(60*5)
 
 
 # In[37]:
@@ -876,19 +876,19 @@ performance_week(merged_df)
 # In[38]:
 
 
-time.sleep(60*5)
+time.sleep(60*1)
 
 
 # In[39]:
 
 
-performance_month(merged_df)
+#performance_month(merged_df)
 
 
 # In[40]:
 
 
-time.sleep(60*5)
+#time.sleep(60*5)
 
 
 # In[41]:
@@ -900,19 +900,19 @@ performance_3month(merged_df)
 # In[42]:
 
 
-time.sleep(60*5)
+#time.sleep(60*5)
 
 
 # In[43]:
 
 
-performance_hy(merged_df)
+#performance_hy(merged_df)
 
 
 # In[44]:
 
 
-time.sleep(60*5)
+time.sleep(60*1)
 
 
 # In[45]:
