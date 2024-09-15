@@ -20,14 +20,12 @@ jobs:
           python-version: '3.9'
 
       - name: Install Dependencies
-        run: 
+        run: |
           pip install pandas==1.5.3
           pip install requests==2.31.0
           pip install numpy==1.26.4
           pip install yfinance==0.1.70
           pip install tweepy==4.14.0
-        # Add error handling if any of the installations fail
-        # Add comments explaining the reason behind specific versions
 
       - name: Run Python Script
         run: python ./performance_Automatization_US_ALL.py
