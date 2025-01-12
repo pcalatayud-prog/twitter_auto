@@ -1,3 +1,8 @@
+# Script Created by: Pablo Calatayud
+# Email: pablocalatayudpelayo@gmail.com
+# LinkedIn: https://www.linkedin.com/in/pablo-calatayud-pelayo/
+# Copyright (c) 2025, Pablo Calatayud. All rights reserved.
+
 import pandas as pd
 import numpy as np
 import datetime

@@ -3,7 +3,6 @@
 # LinkedIn: https://www.linkedin.com/in/pablo-calatayud-pelayo/
 # Copyright (c) 2025, Pablo Calatayud. All rights reserved.
 
-
 import tweepy
 
 from config.auth import api_key
