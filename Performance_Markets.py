@@ -38,7 +38,7 @@ class MarketPerformanceTracker:
     def post_tweet(self, text: str) -> None:
         """Post a tweet with the given text."""
         logger.info(text)
-        # post_twitter(text)
+        post_twitter(text)
 
     def calculate_returns(self, stock_data: pd.DataFrame, start_date: datetime) -> float:
         """Calculate returns for a given time period."""
@@ -76,7 +76,7 @@ class MarketPerformanceTracker:
             return returns
 
         except Exception as e:
-            print(f"Error processing {ticker}: {str(e)}")
+            logger.error(f"Error processing {ticker}: {str(e)}")
             return {k: np.nan for k in ['ytd', 'hf', '3mtd', 'mtd', 'wtd', 'dtd']}
 
     def process_all_tickers(self) -> None:
@@ -96,7 +96,7 @@ class MarketPerformanceTracker:
         """Format performance message for a given period."""
         df_sorted = self.merged_df.sort_values(by=period)
 
-        message = f"Global Markets {title}:\n\n"
+        message = f"\nGlobal Markets {title}:\n"
         for i in range(1, 11):
             company = df_sorted["Company"].iloc[-i]
             perc = df_sorted[period].iloc[-i]
@@ -114,12 +114,12 @@ class MarketPerformanceTracker:
         """Post performance for a specific period."""
         try:
             message = self.format_performance_message(period, title)
-            print(f"Posting message ({len(message)} chars):\n{message}")
+            logger.info(f"Posting message ({len(message)} chars):")
             self.post_tweet(message)
         except Exception as e:
-            print(f"Error posting {title}: {str(e)}")
+            logger.error(f"Error posting {title}: {str(e)}")
 
-    def run_all_reports(self) -> None:
+    def run(self) -> None:
         """Run all performance reports."""
         self.initialize_data()
         self.process_all_tickers()
@@ -139,4 +139,4 @@ class MarketPerformanceTracker:
 
 if __name__ == "__main__":
     tracker = MarketPerformanceTracker()
-    tracker.run_all_reports()
+    tracker.run()
