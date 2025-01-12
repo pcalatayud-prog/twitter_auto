@@ -13,7 +13,7 @@ from loguru import logger
 
 from utils.utils import post_twitter
 
-class StockPerformance:
+class StockSevenMagnificenPerformance:
     def __init__(self, tickers=None):
         self.tickers = tickers or ["NVDA", "META", "AMZN", "MSFT", "GOOG", "AAPL", "TSLA"]
         self.df = pd.DataFrame({"symbol": self.tickers})
@@ -142,5 +142,5 @@ class StockPerformance:
 # Main block to run the script
 if __name__ == "__main__":
     tickers = ["NVDA", "META", "AMZN", "MSFT", "GOOG", "AAPL", "TSLA"]
-    stock_performance = StockPerformance(tickers)
+    stock_performance = StockSevenMagnificenPerformance(tickers)
     stock_performance.run()
