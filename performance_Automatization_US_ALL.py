@@ -5,9 +5,7 @@
 
 
 import pandas as pd
-import requests
 import numpy as np
-import yfinance as yf
 # # Replace 'your_file.csv' with the actual path to your .csv file
 # file_path = 'ticker_info.csv'
 
@@ -168,19 +166,10 @@ tickers
 # In[15]:
 
 
-from auth import api_key
-from auth import api_key_secret
-from auth import access_token
-from auth import access_token_secret
-from auth import bearer
-
-
 # In[16]:
 
 
 import tweepy
-import json
-import pandas as pd
 import numpy as np
 import pandas as pd
 
@@ -190,11 +179,11 @@ import pandas as pd
 
 def post(text: str):
 
-    from auth import api_key
-    from auth import api_key_secret
-    from auth import access_token
-    from auth import access_token_secret
-    from auth import bearer
+    from config.auth import api_key
+    from config.auth import api_key_secret
+    from config.auth import access_token
+    from config.auth import access_token_secret
+    from config.auth import bearer
     
     # Authenticate to Twitter
     client = tweepy.Client(
@@ -438,7 +427,6 @@ merged_df
 
 def performance_today(merged_df):
 
-    import pandas as pd
     # Assuming df_performance is your DataFrame
     # Sort the DataFrame based on the 'gap' column in ascending order
     df_performance_sorted_1y = merged_df.sort_values(by='dtd')
@@ -615,7 +603,6 @@ def performance_today(merged_df):
 
 def performance_week(merged_df):
 
-    import pandas as pd
     # Assuming df_performance is your DataFrame
     # Sort the DataFrame based on the 'gap' column in ascending order
     df_performance_sorted_1y = merged_df.sort_values(by='wtd')
@@ -798,7 +785,6 @@ merged_df.head(3)
 
 def performance_month(merged_df):
 
-    import pandas as pd
     # Assuming df_performance is your DataFrame
     # Sort the DataFrame based on the 'gap' column in ascending order
     df_performance_sorted_1y = merged_df.sort_values(by='mtd')
@@ -981,7 +967,6 @@ merged_df.head(3)
 
 def performance_3month(merged_df):
 
-    import pandas as pd
     # Assuming df_performance is your DataFrame
     # Sort the DataFrame based on the 'gap' column in ascending order
     df_performance_sorted_1y = merged_df.sort_values(by='3mtd')
@@ -1164,7 +1149,6 @@ merged_df.head(3)
 
 def performance_hy(merged_df):
 
-    import pandas as pd
     # Assuming df_performance is your DataFrame
     # Sort the DataFrame based on the 'gap' column in ascending order
     df_performance_sorted_1y = merged_df.sort_values(by='hf')
@@ -1353,7 +1337,6 @@ merged_df.head(3)
 
 def performance_y(merged_df):
 
-    import pandas as pd
     # Assuming df_performance is your DataFrame
     # Sort the DataFrame based on the 'gap' column in ascending order
     df_performance_sorted_1y = merged_df.sort_values(by='ytd')

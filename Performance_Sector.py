@@ -1,28 +1,9 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
-
-
 import pandas as pd
-import requests
 import numpy as np
 import yfinance as yf
 import tweepy
-import json
+import time
 
-# # Replace 'your_file.csv' with the actual path to your .csv file
-# file_path = 'ticker_info.csv'
-
-# # Read the .csv file into a pandas DataFrame
-# df = pd.read_csv(file_path, index_col=0)
-
-# columns = list(df.keys())
-
-# columns.append("marketCap")
-
-# df_to_fill = pd.DataFrame(columns = columns)
-# df_to_fill
 
 data = {
     "name": ["Energy","Real","Health","Financial","Comm","Utilities","Materials","IT","Indust","Staples","Discrec","SemiCond"],
@@ -33,67 +14,12 @@ tickers = pd.DataFrame(data)
 tickers
 
 
-# In[2]:
-
-
 filtered_tickers = tickers["symbol"].tolist()
 print(len(filtered_tickers))
 filtered_tickers
 
 
-# In[3]:
 
-
-tickers
-
-
-# In[ ]:
-
-
-
-
-
-# In[4]:
-
-
-from auth import api_key
-from auth import api_key_secret
-from auth import access_token
-from auth import access_token_secret
-from auth import bearer
-
-
-# In[ ]:
-
-
-
-
-
-# In[5]:
-
-
-def post(text: str):
-
-    from auth import api_key
-    from auth import api_key_secret
-    from auth import access_token
-    from auth import access_token_secret
-    from auth import bearer
-    
-    # Authenticate to Twitter
-    client = tweepy.Client(
-        bearer_token = bearer,
-        consumer_key=api_key,
-        consumer_secret=api_key_secret,
-        access_token=access_token,
-        access_token_secret=access_token_secret
-    )
-
-    # Post Tweet
-    message = text
-    client.create_tweet(text=message)
-    
-    return None
 
 
 # In[6]:
@@ -288,7 +214,6 @@ merged_df
 
 def performance_today(merged_df):
 
-    import pandas as pd
     # Assuming df_performance is your DataFrame
     # Sort the DataFrame based on the 'gap' column in ascending order
     df_performance_sorted_1y = merged_df.sort_values(by='dtd')
@@ -400,7 +325,6 @@ def performance_today(merged_df):
 
 def performance_week(merged_df):
 
-    import pandas as pd
     # Assuming df_performance is your DataFrame
     # Sort the DataFrame based on the 'gap' column in ascending order
     df_performance_sorted_1y = merged_df.sort_values(by='wtd')
@@ -525,7 +449,6 @@ merged_df.head(3)
 
 def performance_month(merged_df):
 
-    import pandas as pd
     # Assuming df_performance is your DataFrame
     # Sort the DataFrame based on the 'gap' column in ascending order
     df_performance_sorted_1y = merged_df.sort_values(by='mtd')
@@ -650,7 +573,6 @@ merged_df.head(3)
 
 def performance_3month(merged_df):
 
-    import pandas as pd
     # Assuming df_performance is your DataFrame
     # Sort the DataFrame based on the 'gap' column in ascending order
     df_performance_sorted_1y = merged_df.sort_values(by='3mtd')
@@ -775,7 +697,6 @@ merged_df.head(3)
 
 def performance_hy(merged_df):
 
-    import pandas as pd
     # Assuming df_performance is your DataFrame
     # Sort the DataFrame based on the 'gap' column in ascending order
     df_performance_sorted_1y = merged_df.sort_values(by='hf')
@@ -894,7 +815,6 @@ merged_df.head(3)
 
 def performance_y(merged_df):
 
-    import pandas as pd
     # Assuming df_performance is your DataFrame
     # Sort the DataFrame based on the 'gap' column in ascending order
     df_performance_sorted_1y = merged_df.sort_values(by='ytd')
@@ -974,10 +894,7 @@ def performance_y(merged_df):
         if new_word_distance+message_1d_hastahs_distance<=280:
             
             message_1d_hastahs = message_1d_hastahs+element
-            
-    #print(len(message_1d_hastahs))
-    #print()
-    #print(message_1d_hastahs)
+
     
     best_1y = message_1d_hastahs
     
@@ -993,84 +910,13 @@ def performance_y(merged_df):
         print("ALREADY POSTED ?? ")
     return None
 
-
-# In[ ]:
-
-
-
-
-
-# ### Calculation
-
-# In[31]:
-
-
-import time
-
-
-# In[32]:
-
-
-#performance_today(merged_df)
-
-
-# In[33]:
-
-
-#time.sleep(60*2)
-
-
-# In[34]:
-
-
 performance_week(merged_df)
-
-
-# In[35]:
-
-
-time.sleep(60)
-
-
-# In[36]:
-
-
-#performance_month(merged_df)
-
-
-# In[37]:
-
-
+#
+# time.sleep(60)
+# performance_3month(merged_df)
 #time.sleep(60*2)
-
-
-# In[38]:
-
-
-performance_3month(merged_df)
-
-
-# In[39]:
-
-
-#time.sleep(60*2)
-
-
-# In[40]:
-
-
 #performance_hy(merged_df)
-
-
-# In[41]:
-
-
-time.sleep(60*1)
-
-
-# In[42]:
-
-
+time.sleep(60)
 performance_y(merged_df)
 
 
