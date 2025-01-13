@@ -1,4 +1,8 @@
-from datetime import datetime, timedelta
+# Script Created by: Pablo Calatayud
+# Email: pablocalatayudpelayo@gmail.com
+# LinkedIn: https://www.linkedin.com/in/pablo-calatayud-pelayo/
+# Copyright (c) 2025, Pablo Calatayud. All rights reserved.
+
 import os
 import json
 import pandas as pd
@@ -6,6 +10,8 @@ import yfinance as yf
 import tweepy
 from loguru import logger
 import time
+
+from datetime import datetime, timedelta
 from utils.utils import post_twitter, get_market_cap, get_earnings_calendar
 
 class EarningsBot:

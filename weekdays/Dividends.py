@@ -1,4 +1,8 @@
-from datetime import datetime, timedelta
+# Script Created by: Pablo Calatayud
+# Email: pablocalatayudpelayo@gmail.com
+# LinkedIn: https://www.linkedin.com/in/pablo-calatayud-pelayo/
+# Copyright (c) 2025, Pablo Calatayud. All rights reserved.
+
 import os
 import json
 import pandas as pd
@@ -9,7 +13,7 @@ import time
 from loguru import logger
 from utils.utils import post_twitter, get_market_cap, get_earnings_calendar, get_dividend_calendar
 from typing import List, Dict, Optional
-
+from datetime import datetime, timedelta
 
 class DividendBot:
     """
