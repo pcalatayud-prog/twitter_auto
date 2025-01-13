@@ -18,7 +18,7 @@ class DividendBot:
 
     def __init__(self):
         """Initialize the DividendBot with necessary configurations."""
-        logger.add("dividend_bot.log", rotation="500 MB")
+        logger.add("logs/dividend_bot.log", rotation="500 MB")
         logger.info('Initializing DividendBot')
 
         # Set up date information

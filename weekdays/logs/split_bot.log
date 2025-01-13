@@ -1,0 +1,4 @@
+2025-01-13 22:33:00.940 | INFO     | __main__:__init__:21 - Initializing SplitBot
+2025-01-13 22:33:00.952 | INFO     | __main__:__init__:42 - Successfully loaded ticker information from C:\Users\pcalatayud\Desktop\pycharm\twitter_auto\weekdays\../config/top_3000_tickers.csv
+2025-01-13 22:33:00.953 | INFO     | __main__:run:238 - Starting SplitBot workflow
+2025-01-13 22:33:02.624 | INFO     | __main__:run:244 - No splits scheduled for today

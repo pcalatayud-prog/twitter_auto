@@ -17,11 +17,11 @@ class SplitBot:
 
     def __init__(self):
         """Initialize the SplitBot with necessary configurations."""
-        logger.add("split_bot.log", rotation="500 MB")
+        logger.add("logs/split_bot.log", rotation="500 MB")
         logger.info('Initializing SplitBot')
 
         # Set up date information
-        # self.current_date = datetime.now()
+        self.current_date = datetime.now()
         self.current_date_str = self.current_date.strftime('%Y-%m-%d')
 
         # Load ticker information
