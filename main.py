@@ -7,21 +7,30 @@ import requests
 from loguru import logger
 from utils.utils import *
 import datetime
+from config.api_keys import api_key
 
 class Execution_twitter_information:
     WEEKDAYS = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday']
     WEEKENDS = ['Saturday', 'Sunday']
     def __init__(self):
+
+        self.time_open = [15,30]
+        self.time_close = [21,00]
+
+        self.time_performance = [18,30]
+
         self.time = None
         self.exchange = "NYSE"
-        self.api_key = "CjEKqo8XMebmmlyMciRaTX7UxkYtfEGj"
+        self.api_key = api_key
         self.current_year = datetime.datetime.now().year
-        # today = datetime.date(2025, 1, 20)
         self.today = datetime.datetime.now().date()
+        # self.today = datetime.date(2025, 1, 20)
+        self.current_hour = datetime.datetime.now().hour
+        self.current_minute = datetime.datetime.now().minute
         self.day_of_week = self.today.strftime('%A')
         self.market_open = None
 
-    def is_market_open(self, api_key: str, exchange: str):
+    def is_market_open(self):
         """
         Check if the specified market is open using the Financial Modeling Prep API.
 
@@ -29,8 +38,8 @@ class Execution_twitter_information:
         ecxchange: str exchange of the american stock exchange to check if it is open or not today
         returns -> str: A message indicating whether the market is open or closed.
         """
-        url = f"https://financialmodelingprep.com/api/v3/is-the-market-open?exchange={exchange}"
-        params = {"apikey": api_key}
+        url = f"https://financialmodelingprep.com/api/v3/is-the-market-open?exchange={self.exchange}"
+        params = {"apikey": self.api_key}
 
         try:
             response = requests.get(url, params=params)
@@ -49,8 +58,8 @@ class Execution_twitter_information:
             today_str = self.today.strftime('%Y-%m-%d')
             current_date = self.today.strftime("%A, %d of %B")
 
-            if today_str in holidays:
-                reason = holidays[today_str]
+            if today_str in holidays_this_year:
+                reason = holidays_this_year[today_str]
                 logger.info(f"Today ({current_date}) the market is closed due to: {reason}.")
                 self.market_open = False
             else:
@@ -86,6 +95,22 @@ class Execution_twitter_information:
     def run(self):
 
         self.is_weekend()
+
+        if self.day_of_week in self.WEEKDAYS and self.market_open==True:
+            logger.info("Today the market opens")
+
+            if self.current_hour == self.time_open[0] and self.current_minute <= self.time_open[1]:
+                logger.info('The market just opened -> ')
+
+            if self.current_hour == self.time_performance[0]:
+                logger.info('The market has been opened for 3 hours -> ')
+
+            if self.current_hour == self.time_close[0]:
+                logger.info('The market just closed -> ')
+
+        elif self.day_of_week in self.WEEKENDS:
+            logger.info('Today the market is closed -> Weekend.')
+
 
 
 

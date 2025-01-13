@@ -104,8 +104,14 @@ class SectorPerformance:
             top_performance_message = self.generate_top_performance_message(sorted_df, period)
             self.post_performance(top_performance_message)
 
+    def run(self):
+
+        self.process_tickers()
+
+        self.analyze_performance()
+
+        return None
 # Usage
 if __name__ == "__main__":
     stock_perf = SectorPerformance()
-    stock_perf.process_tickers()
-    stock_perf.analyze_performance()
+    stock_perf.run()
