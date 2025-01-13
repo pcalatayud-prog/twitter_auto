@@ -108,3 +108,20 @@ You are not allowed to create a Tweet with duplicate content.
  #Dividends #Stocks
 2025-01-13 20:02:27.295 | INFO     | __main__:run:289 - Posted dividend message for HRL
 2025-01-13 20:04:27.300 | INFO     | __main__:run:298 - Completed DividendBot workflow successfully
+2025-01-13 22:02:47.612 | INFO     | __main__:__init__:22 - Initializing DividendBot
+2025-01-13 22:02:47.630 | INFO     | __main__:__init__:44 - Successfully loaded ticker information from C:\Users\pcalatayud\Desktop\pycharm\twitter_auto\weekdays\../config/top_3000_tickers.csv
+2025-01-13 22:02:47.631 | INFO     | __main__:run:241 - Starting DividendBot workflow
+2025-01-13 22:02:50.874 | INFO     | utils.utils:get_dividend_calendar:163 - Found 503 dividend entries for tracked tickers
+2025-01-13 22:02:50.885 | INFO     | __main__:run:250 - Retrieved 0 dividend tickers
+2025-01-13 22:02:51.059 | ERROR    | utils.utils:post_twitter:33 - 429 Too Many Requests
+Too Many Requests
+2025-01-13 22:02:51.059 | INFO     | __main__:run:257 - Posted no dividends message
+2025-01-13 22:03:43.911 | INFO     | __main__:__init__:22 - Initializing DividendBot
+2025-01-13 22:03:43.924 | INFO     | __main__:__init__:44 - Successfully loaded ticker information from C:\Users\pcalatayud\Desktop\pycharm\twitter_auto\weekdays\../config/top_3000_tickers.csv
+2025-01-13 22:03:43.925 | INFO     | __main__:run:241 - Starting DividendBot workflow
+2025-01-13 22:03:47.210 | INFO     | utils.utils:get_dividend_calendar:163 - Found 503 dividend entries for tracked tickers
+2025-01-13 22:03:47.211 | INFO     | utils.utils:get_dividend_calendar:166 - Searching for companies that publish dividends today 2025-01-13 22:03:43.912112
+2025-01-13 22:03:47.217 | INFO     | __main__:run:250 - Retrieved 0 dividend tickers
+2025-01-13 22:03:47.377 | ERROR    | utils.utils:post_twitter:33 - 429 Too Many Requests
+Too Many Requests
+2025-01-13 22:03:47.377 | INFO     | __main__:run:257 - Posted no dividends message

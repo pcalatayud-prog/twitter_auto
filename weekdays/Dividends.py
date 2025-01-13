@@ -246,7 +246,7 @@ class DividendBot:
             today = dates[0]  # Get just the first date
 
             # Get dividend tickers for today
-            tickers = get_dividend_calendar()
+            tickers = get_dividend_calendar(today=self.current_date)
             logger.info(f"Retrieved {len(tickers) if tickers else 0} dividend tickers")
 
             if not tickers:

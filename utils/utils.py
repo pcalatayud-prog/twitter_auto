@@ -163,7 +163,7 @@ def get_dividend_calendar(today: str, days_forward: int = 5) -> pd.DataFrame:
             logger.info(f"Found {len(filtered_df)} dividend entries for tracked tickers")
 
             tickers = filtered_df[filtered_df['date']==today_date]['symbol'].tolist()
-
+            logger.info(f'Searching for companies that publish dividends today {today_date}')
             return tickers
 
         except requests.RequestException as e:
@@ -174,6 +174,29 @@ def get_dividend_calendar(today: str, days_forward: int = 5) -> pd.DataFrame:
         logger.error(f"Unexpected error in get_dividend_calendar: {e}")
         return []
 
+def get_splits_calendar(today: str):
+    # Define the API endpoint URL with your API key.
+    api_url = 'https://financialmodelingprep.com/api/v3/stock_split_calendar'
+    from config.api_keys import api_key
+    # Define the parameters for the request (none needed for this specific endpoint).
+    params = {
+        'apikey': api_key
+    }
+    # Make a GET request to the API.
+    response = requests.get(api_url, params=params)
+    # Check if the request was successful (HTTP status code 200).
+    if response.status_code == 200:
+
+        data = response.json()
+        df_tickers = pd.DataFrame(data)
+        df = df_tickers[df_tickers["symbol"].isin(getting_nasdaq100_sp500_tickers())]
+        df['date'] = pd.to_datetime(df['date'])
+        df = df[df['date']==today]
+
+        return df
+    else:
+        return pd.DataFrame()
+
 if __name__ == "__main__":
-    tickers = get_dividend_calendar()
+    tickers = get_splits_calendar('2025-02-10')
     stop=1
