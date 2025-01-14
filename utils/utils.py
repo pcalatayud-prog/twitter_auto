@@ -32,10 +32,11 @@ def post_twitter(text: str):
     )
 
     message = text
+    logger.info(f"Tweet lenght: {len(message)}")
     try:
         client.create_tweet(text=message)
-        logger.success("Tweet posted: {}".format(message))
         bot_send_text("Tweet posted: {}".format(message))
+        logger.success("Tweet posted: {}".format(message))
     except Exception as e:
         logger.error(e)
         bot_send_text(f"Tweet Error\nTweet Error\n: {e}\n{message}")

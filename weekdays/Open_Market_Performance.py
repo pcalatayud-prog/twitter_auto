@@ -199,13 +199,13 @@ class Market_Daily_Performance :
 
         for i in range(10):
 
-            value = df_today_top['ytd'].iloc[i]
+            value = round(df_today_top['ytd'].iloc[i])
             ticket = df_today_top['ticker'].iloc[i]
 
             emoji = self.green if value > 0 else self.red
             larger = larger + f"{emoji} ${ticket} -> {value} %\n"
 
-        logger.info('market_1_week()')
+        logger.info('market_1_year()')
         logger.info(larger)
         post_twitter(larger)
 

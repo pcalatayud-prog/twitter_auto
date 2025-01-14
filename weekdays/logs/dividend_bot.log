@@ -1,0 +1,12 @@
+2025-01-14 21:52:38.335 | INFO     | __main__:__init__:26 - Initializing DividendBot
+2025-01-14 21:52:38.357 | INFO     | __main__:__init__:50 - Successfully loaded ticker information from C:\Users\pcalatayud\Desktop\pycharm\twitter_auto\weekdays\../config/top_3000_tickers.csv
+2025-01-14 21:52:38.358 | INFO     | __main__:run:247 - Starting DividendBot workflow
+2025-01-14 21:52:41.150 | INFO     | utils.utils:get_dividend_calendar:172 - Found 498 dividend entries for tracked tickers
+2025-01-14 21:52:41.151 | INFO     | utils.utils:get_dividend_calendar:175 - Searching for companies that publish dividends today 2025-01-14 21:52:38.335816
+2025-01-14 21:52:41.158 | INFO     | __main__:run:259 - Retrieved 0 dividend tickers
+2025-01-14 21:52:41.436 | SUCCESS  | utils.utils:post_twitter:37 - Tweet posted: #Today Tuesday, 14th of January, There are not #Scheduled #Dividends #Payments for #SP500 and #Nasdaq100 #Companies.
+2025-01-14 21:52:41.436 | INFO     | utils.utils:send_telegram_message:218 - Using bot_token: 6379257583...
+2025-01-14 21:52:41.436 | INFO     | utils.utils:send_telegram_message:219 - Sending to chat_id: -1002313822545
+2025-01-14 21:52:41.436 | INFO     | utils.utils:send_telegram_message:240 - Attempting to send message to Telegram
+2025-01-14 21:52:41.616 | INFO     | utils.utils:send_telegram_message:246 - Message sent successfully. Status code: 200
+2025-01-14 21:52:41.616 | INFO     | __main__:run:266 - Posted no dividends message
