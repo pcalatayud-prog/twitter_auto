@@ -27,9 +27,9 @@ class Execution_twitter_information:
         self.time_performance = [18,30]
 
         self.performance_markets = ['Saturday',8]
-        self.performance_US_ALL = ['Saturday', 16]
+        self.performance_US_ALL = ['Saturday', 17]
 
-        self.performance_mag_7= ['Sunday', 9]
+        self.performance_mag_7= ['Sunday', 8]
         self.performance_Sector = ['Sunday', 17]
 
 
