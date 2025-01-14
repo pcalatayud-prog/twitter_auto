@@ -111,12 +111,6 @@ class Execution_twitter_information:
         elif self.day_of_week in self.WEEKENDS:
             logger.info('Today the market is closed -> Weekend.')
 
-
-
-
-
-
-        stop=1
         return None
 
 if __name__ == "__main__":
