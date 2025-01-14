@@ -21,14 +21,13 @@ class Execution_twitter_information:
     WEEKENDS = ['Saturday', 'Sunday']
     def __init__(self):
 
+        # These days and hours are just used for the task scheduler to know what to run at different times.
         self.morning_update = [8]
         self.time_open = [15,30]
         self.time_close = [21,00]
         self.time_performance = [18,30]
-
         self.performance_markets = ['Saturday',8]
         self.performance_US_ALL = ['Saturday', 17]
-
         self.performance_mag_7= ['Sunday', 8]
         self.performance_Sector = ['Sunday', 17]
 
