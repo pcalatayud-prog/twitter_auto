@@ -75,7 +75,7 @@ class Market_Daily_Performance :
 
     def market_just_open(self):
 
-        if not isinstance(self.df_performance, pd.DataFrame):
+        if self.df_performance is None:
             self.getting_tickers_data()
 
         df_today = pd.DataFrame(self.df_performance)
@@ -99,7 +99,7 @@ class Market_Daily_Performance :
 
     def market_is_open(self):
 
-        if not isinstance(self.df_performance, pd.DataFrame):
+        if self.df_performance is None:
             self.getting_tickers_data()
 
         df_today = pd.DataFrame(self.df_performance)
@@ -123,7 +123,7 @@ class Market_Daily_Performance :
 
     def market_is_just_closed(self):
 
-        if not isinstance(self.df_performance, pd.DataFrame):
+        if self.df_performance is None:
             self.getting_tickers_data()
 
         df_today = pd.DataFrame(self.df_performance)
@@ -148,7 +148,7 @@ class Market_Daily_Performance :
 
     def market_1_week(self):
 
-        if not isinstance(self.df_performance, pd.DataFrame):
+        if self.df_performance is None:
             self.getting_tickers_data()
 
         df_today = pd.DataFrame(self.df_performance)
@@ -173,7 +173,7 @@ class Market_Daily_Performance :
 
     def market_1_year(self):
 
-        if not isinstance(self.df_performance, pd.DataFrame):
+        if self.df_performance is None:
             self.getting_tickers_data()
 
         df_today = pd.DataFrame(self.df_performance)
