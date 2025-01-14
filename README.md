@@ -105,7 +105,7 @@ run.bat
 
 ### Weekend Operations (`weekends/`)
 #### Saturday
-- **08:00**: Market Performance Analysis
+- **08:00**: Markets Performance Analysis
 - **17:00**: US Stocks Analysis
 
 #### Sunday
