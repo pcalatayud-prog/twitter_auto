@@ -6,7 +6,7 @@
 **Created by:** Pablo Calatayud  
 **Email:** pablocalatayudpelayo@gmail.com  
 **LinkedIn:** [Pablo Calatayud Pelayo](https://www.linkedin.com/in/pablo-calatayud-pelayo/)  
-**Copyright:** © 2025, Pablo Calatayud. All rights reserved.
+**Copyright:** Take what is useful, discard what is not, mentioning it is up to you, but it would be appreciated.
 
 ## Project Description
 This project is an automated Twitter bot that provides stock market updates, including earnings reports, dividends, splits, and market performance metrics. The bot operates during market hours and provides specialized reports during weekends.
@@ -129,7 +129,7 @@ See `requirements.txt` for full list of dependencies. Key packages include:
 Please contact the author for contribution guidelines.
 
 ## License
-Copyright © 2025, Pablo Calatayud. All rights reserved.
+[Copyright © 2025, Pablo Calatayud. All rights reserved.](https://opensource.org/license/MIT)
 
 ---
 *Note: Ensure all API credentials are properly configured before running the bot.*
