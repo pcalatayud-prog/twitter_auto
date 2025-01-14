@@ -12,6 +12,7 @@ from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 import urllib.parse
 import time
+from typing import List
 
 from config.auth import api_key
 from config.auth import api_key_secret
@@ -278,5 +279,38 @@ def bot_send_text(message):
         logger.error(f"Failed to send Telegram message: {e}")
         return None
 
+
+def sort_tickers_by_market_cap(tickers: List[str]) -> List[str]:
+    """
+    Sort a list of stock tickers by their market capitalization.
+
+    Args:
+        tickers (List[str]): List of stock ticker symbols
+
+    Returns:
+        List[str]: List of tickers sorted by market cap in descending order
+    """
+    # Create a list to store ticker-marketcap pairs
+    market_caps = []
+
+    # Get market cap for each ticker
+    for ticker in tickers:
+        market_cap = get_market_cap(ticker)
+
+        # Only include tickers with valid market cap data
+        if market_cap is not None:
+            market_caps.append((ticker, market_cap))
+
+        # Add delay between API calls
+        time.sleep(1)
+
+    # Sort the list by market cap in descending order
+    sorted_tickers = sorted(market_caps, key=lambda x: x[1], reverse=True)
+
+    # Return just the sorted ticker symbols
+    return [ticker for ticker, _ in sorted_tickers]
+
 if __name__ == "__main__":
-    bot_send_text('testing...')
+    tickers = ["AAPL", "MSFT", "GOOGL", "AMZN", "META","NVDA"]
+    sorted_tickers = sort_tickers_by_market_cap(tickers)
+    print(sorted_tickers)

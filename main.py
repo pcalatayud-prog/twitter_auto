@@ -13,6 +13,11 @@ from weekdays.Earnings import EarningsBot
 from weekdays.Splits import SplitBot
 from weekdays.Open_Market_Performance import Market_Daily_Performance
 
+from weekends.performance_Automatization_US_ALL import US_StocksPerformance
+from weekends.Performance_Mag_7 import StockSevenMagnificenPerformance
+from weekends.Performance_Markets import MarketPerformanceTracker
+from weekends.Performance_Sector import SectorPerformance
+
 from utils.utils import post_twitter,bot_send_text
 from config.api_keys import api_key
 

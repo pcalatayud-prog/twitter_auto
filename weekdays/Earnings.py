@@ -12,7 +12,7 @@ from loguru import logger
 import time
 
 from datetime import datetime, timedelta
-from utils.utils import post_twitter, get_market_cap, get_earnings_calendar
+from utils.utils import post_twitter, get_market_cap, get_earnings_calendar, sort_tickers_by_market_cap
 
 class EarningsBot:
     """
@@ -24,6 +24,8 @@ class EarningsBot:
         logger.info('Intilizing Earnings')
         # Set up date information
         self.current_date = datetime.now().strftime('%Y-%m-%d')
+
+        self.number_tickers_to_print = 3
 
 
 
@@ -161,6 +163,8 @@ class EarningsBot:
         try:
             # Get earnings tickers for today
             tickers = self.retrieve_earnings_tickers()
+            tickers = sort_tickers_by_market_cap(tickers)
+
             logger.info(f"Retrieved {len(tickers)} tickers for earnings announcements")
 
             initial_message = self.format_earnings_message(tickers)
@@ -171,7 +175,7 @@ class EarningsBot:
             if not tickers:
                 return
 
-            for ticker in tickers[:10]:  # Limit to first 10 tickers
+            for ticker in tickers[:self.number_tickers_to_print]:  # Limit to first 10 tickers
                 try:
                     # Calculate performance metrics
                     performance_data = self.calculate_performance_score(ticker)

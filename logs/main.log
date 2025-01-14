@@ -32,3 +32,18 @@ Too Many Requests
 2025-01-14 02:27:02.832 | INFO     | utils.utils:send_telegram_message:218 - Sending to chat_id: -1002313822545
 2025-01-14 02:27:02.832 | INFO     | utils.utils:send_telegram_message:239 - Attempting to send message to Telegram
 2025-01-14 02:27:03.022 | INFO     | utils.utils:send_telegram_message:245 - Message sent successfully. Status code: 200
+2025-01-14 01:58:02.634 | INFO     | __main__:__init__:36 - Initializing Main
+2025-01-14 01:58:02.635 | INFO     | __main__:is_weekend:106 - Tuesday is a weekday. The market could be open.
+2025-01-14 01:58:03.036 | INFO     | __main__:is_market_open:85 - Today Tuesday, 14 of January the market is open from 09:30 a.m. ET to 04:00 p.m. ET.
+2025-01-14 01:58:03.216 | ERROR    | utils.utils:post_twitter:39 - 429 Too Many Requests
+Too Many Requests
+2025-01-14 01:58:03.217 | INFO     | utils.utils:send_telegram_message:217 - Using bot_token: 6379257583...
+2025-01-14 01:58:03.217 | INFO     | utils.utils:send_telegram_message:218 - Sending to chat_id: -1002313822545
+2025-01-14 01:58:03.218 | INFO     | utils.utils:send_telegram_message:239 - Attempting to send message to Telegram
+2025-01-14 01:58:03.382 | INFO     | utils.utils:send_telegram_message:245 - Message sent successfully. Status code: 200
+2025-01-14 01:58:03.384 | INFO     | __main__:run:117 - Today the market opens
+2025-01-14 01:58:03.384 | INFO     | __main__:run:148 - Nothing to post...
+2025-01-14 01:58:03.384 | INFO     | utils.utils:send_telegram_message:217 - Using bot_token: 6379257583...
+2025-01-14 01:58:03.385 | INFO     | utils.utils:send_telegram_message:218 - Sending to chat_id: -1002313822545
+2025-01-14 01:58:03.385 | INFO     | utils.utils:send_telegram_message:239 - Attempting to send message to Telegram
+2025-01-14 01:58:03.544 | INFO     | utils.utils:send_telegram_message:245 - Message sent successfully. Status code: 200

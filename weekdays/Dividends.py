@@ -11,7 +11,7 @@ import tweepy
 import requests
 import time
 from loguru import logger
-from utils.utils import post_twitter, get_market_cap, get_earnings_calendar, get_dividend_calendar
+from utils.utils import post_twitter, get_dividend_calendar, sort_tickers_by_market_cap
 from typing import List, Dict, Optional
 from datetime import datetime, timedelta
 
@@ -28,6 +28,8 @@ class DividendBot:
         # Set up date information
         self.current_date = datetime.now()
         self.current_date_str = self.current_date.strftime('%Y-%m-%d')
+
+        self.number_tickers_to_print = 3
 
         # Load ticker information
         try:
@@ -251,6 +253,9 @@ class DividendBot:
 
             # Get dividend tickers for today
             tickers = get_dividend_calendar(today=self.current_date)
+
+            tickers = sort_tickers_by_market_cap(tickers)
+
             logger.info(f"Retrieved {len(tickers) if tickers else 0} dividend tickers")
 
             if not tickers:
@@ -269,7 +274,7 @@ class DividendBot:
                 logger.info("Posted initial dividend message")
 
             # Process individual tickers
-            for ticker in tickers[:5]:  # Limit to first 5 tickers
+            for ticker in tickers[:self.number_tickers_to_print]:  # Limit to first 5 tickers
                 try:
                     # Get dividend information
                     dividend_info = self.get_ticker_dividend_info(ticker)
