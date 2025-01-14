@@ -13,7 +13,7 @@ from weekdays.Earnings import EarningsBot
 from weekdays.Splits import SplitBot
 from weekdays.Open_Market_Performance import Market_Daily_Performance
 
-from utils.utils import post_twitter
+from utils.utils import post_twitter,bot_send_text
 from config.api_keys import api_key
 
 class Execution_twitter_information:
@@ -117,6 +117,7 @@ class Execution_twitter_information:
         if self.day_of_week in self.WEEKDAYS and self.market_open==True:
             logger.info("Today the market opens")
 
+
             if self.current_hour == self.morning_update:
                 logger.info("Running Earnings + Dividends + Splits")
                 bot = EarningsBot()
@@ -146,6 +147,7 @@ class Execution_twitter_information:
 
             else:
                 logger.info('Nothing to post...')
+                bot_send_text('Nothing to post...')
 
         elif self.day_of_week in self.WEEKENDS:
             logger.info('Today the market is closed -> Weekend.')
@@ -166,6 +168,8 @@ class Execution_twitter_information:
                     stock_perf.run()
             else:
                 logger.info('Nothing to post...')
+                bot_send_text('Nothing to post...')
+
         return None
 
 if __name__ == "__main__":
