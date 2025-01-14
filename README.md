@@ -1,5 +1,7 @@
 # Stock Market Twitter Bot
 
+## Twitter account where all is published: https://x.com/AI_Investor_py
+
 ## Author
 **Created by:** Pablo Calatayud  
 **Email:** pablocalatayudpelayo@gmail.com  
