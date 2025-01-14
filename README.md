@@ -129,7 +129,7 @@ See `requirements.txt` for full list of dependencies. Key packages include:
 Please contact the author for contribution guidelines.
 
 ## License
-[Copyright © 2025, Pablo Calatayud. All rights reserved.](https://opensource.org/license/MIT)
+[Take what is useful, discard what is not, mentioning it is up to you, but it would be appreciated.](https://opensource.org/license/MIT)
 
 ---
 *Note: Ensure all API credentials are properly configured before running the bot.*
