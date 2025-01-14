@@ -20,7 +20,7 @@ class EarningsBot:
     """
     def __init__(self):
         """Initialize the EarningsBot with necessary configurations."""
-        logger.add("earnings_bot.log", rotation="500 MB")
+        logger.add("logs/earnings_bot.log", rotation="500 MB")
         logger.info('Intilizing Earnings')
         # Set up date information
         self.current_date = datetime.now().strftime('%Y-%m-%d')

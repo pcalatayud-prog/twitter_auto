@@ -7,12 +7,20 @@ import requests
 from loguru import logger
 from utils.utils import *
 import datetime
+
+from weekdays.Dividends import DividendBot
+from weekdays.Earnings import EarningsBot
+from weekdays.Split import SplitBot
+from weekdays.Open_Market_Performance import Market_Daily_Performance
+
 from config.api_keys import api_key
 
 class Execution_twitter_information:
     WEEKDAYS = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday']
     WEEKENDS = ['Saturday', 'Sunday']
     def __init__(self):
+
+        self.morning_update = [8]
 
         self.time_open = [15,30]
         self.time_close = [21,00]
@@ -99,13 +107,26 @@ class Execution_twitter_information:
         if self.day_of_week in self.WEEKDAYS and self.market_open==True:
             logger.info("Today the market opens")
 
-            if self.current_hour == self.time_open[0] and self.current_minute <= self.time_open[1]:
-                logger.info('The market just opened -> ')
+            if self.current_hour == self.morning_update:
 
-            if self.current_hour == self.time_performance[0]:
+                bot = EarningsBot()
+                bot.run()
+                time.sleep(120)
+                bot = DividendBot()
+                bot.run()
+                time.sleep(120)
+                bot = SplitBot()
+                bot.run()
+
+            elif self.current_hour == self.time_open[0] and self.current_minute <= self.time_open[1]:
+                logger.info('The market just opened -> ')
+                bot = SplitBot()
+                bot.run()
+
+            elif self.current_hour == self.time_performance[0]:
                 logger.info('The market has been opened for 3 hours -> ')
 
-            if self.current_hour == self.time_close[0]:
+            elif self.current_hour == self.time_close[0]:
                 logger.info('The market just closed -> ')
 
         elif self.day_of_week in self.WEEKENDS:
