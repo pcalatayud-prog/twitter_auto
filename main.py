@@ -10,9 +10,10 @@ import datetime
 
 from weekdays.Dividends import DividendBot
 from weekdays.Earnings import EarningsBot
-from weekdays.Split import SplitBot
+from weekdays.Splits import SplitBot
 from weekdays.Open_Market_Performance import Market_Daily_Performance
 
+from utils.utils import post_twitter
 from config.api_keys import api_key
 
 class Execution_twitter_information:
@@ -21,11 +22,19 @@ class Execution_twitter_information:
     def __init__(self):
 
         self.morning_update = [8]
-
         self.time_open = [15,30]
         self.time_close = [21,00]
-
         self.time_performance = [18,30]
+
+        self.performance_markets = ['Saturday',8]
+        self.performance_US_ALL = ['Saturday', 16]
+
+        self.performance_mag_7= ['Sunday', 9]
+        self.performance_Sector = ['Sunday', 17]
+
+
+        logger.add("logs/main.log", rotation="500 MB")
+        logger.info('Initializing Main')
 
         self.time = None
         self.exchange = "NYSE"
@@ -68,14 +77,16 @@ class Execution_twitter_information:
 
             if today_str in holidays_this_year:
                 reason = holidays_this_year[today_str]
-                logger.info(f"Today ({current_date}) the market is closed due to: {reason}.")
+                logger.info(f"Today {current_date} the market is closed due to: {reason}.")
+                post_twitter(f"Today {current_date} the market is closed due to: {reason}.")
                 self.market_open = False
             else:
                 open_hour = data['stockMarketHours']['openingHour']
                 close_hour = data['stockMarketHours']['closingHour']
                 logger.info(
-                    f"Today ({current_date}) the market is open from {open_hour} to {close_hour}."
+                    f"Today {current_date} the market is open from {open_hour} to {close_hour}."
                 )
+                post_twitter(f"Today {current_date} the NYSE is open from {open_hour} to {close_hour}.")
                 self.market_open = True
 
         except requests.RequestException as e:
@@ -87,7 +98,6 @@ class Execution_twitter_information:
     def is_weekend(self):
         """
         Check if today is a weekend and update the market status.
-
         """
 
         if self.day_of_week in self.WEEKENDS:
@@ -108,7 +118,7 @@ class Execution_twitter_information:
             logger.info("Today the market opens")
 
             if self.current_hour == self.morning_update:
-
+                logger.info("Running Earnings + Dividends + Splits")
                 bot = EarningsBot()
                 bot.run()
                 time.sleep(120)
@@ -120,18 +130,42 @@ class Execution_twitter_information:
 
             elif self.current_hour == self.time_open[0] and self.current_minute <= self.time_open[1]:
                 logger.info('The market just opened -> ')
-                bot = SplitBot()
-                bot.run()
+                market = Market_Daily_Performance()
+                market.market_just_open()
 
             elif self.current_hour == self.time_performance[0]:
                 logger.info('The market has been opened for 3 hours -> ')
+                market = Market_Daily_Performance()
+                market.market_is_open()
 
             elif self.current_hour == self.time_close[0]:
                 logger.info('The market just closed -> ')
+                market = Market_Daily_Performance()
+                market.market_is_just_closed()
+                market.market_1_week()
+
+            else:
+                logger.info('Nothing to post...')
 
         elif self.day_of_week in self.WEEKENDS:
             logger.info('Today the market is closed -> Weekend.')
 
+            if self.day_of_week == self.performance_markets[0] and self.current_hour == self.performance_markets[1]:
+                    tracker = MarketPerformanceTracker()
+                    tracker.run()
+
+            elif self.day_of_week == self.performance_US_ALL[0] and self.current_hour == self.performance_US_ALL[1]:
+                    US_stocks = US_StocksPerformance()
+                    US_stocks.run()
+            elif self.day_of_week == self.performance_mag_7[0] and self.current_hour == self.performance_mag_7[1]:
+                    stock_performance = StockSevenMagnificenPerformance()
+                    stock_performance.run()
+
+            elif self.day_of_week == self.performance_Sector[0] and self.current_hour == self.performance_Sector[1]:
+                    stock_perf = SectorPerformance()
+                    stock_perf.run()
+            else:
+                logger.info('Nothing to post...')
         return None
 
 if __name__ == "__main__":

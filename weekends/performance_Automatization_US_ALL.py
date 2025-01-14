@@ -78,6 +78,9 @@ class US_StocksPerformance:
         bottom_performers = []
 
         # Loop through filtered tickers and fetch their historical data
+        if self.tickers is None:
+            self.filtering_tickers()
+
         for ticker in self.tickers:
             try:
                 ticker_data = yf.Ticker(ticker)
@@ -123,6 +126,8 @@ class US_StocksPerformance:
         top_performers = []
         bottom_performers = []
 
+        if self.tickers is None:
+            self.filtering_tickers()
         # Loop through filtered tickers and fetch their historical data
         for ticker in self.tickers:
             try:
@@ -161,17 +166,30 @@ class US_StocksPerformance:
         except Exception as e:
             logger.error(f"Error posting message on Twitter: {e}")
 
+    def run(self):
+        # Filtering tickers for those meeting the market cap criteria
+        logger.info('Starting to filter companies')
+        self.filtering_tickers()
+
+        # Perform weekly and yearly performance calculations
+        logger.info("Performance over the last week:")
+        self.performance_y_week()
+
+        logger.info("\nPerformance over the last year:")
+        self.performance_y()
+
 
 if __name__ == "__main__":
     US_stocks = US_StocksPerformance()
+    US_stocks.run()
 
-    # Filtering tickers for those meeting the market cap criteria
-    logger.info('Starting to filter companies')
-    US_stocks.filtering_tickers()
-
-    # Perform weekly and yearly performance calculations
-    logger.info("Performance over the last week:")
-    US_stocks.performance_y_week()
+    # # Filtering tickers for those meeting the market cap criteria
+    # logger.info('Starting to filter companies')
+    # US_stocks.filtering_tickers()
+    #
+    # # Perform weekly and yearly performance calculations
+    # logger.info("Performance over the last week:")
+    # US_stocks.performance_y_week()
 
     logger.info("\nPerformance over the last year:")
     US_stocks.performance_y()

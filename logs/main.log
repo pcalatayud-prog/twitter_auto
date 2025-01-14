@@ -1,0 +1,4 @@
+2025-01-14 00:43:52.449 | INFO     | __main__:__init__:36 - Initializing Main
+2025-01-14 00:43:52.450 | INFO     | __main__:is_weekend:105 - Tuesday is a weekday. The market could be open.
+2025-01-14 00:43:52.881 | INFO     | __main__:is_market_open:84 - Today (Tuesday, 14 of January) the market is open from 09:30 a.m. ET to 04:00 p.m. ET.
+2025-01-14 00:43:52.882 | INFO     | __main__:run:116 - Today the market opens

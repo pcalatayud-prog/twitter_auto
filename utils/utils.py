@@ -8,12 +8,17 @@ import requests
 import pandas as pd
 from loguru import logger
 from datetime import datetime, timedelta
+from requests.adapters import HTTPAdapter
+from urllib3.util.retry import Retry
+import urllib.parse
+import time
 
 from config.auth import api_key
 from config.auth import api_key_secret
 from config.auth import access_token
 from config.auth import access_token_secret
 from config.auth import bearer
+from config.telegram import bot_token, bot_chatID
 
 def post_twitter(text: str):
 
@@ -197,6 +202,78 @@ def get_splits_calendar(today: str):
     else:
         return pd.DataFrame()
 
+def send_telegram_message(bot_message, max_retries=3):
+    """
+    Send message to Telegram bot with retry logic and better error handling.
+    Args:
+        bot_message (str): Message to send
+        max_retries (int): Maximum number of retry attempts
+    """
+    try:
+        # Log the credentials (be careful with this in production)
+        logger.info(f"Using bot_token: {bot_token[:10]}...")
+        logger.info(f"Sending to chat_id: {bot_chatID}")
+
+        # Create session with retry strategy
+        session = requests.Session()
+        retry_strategy = Retry(
+            total=max_retries,
+            backoff_factor=1,
+            status_forcelist=[429, 500, 502, 503, 504]
+        )
+        adapter = HTTPAdapter(max_retries=retry_strategy)
+        session.mount("https://", adapter)
+
+        # URL encode the message
+        encoded_message = urllib.parse.quote(bot_message)
+
+        # Construct the URL
+        send_text = (f'https://api.telegram.org/bot{bot_token}/sendMessage'
+                     f'?chat_id={bot_chatID}'
+                     f'&parse_mode=Markdown'
+                     f'&text={encoded_message}')
+
+        logger.info(f"Attempting to send message to Telegram")
+
+        # Try to send the message
+        response = session.get(send_text, timeout=10)
+        response.raise_for_status()
+
+        logger.info(f"Message sent successfully. Status code: {response.status_code}")
+        return response
+
+    except requests.exceptions.ConnectionError as e:
+        logger.error(f"Connection error: {e}")
+        time.sleep(2)  # Wait before retrying
+        if max_retries > 0:
+            logger.info(f"Retrying... {max_retries} attempts remaining")
+            return send_telegram_message(bot_message, max_retries - 1)
+        raise
+
+    except requests.exceptions.Timeout as e:
+        logger.error(f"Request timed out: {e}")
+        if max_retries > 0:
+            return send_telegram_message(bot_message, max_retries - 1)
+        raise
+
+    except requests.exceptions.HTTPError as e:
+        logger.error(f"HTTP error occurred: {e}")
+        if response.status_code == 429:  # Too Many Requests
+            time.sleep(int(response.headers.get('Retry-After', 30)))
+            return send_telegram_message(bot_message, max_retries - 1)
+        raise
+
+    except Exception as e:
+        logger.error(f"Unexpected error sending message: {e}")
+        raise
+
+def bot_send_text(message):
+    """Wrapper function for sending Telegram messages."""
+    try:
+        return send_telegram_message(message)
+    except Exception as e:
+        logger.error(f"Failed to send Telegram message: {e}")
+        return None
+
 if __name__ == "__main__":
-    tickers = get_splits_calendar('2025-02-10')
-    stop=1
+    bot_send_text('testing...')

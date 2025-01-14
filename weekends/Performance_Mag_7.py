@@ -10,6 +10,7 @@ import yfinance as yf
 from datetime import timedelta
 import warnings
 from loguru import logger
+import time
 
 from utils.utils import post_twitter
 
@@ -141,6 +142,5 @@ class StockSevenMagnificenPerformance:
 
 # Main block to run the script
 if __name__ == "__main__":
-    tickers = ["NVDA", "META", "AMZN", "MSFT", "GOOG", "AAPL", "TSLA"]
-    stock_performance = StockSevenMagnificenPerformance(tickers)
+    stock_performance = StockSevenMagnificenPerformance()
     stock_performance.run()
