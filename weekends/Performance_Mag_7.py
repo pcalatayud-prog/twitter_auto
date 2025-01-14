@@ -16,6 +16,11 @@ from utils.utils import post_twitter
 
 class StockSevenMagnificenPerformance:
     def __init__(self, tickers=None):
+
+        # Initialize
+        logger.add("logs/performance_mag_7_bot.log", rotation="500 MB")
+        logger.info("initialize Mag_7")
+
         self.tickers = tickers or ["NVDA", "META", "AMZN", "MSFT", "GOOG", "AAPL", "TSLA"]
         self.df = pd.DataFrame({"symbol": self.tickers})
         self.df_performance = pd.DataFrame(columns=["ticker", "ytd", "hf", "3mtd", "mtd", "wtd", "dtd"])
@@ -33,6 +38,8 @@ class StockSevenMagnificenPerformance:
         self.current_year = current_date.year
         self.current_month = current_date.month
         self.current_week = int(current_date.strftime("%U"))
+
+
 
     def download_data(self):
         """Download stock data for each ticker and calculate performance."""

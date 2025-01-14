@@ -17,6 +17,11 @@ from utils.utils import post_twitter
 class MarketPerformanceTracker:
     def __init__(self):
         """Initialize the market performance tracker with default settings."""
+
+        # Initialize
+        logger.add("logs/performance_markets_bot.log", rotation="500 MB")
+        logger.info("initialize Performance Markets")
+
         self.data = {
             "name": ["NASDAQ-100", "SP-500", "Russell-2000", "DowJones", "FTSE-100",
                      "Nikkei-225", "DAX", "CAC-40", "EuroStoxx-50", "Ibex-35"],

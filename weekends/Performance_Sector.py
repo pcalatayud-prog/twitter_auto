@@ -17,6 +17,11 @@ from utils.utils import post_twitter
 class SectorPerformance:
     def __init__(self):
         # Initialize DataFrame for tickers
+
+        # Initialize
+        logger.add("logs/performance_sector.log", rotation="500 MB")
+        logger.info("initialize Performance sector")
+
         self.tickers_data = {
             "name": ["Energy","Real","Health","Financial","Comm","Utilities","Materials","IT","Indust","Staples","Discrec","SemiCond"],
             "symbol": ["VDE", "VNQ", "VHT", "VFH", "VOX", "VPU", "VAW", "VGT", "VIS", "VDC", "VCR", "SOXX"]

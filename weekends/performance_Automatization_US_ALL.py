@@ -1,3 +1,5 @@
+
+
 # Script Created by: Pablo Calatayud
 # Email: pablocalatayudpelayo@gmail.com
 # LinkedIn: https://www.linkedin.com/in/pablo-calatayud-pelayo/
@@ -22,6 +24,8 @@ class US_StocksPerformance:
         from config.api_keys import api_key
         self.api_key = api_key
         # Initialize
+        logger.add("logs/performance_us_all_bot.log", rotation="500 MB")
+        logger.info("initialize Performance US all")
 
     def filtering_tickers(self):
         url = self.url
@@ -191,5 +195,5 @@ if __name__ == "__main__":
     # logger.info("Performance over the last week:")
     # US_stocks.performance_y_week()
 
-    logger.info("\nPerformance over the last year:")
-    US_stocks.performance_y()
+    # logger.info("\nPerformance over the last year:")
+    # US_stocks.performance_y()
