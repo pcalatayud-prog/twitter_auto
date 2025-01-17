@@ -40,6 +40,7 @@ def post_twitter(text: str):
     except Exception as e:
         logger.error(e)
         bot_send_text(f"Tweet Error\nTweet Error\n: {e}\n{message}")
+        logger.error(f"Tweet Error\nTweet Error\n: {e}\n{message}")
 
 
     return None

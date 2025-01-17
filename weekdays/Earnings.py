@@ -3,11 +3,8 @@
 # LinkedIn: https://www.linkedin.com/in/pablo-calatayud-pelayo/
 # Copyright (c) 2025, Pablo Calatayud. All rights reserved.
 
-import os
-import json
 import pandas as pd
 import yfinance as yf
-import tweepy
 from loguru import logger
 import time
 
@@ -41,71 +38,36 @@ class EarningsBot:
         """Calculate performance metrics for a given ticker."""
         try:
             # Initialize DataFrame for performance metrics
-            df_performance = pd.DataFrame(columns=[
-                "ticker", "price_change_ytd", "MDD_ytd",
-                "price_change_last_year", "MDD_last_year",
-                "price_change_last_5_years", "MDD_5y"
-            ])
 
             # Calculate dates
-            date_five_years = (self.current_date - timedelta(days=365 * 5)).strftime('%Y-%m-%d')
-            date_last_year = (self.current_date - timedelta(days=365)).strftime('%Y-%m-%d')
-            first_day_current_year = self.current_date.replace(month=1, day=1).strftime('%Y-%m-%d')
-            current_date = self.current_date.strftime('%Y-%m-%d')
+            current_date_date = datetime.strptime(self.current_date, '%Y-%m-%d')
+            first_day_current_year = current_date_date.replace(month=1, day=1).strftime('%Y-%m-%d')
+            current_date_str = current_date_date.strftime('%Y-%m-%d')
+            current_date_plus_one_day = current_date_date + timedelta(days=1)
+            current_date_plus_one_day_str = current_date_plus_one_day.strftime('%Y-%m-%d')
 
             # Get historical data
-            df_5y = self._get_historical_price(ticker, date_five_years, current_date)
-            if df_5y is None:
-                return None
+            df_1y = self._get_historical_price(ticker, first_day_current_year, current_date_plus_one_day_str)
 
             # Calculate returns and metrics
-            df_5y["returns"] = df_5y["Adj Close"].pct_change()
-            df_5y["returns_perc"] = df_5y["returns"] + 1
-            df_5y["creturns"] = df_5y["returns_perc"].cumprod()
+            df_1y["returns"] = df_1y["Close"].pct_change()
+            df_1y["returns_perc"] = df_1y["returns"] + 1
+            df_1y["creturns"] = df_1y["returns_perc"].cumprod()
+            df_1y["cummax_BH"] = df_1y.creturns.cummax()
+            df_1y["drawdown_BH"] = (df_1y["cummax_BH"] - df_1y["creturns"]) / df_1y["cummax_BH"]
 
-            # Calculate metrics for different time periods
-            metrics = self._calculate_period_metrics(df_5y, date_last_year, first_day_current_year)
 
-            # Add row to performance DataFrame
-            df_performance.loc[0] = [ticker] + list(metrics.values())
+            metrics = {}
 
-            return df_performance
+            metrics["price_change_ytd"] = round(100 * (df_1y["creturns"].iloc[-1] - 1),2)
+            metrics["MDD_ytd"] = round(100 * df_1y["drawdown_BH"].max(),2)
+            metrics = {key: float(value) for key, value in metrics.items()}
+
+            return metrics
 
         except Exception as e:
             logger.error(f"Error calculating performance score for {ticker}: {e}")
             return None
-
-    def _calculate_period_metrics(self, df: pd.DataFrame, date_last_year: str, first_day_current_year: str) -> dict:
-        """Calculate metrics for different time periods."""
-        metrics = {}
-
-        # Calculate 5-year metrics
-        df["cummax_BH"] = df.creturns.cummax()
-        df["drawdown_BH"] = (df["cummax_BH"] - df["creturns"]) / df["cummax_BH"]
-
-        # 5-year calculations
-        metrics["price_change_5y"] = 100 * (df["creturns"].iloc[-1] - 1)
-        metrics["MDD_5y"] = 100 * df["drawdown_BH"].max()
-
-        # 1-year calculations
-        df_1y = df[df.index > date_last_year].copy()
-        df_1y["creturns"] = df_1y["returns_perc"].cumprod()
-        df_1y["cummax_BH"] = df_1y.creturns.cummax()
-        df_1y["drawdown_BH"] = (df_1y["cummax_BH"] - df_1y["creturns"]) / df_1y["cummax_BH"]
-
-        metrics["price_change_1y"] = 100 * (df_1y["creturns"].iloc[-1] - 1)
-        metrics["MDD_1y"] = 100 * df_1y["drawdown_BH"].max()
-
-        # YTD calculations
-        df_ytd = df[df.index > first_day_current_year].copy()
-        df_ytd["creturns"] = df_ytd["returns_perc"].cumprod()
-        df_ytd["cummax_BH"] = df_ytd.creturns.cummax()
-        df_ytd["drawdown_BH"] = (df_ytd["cummax_BH"] - df_ytd["creturns"]) / df_ytd["cummax_BH"]
-
-        metrics["price_change_ytd"] = 100 * (df_ytd["creturns"].iloc[-1] - 1)
-        metrics["MDD_ytd"] = 100 * df_ytd["drawdown_BH"].max()
-
-        return metrics
 
     def retrieve_earnings_tickers(self) -> list:
         """Retrieve list of tickers with earnings announcements."""
@@ -136,12 +98,11 @@ class EarningsBot:
 
 
 
-    def format_company_message(self, ticker: str, performance_data: pd.DataFrame,
-                               company_info: dict) -> str:
+    def format_company_message(self, ticker: str, performance_data: dict, company_info: dict) -> str:
         """Format the message for a specific company."""
         try:
-            price_ytd = round(performance_data.iloc[0]["price_change_ytd"], 2)
-            mdd_ytd = round(performance_data.iloc[0]["MDD_ytd"], 2)
+            price_ytd = performance_data["price_change_ytd"]
+            mdd_ytd = performance_data["MDD_ytd"]
 
             message_0 = (f"Today Publish Results: \n #{company_info['company_name']}, "
                          f"-> ${ticker} \n ---->  Industry: #{company_info['industry']} "
@@ -183,9 +144,9 @@ class EarningsBot:
                         continue
 
                     # Get company information
-                    company_info = self._get_ticker_info(ticker)
-                    if not company_info:
-                        continue
+                    df_data = pd.read_csv('C:/Users/peybo/PycharmProjects/twitter_auto/config/top_3000_tickers.csv')
+
+                    company_info = df_data[df_data['ticker']==ticker].iloc[0]
 
                     # Format and post company message
                     company_message = self.format_company_message(
@@ -193,8 +154,7 @@ class EarningsBot:
                     )
                     if company_message:
                         post_twitter(company_message)
-                        logger.info(company_message)
-                        time.sleep(120)  # Wait 2 minutes between tweets
+                        time.sleep(20)  # Wait 2 minutes between tweets
 
                 except Exception as e:
                     logger.error(f"Error processing ticker {ticker}: {e}")

@@ -17,3 +17,471 @@
 2025-01-14 21:53:09.148 | INFO     | utils.utils:send_telegram_message:219 - Sending to chat_id: -1002313822545
 2025-01-14 21:53:09.149 | INFO     | utils.utils:send_telegram_message:240 - Attempting to send message to Telegram
 2025-01-14 21:53:09.402 | INFO     | utils.utils:send_telegram_message:246 - Message sent successfully. Status code: 200
+2025-01-17 11:37:18.982 | INFO     | __main__:__init__:21 - Intilizing Earnings
+2025-01-17 11:37:18.983 | INFO     | __main__:run:159 - Starting EarningsBot workflow
+2025-01-17 11:37:21.653 | INFO     | utils.utils:get_earnings_calendar:118 - dataframe: 
+           date symbol  eps  ...  revenueEstimated fiscalDateEnding  updatedFromDate
+184  2025-01-17    TFC  NaN  ...      5.047370e+09       2024-12-30       2025-01-17
+199  2025-01-17    CFG  NaN  ...      1.962330e+09       2024-12-30       2025-01-15
+243  2025-01-17    SLB  NaN  ...      9.241140e+09       2024-12-30       2025-01-17
+293  2025-01-17   FAST  NaN  ...      1.841637e+09       2024-12-30       2025-01-16
+348  2025-01-17     RF  NaN  ...      1.857300e+09       2024-12-30       2025-01-17
+
+[5 rows x 9 columns]
+2025-01-17 11:37:32.761 | INFO     | __main__:run:166 - Retrieved 7 tickers for earnings announcements
+2025-01-17 11:37:32.761 | INFO     | __main__:run:169 - Initial Message:
+2025-01-17 11:37:32.762 | INFO     | __main__:run:170 - #SP500 and #NASDAQ100 Companies that #publish #results today Friday, 17th of January of 2025: 
+ #tickers -> $TFC $SLB $FAST $STT $HBAN $RF $CFG 
+ More #information in the next tweets -> 
+
+2025-01-17 11:37:32.762 | INFO     | utils.utils:post_twitter:35 - Tweet lenght: 187
+2025-01-17 11:37:33.037 | ERROR    | utils.utils:post_twitter:41 - 403 Forbidden
+You are not allowed to create a Tweet with duplicate content.
+2025-01-17 11:37:33.037 | INFO     | utils.utils:send_telegram_message:219 - Using bot_token: 6379257583...
+2025-01-17 11:37:33.038 | INFO     | utils.utils:send_telegram_message:220 - Sending to chat_id: -1002313822545
+2025-01-17 11:37:33.038 | INFO     | utils.utils:send_telegram_message:241 - Attempting to send message to Telegram
+2025-01-17 11:37:33.269 | INFO     | utils.utils:send_telegram_message:247 - Message sent successfully. Status code: 200
+2025-01-17 11:37:34.221 | ERROR    | __main__:run:198 - Error processing ticker TFC: 'EarningsBot' object has no attribute '_get_ticker_info'
+2025-01-17 11:37:34.474 | ERROR    | __main__:run:198 - Error processing ticker SLB: 'EarningsBot' object has no attribute '_get_ticker_info'
+2025-01-17 11:37:34.738 | ERROR    | __main__:run:198 - Error processing ticker FAST: 'EarningsBot' object has no attribute '_get_ticker_info'
+2025-01-17 11:37:34.739 | INFO     | __main__:run:201 - Completed EarningsBot workflow successfully
+2025-01-17 11:38:31.687 | INFO     | __main__:__init__:21 - Intilizing Earnings
+2025-01-17 11:38:31.687 | INFO     | __main__:run:159 - Starting EarningsBot workflow
+2025-01-17 11:38:34.631 | INFO     | utils.utils:get_earnings_calendar:118 - dataframe: 
+           date symbol  eps  ...  revenueEstimated fiscalDateEnding  updatedFromDate
+169  2025-01-17    STT  NaN  ...      3.267560e+09       2024-12-30       2025-01-17
+188  2025-01-17   HBAN  NaN  ...      1.870670e+09       2024-12-30       2025-01-17
+221  2025-01-17    TFC  NaN  ...      5.047370e+09       2024-12-30       2025-01-17
+263  2025-01-17     RF  NaN  ...      1.857300e+09       2024-12-30       2025-01-17
+319  2025-01-17   FAST  NaN  ...      1.841637e+09       2024-12-30       2025-01-16
+
+[5 rows x 9 columns]
+2025-01-17 11:38:45.731 | INFO     | __main__:run:166 - Retrieved 7 tickers for earnings announcements
+2025-01-17 11:38:45.731 | INFO     | __main__:run:169 - Initial Message:
+2025-01-17 11:38:45.731 | INFO     | __main__:run:170 - #SP500 and #NASDAQ100 Companies that #publish #results today Friday, 17th of January of 2025: 
+ #tickers -> $TFC $SLB $FAST $STT $HBAN $RF $CFG 
+ More #information in the next tweets -> 
+
+2025-01-17 11:38:45.731 | INFO     | utils.utils:post_twitter:35 - Tweet lenght: 187
+2025-01-17 11:38:46.039 | ERROR    | utils.utils:post_twitter:41 - 403 Forbidden
+You are not allowed to create a Tweet with duplicate content.
+2025-01-17 11:38:46.039 | INFO     | utils.utils:send_telegram_message:219 - Using bot_token: 6379257583...
+2025-01-17 11:38:46.039 | INFO     | utils.utils:send_telegram_message:220 - Sending to chat_id: -1002313822545
+2025-01-17 11:38:46.039 | INFO     | utils.utils:send_telegram_message:241 - Attempting to send message to Telegram
+2025-01-17 11:38:46.261 | INFO     | utils.utils:send_telegram_message:247 - Message sent successfully. Status code: 200
+2025-01-17 14:02:45.790 | INFO     | __main__:__init__:21 - Intilizing Earnings
+2025-01-17 14:02:45.790 | INFO     | __main__:run:159 - Starting EarningsBot workflow
+2025-01-17 14:02:49.754 | INFO     | utils.utils:get_earnings_calendar:118 - dataframe: 
+           date symbol  eps  ...  revenueEstimated fiscalDateEnding  updatedFromDate
+78   2025-01-17    CFG  NaN  ...      1.962330e+09       2024-12-30       2025-01-15
+84   2025-01-17    STT  NaN  ...      3.267560e+09       2024-12-30       2025-01-17
+127  2025-01-17     RF  NaN  ...      1.857300e+09       2024-12-30       2025-01-17
+132  2025-01-17   HBAN  NaN  ...      1.870670e+09       2024-12-30       2025-01-17
+138  2025-01-17   FAST  NaN  ...      1.841637e+09       2024-12-30       2025-01-16
+
+[5 rows x 9 columns]
+2025-01-17 14:03:00.985 | INFO     | __main__:run:166 - Retrieved 7 tickers for earnings announcements
+2025-01-17 14:03:00.985 | INFO     | __main__:run:169 - Initial Message:
+2025-01-17 14:03:00.991 | INFO     | __main__:run:170 - #SP500 and #NASDAQ100 Companies that #publish #results today Friday, 17th of January of 2025: 
+ #tickers -> $TFC $SLB $FAST $STT $HBAN $RF $CFG 
+ More #information in the next tweets -> 
+
+2025-01-17 14:03:00.993 | INFO     | utils.utils:post_twitter:35 - Tweet lenght: 187
+2025-01-17 14:03:01.306 | ERROR    | utils.utils:post_twitter:41 - 429 Too Many Requests
+Too Many Requests
+2025-01-17 14:03:01.306 | INFO     | utils.utils:send_telegram_message:219 - Using bot_token: 6379257583...
+2025-01-17 14:03:01.309 | INFO     | utils.utils:send_telegram_message:220 - Sending to chat_id: -1002313822545
+2025-01-17 14:03:01.309 | INFO     | utils.utils:send_telegram_message:241 - Attempting to send message to Telegram
+2025-01-17 14:03:01.571 | INFO     | utils.utils:send_telegram_message:247 - Message sent successfully. Status code: 200
+2025-01-17 14:03:03.337 | ERROR    | __main__:run:200 - Error processing ticker TFC: [Errno 2] No such file or directory: 'config/top3000_tickers.csv'
+2025-01-17 14:03:03.780 | ERROR    | __main__:run:200 - Error processing ticker SLB: [Errno 2] No such file or directory: 'config/top3000_tickers.csv'
+2025-01-17 14:03:04.208 | ERROR    | __main__:run:200 - Error processing ticker FAST: [Errno 2] No such file or directory: 'config/top3000_tickers.csv'
+2025-01-17 14:03:04.212 | INFO     | __main__:run:203 - Completed EarningsBot workflow successfully
+2025-01-17 14:03:18.588 | INFO     | __main__:__init__:21 - Intilizing Earnings
+2025-01-17 14:03:18.588 | INFO     | __main__:run:159 - Starting EarningsBot workflow
+2025-01-17 14:03:21.846 | INFO     | utils.utils:get_earnings_calendar:118 - dataframe: 
+           date symbol  eps  ...  revenueEstimated fiscalDateEnding  updatedFromDate
+78   2025-01-17    CFG  NaN  ...      1.962330e+09       2024-12-30       2025-01-15
+84   2025-01-17    STT  NaN  ...      3.267560e+09       2024-12-30       2025-01-17
+127  2025-01-17     RF  NaN  ...      1.857300e+09       2024-12-30       2025-01-17
+132  2025-01-17   HBAN  NaN  ...      1.870670e+09       2024-12-30       2025-01-17
+138  2025-01-17   FAST  NaN  ...      1.841637e+09       2024-12-30       2025-01-16
+
+[5 rows x 9 columns]
+2025-01-17 14:03:32.545 | INFO     | __main__:run:166 - Retrieved 7 tickers for earnings announcements
+2025-01-17 14:03:32.549 | INFO     | __main__:run:169 - Initial Message:
+2025-01-17 14:03:32.549 | INFO     | __main__:run:170 - #SP500 and #NASDAQ100 Companies that #publish #results today Friday, 17th of January of 2025: 
+ #tickers -> $TFC $SLB $FAST $STT $HBAN $RF $CFG 
+ More #information in the next tweets -> 
+
+2025-01-17 14:03:32.549 | INFO     | utils.utils:post_twitter:35 - Tweet lenght: 187
+2025-01-17 14:03:32.851 | ERROR    | utils.utils:post_twitter:41 - 429 Too Many Requests
+Too Many Requests
+2025-01-17 14:03:32.851 | INFO     | utils.utils:send_telegram_message:219 - Using bot_token: 6379257583...
+2025-01-17 14:03:32.851 | INFO     | utils.utils:send_telegram_message:220 - Sending to chat_id: -1002313822545
+2025-01-17 14:03:32.851 | INFO     | utils.utils:send_telegram_message:241 - Attempting to send message to Telegram
+2025-01-17 14:03:33.137 | INFO     | utils.utils:send_telegram_message:247 - Message sent successfully. Status code: 200
+2025-01-17 14:03:34.757 | ERROR    | __main__:run:200 - Error processing ticker TFC: [Errno 2] No such file or directory: 'config/top3000_tickers.csv'
+2025-01-17 14:03:35.231 | ERROR    | __main__:run:200 - Error processing ticker SLB: [Errno 2] No such file or directory: 'config/top3000_tickers.csv'
+2025-01-17 14:03:35.660 | ERROR    | __main__:run:200 - Error processing ticker FAST: [Errno 2] No such file or directory: 'config/top3000_tickers.csv'
+2025-01-17 14:03:35.660 | INFO     | __main__:run:203 - Completed EarningsBot workflow successfully
+2025-01-17 14:04:29.152 | INFO     | __main__:__init__:21 - Intilizing Earnings
+2025-01-17 14:04:29.165 | INFO     | __main__:run:159 - Starting EarningsBot workflow
+2025-01-17 14:04:32.027 | INFO     | utils.utils:get_earnings_calendar:118 - dataframe: 
+           date symbol  eps  ...  revenueEstimated fiscalDateEnding  updatedFromDate
+78   2025-01-17    CFG  NaN  ...      1.962330e+09       2024-12-30       2025-01-15
+84   2025-01-17    STT  NaN  ...      3.267560e+09       2024-12-30       2025-01-17
+127  2025-01-17     RF  NaN  ...      1.857300e+09       2024-12-30       2025-01-17
+132  2025-01-17   HBAN  NaN  ...      1.870670e+09       2024-12-30       2025-01-17
+138  2025-01-17   FAST  NaN  ...      1.841637e+09       2024-12-30       2025-01-16
+
+[5 rows x 9 columns]
+2025-01-17 14:04:42.725 | INFO     | __main__:run:166 - Retrieved 7 tickers for earnings announcements
+2025-01-17 14:04:42.725 | INFO     | __main__:run:169 - Initial Message:
+2025-01-17 14:04:42.730 | INFO     | __main__:run:170 - #SP500 and #NASDAQ100 Companies that #publish #results today Friday, 17th of January of 2025: 
+ #tickers -> $TFC $SLB $FAST $STT $HBAN $RF $CFG 
+ More #information in the next tweets -> 
+
+2025-01-17 14:04:42.730 | INFO     | utils.utils:post_twitter:35 - Tweet lenght: 187
+2025-01-17 14:04:43.027 | ERROR    | utils.utils:post_twitter:41 - 429 Too Many Requests
+Too Many Requests
+2025-01-17 14:04:43.027 | INFO     | utils.utils:send_telegram_message:219 - Using bot_token: 6379257583...
+2025-01-17 14:04:43.027 | INFO     | utils.utils:send_telegram_message:220 - Sending to chat_id: -1002313822545
+2025-01-17 14:04:43.027 | INFO     | utils.utils:send_telegram_message:241 - Attempting to send message to Telegram
+2025-01-17 14:04:43.293 | INFO     | utils.utils:send_telegram_message:247 - Message sent successfully. Status code: 200
+2025-01-17 14:04:45.004 | ERROR    | __main__:run:200 - Error processing ticker TFC: [Errno 2] No such file or directory: 'config/top3000_tickers.csv'
+2025-01-17 14:04:45.480 | ERROR    | __main__:run:200 - Error processing ticker SLB: [Errno 2] No such file or directory: 'config/top3000_tickers.csv'
+2025-01-17 14:04:45.907 | ERROR    | __main__:run:200 - Error processing ticker FAST: [Errno 2] No such file or directory: 'config/top3000_tickers.csv'
+2025-01-17 14:04:45.907 | INFO     | __main__:run:203 - Completed EarningsBot workflow successfully
+2025-01-17 14:05:36.261 | INFO     | __main__:__init__:21 - Intilizing Earnings
+2025-01-17 14:05:36.261 | INFO     | __main__:run:159 - Starting EarningsBot workflow
+2025-01-17 14:05:39.511 | INFO     | utils.utils:get_earnings_calendar:118 - dataframe: 
+           date symbol  eps  ...  revenueEstimated fiscalDateEnding  updatedFromDate
+106  2025-01-17     RF  NaN  ...      1.857300e+09       2024-12-30       2025-01-17
+153  2025-01-17    STT  NaN  ...      3.267560e+09       2024-12-30       2025-01-17
+170  2025-01-17   HBAN  NaN  ...      1.870670e+09       2024-12-30       2025-01-17
+188  2025-01-17    TFC  NaN  ...      5.047370e+09       2024-12-30       2025-01-17
+191  2025-01-17    SLB  NaN  ...      9.241140e+09       2024-12-30       2025-01-17
+
+[5 rows x 9 columns]
+2025-01-17 14:05:50.272 | INFO     | __main__:run:166 - Retrieved 7 tickers for earnings announcements
+2025-01-17 14:05:50.272 | INFO     | __main__:run:169 - Initial Message:
+2025-01-17 14:05:50.272 | INFO     | __main__:run:170 - #SP500 and #NASDAQ100 Companies that #publish #results today Friday, 17th of January of 2025: 
+ #tickers -> $TFC $SLB $FAST $STT $HBAN $RF $CFG 
+ More #information in the next tweets -> 
+
+2025-01-17 14:05:50.279 | INFO     | utils.utils:post_twitter:35 - Tweet lenght: 187
+2025-01-17 14:05:50.585 | ERROR    | utils.utils:post_twitter:41 - 429 Too Many Requests
+Too Many Requests
+2025-01-17 14:05:50.585 | INFO     | utils.utils:send_telegram_message:219 - Using bot_token: 6379257583...
+2025-01-17 14:05:50.591 | INFO     | utils.utils:send_telegram_message:220 - Sending to chat_id: -1002313822545
+2025-01-17 14:05:50.591 | INFO     | utils.utils:send_telegram_message:241 - Attempting to send message to Telegram
+2025-01-17 14:05:50.807 | INFO     | utils.utils:send_telegram_message:247 - Message sent successfully. Status code: 200
+2025-01-17 14:10:24.955 | INFO     | __main__:__init__:21 - Intilizing Earnings
+2025-01-17 14:10:24.955 | INFO     | __main__:run:159 - Starting EarningsBot workflow
+2025-01-17 14:10:27.851 | INFO     | utils.utils:get_earnings_calendar:118 - dataframe: 
+           date symbol  eps  ...  revenueEstimated fiscalDateEnding  updatedFromDate
+91   2025-01-17    STT  NaN  ...      3.267560e+09       2024-12-30       2025-01-17
+99   2025-01-17    SLB  NaN  ...      9.241140e+09       2024-12-30       2025-01-17
+137  2025-01-17    TFC  NaN  ...      5.047370e+09       2024-12-30       2025-01-17
+183  2025-01-17    CFG  NaN  ...      1.962330e+09       2024-12-30       2025-01-15
+230  2025-01-17   HBAN  NaN  ...      1.870670e+09       2024-12-30       2025-01-17
+
+[5 rows x 9 columns]
+2025-01-17 14:10:38.356 | INFO     | __main__:run:166 - Retrieved 7 tickers for earnings announcements
+2025-01-17 14:10:38.357 | INFO     | __main__:run:169 - Initial Message:
+2025-01-17 14:10:38.358 | INFO     | __main__:run:170 - #SP500 and #NASDAQ100 Companies that #publish #results today Friday, 17th of January of 2025: 
+ #tickers -> $TFC $SLB $FAST $STT $HBAN $RF $CFG 
+ More #information in the next tweets -> 
+
+2025-01-17 14:10:38.360 | INFO     | utils.utils:post_twitter:35 - Tweet lenght: 187
+2025-01-17 14:10:38.682 | ERROR    | utils.utils:post_twitter:41 - 429 Too Many Requests
+Too Many Requests
+2025-01-17 14:10:38.683 | INFO     | utils.utils:send_telegram_message:219 - Using bot_token: 6379257583...
+2025-01-17 14:10:38.684 | INFO     | utils.utils:send_telegram_message:220 - Sending to chat_id: -1002313822545
+2025-01-17 14:10:38.686 | INFO     | utils.utils:send_telegram_message:241 - Attempting to send message to Telegram
+2025-01-17 14:10:38.943 | INFO     | utils.utils:send_telegram_message:247 - Message sent successfully. Status code: 200
+2025-01-17 14:10:39.855 | ERROR    | __main__:run:200 - Error processing ticker TFC: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+2025-01-17 14:10:40.143 | ERROR    | __main__:run:200 - Error processing ticker SLB: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+2025-01-17 14:10:40.401 | ERROR    | __main__:run:200 - Error processing ticker FAST: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+2025-01-17 14:10:40.402 | INFO     | __main__:run:203 - Completed EarningsBot workflow successfully
+2025-01-17 14:11:56.257 | INFO     | __main__:__init__:21 - Intilizing Earnings
+2025-01-17 14:11:56.257 | INFO     | __main__:run:159 - Starting EarningsBot workflow
+2025-01-17 14:11:59.005 | INFO     | utils.utils:get_earnings_calendar:118 - dataframe: 
+           date symbol  eps  ...  revenueEstimated fiscalDateEnding  updatedFromDate
+91   2025-01-17    STT  NaN  ...      3.267560e+09       2024-12-30       2025-01-17
+99   2025-01-17    SLB  NaN  ...      9.241140e+09       2024-12-30       2025-01-17
+137  2025-01-17    TFC  NaN  ...      5.047370e+09       2024-12-30       2025-01-17
+183  2025-01-17    CFG  NaN  ...      1.962330e+09       2024-12-30       2025-01-15
+230  2025-01-17   HBAN  NaN  ...      1.870670e+09       2024-12-30       2025-01-17
+
+[5 rows x 9 columns]
+2025-01-17 14:12:09.715 | INFO     | __main__:run:166 - Retrieved 7 tickers for earnings announcements
+2025-01-17 14:12:09.715 | INFO     | __main__:run:169 - Initial Message:
+2025-01-17 14:12:09.715 | INFO     | __main__:run:170 - #SP500 and #NASDAQ100 Companies that #publish #results today Friday, 17th of January of 2025: 
+ #tickers -> $TFC $SLB $FAST $STT $HBAN $RF $CFG 
+ More #information in the next tweets -> 
+
+2025-01-17 14:12:09.715 | INFO     | utils.utils:post_twitter:35 - Tweet lenght: 187
+2025-01-17 14:12:10.023 | ERROR    | utils.utils:post_twitter:41 - 429 Too Many Requests
+Too Many Requests
+2025-01-17 14:12:10.023 | INFO     | utils.utils:send_telegram_message:219 - Using bot_token: 6379257583...
+2025-01-17 14:12:10.023 | INFO     | utils.utils:send_telegram_message:220 - Sending to chat_id: -1002313822545
+2025-01-17 14:12:10.023 | INFO     | utils.utils:send_telegram_message:241 - Attempting to send message to Telegram
+2025-01-17 14:12:10.249 | INFO     | utils.utils:send_telegram_message:247 - Message sent successfully. Status code: 200
+2025-01-17 14:12:11.960 | ERROR    | __main__:run:201 - Error processing ticker TFC: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+2025-01-17 14:12:12.414 | ERROR    | __main__:run:201 - Error processing ticker SLB: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+2025-01-17 14:12:12.864 | ERROR    | __main__:run:201 - Error processing ticker FAST: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+2025-01-17 14:12:12.864 | INFO     | __main__:run:204 - Completed EarningsBot workflow successfully
+2025-01-17 14:13:03.634 | INFO     | __main__:__init__:21 - Intilizing Earnings
+2025-01-17 14:13:03.634 | INFO     | __main__:run:159 - Starting EarningsBot workflow
+2025-01-17 14:13:06.759 | INFO     | utils.utils:get_earnings_calendar:118 - dataframe: 
+           date symbol  eps  ...  revenueEstimated fiscalDateEnding  updatedFromDate
+79   2025-01-17     RF  NaN  ...      1.857300e+09       2024-12-30       2025-01-17
+114  2025-01-17    CFG  NaN  ...      1.962330e+09       2024-12-30       2025-01-15
+120  2025-01-17    TFC  NaN  ...      5.047370e+09       2024-12-30       2025-01-17
+169  2025-01-17   HBAN  NaN  ...      1.870670e+09       2024-12-30       2025-01-17
+225  2025-01-17    STT  NaN  ...      3.267560e+09       2024-12-30       2025-01-17
+
+[5 rows x 9 columns]
+2025-01-17 14:13:17.468 | INFO     | __main__:run:166 - Retrieved 7 tickers for earnings announcements
+2025-01-17 14:13:17.468 | INFO     | __main__:run:169 - Initial Message:
+2025-01-17 14:13:17.468 | INFO     | __main__:run:170 - #SP500 and #NASDAQ100 Companies that #publish #results today Friday, 17th of January of 2025: 
+ #tickers -> $TFC $SLB $FAST $STT $HBAN $RF $CFG 
+ More #information in the next tweets -> 
+
+2025-01-17 14:13:17.475 | INFO     | utils.utils:post_twitter:35 - Tweet lenght: 187
+2025-01-17 14:13:17.744 | ERROR    | utils.utils:post_twitter:41 - 429 Too Many Requests
+Too Many Requests
+2025-01-17 14:13:17.744 | INFO     | utils.utils:send_telegram_message:219 - Using bot_token: 6379257583...
+2025-01-17 14:13:17.760 | INFO     | utils.utils:send_telegram_message:220 - Sending to chat_id: -1002313822545
+2025-01-17 14:13:17.760 | INFO     | utils.utils:send_telegram_message:241 - Attempting to send message to Telegram
+2025-01-17 14:13:18.041 | INFO     | utils.utils:send_telegram_message:247 - Message sent successfully. Status code: 200
+2025-01-17 14:14:31.566 | INFO     | __main__:__init__:21 - Intilizing Earnings
+2025-01-17 14:14:31.566 | INFO     | __main__:run:159 - Starting EarningsBot workflow
+2025-01-17 14:14:34.134 | INFO     | utils.utils:get_earnings_calendar:118 - dataframe: 
+           date symbol  eps  ...  revenueEstimated fiscalDateEnding  updatedFromDate
+79   2025-01-17     RF  NaN  ...      1.857300e+09       2024-12-30       2025-01-17
+114  2025-01-17    CFG  NaN  ...      1.962330e+09       2024-12-30       2025-01-15
+120  2025-01-17    TFC  NaN  ...      5.047370e+09       2024-12-30       2025-01-17
+169  2025-01-17   HBAN  NaN  ...      1.870670e+09       2024-12-30       2025-01-17
+225  2025-01-17    STT  NaN  ...      3.267560e+09       2024-12-30       2025-01-17
+
+[5 rows x 9 columns]
+2025-01-17 14:14:42.814 | INFO     | __main__:__init__:21 - Intilizing Earnings
+2025-01-17 14:14:42.814 | INFO     | __main__:run:159 - Starting EarningsBot workflow
+2025-01-17 14:14:45.262 | INFO     | utils.utils:get_earnings_calendar:118 - dataframe: 
+           date symbol  eps  ...  revenueEstimated fiscalDateEnding  updatedFromDate
+79   2025-01-17     RF  NaN  ...      1.857300e+09       2024-12-30       2025-01-17
+114  2025-01-17    CFG  NaN  ...      1.962330e+09       2024-12-30       2025-01-15
+120  2025-01-17    TFC  NaN  ...      5.047370e+09       2024-12-30       2025-01-17
+169  2025-01-17   HBAN  NaN  ...      1.870670e+09       2024-12-30       2025-01-17
+225  2025-01-17    STT  NaN  ...      3.267560e+09       2024-12-30       2025-01-17
+
+[5 rows x 9 columns]
+2025-01-17 14:14:55.796 | INFO     | __main__:run:166 - Retrieved 7 tickers for earnings announcements
+2025-01-17 14:14:55.797 | INFO     | __main__:run:169 - Initial Message:
+2025-01-17 14:14:55.798 | INFO     | __main__:run:170 - #SP500 and #NASDAQ100 Companies that #publish #results today Friday, 17th of January of 2025: 
+ #tickers -> $TFC $SLB $FAST $STT $HBAN $RF $CFG 
+ More #information in the next tweets -> 
+
+2025-01-17 14:14:55.799 | INFO     | utils.utils:post_twitter:35 - Tweet lenght: 187
+2025-01-17 14:14:56.046 | ERROR    | utils.utils:post_twitter:41 - 429 Too Many Requests
+Too Many Requests
+2025-01-17 14:14:56.047 | INFO     | utils.utils:send_telegram_message:219 - Using bot_token: 6379257583...
+2025-01-17 14:14:56.048 | INFO     | utils.utils:send_telegram_message:220 - Sending to chat_id: -1002313822545
+2025-01-17 14:14:56.049 | INFO     | utils.utils:send_telegram_message:241 - Attempting to send message to Telegram
+2025-01-17 14:14:56.275 | INFO     | utils.utils:send_telegram_message:247 - Message sent successfully. Status code: 200
+2025-01-17 14:14:57.167 | INFO     | utils.utils:post_twitter:35 - Tweet lenght: 262
+2025-01-17 14:14:57.415 | ERROR    | utils.utils:post_twitter:41 - 429 Too Many Requests
+Too Many Requests
+2025-01-17 14:14:57.416 | INFO     | utils.utils:send_telegram_message:219 - Using bot_token: 6379257583...
+2025-01-17 14:14:57.417 | INFO     | utils.utils:send_telegram_message:220 - Sending to chat_id: -1002313822545
+2025-01-17 14:14:57.420 | INFO     | utils.utils:send_telegram_message:241 - Attempting to send message to Telegram
+2025-01-17 14:14:57.648 | INFO     | utils.utils:send_telegram_message:247 - Message sent successfully. Status code: 200
+2025-01-17 14:14:57.650 | INFO     | __main__:run:194 - Today Publish Results: 
+ #Truist Financial Corporation, -> $TFC 
+ ---->  Industry: #Banks—Regional 
+ ---->   Sector: #Financial Services 
+ Year To Day Performance: 
+ ---->  Price Change YTD = 0.51 %, 
+ ---->  Max DrawDown YTD = 59.11 %
+ #Earnings #Report #Stocks
+2025-01-17 18:41:08.613 | INFO     | __main__:__init__:21 - Intilizing Earnings
+2025-01-17 18:41:08.613 | INFO     | __main__:run:122 - Starting EarningsBot workflow
+2025-01-17 18:41:11.504 | INFO     | utils.utils:get_earnings_calendar:118 - dataframe: 
+           date symbol   eps  ...  revenueEstimated fiscalDateEnding  updatedFromDate
+46   2025-01-17    TFC   NaN  ...      5.047370e+09       2024-12-30       2025-01-17
+47   2025-01-17   HBAN  0.34  ...      1.895046e+09       2024-12-30       2025-01-17
+73   2025-01-17    STT  2.60  ...      3.326274e+09       2024-12-30       2025-01-17
+106  2025-01-17   FAST   NaN  ...      1.841637e+09       2024-12-30       2025-01-16
+159  2025-01-17    CFG   NaN  ...      1.962330e+09       2024-12-30       2025-01-15
+
+[5 rows x 9 columns]
+2025-01-17 18:41:22.136 | INFO     | __main__:run:129 - Retrieved 7 tickers for earnings announcements
+2025-01-17 18:41:22.136 | INFO     | __main__:run:132 - Initial Message:
+2025-01-17 18:41:22.136 | INFO     | __main__:run:133 - #SP500 and #NASDAQ100 Companies that #publish #results today Friday, 17th of January of 2025: 
+ #tickers -> $TFC $SLB $FAST $STT $HBAN $RF $CFG 
+ More #information in the next tweets -> 
+
+2025-01-17 18:41:22.136 | INFO     | utils.utils:post_twitter:35 - Tweet lenght: 187
+2025-01-17 18:41:22.410 | ERROR    | utils.utils:post_twitter:41 - 429 Too Many Requests
+Too Many Requests
+2025-01-17 18:41:22.410 | INFO     | utils.utils:send_telegram_message:219 - Using bot_token: 6379257583...
+2025-01-17 18:41:22.410 | INFO     | utils.utils:send_telegram_message:220 - Sending to chat_id: -1002313822545
+2025-01-17 18:41:22.410 | INFO     | utils.utils:send_telegram_message:241 - Attempting to send message to Telegram
+2025-01-17 18:41:22.676 | INFO     | utils.utils:send_telegram_message:247 - Message sent successfully. Status code: 200
+2025-01-17 18:47:23.498 | INFO     | __main__:__init__:21 - Intilizing Earnings
+2025-01-17 18:47:23.498 | INFO     | __main__:run:126 - Starting EarningsBot workflow
+2025-01-17 18:47:26.764 | INFO     | utils.utils:get_earnings_calendar:118 - dataframe: 
+           date symbol   eps  ...  revenueEstimated fiscalDateEnding  updatedFromDate
+27   2025-01-17   HBAN  0.34  ...      1.895046e+09       2024-12-30       2025-01-17
+30   2025-01-17    TFC   NaN  ...      5.047370e+09       2024-12-30       2025-01-17
+81   2025-01-17     RF  0.59  ...      1.854119e+09       2024-12-31       2025-01-17
+129  2025-01-17   FAST   NaN  ...      1.841637e+09       2024-12-30       2025-01-16
+144  2025-01-17    SLB  0.92  ...      9.183506e+09       2024-12-30       2025-01-17
+
+[5 rows x 9 columns]
+2025-01-17 18:47:38.393 | INFO     | __main__:run:133 - Retrieved 7 tickers for earnings announcements
+2025-01-17 18:47:38.395 | INFO     | __main__:run:136 - Initial Message:
+2025-01-17 18:47:38.395 | INFO     | __main__:run:137 - #SP500 and #NASDAQ100 Companies that #publish #results today Friday, 17th of January of 2025: 
+ #tickers -> $TFC $SLB $FAST $STT $HBAN $RF $CFG 
+ More #information in the next tweets -> 
+
+2025-01-17 18:47:38.395 | INFO     | utils.utils:post_twitter:35 - Tweet lenght: 187
+2025-01-17 18:47:38.701 | ERROR    | utils.utils:post_twitter:41 - 429 Too Many Requests
+Too Many Requests
+2025-01-17 18:47:38.701 | INFO     | utils.utils:send_telegram_message:219 - Using bot_token: 6379257583...
+2025-01-17 18:47:38.701 | INFO     | utils.utils:send_telegram_message:220 - Sending to chat_id: -1002313822545
+2025-01-17 18:47:38.717 | INFO     | utils.utils:send_telegram_message:241 - Attempting to send message to Telegram
+2025-01-17 18:47:38.967 | INFO     | utils.utils:send_telegram_message:247 - Message sent successfully. Status code: 200
+2025-01-17 18:47:38.983 | ERROR    | __main__:calculate_performance_score:72 - Error calculating performance score for TFC: strptime() argument 1 must be str, not datetime.datetime
+2025-01-17 18:47:38.983 | ERROR    | __main__:calculate_performance_score:72 - Error calculating performance score for SLB: strptime() argument 1 must be str, not datetime.datetime
+2025-01-17 18:47:38.998 | ERROR    | __main__:calculate_performance_score:72 - Error calculating performance score for FAST: strptime() argument 1 must be str, not datetime.datetime
+2025-01-17 18:47:38.998 | INFO     | __main__:run:168 - Completed EarningsBot workflow successfully
+2025-01-17 18:47:52.749 | INFO     | __main__:__init__:21 - Intilizing Earnings
+2025-01-17 18:47:52.749 | INFO     | __main__:run:126 - Starting EarningsBot workflow
+2025-01-17 18:47:56.424 | INFO     | utils.utils:get_earnings_calendar:118 - dataframe: 
+           date symbol   eps  ...  revenueEstimated fiscalDateEnding  updatedFromDate
+27   2025-01-17   HBAN  0.34  ...      1.895046e+09       2024-12-30       2025-01-17
+30   2025-01-17    TFC   NaN  ...      5.047370e+09       2024-12-30       2025-01-17
+81   2025-01-17     RF  0.59  ...      1.854119e+09       2024-12-31       2025-01-17
+129  2025-01-17   FAST   NaN  ...      1.841637e+09       2024-12-30       2025-01-16
+144  2025-01-17    SLB  0.92  ...      9.183506e+09       2024-12-30       2025-01-17
+
+[5 rows x 9 columns]
+2025-01-17 18:48:12.368 | INFO     | __main__:run:133 - Retrieved 7 tickers for earnings announcements
+2025-01-17 18:48:12.368 | INFO     | __main__:run:136 - Initial Message:
+2025-01-17 18:48:12.376 | INFO     | __main__:run:137 - #SP500 and #NASDAQ100 Companies that #publish #results today Friday, 17th of January of 2025: 
+ #tickers -> $TFC $SLB $FAST $STT $HBAN $RF $CFG 
+ More #information in the next tweets -> 
+
+2025-01-17 18:48:12.390 | INFO     | utils.utils:post_twitter:35 - Tweet lenght: 187
+2025-01-17 18:48:12.671 | ERROR    | utils.utils:post_twitter:41 - 429 Too Many Requests
+Too Many Requests
+2025-01-17 18:48:12.671 | INFO     | utils.utils:send_telegram_message:219 - Using bot_token: 6379257583...
+2025-01-17 18:48:12.671 | INFO     | utils.utils:send_telegram_message:220 - Sending to chat_id: -1002313822545
+2025-01-17 18:48:12.671 | INFO     | utils.utils:send_telegram_message:241 - Attempting to send message to Telegram
+2025-01-17 18:48:12.933 | INFO     | utils.utils:send_telegram_message:247 - Message sent successfully. Status code: 200
+2025-01-17 18:48:12.933 | ERROR    | __main__:calculate_performance_score:72 - Error calculating performance score for TFC: strptime() argument 1 must be str, not datetime.datetime
+2025-01-17 18:48:12.933 | ERROR    | __main__:calculate_performance_score:72 - Error calculating performance score for SLB: strptime() argument 1 must be str, not datetime.datetime
+2025-01-17 18:48:12.933 | ERROR    | __main__:calculate_performance_score:72 - Error calculating performance score for FAST: strptime() argument 1 must be str, not datetime.datetime
+2025-01-17 18:48:12.933 | INFO     | __main__:run:168 - Completed EarningsBot workflow successfully
+2025-01-17 18:49:59.299 | INFO     | __main__:__init__:21 - Intilizing Earnings
+2025-01-17 18:49:59.299 | INFO     | __main__:run:124 - Starting EarningsBot workflow
+2025-01-17 18:50:02.705 | INFO     | utils.utils:get_earnings_calendar:118 - dataframe: 
+           date symbol   eps  ...  revenueEstimated fiscalDateEnding  updatedFromDate
+27   2025-01-17   HBAN  0.34  ...      1.895046e+09       2024-12-30       2025-01-17
+30   2025-01-17    TFC   NaN  ...      5.047370e+09       2024-12-30       2025-01-17
+118  2025-01-17    CFG   NaN  ...      1.962330e+09       2024-12-30       2025-01-15
+133  2025-01-17    SLB  0.92  ...      9.183506e+09       2024-12-30       2025-01-17
+176  2025-01-17    STT  2.60  ...      3.326274e+09       2024-12-30       2025-01-17
+
+[5 rows x 9 columns]
+2025-01-17 18:50:13.504 | INFO     | __main__:run:131 - Retrieved 7 tickers for earnings announcements
+2025-01-17 18:50:13.504 | INFO     | __main__:run:134 - Initial Message:
+2025-01-17 18:50:13.504 | INFO     | __main__:run:135 - #SP500 and #NASDAQ100 Companies that #publish #results today Friday, 17th of January of 2025: 
+ #tickers -> $TFC $SLB $FAST $STT $HBAN $RF $CFG 
+ More #information in the next tweets -> 
+
+2025-01-17 18:50:13.504 | INFO     | utils.utils:post_twitter:35 - Tweet lenght: 187
+2025-01-17 18:50:13.774 | ERROR    | utils.utils:post_twitter:41 - 429 Too Many Requests
+Too Many Requests
+2025-01-17 18:50:13.774 | INFO     | utils.utils:send_telegram_message:219 - Using bot_token: 6379257583...
+2025-01-17 18:50:13.774 | INFO     | utils.utils:send_telegram_message:220 - Sending to chat_id: -1002313822545
+2025-01-17 18:50:13.790 | INFO     | utils.utils:send_telegram_message:241 - Attempting to send message to Telegram
+2025-01-17 18:50:14.119 | INFO     | utils.utils:send_telegram_message:247 - Message sent successfully. Status code: 200
+2025-01-17 18:54:49.266 | ERROR    | __main__:calculate_performance_score:70 - Error calculating performance score for TFC: name 'df_performance' is not defined
+2025-01-17 18:54:49.682 | ERROR    | __main__:calculate_performance_score:70 - Error calculating performance score for SLB: name 'df_performance' is not defined
+2025-01-17 18:54:49.948 | ERROR    | __main__:calculate_performance_score:70 - Error calculating performance score for FAST: name 'df_performance' is not defined
+2025-01-17 18:54:49.948 | INFO     | __main__:run:166 - Completed EarningsBot workflow successfully
+2025-01-17 18:54:58.130 | INFO     | __main__:__init__:21 - Intilizing Earnings
+2025-01-17 18:54:58.130 | INFO     | __main__:run:122 - Starting EarningsBot workflow
+2025-01-17 18:55:01.256 | INFO     | utils.utils:get_earnings_calendar:118 - dataframe: 
+           date symbol   eps  ...  revenueEstimated fiscalDateEnding  updatedFromDate
+27   2025-01-17   HBAN  0.34  ...      1.895046e+09       2024-12-30       2025-01-17
+30   2025-01-17    TFC   NaN  ...      5.047370e+09       2024-12-30       2025-01-17
+134  2025-01-17    CFG   NaN  ...      1.962330e+09       2024-12-30       2025-01-15
+149  2025-01-17   FAST   NaN  ...      1.841637e+09       2024-12-30       2025-01-16
+152  2025-01-17     RF  0.59  ...      1.854119e+09       2024-12-31       2025-01-17
+
+[5 rows x 9 columns]
+2025-01-17 18:55:12.541 | INFO     | __main__:run:129 - Retrieved 7 tickers for earnings announcements
+2025-01-17 18:55:12.543 | INFO     | __main__:run:132 - Initial Message:
+2025-01-17 18:55:12.545 | INFO     | __main__:run:133 - #SP500 and #NASDAQ100 Companies that #publish #results today Friday, 17th of January of 2025: 
+ #tickers -> $TFC $SLB $FAST $STT $HBAN $RF $CFG 
+ More #information in the next tweets -> 
+
+2025-01-17 18:55:12.548 | INFO     | utils.utils:post_twitter:35 - Tweet lenght: 187
+2025-01-17 18:55:12.816 | ERROR    | utils.utils:post_twitter:41 - 429 Too Many Requests
+Too Many Requests
+2025-01-17 18:55:12.817 | INFO     | utils.utils:send_telegram_message:219 - Using bot_token: 6379257583...
+2025-01-17 18:55:12.817 | INFO     | utils.utils:send_telegram_message:220 - Sending to chat_id: -1002313822545
+2025-01-17 18:55:12.818 | INFO     | utils.utils:send_telegram_message:241 - Attempting to send message to Telegram
+2025-01-17 18:55:13.087 | INFO     | utils.utils:send_telegram_message:247 - Message sent successfully. Status code: 200
+2025-01-17 18:55:13.986 | INFO     | utils.utils:post_twitter:35 - Tweet lenght: 261
+2025-01-17 18:55:14.221 | ERROR    | utils.utils:post_twitter:41 - 429 Too Many Requests
+Too Many Requests
+2025-01-17 18:55:14.221 | INFO     | utils.utils:send_telegram_message:219 - Using bot_token: 6379257583...
+2025-01-17 18:55:14.222 | INFO     | utils.utils:send_telegram_message:220 - Sending to chat_id: -1002313822545
+2025-01-17 18:55:14.223 | INFO     | utils.utils:send_telegram_message:241 - Attempting to send message to Telegram
+2025-01-17 18:55:14.466 | INFO     | utils.utils:send_telegram_message:247 - Message sent successfully. Status code: 200
+2025-01-17 18:55:14.467 | INFO     | __main__:run:157 - Today Publish Results: 
+ #Truist Financial Corporation, -> $TFC 
+ ---->  Industry: #Banks—Regional 
+ ---->   Sector: #Financial Services 
+ Year To Day Performance: 
+ ---->  Price Change YTD = 8.77 %, 
+ ---->  Max DrawDown YTD = 2.99 %
+ #Earnings #Report #Stocks
+2025-01-17 18:55:34.676 | INFO     | utils.utils:post_twitter:35 - Tweet lenght: 258
+2025-01-17 18:55:34.936 | ERROR    | utils.utils:post_twitter:41 - 429 Too Many Requests
+Too Many Requests
+2025-01-17 18:55:34.937 | INFO     | utils.utils:send_telegram_message:219 - Using bot_token: 6379257583...
+2025-01-17 18:55:34.938 | INFO     | utils.utils:send_telegram_message:220 - Sending to chat_id: -1002313822545
+2025-01-17 18:55:34.939 | INFO     | utils.utils:send_telegram_message:241 - Attempting to send message to Telegram
+2025-01-17 18:55:35.194 | INFO     | utils.utils:send_telegram_message:247 - Message sent successfully. Status code: 200
+2025-01-17 18:55:35.196 | INFO     | __main__:run:157 - Today Publish Results: 
+ #Schlumberger Limited, -> $SLB 
+ ---->  Industry: #Oil & Gas Equipment & Services 
+ ---->   Sector: #Energy 
+ Year To Day Performance: 
+ ---->  Price Change YTD = 15.26 %, 
+ ---->  Max DrawDown YTD = 1.91 %
+ #Earnings #Report #Stocks
+2025-01-17 18:55:55.369 | INFO     | utils.utils:post_twitter:35 - Tweet lenght: 251
+2025-01-17 18:55:55.629 | ERROR    | utils.utils:post_twitter:41 - 429 Too Many Requests
+Too Many Requests
+2025-01-17 18:55:55.631 | INFO     | utils.utils:send_telegram_message:219 - Using bot_token: 6379257583...
+2025-01-17 18:55:55.632 | INFO     | utils.utils:send_telegram_message:220 - Sending to chat_id: -1002313822545
+2025-01-17 18:55:55.634 | INFO     | utils.utils:send_telegram_message:241 - Attempting to send message to Telegram
+2025-01-17 18:55:55.898 | INFO     | utils.utils:send_telegram_message:247 - Message sent successfully. Status code: 200
+2025-01-17 18:55:55.899 | INFO     | __main__:run:157 - Today Publish Results: 
+ #Fastenal Company, -> $FAST 
+ ---->  Industry: #Industrial Distribution 
+ ---->   Sector: #Industrials 
+ Year To Day Performance: 
+ ---->  Price Change YTD = 6.28 %, 
+ ---->  Max DrawDown YTD = 1.8 %
+ #Earnings #Report #Stocks
+2025-01-17 18:56:15.901 | INFO     | __main__:run:164 - Completed EarningsBot workflow successfully
