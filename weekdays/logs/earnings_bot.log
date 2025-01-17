@@ -599,3 +599,54 @@ Today Publish Results:
  ---->  Max DrawDown YTD = 1.8 %
  #Earnings #Report #Stocks
 2025-01-17 18:58:15.506 | INFO     | __main__:run:164 - Completed EarningsBot workflow successfully
+2025-01-17 18:59:52.183 | INFO     | __main__:__init__:21 - Intilizing Earnings
+2025-01-17 18:59:52.183 | INFO     | __main__:run:122 - Starting EarningsBot workflow
+2025-01-17 18:59:55.128 | INFO     | utils.utils:get_earnings_calendar:119 - dataframe: 
+           date symbol   eps  ...  revenueEstimated fiscalDateEnding  updatedFromDate
+32   2025-01-17   HBAN  0.34  ...      1.895046e+09       2024-12-30       2025-01-17
+46   2025-01-17    TFC   NaN  ...      5.047370e+09       2024-12-30       2025-01-17
+63   2025-01-17   FAST   NaN  ...      1.841637e+09       2024-12-30       2025-01-16
+67   2025-01-17     RF  0.59  ...      1.854119e+09       2024-12-31       2025-01-17
+102  2025-01-17    CFG   NaN  ...      1.962330e+09       2024-12-30       2025-01-15
+
+[5 rows x 9 columns]
+2025-01-17 19:00:05.661 | INFO     | __main__:run:129 - Retrieved 7 tickers for earnings announcements
+2025-01-17 19:00:05.663 | INFO     | __main__:run:132 - Initial Message:
+2025-01-17 19:00:05.664 | INFO     | __main__:run:133 - #SP500 and #NASDAQ100 Companies that #publish #results today Friday, 17th of January of 2025: 
+ #tickers -> $TFC $SLB $FAST $STT $HBAN $RF $CFG 
+ More #information in the next tweets -> 
+
+2025-01-17 19:00:05.665 | INFO     | utils.utils:post_twitter:35 - Tweet lenght: 187
+2025-01-17 19:00:05.923 | ERROR    | utils.utils:post_twitter:41 - 429 Too Many Requests
+Too Many Requests
+2025-01-17 19:00:05.925 | INFO     | utils.utils:send_telegram_message:220 - Using bot_token: 6379257583...
+2025-01-17 19:00:05.926 | INFO     | utils.utils:send_telegram_message:221 - Sending to chat_id: -1002313822545
+2025-01-17 19:00:05.928 | INFO     | utils.utils:send_telegram_message:242 - Attempting to send message to Telegram
+2025-01-17 19:00:06.208 | INFO     | utils.utils:send_telegram_message:248 - Message sent successfully. Status code: 200
+2025-01-17 19:00:06.210 | ERROR    | utils.utils:post_twitter:43 - Tweet Error
+Tweet Error
+: 429 Too Many Requests
+Too Many Requests
+#SP500 and #NASDAQ100 Companies that #publish #results today Friday, 17th of January of 2025: 
+ #tickers -> $TFC $SLB $FAST $STT $HBAN $RF $CFG 
+ More #information in the next tweets -> 
+
+2025-01-17 19:00:07.000 | INFO     | utils.utils:post_twitter:35 - Tweet lenght: 261
+2025-01-17 19:00:07.243 | ERROR    | utils.utils:post_twitter:41 - 429 Too Many Requests
+Too Many Requests
+2025-01-17 19:00:07.243 | INFO     | utils.utils:send_telegram_message:220 - Using bot_token: 6379257583...
+2025-01-17 19:00:07.244 | INFO     | utils.utils:send_telegram_message:221 - Sending to chat_id: -1002313822545
+2025-01-17 19:00:07.244 | INFO     | utils.utils:send_telegram_message:242 - Attempting to send message to Telegram
+2025-01-17 19:00:07.467 | INFO     | utils.utils:send_telegram_message:248 - Message sent successfully. Status code: 200
+2025-01-17 19:00:07.469 | ERROR    | utils.utils:post_twitter:43 - Tweet Error
+Tweet Error
+: 429 Too Many Requests
+Too Many Requests
+Today Publish Results: 
+ #Truist Financial Corporation, -> $TFC 
+ ---->  Industry: #Banks—Regional 
+ ---->   Sector: #Financial Services 
+ Year To Day Performance: 
+ ---->  Price Change YTD = 8.78 %, 
+ ---->  Max DrawDown YTD = 2.99 %
+ #Earnings #Report #Stocks

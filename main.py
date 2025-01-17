@@ -27,9 +27,9 @@ class Execution_twitter_information:
     def __init__(self):
 
         # These days and hours are just used for the task scheduler to know what to run at different times.
-        self.morning_update = [11]
+        self.morning_update = [8]
         self.time_open = [15,30]
-        self.time_close = [21,00]
+        self.time_close = [22,00]
         self.time_performance = [18,30]
         self.performance_markets = ['Saturday',8]
         self.performance_US_ALL = ['Saturday', 17]
