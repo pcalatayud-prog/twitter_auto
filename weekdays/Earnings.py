@@ -34,7 +34,7 @@ class EarningsBot:
             logger.error(f"Error downloading historical data for {ticker}: {e}")
             return None
 
-    def calculate_performance_score(self, ticker: str) -> pd.DataFrame:
+    def calculate_performance_score(self, ticker: str) -> dict:
         """Calculate performance metrics for a given ticker."""
         try:
             # Initialize DataFrame for performance metrics
@@ -140,8 +140,6 @@ class EarningsBot:
                 try:
                     # Calculate performance metrics
                     performance_data = self.calculate_performance_score(ticker)
-                    if performance_data is None:
-                        continue
 
                     # Get company information
                     df_data = pd.read_csv('C:/Users/peybo/PycharmProjects/twitter_auto/config/top_3000_tickers.csv')
