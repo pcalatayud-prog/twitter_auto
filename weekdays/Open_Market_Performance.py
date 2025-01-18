@@ -17,7 +17,7 @@ class Market_Daily_Performance :
     def __init__(self, tickers=None):
 
         logger.add("logs/open_market_performance.log", rotation="500 MB")
-        logger.info('Initializing Open Market Performance')
+        logger.info('Initialising Open Market Performance')
 
         # Emojis for positive/negative returns
         self.green = "\U0001F7E2"  # Green Circle
@@ -217,7 +217,7 @@ if __name__ == "__main__":
     #
     # market.market_just_open()
     # market.market_is_open()
-    market.market_is_just_closed()
+    # market.market_is_just_closed()
     market.market_1_week()
     market.market_1_year()
 

@@ -38,7 +38,7 @@ class Execution_twitter_information:
 
 
         logger.add("logs/main.log", rotation="500 MB")
-        logger.info('Initializing Main')
+        logger.info('Initialising Main')
 
         self.time = None
         self.exchange = "NYSE"
@@ -126,10 +126,10 @@ class Execution_twitter_information:
                 logger.info("Running Earnings + Dividends + Splits")
                 bot = EarningsBot()
                 bot.run()
-                time.sleep(120)
+                time.sleep(300)
                 bot = DividendBot()
                 bot.run()
-                time.sleep(120)
+                time.sleep(300)
                 bot = SplitBot()
                 bot.run()
 
@@ -148,10 +148,6 @@ class Execution_twitter_information:
                 market = Market_Daily_Performance()
                 market.market_is_just_closed()
                 market.market_1_week()
-
-            else:
-                logger.info('Nothing to post...')
-                bot_send_text('Nothing to post...')
 
         elif self.day_of_week in self.WEEKENDS:
             logger.info('Today the market is closed -> Weekend.')
@@ -173,7 +169,9 @@ class Execution_twitter_information:
             else:
                 logger.info('Nothing to post...')
                 bot_send_text('Nothing to post...')
-
+        else:
+            logger.info('Nothing to post...')
+            bot_send_text('Nothing to post...')
         return None
 
 if __name__ == "__main__":

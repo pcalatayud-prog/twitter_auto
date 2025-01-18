@@ -1,0 +1,167 @@
+2025-01-18 00:57:04.237 | INFO     | __main__:__init__:22 - Initialising company_sentiment
+2025-01-18 01:02:27.610 | INFO     | __main__:__init__:22 - Initialising company_sentiment
+2025-01-18 01:04:04.927 | INFO     | __main__:__init__:22 - Initialising company_sentiment
+2025-01-18 01:05:48.830 | ERROR    | __main__:fetch_social_sentiment:49 - No data found.
+2025-01-18 01:05:48.830 | ERROR    | __main__:getting_sentiment:70 - Error when getting sentiment score for NWS: 'float' object is not subscriptable
+2025-01-18 01:05:52.229 | ERROR    | __main__:fetch_social_sentiment:49 - No data found.
+2025-01-18 01:05:52.229 | ERROR    | __main__:getting_sentiment:70 - Error when getting sentiment score for SW: 'float' object is not subscriptable
+2025-01-18 01:05:55.629 | ERROR    | __main__:fetch_social_sentiment:49 - No data found.
+2025-01-18 01:05:55.629 | ERROR    | __main__:getting_sentiment:70 - Error when getting sentiment score for BRK-B: 'float' object is not subscriptable
+2025-01-18 01:07:14.462 | ERROR    | __main__:fetch_social_sentiment:49 - No data found.
+2025-01-18 01:07:14.462 | ERROR    | __main__:getting_sentiment:70 - Error when getting sentiment score for AZN: 'float' object is not subscriptable
+2025-01-18 01:07:40.811 | ERROR    | __main__:fetch_social_sentiment:49 - No data found.
+2025-01-18 01:07:40.815 | ERROR    | __main__:getting_sentiment:70 - Error when getting sentiment score for BF-B: 'float' object is not subscriptable
+2025-01-18 01:07:51.280 | ERROR    | __main__:fetch_social_sentiment:49 - No data found.
+2025-01-18 01:07:51.280 | ERROR    | __main__:getting_sentiment:70 - Error when getting sentiment score for FOX: 'float' object is not subscriptable
+2025-01-18 01:09:11.416 | ERROR    | __main__:fetch_social_sentiment:49 - No data found.
+2025-01-18 01:09:11.416 | ERROR    | __main__:getting_sentiment:70 - Error when getting sentiment score for GOOG: 'float' object is not subscriptable
+2025-01-18 01:09:44.191 | ERROR    | __main__:fetch_social_sentiment:49 - No data found.
+2025-01-18 01:09:44.191 | ERROR    | __main__:getting_sentiment:70 - Error when getting sentiment score for ASML: 'float' object is not subscriptable
+2025-01-18 01:10:26.013 | ERROR    | __main__:fetch_social_sentiment:49 - No data found.
+2025-01-18 01:10:26.013 | ERROR    | __main__:getting_sentiment:70 - Error when getting sentiment score for WTW: 'float' object is not subscriptable
+2025-01-18 01:14:00.671 | INFO     | __main__:__init__:22 - Initialising company_sentiment
+2025-01-18 01:14:12.494 | ERROR    | __main__:fetch_social_sentiment:49 - No data found.
+2025-01-18 01:14:12.494 | ERROR    | __main__:getting_sentiment:73 - Error when getting sentiment score for NWS: 'float' object is not subscriptable
+2025-01-18 01:14:16.125 | ERROR    | __main__:fetch_social_sentiment:49 - No data found.
+2025-01-18 01:14:16.141 | ERROR    | __main__:getting_sentiment:73 - Error when getting sentiment score for WTW: 'float' object is not subscriptable
+2025-01-18 01:14:20.172 | ERROR    | __main__:fetch_social_sentiment:49 - No data found.
+2025-01-18 01:14:20.188 | ERROR    | __main__:getting_sentiment:73 - Error when getting sentiment score for AZN: 'float' object is not subscriptable
+2025-01-18 01:15:24.566 | ERROR    | __main__:fetch_social_sentiment:49 - No data found.
+2025-01-18 01:15:24.582 | ERROR    | __main__:getting_sentiment:73 - Error when getting sentiment score for ASML: 'float' object is not subscriptable
+2025-01-18 01:16:07.307 | ERROR    | __main__:fetch_social_sentiment:49 - No data found.
+2025-01-18 01:16:07.307 | ERROR    | __main__:getting_sentiment:73 - Error when getting sentiment score for FOX: 'float' object is not subscriptable
+2025-01-18 01:16:14.689 | ERROR    | __main__:fetch_social_sentiment:49 - No data found.
+2025-01-18 01:16:14.689 | ERROR    | __main__:getting_sentiment:73 - Error when getting sentiment score for SW: 'float' object is not subscriptable
+2025-01-18 01:16:18.146 | ERROR    | __main__:fetch_social_sentiment:49 - No data found.
+2025-01-18 01:16:18.146 | ERROR    | __main__:getting_sentiment:73 - Error when getting sentiment score for GOOG: 'float' object is not subscriptable
+2025-01-18 01:16:46.491 | ERROR    | __main__:fetch_social_sentiment:49 - No data found.
+2025-01-18 01:16:46.491 | ERROR    | __main__:getting_sentiment:73 - Error when getting sentiment score for BRK-B: 'float' object is not subscriptable
+2025-01-18 01:18:27.099 | ERROR    | __main__:fetch_social_sentiment:49 - No data found.
+2025-01-18 01:18:27.099 | ERROR    | __main__:getting_sentiment:73 - Error when getting sentiment score for BF-B: 'float' object is not subscriptable
+2025-01-18 01:28:59.881 | INFO     | __main__:__init__:22 - Initialising company_sentiment
+2025-01-18 01:29:29.648 | ERROR    | __main__:fetch_social_sentiment:49 - No data found.
+2025-01-18 01:29:29.648 | ERROR    | __main__:getting_sentiment:99 - Error when getting sentiment score for NWS: 'float' object is not subscriptable
+2025-01-18 01:30:27.989 | ERROR    | __main__:fetch_social_sentiment:49 - No data found.
+2025-01-18 01:30:27.994 | ERROR    | __main__:getting_sentiment:99 - Error when getting sentiment score for ASML: 'float' object is not subscriptable
+2025-01-18 01:31:08.861 | ERROR    | __main__:fetch_social_sentiment:49 - No data found.
+2025-01-18 01:31:08.861 | ERROR    | __main__:getting_sentiment:99 - Error when getting sentiment score for AZN: 'float' object is not subscriptable
+2025-01-18 01:31:21.242 | ERROR    | __main__:fetch_social_sentiment:49 - No data found.
+2025-01-18 01:31:21.242 | ERROR    | __main__:getting_sentiment:99 - Error when getting sentiment score for GOOG: 'float' object is not subscriptable
+2025-01-18 01:31:40.627 | ERROR    | __main__:fetch_social_sentiment:49 - No data found.
+2025-01-18 01:31:40.627 | ERROR    | __main__:getting_sentiment:99 - Error when getting sentiment score for SW: 'float' object is not subscriptable
+2025-01-18 01:31:41.717 | ERROR    | __main__:fetch_social_sentiment:49 - No data found.
+2025-01-18 01:31:41.733 | ERROR    | __main__:getting_sentiment:99 - Error when getting sentiment score for BF-B: 'float' object is not subscriptable
+2025-01-18 01:32:41.860 | ERROR    | __main__:fetch_social_sentiment:49 - No data found.
+2025-01-18 01:32:41.876 | ERROR    | __main__:getting_sentiment:99 - Error when getting sentiment score for BRK-B: 'float' object is not subscriptable
+2025-01-18 01:33:55.831 | ERROR    | __main__:fetch_social_sentiment:49 - No data found.
+2025-01-18 01:33:55.831 | ERROR    | __main__:getting_sentiment:99 - Error when getting sentiment score for FOX: 'float' object is not subscriptable
+2025-01-18 01:34:18.485 | ERROR    | __main__:fetch_social_sentiment:49 - No data found.
+2025-01-18 01:34:18.485 | ERROR    | __main__:getting_sentiment:99 - Error when getting sentiment score for WTW: 'float' object is not subscriptable
+2025-01-18 01:48:29.098 | INFO     | __main__:<module>:6 - Last 2 dates: ['2025-01-17 19:00:00' '2025-01-17 18:00:00']
+2025-01-18 01:58:45.177 | INFO     | __main__:<module>:6 - Last 2 dates: ['2025-01-17 19:00:00' '2025-01-17 18:00:00']
+2025-01-18 02:01:06.797 | INFO     | __main__:<module>:6 - Last 2 dates: ['2025-01-17 19:00:00' '2025-01-17 18:00:00']
+2025-01-18 02:06:53.099 | INFO     | __main__:<module>:5 - Last 2 dates: ['2025-01-17 19:00:00' '2025-01-17 18:00:00']
+2025-01-18 02:07:12.397 | INFO     | __main__:<module>:5 - Last 2 dates: ['2025-01-17 19:00:00' '2025-01-17 18:00:00']
+2025-01-18 02:07:52.846 | INFO     | __main__:<module>:5 - Last 2 dates: ['2025-01-17 19:00:00' '2025-01-17 18:00:00']
+2025-01-18 02:09:31.938 | INFO     | __main__:<module>:5 - Last 2 dates: ['2025-01-17 19:00:00' '2025-01-17 18:00:00']
+2025-01-18 02:10:20.423 | INFO     | __main__:__init__:22 - Initialising company_sentiment
+2025-01-18 02:11:00.559 | ERROR    | __main__:fetch_social_sentiment:49 - No data found.
+2025-01-18 02:11:00.564 | ERROR    | __main__:getting_sentiment:97 - Error when getting sentiment score for NWS: 'float' object is not subscriptable
+2025-01-18 02:12:02.518 | ERROR    | __main__:fetch_social_sentiment:49 - No data found.
+2025-01-18 02:12:02.519 | ERROR    | __main__:getting_sentiment:97 - Error when getting sentiment score for GOOG: 'float' object is not subscriptable
+2025-01-18 02:12:03.046 | ERROR    | __main__:fetch_social_sentiment:49 - No data found.
+2025-01-18 02:12:03.049 | ERROR    | __main__:getting_sentiment:97 - Error when getting sentiment score for BF-B: 'float' object is not subscriptable
+2025-01-18 02:12:14.031 | ERROR    | __main__:fetch_social_sentiment:49 - No data found.
+2025-01-18 02:12:14.047 | ERROR    | __main__:getting_sentiment:97 - Error when getting sentiment score for WTW: 'float' object is not subscriptable
+2025-01-18 02:12:47.773 | ERROR    | __main__:fetch_social_sentiment:49 - No data found.
+2025-01-18 02:12:47.789 | ERROR    | __main__:getting_sentiment:97 - Error when getting sentiment score for SW: 'float' object is not subscriptable
+2025-01-18 02:13:02.122 | ERROR    | __main__:fetch_social_sentiment:49 - No data found.
+2025-01-18 02:13:02.122 | ERROR    | __main__:getting_sentiment:97 - Error when getting sentiment score for BRK-B: 'float' object is not subscriptable
+2025-01-18 02:13:19.719 | ERROR    | __main__:fetch_social_sentiment:49 - No data found.
+2025-01-18 02:13:19.734 | ERROR    | __main__:getting_sentiment:97 - Error when getting sentiment score for FOX: 'float' object is not subscriptable
+2025-01-18 02:14:10.730 | ERROR    | __main__:fetch_social_sentiment:49 - No data found.
+2025-01-18 02:14:10.730 | ERROR    | __main__:getting_sentiment:97 - Error when getting sentiment score for AZN: 'float' object is not subscriptable
+2025-01-18 02:15:10.245 | ERROR    | __main__:fetch_social_sentiment:49 - No data found.
+2025-01-18 02:15:10.245 | ERROR    | __main__:getting_sentiment:97 - Error when getting sentiment score for ASML: 'float' object is not subscriptable
+2025-01-18 02:15:40.079 | INFO     | __main__:getting_sentiment:104 - Last 2 dates: ['2025-01-17 20:00:00' '2025-01-17 19:00:00']
+2025-01-18 02:24:52.650 | INFO     | __main__:__init__:23 - Initialising company_sentiment
+2025-01-18 02:25:24.198 | INFO     | __main__:__init__:23 - Initialising company_sentiment
+2025-01-18 02:31:38.387 | INFO     | __main__:__init__:23 - Initialising company_sentiment
+2025-01-18 02:32:27.304 | INFO     | __main__:__init__:23 - Initialising company_sentiment
+2025-01-18 02:34:03.103 | INFO     | __main__:<module>:1 - 🔥 $INTC is trending! 
+
+Intel Corporation metrics:
+📈 YTD: 6.3%
+📉 Max Drawdown: -6.9%
+
+#Stocks #Trading #INTC
+2025-01-18 02:39:23.690 | INFO     | __main__:__init__:23 - Initialising company_sentiment
+2025-01-18 02:40:44.067 | INFO     | __main__:__init__:23 - Initialising company_sentiment
+2025-01-18 02:40:48.661 | ERROR    | __main__:fetch_social_sentiment:53 - No data found.
+2025-01-18 02:40:48.677 | ERROR    | __main__:getting_sentiment:101 - Error when getting sentiment score for AZN: 'float' object is not subscriptable
+2025-01-18 02:41:04.194 | ERROR    | __main__:fetch_social_sentiment:53 - No data found.
+2025-01-18 02:41:04.194 | ERROR    | __main__:getting_sentiment:101 - Error when getting sentiment score for SW: 'float' object is not subscriptable
+2025-01-18 02:41:10.096 | ERROR    | __main__:fetch_social_sentiment:53 - No data found.
+2025-01-18 02:41:10.111 | ERROR    | __main__:getting_sentiment:101 - Error when getting sentiment score for GOOG: 'float' object is not subscriptable
+2025-01-18 02:41:31.523 | ERROR    | __main__:fetch_social_sentiment:53 - No data found.
+2025-01-18 02:41:31.523 | ERROR    | __main__:getting_sentiment:101 - Error when getting sentiment score for NWS: 'float' object is not subscriptable
+2025-01-18 02:43:51.281 | ERROR    | __main__:fetch_social_sentiment:53 - No data found.
+2025-01-18 02:43:51.297 | ERROR    | __main__:getting_sentiment:101 - Error when getting sentiment score for ASML: 'float' object is not subscriptable
+2025-01-18 02:44:02.782 | ERROR    | __main__:fetch_social_sentiment:53 - No data found.
+2025-01-18 02:44:02.797 | ERROR    | __main__:getting_sentiment:101 - Error when getting sentiment score for FOX: 'float' object is not subscriptable
+2025-01-18 02:45:08.844 | ERROR    | __main__:fetch_social_sentiment:53 - No data found.
+2025-01-18 02:45:08.844 | ERROR    | __main__:getting_sentiment:101 - Error when getting sentiment score for WTW: 'float' object is not subscriptable
+2025-01-18 02:45:28.997 | ERROR    | __main__:fetch_social_sentiment:53 - No data found.
+2025-01-18 02:45:29.008 | ERROR    | __main__:getting_sentiment:101 - Error when getting sentiment score for BF-B: 'float' object is not subscriptable
+2025-01-18 02:45:51.660 | ERROR    | __main__:fetch_social_sentiment:53 - No data found.
+2025-01-18 02:45:51.660 | ERROR    | __main__:getting_sentiment:101 - Error when getting sentiment score for BRK-B: 'float' object is not subscriptable
+2025-01-18 02:46:02.539 | INFO     | __main__:getting_sentiment:108 - Last 2 dates: ['2025-01-17 20:00:00' '2025-01-17 19:00:00']
+2025-01-18 03:12:50.105 | INFO     | __main__:__init__:23 - Initialising company_sentiment
+2025-01-18 03:13:24.274 | ERROR    | __main__:fetch_social_sentiment:53 - No data found.
+2025-01-18 03:13:24.277 | ERROR    | __main__:getting_sentiment:101 - Error when getting sentiment score for FOX: 'float' object is not subscriptable
+2025-01-18 03:13:24.773 | ERROR    | __main__:fetch_social_sentiment:53 - No data found.
+2025-01-18 03:13:24.775 | ERROR    | __main__:getting_sentiment:101 - Error when getting sentiment score for GOOG: 'float' object is not subscriptable
+2025-01-18 03:13:32.147 | ERROR    | __main__:fetch_social_sentiment:53 - No data found.
+2025-01-18 03:13:32.149 | ERROR    | __main__:getting_sentiment:101 - Error when getting sentiment score for BRK-B: 'float' object is not subscriptable
+2025-01-18 03:14:38.467 | ERROR    | __main__:fetch_social_sentiment:53 - No data found.
+2025-01-18 03:14:38.468 | ERROR    | __main__:getting_sentiment:101 - Error when getting sentiment score for AZN: 'float' object is not subscriptable
+2025-01-18 03:15:37.293 | ERROR    | __main__:fetch_social_sentiment:53 - No data found.
+2025-01-18 03:15:37.296 | ERROR    | __main__:getting_sentiment:101 - Error when getting sentiment score for ASML: 'float' object is not subscriptable
+2025-01-18 03:15:58.883 | ERROR    | __main__:fetch_social_sentiment:53 - No data found.
+2025-01-18 03:15:58.886 | ERROR    | __main__:getting_sentiment:101 - Error when getting sentiment score for WTW: 'float' object is not subscriptable
+2025-01-18 03:16:03.446 | ERROR    | __main__:fetch_social_sentiment:53 - No data found.
+2025-01-18 03:16:03.447 | ERROR    | __main__:getting_sentiment:101 - Error when getting sentiment score for SW: 'float' object is not subscriptable
+2025-01-18 03:17:01.324 | ERROR    | __main__:fetch_social_sentiment:53 - No data found.
+2025-01-18 03:17:01.327 | ERROR    | __main__:getting_sentiment:101 - Error when getting sentiment score for NWS: 'float' object is not subscriptable
+2025-01-18 03:17:55.601 | ERROR    | __main__:fetch_social_sentiment:53 - No data found.
+2025-01-18 03:17:55.602 | ERROR    | __main__:getting_sentiment:101 - Error when getting sentiment score for BF-B: 'float' object is not subscriptable
+2025-01-18 03:18:05.226 | INFO     | __main__:getting_sentiment:108 - Last 2 dates: ['2025-01-17 21:00:00' '2025-01-17 20:00:00']
+2025-01-18 03:18:06.571 | INFO     | __main__:generate_trend_tweet:175 - 🔥Tesla, Inc.: -> $TSLA is trending on X! 
+Posts of $TSLA last hour: 40
+Impressions of $TSLA last hour: 1286652
+Likes of $TSLA last hour: 1157
+Comments of $TSLA last hour: 347
+Sentiment Score of $TSLA last hour: 0.56042
+📈 YTD: 12.4%
+📉 Max Drawdown: -4.1%
+
+2025-01-18 03:18:06.572 | INFO     | utils.utils:post_twitter:35 - Tweet lenght: 254
+2025-01-18 03:18:06.870 | ERROR    | utils.utils:post_twitter:42 - 429 Too Many Requests
+Too Many Requests
+2025-01-18 03:18:06.871 | INFO     | utils.utils:send_telegram_message:221 - Using bot_token: 6379257583...
+2025-01-18 03:18:06.872 | INFO     | utils.utils:send_telegram_message:222 - Sending to chat_id: -1002313822545
+2025-01-18 03:18:06.874 | INFO     | utils.utils:send_telegram_message:243 - Attempting to send message to Telegram
+2025-01-18 03:18:07.126 | INFO     | utils.utils:send_telegram_message:249 - Message sent successfully. Status code: 200
+2025-01-18 03:18:07.130 | ERROR    | utils.utils:post_twitter:44 - Tweet Error
+Tweet Error
+: 429 Too Many Requests
+Too Many Requests
+🔥Tesla, Inc.: -> $TSLA is trending on X! 
+Posts of $TSLA last hour: 40
+Impressions of $TSLA last hour: 1286652
+Likes of $TSLA last hour: 1157
+Comments of $TSLA last hour: 347
+Sentiment Score of $TSLA last hour: 0.56042
+📈 YTD: 12.4%
+📉 Max Drawdown: -4.1%
+
