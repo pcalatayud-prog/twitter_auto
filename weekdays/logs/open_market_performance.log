@@ -16872,3 +16872,688 @@ Nasdaq-100 &S SP-500 are Closed NOW!.
 🟢 $TRGP -> 163 %
 🟢 $NVDA -> 131 %
 
+2025-01-19 19:25:50.055 | INFO     | __main__:__init__:20 - Initialising Open Market Performance
+2025-01-19 19:25:51.973 | INFO     | __main__:getting_tickers_data:61 - Successfully processed EXR
+2025-01-19 19:25:52.131 | INFO     | __main__:getting_tickers_data:61 - Successfully processed MDT
+2025-01-19 19:25:52.253 | INFO     | __main__:getting_tickers_data:61 - Successfully processed NVDA
+2025-01-19 19:25:52.396 | INFO     | __main__:getting_tickers_data:61 - Successfully processed ALGN
+2025-01-19 19:25:52.523 | INFO     | __main__:getting_tickers_data:61 - Successfully processed BSX
+2025-01-19 19:25:52.673 | INFO     | __main__:getting_tickers_data:61 - Successfully processed SBUX
+2025-01-19 19:25:52.821 | INFO     | __main__:getting_tickers_data:61 - Successfully processed FDS
+2025-01-19 19:25:52.972 | INFO     | __main__:getting_tickers_data:61 - Successfully processed CMCSA
+2025-01-19 19:25:53.135 | INFO     | __main__:getting_tickers_data:61 - Successfully processed AVB
+2025-01-19 19:25:53.319 | INFO     | __main__:getting_tickers_data:61 - Successfully processed IBM
+2025-01-19 19:25:53.466 | INFO     | __main__:getting_tickers_data:61 - Successfully processed LIN
+2025-01-19 19:25:53.593 | INFO     | __main__:getting_tickers_data:61 - Successfully processed APO
+2025-01-19 19:25:53.748 | INFO     | __main__:getting_tickers_data:61 - Successfully processed DLR
+2025-01-19 19:25:53.893 | INFO     | __main__:getting_tickers_data:61 - Successfully processed ALB
+2025-01-19 19:25:54.003 | INFO     | __main__:getting_tickers_data:61 - Successfully processed CPAY
+2025-01-19 19:25:54.216 | INFO     | __main__:getting_tickers_data:61 - Successfully processed PPG
+2025-01-19 19:25:54.347 | INFO     | __main__:getting_tickers_data:61 - Successfully processed DGX
+2025-01-19 19:25:54.492 | INFO     | __main__:getting_tickers_data:61 - Successfully processed DECK
+2025-01-19 19:25:54.590 | INFO     | __main__:getting_tickers_data:61 - Successfully processed ARM
+2025-01-19 19:25:54.756 | INFO     | __main__:getting_tickers_data:61 - Successfully processed CCL
+2025-01-19 19:25:54.912 | INFO     | __main__:getting_tickers_data:61 - Successfully processed HES
+2025-01-19 19:25:55.022 | INFO     | __main__:getting_tickers_data:61 - Successfully processed ABNB
+2025-01-19 19:25:55.212 | INFO     | __main__:getting_tickers_data:61 - Successfully processed OKE
+2025-01-19 19:25:55.339 | INFO     | __main__:getting_tickers_data:61 - Successfully processed RSG
+2025-01-19 19:25:55.461 | INFO     | __main__:getting_tickers_data:61 - Successfully processed VRSN
+2025-01-19 19:25:55.611 | INFO     | __main__:getting_tickers_data:61 - Successfully processed IVZ
+2025-01-19 19:25:55.788 | INFO     | __main__:getting_tickers_data:61 - Successfully processed MKC
+2025-01-19 19:25:55.951 | INFO     | __main__:getting_tickers_data:61 - Successfully processed K
+2025-01-19 19:25:56.132 | INFO     | __main__:getting_tickers_data:61 - Successfully processed MCK
+2025-01-19 19:25:56.272 | INFO     | __main__:getting_tickers_data:61 - Successfully processed FIS
+2025-01-19 19:25:56.372 | INFO     | __main__:getting_tickers_data:61 - Successfully processed LULU
+2025-01-19 19:25:56.529 | INFO     | __main__:getting_tickers_data:61 - Successfully processed VICI
+2025-01-19 19:25:56.685 | INFO     | __main__:getting_tickers_data:61 - Successfully processed KMI
+2025-01-19 19:25:56.826 | INFO     | __main__:getting_tickers_data:61 - Successfully processed HIG
+2025-01-19 19:25:57.003 | INFO     | __main__:getting_tickers_data:61 - Successfully processed ERIE
+2025-01-19 19:25:57.102 | INFO     | __main__:getting_tickers_data:61 - Successfully processed AMZN
+2025-01-19 19:25:57.293 | INFO     | __main__:getting_tickers_data:61 - Successfully processed ROP
+2025-01-19 19:25:57.396 | INFO     | __main__:getting_tickers_data:61 - Successfully processed WBD
+2025-01-19 19:25:57.552 | INFO     | __main__:getting_tickers_data:61 - Successfully processed WEC
+2025-01-19 19:25:57.744 | INFO     | __main__:getting_tickers_data:61 - Successfully processed PEG
+2025-01-19 19:25:57.882 | INFO     | __main__:getting_tickers_data:61 - Successfully processed VRSK
+2025-01-19 19:25:58.006 | INFO     | __main__:getting_tickers_data:61 - Successfully processed CTVA
+2025-01-19 19:25:58.197 | INFO     | __main__:getting_tickers_data:61 - Successfully processed JPM
+2025-01-19 19:25:58.379 | INFO     | __main__:getting_tickers_data:61 - Successfully processed LOW
+2025-01-19 19:25:58.506 | INFO     | __main__:getting_tickers_data:61 - Successfully processed KKR
+2025-01-19 19:25:58.662 | INFO     | __main__:getting_tickers_data:61 - Successfully processed STX
+2025-01-19 19:25:58.833 | INFO     | __main__:getting_tickers_data:61 - Successfully processed ADM
+2025-01-19 19:25:58.972 | INFO     | __main__:getting_tickers_data:61 - Successfully processed AEE
+2025-01-19 19:25:59.135 | INFO     | __main__:getting_tickers_data:61 - Successfully processed PFG
+2025-01-19 19:25:59.289 | INFO     | __main__:getting_tickers_data:61 - Successfully processed GIS
+2025-01-19 19:25:59.431 | INFO     | __main__:getting_tickers_data:61 - Successfully processed AKAM
+2025-01-19 19:25:59.569 | INFO     | __main__:getting_tickers_data:61 - Successfully processed RL
+2025-01-19 19:25:59.741 | INFO     | __main__:getting_tickers_data:61 - Successfully processed HUM
+2025-01-19 19:25:59.886 | INFO     | __main__:getting_tickers_data:61 - Successfully processed AAPL
+2025-01-19 19:26:00.078 | INFO     | __main__:getting_tickers_data:61 - Successfully processed FDX
+2025-01-19 19:26:00.232 | INFO     | __main__:getting_tickers_data:61 - Successfully processed ALLE
+2025-01-19 19:26:00.377 | INFO     | __main__:getting_tickers_data:61 - Successfully processed BRO
+2025-01-19 19:26:00.524 | INFO     | __main__:getting_tickers_data:61 - Successfully processed SCHW
+2025-01-19 19:26:00.696 | INFO     | __main__:getting_tickers_data:61 - Successfully processed KR
+2025-01-19 19:26:00.884 | INFO     | __main__:getting_tickers_data:61 - Successfully processed NEE
+2025-01-19 19:26:01.025 | INFO     | __main__:getting_tickers_data:61 - Successfully processed FCX
+2025-01-19 19:26:01.149 | INFO     | __main__:getting_tickers_data:61 - Successfully processed GEN
+2025-01-19 19:26:01.263 | INFO     | __main__:getting_tickers_data:61 - Successfully processed ENPH
+2025-01-19 19:26:01.373 | INFO     | __main__:getting_tickers_data:61 - Successfully processed CRM
+2025-01-19 19:26:01.568 | INFO     | __main__:getting_tickers_data:61 - Successfully processed CMS
+2025-01-19 19:26:01.684 | INFO     | __main__:getting_tickers_data:61 - Successfully processed ZBH
+2025-01-19 19:26:01.864 | INFO     | __main__:getting_tickers_data:61 - Successfully processed SHW
+2025-01-19 19:26:01.990 | INFO     | __main__:getting_tickers_data:61 - Successfully processed AMAT
+2025-01-19 19:26:02.166 | INFO     | __main__:getting_tickers_data:61 - Successfully processed HAS
+2025-01-19 19:26:02.341 | INFO     | __main__:getting_tickers_data:61 - Successfully processed LHX
+2025-01-19 19:26:02.471 | INFO     | __main__:getting_tickers_data:61 - Successfully processed ASML
+2025-01-19 19:26:02.595 | INFO     | __main__:getting_tickers_data:61 - Successfully processed BR
+2025-01-19 19:26:02.757 | INFO     | __main__:getting_tickers_data:61 - Successfully processed EQR
+2025-01-19 19:26:02.921 | INFO     | __main__:getting_tickers_data:61 - Successfully processed PEP
+2025-01-19 19:26:03.056 | INFO     | __main__:getting_tickers_data:61 - Successfully processed ADSK
+2025-01-19 19:26:03.211 | INFO     | __main__:getting_tickers_data:61 - Successfully processed MPWR
+2025-01-19 19:26:03.350 | INFO     | __main__:getting_tickers_data:61 - Successfully processed XYL
+2025-01-19 19:26:03.495 | INFO     | __main__:getting_tickers_data:61 - Successfully processed PRU
+2025-01-19 19:26:03.643 | INFO     | __main__:getting_tickers_data:61 - Successfully processed LEN
+2025-01-19 19:26:03.762 | INFO     | __main__:getting_tickers_data:61 - Successfully processed DOW
+2025-01-19 19:26:03.930 | INFO     | __main__:getting_tickers_data:61 - Successfully processed BMY
+2025-01-19 19:26:04.093 | INFO     | __main__:getting_tickers_data:61 - Successfully processed MA
+2025-01-19 19:26:04.255 | INFO     | __main__:getting_tickers_data:61 - Successfully processed JNPR
+2025-01-19 19:26:04.421 | INFO     | __main__:getting_tickers_data:61 - Successfully processed GLW
+2025-01-19 19:26:04.553 | INFO     | __main__:getting_tickers_data:61 - Successfully processed STLD
+2025-01-19 19:26:04.705 | INFO     | __main__:getting_tickers_data:61 - Successfully processed CINF
+2025-01-19 19:26:04.900 | INFO     | __main__:getting_tickers_data:61 - Successfully processed BKR
+2025-01-19 19:26:05.122 | INFO     | __main__:getting_tickers_data:61 - Successfully processed RTX
+2025-01-19 19:26:05.251 | INFO     | __main__:getting_tickers_data:61 - Successfully processed WAT
+2025-01-19 19:26:05.384 | INFO     | __main__:getting_tickers_data:61 - Successfully processed HWM
+2025-01-19 19:26:05.518 | INFO     | __main__:getting_tickers_data:61 - Successfully processed DAL
+2025-01-19 19:26:05.693 | INFO     | __main__:getting_tickers_data:61 - Successfully processed EOG
+2025-01-19 19:26:05.879 | INFO     | __main__:getting_tickers_data:61 - Successfully processed PKG
+2025-01-19 19:26:06.010 | INFO     | __main__:getting_tickers_data:61 - Successfully processed CF
+2025-01-19 19:26:06.124 | INFO     | __main__:getting_tickers_data:61 - Successfully processed WDAY
+2025-01-19 19:26:06.285 | INFO     | __main__:getting_tickers_data:61 - Successfully processed WMB
+2025-01-19 19:26:06.480 | INFO     | __main__:getting_tickers_data:61 - Successfully processed HON
+2025-01-19 19:26:06.638 | INFO     | __main__:getting_tickers_data:61 - Successfully processed GL
+2025-01-19 19:26:06.769 | INFO     | __main__:getting_tickers_data:61 - Successfully processed AZO
+2025-01-19 19:26:06.878 | INFO     | __main__:getting_tickers_data:61 - Successfully processed CZR
+2025-01-19 19:26:07.007 | INFO     | __main__:getting_tickers_data:61 - Successfully processed ARE
+2025-01-19 19:26:07.163 | INFO     | __main__:getting_tickers_data:61 - Successfully processed CI
+2025-01-19 19:26:07.322 | INFO     | __main__:getting_tickers_data:61 - Successfully processed CCEP
+2025-01-19 19:26:07.482 | INFO     | __main__:getting_tickers_data:61 - Successfully processed BALL
+2025-01-19 19:26:07.651 | INFO     | __main__:getting_tickers_data:61 - Successfully processed GWW
+2025-01-19 19:26:07.774 | INFO     | __main__:getting_tickers_data:61 - Successfully processed PSX
+2025-01-19 19:26:07.939 | INFO     | __main__:getting_tickers_data:61 - Successfully processed SO
+2025-01-19 19:26:08.042 | INFO     | __main__:getting_tickers_data:61 - Successfully processed AMD
+2025-01-19 19:26:08.189 | INFO     | __main__:getting_tickers_data:61 - Successfully processed IR
+2025-01-19 19:26:08.350 | INFO     | __main__:getting_tickers_data:61 - Successfully processed TGT
+2025-01-19 19:26:08.461 | INFO     | __main__:getting_tickers_data:61 - Successfully processed CBRE
+2025-01-19 19:26:08.623 | INFO     | __main__:getting_tickers_data:61 - Successfully processed MLM
+2025-01-19 19:26:08.767 | INFO     | __main__:getting_tickers_data:61 - Successfully processed TPR
+2025-01-19 19:26:08.915 | INFO     | __main__:getting_tickers_data:61 - Successfully processed TFX
+2025-01-19 19:26:09.037 | INFO     | __main__:getting_tickers_data:61 - Successfully processed HCA
+2025-01-19 19:26:09.154 | INFO     | __main__:getting_tickers_data:61 - Successfully processed TDY
+2025-01-19 19:26:09.305 | INFO     | __main__:getting_tickers_data:61 - Successfully processed HST
+2025-01-19 19:26:09.509 | INFO     | __main__:getting_tickers_data:61 - Successfully processed TT
+2025-01-19 19:26:09.641 | INFO     | __main__:getting_tickers_data:61 - Successfully processed BK
+2025-01-19 19:26:09.771 | INFO     | __main__:getting_tickers_data:61 - Successfully processed TEAM
+2025-01-19 19:26:09.907 | INFO     | __main__:getting_tickers_data:61 - Successfully processed VLTO
+2025-01-19 19:26:10.084 | INFO     | __main__:getting_tickers_data:61 - Successfully processed IFF
+2025-01-19 19:26:10.255 | INFO     | __main__:getting_tickers_data:61 - Successfully processed BWA
+2025-01-19 19:26:10.378 | INFO     | __main__:getting_tickers_data:61 - Successfully processed CE
+2025-01-19 19:26:10.646 | INFO     | __main__:getting_tickers_data:61 - Successfully processed DTE
+2025-01-19 19:26:10.750 | INFO     | __main__:getting_tickers_data:61 - Successfully processed SMCI
+2025-01-19 19:26:10.896 | INFO     | __main__:getting_tickers_data:61 - Successfully processed ISRG
+2025-01-19 19:26:11.068 | INFO     | __main__:getting_tickers_data:61 - Successfully processed BG
+2025-01-19 19:26:11.184 | INFO     | __main__:getting_tickers_data:61 - Successfully processed ACN
+2025-01-19 19:26:11.340 | INFO     | __main__:getting_tickers_data:61 - Successfully processed BBY
+2025-01-19 19:26:11.466 | INFO     | __main__:getting_tickers_data:61 - Successfully processed DXCM
+2025-01-19 19:26:11.639 | INFO     | __main__:getting_tickers_data:61 - Successfully processed KO
+2025-01-19 19:26:11.774 | INFO     | __main__:getting_tickers_data:61 - Successfully processed INTC
+2025-01-19 19:26:11.911 | INFO     | __main__:getting_tickers_data:61 - Successfully processed MAA
+2025-01-19 19:26:12.059 | INFO     | __main__:getting_tickers_data:61 - Successfully processed QCOM
+2025-01-19 19:26:12.181 | INFO     | __main__:getting_tickers_data:61 - Successfully processed PODD
+2025-01-19 19:26:12.336 | INFO     | __main__:getting_tickers_data:61 - Successfully processed NRG
+2025-01-19 19:26:12.540 | INFO     | __main__:getting_tickers_data:61 - Successfully processed MAS
+2025-01-19 19:26:12.725 | INFO     | __main__:getting_tickers_data:61 - Successfully processed CVX
+2025-01-19 19:26:12.845 | INFO     | __main__:getting_tickers_data:61 - Successfully processed CARR
+2025-01-19 19:26:12.998 | INFO     | __main__:getting_tickers_data:61 - Successfully processed MTCH
+2025-01-19 19:26:13.175 | INFO     | __main__:getting_tickers_data:61 - Successfully processed MOS
+2025-01-19 19:26:13.320 | INFO     | __main__:getting_tickers_data:61 - Successfully processed DG
+2025-01-19 19:26:13.436 | INFO     | __main__:getting_tickers_data:61 - Successfully processed ORLY
+2025-01-19 19:26:13.607 | INFO     | __main__:getting_tickers_data:61 - Successfully processed GS
+2025-01-19 19:26:13.769 | INFO     | __main__:getting_tickers_data:61 - Successfully processed UNH
+2025-01-19 19:26:13.897 | INFO     | __main__:getting_tickers_data:61 - Successfully processed INVH
+2025-01-19 19:26:14.073 | INFO     | __main__:getting_tickers_data:61 - Successfully processed FITB
+2025-01-19 19:26:14.185 | INFO     | __main__:getting_tickers_data:61 - Successfully processed VST
+2025-01-19 19:26:14.337 | INFO     | __main__:getting_tickers_data:61 - Successfully processed BX
+2025-01-19 19:26:14.522 | INFO     | __main__:getting_tickers_data:61 - Successfully processed CMI
+2025-01-19 19:26:14.734 | INFO     | __main__:getting_tickers_data:61 - Successfully processed ETR
+2025-01-19 19:26:14.847 | INFO     | __main__:getting_tickers_data:61 - Successfully processed HPE
+2025-01-19 19:26:15.014 | INFO     | __main__:getting_tickers_data:61 - Successfully processed MS
+2025-01-19 19:26:15.154 | INFO     | __main__:getting_tickers_data:61 - Successfully processed GEHC
+2025-01-19 19:26:15.277 | INFO     | __main__:getting_tickers_data:61 - Successfully processed PTC
+2025-01-19 19:26:15.448 | INFO     | __main__:getting_tickers_data:61 - Successfully processed JKHY
+2025-01-19 19:26:15.578 | INFO     | __main__:getting_tickers_data:61 - Successfully processed TTD
+2025-01-19 19:26:15.820 | INFO     | __main__:getting_tickers_data:61 - Successfully processed RF
+2025-01-19 19:26:15.994 | INFO     | __main__:getting_tickers_data:61 - Successfully processed ES
+2025-01-19 19:26:16.157 | INFO     | __main__:getting_tickers_data:61 - Successfully processed DOC
+2025-01-19 19:26:16.333 | INFO     | __main__:getting_tickers_data:61 - Successfully processed MO
+2025-01-19 19:26:16.475 | INFO     | __main__:getting_tickers_data:61 - Successfully processed GILD
+2025-01-19 19:26:16.592 | INFO     | __main__:getting_tickers_data:61 - Successfully processed SNPS
+2025-01-19 19:26:16.759 | INFO     | __main__:getting_tickers_data:61 - Successfully processed ADP
+2025-01-19 19:26:16.920 | INFO     | __main__:getting_tickers_data:61 - Successfully processed RVTY
+2025-01-19 19:26:17.062 | INFO     | __main__:getting_tickers_data:61 - Successfully processed EQT
+2025-01-19 19:26:17.252 | INFO     | __main__:getting_tickers_data:61 - Successfully processed PGR
+2025-01-19 19:26:17.433 | INFO     | __main__:getting_tickers_data:61 - Successfully processed EIX
+2025-01-19 19:26:17.558 | INFO     | __main__:getting_tickers_data:61 - Successfully processed ACGL
+2025-01-19 19:26:17.717 | INFO     | __main__:getting_tickers_data:61 - Successfully processed OMC
+2025-01-19 19:26:17.893 | INFO     | __main__:getting_tickers_data:61 - Successfully processed DE
+2025-01-19 19:26:18.141 | INFO     | __main__:getting_tickers_data:61 - Successfully processed USB
+2025-01-19 19:26:18.330 | INFO     | __main__:getting_tickers_data:61 - Successfully processed TJX
+2025-01-19 19:26:18.478 | INFO     | __main__:getting_tickers_data:61 - Successfully processed WYNN
+2025-01-19 19:26:18.669 | INFO     | __main__:getting_tickers_data:61 - Successfully processed TXT
+2025-01-19 19:26:18.780 | INFO     | __main__:getting_tickers_data:61 - Successfully processed REGN
+2025-01-19 19:26:18.904 | INFO     | __main__:getting_tickers_data:61 - Successfully processed IDXX
+2025-01-19 19:26:19.059 | INFO     | __main__:getting_tickers_data:61 - Successfully processed JBL
+2025-01-19 19:26:19.201 | INFO     | __main__:getting_tickers_data:61 - Successfully processed CCI
+2025-01-19 19:26:19.333 | INFO     | __main__:getting_tickers_data:61 - Successfully processed NVR
+2025-01-19 19:26:19.472 | INFO     | __main__:getting_tickers_data:61 - Successfully processed SYF
+2025-01-19 19:26:19.616 | INFO     | __main__:getting_tickers_data:61 - Successfully processed NTAP
+2025-01-19 19:26:19.805 | INFO     | __main__:getting_tickers_data:61 - Successfully processed TFC
+2025-01-19 19:26:19.902 | INFO     | __main__:getting_tickers_data:61 - Successfully processed INCY
+2025-01-19 19:26:20.070 | INFO     | __main__:getting_tickers_data:61 - Successfully processed ELV
+2025-01-19 19:26:20.180 | INFO     | __main__:getting_tickers_data:61 - Successfully processed EW
+2025-01-19 19:26:20.324 | INFO     | __main__:getting_tickers_data:61 - Successfully processed LRCX
+2025-01-19 19:26:20.441 | INFO     | __main__:getting_tickers_data:61 - Successfully processed STZ
+2025-01-19 19:26:20.557 | INFO     | __main__:getting_tickers_data:61 - Successfully processed CRWD
+2025-01-19 19:26:20.712 | INFO     | __main__:getting_tickers_data:61 - Successfully processed MET
+2025-01-19 19:26:20.895 | INFO     | __main__:getting_tickers_data:61 - Successfully processed TXN
+2025-01-19 19:26:21.032 | INFO     | __main__:getting_tickers_data:61 - Successfully processed DRI
+2025-01-19 19:26:21.212 | INFO     | __main__:getting_tickers_data:61 - Successfully processed AZN
+2025-01-19 19:26:21.340 | INFO     | __main__:getting_tickers_data:61 - Successfully processed MGM
+2025-01-19 19:26:21.481 | INFO     | __main__:getting_tickers_data:61 - Successfully processed APP
+2025-01-19 19:26:21.602 | INFO     | __main__:getting_tickers_data:61 - Successfully processed MDB
+2025-01-19 19:26:21.780 | INFO     | __main__:getting_tickers_data:61 - Successfully processed NTRS
+2025-01-19 19:26:21.928 | INFO     | __main__:getting_tickers_data:61 - Successfully processed VZ
+2025-01-19 19:26:22.118 | INFO     | __main__:getting_tickers_data:61 - Successfully processed APD
+2025-01-19 19:26:22.288 | INFO     | __main__:getting_tickers_data:61 - Successfully processed PHM
+2025-01-19 19:26:22.436 | INFO     | __main__:getting_tickers_data:61 - Successfully processed PARA
+2025-01-19 19:26:22.577 | INFO     | __main__:getting_tickers_data:61 - Successfully processed TEL
+2025-01-19 19:26:22.750 | INFO     | __main__:getting_tickers_data:61 - Successfully processed LH
+2025-01-19 19:26:22.877 | INFO     | __main__:getting_tickers_data:61 - Successfully processed J
+2025-01-19 19:26:23.064 | INFO     | __main__:getting_tickers_data:61 - Successfully processed EMR
+2025-01-19 19:26:23.208 | INFO     | __main__:getting_tickers_data:61 - Successfully processed MDLZ
+2025-01-19 19:26:23.376 | INFO     | __main__:getting_tickers_data:61 - Successfully processed BEN
+2025-01-19 19:26:23.556 | INFO     | __main__:getting_tickers_data:61 - Successfully processed UNP
+2025-01-19 19:26:23.670 | INFO     | __main__:getting_tickers_data:61 - Successfully processed CNC
+2025-01-19 19:26:23.850 | INFO     | __main__:getting_tickers_data:61 - Successfully processed FE
+2025-01-19 19:26:23.964 | INFO     | __main__:getting_tickers_data:61 - Successfully processed LKQ
+2025-01-19 19:26:24.136 | INFO     | __main__:getting_tickers_data:61 - Successfully processed KEY
+2025-01-19 19:26:24.333 | INFO     | __main__:getting_tickers_data:61 - Successfully processed GD
+2025-01-19 19:26:24.534 | INFO     | __main__:getting_tickers_data:61 - Successfully processed MU
+2025-01-19 19:26:24.721 | INFO     | __main__:getting_tickers_data:61 - Successfully processed CSX
+2025-01-19 19:26:24.869 | INFO     | __main__:getting_tickers_data:61 - Successfully processed DHI
+2025-01-19 19:26:25.021 | INFO     | __main__:getting_tickers_data:61 - Successfully processed IEX
+2025-01-19 19:26:25.142 | INFO     | __main__:getting_tickers_data:61 - Successfully processed EPAM
+2025-01-19 19:26:25.363 | INFO     | __main__:getting_tickers_data:61 - Successfully processed ED
+2025-01-19 19:26:25.540 | INFO     | __main__:getting_tickers_data:61 - Successfully processed AFL
+2025-01-19 19:26:25.687 | INFO     | __main__:getting_tickers_data:61 - Successfully processed CB
+2025-01-19 19:26:25.865 | INFO     | __main__:getting_tickers_data:61 - Successfully processed SNA
+2025-01-19 19:26:26.040 | INFO     | __main__:getting_tickers_data:61 - Successfully processed REG
+2025-01-19 19:26:26.222 | INFO     | __main__:getting_tickers_data:61 - Successfully processed AES
+2025-01-19 19:26:26.459 | INFO     | __main__:getting_tickers_data:61 - Successfully processed DOV
+2025-01-19 19:26:26.633 | INFO     | __main__:getting_tickers_data:61 - Successfully processed FRT
+2025-01-19 19:26:26.839 | INFO     | __main__:getting_tickers_data:61 - Successfully processed VLO
+2025-01-19 19:26:27.074 | INFO     | __main__:getting_tickers_data:61 - Successfully processed HPQ
+2025-01-19 19:26:27.238 | INFO     | __main__:getting_tickers_data:61 - Successfully processed INTU
+2025-01-19 19:26:27.390 | INFO     | __main__:getting_tickers_data:61 - Successfully processed ROST
+2025-01-19 19:26:27.577 | INFO     | __main__:getting_tickers_data:61 - Successfully processed AOS
+2025-01-19 19:26:27.701 | INFO     | __main__:getting_tickers_data:61 - Successfully processed CHTR
+2025-01-19 19:26:27.880 | INFO     | __main__:getting_tickers_data:61 - Successfully processed BA
+2025-01-19 19:26:27.984 | INFO     | __main__:getting_tickers_data:61 - Successfully processed PYPL
+2025-01-19 19:26:28.130 | INFO     | __main__:getting_tickers_data:61 - Successfully processed NEM
+2025-01-19 19:26:28.284 | INFO     | __main__:getting_tickers_data:61 - Successfully processed EL
+2025-01-19 19:26:28.463 | INFO     | __main__:getting_tickers_data:61 - Successfully processed MSCI
+2025-01-19 19:26:28.655 | INFO     | __main__:getting_tickers_data:61 - Successfully processed LLY
+2025-01-19 19:26:28.800 | INFO     | __main__:getting_tickers_data:61 - Successfully processed ZBRA
+2025-01-19 19:26:28.956 | INFO     | __main__:getting_tickers_data:61 - Successfully processed PNC
+2025-01-19 19:26:29.140 | INFO     | __main__:getting_tickers_data:61 - Successfully processed SLB
+2025-01-19 19:26:29.250 | INFO     | __main__:getting_tickers_data:61 - Successfully processed CSGP
+2025-01-19 19:26:29.425 | INFO     | __main__:getting_tickers_data:61 - Successfully processed UDR
+2025-01-19 19:26:29.548 | INFO     | __main__:getting_tickers_data:61 - Successfully processed LYB
+2025-01-19 19:26:29.713 | INFO     | __main__:getting_tickers_data:61 - Successfully processed STT
+2025-01-19 19:26:29.859 | INFO     | __main__:getting_tickers_data:61 - Successfully processed HSIC
+2025-01-19 19:26:30.033 | INFO     | __main__:getting_tickers_data:61 - Successfully processed TRV
+2025-01-19 19:26:30.147 | INFO     | __main__:getting_tickers_data:61 - Successfully processed UBER
+2025-01-19 19:26:30.334 | INFO     | __main__:getting_tickers_data:61 - Successfully processed PPL
+2025-01-19 19:26:30.510 | INFO     | __main__:getting_tickers_data:61 - Successfully processed HUBB
+2025-01-19 19:26:30.632 | INFO     | __main__:getting_tickers_data:61 - Successfully processed WDC
+2025-01-19 19:26:30.795 | INFO     | __main__:getting_tickers_data:61 - Successfully processed MMC
+2025-01-19 19:26:30.913 | INFO     | __main__:getting_tickers_data:61 - Successfully processed KEYS
+2025-01-19 19:26:31.075 | INFO     | __main__:getting_tickers_data:61 - Successfully processed COR
+2025-01-19 19:26:31.205 | INFO     | __main__:getting_tickers_data:61 - Successfully processed AMT
+2025-01-19 19:26:31.392 | INFO     | __main__:getting_tickers_data:61 - Successfully processed NOC
+2025-01-19 19:26:31.563 | INFO     | __main__:getting_tickers_data:61 - Successfully processed LNT
+2025-01-19 19:26:31.777 | INFO     | __main__:getting_tickers_data:61 - Successfully processed MSI
+2025-01-19 19:26:31.900 | INFO     | __main__:getting_tickers_data:61 - Successfully processed EBAY
+2025-01-19 19:26:32.044 | INFO     | __main__:getting_tickers_data:61 - Successfully processed GDDY
+2025-01-19 19:26:32.239 | INFO     | __main__:getting_tickers_data:61 - Successfully processed WRB
+2025-01-19 19:26:32.390 | INFO     | __main__:getting_tickers_data:61 - Successfully processed PAYX
+2025-01-19 19:26:32.491 | INFO     | __main__:getting_tickers_data:61 - Successfully processed SOLV
+2025-01-19 19:26:32.654 | INFO     | __main__:getting_tickers_data:61 - Successfully processed ABBV
+2025-01-19 19:26:32.801 | INFO     | __main__:getting_tickers_data:61 - Successfully processed AMGN
+2025-01-19 19:26:32.933 | INFO     | __main__:getting_tickers_data:61 - Successfully processed MCO
+2025-01-19 19:26:33.068 | INFO     | __main__:getting_tickers_data:61 - Successfully processed SWKS
+2025-01-19 19:26:33.200 | INFO     | __main__:getting_tickers_data:61 - Successfully processed GOOGL
+2025-01-19 19:26:33.332 | INFO     | __main__:getting_tickers_data:61 - Successfully processed HII
+2025-01-19 19:26:33.491 | INFO     | __main__:getting_tickers_data:61 - Successfully processed CPT
+2025-01-19 19:26:33.627 | INFO     | __main__:getting_tickers_data:61 - Successfully processed COST
+2025-01-19 19:26:33.796 | INFO     | __main__:getting_tickers_data:61 - Successfully processed CPB
+2025-01-19 19:26:33.932 | INFO     | __main__:getting_tickers_data:61 - Successfully processed UPS
+2025-01-19 19:26:34.131 | INFO     | __main__:getting_tickers_data:61 - Successfully processed PNW
+2025-01-19 19:26:34.312 | INFO     | __main__:getting_tickers_data:61 - Successfully processed OXY
+2025-01-19 19:26:34.415 | INFO     | __main__:getting_tickers_data:61 - Successfully processed TSLA
+2025-01-19 19:26:34.539 | INFO     | __main__:getting_tickers_data:61 - Successfully processed TMUS
+2025-01-19 19:26:34.795 | INFO     | __main__:getting_tickers_data:61 - Successfully processed IP
+2025-01-19 19:26:35.013 | INFO     | __main__:getting_tickers_data:61 - Successfully processed ABT
+2025-01-19 19:26:35.159 | INFO     | __main__:getting_tickers_data:61 - Successfully processed A
+2025-01-19 19:26:35.287 | INFO     | __main__:getting_tickers_data:61 - Successfully processed VRTX
+2025-01-19 19:26:35.496 | INFO     | __main__:getting_tickers_data:61 - Successfully processed PCG
+2025-01-19 19:26:35.676 | INFO     | __main__:getting_tickers_data:61 - Successfully processed HRL
+2025-01-19 19:26:35.823 | INFO     | __main__:getting_tickers_data:61 - Successfully processed FAST
+2025-01-19 19:26:36.015 | INFO     | __main__:getting_tickers_data:61 - Successfully processed WMT
+2025-01-19 19:26:36.216 | INFO     | __main__:getting_tickers_data:61 - Successfully processed JNJ
+2025-01-19 19:26:36.363 | INFO     | __main__:getting_tickers_data:61 - Successfully processed EG
+2025-01-19 19:26:36.500 | INFO     | __main__:getting_tickers_data:61 - Successfully processed CSCO
+2025-01-19 19:26:36.634 | INFO     | __main__:getting_tickers_data:61 - Successfully processed BIIB
+2025-01-19 19:26:36.785 | INFO     | __main__:getting_tickers_data:61 - Successfully processed YUM
+2025-01-19 19:26:36.912 | INFO     | __main__:getting_tickers_data:61 - Successfully processed MCHP
+2025-01-19 19:26:37.028 | INFO     | __main__:getting_tickers_data:61 - Successfully processed NCLH
+2025-01-19 19:26:37.198 | INFO     | __main__:getting_tickers_data:61 - Successfully processed AXP
+2025-01-19 19:26:37.350 | INFO     | __main__:getting_tickers_data:61 - Successfully processed D
+2025-01-19 19:26:37.498 | INFO     | __main__:getting_tickers_data:61 - Successfully processed SBAC
+2025-01-19 19:26:37.640 | INFO     | __main__:getting_tickers_data:61 - Successfully processed CDW
+2025-01-19 19:26:37.767 | INFO     | __main__:getting_tickers_data:61 - Successfully processed FOX
+2025-01-19 19:26:37.893 | INFO     | __main__:getting_tickers_data:61 - Successfully processed EXPE
+2025-01-19 19:26:38.106 | INFO     | __main__:getting_tickers_data:61 - Successfully processed WST
+2025-01-19 19:26:38.225 | INFO     | __main__:getting_tickers_data:61 - Successfully processed HLT
+2025-01-19 19:26:38.344 | INFO     | __main__:getting_tickers_data:61 - Successfully processed FTNT
+2025-01-19 19:26:38.457 | INFO     | __main__:getting_tickers_data:61 - Successfully processed NOW
+2025-01-19 19:26:38.623 | INFO     | __main__:getting_tickers_data:61 - Successfully processed PSA
+2025-01-19 19:26:38.739 | INFO     | __main__:getting_tickers_data:61 - Successfully processed KVUE
+2025-01-19 19:26:38.903 | INFO     | __main__:getting_tickers_data:61 - Successfully processed WAB
+2025-01-19 19:26:39.100 | INFO     | __main__:getting_tickers_data:61 - Successfully processed ORCL
+2025-01-19 19:26:39.207 | INFO     | __main__:getting_tickers_data:61 - Successfully processed MSTR
+2025-01-19 19:26:39.341 | INFO     | __main__:getting_tickers_data:61 - Successfully processed DPZ
+2025-01-19 19:26:39.471 | INFO     | __main__:getting_tickers_data:61 - Successfully processed STE
+2025-01-19 19:26:39.636 | INFO     | __main__:getting_tickers_data:61 - Successfully processed TDG
+2025-01-19 19:26:39.767 | INFO     | __main__:getting_tickers_data:61 - Successfully processed PDD
+2025-01-19 19:26:39.910 | INFO     | __main__:getting_tickers_data:61 - Successfully processed CTSH
+2025-01-19 19:26:40.058 | INFO     | __main__:getting_tickers_data:61 - Successfully processed APA
+2025-01-19 19:26:40.234 | INFO     | __main__:getting_tickers_data:61 - Successfully processed UHS
+2025-01-19 19:26:40.333 | INFO     | __main__:getting_tickers_data:61 - Successfully processed LYV
+2025-01-19 19:26:40.503 | INFO     | __main__:getting_tickers_data:61 - Successfully processed SYY
+2025-01-19 19:26:40.660 | INFO     | __main__:getting_tickers_data:61 - Successfully processed CHD
+2025-01-19 19:26:40.789 | INFO     | __main__:getting_tickers_data:61 - Successfully processed GM
+2025-01-19 19:26:40.910 | INFO     | __main__:getting_tickers_data:61 - Successfully processed PWR
+2025-01-19 19:26:41.074 | INFO     | __main__:getting_tickers_data:61 - Successfully processed BF-B
+2025-01-19 19:26:41.220 | INFO     | __main__:getting_tickers_data:61 - Successfully processed MAR
+2025-01-19 19:26:41.399 | INFO     | __main__:getting_tickers_data:61 - Successfully processed NKE
+2025-01-19 19:26:41.542 | INFO     | __main__:getting_tickers_data:61 - Successfully processed DVN
+2025-01-19 19:26:41.671 | INFO     | __main__:getting_tickers_data:61 - Successfully processed CDNS
+2025-01-19 19:26:41.809 | INFO     | __main__:getting_tickers_data:61 - Successfully processed TRGP
+2025-01-19 19:26:41.934 | INFO     | __main__:getting_tickers_data:61 - Successfully processed BLK
+2025-01-19 19:26:42.183 | INFO     | __main__:getting_tickers_data:61 - Successfully processed KMB
+2025-01-19 19:26:42.331 | INFO     | __main__:getting_tickers_data:61 - Successfully processed TMO
+2025-01-19 19:26:42.467 | INFO     | __main__:getting_tickers_data:61 - Successfully processed NDAQ
+2025-01-19 19:26:42.611 | INFO     | __main__:getting_tickers_data:61 - Successfully processed RJF
+2025-01-19 19:26:42.814 | INFO     | __main__:getting_tickers_data:61 - Successfully processed XOM
+2025-01-19 19:26:42.964 | INFO     | __main__:getting_tickers_data:61 - Successfully processed WM
+2025-01-19 19:26:43.095 | INFO     | __main__:getting_tickers_data:61 - Successfully processed V
+2025-01-19 19:26:43.268 | INFO     | __main__:getting_tickers_data:61 - Successfully processed ATO
+2025-01-19 19:26:43.374 | INFO     | __main__:getting_tickers_data:61 - Successfully processed DAY
+2025-01-19 19:26:43.500 | INFO     | __main__:getting_tickers_data:61 - Successfully processed SW
+2025-01-19 19:26:43.654 | INFO     | __main__:getting_tickers_data:61 - Successfully processed RCL
+2025-01-19 19:26:43.772 | INFO     | __main__:getting_tickers_data:61 - Successfully processed CBOE
+2025-01-19 19:26:43.964 | INFO     | __main__:getting_tickers_data:61 - Successfully processed BDX
+2025-01-19 19:26:44.124 | INFO     | __main__:getting_tickers_data:61 - Successfully processed MPC
+2025-01-19 19:26:44.310 | INFO     | __main__:getting_tickers_data:61 - Successfully processed SWK
+2025-01-19 19:26:44.561 | INFO     | __main__:getting_tickers_data:61 - Successfully processed PH
+2025-01-19 19:26:44.741 | INFO     | __main__:getting_tickers_data:61 - Successfully processed WY
+2025-01-19 19:26:44.878 | INFO     | __main__:getting_tickers_data:61 - Successfully processed APH
+2025-01-19 19:26:45.057 | INFO     | __main__:getting_tickers_data:61 - Successfully processed DHR
+2025-01-19 19:26:45.216 | INFO     | __main__:getting_tickers_data:61 - Successfully processed CTAS
+2025-01-19 19:26:45.366 | INFO     | __main__:getting_tickers_data:61 - Successfully processed AMCR
+2025-01-19 19:26:45.514 | INFO     | __main__:getting_tickers_data:61 - Successfully processed KIM
+2025-01-19 19:26:45.708 | INFO     | __main__:getting_tickers_data:61 - Successfully processed DD
+2025-01-19 19:26:45.831 | INFO     | __main__:getting_tickers_data:61 - Successfully processed AVGO
+2025-01-19 19:26:46.016 | INFO     | __main__:getting_tickers_data:61 - Successfully processed IRM
+2025-01-19 19:26:46.201 | INFO     | __main__:getting_tickers_data:61 - Successfully processed C
+2025-01-19 19:26:46.318 | INFO     | __main__:getting_tickers_data:61 - Successfully processed DDOG
+2025-01-19 19:26:46.491 | INFO     | __main__:getting_tickers_data:61 - Successfully processed EXC
+2025-01-19 19:26:46.652 | INFO     | __main__:getting_tickers_data:61 - Successfully processed ROL
+2025-01-19 19:26:46.761 | INFO     | __main__:getting_tickers_data:61 - Successfully processed FFIV
+2025-01-19 19:26:46.912 | INFO     | __main__:getting_tickers_data:61 - Successfully processed SRE
+2025-01-19 19:26:47.051 | INFO     | __main__:getting_tickers_data:61 - Successfully processed PM
+2025-01-19 19:26:47.219 | INFO     | __main__:getting_tickers_data:61 - Successfully processed VTRS
+2025-01-19 19:26:47.327 | INFO     | __main__:getting_tickers_data:61 - Successfully processed DASH
+2025-01-19 19:26:47.471 | INFO     | __main__:getting_tickers_data:61 - Successfully processed CME
+2025-01-19 19:26:47.616 | INFO     | __main__:getting_tickers_data:61 - Successfully processed VMC
+2025-01-19 19:26:47.781 | INFO     | __main__:getting_tickers_data:61 - Successfully processed TSCO
+2025-01-19 19:26:47.885 | INFO     | __main__:getting_tickers_data:61 - Successfully processed DVA
+2025-01-19 19:26:48.001 | INFO     | __main__:getting_tickers_data:61 - Successfully processed TRMB
+2025-01-19 19:26:48.160 | INFO     | __main__:getting_tickers_data:61 - Successfully processed CAH
+2025-01-19 19:26:48.315 | INFO     | __main__:getting_tickers_data:61 - Successfully processed NDSN
+2025-01-19 19:26:48.447 | INFO     | __main__:getting_tickers_data:61 - Successfully processed WTW
+2025-01-19 19:26:48.580 | INFO     | __main__:getting_tickers_data:61 - Successfully processed FANG
+2025-01-19 19:26:48.766 | INFO     | __main__:getting_tickers_data:61 - Successfully processed CL
+2025-01-19 19:26:48.909 | INFO     | __main__:getting_tickers_data:61 - Successfully processed BXP
+2025-01-19 19:26:49.086 | INFO     | __main__:getting_tickers_data:61 - Successfully processed AEP
+2025-01-19 19:26:49.264 | INFO     | __main__:getting_tickers_data:61 - Successfully processed ROK
+2025-01-19 19:26:49.435 | INFO     | __main__:getting_tickers_data:61 - Successfully processed T
+2025-01-19 19:26:49.585 | INFO     | __main__:getting_tickers_data:61 - Successfully processed NXPI
+2025-01-19 19:26:49.717 | INFO     | __main__:getting_tickers_data:61 - Successfully processed GRMN
+2025-01-19 19:26:49.914 | INFO     | __main__:getting_tickers_data:61 - Successfully processed CNP
+2025-01-19 19:26:50.020 | INFO     | __main__:getting_tickers_data:61 - Successfully processed IQV
+2025-01-19 19:26:50.164 | INFO     | __main__:getting_tickers_data:61 - Successfully processed LVS
+2025-01-19 19:26:50.297 | INFO     | __main__:getting_tickers_data:61 - Successfully processed AWK
+2025-01-19 19:26:50.465 | INFO     | __main__:getting_tickers_data:61 - Successfully processed AON
+2025-01-19 19:26:50.590 | INFO     | __main__:getting_tickers_data:61 - Successfully processed MSFT
+2025-01-19 19:26:50.705 | INFO     | __main__:getting_tickers_data:61 - Successfully processed FOXA
+2025-01-19 19:26:50.845 | INFO     | __main__:getting_tickers_data:61 - Successfully processed NWSA
+2025-01-19 19:26:51.034 | INFO     | __main__:getting_tickers_data:61 - Successfully processed CTRA
+2025-01-19 19:26:51.216 | INFO     | __main__:getting_tickers_data:61 - Successfully processed EFX
+2025-01-19 19:26:51.392 | INFO     | __main__:getting_tickers_data:61 - Successfully processed TSN
+2025-01-19 19:26:51.552 | INFO     | __main__:getting_tickers_data:61 - Successfully processed COO
+2025-01-19 19:26:51.694 | INFO     | __main__:getting_tickers_data:61 - Successfully processed POOL
+2025-01-19 19:26:51.849 | INFO     | __main__:getting_tickers_data:61 - Successfully processed LDOS
+2025-01-19 19:26:52.003 | INFO     | __main__:getting_tickers_data:61 - Successfully processed SPG
+2025-01-19 19:26:52.201 | INFO     | __main__:getting_tickers_data:61 - Successfully processed CAT
+2025-01-19 19:26:52.325 | INFO     | __main__:getting_tickers_data:61 - Successfully processed META
+2025-01-19 19:26:52.478 | INFO     | __main__:getting_tickers_data:61 - Successfully processed EA
+2025-01-19 19:26:52.614 | INFO     | __main__:getting_tickers_data:61 - Successfully processed KLAC
+2025-01-19 19:26:52.756 | INFO     | __main__:getting_tickers_data:61 - Successfully processed ZS
+2025-01-19 19:26:52.985 | INFO     | __main__:getting_tickers_data:61 - Successfully processed GE
+2025-01-19 19:26:53.199 | INFO     | __main__:getting_tickers_data:61 - Successfully processed AIZ
+2025-01-19 19:26:53.317 | INFO     | __main__:getting_tickers_data:61 - Successfully processed ANET
+2025-01-19 19:26:53.450 | INFO     | __main__:getting_tickers_data:61 - Successfully processed NFLX
+2025-01-19 19:26:53.587 | INFO     | __main__:getting_tickers_data:61 - Successfully processed TYL
+2025-01-19 19:26:53.707 | INFO     | __main__:getting_tickers_data:61 - Successfully processed GFS
+2025-01-19 19:26:53.897 | INFO     | __main__:getting_tickers_data:61 - Successfully processed PFE
+2025-01-19 19:26:53.995 | INFO     | __main__:getting_tickers_data:61 - Successfully processed CPRT
+2025-01-19 19:26:54.144 | INFO     | __main__:getting_tickers_data:61 - Successfully processed ZTS
+2025-01-19 19:26:54.294 | INFO     | __main__:getting_tickers_data:61 - Successfully processed NI
+2025-01-19 19:26:54.485 | INFO     | __main__:getting_tickers_data:61 - Successfully processed BAX
+2025-01-19 19:26:54.690 | INFO     | __main__:getting_tickers_data:61 - Successfully processed MRK
+2025-01-19 19:26:54.855 | INFO     | __main__:getting_tickers_data:61 - Successfully processed FICO
+2025-01-19 19:26:54.995 | INFO     | __main__:getting_tickers_data:61 - Successfully processed CAG
+2025-01-19 19:26:55.164 | INFO     | __main__:getting_tickers_data:61 - Successfully processed MTB
+2025-01-19 19:26:55.349 | INFO     | __main__:getting_tickers_data:61 - Successfully processed MCD
+2025-01-19 19:26:55.476 | INFO     | __main__:getting_tickers_data:61 - Successfully processed KHC
+2025-01-19 19:26:55.654 | INFO     | __main__:getting_tickers_data:61 - Successfully processed LII
+2025-01-19 19:26:55.803 | INFO     | __main__:getting_tickers_data:61 - Successfully processed ADBE
+2025-01-19 19:26:55.947 | INFO     | __main__:getting_tickers_data:61 - Successfully processed PLD
+2025-01-19 19:26:56.131 | INFO     | __main__:getting_tickers_data:61 - Successfully processed FMC
+2025-01-19 19:26:56.279 | INFO     | __main__:getting_tickers_data:61 - Successfully processed KDP
+2025-01-19 19:26:56.431 | INFO     | __main__:getting_tickers_data:61 - Successfully processed CEG
+2025-01-19 19:26:56.643 | INFO     | __main__:getting_tickers_data:61 - Successfully processed AME
+2025-01-19 19:26:56.775 | INFO     | __main__:getting_tickers_data:61 - Successfully processed FTV
+2025-01-19 19:26:56.935 | INFO     | __main__:getting_tickers_data:61 - Successfully processed BAC
+2025-01-19 19:26:57.124 | INFO     | __main__:getting_tickers_data:61 - Successfully processed HD
+2025-01-19 19:26:57.224 | INFO     | __main__:getting_tickers_data:61 - Successfully processed CMG
+2025-01-19 19:26:57.358 | INFO     | __main__:getting_tickers_data:61 - Successfully processed NWS
+2025-01-19 19:26:57.523 | INFO     | __main__:getting_tickers_data:61 - Successfully processed LMT
+2025-01-19 19:26:57.698 | INFO     | __main__:getting_tickers_data:61 - Successfully processed XEL
+2025-01-19 19:26:57.881 | INFO     | __main__:getting_tickers_data:61 - Successfully processed EMN
+2025-01-19 19:26:58.023 | INFO     | __main__:getting_tickers_data:61 - Successfully processed SPGI
+2025-01-19 19:26:58.170 | INFO     | __main__:getting_tickers_data:61 - Successfully processed CHRW
+2025-01-19 19:26:58.323 | INFO     | __main__:getting_tickers_data:61 - Successfully processed VTR
+2025-01-19 19:26:58.518 | INFO     | __main__:getting_tickers_data:61 - Successfully processed ETN
+2025-01-19 19:26:58.680 | INFO     | __main__:getting_tickers_data:61 - Successfully processed MRVL
+2025-01-19 19:26:58.877 | INFO     | __main__:getting_tickers_data:61 - Successfully processed MMM
+2025-01-19 19:26:59.020 | INFO     | __main__:getting_tickers_data:61 - Successfully processed TAP
+2025-01-19 19:26:59.138 | INFO     | __main__:getting_tickers_data:61 - Successfully processed KMX
+2025-01-19 19:26:59.342 | INFO     | __main__:getting_tickers_data:61 - Successfully processed PG
+2025-01-19 19:26:59.523 | INFO     | __main__:getting_tickers_data:61 - Successfully processed PCAR
+2025-01-19 19:26:59.640 | INFO     | __main__:getting_tickers_data:61 - Successfully processed UAL
+2025-01-19 19:26:59.818 | INFO     | __main__:getting_tickers_data:61 - Successfully processed ITW
+2025-01-19 19:26:59.927 | INFO     | __main__:getting_tickers_data:61 - Successfully processed MELI
+2025-01-19 19:27:00.074 | INFO     | __main__:getting_tickers_data:61 - Successfully processed NSC
+2025-01-19 19:27:00.299 | INFO     | __main__:getting_tickers_data:61 - Successfully processed AVY
+2025-01-19 19:27:00.443 | INFO     | __main__:getting_tickers_data:61 - Successfully processed FI
+2025-01-19 19:27:00.668 | INFO     | __main__:getting_tickers_data:61 - Successfully processed WFC
+2025-01-19 19:27:00.781 | INFO     | __main__:getting_tickers_data:61 - Successfully processed ULTA
+2025-01-19 19:27:00.914 | INFO     | __main__:getting_tickers_data:61 - Successfully processed LW
+2025-01-19 19:27:01.097 | INFO     | __main__:getting_tickers_data:61 - Successfully processed PAYC
+2025-01-19 19:27:01.217 | INFO     | __main__:getting_tickers_data:61 - Successfully processed GOOG
+2025-01-19 19:27:01.359 | INFO     | __main__:getting_tickers_data:61 - Successfully processed DELL
+2025-01-19 19:27:01.485 | INFO     | __main__:getting_tickers_data:61 - Successfully processed OTIS
+2025-01-19 19:27:01.627 | INFO     | __main__:getting_tickers_data:61 - Successfully processed GPN
+2025-01-19 19:27:01.773 | INFO     | __main__:getting_tickers_data:61 - Successfully processed COF
+2025-01-19 19:27:01.900 | INFO     | __main__:getting_tickers_data:61 - Successfully processed GNRC
+2025-01-19 19:27:02.041 | INFO     | __main__:getting_tickers_data:61 - Successfully processed GEV
+2025-01-19 19:27:02.199 | INFO     | __main__:getting_tickers_data:61 - Successfully processed MNST
+2025-01-19 19:27:02.373 | INFO     | __main__:getting_tickers_data:61 - Successfully processed EVRG
+2025-01-19 19:27:02.497 | INFO     | __main__:getting_tickers_data:61 - Successfully processed TTWO
+2025-01-19 19:27:02.646 | INFO     | __main__:getting_tickers_data:61 - Successfully processed CRL
+2025-01-19 19:27:02.758 | INFO     | __main__:getting_tickers_data:61 - Successfully processed MHK
+2025-01-19 19:27:02.962 | INFO     | __main__:getting_tickers_data:61 - Successfully processed GPC
+2025-01-19 19:27:03.066 | INFO     | __main__:getting_tickers_data:61 - Successfully processed PLTR
+2025-01-19 19:27:03.217 | INFO     | __main__:getting_tickers_data:61 - Successfully processed CVS
+2025-01-19 19:27:03.361 | INFO     | __main__:getting_tickers_data:61 - Successfully processed TECH
+2025-01-19 19:27:03.531 | INFO     | __main__:getting_tickers_data:61 - Successfully processed RMD
+2025-01-19 19:27:03.650 | INFO     | __main__:getting_tickers_data:61 - Successfully processed BKNG
+2025-01-19 19:27:03.766 | INFO     | __main__:getting_tickers_data:61 - Successfully processed HOLX
+2025-01-19 19:27:03.881 | INFO     | __main__:getting_tickers_data:61 - Successfully processed APTV
+2025-01-19 19:27:04.023 | INFO     | __main__:getting_tickers_data:61 - Successfully processed MRNA
+2025-01-19 19:27:04.271 | INFO     | __main__:getting_tickers_data:61 - Successfully processed HAL
+2025-01-19 19:27:04.443 | INFO     | __main__:getting_tickers_data:61 - Successfully processed LUV
+2025-01-19 19:27:04.562 | INFO     | __main__:getting_tickers_data:61 - Successfully processed PANW
+2025-01-19 19:27:04.740 | INFO     | __main__:getting_tickers_data:61 - Successfully processed IPG
+2025-01-19 19:27:04.908 | INFO     | __main__:getting_tickers_data:61 - Successfully processed TPL
+2025-01-19 19:27:05.044 | INFO     | __main__:getting_tickers_data:61 - Successfully processed IT
+2025-01-19 19:27:05.177 | INFO     | __main__:getting_tickers_data:61 - Successfully processed ICE
+2025-01-19 19:27:05.311 | INFO     | __main__:getting_tickers_data:61 - Successfully processed ON
+2025-01-19 19:27:05.447 | INFO     | __main__:getting_tickers_data:61 - Successfully processed SJM
+2025-01-19 19:27:05.582 | INFO     | __main__:getting_tickers_data:61 - Successfully processed URI
+2025-01-19 19:27:05.714 | INFO     | __main__:getting_tickers_data:61 - Successfully processed BLDR
+2025-01-19 19:27:05.823 | INFO     | __main__:getting_tickers_data:61 - Successfully processed BRK-B
+2025-01-19 19:27:05.992 | INFO     | __main__:getting_tickers_data:61 - Successfully processed ECL
+2025-01-19 19:27:06.095 | INFO     | __main__:getting_tickers_data:61 - Successfully processed AXON
+2025-01-19 19:27:06.250 | INFO     | __main__:getting_tickers_data:61 - Successfully processed AMP
+2025-01-19 19:27:06.393 | INFO     | __main__:getting_tickers_data:61 - Successfully processed ODFL
+2025-01-19 19:27:06.555 | INFO     | __main__:getting_tickers_data:61 - Successfully processed DUK
+2025-01-19 19:27:06.722 | INFO     | __main__:getting_tickers_data:61 - Successfully processed AIG
+2025-01-19 19:27:06.867 | INFO     | __main__:getting_tickers_data:61 - Successfully processed ALL
+2025-01-19 19:27:06.986 | INFO     | __main__:getting_tickers_data:61 - Successfully processed MOH
+2025-01-19 19:27:07.123 | INFO     | __main__:getting_tickers_data:61 - Successfully processed TER
+2025-01-19 19:27:07.295 | INFO     | __main__:getting_tickers_data:61 - Successfully processed F
+2025-01-19 19:27:07.476 | INFO     | __main__:getting_tickers_data:61 - Successfully processed NUE
+2025-01-19 19:27:07.621 | INFO     | __main__:getting_tickers_data:61 - Successfully processed DFS
+2025-01-19 19:27:07.777 | INFO     | __main__:getting_tickers_data:61 - Successfully processed O
+2025-01-19 19:27:07.888 | INFO     | __main__:getting_tickers_data:61 - Successfully processed DLTR
+2025-01-19 19:27:08.030 | INFO     | __main__:getting_tickers_data:61 - Successfully processed MTD
+2025-01-19 19:27:08.189 | INFO     | __main__:getting_tickers_data:61 - Successfully processed EXPD
+2025-01-19 19:27:08.356 | INFO     | __main__:getting_tickers_data:61 - Successfully processed CLX
+2025-01-19 19:27:08.493 | INFO     | __main__:getting_tickers_data:61 - Successfully processed ADI
+2025-01-19 19:27:08.655 | INFO     | __main__:getting_tickers_data:61 - Successfully processed COP
+2025-01-19 19:27:08.822 | INFO     | __main__:getting_tickers_data:61 - Successfully processed JBHT
+2025-01-19 19:27:08.994 | INFO     | __main__:getting_tickers_data:61 - Successfully processed WBA
+2025-01-19 19:27:09.153 | INFO     | __main__:getting_tickers_data:61 - Successfully processed AJG
+2025-01-19 19:27:09.339 | INFO     | __main__:getting_tickers_data:61 - Successfully processed DIS
+2025-01-19 19:27:09.532 | INFO     | __main__:getting_tickers_data:61 - Successfully processed L
+2025-01-19 19:27:09.718 | INFO     | __main__:getting_tickers_data:61 - Successfully processed WELL
+2025-01-19 19:27:09.891 | INFO     | __main__:getting_tickers_data:61 - Successfully processed HSY
+2025-01-19 19:27:10.062 | INFO     | __main__:getting_tickers_data:61 - Successfully processed PNR
+2025-01-19 19:27:10.205 | INFO     | __main__:getting_tickers_data:61 - Successfully processed MKTX
+2025-01-19 19:27:10.357 | INFO     | __main__:getting_tickers_data:61 - Successfully processed SYK
+2025-01-19 19:27:10.513 | INFO     | __main__:getting_tickers_data:61 - Successfully processed ESS
+2025-01-19 19:27:10.638 | INFO     | __main__:getting_tickers_data:61 - Successfully processed EQIX
+2025-01-19 19:27:10.810 | INFO     | __main__:getting_tickers_data:61 - Successfully processed JCI
+2025-01-19 19:27:10.915 | INFO     | __main__:getting_tickers_data:61 - Successfully processed ANSS
+2025-01-19 19:27:11.144 | INFO     | __main__:getting_tickers_data:61 - Successfully processed HBAN
+2025-01-19 19:27:11.347 | INFO     | __main__:getting_tickers_data:61 - Successfully processed TROW
+2025-01-19 19:27:11.458 | INFO     | __main__:getting_tickers_data:61 - Successfully processed FSLR
+2025-01-19 19:27:11.617 | INFO     | __main__:getting_tickers_data:61 - Successfully processed CFG
+2025-01-19 19:27:11.624 | INFO     | __main__:market_just_open:106 - market_just_open()
+2025-01-19 19:27:11.624 | INFO     | __main__:market_just_open:107 - Nasdaq-100 &S SP-500 are open NOW! 
+Today's Top-10 #GAPS: -> 
+🟢 $INTC -> 9.25 %
+🟢 $MSTR -> 8.04 %
+🔴 $JBHT -> -7.38 %
+🟢 $MRVL -> 6.11 %
+🟢 $SLB -> 6.06 %
+🟢 $TFC -> 5.94 %
+🟢 $PDD -> 5.3 %
+🟢 $GFS -> 5.3 %
+🟢 $MPWR -> 4.89 %
+🔴 $LLY -> -4.21 %
+
+2025-01-19 19:27:11.625 | INFO     | utils.utils:post_twitter:36 - Tweet lenght: 237
+2025-01-19 19:27:11.625 | INFO     | utils.utils:send_telegram_message:224 - Using bot_token: 6379257583...
+2025-01-19 19:27:11.625 | INFO     | utils.utils:send_telegram_message:225 - Sending to chat_id: -1002313822545
+2025-01-19 19:27:11.626 | INFO     | utils.utils:send_telegram_message:246 - Attempting to send message to Telegram
+2025-01-19 19:27:11.883 | INFO     | utils.utils:send_telegram_message:252 - Message sent successfully. Status code: 200
+2025-01-19 19:27:11.884 | SUCCESS  | utils.utils:post_twitter:41 - Tweet posted: Nasdaq-100 &S SP-500 are open NOW! 
+Today's Top-10 #GAPS: -> 
+🟢 $INTC -> 9.25 %
+🟢 $MSTR -> 8.04 %
+🔴 $JBHT -> -7.38 %
+🟢 $MRVL -> 6.11 %
+🟢 $SLB -> 6.06 %
+🟢 $TFC -> 5.94 %
+🟢 $PDD -> 5.3 %
+🟢 $GFS -> 5.3 %
+🟢 $MPWR -> 4.89 %
+🔴 $LLY -> -4.21 %
+
+2025-01-19 19:27:11.884 | INFO     | utils.utils:post_twitter:48 - Pausing for 94 seconds to maintain proper intervals between Twitter posts.
+2025-01-19 19:27:11.887 | INFO     | __main__:market_is_open:130 - market_is_open()
+2025-01-19 19:27:11.887 | INFO     | __main__:market_is_open:131 - Nasdaq-100 &S SP-500 are open. 
+Today's Biggest Movers: 
+🟢 $INTC -> 9.25 %
+🟢 $MSTR -> 8.04 %
+🔴 $JBHT -> -7.38 %
+🟢 $MRVL -> 6.11 %
+🟢 $SLB -> 6.06 %
+🟢 $TFC -> 5.94 %
+🟢 $PDD -> 5.3 %
+🟢 $GFS -> 5.3 %
+🟢 $MPWR -> 4.89 %
+🔴 $LLY -> -4.21 %
+
+2025-01-19 19:27:11.887 | INFO     | utils.utils:post_twitter:36 - Tweet lenght: 232
+2025-01-19 19:27:11.888 | INFO     | utils.utils:send_telegram_message:224 - Using bot_token: 6379257583...
+2025-01-19 19:27:11.888 | INFO     | utils.utils:send_telegram_message:225 - Sending to chat_id: -1002313822545
+2025-01-19 19:27:11.889 | INFO     | utils.utils:send_telegram_message:246 - Attempting to send message to Telegram
+2025-01-19 19:27:12.162 | INFO     | utils.utils:send_telegram_message:252 - Message sent successfully. Status code: 200
+2025-01-19 19:27:12.163 | SUCCESS  | utils.utils:post_twitter:41 - Tweet posted: Nasdaq-100 &S SP-500 are open. 
+Today's Biggest Movers: 
+🟢 $INTC -> 9.25 %
+🟢 $MSTR -> 8.04 %
+🔴 $JBHT -> -7.38 %
+🟢 $MRVL -> 6.11 %
+🟢 $SLB -> 6.06 %
+🟢 $TFC -> 5.94 %
+🟢 $PDD -> 5.3 %
+🟢 $GFS -> 5.3 %
+🟢 $MPWR -> 4.89 %
+🔴 $LLY -> -4.21 %
+
+2025-01-19 19:27:12.163 | INFO     | utils.utils:post_twitter:48 - Pausing for 82 seconds to maintain proper intervals between Twitter posts.
+2025-01-19 19:27:12.165 | INFO     | __main__:market_is_just_closed:154 - market_is_just_closed()
+2025-01-19 19:27:12.166 | INFO     | __main__:market_is_just_closed:155 - Nasdaq-100 &S SP-500 are Closed NOW!. 
+Today's -> Top 10 Gainers & Losers: 
+🟢 $INTC -> 9.25 %
+🟢 $MSTR -> 8.04 %
+🔴 $JBHT -> -7.38 %
+🟢 $MRVL -> 6.11 %
+🟢 $SLB -> 6.06 %
+🟢 $TFC -> 5.94 %
+🟢 $PDD -> 5.3 %
+🟢 $GFS -> 5.3 %
+🟢 $MPWR -> 4.89 %
+🔴 $LLY -> -4.21 %
+
+2025-01-19 19:27:12.166 | INFO     | utils.utils:post_twitter:36 - Tweet lenght: 251
+2025-01-19 19:27:12.167 | INFO     | utils.utils:send_telegram_message:224 - Using bot_token: 6379257583...
+2025-01-19 19:27:12.167 | INFO     | utils.utils:send_telegram_message:225 - Sending to chat_id: -1002313822545
+2025-01-19 19:27:12.168 | INFO     | utils.utils:send_telegram_message:246 - Attempting to send message to Telegram
+2025-01-19 19:27:12.446 | INFO     | utils.utils:send_telegram_message:252 - Message sent successfully. Status code: 200
+2025-01-19 19:27:12.447 | SUCCESS  | utils.utils:post_twitter:41 - Tweet posted: Nasdaq-100 &S SP-500 are Closed NOW!. 
+Today's -> Top 10 Gainers & Losers: 
+🟢 $INTC -> 9.25 %
+🟢 $MSTR -> 8.04 %
+🔴 $JBHT -> -7.38 %
+🟢 $MRVL -> 6.11 %
+🟢 $SLB -> 6.06 %
+🟢 $TFC -> 5.94 %
+🟢 $PDD -> 5.3 %
+🟢 $GFS -> 5.3 %
+🟢 $MPWR -> 4.89 %
+🔴 $LLY -> -4.21 %
+
+2025-01-19 19:27:12.448 | INFO     | utils.utils:post_twitter:48 - Pausing for 129 seconds to maintain proper intervals between Twitter posts.
+2025-01-19 19:27:12.451 | INFO     | __main__:market_1_week:179 - market_1_week()
+2025-01-19 19:27:12.451 | INFO     | __main__:market_1_week:180 - Nasdaq-100 &S SP-500 are Closed NOW!. 
+1-Week-To-Day -> Top 10 Gainers & Losers: 
+🟢 $MSTR -> 20.74 %
+🔴 $CRL -> -14.01 %
+🟢 $CEG -> 13.29 %
+🟢 $AMAT -> 12.4 %
+🟢 $BLDR -> 12.05 %
+🟢 $INTC -> 11.93 %
+🟢 $URI -> 11.88 %
+🟢 $KKR -> 11.55 %
+🟢 $MU -> 11.25 %
+🟢 $MS -> 11.19 %
+
+2025-01-19 19:27:12.452 | INFO     | utils.utils:post_twitter:36 - Tweet lenght: 264
+2025-01-19 19:27:12.452 | INFO     | utils.utils:send_telegram_message:224 - Using bot_token: 6379257583...
+2025-01-19 19:27:12.452 | INFO     | utils.utils:send_telegram_message:225 - Sending to chat_id: -1002313822545
+2025-01-19 19:27:12.453 | INFO     | utils.utils:send_telegram_message:246 - Attempting to send message to Telegram
+2025-01-19 19:27:12.695 | INFO     | utils.utils:send_telegram_message:252 - Message sent successfully. Status code: 200
+2025-01-19 19:27:12.696 | SUCCESS  | utils.utils:post_twitter:41 - Tweet posted: Nasdaq-100 &S SP-500 are Closed NOW!. 
+1-Week-To-Day -> Top 10 Gainers & Losers: 
+🟢 $MSTR -> 20.74 %
+🔴 $CRL -> -14.01 %
+🟢 $CEG -> 13.29 %
+🟢 $AMAT -> 12.4 %
+🟢 $BLDR -> 12.05 %
+🟢 $INTC -> 11.93 %
+🟢 $URI -> 11.88 %
+🟢 $KKR -> 11.55 %
+🟢 $MU -> 11.25 %
+🟢 $MS -> 11.19 %
+
+2025-01-19 19:27:12.696 | INFO     | utils.utils:post_twitter:48 - Pausing for 82 seconds to maintain proper intervals between Twitter posts.
+2025-01-19 19:27:12.699 | INFO     | __main__:market_1_year:204 - market_1_year()
+2025-01-19 19:27:12.700 | INFO     | __main__:market_1_year:205 - Nasdaq-100 &S SP-500 are Closed NOW!. 
+1-Year-To-Day -> Top 10 Gainers & Losers: 
+🟢 $MSTR -> 743 %
+🟢 $APP -> 690 %
+🟢 $VST -> 332 %
+🟢 $PLTR -> 308 %
+🟢 $TPL -> 190 %
+🟢 $GEV -> 183 %
+🟢 $UAL -> 179 %
+🟢 $CEG -> 172 %
+🟢 $TRGP -> 163 %
+🟢 $NVDA -> 131 %
+
+2025-01-19 19:27:12.701 | INFO     | utils.utils:post_twitter:36 - Tweet lenght: 246
+2025-01-19 19:27:12.701 | INFO     | utils.utils:send_telegram_message:224 - Using bot_token: 6379257583...
+2025-01-19 19:27:12.702 | INFO     | utils.utils:send_telegram_message:225 - Sending to chat_id: -1002313822545
+2025-01-19 19:27:12.702 | INFO     | utils.utils:send_telegram_message:246 - Attempting to send message to Telegram
+2025-01-19 19:27:12.983 | INFO     | utils.utils:send_telegram_message:252 - Message sent successfully. Status code: 200
+2025-01-19 19:27:12.984 | SUCCESS  | utils.utils:post_twitter:41 - Tweet posted: Nasdaq-100 &S SP-500 are Closed NOW!. 
+1-Year-To-Day -> Top 10 Gainers & Losers: 
+🟢 $MSTR -> 743 %
+🟢 $APP -> 690 %
+🟢 $VST -> 332 %
+🟢 $PLTR -> 308 %
+🟢 $TPL -> 190 %
+🟢 $GEV -> 183 %
+🟢 $UAL -> 179 %
+🟢 $CEG -> 172 %
+🟢 $TRGP -> 163 %
+🟢 $NVDA -> 131 %
+
+2025-01-19 19:27:12.985 | INFO     | utils.utils:post_twitter:48 - Pausing for 78 seconds to maintain proper intervals between Twitter posts.
