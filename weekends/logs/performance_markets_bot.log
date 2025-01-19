@@ -24,3 +24,304 @@
 2025-01-19 14:57:17.731 | ERROR    | __main__:fetch_stock_data:84 - Error processing ^IBEX: 'Adj Close'
 2025-01-19 14:57:17.743 | ERROR    | __main__:post_performance:125 - Error posting 1-WTD: single positional indexer is out-of-bounds
 2025-01-19 14:57:17.744 | ERROR    | __main__:post_performance:125 - Error posting 1YTD: single positional indexer is out-of-bounds
+2025-01-19 17:49:40.859 | INFO     | __main__:__init__:23 - initialize Performance Markets
+2025-01-19 17:49:43.752 | INFO     | __main__:post_performance:122 - Posting message (278 chars):
+2025-01-19 17:49:43.753 | INFO     | __main__:post_tweet:45 - 
+Global Markets 1-WTD:
+🟢 #Russell-2000 -> 4.57 %
+🟢 #NASDAQ-100 -> 4.12 %
+🟢 #CAC-40 -> 4.05 %
+🟢 #DowJones -> 3.73 %
+🟢 #SP-500 -> 3.71 %
+🟢 #EuroStoxx-50 -> 3.7 %
+🟢 #DAX -> 3.7 %
+🟢 #FTSE-100 -> 3.11 %
+🟢 #Ibex-35 -> 2.18 %
+🔴 #Nikkei-225 -> -1.43 %
+
+#Stocks #Nasdaq #Investor #trader
+2025-01-19 17:49:43.754 | INFO     | utils.utils:post_twitter:35 - Tweet lenght: 278
+2025-01-19 17:49:43.755 | INFO     | utils.utils:send_telegram_message:221 - Using bot_token: 6379257583...
+2025-01-19 17:49:43.756 | INFO     | utils.utils:send_telegram_message:222 - Sending to chat_id: -1002313822545
+2025-01-19 17:49:43.757 | INFO     | utils.utils:send_telegram_message:243 - Attempting to send message to Telegram
+2025-01-19 17:49:44.113 | INFO     | utils.utils:send_telegram_message:249 - Message sent successfully. Status code: 200
+2025-01-19 17:49:44.148 | SUCCESS  | utils.utils:post_twitter:40 - Tweet posted: 
+Global Markets 1-WTD:
+🟢 #Russell-2000 -> 4.57 %
+🟢 #NASDAQ-100 -> 4.12 %
+🟢 #CAC-40 -> 4.05 %
+🟢 #DowJones -> 3.73 %
+🟢 #SP-500 -> 3.71 %
+🟢 #EuroStoxx-50 -> 3.7 %
+🟢 #DAX -> 3.7 %
+🟢 #FTSE-100 -> 3.11 %
+🟢 #Ibex-35 -> 2.18 %
+🔴 #Nikkei-225 -> -1.43 %
+
+#Stocks #Nasdaq #Investor #trader
+2025-01-19 17:49:44.153 | INFO     | __main__:post_performance:122 - Posting message (277 chars):
+2025-01-19 17:49:44.154 | INFO     | __main__:post_tweet:45 - 
+Global Markets 1YTD:
+🟢 #DAX -> 25.29 %
+🟢 #SP-500 -> 23.56 %
+🟢 #NASDAQ-100 -> 23.2 %
+🟢 #Ibex-35 -> 20.18 %
+🟢 #Russell-2000 -> 16.06 %
+🟢 #EuroStoxx-50 -> 15.58 %
+🟢 #DowJones -> 14.68 %
+🟢 #FTSE-100 -> 13.98 %
+🟢 #Nikkei-225 -> 5.94 %
+🟢 #CAC-40 -> 3.67 %
+
+#Stocks #Nasdaq #Investor
+2025-01-19 17:49:44.155 | INFO     | utils.utils:post_twitter:35 - Tweet lenght: 277
+2025-01-19 17:49:44.157 | INFO     | utils.utils:send_telegram_message:221 - Using bot_token: 6379257583...
+2025-01-19 17:49:44.158 | INFO     | utils.utils:send_telegram_message:222 - Sending to chat_id: -1002313822545
+2025-01-19 17:49:44.160 | INFO     | utils.utils:send_telegram_message:243 - Attempting to send message to Telegram
+2025-01-19 17:49:44.511 | INFO     | utils.utils:send_telegram_message:249 - Message sent successfully. Status code: 200
+2025-01-19 17:49:44.513 | SUCCESS  | utils.utils:post_twitter:40 - Tweet posted: 
+Global Markets 1YTD:
+🟢 #DAX -> 25.29 %
+🟢 #SP-500 -> 23.56 %
+🟢 #NASDAQ-100 -> 23.2 %
+🟢 #Ibex-35 -> 20.18 %
+🟢 #Russell-2000 -> 16.06 %
+🟢 #EuroStoxx-50 -> 15.58 %
+🟢 #DowJones -> 14.68 %
+🟢 #FTSE-100 -> 13.98 %
+🟢 #Nikkei-225 -> 5.94 %
+🟢 #CAC-40 -> 3.67 %
+
+#Stocks #Nasdaq #Investor
+2025-01-19 17:53:19.905 | INFO     | __main__:__init__:23 - initialize Performance Markets
+2025-01-19 17:53:19.908 | ERROR    | __main__:fetch_stock_data:84 - Error processing ^NDX: type object 'datetime.datetime' has no attribute 'datetime'
+2025-01-19 17:53:19.909 | ERROR    | __main__:fetch_stock_data:84 - Error processing ^GSPC: type object 'datetime.datetime' has no attribute 'datetime'
+2025-01-19 17:53:19.912 | ERROR    | __main__:fetch_stock_data:84 - Error processing ^RUT: type object 'datetime.datetime' has no attribute 'datetime'
+2025-01-19 17:53:19.915 | ERROR    | __main__:fetch_stock_data:84 - Error processing ^DJI: type object 'datetime.datetime' has no attribute 'datetime'
+2025-01-19 17:53:19.917 | ERROR    | __main__:fetch_stock_data:84 - Error processing ^FTSE: type object 'datetime.datetime' has no attribute 'datetime'
+2025-01-19 17:53:19.919 | ERROR    | __main__:fetch_stock_data:84 - Error processing ^N225: type object 'datetime.datetime' has no attribute 'datetime'
+2025-01-19 17:53:19.921 | ERROR    | __main__:fetch_stock_data:84 - Error processing ^GDAXI: type object 'datetime.datetime' has no attribute 'datetime'
+2025-01-19 17:53:19.924 | ERROR    | __main__:fetch_stock_data:84 - Error processing ^FCHI: type object 'datetime.datetime' has no attribute 'datetime'
+2025-01-19 17:53:19.926 | ERROR    | __main__:fetch_stock_data:84 - Error processing ^STOXX50E: type object 'datetime.datetime' has no attribute 'datetime'
+2025-01-19 17:53:19.928 | ERROR    | __main__:fetch_stock_data:84 - Error processing ^IBEX: type object 'datetime.datetime' has no attribute 'datetime'
+2025-01-19 17:53:19.935 | ERROR    | __main__:post_performance:125 - Error posting 1-WTD: single positional indexer is out-of-bounds
+2025-01-19 17:53:19.936 | ERROR    | __main__:post_performance:125 - Error posting YTD: single positional indexer is out-of-bounds
+2025-01-19 17:55:35.932 | INFO     | __main__:__init__:23 - initialize Performance Markets
+2025-01-19 17:55:38.052 | INFO     | __main__:post_performance:122 - Posting message (278 chars):
+2025-01-19 17:55:38.053 | INFO     | __main__:post_tweet:45 - 
+Global Markets 1-WTD:
+🟢 #Russell-2000 -> 4.57 %
+🟢 #NASDAQ-100 -> 4.12 %
+🟢 #CAC-40 -> 4.05 %
+🟢 #DowJones -> 3.73 %
+🟢 #SP-500 -> 3.71 %
+🟢 #EuroStoxx-50 -> 3.7 %
+🟢 #DAX -> 3.7 %
+🟢 #FTSE-100 -> 3.11 %
+🟢 #Ibex-35 -> 2.18 %
+🔴 #Nikkei-225 -> -1.43 %
+
+#Stocks #Nasdaq #Investor #trader
+2025-01-19 17:55:38.054 | INFO     | utils.utils:post_twitter:35 - Tweet lenght: 278
+2025-01-19 17:55:38.411 | ERROR    | utils.utils:post_twitter:42 - 403 Forbidden
+You are not permitted to perform this action.
+2025-01-19 17:55:38.412 | INFO     | utils.utils:send_telegram_message:221 - Using bot_token: 6379257583...
+2025-01-19 17:55:38.412 | INFO     | utils.utils:send_telegram_message:222 - Sending to chat_id: -1002313822545
+2025-01-19 17:55:38.413 | INFO     | utils.utils:send_telegram_message:243 - Attempting to send message to Telegram
+2025-01-19 17:55:38.700 | INFO     | utils.utils:send_telegram_message:249 - Message sent successfully. Status code: 200
+2025-01-19 17:55:38.701 | ERROR    | utils.utils:post_twitter:44 - Tweet Error
+Tweet Error
+: 403 Forbidden
+You are not permitted to perform this action.
+
+Global Markets 1-WTD:
+🟢 #Russell-2000 -> 4.57 %
+🟢 #NASDAQ-100 -> 4.12 %
+🟢 #CAC-40 -> 4.05 %
+🟢 #DowJones -> 3.73 %
+🟢 #SP-500 -> 3.71 %
+🟢 #EuroStoxx-50 -> 3.7 %
+🟢 #DAX -> 3.7 %
+🟢 #FTSE-100 -> 3.11 %
+🟢 #Ibex-35 -> 2.18 %
+🔴 #Nikkei-225 -> -1.43 %
+
+#Stocks #Nasdaq #Investor #trader
+2025-01-19 17:55:38.703 | INFO     | __main__:post_performance:122 - Posting message (278 chars):
+2025-01-19 17:55:38.703 | INFO     | __main__:post_tweet:45 - 
+Global Markets YTD:
+🟢 #DAX -> 4.92 %
+🟢 #EuroStoxx-50 -> 4.74 %
+🟢 #CAC-40 -> 4.54 %
+🟢 #FTSE-100 -> 4.06 %
+🟢 #Ibex-35 -> 2.63 %
+🟢 #DowJones -> 1.94 %
+🟢 #SP-500 -> 1.58 %
+🟢 #Russell-2000 -> 1.52 %
+🟢 #NASDAQ-100 -> 1.52 %
+🔴 #Nikkei-225 -> -3.74 %
+
+#Stocks #Nasdaq #Investor #trader
+2025-01-19 17:55:38.704 | INFO     | utils.utils:post_twitter:35 - Tweet lenght: 278
+2025-01-19 17:55:38.988 | ERROR    | utils.utils:post_twitter:42 - 403 Forbidden
+You are not permitted to perform this action.
+2025-01-19 17:55:38.988 | INFO     | utils.utils:send_telegram_message:221 - Using bot_token: 6379257583...
+2025-01-19 17:55:38.988 | INFO     | utils.utils:send_telegram_message:222 - Sending to chat_id: -1002313822545
+2025-01-19 17:55:38.989 | INFO     | utils.utils:send_telegram_message:243 - Attempting to send message to Telegram
+2025-01-19 17:55:39.263 | INFO     | utils.utils:send_telegram_message:249 - Message sent successfully. Status code: 200
+2025-01-19 17:55:39.265 | ERROR    | utils.utils:post_twitter:44 - Tweet Error
+Tweet Error
+: 403 Forbidden
+You are not permitted to perform this action.
+
+Global Markets YTD:
+🟢 #DAX -> 4.92 %
+🟢 #EuroStoxx-50 -> 4.74 %
+🟢 #CAC-40 -> 4.54 %
+🟢 #FTSE-100 -> 4.06 %
+🟢 #Ibex-35 -> 2.63 %
+🟢 #DowJones -> 1.94 %
+🟢 #SP-500 -> 1.58 %
+🟢 #Russell-2000 -> 1.52 %
+🟢 #NASDAQ-100 -> 1.52 %
+🔴 #Nikkei-225 -> -3.74 %
+
+#Stocks #Nasdaq #Investor #trader
+2025-01-19 18:10:09.372 | INFO     | __main__:__init__:23 - initialize Performance Markets
+2025-01-19 18:10:11.257 | INFO     | __main__:post_performance:122 - Posting message (258 chars):
+2025-01-19 18:10:11.257 | INFO     | __main__:post_tweet:45 - 
+Global Markets 1-WTD:
+🟢 #Russell-2000 -> 4.57 %
+🟢 #NASDAQ-100 -> 4.12 %
+🟢 #CAC-40 -> 4.05 %
+🟢 #DowJones -> 3.73 %
+🟢 #SP-500 -> 3.71 %
+🟢 #EuroStoxx-50 -> 3.7 %
+🟢 #DAX -> 3.7 %
+🟢 #FTSE-100 -> 3.11 %
+🟢 #Ibex-35 -> 2.18 %
+🔴 #Nikkei-225 -> -1.43 %
+
+#Stockmarkets
+2025-01-19 18:10:11.258 | INFO     | utils.utils:post_twitter:35 - Tweet lenght: 258
+2025-01-19 18:10:11.683 | INFO     | utils.utils:send_telegram_message:221 - Using bot_token: 6379257583...
+2025-01-19 18:10:11.684 | INFO     | utils.utils:send_telegram_message:222 - Sending to chat_id: -1002313822545
+2025-01-19 18:10:11.685 | INFO     | utils.utils:send_telegram_message:243 - Attempting to send message to Telegram
+2025-01-19 18:10:11.929 | INFO     | utils.utils:send_telegram_message:249 - Message sent successfully. Status code: 200
+2025-01-19 18:10:11.930 | SUCCESS  | utils.utils:post_twitter:40 - Tweet posted: 
+Global Markets 1-WTD:
+🟢 #Russell-2000 -> 4.57 %
+🟢 #NASDAQ-100 -> 4.12 %
+🟢 #CAC-40 -> 4.05 %
+🟢 #DowJones -> 3.73 %
+🟢 #SP-500 -> 3.71 %
+🟢 #EuroStoxx-50 -> 3.7 %
+🟢 #DAX -> 3.7 %
+🟢 #FTSE-100 -> 3.11 %
+🟢 #Ibex-35 -> 2.18 %
+🔴 #Nikkei-225 -> -1.43 %
+
+#Stockmarkets
+2025-01-19 18:10:11.932 | INFO     | __main__:post_performance:122 - Posting message (258 chars):
+2025-01-19 18:10:11.933 | INFO     | __main__:post_tweet:45 - 
+Global Markets YTD:
+🟢 #DAX -> 4.92 %
+🟢 #EuroStoxx-50 -> 4.74 %
+🟢 #CAC-40 -> 4.54 %
+🟢 #FTSE-100 -> 4.06 %
+🟢 #Ibex-35 -> 2.63 %
+🟢 #DowJones -> 1.94 %
+🟢 #SP-500 -> 1.58 %
+🟢 #Russell-2000 -> 1.52 %
+🟢 #NASDAQ-100 -> 1.52 %
+🔴 #Nikkei-225 -> -3.74 %
+
+#Stockmarkets
+2025-01-19 18:10:11.933 | INFO     | utils.utils:post_twitter:35 - Tweet lenght: 258
+2025-01-19 18:10:12.296 | INFO     | utils.utils:send_telegram_message:221 - Using bot_token: 6379257583...
+2025-01-19 18:10:12.297 | INFO     | utils.utils:send_telegram_message:222 - Sending to chat_id: -1002313822545
+2025-01-19 18:10:12.298 | INFO     | utils.utils:send_telegram_message:243 - Attempting to send message to Telegram
+2025-01-19 18:10:12.533 | INFO     | utils.utils:send_telegram_message:249 - Message sent successfully. Status code: 200
+2025-01-19 18:10:12.534 | SUCCESS  | utils.utils:post_twitter:40 - Tweet posted: 
+Global Markets YTD:
+🟢 #DAX -> 4.92 %
+🟢 #EuroStoxx-50 -> 4.74 %
+🟢 #CAC-40 -> 4.54 %
+🟢 #FTSE-100 -> 4.06 %
+🟢 #Ibex-35 -> 2.63 %
+🟢 #DowJones -> 1.94 %
+🟢 #SP-500 -> 1.58 %
+🟢 #Russell-2000 -> 1.52 %
+🟢 #NASDAQ-100 -> 1.52 %
+🔴 #Nikkei-225 -> -3.74 %
+
+#Stockmarkets
+2025-01-19 18:12:13.903 | INFO     | __main__:__init__:23 - initialize Performance Markets
+2025-01-19 18:12:15.689 | INFO     | __main__:post_performance:122 - Posting message (271 chars):
+2025-01-19 18:12:15.689 | INFO     | __main__:post_tweet:45 - 
+Global Markets 1-WTD:
+🟢 #Russell_2000 -> 4.57 %
+🟢 #NASDAQ_100 -> 4.12 %
+🟢 #CAC_40 -> 4.05 %
+🟢 #DowJones -> 3.73 %
+🟢 #SP_500 -> 3.71 %
+🟢 #EuroStoxx_50 -> 3.7 %
+🟢 #DAX -> 3.7 %
+🟢 #FTSE_100 -> 3.11 %
+🟢 #Ibex_35 -> 2.18 %
+🔴 #Nikkei_225 -> -1.43 %
+
+#StockMarkets #Performance
+2025-01-19 18:12:15.690 | INFO     | utils.utils:post_twitter:35 - Tweet lenght: 271
+2025-01-19 18:12:16.118 | INFO     | utils.utils:send_telegram_message:221 - Using bot_token: 6379257583...
+2025-01-19 18:12:16.119 | INFO     | utils.utils:send_telegram_message:222 - Sending to chat_id: -1002313822545
+2025-01-19 18:12:16.121 | INFO     | utils.utils:send_telegram_message:243 - Attempting to send message to Telegram
+2025-01-19 18:12:16.432 | INFO     | utils.utils:send_telegram_message:249 - Message sent successfully. Status code: 200
+2025-01-19 18:12:16.434 | SUCCESS  | utils.utils:post_twitter:40 - Tweet posted: 
+Global Markets 1-WTD:
+🟢 #Russell_2000 -> 4.57 %
+🟢 #NASDAQ_100 -> 4.12 %
+🟢 #CAC_40 -> 4.05 %
+🟢 #DowJones -> 3.73 %
+🟢 #SP_500 -> 3.71 %
+🟢 #EuroStoxx_50 -> 3.7 %
+🟢 #DAX -> 3.7 %
+🟢 #FTSE_100 -> 3.11 %
+🟢 #Ibex_35 -> 2.18 %
+🔴 #Nikkei_225 -> -1.43 %
+
+#StockMarkets #Performance
+2025-01-19 18:12:16.439 | INFO     | __main__:post_performance:122 - Posting message (271 chars):
+2025-01-19 18:12:16.440 | INFO     | __main__:post_tweet:45 - 
+Global Markets YTD:
+🟢 #DAX -> 4.92 %
+🟢 #EuroStoxx_50 -> 4.74 %
+🟢 #CAC_40 -> 4.54 %
+🟢 #FTSE_100 -> 4.06 %
+🟢 #Ibex_35 -> 2.63 %
+🟢 #DowJones -> 1.94 %
+🟢 #SP_500 -> 1.58 %
+🟢 #Russell_2000 -> 1.52 %
+🟢 #NASDAQ_100 -> 1.52 %
+🔴 #Nikkei_225 -> -3.74 %
+
+#StockMarkets #Performance
+2025-01-19 18:12:16.442 | INFO     | utils.utils:post_twitter:35 - Tweet lenght: 271
+2025-01-19 18:12:16.825 | INFO     | utils.utils:send_telegram_message:221 - Using bot_token: 6379257583...
+2025-01-19 18:12:16.827 | INFO     | utils.utils:send_telegram_message:222 - Sending to chat_id: -1002313822545
+2025-01-19 18:12:16.828 | INFO     | utils.utils:send_telegram_message:243 - Attempting to send message to Telegram
+2025-01-19 18:12:17.110 | INFO     | utils.utils:send_telegram_message:249 - Message sent successfully. Status code: 200
+2025-01-19 18:12:17.112 | SUCCESS  | utils.utils:post_twitter:40 - Tweet posted: 
+Global Markets YTD:
+🟢 #DAX -> 4.92 %
+🟢 #EuroStoxx_50 -> 4.74 %
+🟢 #CAC_40 -> 4.54 %
+🟢 #FTSE_100 -> 4.06 %
+🟢 #Ibex_35 -> 2.63 %
+🟢 #DowJones -> 1.94 %
+🟢 #SP_500 -> 1.58 %
+🟢 #Russell_2000 -> 1.52 %
+🟢 #NASDAQ_100 -> 1.52 %
+🔴 #Nikkei_225 -> -3.74 %
+
+#StockMarkets #Performance

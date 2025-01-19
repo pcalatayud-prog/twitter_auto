@@ -12,6 +12,7 @@ from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 import urllib.parse
 import time
+import random
 from typing import List
 
 from config.auth import api_key
@@ -35,7 +36,7 @@ def post_twitter(text: str):
     logger.info(f"Tweet lenght: {len(message)}")
     try:
 
-        # client.create_tweet(text=message)
+        client.create_tweet(text=message)
         bot_send_text("Tweet posted: {}".format(message))
         logger.success("Tweet posted: {}".format(message))
     except Exception as e:
@@ -43,7 +44,9 @@ def post_twitter(text: str):
         bot_send_text(f"Tweet Error\nTweet Error\n: {e}\n{message}")
         logger.error(f"Tweet Error\nTweet Error\n: {e}\n{message}")
 
-
+    random_number = random.randint(60, 180)
+    logger.info(f"Pausing for {random_number} seconds to maintain proper intervals between Twitter posts.")
+    time.sleep(random_number)
     return None
 
 

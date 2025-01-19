@@ -9,7 +9,7 @@ import datetime
 import yfinance as yf
 import warnings
 from loguru import logger
-from datetime import datetime, timedelta
+from datetime import timedelta
 from typing import List, Dict, Tuple, Optional
 
 from utils.utils import post_twitter
@@ -23,12 +23,12 @@ class MarketPerformanceTracker:
         logger.info("initialize Performance Markets")
 
         self.data = {
-            "name": ["NASDAQ-100", "SP-500", "Russell-2000", "DowJones", "FTSE-100",
-                     "Nikkei-225", "DAX", "CAC-40", "EuroStoxx-50", "Ibex-35"],
+            "name": ["NASDAQ_100", "SP_500", "Russell_2000", "DowJones", "FTSE_100",
+                     "Nikkei_225", "DAX", "CAC_40", "EuroStoxx_50", "Ibex_35"],
             "symbol": ["^NDX", "^GSPC", "^RUT", "^DJI", "^FTSE",
                        "^N225", "^GDAXI", "^FCHI", "^STOXX50E", "^IBEX"]
         }
-        self.hashtags = ["\n#Stocks", ' #Nasdaq', ' #Investor', ' #Stockmarket', ' #trader']
+        self.hashtags = ['\n#StockMarkets #Performance']
         self.performance_df = None
         self.merged_df = None
         self.green = "\U0001F7E2"  # Green Circle
@@ -51,25 +51,25 @@ class MarketPerformanceTracker:
         if len(filtered_data) < 2:
             return np.nan
 
-        price_open = filtered_data["Adj Close"].iloc[0]
-        price_close = filtered_data["Adj Close"].iloc[-1]
+        price_open = filtered_data["Open"].iloc[0]
+        price_close = filtered_data["Close"].iloc[-1]
         return round(100 * (price_close - price_open) / price_open, 2)
 
     def fetch_stock_data(self, ticker: str) -> Dict[str, float]:
         """Fetch and calculate performance metrics for a given ticker."""
         try:
             dates = {
-                'ytd': datetime.now() - timedelta(days=365),
-                'hf': datetime.now() - timedelta(days=int(365 / 2)),
-                '3mtd': datetime.now() - timedelta(days=90),
-                'mtd': datetime.now() - timedelta(days=30),
-                'wtd': datetime.now() - timedelta(days=7)
+                'ytd': datetime.datetime(datetime.datetime.now().year, 1, 1),
+                'hf': datetime.datetime.now() - timedelta(days=int(365 / 2)),
+                '3mtd': datetime.datetime.now() - timedelta(days=90),
+                'mtd': datetime.datetime.now() - timedelta(days=30),
+                'wtd': datetime.datetime.now() - timedelta(days=7)
             }
 
             stock_data = yf.download(ticker,
                                      start=dates['ytd'],
-                                     end=datetime.now(),
-                                     progress=False)
+                                     progress=False,
+                                     multi_level_index=False)
 
             returns = {period: self.calculate_returns(stock_data, start_date)
                        for period, start_date in dates.items()}
@@ -135,7 +135,7 @@ class MarketPerformanceTracker:
             # ('mtd', '1-MTD'),
             # ('3mtd', '3-MTD'),
             # ('hf', '6-MTD'),
-            ('ytd', '1YTD')
+            ('ytd', 'YTD')
         ]
 
         for period, title in reports:
