@@ -8,6 +8,10 @@
 **LinkedIn:** [Pablo Calatayud Pelayo](https://www.linkedin.com/in/pablo-calatayud-pelayo/)  
 **Copyright:** Take what is useful, discard what is not, mentioning it is up to you, but it would be appreciated.
 
+## Analytics
+![1 year Analitis.](https://github.com/pcalatayud-prog/twitter_auto/blob/main/AI_Investor_py.PNG)
+
+
 ## Project Description
 This project is an automated Twitter bot that provides stock market updates, including earnings reports, dividends, splits, and market performance metrics. The bot operates during market hours and provides specialized reports during weekends.
 
