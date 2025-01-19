@@ -41,20 +41,16 @@ class Market_Daily_Performance :
             try:
                 stock_data = yf.download(ticker, start=dates['ytd'], end=datetime.now(), progress=False)
                 row = {'ticker': ticker}
-                # Calculate daily return
                 if len(stock_data) >= 2:
-                    # Use .iloc[0] to get scalar values
                     last_close = stock_data['Close'].iloc[-1].item()
                     prev_close = stock_data['Close'].iloc[-2].item()
                     daily_return = round(((last_close / prev_close) - 1) * 100, 2)
                 else:
                     daily_return = np.nan
                 row['dtd'] = daily_return
-                # Calculate other period returns
                 for period, start_date in dates.items():
                     period_data = stock_data[stock_data.index >= start_date]
                     if len(period_data) >= 2:
-                        # Use .iloc[0] to get scalar values
                         start_price = period_data['Close'].iloc[0].item()
                         end_price = period_data['Close'].iloc[-1].item()
                         period_return = round(((end_price / start_price) - 1) * 100, 2)

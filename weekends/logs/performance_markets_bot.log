@@ -1,0 +1,26 @@
+2025-01-18 23:01:35.388 | INFO     | __main__:__init__:23 - initialize Performance Markets
+2025-01-18 23:01:36.167 | ERROR    | __main__:fetch_stock_data:84 - Error processing ^NDX: 'Adj Close'
+2025-01-18 23:01:36.281 | ERROR    | __main__:fetch_stock_data:84 - Error processing ^GSPC: 'Adj Close'
+2025-01-18 23:01:36.412 | ERROR    | __main__:fetch_stock_data:84 - Error processing ^RUT: 'Adj Close'
+2025-01-18 23:01:36.511 | ERROR    | __main__:fetch_stock_data:84 - Error processing ^DJI: 'Adj Close'
+2025-01-18 23:01:36.612 | ERROR    | __main__:fetch_stock_data:84 - Error processing ^FTSE: 'Adj Close'
+2025-01-18 23:01:36.715 | ERROR    | __main__:fetch_stock_data:84 - Error processing ^N225: 'Adj Close'
+2025-01-18 23:01:36.814 | ERROR    | __main__:fetch_stock_data:84 - Error processing ^GDAXI: 'Adj Close'
+2025-01-18 23:01:36.923 | ERROR    | __main__:fetch_stock_data:84 - Error processing ^FCHI: 'Adj Close'
+2025-01-18 23:01:37.037 | ERROR    | __main__:fetch_stock_data:84 - Error processing ^STOXX50E: 'Adj Close'
+2025-01-18 23:01:37.161 | ERROR    | __main__:fetch_stock_data:84 - Error processing ^IBEX: 'Adj Close'
+2025-01-18 23:01:37.172 | ERROR    | __main__:post_performance:125 - Error posting 1-WTD: single positional indexer is out-of-bounds
+2025-01-18 23:01:37.173 | ERROR    | __main__:post_performance:125 - Error posting 1YTD: single positional indexer is out-of-bounds
+2025-01-19 14:57:15.708 | INFO     | __main__:__init__:23 - initialize Performance Markets
+2025-01-19 14:57:16.731 | ERROR    | __main__:fetch_stock_data:84 - Error processing ^NDX: 'Adj Close'
+2025-01-19 14:57:16.824 | ERROR    | __main__:fetch_stock_data:84 - Error processing ^GSPC: 'Adj Close'
+2025-01-19 14:57:16.927 | ERROR    | __main__:fetch_stock_data:84 - Error processing ^RUT: 'Adj Close'
+2025-01-19 14:57:17.031 | ERROR    | __main__:fetch_stock_data:84 - Error processing ^DJI: 'Adj Close'
+2025-01-19 14:57:17.149 | ERROR    | __main__:fetch_stock_data:84 - Error processing ^FTSE: 'Adj Close'
+2025-01-19 14:57:17.278 | ERROR    | __main__:fetch_stock_data:84 - Error processing ^N225: 'Adj Close'
+2025-01-19 14:57:17.392 | ERROR    | __main__:fetch_stock_data:84 - Error processing ^GDAXI: 'Adj Close'
+2025-01-19 14:57:17.494 | ERROR    | __main__:fetch_stock_data:84 - Error processing ^FCHI: 'Adj Close'
+2025-01-19 14:57:17.595 | ERROR    | __main__:fetch_stock_data:84 - Error processing ^STOXX50E: 'Adj Close'
+2025-01-19 14:57:17.731 | ERROR    | __main__:fetch_stock_data:84 - Error processing ^IBEX: 'Adj Close'
+2025-01-19 14:57:17.743 | ERROR    | __main__:post_performance:125 - Error posting 1-WTD: single positional indexer is out-of-bounds
+2025-01-19 14:57:17.744 | ERROR    | __main__:post_performance:125 - Error posting 1YTD: single positional indexer is out-of-bounds

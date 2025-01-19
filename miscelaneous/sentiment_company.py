@@ -22,11 +22,22 @@ class CompanySentiment:
         logger.add("../logs/company_sentiment.log", rotation="500 MB")
         logger.info('Initialising company_sentiment')
 
-        self.tickers = getting_nasdaq100_sp500_tickers()
+        self.tickers = None
         self.api_key = api_key
 
         self.trendy_ticker = None
         self.message =  None
+
+    def getting_tickers(self):
+
+        # self.tickers = getting_nasdaq100_sp500_tickers()
+
+        df_tickers = pd.read_csv('C:/Users/peybo/PycharmProjects/twitter_auto/config/top_3000_tickers.csv')
+
+        self.tickers = df_tickers['ticker'].unique().tolist()
+
+        return None
+
 
     def fetch_social_sentiment(self,symbol: str, page: int = 0):
         """
@@ -84,8 +95,10 @@ class CompanySentiment:
     def getting_sentiment(self):
 
         rows = []
-
+        count = 0
         for ticker in self.tickers:
+            count += 1
+            logger.info(f'{count}/{len(self.tickers)}')
             try:
                 # Fetch the social sentiment data
                 data = self.fetch_social_sentiment(ticker)
@@ -163,7 +176,7 @@ class CompanySentiment:
 
             # Generate tweet
             tweet = (
-                f"🔥{company_name}: -> ${self.trendy_ticker} is trending on X! \n"
+                f"🔥{company_name}: -> ${self.trendy_ticker} is the most trendy company on X! \n"
                 f"Posts of ${self.trendy_ticker} last hour: {data_last['twitterPosts']}\n"
                 f"Impressions of ${self.trendy_ticker} last hour: {data_last['twitterImpressions']}\n"
                 f"Likes of ${self.trendy_ticker} last hour: {data_last['twitterLikes']}\n"
@@ -184,6 +197,8 @@ class CompanySentiment:
 
 
     def run(self):
+
+        self.getting_tickers()
 
         self.getting_sentiment()
 

@@ -46,6 +46,8 @@ class StockSevenMagnificenPerformance:
         for ticker in self.tickers:
             try:
                 stock_data = yf.download(ticker, start="2024-01-01", end=datetime.datetime.now(), progress=False)
+                stock_data.columns = stock_data.columns.get_level_values(0)
+
                 stock_data['day-of-week'] = stock_data.index.dayofweek
                 stock_data['week-of-year'] = stock_data.index.isocalendar().week
                 stock_data['month-of-year'] = stock_data.index.month
@@ -54,15 +56,16 @@ class StockSevenMagnificenPerformance:
                 # Performance calculations for multiple periods
                 performance = {
                     "ticker": ticker,
-                    "ytd": self.calculate_return(stock_data, self.get_start_date('1y')),
+                    "ytd": self.calculate_return(stock_data, self.get_start_date('ytd')),
                     "hf": self.calculate_return(stock_data, self.get_start_date('half')),
                     "3mtd": self.calculate_return(stock_data, self.get_start_date('3m')),
                     "mtd": self.calculate_return(stock_data, self.get_start_date('1m')),
                     "wtd": self.calculate_return(stock_data, self.get_start_date('1w')),
-                    "dtd": self.calculate_dtd(stock_data)
+                    "dtd": self.calculate_dtd(stock_data).item()
                 }
 
-                self.df_performance = self.df_performance.append(performance, ignore_index=True)
+                self.df_performance = pd.concat([self.df_performance, pd.DataFrame([performance])], ignore_index=True)
+
 
             except Exception as e:
                 logger.error(f"Error with ticker {ticker}: {e}")
@@ -70,8 +73,8 @@ class StockSevenMagnificenPerformance:
 
     def get_start_date(self, period):
         """ Helper function to get the start date based on the period input """
-        if period == '1y':
-            return datetime.datetime.now() - timedelta(days=365)
+        if period == 'ytd':
+            return datetime.datetime(datetime.datetime.now().year, 1, 1)
         elif period == 'half':
             return datetime.datetime.now() - timedelta(days=365 // 2)
         elif period == '3m':
@@ -87,9 +90,9 @@ class StockSevenMagnificenPerformance:
         """ Helper function to calculate returns for a given time period """
         stock_data_period = stock_data[stock_data.index >= start_date]
         if len(stock_data_period) > 1:
-            price_open = stock_data_period["Adj Close"].iloc[0]
-            price_close = stock_data_period["Adj Close"].iloc[-1]
-            return round(100 * (price_close - price_open) / price_open, 2)
+            price_open = stock_data_period["Open"].iloc[0]
+            price_close = stock_data_period["Close"].iloc[-1]
+            return round(100 * (price_close - price_open) / price_open, 2).item()
         else:
             return np.nan
 
@@ -115,7 +118,7 @@ class StockSevenMagnificenPerformance:
             performance_value = row[frequency]
             # Add emoji based on the performance value
             emoji = self.green if performance_value > 0 else self.red
-            message += f"{emoji} #{row['Company']} -> {performance_value} %\n"
+            message += f"{idx+1}. {emoji} #{row['Company']} -> {performance_value} %\n"
 
         message_with_hashtags = message + ''.join(self.lista_hastaghs)
 
@@ -124,6 +127,7 @@ class StockSevenMagnificenPerformance:
         # Here you would include logic to post the message (e.g., post() function)
         try:
             self.post(message_with_hashtags)
+            logger.success(message_with_hashtags)
         except Exception as e:
             logger.error(f"Error posting {frequency}: {e}")
 
@@ -151,3 +155,4 @@ class StockSevenMagnificenPerformance:
 if __name__ == "__main__":
     stock_performance = StockSevenMagnificenPerformance()
     stock_performance.run()
+    logger.success('Peformance Mag-7 cCompleted')

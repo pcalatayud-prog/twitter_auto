@@ -1,0 +1,686 @@
+2025-01-19 14:58:14.504 | INFO     | __main__:__init__:22 - initialize Mag_7
+2025-01-19 14:58:14.504 | INFO     | __main__:run:139 - Starting the stock performance evaluation.
+2025-01-19 15:04:13.543 | INFO     | __main__:__init__:22 - initialize Mag_7
+2025-01-19 15:04:13.545 | INFO     | __main__:run:139 - Starting the stock performance evaluation.
+2025-01-19 15:04:14.437 | ERROR    | __main__:download_data:68 - Error with ticker NVDA: 'Adj Close'
+2025-01-19 15:04:14.577 | ERROR    | __main__:download_data:68 - Error with ticker META: 'Adj Close'
+2025-01-19 15:04:14.681 | ERROR    | __main__:download_data:68 - Error with ticker AMZN: 'Adj Close'
+2025-01-19 15:04:14.843 | ERROR    | __main__:download_data:68 - Error with ticker MSFT: 'Adj Close'
+2025-01-19 15:04:14.962 | ERROR    | __main__:download_data:68 - Error with ticker GOOG: 'Adj Close'
+2025-01-19 15:04:15.171 | ERROR    | __main__:download_data:68 - Error with ticker AAPL: 'Adj Close'
+2025-01-19 15:04:15.299 | ERROR    | __main__:download_data:68 - Error with ticker TSLA: 'Adj Close'
+2025-01-19 15:04:15.310 | INFO     | __main__:run:144 - Posting top performance for different frequencies.
+2025-01-19 15:04:15.312 | INFO     | __main__:post_performance:122 - Message length: 88
+2025-01-19 15:04:15.313 | INFO     | __main__:post:132 - Posting message...
+2025-01-19 15:04:15.313 | INFO     | __main__:post:133 - 
+Magnificent-7 -> WTD:
+
+
+#Stocks #Nasdaq #Investor #StockMarket #trader #tradigng #SP500
+2025-01-19 15:04:15.314 | INFO     | utils.utils:post_twitter:35 - Tweet lenght: 88
+2025-01-19 15:04:15.314 | INFO     | utils.utils:send_telegram_message:221 - Using bot_token: 6379257583...
+2025-01-19 15:04:15.315 | INFO     | utils.utils:send_telegram_message:222 - Sending to chat_id: -1002313822545
+2025-01-19 15:04:15.315 | INFO     | utils.utils:send_telegram_message:243 - Attempting to send message to Telegram
+2025-01-19 15:04:15.726 | INFO     | utils.utils:send_telegram_message:249 - Message sent successfully. Status code: 200
+2025-01-19 15:04:15.727 | SUCCESS  | utils.utils:post_twitter:40 - Tweet posted: 
+Magnificent-7 -> WTD:
+
+
+#Stocks #Nasdaq #Investor #StockMarket #trader #tradigng #SP500
+2025-01-19 15:05:40.173 | INFO     | __main__:__init__:22 - initialize Mag_7
+2025-01-19 15:05:40.173 | INFO     | __main__:run:139 - Starting the stock performance evaluation.
+2025-01-19 15:12:53.451 | INFO     | __main__:__init__:22 - initialize Mag_7
+2025-01-19 15:12:53.451 | INFO     | __main__:run:139 - Starting the stock performance evaluation.
+2025-01-19 15:22:02.278 | INFO     | __main__:__init__:22 - initialize Mag_7
+2025-01-19 15:22:02.278 | INFO     | __main__:run:139 - Starting the stock performance evaluation.
+2025-01-19 15:22:46.960 | INFO     | __main__:__init__:22 - initialize Mag_7
+2025-01-19 15:22:46.975 | INFO     | __main__:run:139 - Starting the stock performance evaluation.
+2025-01-19 15:24:21.271 | INFO     | __main__:__init__:22 - initialize Mag_7
+2025-01-19 15:24:21.271 | INFO     | __main__:run:139 - Starting the stock performance evaluation.
+2025-01-19 15:25:35.674 | INFO     | __main__:__init__:22 - initialize Mag_7
+2025-01-19 15:25:35.685 | INFO     | __main__:run:139 - Starting the stock performance evaluation.
+2025-01-19 15:29:21.390 | INFO     | __main__:__init__:22 - initialize Mag_7
+2025-01-19 15:29:21.392 | INFO     | __main__:run:141 - Starting the stock performance evaluation.
+2025-01-19 15:29:22.150 | ERROR    | __main__:download_data:70 - Error with ticker NVDA: 'DataFrame' object has no attribute 'append'
+2025-01-19 15:29:22.308 | ERROR    | __main__:download_data:70 - Error with ticker META: 'DataFrame' object has no attribute 'append'
+2025-01-19 15:29:22.439 | ERROR    | __main__:download_data:70 - Error with ticker AMZN: 'DataFrame' object has no attribute 'append'
+2025-01-19 15:29:22.575 | ERROR    | __main__:download_data:70 - Error with ticker MSFT: 'DataFrame' object has no attribute 'append'
+2025-01-19 15:29:22.696 | ERROR    | __main__:download_data:70 - Error with ticker GOOG: 'DataFrame' object has no attribute 'append'
+2025-01-19 15:29:22.855 | ERROR    | __main__:download_data:70 - Error with ticker AAPL: 'DataFrame' object has no attribute 'append'
+2025-01-19 15:29:22.966 | ERROR    | __main__:download_data:70 - Error with ticker TSLA: 'DataFrame' object has no attribute 'append'
+2025-01-19 15:29:22.971 | INFO     | __main__:run:146 - Posting top performance for different frequencies.
+2025-01-19 15:29:22.972 | INFO     | __main__:post_performance:124 - Message length: 88
+2025-01-19 15:29:22.972 | INFO     | __main__:post:134 - Posting message...
+2025-01-19 15:29:22.972 | INFO     | __main__:post:135 - 
+Magnificent-7 -> WTD:
+
+
+#Stocks #Nasdaq #Investor #StockMarket #trader #tradigng #SP500
+2025-01-19 15:29:22.973 | INFO     | utils.utils:post_twitter:35 - Tweet lenght: 88
+2025-01-19 15:29:22.973 | INFO     | utils.utils:send_telegram_message:221 - Using bot_token: 6379257583...
+2025-01-19 15:29:22.973 | INFO     | utils.utils:send_telegram_message:222 - Sending to chat_id: -1002313822545
+2025-01-19 15:29:22.974 | INFO     | utils.utils:send_telegram_message:243 - Attempting to send message to Telegram
+2025-01-19 15:29:23.240 | INFO     | utils.utils:send_telegram_message:249 - Message sent successfully. Status code: 200
+2025-01-19 15:29:23.241 | SUCCESS  | utils.utils:post_twitter:40 - Tweet posted: 
+Magnificent-7 -> WTD:
+
+
+#Stocks #Nasdaq #Investor #StockMarket #trader #tradigng #SP500
+2025-01-19 15:29:44.525 | INFO     | __main__:__init__:22 - initialize Mag_7
+2025-01-19 15:29:44.525 | INFO     | __main__:run:141 - Starting the stock performance evaluation.
+2025-01-19 15:30:38.285 | INFO     | __main__:__init__:22 - initialize Mag_7
+2025-01-19 15:30:38.285 | INFO     | __main__:run:141 - Starting the stock performance evaluation.
+2025-01-19 15:33:30.219 | INFO     | __main__:__init__:22 - initialize Mag_7
+2025-01-19 15:33:30.234 | INFO     | __main__:run:141 - Starting the stock performance evaluation.
+2025-01-19 15:34:57.879 | ERROR    | __main__:download_data:70 - Error with ticker NVDA: 'DataFrame' object has no attribute 'append'
+2025-01-19 15:34:58.128 | ERROR    | __main__:download_data:70 - Error with ticker META: 'DataFrame' object has no attribute 'append'
+2025-01-19 15:34:58.333 | ERROR    | __main__:download_data:70 - Error with ticker AMZN: 'DataFrame' object has no attribute 'append'
+2025-01-19 15:34:58.588 | ERROR    | __main__:download_data:70 - Error with ticker MSFT: 'DataFrame' object has no attribute 'append'
+2025-01-19 15:34:58.827 | ERROR    | __main__:download_data:70 - Error with ticker GOOG: 'DataFrame' object has no attribute 'append'
+2025-01-19 15:34:59.096 | ERROR    | __main__:download_data:70 - Error with ticker AAPL: 'DataFrame' object has no attribute 'append'
+2025-01-19 15:34:59.317 | ERROR    | __main__:download_data:70 - Error with ticker TSLA: 'DataFrame' object has no attribute 'append'
+2025-01-19 15:34:59.333 | INFO     | __main__:run:146 - Posting top performance for different frequencies.
+2025-01-19 15:34:59.346 | INFO     | __main__:post_performance:124 - Message length: 88
+2025-01-19 15:34:59.349 | INFO     | __main__:post:134 - Posting message...
+2025-01-19 15:34:59.349 | INFO     | __main__:post:135 - 
+Magnificent-7 -> WTD:
+
+
+#Stocks #Nasdaq #Investor #StockMarket #trader #tradigng #SP500
+2025-01-19 15:34:59.349 | INFO     | utils.utils:post_twitter:35 - Tweet lenght: 88
+2025-01-19 15:34:59.349 | INFO     | utils.utils:send_telegram_message:221 - Using bot_token: 6379257583...
+2025-01-19 15:34:59.349 | INFO     | utils.utils:send_telegram_message:222 - Sending to chat_id: -1002313822545
+2025-01-19 15:34:59.349 | INFO     | utils.utils:send_telegram_message:243 - Attempting to send message to Telegram
+2025-01-19 15:34:59.636 | INFO     | utils.utils:send_telegram_message:249 - Message sent successfully. Status code: 200
+2025-01-19 15:34:59.636 | SUCCESS  | utils.utils:post_twitter:40 - Tweet posted: 
+Magnificent-7 -> WTD:
+
+
+#Stocks #Nasdaq #Investor #StockMarket #trader #tradigng #SP500
+2025-01-19 15:36:24.432 | INFO     | __main__:__init__:22 - initialize Mag_7
+2025-01-19 15:36:24.434 | INFO     | __main__:run:142 - Starting the stock performance evaluation.
+2025-01-19 15:36:25.973 | INFO     | __main__:run:147 - Posting top performance for different frequencies.
+2025-01-19 15:36:25.976 | INFO     | __main__:post_performance:125 - Message length: 215
+2025-01-19 15:36:25.977 | INFO     | __main__:post:135 - Posting message...
+2025-01-19 15:36:25.977 | INFO     | __main__:post:136 - 
+Magnificent-7 -> WTD:
+
+🟢 #TSLA -> 5.75 %
+🟢 #AMZN -> 3.42 %
+🟢 #NVDA -> 3.36 %
+🟢 #MSFT -> 2.84 %
+🟢 #GOOG -> 2.74 %
+🟢 #META -> 0.73 %
+🔴 #AAPL -> -1.89 %
+
+#Stocks #Nasdaq #Investor #StockMarket #trader #tradigng #SP500
+2025-01-19 15:36:25.978 | INFO     | utils.utils:post_twitter:35 - Tweet lenght: 215
+2025-01-19 15:36:25.978 | INFO     | utils.utils:send_telegram_message:221 - Using bot_token: 6379257583...
+2025-01-19 15:36:25.978 | INFO     | utils.utils:send_telegram_message:222 - Sending to chat_id: -1002313822545
+2025-01-19 15:36:25.979 | INFO     | utils.utils:send_telegram_message:243 - Attempting to send message to Telegram
+2025-01-19 15:36:26.206 | INFO     | utils.utils:send_telegram_message:249 - Message sent successfully. Status code: 200
+2025-01-19 15:36:26.208 | SUCCESS  | utils.utils:post_twitter:40 - Tweet posted: 
+Magnificent-7 -> WTD:
+
+🟢 #TSLA -> 5.75 %
+🟢 #AMZN -> 3.42 %
+🟢 #NVDA -> 3.36 %
+🟢 #MSFT -> 2.84 %
+🟢 #GOOG -> 2.74 %
+🟢 #META -> 0.73 %
+🔴 #AAPL -> -1.89 %
+
+#Stocks #Nasdaq #Investor #StockMarket #trader #tradigng #SP500
+2025-01-19 15:37:17.366 | INFO     | __main__:__init__:22 - initialize Mag_7
+2025-01-19 15:37:17.369 | INFO     | __main__:run:142 - Starting the stock performance evaluation.
+2025-01-19 15:37:18.974 | INFO     | __main__:run:147 - Posting top performance for different frequencies.
+2025-01-19 15:37:18.976 | INFO     | __main__:post_performance:125 - Message length: 215
+2025-01-19 15:37:18.976 | INFO     | __main__:post:135 - Posting message...
+2025-01-19 15:37:18.977 | INFO     | __main__:post:136 - 
+Magnificent-7 -> WTD:
+
+🟢 #TSLA -> 5.75 %
+🟢 #AMZN -> 3.42 %
+🟢 #NVDA -> 3.36 %
+🟢 #MSFT -> 2.84 %
+🟢 #GOOG -> 2.74 %
+🟢 #META -> 0.73 %
+🔴 #AAPL -> -1.89 %
+
+#Stocks #Nasdaq #Investor #StockMarket #trader #tradigng #SP500
+2025-01-19 15:37:18.977 | INFO     | utils.utils:post_twitter:35 - Tweet lenght: 215
+2025-01-19 15:37:18.977 | INFO     | utils.utils:send_telegram_message:221 - Using bot_token: 6379257583...
+2025-01-19 15:37:18.978 | INFO     | utils.utils:send_telegram_message:222 - Sending to chat_id: -1002313822545
+2025-01-19 15:37:18.978 | INFO     | utils.utils:send_telegram_message:243 - Attempting to send message to Telegram
+2025-01-19 15:37:19.220 | INFO     | utils.utils:send_telegram_message:249 - Message sent successfully. Status code: 200
+2025-01-19 15:37:19.222 | SUCCESS  | utils.utils:post_twitter:40 - Tweet posted: 
+Magnificent-7 -> WTD:
+
+🟢 #TSLA -> 5.75 %
+🟢 #AMZN -> 3.42 %
+🟢 #NVDA -> 3.36 %
+🟢 #MSFT -> 2.84 %
+🟢 #GOOG -> 2.74 %
+🟢 #META -> 0.73 %
+🔴 #AAPL -> -1.89 %
+
+#Stocks #Nasdaq #Investor #StockMarket #trader #tradigng #SP500
+2025-01-19 15:37:45.663 | INFO     | __main__:__init__:22 - initialize Mag_7
+2025-01-19 15:37:45.679 | INFO     | __main__:run:142 - Starting the stock performance evaluation.
+2025-01-19 15:37:48.491 | INFO     | __main__:run:147 - Posting top performance for different frequencies.
+2025-01-19 15:38:35.012 | INFO     | __main__:__init__:22 - initialize Mag_7
+2025-01-19 15:38:35.027 | INFO     | __main__:run:142 - Starting the stock performance evaluation.
+2025-01-19 15:38:38.149 | INFO     | __main__:run:147 - Posting top performance for different frequencies.
+2025-01-19 15:39:01.978 | INFO     | __main__:__init__:22 - initialize Mag_7
+2025-01-19 15:39:01.994 | INFO     | __main__:run:142 - Starting the stock performance evaluation.
+2025-01-19 15:39:04.897 | INFO     | __main__:run:147 - Posting top performance for different frequencies.
+2025-01-19 15:40:38.293 | INFO     | __main__:__init__:22 - initialize Mag_7
+2025-01-19 15:40:38.293 | INFO     | __main__:run:143 - Starting the stock performance evaluation.
+2025-01-19 15:40:41.253 | INFO     | __main__:run:148 - Posting top performance for different frequencies.
+2025-01-19 15:41:46.484 | INFO     | __main__:__init__:22 - initialize Mag_7
+2025-01-19 15:41:46.486 | INFO     | __main__:run:143 - Starting the stock performance evaluation.
+2025-01-19 15:41:48.063 | INFO     | __main__:run:148 - Posting top performance for different frequencies.
+2025-01-19 15:41:48.065 | INFO     | __main__:post_performance:125 - Message length: 215
+2025-01-19 15:41:48.065 | INFO     | __main__:post:136 - Posting message...
+2025-01-19 15:41:48.065 | INFO     | __main__:post:137 - 
+Magnificent-7 -> WTD:
+
+🟢 #TSLA -> 5.75 %
+🟢 #AMZN -> 3.42 %
+🟢 #NVDA -> 3.36 %
+🟢 #MSFT -> 2.84 %
+🟢 #GOOG -> 2.74 %
+🟢 #META -> 0.73 %
+🔴 #AAPL -> -1.89 %
+
+#Stocks #Nasdaq #Investor #StockMarket #trader #tradigng #SP500
+2025-01-19 15:41:48.066 | INFO     | utils.utils:post_twitter:35 - Tweet lenght: 215
+2025-01-19 15:41:48.066 | INFO     | utils.utils:send_telegram_message:221 - Using bot_token: 6379257583...
+2025-01-19 15:41:48.066 | INFO     | utils.utils:send_telegram_message:222 - Sending to chat_id: -1002313822545
+2025-01-19 15:41:48.067 | INFO     | utils.utils:send_telegram_message:243 - Attempting to send message to Telegram
+2025-01-19 15:41:48.291 | INFO     | utils.utils:send_telegram_message:249 - Message sent successfully. Status code: 200
+2025-01-19 15:41:48.292 | SUCCESS  | utils.utils:post_twitter:40 - Tweet posted: 
+Magnificent-7 -> WTD:
+
+🟢 #TSLA -> 5.75 %
+🟢 #AMZN -> 3.42 %
+🟢 #NVDA -> 3.36 %
+🟢 #MSFT -> 2.84 %
+🟢 #GOOG -> 2.74 %
+🟢 #META -> 0.73 %
+🔴 #AAPL -> -1.89 %
+
+#Stocks #Nasdaq #Investor #StockMarket #trader #tradigng #SP500
+2025-01-19 15:43:48.296 | SUCCESS  | __main__:post_performance:130 - 
+Magnificent-7 -> WTD:
+
+🟢 #TSLA -> 5.75 %
+🟢 #AMZN -> 3.42 %
+🟢 #NVDA -> 3.36 %
+🟢 #MSFT -> 2.84 %
+🟢 #GOOG -> 2.74 %
+🟢 #META -> 0.73 %
+🔴 #AAPL -> -1.89 %
+
+#Stocks #Nasdaq #Investor #StockMarket #trader #tradigng #SP500
+2025-01-19 15:43:48.305 | INFO     | __main__:post_performance:125 - Message length: 222
+2025-01-19 15:43:48.306 | INFO     | __main__:post:136 - Posting message...
+2025-01-19 15:43:48.307 | INFO     | __main__:post:137 - 
+Magnificent-7 -> YTD:
+
+🟢 #NVDA -> 130.91 %
+🟢 #TSLA -> 104.26 %
+🟢 #META -> 61.12 %
+🟢 #AMZN -> 45.97 %
+🟢 #GOOG -> 34.22 %
+🟢 #AAPL -> 19.19 %
+🟢 #MSFT -> 9.01 %
+
+#Stocks #Nasdaq #Investor #StockMarket #trader #tradigng #SP500
+2025-01-19 15:43:48.308 | INFO     | utils.utils:post_twitter:35 - Tweet lenght: 222
+2025-01-19 15:43:48.309 | INFO     | utils.utils:send_telegram_message:221 - Using bot_token: 6379257583...
+2025-01-19 15:43:48.311 | INFO     | utils.utils:send_telegram_message:222 - Sending to chat_id: -1002313822545
+2025-01-19 15:43:48.313 | INFO     | utils.utils:send_telegram_message:243 - Attempting to send message to Telegram
+2025-01-19 15:43:48.638 | INFO     | utils.utils:send_telegram_message:249 - Message sent successfully. Status code: 200
+2025-01-19 15:43:48.640 | SUCCESS  | utils.utils:post_twitter:40 - Tweet posted: 
+Magnificent-7 -> YTD:
+
+🟢 #NVDA -> 130.91 %
+🟢 #TSLA -> 104.26 %
+🟢 #META -> 61.12 %
+🟢 #AMZN -> 45.97 %
+🟢 #GOOG -> 34.22 %
+🟢 #AAPL -> 19.19 %
+🟢 #MSFT -> 9.01 %
+
+#Stocks #Nasdaq #Investor #StockMarket #trader #tradigng #SP500
+2025-01-19 15:45:48.646 | SUCCESS  | __main__:post_performance:130 - 
+Magnificent-7 -> YTD:
+
+🟢 #NVDA -> 130.91 %
+🟢 #TSLA -> 104.26 %
+🟢 #META -> 61.12 %
+🟢 #AMZN -> 45.97 %
+🟢 #GOOG -> 34.22 %
+🟢 #AAPL -> 19.19 %
+🟢 #MSFT -> 9.01 %
+
+#Stocks #Nasdaq #Investor #StockMarket #trader #tradigng #SP500
+2025-01-19 15:55:08.411 | INFO     | __main__:__init__:22 - initialize Mag_7
+2025-01-19 15:55:08.427 | INFO     | __main__:run:143 - Starting the stock performance evaluation.
+2025-01-19 15:55:42.959 | INFO     | __main__:__init__:22 - initialize Mag_7
+2025-01-19 15:55:42.959 | INFO     | __main__:run:143 - Starting the stock performance evaluation.
+2025-01-19 15:58:40.040 | INFO     | __main__:__init__:22 - initialize Mag_7
+2025-01-19 15:58:40.042 | INFO     | __main__:run:143 - Starting the stock performance evaluation.
+2025-01-19 15:58:41.694 | INFO     | __main__:run:148 - Posting top performance for different frequencies.
+2025-01-19 15:58:41.696 | INFO     | __main__:post_performance:125 - Message length: 215
+2025-01-19 15:58:41.698 | INFO     | __main__:post:136 - Posting message...
+2025-01-19 15:58:41.698 | INFO     | __main__:post:137 - 
+Magnificent-7 -> WTD:
+
+🟢 #TSLA -> 5.75 %
+🟢 #AMZN -> 3.42 %
+🟢 #NVDA -> 3.36 %
+🟢 #MSFT -> 2.84 %
+🟢 #GOOG -> 2.74 %
+🟢 #META -> 0.73 %
+🔴 #AAPL -> -1.89 %
+
+#Stocks #Nasdaq #Investor #StockMarket #trader #tradigng #SP500
+2025-01-19 15:58:41.699 | INFO     | utils.utils:post_twitter:35 - Tweet lenght: 215
+2025-01-19 15:58:41.699 | INFO     | utils.utils:send_telegram_message:221 - Using bot_token: 6379257583...
+2025-01-19 15:58:41.699 | INFO     | utils.utils:send_telegram_message:222 - Sending to chat_id: -1002313822545
+2025-01-19 15:58:41.700 | INFO     | utils.utils:send_telegram_message:243 - Attempting to send message to Telegram
+2025-01-19 15:58:41.940 | INFO     | utils.utils:send_telegram_message:249 - Message sent successfully. Status code: 200
+2025-01-19 15:58:41.941 | SUCCESS  | utils.utils:post_twitter:40 - Tweet posted: 
+Magnificent-7 -> WTD:
+
+🟢 #TSLA -> 5.75 %
+🟢 #AMZN -> 3.42 %
+🟢 #NVDA -> 3.36 %
+🟢 #MSFT -> 2.84 %
+🟢 #GOOG -> 2.74 %
+🟢 #META -> 0.73 %
+🔴 #AAPL -> -1.89 %
+
+#Stocks #Nasdaq #Investor #StockMarket #trader #tradigng #SP500
+2025-01-19 16:00:37.357 | INFO     | __main__:__init__:22 - initialize Mag_7
+2025-01-19 16:00:37.357 | INFO     | __main__:run:143 - Starting the stock performance evaluation.
+2025-01-19 16:00:48.736 | INFO     | __main__:run:148 - Posting top performance for different frequencies.
+2025-01-19 16:00:48.736 | INFO     | __main__:post_performance:125 - Message length: 215
+2025-01-19 16:00:48.751 | INFO     | __main__:post:136 - Posting message...
+2025-01-19 16:00:48.751 | INFO     | __main__:post:137 - 
+Magnificent-7 -> WTD:
+
+🟢 #TSLA -> 11.3 %
+🟢 #NVDA -> 5.94 %
+🟢 #AMZN -> 3.61 %
+🟢 #MSFT -> 3.32 %
+🟢 #GOOG -> 3.24 %
+🟢 #META -> 0.93 %
+🔴 #AAPL -> -1.52 %
+
+#Stocks #Nasdaq #Investor #StockMarket #trader #tradigng #SP500
+2025-01-19 16:00:48.751 | INFO     | utils.utils:post_twitter:35 - Tweet lenght: 215
+2025-01-19 16:00:48.751 | INFO     | utils.utils:send_telegram_message:221 - Using bot_token: 6379257583...
+2025-01-19 16:00:48.751 | INFO     | utils.utils:send_telegram_message:222 - Sending to chat_id: -1002313822545
+2025-01-19 16:00:48.751 | INFO     | utils.utils:send_telegram_message:243 - Attempting to send message to Telegram
+2025-01-19 16:00:49.022 | INFO     | utils.utils:send_telegram_message:249 - Message sent successfully. Status code: 200
+2025-01-19 16:00:49.022 | SUCCESS  | utils.utils:post_twitter:40 - Tweet posted: 
+Magnificent-7 -> WTD:
+
+🟢 #TSLA -> 11.3 %
+🟢 #NVDA -> 5.94 %
+🟢 #AMZN -> 3.61 %
+🟢 #MSFT -> 3.32 %
+🟢 #GOOG -> 3.24 %
+🟢 #META -> 0.93 %
+🔴 #AAPL -> -1.52 %
+
+#Stocks #Nasdaq #Investor #StockMarket #trader #tradigng #SP500
+2025-01-19 16:03:00.721 | INFO     | __main__:__init__:22 - initialize Mag_7
+2025-01-19 16:03:00.723 | INFO     | __main__:run:143 - Starting the stock performance evaluation.
+2025-01-19 16:03:02.341 | INFO     | __main__:run:148 - Posting top performance for different frequencies.
+2025-01-19 16:03:02.343 | INFO     | __main__:post_performance:125 - Message length: 236
+2025-01-19 16:03:02.343 | INFO     | __main__:post:136 - Posting message...
+2025-01-19 16:03:02.344 | INFO     | __main__:post:137 - 
+Magnificent-7 -> WTD:
+
+7. 🟢 #TSLA -> 11.3 %
+1. 🟢 #NVDA -> 5.94 %
+3. 🟢 #AMZN -> 3.61 %
+4. 🟢 #MSFT -> 3.32 %
+5. 🟢 #GOOG -> 3.24 %
+2. 🟢 #META -> 0.93 %
+6. 🔴 #AAPL -> -1.52 %
+
+#Stocks #Nasdaq #Investor #StockMarket #trader #tradigng #SP500
+2025-01-19 16:03:02.344 | INFO     | utils.utils:post_twitter:35 - Tweet lenght: 236
+2025-01-19 16:03:02.750 | INFO     | utils.utils:send_telegram_message:221 - Using bot_token: 6379257583...
+2025-01-19 16:03:02.751 | INFO     | utils.utils:send_telegram_message:222 - Sending to chat_id: -1002313822545
+2025-01-19 16:03:02.751 | INFO     | utils.utils:send_telegram_message:243 - Attempting to send message to Telegram
+2025-01-19 16:03:03.004 | INFO     | utils.utils:send_telegram_message:249 - Message sent successfully. Status code: 200
+2025-01-19 16:03:03.005 | SUCCESS  | utils.utils:post_twitter:40 - Tweet posted: 
+Magnificent-7 -> WTD:
+
+7. 🟢 #TSLA -> 11.3 %
+1. 🟢 #NVDA -> 5.94 %
+3. 🟢 #AMZN -> 3.61 %
+4. 🟢 #MSFT -> 3.32 %
+5. 🟢 #GOOG -> 3.24 %
+2. 🟢 #META -> 0.93 %
+6. 🔴 #AAPL -> -1.52 %
+
+#Stocks #Nasdaq #Investor #StockMarket #trader #tradigng #SP500
+2025-01-19 16:05:03.010 | SUCCESS  | __main__:post_performance:130 - 
+Magnificent-7 -> WTD:
+
+7. 🟢 #TSLA -> 11.3 %
+1. 🟢 #NVDA -> 5.94 %
+3. 🟢 #AMZN -> 3.61 %
+4. 🟢 #MSFT -> 3.32 %
+5. 🟢 #GOOG -> 3.24 %
+2. 🟢 #META -> 0.93 %
+6. 🔴 #AAPL -> -1.52 %
+
+#Stocks #Nasdaq #Investor #StockMarket #trader #tradigng #SP500
+2025-01-19 16:05:03.015 | INFO     | __main__:post_performance:125 - Message length: 243
+2025-01-19 16:05:03.016 | INFO     | __main__:post:136 - Posting message...
+2025-01-19 16:05:03.018 | INFO     | __main__:post:137 - 
+Magnificent-7 -> YTD:
+
+1. 🟢 #NVDA -> 129.39 %
+7. 🟢 #TSLA -> 100.93 %
+2. 🟢 #META -> 58.55 %
+3. 🟢 #AMZN -> 44.01 %
+5. 🟢 #GOOG -> 33.32 %
+6. 🟢 #AAPL -> 20.18 %
+4. 🟢 #MSFT -> 8.05 %
+
+#Stocks #Nasdaq #Investor #StockMarket #trader #tradigng #SP500
+2025-01-19 16:05:03.019 | INFO     | utils.utils:post_twitter:35 - Tweet lenght: 243
+2025-01-19 16:05:03.401 | INFO     | utils.utils:send_telegram_message:221 - Using bot_token: 6379257583...
+2025-01-19 16:05:03.402 | INFO     | utils.utils:send_telegram_message:222 - Sending to chat_id: -1002313822545
+2025-01-19 16:05:03.403 | INFO     | utils.utils:send_telegram_message:243 - Attempting to send message to Telegram
+2025-01-19 16:05:03.702 | INFO     | utils.utils:send_telegram_message:249 - Message sent successfully. Status code: 200
+2025-01-19 16:05:03.703 | SUCCESS  | utils.utils:post_twitter:40 - Tweet posted: 
+Magnificent-7 -> YTD:
+
+1. 🟢 #NVDA -> 129.39 %
+7. 🟢 #TSLA -> 100.93 %
+2. 🟢 #META -> 58.55 %
+3. 🟢 #AMZN -> 44.01 %
+5. 🟢 #GOOG -> 33.32 %
+6. 🟢 #AAPL -> 20.18 %
+4. 🟢 #MSFT -> 8.05 %
+
+#Stocks #Nasdaq #Investor #StockMarket #trader #tradigng #SP500
+2025-01-19 16:07:03.709 | SUCCESS  | __main__:post_performance:130 - 
+Magnificent-7 -> YTD:
+
+1. 🟢 #NVDA -> 129.39 %
+7. 🟢 #TSLA -> 100.93 %
+2. 🟢 #META -> 58.55 %
+3. 🟢 #AMZN -> 44.01 %
+5. 🟢 #GOOG -> 33.32 %
+6. 🟢 #AAPL -> 20.18 %
+4. 🟢 #MSFT -> 8.05 %
+
+#Stocks #Nasdaq #Investor #StockMarket #trader #tradigng #SP500
+2025-01-19 16:07:03.710 | SUCCESS  | __main__:<module>:158 - Peformance Mag-7 cCompleted
+2025-01-19 16:16:54.994 | INFO     | __main__:__init__:22 - initialize Mag_7
+2025-01-19 16:16:55.010 | INFO     | __main__:run:143 - Starting the stock performance evaluation.
+2025-01-19 16:19:08.044 | INFO     | __main__:run:148 - Posting top performance for different frequencies.
+2025-01-19 16:19:08.060 | INFO     | __main__:post_performance:125 - Message length: 236
+2025-01-19 16:19:08.060 | INFO     | __main__:post:136 - Posting message...
+2025-01-19 16:19:08.060 | INFO     | __main__:post:137 - 
+Magnificent-7 -> WTD:
+
+7. 🟢 #TSLA -> 11.3 %
+1. 🟢 #NVDA -> 5.94 %
+3. 🟢 #AMZN -> 3.61 %
+4. 🟢 #MSFT -> 3.32 %
+5. 🟢 #GOOG -> 3.24 %
+2. 🟢 #META -> 0.93 %
+6. 🔴 #AAPL -> -1.52 %
+
+#Stocks #Nasdaq #Investor #StockMarket #trader #tradigng #SP500
+2025-01-19 16:19:08.060 | INFO     | utils.utils:post_twitter:35 - Tweet lenght: 236
+2025-01-19 16:19:08.375 | ERROR    | utils.utils:post_twitter:42 - 403 Forbidden
+You are not allowed to create a Tweet with duplicate content.
+2025-01-19 16:19:08.388 | INFO     | utils.utils:send_telegram_message:221 - Using bot_token: 6379257583...
+2025-01-19 16:19:08.388 | INFO     | utils.utils:send_telegram_message:222 - Sending to chat_id: -1002313822545
+2025-01-19 16:19:08.388 | INFO     | utils.utils:send_telegram_message:243 - Attempting to send message to Telegram
+2025-01-19 16:19:08.661 | INFO     | utils.utils:send_telegram_message:249 - Message sent successfully. Status code: 200
+2025-01-19 16:19:08.661 | ERROR    | utils.utils:post_twitter:44 - Tweet Error
+Tweet Error
+: 403 Forbidden
+You are not allowed to create a Tweet with duplicate content.
+
+Magnificent-7 -> WTD:
+
+7. 🟢 #TSLA -> 11.3 %
+1. 🟢 #NVDA -> 5.94 %
+3. 🟢 #AMZN -> 3.61 %
+4. 🟢 #MSFT -> 3.32 %
+5. 🟢 #GOOG -> 3.24 %
+2. 🟢 #META -> 0.93 %
+6. 🔴 #AAPL -> -1.52 %
+
+#Stocks #Nasdaq #Investor #StockMarket #trader #tradigng #SP500
+2025-01-19 16:21:08.671 | SUCCESS  | __main__:post_performance:130 - 
+Magnificent-7 -> WTD:
+
+7. 🟢 #TSLA -> 11.3 %
+1. 🟢 #NVDA -> 5.94 %
+3. 🟢 #AMZN -> 3.61 %
+4. 🟢 #MSFT -> 3.32 %
+5. 🟢 #GOOG -> 3.24 %
+2. 🟢 #META -> 0.93 %
+6. 🔴 #AAPL -> -1.52 %
+
+#Stocks #Nasdaq #Investor #StockMarket #trader #tradigng #SP500
+2025-01-19 16:21:08.688 | INFO     | __main__:post_performance:125 - Message length: 243
+2025-01-19 16:21:08.688 | INFO     | __main__:post:136 - Posting message...
+2025-01-19 16:21:08.688 | INFO     | __main__:post:137 - 
+Magnificent-7 -> YTD:
+
+1. 🟢 #NVDA -> 129.39 %
+7. 🟢 #TSLA -> 100.93 %
+2. 🟢 #META -> 58.55 %
+3. 🟢 #AMZN -> 44.01 %
+5. 🟢 #GOOG -> 33.32 %
+6. 🟢 #AAPL -> 20.18 %
+4. 🟢 #MSFT -> 8.05 %
+
+#Stocks #Nasdaq #Investor #StockMarket #trader #tradigng #SP500
+2025-01-19 16:21:08.688 | INFO     | utils.utils:post_twitter:35 - Tweet lenght: 243
+2025-01-19 16:21:09.096 | INFO     | utils.utils:send_telegram_message:221 - Using bot_token: 6379257583...
+2025-01-19 16:21:09.096 | INFO     | utils.utils:send_telegram_message:222 - Sending to chat_id: -1002313822545
+2025-01-19 16:21:09.096 | INFO     | utils.utils:send_telegram_message:243 - Attempting to send message to Telegram
+2025-01-19 16:21:09.360 | INFO     | utils.utils:send_telegram_message:249 - Message sent successfully. Status code: 200
+2025-01-19 16:21:09.366 | SUCCESS  | utils.utils:post_twitter:40 - Tweet posted: 
+Magnificent-7 -> YTD:
+
+1. 🟢 #NVDA -> 129.39 %
+7. 🟢 #TSLA -> 100.93 %
+2. 🟢 #META -> 58.55 %
+3. 🟢 #AMZN -> 44.01 %
+5. 🟢 #GOOG -> 33.32 %
+6. 🟢 #AAPL -> 20.18 %
+4. 🟢 #MSFT -> 8.05 %
+
+#Stocks #Nasdaq #Investor #StockMarket #trader #tradigng #SP500
+2025-01-19 16:22:54.004 | INFO     | __main__:__init__:22 - initialize Mag_7
+2025-01-19 16:22:54.019 | INFO     | __main__:run:143 - Starting the stock performance evaluation.
+2025-01-19 16:24:39.631 | INFO     | __main__:__init__:22 - initialize Mag_7
+2025-01-19 16:24:39.631 | INFO     | __main__:run:143 - Starting the stock performance evaluation.
+2025-01-19 16:26:06.606 | INFO     | __main__:__init__:22 - initialize Mag_7
+2025-01-19 16:26:06.622 | INFO     | __main__:run:143 - Starting the stock performance evaluation.
+2025-01-19 16:27:47.478 | INFO     | __main__:__init__:22 - initialize Mag_7
+2025-01-19 16:27:47.480 | INFO     | __main__:run:143 - Starting the stock performance evaluation.
+2025-01-19 16:27:49.047 | INFO     | __main__:run:148 - Posting top performance for different frequencies.
+2025-01-19 16:27:49.049 | INFO     | __main__:post_performance:125 - Message length: 236
+2025-01-19 16:27:49.050 | INFO     | __main__:post:136 - Posting message...
+2025-01-19 16:27:49.050 | INFO     | __main__:post:137 - 
+Magnificent-7 -> WTD:
+
+7. 🟢 #TSLA -> 5.75 %
+3. 🟢 #AMZN -> 3.42 %
+1. 🟢 #NVDA -> 3.36 %
+4. 🟢 #MSFT -> 2.84 %
+5. 🟢 #GOOG -> 2.74 %
+2. 🟢 #META -> 0.73 %
+6. 🔴 #AAPL -> -1.89 %
+
+#Stocks #Nasdaq #Investor #StockMarket #trader #tradigng #SP500
+2025-01-19 16:27:49.050 | INFO     | utils.utils:post_twitter:35 - Tweet lenght: 236
+2025-01-19 16:27:49.051 | INFO     | utils.utils:send_telegram_message:221 - Using bot_token: 6379257583...
+2025-01-19 16:27:49.051 | INFO     | utils.utils:send_telegram_message:222 - Sending to chat_id: -1002313822545
+2025-01-19 16:27:49.052 | INFO     | utils.utils:send_telegram_message:243 - Attempting to send message to Telegram
+2025-01-19 16:27:49.401 | INFO     | utils.utils:send_telegram_message:249 - Message sent successfully. Status code: 200
+2025-01-19 16:27:49.405 | SUCCESS  | utils.utils:post_twitter:40 - Tweet posted: 
+Magnificent-7 -> WTD:
+
+7. 🟢 #TSLA -> 5.75 %
+3. 🟢 #AMZN -> 3.42 %
+1. 🟢 #NVDA -> 3.36 %
+4. 🟢 #MSFT -> 2.84 %
+5. 🟢 #GOOG -> 2.74 %
+2. 🟢 #META -> 0.73 %
+6. 🔴 #AAPL -> -1.89 %
+
+#Stocks #Nasdaq #Investor #StockMarket #trader #tradigng #SP500
+2025-01-19 16:29:49.411 | SUCCESS  | __main__:post_performance:130 - 
+Magnificent-7 -> WTD:
+
+7. 🟢 #TSLA -> 5.75 %
+3. 🟢 #AMZN -> 3.42 %
+1. 🟢 #NVDA -> 3.36 %
+4. 🟢 #MSFT -> 2.84 %
+5. 🟢 #GOOG -> 2.74 %
+2. 🟢 #META -> 0.73 %
+6. 🔴 #AAPL -> -1.89 %
+
+#Stocks #Nasdaq #Investor #StockMarket #trader #tradigng #SP500
+2025-01-19 16:29:49.416 | INFO     | __main__:post_performance:125 - Message length: 236
+2025-01-19 16:29:49.418 | INFO     | __main__:post:136 - Posting message...
+2025-01-19 16:29:49.419 | INFO     | __main__:post:137 - 
+Magnificent-7 -> YTD:
+
+7. 🟢 #TSLA -> 12.45 %
+5. 🟢 #GOOG -> 3.63 %
+3. 🟢 #AMZN -> 2.6 %
+4. 🟢 #MSFT -> 2.5 %
+2. 🟢 #META -> 2.26 %
+1. 🔴 #NVDA -> -0.43 %
+6. 🔴 #AAPL -> -5.69 %
+
+#Stocks #Nasdaq #Investor #StockMarket #trader #tradigng #SP500
+2025-01-19 16:29:49.420 | INFO     | utils.utils:post_twitter:35 - Tweet lenght: 236
+2025-01-19 16:29:49.421 | INFO     | utils.utils:send_telegram_message:221 - Using bot_token: 6379257583...
+2025-01-19 16:29:49.422 | INFO     | utils.utils:send_telegram_message:222 - Sending to chat_id: -1002313822545
+2025-01-19 16:29:49.424 | INFO     | utils.utils:send_telegram_message:243 - Attempting to send message to Telegram
+2025-01-19 16:29:49.688 | INFO     | utils.utils:send_telegram_message:249 - Message sent successfully. Status code: 200
+2025-01-19 16:29:49.690 | SUCCESS  | utils.utils:post_twitter:40 - Tweet posted: 
+Magnificent-7 -> YTD:
+
+7. 🟢 #TSLA -> 12.45 %
+5. 🟢 #GOOG -> 3.63 %
+3. 🟢 #AMZN -> 2.6 %
+4. 🟢 #MSFT -> 2.5 %
+2. 🟢 #META -> 2.26 %
+1. 🔴 #NVDA -> -0.43 %
+6. 🔴 #AAPL -> -5.69 %
+
+#Stocks #Nasdaq #Investor #StockMarket #trader #tradigng #SP500
+2025-01-19 16:30:13.479 | INFO     | __main__:__init__:22 - initialize Mag_7
+2025-01-19 16:30:13.481 | INFO     | __main__:run:143 - Starting the stock performance evaluation.
+2025-01-19 16:30:15.125 | INFO     | __main__:run:148 - Posting top performance for different frequencies.
+2025-01-19 16:30:15.128 | INFO     | __main__:post_performance:125 - Message length: 236
+2025-01-19 16:30:15.129 | INFO     | __main__:post:136 - Posting message...
+2025-01-19 16:30:15.129 | INFO     | __main__:post:137 - 
+Magnificent-7 -> WTD:
+
+7. 🟢 #TSLA -> 11.3 %
+1. 🟢 #NVDA -> 5.94 %
+3. 🟢 #AMZN -> 3.61 %
+4. 🟢 #MSFT -> 3.32 %
+5. 🟢 #GOOG -> 3.24 %
+2. 🟢 #META -> 0.93 %
+6. 🔴 #AAPL -> -1.52 %
+
+#Stocks #Nasdaq #Investor #StockMarket #trader #tradigng #SP500
+2025-01-19 16:30:15.130 | INFO     | utils.utils:post_twitter:35 - Tweet lenght: 236
+2025-01-19 16:30:15.132 | INFO     | utils.utils:send_telegram_message:221 - Using bot_token: 6379257583...
+2025-01-19 16:30:15.132 | INFO     | utils.utils:send_telegram_message:222 - Sending to chat_id: -1002313822545
+2025-01-19 16:30:15.133 | INFO     | utils.utils:send_telegram_message:243 - Attempting to send message to Telegram
+2025-01-19 16:30:15.335 | INFO     | utils.utils:send_telegram_message:249 - Message sent successfully. Status code: 200
+2025-01-19 16:30:15.336 | SUCCESS  | utils.utils:post_twitter:40 - Tweet posted: 
+Magnificent-7 -> WTD:
+
+7. 🟢 #TSLA -> 11.3 %
+1. 🟢 #NVDA -> 5.94 %
+3. 🟢 #AMZN -> 3.61 %
+4. 🟢 #MSFT -> 3.32 %
+5. 🟢 #GOOG -> 3.24 %
+2. 🟢 #META -> 0.93 %
+6. 🔴 #AAPL -> -1.52 %
+
+#Stocks #Nasdaq #Investor #StockMarket #trader #tradigng #SP500
+2025-01-19 16:32:15.341 | SUCCESS  | __main__:post_performance:130 - 
+Magnificent-7 -> WTD:
+
+7. 🟢 #TSLA -> 11.3 %
+1. 🟢 #NVDA -> 5.94 %
+3. 🟢 #AMZN -> 3.61 %
+4. 🟢 #MSFT -> 3.32 %
+5. 🟢 #GOOG -> 3.24 %
+2. 🟢 #META -> 0.93 %
+6. 🔴 #AAPL -> -1.52 %
+
+#Stocks #Nasdaq #Investor #StockMarket #trader #tradigng #SP500
+2025-01-19 16:32:15.343 | INFO     | __main__:post_performance:125 - Message length: 236
+2025-01-19 16:32:15.344 | INFO     | __main__:post:136 - Posting message...
+2025-01-19 16:32:15.344 | INFO     | __main__:post:137 - 
+Magnificent-7 -> YTD:
+
+7. 🟢 #TSLA -> 9.33 %
+2. 🟢 #META -> 3.91 %
+5. 🟢 #GOOG -> 3.17 %
+3. 🟢 #AMZN -> 1.76 %
+1. 🟢 #NVDA -> 1.26 %
+4. 🟢 #MSFT -> 0.82 %
+6. 🔴 #AAPL -> -7.61 %
+
+#Stocks #Nasdaq #Investor #StockMarket #trader #tradigng #SP500
+2025-01-19 16:32:15.344 | INFO     | utils.utils:post_twitter:35 - Tweet lenght: 236
+2025-01-19 16:32:15.345 | INFO     | utils.utils:send_telegram_message:221 - Using bot_token: 6379257583...
+2025-01-19 16:32:15.345 | INFO     | utils.utils:send_telegram_message:222 - Sending to chat_id: -1002313822545
+2025-01-19 16:32:15.346 | INFO     | utils.utils:send_telegram_message:243 - Attempting to send message to Telegram
+2025-01-19 16:32:15.677 | INFO     | utils.utils:send_telegram_message:249 - Message sent successfully. Status code: 200
+2025-01-19 16:32:15.679 | SUCCESS  | utils.utils:post_twitter:40 - Tweet posted: 
+Magnificent-7 -> YTD:
+
+7. 🟢 #TSLA -> 9.33 %
+2. 🟢 #META -> 3.91 %
+5. 🟢 #GOOG -> 3.17 %
+3. 🟢 #AMZN -> 1.76 %
+1. 🟢 #NVDA -> 1.26 %
+4. 🟢 #MSFT -> 0.82 %
+6. 🔴 #AAPL -> -7.61 %
+
+#Stocks #Nasdaq #Investor #StockMarket #trader #tradigng #SP500
+2025-01-19 16:34:15.684 | SUCCESS  | __main__:post_performance:130 - 
+Magnificent-7 -> YTD:
+
+7. 🟢 #TSLA -> 9.33 %
+2. 🟢 #META -> 3.91 %
+5. 🟢 #GOOG -> 3.17 %
+3. 🟢 #AMZN -> 1.76 %
+1. 🟢 #NVDA -> 1.26 %
+4. 🟢 #MSFT -> 0.82 %
+6. 🔴 #AAPL -> -7.61 %
+
+#Stocks #Nasdaq #Investor #StockMarket #trader #tradigng #SP500
+2025-01-19 16:34:15.685 | SUCCESS  | __main__:<module>:158 - Peformance Mag-7 cCompleted
