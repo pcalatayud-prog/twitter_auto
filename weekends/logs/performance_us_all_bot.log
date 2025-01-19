@@ -1,0 +1,235 @@
+2025-01-19 18:32:18.202 | INFO     | __main__:__init__:28 - initialize Performance US all
+2025-01-19 18:32:18.202 | INFO     | __main__:run:175 - Starting to filter companies
+2025-01-19 18:32:20.452 | INFO     | __main__:filtering_tickers:51 - Number of tickets to evaluate: 6348
+2025-01-19 18:33:10.276 | INFO     | __main__:filtering_tickers:63 - Processed: 100 out of 6348
+2025-01-19 18:33:10.276 | INFO     | __main__:filtering_tickers:65 - Processed: 1.58
+2025-01-19 18:33:59.898 | INFO     | __main__:filtering_tickers:63 - Processed: 200 out of 6348
+2025-01-19 18:33:59.899 | INFO     | __main__:filtering_tickers:65 - Processed: 3.15
+2025-01-19 18:34:27.958 | INFO     | __main__:__init__:28 - initialize Performance US all
+2025-01-19 18:34:27.958 | INFO     | __main__:run:177 - Starting to filter companies
+2025-01-19 18:34:32.527 | INFO     | __main__:filtering_tickers:51 - Number of tickets to evaluate: 6348
+2025-01-19 18:35:24.805 | INFO     | __main__:filtering_tickers:63 - Processed: 100 out of 6348
+2025-01-19 18:35:24.807 | INFO     | __main__:filtering_tickers:65 - Processed: 1.58
+2025-01-19 18:36:15.168 | INFO     | __main__:filtering_tickers:63 - Processed: 200 out of 6348
+2025-01-19 18:36:15.169 | INFO     | __main__:filtering_tickers:65 - Processed: 3.15
+2025-01-19 18:37:09.075 | INFO     | __main__:filtering_tickers:63 - Processed: 300 out of 6348
+2025-01-19 18:37:09.076 | INFO     | __main__:filtering_tickers:65 - Processed: 4.73
+2025-01-19 18:37:43.006 | INFO     | __main__:__init__:28 - initialize Performance US all
+2025-01-19 18:37:43.007 | INFO     | __main__:run:177 - Starting to filter companies
+2025-01-19 18:37:47.824 | INFO     | __main__:filtering_tickers:51 - Number of tickets to evaluate: 6348
+2025-01-19 18:41:07.175 | INFO     | __main__:__init__:28 - initialize Performance US all
+2025-01-19 18:41:07.175 | INFO     | __main__:run:178 - Starting to filter companies
+2025-01-19 18:41:34.780 | INFO     | __main__:__init__:28 - initialize Performance US all
+2025-01-19 18:41:34.780 | INFO     | __main__:run:178 - Starting to filter companies
+2025-01-19 18:44:32.086 | INFO     | __main__:__init__:28 - initialize Performance US all
+2025-01-19 18:44:32.086 | INFO     | __main__:run:178 - Starting to filter companies
+2025-01-19 18:44:34.422 | INFO     | __main__:filtering_tickers:54 - Number of tickets to evaluate: 20
+2025-01-19 18:44:44.732 | INFO     | __main__:run:182 - Performance over the last week:
+2025-01-19 18:44:45.489 | WARNING  | __main__:performance_y_week:101 - Not enough data to calculate performance for XOM
+2025-01-19 18:44:45.690 | WARNING  | __main__:performance_y_week:101 - Not enough data to calculate performance for CVX
+2025-01-19 18:44:45.765 | WARNING  | __main__:performance_y_week:101 - Not enough data to calculate performance for NVR
+2025-01-19 18:44:45.956 | WARNING  | __main__:performance_y_week:101 - Not enough data to calculate performance for MMM
+2025-01-19 18:44:46.103 | WARNING  | __main__:performance_y_week:101 - Not enough data to calculate performance for MRK
+2025-01-19 18:44:46.182 | WARNING  | __main__:performance_y_week:101 - Not enough data to calculate performance for HPE
+2025-01-19 18:44:46.322 | WARNING  | __main__:performance_y_week:101 - Not enough data to calculate performance for WFC
+2025-01-19 18:44:46.473 | WARNING  | __main__:performance_y_week:101 - Not enough data to calculate performance for MO
+2025-01-19 18:44:46.587 | WARNING  | __main__:performance_y_week:101 - Not enough data to calculate performance for WTM
+2025-01-19 18:44:46.676 | WARNING  | __main__:performance_y_week:101 - Not enough data to calculate performance for SMR
+2025-01-19 18:44:46.867 | WARNING  | __main__:performance_y_week:101 - Not enough data to calculate performance for DIS
+2025-01-19 18:44:46.985 | WARNING  | __main__:performance_y_week:101 - Not enough data to calculate performance for T
+2025-01-19 18:44:47.058 | WARNING  | __main__:performance_y_week:101 - Not enough data to calculate performance for DQ
+2025-01-19 18:44:47.142 | WARNING  | __main__:performance_y_week:101 - Not enough data to calculate performance for CDW
+2025-01-19 18:44:47.217 | WARNING  | __main__:performance_y_week:101 - Not enough data to calculate performance for CRTO
+2025-01-19 18:44:47.336 | WARNING  | __main__:performance_y_week:101 - Not enough data to calculate performance for UCB
+2025-01-19 18:44:47.338 | INFO     | __main__:performance_y_week:119 - Posting the following message on Twitter:
+#US Companies over $1B - Weekly Performance
+
+Best Performers:
+
+Worst Performers:
+
+2025-01-19 18:44:47.339 | INFO     | utils.utils:post_twitter:36 - Tweet lenght: 81
+2025-01-19 18:44:47.340 | INFO     | utils.utils:send_telegram_message:224 - Using bot_token: 6379257583...
+2025-01-19 18:44:47.341 | INFO     | utils.utils:send_telegram_message:225 - Sending to chat_id: -1002313822545
+2025-01-19 18:44:47.342 | INFO     | utils.utils:send_telegram_message:246 - Attempting to send message to Telegram
+2025-01-19 18:44:47.613 | INFO     | utils.utils:send_telegram_message:252 - Message sent successfully. Status code: 200
+2025-01-19 18:44:47.615 | SUCCESS  | utils.utils:post_twitter:41 - Tweet posted: #US Companies over $1B - Weekly Performance
+
+Best Performers:
+
+Worst Performers:
+
+2025-01-19 18:44:47.616 | INFO     | utils.utils:post_twitter:48 - Pausing for 166 seconds to maintain proper intervals between Twitter posts.
+2025-01-19 18:44:47.617 | INFO     | __main__:performance_y_week:124 - Message posted successfully on Twitter.
+2025-01-19 18:44:47.618 | INFO     | __main__:run:185 - 
+Performance over the last year:
+2025-01-19 18:44:49.919 | INFO     | __main__:performance_y:167 - Posting the following message on Twitter:
+#US Companies over $1B - Yearly Performance
+
+Best Performers:
+1. $SMR -> +961.35%
+2. $WFC -> +69.96%
+3. $MMM -> +64.13%
+4. $HPE -> +57.81%
+5. $CRTO -> +55.83%
+
+Worst Performers:
+1. $MRK -> -14.50%
+2. $CDW -> -13.31%
+3. $DQ -> -10.00%
+4. $NVR -> 16.47%
+5. $WTM -> 17.68%
+
+2025-01-19 18:44:49.920 | INFO     | utils.utils:post_twitter:36 - Tweet lenght: 270
+2025-01-19 18:44:49.920 | INFO     | utils.utils:send_telegram_message:224 - Using bot_token: 6379257583...
+2025-01-19 18:44:49.920 | INFO     | utils.utils:send_telegram_message:225 - Sending to chat_id: -1002313822545
+2025-01-19 18:44:49.921 | INFO     | utils.utils:send_telegram_message:246 - Attempting to send message to Telegram
+2025-01-19 18:44:50.139 | INFO     | utils.utils:send_telegram_message:252 - Message sent successfully. Status code: 200
+2025-01-19 18:44:50.142 | SUCCESS  | utils.utils:post_twitter:41 - Tweet posted: #US Companies over $1B - Yearly Performance
+
+Best Performers:
+1. $SMR -> +961.35%
+2. $WFC -> +69.96%
+3. $MMM -> +64.13%
+4. $HPE -> +57.81%
+5. $CRTO -> +55.83%
+
+Worst Performers:
+1. $MRK -> -14.50%
+2. $CDW -> -13.31%
+3. $DQ -> -10.00%
+4. $NVR -> 16.47%
+5. $WTM -> 17.68%
+
+2025-01-19 18:44:50.143 | INFO     | utils.utils:post_twitter:48 - Pausing for 94 seconds to maintain proper intervals between Twitter posts.
+2025-01-19 18:44:50.145 | INFO     | __main__:performance_y:172 - Message posted successfully on Twitter.
+2025-01-19 18:48:53.127 | INFO     | __main__:__init__:21 - initialize Performance US all
+2025-01-19 18:48:53.128 | INFO     | __main__:run:149 - Starting to filter companies
+2025-01-19 18:48:57.575 | INFO     | __main__:filtering_tickers:54 - Number of tickets to evaluate: 20
+2025-01-19 18:49:08.259 | INFO     | __main__:run:153 - Processing tickers
+2025-01-19 18:49:13.908 | INFO     | __main__:post_performance:140 - Posting the following message:
+#US Companies over $1B - Weekly Performance
+
+Best Performers:
+🟢 $SMR -> 16.5%
+🟢 $UCB -> 10.6%
+🟢 $WFC -> 10.3%
+🟢 $MMM -> 7.9%
+🟢 $HPE -> 7.4%
+
+Worst Performers:
+🟢 $MO -> 1.6%
+🟢 $WTM -> 0.9%
+🔴 $DIS -> -0.8%
+🔴 $DQ -> -0.9%
+🔴 $MRK -> -1.5%
+
+2025-01-19 18:49:13.908 | INFO     | __main__:post_performance:141 - Length of message: 235
+2025-01-19 18:49:13.909 | INFO     | utils.utils:post_twitter:36 - Tweet lenght: 235
+2025-01-19 18:49:13.909 | INFO     | utils.utils:send_telegram_message:224 - Using bot_token: 6379257583...
+2025-01-19 18:49:13.910 | INFO     | utils.utils:send_telegram_message:225 - Sending to chat_id: -1002313822545
+2025-01-19 18:49:13.910 | INFO     | utils.utils:send_telegram_message:246 - Attempting to send message to Telegram
+2025-01-19 18:49:14.508 | INFO     | utils.utils:send_telegram_message:252 - Message sent successfully. Status code: 200
+2025-01-19 18:49:14.510 | SUCCESS  | utils.utils:post_twitter:41 - Tweet posted: #US Companies over $1B - Weekly Performance
+
+Best Performers:
+🟢 $SMR -> 16.5%
+🟢 $UCB -> 10.6%
+🟢 $WFC -> 10.3%
+🟢 $MMM -> 7.9%
+🟢 $HPE -> 7.4%
+
+Worst Performers:
+🟢 $MO -> 1.6%
+🟢 $WTM -> 0.9%
+🔴 $DIS -> -0.8%
+🔴 $DQ -> -0.9%
+🔴 $MRK -> -1.5%
+
+2025-01-19 18:49:14.510 | INFO     | utils.utils:post_twitter:48 - Pausing for 150 seconds to maintain proper intervals between Twitter posts.
+2025-01-19 18:49:14.512 | INFO     | __main__:post_performance:143 - Message posted successfully on Twitter.
+2025-01-19 18:49:14.519 | INFO     | __main__:post_performance:140 - Posting the following message:
+#US Companies over $1B - Yearly Performance
+
+Best Performers:
+🟢 $SMR -> 961.4%
+🟢 $WFC -> 70.0%
+🟢 $MMM -> 64.1%
+🟢 $HPE -> 57.8%
+🟢 $CRTO -> 55.8%
+
+Worst Performers:
+🟢 $WTM -> 17.7%
+🟢 $NVR -> 16.5%
+🔴 $DQ -> -10.0%
+🔴 $CDW -> -13.3%
+🔴 $MRK -> -14.5%
+
+2025-01-19 18:49:14.520 | INFO     | __main__:post_performance:141 - Length of message: 245
+2025-01-19 18:49:14.521 | INFO     | utils.utils:post_twitter:36 - Tweet lenght: 245
+2025-01-19 18:49:14.522 | INFO     | utils.utils:send_telegram_message:224 - Using bot_token: 6379257583...
+2025-01-19 18:49:14.523 | INFO     | utils.utils:send_telegram_message:225 - Sending to chat_id: -1002313822545
+2025-01-19 18:49:14.525 | INFO     | utils.utils:send_telegram_message:246 - Attempting to send message to Telegram
+2025-01-19 18:49:14.892 | INFO     | utils.utils:send_telegram_message:252 - Message sent successfully. Status code: 200
+2025-01-19 18:49:14.894 | SUCCESS  | utils.utils:post_twitter:41 - Tweet posted: #US Companies over $1B - Yearly Performance
+
+Best Performers:
+🟢 $SMR -> 961.4%
+🟢 $WFC -> 70.0%
+🟢 $MMM -> 64.1%
+🟢 $HPE -> 57.8%
+🟢 $CRTO -> 55.8%
+
+Worst Performers:
+🟢 $WTM -> 17.7%
+🟢 $NVR -> 16.5%
+🔴 $DQ -> -10.0%
+🔴 $CDW -> -13.3%
+🔴 $MRK -> -14.5%
+
+2025-01-19 18:49:14.896 | INFO     | utils.utils:post_twitter:48 - Pausing for 75 seconds to maintain proper intervals between Twitter posts.
+2025-01-19 18:49:14.897 | INFO     | __main__:post_performance:143 - Message posted successfully on Twitter.
+2025-01-19 18:52:52.879 | INFO     | __main__:__init__:21 - initialize Performance US all
+2025-01-19 18:52:52.881 | INFO     | __main__:run:149 - Starting to filter companies
+2025-01-19 18:52:55.180 | INFO     | __main__:filtering_tickers:54 - Number of tickets to evaluate: 20
+2025-01-19 18:53:05.701 | INFO     | __main__:run:153 - Processing tickers
+2025-01-19 18:53:11.458 | INFO     | __main__:post_performance:140 - Posting the following message:
+#US Companies over $1B - Weekly Performance
+Best Performers:
+🟢 $SMR -> 16.5%
+🟢 $UCB -> 10.6%
+🟢 $WFC -> 10.3%
+🟢 $MMM -> 7.9%
+🟢 $HPE -> 7.4%
+Worst Performers:
+🟢 $MO -> 1.6%
+🟢 $WTM -> 0.9%
+🔴 $DIS -> -0.8%
+🔴 $DQ -> -0.9%
+🔴 $MRK -> -1.5%
+
+2025-01-19 18:53:11.458 | INFO     | __main__:post_performance:141 - Length of message: 233
+2025-01-19 18:53:11.459 | INFO     | utils.utils:post_twitter:36 - Tweet lenght: 233
+2025-01-19 18:53:11.459 | INFO     | utils.utils:send_telegram_message:224 - Using bot_token: 6379257583...
+2025-01-19 18:53:11.459 | INFO     | utils.utils:send_telegram_message:225 - Sending to chat_id: -1002313822545
+2025-01-19 18:53:11.460 | INFO     | utils.utils:send_telegram_message:246 - Attempting to send message to Telegram
+2025-01-19 18:53:11.680 | INFO     | utils.utils:send_telegram_message:252 - Message sent successfully. Status code: 200
+2025-01-19 18:53:11.682 | SUCCESS  | utils.utils:post_twitter:41 - Tweet posted: #US Companies over $1B - Weekly Performance
+Best Performers:
+🟢 $SMR -> 16.5%
+🟢 $UCB -> 10.6%
+🟢 $WFC -> 10.3%
+🟢 $MMM -> 7.9%
+🟢 $HPE -> 7.4%
+Worst Performers:
+🟢 $MO -> 1.6%
+🟢 $WTM -> 0.9%
+🔴 $DIS -> -0.8%
+🔴 $DQ -> -0.9%
+🔴 $MRK -> -1.5%
+
+2025-01-19 18:53:11.684 | INFO     | utils.utils:post_twitter:48 - Pausing for 149 seconds to maintain proper intervals between Twitter posts.
+2025-01-19 18:53:11.684 | INFO     | __main__:post_performance:143 - Message posted successfully on Twitter.
+2025-01-19 18:54:46.625 | INFO     | __main__:__init__:21 - initialize Performance US all
+2025-01-19 18:54:46.626 | INFO     | __main__:run:149 - Starting to filter companies
+2025-01-19 18:54:51.276 | INFO     | __main__:filtering_tickers:54 - Number of tickets to evaluate: 6348

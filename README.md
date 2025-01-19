@@ -47,6 +47,9 @@ twitter_auto/
     └── Analyzing_Interesting_Company.py
 ```
 
+## Analytics
+![1 year Analitis.](https://github.com/pcalatayud-prog/twitter_auto/blob/main/AI_Investor_py.PNG)
+
 ## Features
 ### Weekday Operations
 - Market status monitoring

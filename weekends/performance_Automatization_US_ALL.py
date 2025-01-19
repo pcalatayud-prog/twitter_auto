@@ -1,10 +1,3 @@
-
-
-# Script Created by: Pablo Calatayud
-# Email: pablocalatayudpelayo@gmail.com
-# LinkedIn: https://www.linkedin.com/in/pablo-calatayud-pelayo/
-# Copyright (c) 2025, Pablo Calatayud. All rights reserved.
-
 import pandas as pd
 import numpy as np
 import yfinance as yf
@@ -27,6 +20,13 @@ class US_StocksPerformance:
         logger.add("logs/performance_us_all_bot.log", rotation="500 MB")
         logger.info("initialize Performance US all")
 
+        # Add emoji indicators
+        self.green = "\U0001F7E2"  # Green Circle
+        self.red = "\U0001F534"  # Red Circle
+
+        # Initialize DataFrame for storing performances
+        self.df_performance = pd.DataFrame(columns=["ticker", "weekly", "yearly"])
+
     def filtering_tickers(self):
         url = self.url
         api_key = self.api_key
@@ -47,6 +47,9 @@ class US_StocksPerformance:
         tickers = tickers[~tickers['symbol'].str.contains(r'[-.]')]
         filtered_tickers = tickers["symbol"].tolist()
 
+        # filtered_tickers = filtered_tickers[:20]
+        # tickers = tickers[tickers['symbol'].isin(filtered_tickers)]
+
         marketcap_all = []
         logger.info('Number of tickets to evaluate: {}'.format(len(filtered_tickers)))
         count = 0
@@ -54,14 +57,13 @@ class US_StocksPerformance:
             try:
                 market_cap = get_market_cap(ticker)
                 marketcap_all.append(market_cap)
-                # logger.success(f'Sucessfully downloaded {ticker}. Tickers {count} out of {len(filtered_tickers)}')
             except Exception as e:
                 logger.error(f'Error downloaded {ticker}. Tickers {count} out of {len(filtered_tickers)}. \nError: {e}')
                 marketcap_all.append(np.nan)
             count += 1
             if count % 100 == 0:
                 logger.info(f'Processed: {count} out of {len(filtered_tickers)}')
-                perc_process = round(count / len(filtered_tickers) * 100,2)
+                perc_process = round(count / len(filtered_tickers) * 100, 2)
                 logger.info(f'Processed: {perc_process}')
 
         tickers["marketCap"] = marketcap_all
@@ -73,127 +75,91 @@ class US_StocksPerformance:
 
         self.tickers = tickers["symbol"].tolist()
 
-    def performance_y_week(self) -> None:
-        """
-        Calculates the performance (percentage change) of the filtered tickers over the past week
-        and identifies the top and bottom performers.
-        """
-        top_performers = []
-        bottom_performers = []
-
-        # Loop through filtered tickers and fetch their historical data
-        if self.tickers is None:
-            self.filtering_tickers()
-
-        for ticker in self.tickers:
-            try:
-                ticker_data = yf.Ticker(ticker)
-                hist = ticker_data.history(period="7d")  # Last 7 days
-                if len(hist) > 1:  # Ensure there's enough data
-                    start_price = hist.iloc[0]["Close"]
-                    end_price = hist.iloc[-1]["Close"]
-                    performance = ((end_price - start_price) / start_price) * 100
-                    top_performers.append((ticker, performance))
-                else:
-                    logger.warning(f"Not enough data to calculate performance for {ticker}")
-            except Exception as e:
-                logger.warning(f"Error fetching data for {ticker}: {e}")
-
-        # Sort the tickers by performance
-        top_performers_sorted = sorted(top_performers, key=lambda x: x[1], reverse=True)
-        bottom_performers_sorted = sorted(top_performers, key=lambda x: x[1])
-
-        # Build Twitter message
-        message = "#US Companies over $1B - Weekly Performance\n\nBest Performers:\n"
-        for idx, (ticker, performance) in enumerate(top_performers_sorted[:5], 1):
-            message += f"{idx}. ${ticker} -> +{performance:.2f}%\n"
-
-        message += "\nWorst Performers:\n"
-        for idx, (ticker, performance) in enumerate(bottom_performers_sorted[:5], 1):
-            message += f"{idx}. ${ticker} -> {performance:.2f}%\n"
-
-        # Log the message
-        logger.info(f"Posting the following message on Twitter:\n{message}")
-
-        # Attempt to post on Twitter
+    def fetch_stock_data(self, ticker: str, period: str) -> pd.DataFrame:
+        """Fetch stock data for a given ticker and period."""
         try:
+            stock_data = yf.download(ticker, period=period, progress=False, multi_level_index=False)
+            return stock_data
+        except Exception as e:
+            logger.error(f"Error fetching data for {ticker}: {e}")
+            return pd.DataFrame()
+
+    def calculate_returns(self, stock_data: pd.DataFrame) -> float:
+        """Calculate returns from stock data."""
+        try:
+            if len(stock_data) > 1:
+                price_open = stock_data["Open"].iloc[0]
+                price_close = stock_data["Close"].iloc[-1]
+                return round(100 * (price_close - price_open) / price_open, 1)
+            return np.nan
+        except:
+            return np.nan
+
+    def process_tickers(self):
+        """Process all tickers and calculate their performance."""
+        for ticker in self.tickers:
+            weekly_data = self.fetch_stock_data(ticker, "5d")
+            yearly_data = self.fetch_stock_data(ticker, "1y")
+
+            weekly_return = self.calculate_returns(weekly_data)
+            yearly_return = self.calculate_returns(yearly_data)
+
+            self.df_performance.loc[len(self.df_performance)] = [
+                ticker,
+                weekly_return,
+                yearly_return
+            ]
+
+        # Clean the dataframe by removing rows with NaN values
+        self.df_performance.dropna(inplace=True)
+
+    def generate_performance_message(self, period: str) -> str:
+        """Generate performance message for a given period."""
+        period_map = {"weekly": "Weekly", "yearly": "Yearly"}
+        sorted_df = self.df_performance.sort_values(by=period, ascending=False)
+
+        message = f"#US Companies over $1B - {period_map[period]} Performance\nBest Performers:\n"
+
+        # Top 5 performers
+        for i, row in sorted_df.head(5).iterrows():
+            emoji = self.green if row[period] > 0 else self.red
+            message += f"{emoji} ${row['ticker']} -> {row[period]}%\n"
+
+        message += "Worst Performers:\n"
+
+        # Bottom 5 performers
+        for i, row in sorted_df.tail(5).iterrows():
+            emoji = self.green if row[period] > 0 else self.red
+            message += f"{emoji} ${row['ticker']} -> {row[period]}%\n"
+
+        return message
+
+    def post_performance(self, message: str):
+        """Post performance message to Twitter."""
+        try:
+            logger.info(f"Posting the following message:\n{message}")
+            logger.info(f'Length of message: {len(message)}')
             post_twitter(message)
             logger.info("Message posted successfully on Twitter.")
         except Exception as e:
-            logger.error(f"Error posting message on Twitter: {e}")
-
-    def performance_y(self) -> None:
-        """
-        Calculates the performance (percentage change) of the filtered tickers over the last year
-        and identifies the top and bottom performers.
-        """
-        top_performers = []
-        bottom_performers = []
-
-        if self.tickers is None:
-            self.filtering_tickers()
-        # Loop through filtered tickers and fetch their historical data
-        for ticker in self.tickers:
-            try:
-                ticker_data = yf.Ticker(ticker)
-                hist = ticker_data.history(period="1y")  # Last 1 year
-                if len(hist) > 1:  # Ensure there's enough data
-                    start_price = hist.iloc[0]["Close"]
-                    end_price = hist.iloc[-1]["Close"]
-                    performance = ((end_price - start_price) / start_price) * 100
-                    top_performers.append((ticker, performance))
-                else:
-                    logger.warning(f"Not enough data to calculate performance for {ticker}")
-            except Exception as e:
-                logger.warning(f"Error fetching data for {ticker}: {e}")
-
-        # Sort the tickers by performance
-        top_performers_sorted = sorted(top_performers, key=lambda x: x[1], reverse=True)
-        bottom_performers_sorted = sorted(top_performers, key=lambda x: x[1])
-
-        # Build Twitter message
-        message = "#US Companies over $1B - Yearly Performance\n\nBest Performers:\n"
-        for idx, (ticker, performance) in enumerate(top_performers_sorted[:5], 1):
-            message += f"{idx}. ${ticker} -> +{performance:.2f}%\n"
-
-        message += "\nWorst Performers:\n"
-        for idx, (ticker, performance) in enumerate(bottom_performers_sorted[:5], 1):
-            message += f"{idx}. ${ticker} -> {performance:.2f}%\n"
-
-        # Log the message
-        logger.info(f"Posting the following message on Twitter:\n{message}")
-
-        # Attempt to post on Twitter
-        try:
-            post_twitter(message)
-            logger.info("Message posted successfully on Twitter.")
-        except Exception as e:
-            logger.error(f"Error posting message on Twitter: {e}")
+            logger.error(f"Error posting message: {e}")
 
     def run(self):
         # Filtering tickers for those meeting the market cap criteria
         logger.info('Starting to filter companies')
         self.filtering_tickers()
 
-        # Perform weekly and yearly performance calculations
-        logger.info("Performance over the last week:")
-        self.performance_y_week()
+        # Process all tickers
+        logger.info('Processing tickers')
+        self.process_tickers()
 
-        logger.info("\nPerformance over the last year:")
-        self.performance_y()
+        # Generate and post messages for both periods
+        # for period in ['weekly', 'yearly']:
+        for period in ['weekly']:
+            message = self.generate_performance_message(period)
+            self.post_performance(message)
 
 
 if __name__ == "__main__":
     US_stocks = US_StocksPerformance()
     US_stocks.run()
-
-    # # Filtering tickers for those meeting the market cap criteria
-    # logger.info('Starting to filter companies')
-    # US_stocks.filtering_tickers()
-    #
-    # # Perform weekly and yearly performance calculations
-    # logger.info("Performance over the last week:")
-    # US_stocks.performance_y_week()
-
-    # logger.info("\nPerformance over the last year:")
-    # US_stocks.performance_y()
