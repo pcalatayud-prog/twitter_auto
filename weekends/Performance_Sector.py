@@ -8,7 +8,8 @@ import numpy as np
 import yfinance as yf
 import warnings
 from loguru import logger
-from datetime import datetime, timedelta
+import datetime
+from datetime import timedelta
 from typing import List, Dict, Tuple, Optional
 
 from utils.utils import post_twitter
@@ -30,8 +31,8 @@ class SectorPerformance:
         self.tickers = self.df["symbol"].tolist()
 
         # Initialize other attributes
-        self.current_date = datetime.now()
-        self.start_date_1y = self.current_date - timedelta(days=365)
+        self.current_date = datetime.datetime.now()
+        self.start_date_1y =  datetime.datetime(datetime.datetime.now().year, 1, 1)
         self.start_date_half = self.current_date - timedelta(days=int(365 / 2))
         self.start_date_3month = self.current_date - timedelta(days=90)
         self.start_date_month = self.current_date - timedelta(days=30)
@@ -44,7 +45,7 @@ class SectorPerformance:
 
     def fetch_stock_data(self, ticker):
         # Download historical stock data
-        stock_data = yf.download(ticker, start=self.start_date_1y, end=self.current_date, progress=False)
+        stock_data = yf.download(ticker, start=self.start_date_1y.strftime("%Y-%m-%d"), progress=False,multi_level_index=False)
         stock_data['day-of-week'] = stock_data.index.dayofweek
         stock_data['week-of-year'] = stock_data.index.isocalendar().week
         stock_data['month-of-year'] = stock_data.index.month
@@ -55,8 +56,8 @@ class SectorPerformance:
         try:
             # Filter data based on the start date
             stock_data_filtered = stock_data[stock_data.index >= start_date]
-            price_open = stock_data_filtered["Adj Close"].iloc[0]
-            price_close = stock_data_filtered["Adj Close"].iloc[-1]
+            price_open = stock_data_filtered["Open"].iloc[0]
+            price_close = stock_data_filtered["Close"].iloc[-1]
             return_value = round(100 * (price_close - price_open) / price_open, 1)
             return return_value
         except:
