@@ -396,3 +396,80 @@ Global Markets YTD:
 
 #StockMarkets #Performance
 2025-01-19 18:18:15.689 | INFO     | utils.utils:post_twitter:48 - Pausing for 79 seconds to maintain proper intervals between Twitter posts.
+2025-01-20 00:04:53.759 | INFO     | __main__:__init__:23 - initialize Performance Markets
+2025-01-20 00:04:57.294 | INFO     | __main__:post_performance:122 - Posting message (273 chars):
+2025-01-20 00:04:57.294 | INFO     | __main__:post_tweet:45 - 
+Global Markets 1-WTD:
+🟢 #FTSE_100 -> 3.42 %
+🟢 #EuroStoxx_50 -> 3.41 %
+🟢 #Russell_2000 -> 3.16 %
+🟢 #DAX -> 3.14 %
+🟢 #CAC_40 -> 3.04 %
+🟢 #DowJones -> 2.65 %
+🟢 #NASDAQ_100 -> 2.61 %
+🟢 #SP_500 -> 2.34 %
+🟢 #Ibex_35 -> 1.45 %
+🔴 #Nikkei_225 -> -1.43 %
+
+#StockMarkets #Performance
+2025-01-20 00:04:57.294 | INFO     | utils.utils:post_twitter:36 - Tweet lenght: 273
+2025-01-20 00:04:57.783 | INFO     | utils.utils:send_telegram_message:224 - Using bot_token: 6379257583...
+2025-01-20 00:04:57.783 | INFO     | utils.utils:send_telegram_message:225 - Sending to chat_id: -1002313822545
+2025-01-20 00:04:57.783 | INFO     | utils.utils:send_telegram_message:246 - Attempting to send message to Telegram
+2025-01-20 00:04:58.127 | INFO     | utils.utils:send_telegram_message:252 - Message sent successfully. Status code: 200
+2025-01-20 00:04:58.127 | SUCCESS  | utils.utils:post_twitter:41 - Tweet posted: 
+Global Markets 1-WTD:
+🟢 #FTSE_100 -> 3.42 %
+🟢 #EuroStoxx_50 -> 3.41 %
+🟢 #Russell_2000 -> 3.16 %
+🟢 #DAX -> 3.14 %
+🟢 #CAC_40 -> 3.04 %
+🟢 #DowJones -> 2.65 %
+🟢 #NASDAQ_100 -> 2.61 %
+🟢 #SP_500 -> 2.34 %
+🟢 #Ibex_35 -> 1.45 %
+🔴 #Nikkei_225 -> -1.43 %
+
+#StockMarkets #Performance
+2025-01-20 00:04:58.127 | INFO     | utils.utils:post_twitter:48 - Pausing for 135 seconds to maintain proper intervals between Twitter posts.
+2025-01-20 00:04:58.142 | INFO     | __main__:post_performance:122 - Posting message (271 chars):
+2025-01-20 00:04:58.142 | INFO     | __main__:post_tweet:45 - 
+Global Markets YTD:
+🟢 #DAX -> 4.92 %
+🟢 #EuroStoxx_50 -> 4.74 %
+🟢 #CAC_40 -> 4.54 %
+🟢 #FTSE_100 -> 4.06 %
+🟢 #Ibex_35 -> 2.63 %
+🟢 #DowJones -> 1.94 %
+🟢 #SP_500 -> 1.58 %
+🟢 #Russell_2000 -> 1.52 %
+🟢 #NASDAQ_100 -> 1.52 %
+🔴 #Nikkei_225 -> -3.74 %
+
+#StockMarkets #Performance
+2025-01-20 00:04:58.142 | INFO     | utils.utils:post_twitter:36 - Tweet lenght: 271
+2025-01-20 00:04:58.437 | ERROR    | utils.utils:post_twitter:43 - 403 Forbidden
+You are not allowed to create a Tweet with duplicate content.
+2025-01-20 00:04:58.437 | INFO     | utils.utils:send_telegram_message:224 - Using bot_token: 6379257583...
+2025-01-20 00:04:58.437 | INFO     | utils.utils:send_telegram_message:225 - Sending to chat_id: -1002313822545
+2025-01-20 00:04:58.437 | INFO     | utils.utils:send_telegram_message:246 - Attempting to send message to Telegram
+2025-01-20 00:04:58.730 | INFO     | utils.utils:send_telegram_message:252 - Message sent successfully. Status code: 200
+2025-01-20 00:04:58.730 | ERROR    | utils.utils:post_twitter:45 - Tweet Error
+Tweet Error
+: 403 Forbidden
+You are not allowed to create a Tweet with duplicate content.
+
+Global Markets YTD:
+🟢 #DAX -> 4.92 %
+🟢 #EuroStoxx_50 -> 4.74 %
+🟢 #CAC_40 -> 4.54 %
+🟢 #FTSE_100 -> 4.06 %
+🟢 #Ibex_35 -> 2.63 %
+🟢 #DowJones -> 1.94 %
+🟢 #SP_500 -> 1.58 %
+🟢 #Russell_2000 -> 1.52 %
+🟢 #NASDAQ_100 -> 1.52 %
+🔴 #Nikkei_225 -> -3.74 %
+
+#StockMarkets #Performance
+2025-01-20 00:04:58.730 | INFO     | utils.utils:post_twitter:48 - Pausing for 122 seconds to maintain proper intervals between Twitter posts.

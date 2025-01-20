@@ -38,7 +38,7 @@ class SectorPerformance:
         self.start_date_month = self.current_date - timedelta(days=30)
         self.start_date_week = self.current_date - timedelta(days=7)
 
-        self.df_performance = pd.DataFrame(columns=["ticker", "1YTD", "hf", "3mtd", "mtd", "WTD", "dtd"])
+        self.df_performance = pd.DataFrame(columns=["ticker", "YTD", "hf", "3mtd", "mtd", "WTD", "dtd"])
 
         self.green = "\U0001F7E2"  # Green Circle
         self.red = "\U0001F534"    # Red Circle
@@ -105,8 +105,8 @@ class SectorPerformance:
 
     def analyze_performance(self):
         # Sorting based on different time periods and generating messages
-        for period in ['WTD', '1YTD']:
-            sorted_df = self.df.sort_values(by=period)
+        for period in ['WTD', 'YTD']:
+            sorted_df = self.df.sort_values(by=period,ascending=False)
             top_performance_message = self.generate_top_performance_message(sorted_df, period)
             self.post_performance(top_performance_message)
 

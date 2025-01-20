@@ -684,3 +684,67 @@ Magnificent-7 -> YTD:
 
 #Stocks #Nasdaq #Investor #StockMarket #trader #tradigng #SP500
 2025-01-19 16:34:15.685 | SUCCESS  | __main__:<module>:158 - Peformance Mag-7 cCompleted
+2025-01-20 17:36:38.910 | INFO     | __main__:__init__:22 - initialize Mag_7
+2025-01-20 17:36:38.912 | INFO     | __main__:run:146 - Starting the stock performance evaluation.
+2025-01-20 17:36:39.746 | ERROR    | __main__:download_data:72 - Error with ticker NVDA: Invalid period specified
+2025-01-20 17:36:39.864 | ERROR    | __main__:download_data:72 - Error with ticker META: Invalid period specified
+2025-01-20 17:36:40.006 | ERROR    | __main__:download_data:72 - Error with ticker AMZN: Invalid period specified
+2025-01-20 17:36:40.184 | ERROR    | __main__:download_data:72 - Error with ticker MSFT: Invalid period specified
+2025-01-20 17:36:40.332 | ERROR    | __main__:download_data:72 - Error with ticker GOOG: Invalid period specified
+2025-01-20 17:36:40.508 | ERROR    | __main__:download_data:72 - Error with ticker AAPL: Invalid period specified
+2025-01-20 17:36:40.619 | ERROR    | __main__:download_data:72 - Error with ticker TSLA: Invalid period specified
+2025-01-20 17:36:40.622 | INFO     | __main__:run:151 - Posting top performance for different frequencies.
+2025-01-20 17:37:29.285 | INFO     | __main__:__init__:22 - initialize Mag_7
+2025-01-20 17:37:29.289 | INFO     | __main__:run:146 - Starting the stock performance evaluation.
+2025-01-20 17:37:31.102 | INFO     | __main__:run:151 - Posting top performance for different frequencies.
+2025-01-20 17:37:31.105 | INFO     | __main__:post_performance:128 - Message length: 244
+2025-01-20 17:37:31.106 | INFO     | __main__:post:139 - Posting message...
+2025-01-20 17:37:31.106 | INFO     | __main__:post:140 - 
+Magnificent-7 -> 3-YTD:
+
+1. 🟢 #NVDA -> 179.73 %
+2. 🟢 #META -> 75.09 %
+7. 🟢 #TSLA -> 70.55 %
+3. 🟢 #AMZN -> 49.1 %
+5. 🟢 #GOOG -> 42.02 %
+6. 🟢 #AAPL -> 23.49 %
+4. 🟢 #MSFT -> 15.62 %
+
+#Stocks #Nasdaq #Investor #StockMarket #trader #tradigng #SP500
+2025-01-20 17:37:31.107 | INFO     | utils.utils:post_twitter:36 - Tweet lenght: 244
+2025-01-20 17:37:31.389 | ERROR    | utils.utils:post_twitter:43 - 429 Too Many Requests
+Too Many Requests
+2025-01-20 17:37:31.390 | INFO     | utils.utils:send_telegram_message:224 - Using bot_token: 6379257583...
+2025-01-20 17:37:31.390 | INFO     | utils.utils:send_telegram_message:225 - Sending to chat_id: -1002313822545
+2025-01-20 17:37:31.391 | INFO     | utils.utils:send_telegram_message:246 - Attempting to send message to Telegram
+2025-01-20 17:37:31.627 | INFO     | utils.utils:send_telegram_message:252 - Message sent successfully. Status code: 200
+2025-01-20 17:37:31.628 | ERROR    | utils.utils:post_twitter:45 - Tweet Error
+Tweet Error
+: 429 Too Many Requests
+Too Many Requests
+
+Magnificent-7 -> 3-YTD:
+
+1. 🟢 #NVDA -> 179.73 %
+2. 🟢 #META -> 75.09 %
+7. 🟢 #TSLA -> 70.55 %
+3. 🟢 #AMZN -> 49.1 %
+5. 🟢 #GOOG -> 42.02 %
+6. 🟢 #AAPL -> 23.49 %
+4. 🟢 #MSFT -> 15.62 %
+
+#Stocks #Nasdaq #Investor #StockMarket #trader #tradigng #SP500
+2025-01-20 17:37:31.629 | INFO     | utils.utils:post_twitter:48 - Pausing for 87 seconds to maintain proper intervals between Twitter posts.
+2025-01-20 17:39:31.634 | SUCCESS  | __main__:post_performance:133 - 
+Magnificent-7 -> 3-YTD:
+
+1. 🟢 #NVDA -> 179.73 %
+2. 🟢 #META -> 75.09 %
+7. 🟢 #TSLA -> 70.55 %
+3. 🟢 #AMZN -> 49.1 %
+5. 🟢 #GOOG -> 42.02 %
+6. 🟢 #AAPL -> 23.49 %
+4. 🟢 #MSFT -> 15.62 %
+
+#Stocks #Nasdaq #Investor #StockMarket #trader #tradigng #SP500
+2025-01-20 17:39:31.636 | SUCCESS  | __main__:<module>:162 - Peformance Mag-7 cCompleted

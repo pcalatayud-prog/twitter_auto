@@ -10,3 +10,21 @@
 2025-01-14 21:52:41.436 | INFO     | utils.utils:send_telegram_message:240 - Attempting to send message to Telegram
 2025-01-14 21:52:41.616 | INFO     | utils.utils:send_telegram_message:246 - Message sent successfully. Status code: 200
 2025-01-14 21:52:41.616 | INFO     | __main__:run:266 - Posted no dividends message
+2025-01-20 13:59:27.123 | INFO     | weekdays.Dividends:__init__:26 - Initialising DividendBot
+2025-01-20 13:59:27.164 | INFO     | weekdays.Dividends:__init__:50 - Successfully loaded ticker information from C:\Users\peybo\PycharmProjects\twitter_auto\weekdays\../config/top_3000_tickers.csv
+2025-01-20 13:59:27.165 | INFO     | weekdays.Dividends:run:247 - Starting DividendBot workflow
+2025-01-20 13:59:29.921 | INFO     | utils.utils:get_dividend_calendar:178 - Found 498 dividend entries for tracked tickers
+2025-01-20 13:59:29.923 | INFO     | utils.utils:get_dividend_calendar:181 - Searching for companies that publish dividends today 2025-01-20 13:59:27.127714
+2025-01-20 13:59:29.934 | INFO     | weekdays.Dividends:run:259 - Retrieved 0 dividend tickers
+2025-01-20 13:59:29.935 | INFO     | utils.utils:post_twitter:36 - Tweet lenght: 115
+2025-01-20 13:59:30.332 | INFO     | utils.utils:send_telegram_message:224 - Using bot_token: 6379257583...
+2025-01-20 13:59:30.334 | INFO     | utils.utils:send_telegram_message:225 - Sending to chat_id: -1002313822545
+2025-01-20 13:59:30.336 | INFO     | utils.utils:send_telegram_message:246 - Attempting to send message to Telegram
+2025-01-20 13:59:30.572 | INFO     | utils.utils:send_telegram_message:252 - Message sent successfully. Status code: 200
+2025-01-20 13:59:30.575 | SUCCESS  | utils.utils:post_twitter:41 - Tweet posted: #Today Monday, 20th of January, There are not #Scheduled #Dividends #Payments for #SP500 and #Nasdaq100 #Companies.
+2025-01-20 13:59:30.575 | INFO     | utils.utils:post_twitter:48 - Pausing for 122 seconds to maintain proper intervals between Twitter posts.
+2025-01-20 13:59:30.577 | INFO     | weekdays.Dividends:run:266 - Posted no dividends message
+2025-01-20 14:04:30.594 | INFO     | weekdays.Splits:__init__:26 - Initializing SplitBot
+2025-01-20 14:04:30.625 | INFO     | weekdays.Splits:__init__:47 - Successfully loaded ticker information from C:\Users\peybo\PycharmProjects\twitter_auto\weekdays\../config/top_3000_tickers.csv
+2025-01-20 14:04:30.626 | INFO     | weekdays.Splits:run:243 - Starting SplitBot workflow
+2025-01-20 14:04:32.343 | INFO     | weekdays.Splits:run:249 - No splits scheduled for today

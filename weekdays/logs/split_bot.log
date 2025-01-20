@@ -2,3 +2,7 @@
 2025-01-13 22:33:00.952 | INFO     | __main__:__init__:42 - Successfully loaded ticker information from C:\Users\pcalatayud\Desktop\pycharm\twitter_auto\weekdays\../config/top_3000_tickers.csv
 2025-01-13 22:33:00.953 | INFO     | __main__:run:238 - Starting SplitBot workflow
 2025-01-13 22:33:02.624 | INFO     | __main__:run:244 - No splits scheduled for today
+2025-01-20 14:04:30.594 | INFO     | weekdays.Splits:__init__:26 - Initializing SplitBot
+2025-01-20 14:04:30.625 | INFO     | weekdays.Splits:__init__:47 - Successfully loaded ticker information from C:\Users\peybo\PycharmProjects\twitter_auto\weekdays\../config/top_3000_tickers.csv
+2025-01-20 14:04:30.626 | INFO     | weekdays.Splits:run:243 - Starting SplitBot workflow
+2025-01-20 14:04:32.343 | INFO     | weekdays.Splits:run:249 - No splits scheduled for today

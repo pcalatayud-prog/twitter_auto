@@ -23,7 +23,7 @@ class StockSevenMagnificenPerformance:
 
         self.tickers = tickers or ["NVDA", "META", "AMZN", "MSFT", "GOOG", "AAPL", "TSLA"]
         self.df = pd.DataFrame({"symbol": self.tickers})
-        self.df_performance = pd.DataFrame(columns=["ticker", "ytd", "hf", "3mtd", "mtd", "wtd", "dtd"])
+        self.df_performance = pd.DataFrame(columns=["ticker", "ytd", "hf", "3mtd", "mtd", "wtd", "dtd","3y"])
         self.lista_hastaghs = ["\n#Stocks", ' #Nasdaq', ' #Investor', ' #StockMarket', ' #trader',' #tradigng',' #SP500',]
 
         # Emojis for positive/negative returns
@@ -56,6 +56,7 @@ class StockSevenMagnificenPerformance:
                 # Performance calculations for multiple periods
                 performance = {
                     "ticker": ticker,
+                    "3-YTD": self.calculate_return(stock_data, self.get_start_date('3-YTD')),
                     "ytd": self.calculate_return(stock_data, self.get_start_date('ytd')),
                     "hf": self.calculate_return(stock_data, self.get_start_date('half')),
                     "3mtd": self.calculate_return(stock_data, self.get_start_date('3m')),
@@ -83,6 +84,8 @@ class StockSevenMagnificenPerformance:
             return datetime.datetime.now() - timedelta(days=30)
         elif period == '1w':
             return datetime.datetime.now() - timedelta(days=7)
+        elif period == '3-YTD':
+            return datetime.datetime.now() - timedelta(days=365*5)
         else:
             raise ValueError("Invalid period specified")
 
@@ -148,6 +151,7 @@ class StockSevenMagnificenPerformance:
         logger.info("Posting top performance for different frequencies.")
         # frequencies = ['dtd', 'wtd', 'mtd', '3mtd']
         frequencies = ['wtd','ytd']
+        frequencies = ['3-YTD']
         for frequency in frequencies:
             self.post_performance(frequency=frequency)
 

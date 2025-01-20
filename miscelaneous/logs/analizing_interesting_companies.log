@@ -1,0 +1,6 @@
+2025-01-20 00:05:28.719 | INFO     | __main__:__init__:24 - initialize Performance US all
+2025-01-20 00:05:33.140 | INFO     | __main__:filtering_tickers:57 - Number of tickets to evaluate: 20
+2025-01-20 00:13:43.107 | INFO     | __main__:__init__:24 - initialize Performance US all
+2025-01-20 00:13:45.588 | INFO     | __main__:filtering_tickers:57 - Number of tickets to evaluate: 20
+2025-01-20 00:17:39.904 | INFO     | __main__:__init__:24 - initialize Performance US all
+2025-01-20 00:17:44.215 | INFO     | __main__:filtering_tickers:57 - Number of tickets to evaluate: 20

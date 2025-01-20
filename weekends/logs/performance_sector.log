@@ -132,3 +132,242 @@
 🟢 #Energy -> 8.7%
 
 2025-01-19 18:28:33.191 | INFO     | utils.utils:post_twitter:48 - Pausing for 71 seconds to maintain proper intervals between Twitter posts.
+2025-01-20 17:06:16.379 | INFO     | __main__:__init__:24 - initialize Performance sector
+2025-01-20 17:06:18.963 | INFO     | __main__:post_performance:100 - 
+#Industrial Sectors -> WTD:
+🔴 #Health -> -0.8%
+🟢 #Staples -> 1.1%
+🟢 #Comm -> 1.7%
+🟢 #IT -> 2.2%
+🟢 #Discrec -> 2.2%
+🟢 #Indust -> 2.9%
+🟢 #Real -> 3.1%
+🟢 #Materials -> 3.1%
+🟢 #Energy -> 4.3%
+🟢 #SemiCond -> 4.7%
+🟢 #Financial -> 5.0%
+🟢 #Utilities -> 5.1%
+
+2025-01-20 17:06:18.964 | INFO     | __main__:post_performance:101 - length message: 251
+2025-01-20 17:06:18.964 | INFO     | utils.utils:post_twitter:36 - Tweet lenght: 251
+2025-01-20 17:06:19.356 | INFO     | utils.utils:send_telegram_message:224 - Using bot_token: 6379257583...
+2025-01-20 17:06:19.356 | INFO     | utils.utils:send_telegram_message:225 - Sending to chat_id: -1002313822545
+2025-01-20 17:06:19.357 | INFO     | utils.utils:send_telegram_message:246 - Attempting to send message to Telegram
+2025-01-20 17:06:19.726 | INFO     | utils.utils:send_telegram_message:252 - Message sent successfully. Status code: 200
+2025-01-20 17:06:19.728 | SUCCESS  | utils.utils:post_twitter:41 - Tweet posted: 
+#Industrial Sectors -> WTD:
+🔴 #Health -> -0.8%
+🟢 #Staples -> 1.1%
+🟢 #Comm -> 1.7%
+🟢 #IT -> 2.2%
+🟢 #Discrec -> 2.2%
+🟢 #Indust -> 2.9%
+🟢 #Real -> 3.1%
+🟢 #Materials -> 3.1%
+🟢 #Energy -> 4.3%
+🟢 #SemiCond -> 4.7%
+🟢 #Financial -> 5.0%
+🟢 #Utilities -> 5.1%
+
+2025-01-20 17:06:19.729 | INFO     | utils.utils:post_twitter:48 - Pausing for 98 seconds to maintain proper intervals between Twitter posts.
+2025-01-20 17:06:19.738 | INFO     | __main__:post_performance:100 - 
+#Industrial Sectors -> 1YTD:
+🔴 #Staples -> -1.1%
+🟢 #IT -> 0.1%
+🟢 #Real -> 0.6%
+🟢 #Comm -> 1.1%
+🟢 #Health -> 1.4%
+🟢 #Discrec -> 2.5%
+🟢 #Utilities -> 3.3%
+🟢 #Financial -> 3.5%
+🟢 #Indust -> 4.0%
+🟢 #Materials -> 4.3%
+🟢 #SemiCond -> 5.5%
+🟢 #Energy -> 8.7%
+
+2025-01-20 17:06:19.740 | INFO     | __main__:post_performance:101 - length message: 252
+2025-01-20 17:06:19.741 | INFO     | utils.utils:post_twitter:36 - Tweet lenght: 252
+2025-01-20 17:06:20.152 | INFO     | utils.utils:send_telegram_message:224 - Using bot_token: 6379257583...
+2025-01-20 17:06:20.152 | INFO     | utils.utils:send_telegram_message:225 - Sending to chat_id: -1002313822545
+2025-01-20 17:06:20.153 | INFO     | utils.utils:send_telegram_message:246 - Attempting to send message to Telegram
+2025-01-20 17:06:20.466 | INFO     | utils.utils:send_telegram_message:252 - Message sent successfully. Status code: 200
+2025-01-20 17:06:20.467 | SUCCESS  | utils.utils:post_twitter:41 - Tweet posted: 
+#Industrial Sectors -> 1YTD:
+🔴 #Staples -> -1.1%
+🟢 #IT -> 0.1%
+🟢 #Real -> 0.6%
+🟢 #Comm -> 1.1%
+🟢 #Health -> 1.4%
+🟢 #Discrec -> 2.5%
+🟢 #Utilities -> 3.3%
+🟢 #Financial -> 3.5%
+🟢 #Indust -> 4.0%
+🟢 #Materials -> 4.3%
+🟢 #SemiCond -> 5.5%
+🟢 #Energy -> 8.7%
+
+2025-01-20 17:06:20.467 | INFO     | utils.utils:post_twitter:48 - Pausing for 70 seconds to maintain proper intervals between Twitter posts.
+2025-01-20 17:08:45.356 | INFO     | __main__:__init__:24 - initialize Performance sector
+2025-01-20 17:11:44.318 | INFO     | __main__:__init__:24 - initialize Performance sector
+2025-01-20 17:13:24.009 | INFO     | __main__:__init__:24 - initialize Performance sector
+2025-01-20 17:13:26.444 | INFO     | __main__:post_performance:100 - 
+#Industrial Sectors -> WTD:
+🟢 #Utilities -> 5.1%
+🟢 #Financial -> 5.0%
+🟢 #SemiCond -> 4.7%
+🟢 #Energy -> 4.3%
+🟢 #Real -> 3.1%
+🟢 #Materials -> 3.1%
+🟢 #Indust -> 2.9%
+🟢 #IT -> 2.2%
+🟢 #Discrec -> 2.2%
+🟢 #Comm -> 1.7%
+🟢 #Staples -> 1.1%
+🔴 #Health -> -0.8%
+
+2025-01-20 17:13:26.444 | INFO     | __main__:post_performance:101 - length message: 251
+2025-01-20 17:13:26.445 | INFO     | utils.utils:post_twitter:36 - Tweet lenght: 251
+2025-01-20 17:13:26.815 | INFO     | utils.utils:send_telegram_message:224 - Using bot_token: 6379257583...
+2025-01-20 17:13:26.816 | INFO     | utils.utils:send_telegram_message:225 - Sending to chat_id: -1002313822545
+2025-01-20 17:13:26.817 | INFO     | utils.utils:send_telegram_message:246 - Attempting to send message to Telegram
+2025-01-20 17:13:27.086 | INFO     | utils.utils:send_telegram_message:252 - Message sent successfully. Status code: 200
+2025-01-20 17:13:27.087 | SUCCESS  | utils.utils:post_twitter:41 - Tweet posted: 
+#Industrial Sectors -> WTD:
+🟢 #Utilities -> 5.1%
+🟢 #Financial -> 5.0%
+🟢 #SemiCond -> 4.7%
+🟢 #Energy -> 4.3%
+🟢 #Real -> 3.1%
+🟢 #Materials -> 3.1%
+🟢 #Indust -> 2.9%
+🟢 #IT -> 2.2%
+🟢 #Discrec -> 2.2%
+🟢 #Comm -> 1.7%
+🟢 #Staples -> 1.1%
+🔴 #Health -> -0.8%
+
+2025-01-20 17:13:27.088 | INFO     | utils.utils:post_twitter:48 - Pausing for 170 seconds to maintain proper intervals between Twitter posts.
+2025-01-20 17:13:27.091 | INFO     | __main__:post_performance:100 - 
+#Industrial Sectors -> YTD:
+🟢 #Energy -> 8.7%
+🟢 #SemiCond -> 5.5%
+🟢 #Materials -> 4.3%
+🟢 #Indust -> 4.0%
+🟢 #Financial -> 3.5%
+🟢 #Utilities -> 3.3%
+🟢 #Discrec -> 2.5%
+🟢 #Health -> 1.4%
+🟢 #Comm -> 1.1%
+🟢 #Real -> 0.6%
+🟢 #IT -> 0.1%
+🔴 #Staples -> -1.1%
+
+2025-01-20 17:13:27.092 | INFO     | __main__:post_performance:101 - length message: 251
+2025-01-20 17:13:27.092 | INFO     | utils.utils:post_twitter:36 - Tweet lenght: 251
+2025-01-20 17:13:27.478 | INFO     | utils.utils:send_telegram_message:224 - Using bot_token: 6379257583...
+2025-01-20 17:13:27.479 | INFO     | utils.utils:send_telegram_message:225 - Sending to chat_id: -1002313822545
+2025-01-20 17:13:27.481 | INFO     | utils.utils:send_telegram_message:246 - Attempting to send message to Telegram
+2025-01-20 17:13:27.786 | INFO     | utils.utils:send_telegram_message:252 - Message sent successfully. Status code: 200
+2025-01-20 17:13:27.787 | SUCCESS  | utils.utils:post_twitter:41 - Tweet posted: 
+#Industrial Sectors -> YTD:
+🟢 #Energy -> 8.7%
+🟢 #SemiCond -> 5.5%
+🟢 #Materials -> 4.3%
+🟢 #Indust -> 4.0%
+🟢 #Financial -> 3.5%
+🟢 #Utilities -> 3.3%
+🟢 #Discrec -> 2.5%
+🟢 #Health -> 1.4%
+🟢 #Comm -> 1.1%
+🟢 #Real -> 0.6%
+🟢 #IT -> 0.1%
+🔴 #Staples -> -1.1%
+
+2025-01-20 17:13:27.787 | INFO     | utils.utils:post_twitter:48 - Pausing for 71 seconds to maintain proper intervals between Twitter posts.
+2025-01-20 17:16:49.320 | INFO     | __main__:__init__:24 - initialize Performance sector
+2025-01-20 17:16:51.630 | INFO     | __main__:post_performance:100 - 
+#Industrial Sectors -> WTD:
+🟢 #Utilities -> 5.1%
+🟢 #Financial -> 5.0%
+🟢 #SemiCond -> 4.7%
+🟢 #Energy -> 4.3%
+🟢 #Real -> 3.1%
+🟢 #Materials -> 3.1%
+🟢 #Indust -> 2.9%
+🟢 #IT -> 2.2%
+🟢 #Discrec -> 2.2%
+🟢 #Comm -> 1.7%
+🟢 #Staples -> 1.1%
+🔴 #Health -> -0.8%
+
+2025-01-20 17:16:51.630 | INFO     | __main__:post_performance:101 - length message: 251
+2025-01-20 17:16:51.631 | INFO     | utils.utils:post_twitter:36 - Tweet lenght: 251
+2025-01-20 17:16:51.923 | ERROR    | utils.utils:post_twitter:43 - 403 Forbidden
+You are not allowed to create a Tweet with duplicate content.
+2025-01-20 17:16:51.924 | INFO     | utils.utils:send_telegram_message:224 - Using bot_token: 6379257583...
+2025-01-20 17:16:51.924 | INFO     | utils.utils:send_telegram_message:225 - Sending to chat_id: -1002313822545
+2025-01-20 17:16:51.925 | INFO     | utils.utils:send_telegram_message:246 - Attempting to send message to Telegram
+2025-01-20 17:16:52.176 | INFO     | utils.utils:send_telegram_message:252 - Message sent successfully. Status code: 200
+2025-01-20 17:16:52.178 | ERROR    | utils.utils:post_twitter:45 - Tweet Error
+Tweet Error
+: 403 Forbidden
+You are not allowed to create a Tweet with duplicate content.
+
+#Industrial Sectors -> WTD:
+🟢 #Utilities -> 5.1%
+🟢 #Financial -> 5.0%
+🟢 #SemiCond -> 4.7%
+🟢 #Energy -> 4.3%
+🟢 #Real -> 3.1%
+🟢 #Materials -> 3.1%
+🟢 #Indust -> 2.9%
+🟢 #IT -> 2.2%
+🟢 #Discrec -> 2.2%
+🟢 #Comm -> 1.7%
+🟢 #Staples -> 1.1%
+🔴 #Health -> -0.8%
+
+2025-01-20 17:16:52.180 | INFO     | utils.utils:post_twitter:48 - Pausing for 122 seconds to maintain proper intervals between Twitter posts.
+2025-01-20 17:16:52.193 | INFO     | __main__:post_performance:100 - 
+#Industrial Sectors -> YTD:
+🟢 #Energy -> 8.7%
+🟢 #SemiCond -> 5.5%
+🟢 #Materials -> 4.3%
+🟢 #Indust -> 4.0%
+🟢 #Financial -> 3.5%
+🟢 #Utilities -> 3.3%
+🟢 #Discrec -> 2.5%
+🟢 #Health -> 1.4%
+🟢 #Comm -> 1.1%
+🟢 #Real -> 0.6%
+🟢 #IT -> 0.1%
+🔴 #Staples -> -1.1%
+
+2025-01-20 17:16:52.195 | INFO     | __main__:post_performance:101 - length message: 251
+2025-01-20 17:16:52.197 | INFO     | utils.utils:post_twitter:36 - Tweet lenght: 251
+2025-01-20 17:16:52.451 | ERROR    | utils.utils:post_twitter:43 - 429 Too Many Requests
+Too Many Requests
+2025-01-20 17:16:52.452 | INFO     | utils.utils:send_telegram_message:224 - Using bot_token: 6379257583...
+2025-01-20 17:16:52.453 | INFO     | utils.utils:send_telegram_message:225 - Sending to chat_id: -1002313822545
+2025-01-20 17:16:52.454 | INFO     | utils.utils:send_telegram_message:246 - Attempting to send message to Telegram
+2025-01-20 17:16:52.709 | INFO     | utils.utils:send_telegram_message:252 - Message sent successfully. Status code: 200
+2025-01-20 17:16:52.710 | ERROR    | utils.utils:post_twitter:45 - Tweet Error
+Tweet Error
+: 429 Too Many Requests
+Too Many Requests
+
+#Industrial Sectors -> YTD:
+🟢 #Energy -> 8.7%
+🟢 #SemiCond -> 5.5%
+🟢 #Materials -> 4.3%
+🟢 #Indust -> 4.0%
+🟢 #Financial -> 3.5%
+🟢 #Utilities -> 3.3%
+🟢 #Discrec -> 2.5%
+🟢 #Health -> 1.4%
+🟢 #Comm -> 1.1%
+🟢 #Real -> 0.6%
+🟢 #IT -> 0.1%
+🔴 #Staples -> -1.1%
+
+2025-01-20 17:16:52.711 | INFO     | utils.utils:post_twitter:48 - Pausing for 82 seconds to maintain proper intervals between Twitter posts.
