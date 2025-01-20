@@ -9,7 +9,8 @@
 **Copyright:** Take what is useful, discard what is not, mentioning it is up to you, but it would be appreciated.
 
 ## Project Description
-This project is an automated Twitter bot that provides stock market updates, including earnings reports, dividends, splits, and market performance metrics. The bot operates during market hours and provides specialized reports during weekends.
+This project is an automated Twitter bot that provides stock market updates, including earnings reports, dividends, splits, and market performance metrics. 
+As well, errors in production are flagged through a Telegram bot.
 
 ## Project Structure
 ```
@@ -73,7 +74,7 @@ pip install -r requirements.txt
 
 3. Configure the necessary files in `config/`:
    - `api_keys.py`: API credentials
-   - `auth.py`: Authentication settings
+   - `auth.py`: Authentication settings for twitter
    - `telegram.py`: Telegram bot configuration
 
 ## Configuration Files
@@ -87,6 +88,15 @@ api_key = "your_financial_modeling_prep_api_key"
 ```python
 bot_token = "your_telegram_bot_token"
 bot_chatID = "your_telegram_chat_id"
+```
+
+3. `config/auth.py`:
+```python
+api_key = ""
+api_key_secret = ""
+access_token = ""
+access_token_secret = ""
+bearer = ""
 ```
 
 ## Execution
