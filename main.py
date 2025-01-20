@@ -81,16 +81,18 @@ class Execution_twitter_information:
 
             if today_str in holidays_this_year:
                 reason = holidays_this_year[today_str]
-                logger.info(f"Today {current_date} the market is closed due to: {reason}.")
-                post_twitter(f"Today {current_date} the market is closed due to: {reason}.")
+                if self.morning_update[0]==self.current_hour:
+                    logger.info(f"Today {current_date} the market is closed due to: {reason}.")
+                    post_twitter(f"Today {current_date} the market is closed due to: {reason}.")
                 self.market_open = False
             else:
                 open_hour = data['stockMarketHours']['openingHour']
                 close_hour = data['stockMarketHours']['closingHour']
-                logger.info(
-                    f"Today {current_date} the market is open from {open_hour} to {close_hour}."
-                )
-                post_twitter(f"Today {current_date} the NYSE is open from {open_hour} to {close_hour}.")
+                if self.morning_update[0] == self.current_hour:
+                    logger.info(
+                        f"Today {current_date} the market is open from {open_hour} to {close_hour}."
+                    )
+                    post_twitter(f"Today {current_date} the NYSE is open from {open_hour} to {close_hour}.")
                 self.market_open = True
 
         except requests.RequestException as e:
