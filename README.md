@@ -9,7 +9,8 @@
 **Copyright:** Take what is useful, discard what is not, mentioning it is up to you, but it would be appreciated.
 
 ## Project Description
-This project is an automated Twitter bot that provides stock market updates, including earnings reports, dividends, splits, and market performance metrics. The bot operates during market hours and provides specialized reports during weekends.
+This project is an automated Twitter bot that provides stock market updates, including earnings reports, dividends, splits, and market performance metrics. 
+As well, errors in production are flagged through a Telegram bot.
 
 ## Project Structure
 ```
