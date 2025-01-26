@@ -233,3 +233,337 @@ Worst Performers:
 2025-01-19 18:54:46.625 | INFO     | __main__:__init__:21 - initialize Performance US all
 2025-01-19 18:54:46.626 | INFO     | __main__:run:149 - Starting to filter companies
 2025-01-19 18:54:51.276 | INFO     | __main__:filtering_tickers:54 - Number of tickets to evaluate: 6348
+2025-01-21 00:05:57.093 | INFO     | __main__:__init__:21 - initialize Performance US all
+2025-01-21 00:05:57.096 | INFO     | __main__:run:149 - Starting to filter companies
+2025-01-21 00:06:01.621 | INFO     | __main__:filtering_tickers:54 - Number of tickets to evaluate: 6349
+2025-01-21 00:06:55.089 | INFO     | __main__:filtering_tickers:65 - Processed: 100 out of 6349
+2025-01-21 00:06:55.090 | INFO     | __main__:filtering_tickers:67 - Processed: 1.58
+2025-01-21 00:07:47.828 | INFO     | __main__:filtering_tickers:65 - Processed: 200 out of 6349
+2025-01-21 00:07:47.829 | INFO     | __main__:filtering_tickers:67 - Processed: 3.15
+2025-01-21 00:08:42.643 | INFO     | __main__:filtering_tickers:65 - Processed: 300 out of 6349
+2025-01-21 00:08:42.645 | INFO     | __main__:filtering_tickers:67 - Processed: 4.73
+2025-01-21 00:09:36.192 | INFO     | __main__:filtering_tickers:65 - Processed: 400 out of 6349
+2025-01-21 00:09:36.192 | INFO     | __main__:filtering_tickers:67 - Processed: 6.3
+2025-01-21 00:10:27.632 | INFO     | __main__:filtering_tickers:65 - Processed: 500 out of 6349
+2025-01-21 00:10:27.633 | INFO     | __main__:filtering_tickers:67 - Processed: 7.88
+2025-01-21 00:11:18.893 | INFO     | __main__:filtering_tickers:65 - Processed: 600 out of 6349
+2025-01-21 00:11:18.894 | INFO     | __main__:filtering_tickers:67 - Processed: 9.45
+2025-01-21 00:12:10.933 | INFO     | __main__:filtering_tickers:65 - Processed: 700 out of 6349
+2025-01-21 00:12:10.935 | INFO     | __main__:filtering_tickers:67 - Processed: 11.03
+2025-01-21 00:13:05.252 | INFO     | __main__:filtering_tickers:65 - Processed: 800 out of 6349
+2025-01-21 00:13:05.254 | INFO     | __main__:filtering_tickers:67 - Processed: 12.6
+2025-01-21 00:13:59.007 | INFO     | __main__:filtering_tickers:65 - Processed: 900 out of 6349
+2025-01-21 00:13:59.009 | INFO     | __main__:filtering_tickers:67 - Processed: 14.18
+2025-01-21 00:14:50.295 | INFO     | __main__:filtering_tickers:65 - Processed: 1000 out of 6349
+2025-01-21 00:14:50.296 | INFO     | __main__:filtering_tickers:67 - Processed: 15.75
+2025-01-21 00:15:43.513 | INFO     | __main__:filtering_tickers:65 - Processed: 1100 out of 6349
+2025-01-21 00:15:43.514 | INFO     | __main__:filtering_tickers:67 - Processed: 17.33
+2025-01-21 00:16:34.456 | INFO     | __main__:filtering_tickers:65 - Processed: 1200 out of 6349
+2025-01-21 00:16:34.458 | INFO     | __main__:filtering_tickers:67 - Processed: 18.9
+2025-01-21 00:17:25.773 | INFO     | __main__:filtering_tickers:65 - Processed: 1300 out of 6349
+2025-01-21 00:17:25.774 | INFO     | __main__:filtering_tickers:67 - Processed: 20.48
+2025-01-21 00:18:17.520 | INFO     | __main__:filtering_tickers:65 - Processed: 1400 out of 6349
+2025-01-21 00:18:17.522 | INFO     | __main__:filtering_tickers:67 - Processed: 22.05
+2025-01-21 00:19:09.050 | INFO     | __main__:filtering_tickers:65 - Processed: 1500 out of 6349
+2025-01-21 00:19:09.053 | INFO     | __main__:filtering_tickers:67 - Processed: 23.63
+2025-01-21 00:20:00.276 | INFO     | __main__:filtering_tickers:65 - Processed: 1600 out of 6349
+2025-01-21 00:20:00.278 | INFO     | __main__:filtering_tickers:67 - Processed: 25.2
+2025-01-21 00:20:52.323 | INFO     | __main__:filtering_tickers:65 - Processed: 1700 out of 6349
+2025-01-21 00:20:52.325 | INFO     | __main__:filtering_tickers:67 - Processed: 26.78
+2025-01-21 00:21:44.909 | INFO     | __main__:filtering_tickers:65 - Processed: 1800 out of 6349
+2025-01-21 00:21:44.911 | INFO     | __main__:filtering_tickers:67 - Processed: 28.35
+2025-01-21 00:22:36.614 | INFO     | __main__:filtering_tickers:65 - Processed: 1900 out of 6349
+2025-01-21 00:22:36.615 | INFO     | __main__:filtering_tickers:67 - Processed: 29.93
+2025-01-21 00:23:30.392 | INFO     | __main__:filtering_tickers:65 - Processed: 2000 out of 6349
+2025-01-21 00:23:30.393 | INFO     | __main__:filtering_tickers:67 - Processed: 31.5
+2025-01-21 00:24:24.019 | INFO     | __main__:filtering_tickers:65 - Processed: 2100 out of 6349
+2025-01-21 00:24:24.021 | INFO     | __main__:filtering_tickers:67 - Processed: 33.08
+2025-01-21 00:25:17.054 | INFO     | __main__:filtering_tickers:65 - Processed: 2200 out of 6349
+2025-01-21 00:25:17.055 | INFO     | __main__:filtering_tickers:67 - Processed: 34.65
+2025-01-21 00:26:08.802 | INFO     | __main__:filtering_tickers:65 - Processed: 2300 out of 6349
+2025-01-21 00:26:08.804 | INFO     | __main__:filtering_tickers:67 - Processed: 36.23
+2025-01-21 00:27:00.111 | INFO     | __main__:filtering_tickers:65 - Processed: 2400 out of 6349
+2025-01-21 00:27:00.112 | INFO     | __main__:filtering_tickers:67 - Processed: 37.8
+2025-01-21 00:27:51.816 | INFO     | __main__:filtering_tickers:65 - Processed: 2500 out of 6349
+2025-01-21 00:27:51.817 | INFO     | __main__:filtering_tickers:67 - Processed: 39.38
+2025-01-21 00:28:45.284 | INFO     | __main__:filtering_tickers:65 - Processed: 2600 out of 6349
+2025-01-21 00:28:45.285 | INFO     | __main__:filtering_tickers:67 - Processed: 40.95
+2025-01-21 00:29:38.477 | INFO     | __main__:filtering_tickers:65 - Processed: 2700 out of 6349
+2025-01-21 00:29:38.478 | INFO     | __main__:filtering_tickers:67 - Processed: 42.53
+2025-01-21 00:30:31.725 | INFO     | __main__:filtering_tickers:65 - Processed: 2800 out of 6349
+2025-01-21 00:30:31.726 | INFO     | __main__:filtering_tickers:67 - Processed: 44.1
+2025-01-21 00:31:23.434 | INFO     | __main__:filtering_tickers:65 - Processed: 2900 out of 6349
+2025-01-21 00:31:23.437 | INFO     | __main__:filtering_tickers:67 - Processed: 45.68
+2025-01-21 00:32:16.286 | INFO     | __main__:filtering_tickers:65 - Processed: 3000 out of 6349
+2025-01-21 00:32:16.287 | INFO     | __main__:filtering_tickers:67 - Processed: 47.25
+2025-01-21 00:33:08.407 | INFO     | __main__:filtering_tickers:65 - Processed: 3100 out of 6349
+2025-01-21 00:33:08.408 | INFO     | __main__:filtering_tickers:67 - Processed: 48.83
+2025-01-21 00:34:02.292 | INFO     | __main__:filtering_tickers:65 - Processed: 3200 out of 6349
+2025-01-21 00:34:02.293 | INFO     | __main__:filtering_tickers:67 - Processed: 50.4
+2025-01-21 00:34:56.218 | INFO     | __main__:filtering_tickers:65 - Processed: 3300 out of 6349
+2025-01-21 00:34:56.218 | INFO     | __main__:filtering_tickers:67 - Processed: 51.98
+2025-01-21 00:35:47.466 | INFO     | __main__:filtering_tickers:65 - Processed: 3400 out of 6349
+2025-01-21 00:35:47.467 | INFO     | __main__:filtering_tickers:67 - Processed: 53.55
+2025-01-21 00:36:43.056 | INFO     | __main__:filtering_tickers:65 - Processed: 3500 out of 6349
+2025-01-21 00:36:43.059 | INFO     | __main__:filtering_tickers:67 - Processed: 55.13
+2025-01-21 00:37:34.710 | INFO     | __main__:filtering_tickers:65 - Processed: 3600 out of 6349
+2025-01-21 00:37:34.710 | INFO     | __main__:filtering_tickers:67 - Processed: 56.7
+2025-01-21 00:38:26.121 | INFO     | __main__:filtering_tickers:65 - Processed: 3700 out of 6349
+2025-01-21 00:38:26.122 | INFO     | __main__:filtering_tickers:67 - Processed: 58.28
+2025-01-21 00:39:18.493 | INFO     | __main__:filtering_tickers:65 - Processed: 3800 out of 6349
+2025-01-21 00:39:18.493 | INFO     | __main__:filtering_tickers:67 - Processed: 59.85
+2025-01-21 00:40:24.199 | INFO     | __main__:filtering_tickers:65 - Processed: 3900 out of 6349
+2025-01-21 00:40:24.199 | INFO     | __main__:filtering_tickers:67 - Processed: 61.43
+2025-01-21 00:41:04.042 | INFO     | __main__:__init__:21 - initialize Performance US all
+2025-01-21 00:41:04.045 | INFO     | __main__:run:149 - Starting to filter companies
+2025-01-21 00:41:08.888 | INFO     | __main__:filtering_tickers:54 - Number of tickets to evaluate: 6349
+2025-01-21 00:41:18.486 | INFO     | __main__:filtering_tickers:65 - Processed: 4000 out of 6349
+2025-01-21 00:41:18.487 | INFO     | __main__:filtering_tickers:67 - Processed: 63.0
+2025-01-21 00:41:59.409 | INFO     | __main__:filtering_tickers:65 - Processed: 100 out of 6349
+2025-01-21 00:41:59.409 | INFO     | __main__:filtering_tickers:67 - Processed: 1.58
+2025-01-21 00:42:10.603 | INFO     | __main__:filtering_tickers:65 - Processed: 4100 out of 6349
+2025-01-21 00:42:10.605 | INFO     | __main__:filtering_tickers:67 - Processed: 64.58
+2025-01-21 00:42:52.511 | INFO     | __main__:filtering_tickers:65 - Processed: 200 out of 6349
+2025-01-21 00:42:52.512 | INFO     | __main__:filtering_tickers:67 - Processed: 3.15
+2025-01-21 00:43:03.560 | INFO     | __main__:filtering_tickers:65 - Processed: 4200 out of 6349
+2025-01-21 00:43:03.561 | INFO     | __main__:filtering_tickers:67 - Processed: 66.15
+2025-01-21 00:43:44.696 | INFO     | __main__:filtering_tickers:65 - Processed: 300 out of 6349
+2025-01-21 00:43:44.698 | INFO     | __main__:filtering_tickers:67 - Processed: 4.73
+2025-01-21 00:43:56.334 | INFO     | __main__:filtering_tickers:65 - Processed: 4300 out of 6349
+2025-01-21 00:43:56.335 | INFO     | __main__:filtering_tickers:67 - Processed: 67.73
+2025-01-21 00:44:37.069 | INFO     | __main__:filtering_tickers:65 - Processed: 400 out of 6349
+2025-01-21 00:44:37.070 | INFO     | __main__:filtering_tickers:67 - Processed: 6.3
+2025-01-21 00:44:48.406 | INFO     | __main__:filtering_tickers:65 - Processed: 4400 out of 6349
+2025-01-21 00:44:48.408 | INFO     | __main__:filtering_tickers:67 - Processed: 69.3
+2025-01-21 00:45:33.257 | INFO     | __main__:filtering_tickers:65 - Processed: 500 out of 6349
+2025-01-21 00:45:33.258 | INFO     | __main__:filtering_tickers:67 - Processed: 7.88
+2025-01-21 00:45:45.957 | INFO     | __main__:filtering_tickers:65 - Processed: 4500 out of 6349
+2025-01-21 00:45:45.959 | INFO     | __main__:filtering_tickers:67 - Processed: 70.88
+2025-01-21 00:46:28.832 | INFO     | __main__:filtering_tickers:65 - Processed: 600 out of 6349
+2025-01-21 00:46:28.833 | INFO     | __main__:filtering_tickers:67 - Processed: 9.45
+2025-01-21 00:46:37.672 | INFO     | __main__:filtering_tickers:65 - Processed: 4600 out of 6349
+2025-01-21 00:46:37.673 | INFO     | __main__:filtering_tickers:67 - Processed: 72.45
+2025-01-21 00:47:20.309 | INFO     | __main__:filtering_tickers:65 - Processed: 700 out of 6349
+2025-01-21 00:47:20.309 | INFO     | __main__:filtering_tickers:67 - Processed: 11.03
+2025-01-21 00:47:28.491 | INFO     | __main__:filtering_tickers:65 - Processed: 4700 out of 6349
+2025-01-21 00:47:28.491 | INFO     | __main__:filtering_tickers:67 - Processed: 74.03
+2025-01-21 00:48:10.011 | INFO     | __main__:filtering_tickers:65 - Processed: 800 out of 6349
+2025-01-21 00:48:10.012 | INFO     | __main__:filtering_tickers:67 - Processed: 12.6
+2025-01-21 00:48:20.704 | INFO     | __main__:filtering_tickers:65 - Processed: 4800 out of 6349
+2025-01-21 00:48:20.704 | INFO     | __main__:filtering_tickers:67 - Processed: 75.6
+2025-01-21 00:49:00.789 | INFO     | __main__:filtering_tickers:65 - Processed: 900 out of 6349
+2025-01-21 00:49:00.789 | INFO     | __main__:filtering_tickers:67 - Processed: 14.18
+2025-01-21 00:49:13.723 | INFO     | __main__:filtering_tickers:65 - Processed: 4900 out of 6349
+2025-01-21 00:49:13.723 | INFO     | __main__:filtering_tickers:67 - Processed: 77.18
+2025-01-21 00:49:51.349 | INFO     | __main__:filtering_tickers:65 - Processed: 1000 out of 6349
+2025-01-21 00:49:51.349 | INFO     | __main__:filtering_tickers:67 - Processed: 15.75
+2025-01-21 00:50:04.707 | INFO     | __main__:filtering_tickers:65 - Processed: 5000 out of 6349
+2025-01-21 00:50:04.707 | INFO     | __main__:filtering_tickers:67 - Processed: 78.75
+2025-01-21 00:50:42.315 | INFO     | __main__:filtering_tickers:65 - Processed: 1100 out of 6349
+2025-01-21 00:50:42.316 | INFO     | __main__:filtering_tickers:67 - Processed: 17.33
+2025-01-21 00:50:55.663 | INFO     | __main__:filtering_tickers:65 - Processed: 5100 out of 6349
+2025-01-21 00:50:55.663 | INFO     | __main__:filtering_tickers:67 - Processed: 80.33
+2025-01-21 00:51:33.474 | INFO     | __main__:filtering_tickers:65 - Processed: 1200 out of 6349
+2025-01-21 00:51:33.474 | INFO     | __main__:filtering_tickers:67 - Processed: 18.9
+2025-01-21 00:51:46.723 | INFO     | __main__:filtering_tickers:65 - Processed: 5200 out of 6349
+2025-01-21 00:51:46.724 | INFO     | __main__:filtering_tickers:67 - Processed: 81.9
+2025-01-21 00:52:23.252 | INFO     | __main__:filtering_tickers:65 - Processed: 1300 out of 6349
+2025-01-21 00:52:23.252 | INFO     | __main__:filtering_tickers:67 - Processed: 20.48
+2025-01-21 00:52:37.487 | INFO     | __main__:filtering_tickers:65 - Processed: 5300 out of 6349
+2025-01-21 00:52:37.488 | INFO     | __main__:filtering_tickers:67 - Processed: 83.48
+2025-01-21 00:53:15.013 | INFO     | __main__:filtering_tickers:65 - Processed: 1400 out of 6349
+2025-01-21 00:53:15.013 | INFO     | __main__:filtering_tickers:67 - Processed: 22.05
+2025-01-21 00:53:30.036 | INFO     | __main__:filtering_tickers:65 - Processed: 5400 out of 6349
+2025-01-21 00:53:30.037 | INFO     | __main__:filtering_tickers:67 - Processed: 85.05
+2025-01-21 00:54:05.330 | INFO     | __main__:filtering_tickers:65 - Processed: 1500 out of 6349
+2025-01-21 00:54:05.330 | INFO     | __main__:filtering_tickers:67 - Processed: 23.63
+2025-01-21 00:54:19.694 | INFO     | __main__:filtering_tickers:65 - Processed: 5500 out of 6349
+2025-01-21 00:54:19.694 | INFO     | __main__:filtering_tickers:67 - Processed: 86.63
+2025-01-21 00:54:55.922 | INFO     | __main__:filtering_tickers:65 - Processed: 1600 out of 6349
+2025-01-21 00:54:55.923 | INFO     | __main__:filtering_tickers:67 - Processed: 25.2
+2025-01-21 00:55:10.148 | INFO     | __main__:filtering_tickers:65 - Processed: 5600 out of 6349
+2025-01-21 00:55:10.149 | INFO     | __main__:filtering_tickers:67 - Processed: 88.2
+2025-01-21 00:55:47.799 | INFO     | __main__:filtering_tickers:65 - Processed: 1700 out of 6349
+2025-01-21 00:55:47.800 | INFO     | __main__:filtering_tickers:67 - Processed: 26.78
+2025-01-21 00:56:00.729 | INFO     | __main__:filtering_tickers:65 - Processed: 5700 out of 6349
+2025-01-21 00:56:00.729 | INFO     | __main__:filtering_tickers:67 - Processed: 89.78
+2025-01-21 00:56:37.803 | INFO     | __main__:filtering_tickers:65 - Processed: 1800 out of 6349
+2025-01-21 00:56:37.804 | INFO     | __main__:filtering_tickers:67 - Processed: 28.35
+2025-01-21 00:56:52.343 | INFO     | __main__:filtering_tickers:65 - Processed: 5800 out of 6349
+2025-01-21 00:56:52.343 | INFO     | __main__:filtering_tickers:67 - Processed: 91.35
+2025-01-21 00:57:28.022 | INFO     | __main__:filtering_tickers:65 - Processed: 1900 out of 6349
+2025-01-21 00:57:28.022 | INFO     | __main__:filtering_tickers:67 - Processed: 29.93
+2025-01-21 00:57:42.758 | INFO     | __main__:filtering_tickers:65 - Processed: 5900 out of 6349
+2025-01-21 00:57:42.759 | INFO     | __main__:filtering_tickers:67 - Processed: 92.93
+2025-01-21 00:58:19.147 | INFO     | __main__:filtering_tickers:65 - Processed: 2000 out of 6349
+2025-01-21 00:58:19.148 | INFO     | __main__:filtering_tickers:67 - Processed: 31.5
+2025-01-21 00:58:33.601 | INFO     | __main__:filtering_tickers:65 - Processed: 6000 out of 6349
+2025-01-21 00:58:33.602 | INFO     | __main__:filtering_tickers:67 - Processed: 94.5
+2025-01-21 00:59:09.794 | INFO     | __main__:filtering_tickers:65 - Processed: 2100 out of 6349
+2025-01-21 00:59:09.795 | INFO     | __main__:filtering_tickers:67 - Processed: 33.08
+2025-01-21 00:59:24.525 | INFO     | __main__:filtering_tickers:65 - Processed: 6100 out of 6349
+2025-01-21 00:59:24.525 | INFO     | __main__:filtering_tickers:67 - Processed: 96.08
+2025-01-21 01:00:02.876 | INFO     | __main__:filtering_tickers:65 - Processed: 2200 out of 6349
+2025-01-21 01:00:02.877 | INFO     | __main__:filtering_tickers:67 - Processed: 34.65
+2025-01-21 01:00:16.764 | INFO     | __main__:filtering_tickers:65 - Processed: 6200 out of 6349
+2025-01-21 01:00:16.765 | INFO     | __main__:filtering_tickers:67 - Processed: 97.65
+2025-01-21 01:00:58.994 | INFO     | __main__:filtering_tickers:65 - Processed: 2300 out of 6349
+2025-01-21 01:00:58.994 | INFO     | __main__:filtering_tickers:67 - Processed: 36.23
+2025-01-21 01:01:07.885 | INFO     | __main__:filtering_tickers:65 - Processed: 6300 out of 6349
+2025-01-21 01:01:07.886 | INFO     | __main__:filtering_tickers:67 - Processed: 99.23
+2025-01-21 01:01:35.545 | INFO     | __main__:run:153 - Processing tickers
+2025-01-21 01:01:51.975 | INFO     | __main__:filtering_tickers:65 - Processed: 2400 out of 6349
+2025-01-21 01:01:51.976 | INFO     | __main__:filtering_tickers:67 - Processed: 37.8
+2025-01-21 01:02:45.500 | INFO     | __main__:filtering_tickers:65 - Processed: 2500 out of 6349
+2025-01-21 01:02:45.502 | INFO     | __main__:filtering_tickers:67 - Processed: 39.38
+2025-01-21 01:04:00.235 | INFO     | __main__:filtering_tickers:65 - Processed: 2600 out of 6349
+2025-01-21 01:04:00.236 | INFO     | __main__:filtering_tickers:67 - Processed: 40.95
+2025-01-21 01:05:10.562 | INFO     | __main__:filtering_tickers:65 - Processed: 2700 out of 6349
+2025-01-21 01:05:10.562 | INFO     | __main__:filtering_tickers:67 - Processed: 42.53
+2025-01-21 01:06:02.499 | INFO     | __main__:filtering_tickers:65 - Processed: 2800 out of 6349
+2025-01-21 01:06:02.501 | INFO     | __main__:filtering_tickers:67 - Processed: 44.1
+2025-01-21 01:06:55.097 | INFO     | __main__:filtering_tickers:65 - Processed: 2900 out of 6349
+2025-01-21 01:06:55.097 | INFO     | __main__:filtering_tickers:67 - Processed: 45.68
+2025-01-21 01:07:59.069 | INFO     | __main__:filtering_tickers:65 - Processed: 3000 out of 6349
+2025-01-21 01:07:59.070 | INFO     | __main__:filtering_tickers:67 - Processed: 47.25
+2025-01-21 01:08:58.687 | INFO     | __main__:filtering_tickers:65 - Processed: 3100 out of 6349
+2025-01-21 01:08:58.688 | INFO     | __main__:filtering_tickers:67 - Processed: 48.83
+2025-01-21 01:10:12.400 | INFO     | __main__:filtering_tickers:65 - Processed: 3200 out of 6349
+2025-01-21 01:10:12.401 | INFO     | __main__:filtering_tickers:67 - Processed: 50.4
+2025-01-21 01:11:03.247 | INFO     | __main__:filtering_tickers:65 - Processed: 3300 out of 6349
+2025-01-21 01:11:03.248 | INFO     | __main__:filtering_tickers:67 - Processed: 51.98
+2025-01-21 01:11:53.597 | INFO     | __main__:filtering_tickers:65 - Processed: 3400 out of 6349
+2025-01-21 01:11:53.598 | INFO     | __main__:filtering_tickers:67 - Processed: 53.55
+2025-01-21 01:12:48.004 | INFO     | __main__:filtering_tickers:65 - Processed: 3500 out of 6349
+2025-01-21 01:12:48.005 | INFO     | __main__:filtering_tickers:67 - Processed: 55.13
+2025-01-21 01:13:39.315 | INFO     | __main__:filtering_tickers:65 - Processed: 3600 out of 6349
+2025-01-21 01:13:39.316 | INFO     | __main__:filtering_tickers:67 - Processed: 56.7
+2025-01-21 01:14:40.120 | INFO     | __main__:filtering_tickers:65 - Processed: 3700 out of 6349
+2025-01-21 01:14:40.121 | INFO     | __main__:filtering_tickers:67 - Processed: 58.28
+2025-01-21 01:15:35.202 | INFO     | __main__:filtering_tickers:65 - Processed: 3800 out of 6349
+2025-01-21 01:15:35.203 | INFO     | __main__:filtering_tickers:67 - Processed: 59.85
+2025-01-21 01:16:26.321 | INFO     | __main__:filtering_tickers:65 - Processed: 3900 out of 6349
+2025-01-21 01:16:26.322 | INFO     | __main__:filtering_tickers:67 - Processed: 61.43
+2025-01-21 01:17:17.251 | INFO     | __main__:filtering_tickers:65 - Processed: 4000 out of 6349
+2025-01-21 01:17:17.252 | INFO     | __main__:filtering_tickers:67 - Processed: 63.0
+2025-01-21 01:18:13.114 | INFO     | __main__:filtering_tickers:65 - Processed: 4100 out of 6349
+2025-01-21 01:18:13.115 | INFO     | __main__:filtering_tickers:67 - Processed: 64.58
+2025-01-21 01:19:07.406 | INFO     | __main__:filtering_tickers:65 - Processed: 4200 out of 6349
+2025-01-21 01:19:07.408 | INFO     | __main__:filtering_tickers:67 - Processed: 66.15
+2025-01-21 01:19:59.629 | INFO     | __main__:filtering_tickers:65 - Processed: 4300 out of 6349
+2025-01-21 01:19:59.630 | INFO     | __main__:filtering_tickers:67 - Processed: 67.73
+2025-01-21 01:20:52.606 | INFO     | __main__:filtering_tickers:65 - Processed: 4400 out of 6349
+2025-01-21 01:20:52.608 | INFO     | __main__:filtering_tickers:67 - Processed: 69.3
+2025-01-21 01:21:44.401 | INFO     | __main__:filtering_tickers:65 - Processed: 4500 out of 6349
+2025-01-21 01:21:44.402 | INFO     | __main__:filtering_tickers:67 - Processed: 70.88
+2025-01-21 01:22:36.671 | INFO     | __main__:filtering_tickers:65 - Processed: 4600 out of 6349
+2025-01-21 01:22:36.673 | INFO     | __main__:filtering_tickers:67 - Processed: 72.45
+2025-01-21 01:23:31.652 | INFO     | __main__:filtering_tickers:65 - Processed: 4700 out of 6349
+2025-01-21 01:23:31.653 | INFO     | __main__:filtering_tickers:67 - Processed: 74.03
+2025-01-21 01:24:24.181 | INFO     | __main__:filtering_tickers:65 - Processed: 4800 out of 6349
+2025-01-21 01:24:24.181 | INFO     | __main__:filtering_tickers:67 - Processed: 75.6
+2025-01-21 01:25:15.628 | INFO     | __main__:filtering_tickers:65 - Processed: 4900 out of 6349
+2025-01-21 01:25:15.629 | INFO     | __main__:filtering_tickers:67 - Processed: 77.18
+2025-01-21 01:26:06.579 | INFO     | __main__:filtering_tickers:65 - Processed: 5000 out of 6349
+2025-01-21 01:26:06.581 | INFO     | __main__:filtering_tickers:67 - Processed: 78.75
+2025-01-21 01:26:57.251 | INFO     | __main__:filtering_tickers:65 - Processed: 5100 out of 6349
+2025-01-21 01:26:57.253 | INFO     | __main__:filtering_tickers:67 - Processed: 80.33
+2025-01-21 01:27:48.553 | INFO     | __main__:filtering_tickers:65 - Processed: 5200 out of 6349
+2025-01-21 01:27:48.554 | INFO     | __main__:filtering_tickers:67 - Processed: 81.9
+2025-01-21 01:28:39.114 | INFO     | __main__:filtering_tickers:65 - Processed: 5300 out of 6349
+2025-01-21 01:28:39.114 | INFO     | __main__:filtering_tickers:67 - Processed: 83.48
+2025-01-21 01:29:30.794 | INFO     | __main__:filtering_tickers:65 - Processed: 5400 out of 6349
+2025-01-21 01:29:30.796 | INFO     | __main__:filtering_tickers:67 - Processed: 85.05
+2025-01-21 01:30:22.028 | INFO     | __main__:filtering_tickers:65 - Processed: 5500 out of 6349
+2025-01-21 01:30:22.030 | INFO     | __main__:filtering_tickers:67 - Processed: 86.63
+2025-01-21 01:31:16.711 | INFO     | __main__:filtering_tickers:65 - Processed: 5600 out of 6349
+2025-01-21 01:31:16.714 | INFO     | __main__:filtering_tickers:67 - Processed: 88.2
+2025-01-21 01:32:07.890 | INFO     | __main__:filtering_tickers:65 - Processed: 5700 out of 6349
+2025-01-21 01:32:07.891 | INFO     | __main__:filtering_tickers:67 - Processed: 89.78
+2025-01-21 01:33:02.526 | INFO     | __main__:filtering_tickers:65 - Processed: 5800 out of 6349
+2025-01-21 01:33:02.527 | INFO     | __main__:filtering_tickers:67 - Processed: 91.35
+2025-01-21 01:33:54.894 | INFO     | __main__:filtering_tickers:65 - Processed: 5900 out of 6349
+2025-01-21 01:33:54.894 | INFO     | __main__:filtering_tickers:67 - Processed: 92.93
+2025-01-21 01:34:51.670 | INFO     | __main__:filtering_tickers:65 - Processed: 6000 out of 6349
+2025-01-21 01:34:51.671 | INFO     | __main__:filtering_tickers:67 - Processed: 94.5
+2025-01-21 01:35:43.096 | INFO     | __main__:filtering_tickers:65 - Processed: 6100 out of 6349
+2025-01-21 01:35:43.097 | INFO     | __main__:filtering_tickers:67 - Processed: 96.08
+2025-01-21 01:36:35.385 | INFO     | __main__:filtering_tickers:65 - Processed: 6200 out of 6349
+2025-01-21 01:36:35.386 | INFO     | __main__:filtering_tickers:67 - Processed: 97.65
+2025-01-21 01:37:25.957 | INFO     | __main__:filtering_tickers:65 - Processed: 6300 out of 6349
+2025-01-21 01:37:25.958 | INFO     | __main__:filtering_tickers:67 - Processed: 99.23
+2025-01-21 01:37:50.987 | INFO     | __main__:run:153 - Processing tickers
+2025-01-21 01:40:44.107 | INFO     | __main__:post_performance:140 - Posting the following message:
+#US Companies over $1B - Weekly Performance
+Best Performers:
+🟢 $HEES -> 101.6%
+🟢 $IONR -> 35.5%
+🟢 $RGTI -> 34.1%
+🟢 $SEMR -> 31.8%
+🟢 $IONQ -> 31.6%
+Worst Performers:
+🔴 $ARQT -> -15.4%
+🔴 $MYGN -> -16.5%
+🔴 $EVH -> -19.4%
+🔴 $WGS -> -20.1%
+🔴 $FTAI -> -33.5%
+
+2025-01-21 01:40:44.108 | INFO     | __main__:post_performance:141 - Length of message: 253
+2025-01-21 01:40:44.109 | INFO     | utils.utils:post_twitter:36 - Tweet lenght: 253
+2025-01-21 01:40:44.509 | INFO     | utils.utils:send_telegram_message:224 - Using bot_token: 6379257583...
+2025-01-21 01:40:44.510 | INFO     | utils.utils:send_telegram_message:225 - Sending to chat_id: -1002313822545
+2025-01-21 01:40:44.510 | INFO     | utils.utils:send_telegram_message:246 - Attempting to send message to Telegram
+2025-01-21 01:40:44.754 | INFO     | utils.utils:send_telegram_message:252 - Message sent successfully. Status code: 200
+2025-01-21 01:40:44.756 | SUCCESS  | utils.utils:post_twitter:41 - Tweet posted: #US Companies over $1B - Weekly Performance
+Best Performers:
+🟢 $HEES -> 101.6%
+🟢 $IONR -> 35.5%
+🟢 $RGTI -> 34.1%
+🟢 $SEMR -> 31.8%
+🟢 $IONQ -> 31.6%
+Worst Performers:
+🔴 $ARQT -> -15.4%
+🔴 $MYGN -> -16.5%
+🔴 $EVH -> -19.4%
+🔴 $WGS -> -20.1%
+🔴 $FTAI -> -33.5%
+
+2025-01-21 01:40:44.757 | INFO     | utils.utils:post_twitter:48 - Pausing for 89 seconds to maintain proper intervals between Twitter posts.
+2025-01-21 01:40:44.759 | INFO     | __main__:post_performance:143 - Message posted successfully on Twitter.
+2025-01-21 02:29:27.282 | INFO     | __main__:post_performance:140 - Posting the following message:
+#US Companies over $1B - Weekly Performance
+Best Performers:
+🟢 $HEES -> 101.6%
+🟢 $IONR -> 35.5%
+🟢 $RGTI -> 34.1%
+🟢 $SEMR -> 31.8%
+🟢 $IONQ -> 31.6%
+Worst Performers:
+🔴 $CLMT -> -18.8%
+🔴 $EVH -> -19.4%
+🔴 $WGS -> -20.1%
+🔴 $SIG -> -24.1%
+🔴 $FTAI -> -33.5%
+
+2025-01-21 02:29:27.283 | INFO     | __main__:post_performance:141 - Length of message: 252
+2025-01-21 02:29:27.283 | INFO     | utils.utils:post_twitter:36 - Tweet lenght: 252
+2025-01-21 02:29:27.678 | INFO     | utils.utils:send_telegram_message:224 - Using bot_token: 6379257583...
+2025-01-21 02:29:27.679 | INFO     | utils.utils:send_telegram_message:225 - Sending to chat_id: -1002313822545
+2025-01-21 02:29:27.679 | INFO     | utils.utils:send_telegram_message:246 - Attempting to send message to Telegram
+2025-01-21 02:29:27.937 | INFO     | utils.utils:send_telegram_message:252 - Message sent successfully. Status code: 200
+2025-01-21 02:29:27.938 | SUCCESS  | utils.utils:post_twitter:41 - Tweet posted: #US Companies over $1B - Weekly Performance
+Best Performers:
+🟢 $HEES -> 101.6%
+🟢 $IONR -> 35.5%
+🟢 $RGTI -> 34.1%
+🟢 $SEMR -> 31.8%
+🟢 $IONQ -> 31.6%
+Worst Performers:
+🔴 $CLMT -> -18.8%
+🔴 $EVH -> -19.4%
+🔴 $WGS -> -20.1%
+🔴 $SIG -> -24.1%
+🔴 $FTAI -> -33.5%
+
+2025-01-21 02:29:27.939 | INFO     | utils.utils:post_twitter:48 - Pausing for 116 seconds to maintain proper intervals between Twitter posts.
+2025-01-21 02:29:27.940 | INFO     | __main__:post_performance:143 - Message posted successfully on Twitter.

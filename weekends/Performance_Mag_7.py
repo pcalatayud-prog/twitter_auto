@@ -151,7 +151,6 @@ class StockSevenMagnificenPerformance:
         logger.info("Posting top performance for different frequencies.")
         # frequencies = ['dtd', 'wtd', 'mtd', '3mtd']
         frequencies = ['wtd','ytd']
-        frequencies = ['3-YTD']
         for frequency in frequencies:
             self.post_performance(frequency=frequency)
 
