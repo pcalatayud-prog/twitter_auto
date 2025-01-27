@@ -22,7 +22,7 @@ class EarningsBot:
         # Set up date information
         self.current_date = datetime.now().strftime('%Y-%m-%d')
 
-        self.number_tickers_to_print = 3
+        self.number_tickers_to_print = 2
 
 
 

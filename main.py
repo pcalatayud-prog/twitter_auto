@@ -117,7 +117,7 @@ class Execution_twitter_information:
 
 
     def run(self):
-
+        send_telegram_message('Running main.py')
         self.is_weekend()
 
         if self.day_of_week in self.WEEKDAYS and self.market_open==True:
@@ -135,7 +135,7 @@ class Execution_twitter_information:
                 bot = SplitBot()
                 bot.run()
 
-            elif self.current_hour == self.time_open[0] and self.current_minute <= self.time_open[1]:
+            elif self.current_hour == self.time_open[0] and self.current_minute > self.time_open[1]:
                 logger.info('The market just opened -> ')
                 market = Market_Daily_Performance()
                 market.market_just_open()

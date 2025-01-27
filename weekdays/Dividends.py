@@ -29,7 +29,7 @@ class DividendBot:
         self.current_date = datetime.now()
         self.current_date_str = self.current_date.strftime('%Y-%m-%d')
 
-        self.number_tickers_to_print = 3
+        self.number_tickers_to_print = 2
 
         # Load ticker information
         try:
