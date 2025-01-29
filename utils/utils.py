@@ -44,9 +44,9 @@ def post_twitter(text: str):
         bot_send_text(f"Tweet Error\nTweet Error\n: {e}\n{message}")
         logger.error(f"Tweet Error\nTweet Error\n: {e}\n{message}")
 
-    random_number = random.randint(60, 180)
+    random_number = random.randint(180, 600)
     logger.info(f"Pausing for {random_number} seconds to maintain proper intervals between Twitter posts.")
-    # time.sleep(random_number)
+    time.sleep(random_number)
     return None
 
 

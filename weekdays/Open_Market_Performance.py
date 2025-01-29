@@ -211,9 +211,9 @@ class Market_Daily_Performance :
 if __name__ == "__main__":
     market = Market_Daily_Performance()
     #
-    market.market_just_open()
+    # market.market_just_open()
     market.market_is_open()
-    market.market_is_just_closed()
-    market.market_1_week()
-    market.market_1_year()
+    # market.market_is_just_closed()
+    # market.market_1_week()
+    # market.market_1_year()
 
