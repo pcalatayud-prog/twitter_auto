@@ -65,6 +65,36 @@ def get_market_cap(symbol):
     else:
         return None  # API request failed
 
+
+import pandas as pd
+
+
+def get_sp500_tickers():
+    """
+    Retrieves the current list of S&P 500 constituent tickers from Wikipedia.
+    Returns:
+        list: A list of strings containing the ticker symbols of S&P 500 companies
+    """
+    # Wikipedia maintains an updated list of S&P 500 companies
+    url = "https://en.wikipedia.org/wiki/List_of_S%26P_500_companies"
+
+    try:
+        # Read the first table from the Wikipedia page
+        tables = pd.read_html(url)
+        sp500_table = tables[0]
+
+        # Extract the ticker symbols (usually in the first column)
+        tickers = sp500_table['Symbol'].tolist()
+
+        # Clean the tickers (remove any extra whitespace)
+        tickers = [ticker.strip() for ticker in tickers]
+
+        return tickers
+
+    except Exception as e:
+        print(f"Error retrieving S&P 500 tickers: {e}")
+        return []
+
 def getting_nasdaq100_sp500_tickers():
 
     from config.api_keys import api_key
@@ -78,12 +108,13 @@ def getting_nasdaq100_sp500_tickers():
         )
         nasdaq = [item["symbol"] for item in nasdaq_response.json()]
 
-        # Get S&P 500 constituents
-        sp500_response = requests.get(
-            f"{base_url}/sp500_constituent",
-            params={'apikey': api_key}
-        )
-        sp500 = [item["symbol"] for item in sp500_response.json()]
+        # # Get S&P 500 constituents
+        # sp500_response = requests.get(
+        #     f"{base_url}/sp500_constituent",
+        #     params={'apikey': api_key}
+        # )
+
+        sp500 = get_sp500_tickers()
 
         # Get unique tickers
         unique_tickers = list(set(nasdaq + sp500))

@@ -13,7 +13,10 @@ from loguru import logger
 
 from utils.utils import post_twitter,getting_nasdaq100_sp500_tickers
 
-class Market_Daily_Performance :
+
+class Market_Daily_Performance:
+
+
     def __init__(self, tickers=None):
 
         logger.add("logs/open_market_performance.log", rotation="500 MB")
@@ -209,10 +212,11 @@ class Market_Daily_Performance :
         return None
 
 if __name__ == "__main__":
-    market = Market_Daily_Performance()
+    print('main')
+    # market = Market_Daily_Performance()
     #
     # market.market_just_open()
-    market.market_is_open()
+    # market.market_is_open()
     # market.market_is_just_closed()
     # market.market_1_week()
     # market.market_1_year()
