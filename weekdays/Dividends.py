@@ -252,7 +252,7 @@ class DividendBot:
             today = dates[0]  # Get just the first date
 
             # Get dividend tickers for today
-            tickers = get_dividend_calendar(today=self.current_date)
+            tickers = get_dividend_calendar()
 
             tickers = sort_tickers_by_market_cap(tickers)
 

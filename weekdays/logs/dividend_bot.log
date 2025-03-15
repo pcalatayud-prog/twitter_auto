@@ -28,3 +28,44 @@
 2025-01-20 14:04:30.625 | INFO     | weekdays.Splits:__init__:47 - Successfully loaded ticker information from C:\Users\peybo\PycharmProjects\twitter_auto\weekdays\../config/top_3000_tickers.csv
 2025-01-20 14:04:30.626 | INFO     | weekdays.Splits:run:243 - Starting SplitBot workflow
 2025-01-20 14:04:32.343 | INFO     | weekdays.Splits:run:249 - No splits scheduled for today
+2025-03-15 14:53:06.884 | INFO     | __main__:__init__:26 - Initialising DividendBot
+2025-03-15 14:53:06.911 | INFO     | __main__:__init__:50 - Successfully loaded ticker information from C:\Users\peybo\PycharmProjects\twitter_auto\weekdays\../config/top_3000_tickers.csv
+2025-03-15 14:53:06.919 | INFO     | __main__:run:247 - Starting DividendBot workflow
+2025-03-15 14:53:06.919 | ERROR    | __main__:run:310 - Error in main workflow: get_dividend_calendar() got an unexpected keyword argument 'today'
+2025-03-15 14:59:08.981 | INFO     | __main__:__init__:26 - Initialising DividendBot
+2025-03-15 14:59:09.022 | INFO     | __main__:__init__:50 - Successfully loaded ticker information from C:\Users\peybo\PycharmProjects\twitter_auto\weekdays\../config/top_3000_tickers.csv
+2025-03-15 14:59:09.022 | INFO     | __main__:run:247 - Starting DividendBot workflow
+2025-03-15 14:59:09.028 | ERROR    | __main__:run:310 - Error in main workflow: get_dividend_calendar() got an unexpected keyword argument 'today'
+2025-03-15 14:59:36.023 | INFO     | __main__:__init__:26 - Initialising DividendBot
+2025-03-15 14:59:36.051 | INFO     | __main__:__init__:50 - Successfully loaded ticker information from C:\Users\peybo\PycharmProjects\twitter_auto\weekdays\../config/top_3000_tickers.csv
+2025-03-15 14:59:36.054 | INFO     | __main__:run:247 - Starting DividendBot workflow
+2025-03-15 14:59:38.263 | ERROR    | utils.utils:get_dividend_calendar:223 - Error getting dividend calendar: Expecting value: line 1 column 1 (char 0)
+2025-03-15 14:59:38.263 | INFO     | __main__:run:259 - Retrieved 0 dividend tickers
+2025-03-15 14:59:38.263 | INFO     | utils.utils:post_twitter:38 - Tweet lenght: 115
+2025-03-15 14:59:38.626 | INFO     | utils.utils:send_telegram_message:262 - Using bot_token: 6379257583...
+2025-03-15 14:59:38.626 | INFO     | utils.utils:send_telegram_message:263 - Sending to chat_id: -1002313822545
+2025-03-15 14:59:38.626 | INFO     | utils.utils:send_telegram_message:284 - Attempting to send message to Telegram
+2025-03-15 14:59:38.925 | INFO     | utils.utils:send_telegram_message:290 - Message sent successfully. Status code: 200
+2025-03-15 14:59:38.925 | SUCCESS  | utils.utils:post_twitter:43 - Tweet posted: #Today Saturday, 15th of March, There are not #Scheduled #Dividends #Payments for #SP500 and #Nasdaq100 #Companies.
+2025-03-15 14:59:38.925 | INFO     | utils.utils:post_twitter:50 - Pausing for 401 seconds to maintain proper intervals between Twitter posts.
+2025-03-15 15:01:54.585 | INFO     | __main__:__init__:26 - Initialising DividendBot
+2025-03-15 15:01:54.606 | INFO     | __main__:__init__:50 - Successfully loaded ticker information from C:\Users\peybo\PycharmProjects\twitter_auto\weekdays\../config/top_3000_tickers.csv
+2025-03-15 15:01:54.616 | INFO     | __main__:run:247 - Starting DividendBot workflow
+2025-03-15 15:01:56.793 | ERROR    | utils.utils:get_dividend_calendar:218 - Error getting dividend calendar: Expecting value: line 1 column 1 (char 0)
+2025-03-15 15:01:56.793 | INFO     | __main__:run:259 - Retrieved 0 dividend tickers
+2025-03-15 15:01:56.793 | INFO     | utils.utils:post_twitter:38 - Tweet lenght: 115
+2025-03-15 15:01:57.167 | ERROR    | utils.utils:post_twitter:45 - 403 Forbidden
+You are not allowed to create a Tweet with duplicate content.
+2025-03-15 15:01:57.167 | INFO     | utils.utils:send_telegram_message:257 - Using bot_token: 6379257583...
+2025-03-15 15:01:57.167 | INFO     | utils.utils:send_telegram_message:258 - Sending to chat_id: -1002313822545
+2025-03-15 15:01:57.172 | INFO     | utils.utils:send_telegram_message:279 - Attempting to send message to Telegram
+2025-03-15 15:01:57.419 | INFO     | utils.utils:send_telegram_message:285 - Message sent successfully. Status code: 200
+2025-03-15 15:01:57.425 | ERROR    | utils.utils:post_twitter:47 - Tweet Error
+Tweet Error
+: 403 Forbidden
+You are not allowed to create a Tweet with duplicate content.
+#Today Saturday, 15th of March, There are not #Scheduled #Dividends #Payments for #SP500 and #Nasdaq100 #Companies.
+2025-03-15 15:01:57.425 | INFO     | utils.utils:post_twitter:50 - Pausing for 551 seconds to maintain proper intervals between Twitter posts.
+2025-03-15 15:03:02.358 | INFO     | __main__:__init__:26 - Initialising DividendBot
+2025-03-15 15:03:02.389 | INFO     | __main__:__init__:50 - Successfully loaded ticker information from C:\Users\peybo\PycharmProjects\twitter_auto\weekdays\../config/top_3000_tickers.csv
+2025-03-15 15:03:02.389 | INFO     | __main__:run:247 - Starting DividendBot workflow

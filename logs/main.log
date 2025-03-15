@@ -837,3 +837,45 @@ Today's Biggest Movers:
 🟢 $MRVL -> 4.67 %
 🟢 $PDD -> 4.52 %
 
+2025-02-24 22:04:18.262 | INFO     | __main__:__init__:41 - Initialising Main
+2025-02-24 22:04:18.264 | INFO     | utils.utils:send_telegram_message:224 - Using bot_token: 6379257583...
+2025-02-24 22:04:18.264 | INFO     | utils.utils:send_telegram_message:225 - Sending to chat_id: -1002313822545
+2025-02-24 22:04:18.265 | INFO     | utils.utils:send_telegram_message:246 - Attempting to send message to Telegram
+2025-02-24 22:04:18.542 | INFO     | utils.utils:send_telegram_message:252 - Message sent successfully. Status code: 200
+2025-02-24 22:04:18.544 | INFO     | __main__:is_weekend:113 - Monday is a weekday. The market could be open.
+2025-02-24 22:04:19.061 | ERROR    | __main__:is_market_open:99 - Failed to fetch market data: 429 Client Error: Too Many Requests for url: https://financialmodelingprep.com/api/v3/is-the-market-open?exchange=NYSE&apikey=c8cda59957e87eead4f323aab454cefa
+2025-02-24 22:04:19.062 | INFO     | __main__:run:175 - Nothing to post...
+2025-02-24 22:04:19.062 | INFO     | utils.utils:send_telegram_message:224 - Using bot_token: 6379257583...
+2025-02-24 22:04:19.064 | INFO     | utils.utils:send_telegram_message:225 - Sending to chat_id: -1002313822545
+2025-02-24 22:04:19.064 | INFO     | utils.utils:send_telegram_message:246 - Attempting to send message to Telegram
+2025-02-24 22:04:19.390 | INFO     | utils.utils:send_telegram_message:252 - Message sent successfully. Status code: 200
+2025-02-24 22:06:56.395 | INFO     | __main__:__init__:41 - Initialising Main
+2025-02-24 22:06:56.395 | INFO     | utils.utils:send_telegram_message:224 - Using bot_token: 6379257583...
+2025-02-24 22:06:56.396 | INFO     | utils.utils:send_telegram_message:225 - Sending to chat_id: -1002313822545
+2025-02-24 22:06:56.396 | INFO     | utils.utils:send_telegram_message:246 - Attempting to send message to Telegram
+2025-02-24 22:06:56.637 | INFO     | utils.utils:send_telegram_message:252 - Message sent successfully. Status code: 200
+2025-02-24 22:06:56.638 | INFO     | __main__:is_weekend:113 - Monday is a weekday. The market could be open.
+2025-02-24 22:06:57.137 | INFO     | __main__:run:124 - Today the market opens
+2025-02-24 22:06:57.137 | INFO     | __main__:run:149 - The market just closed -> 
+2025-02-24 22:06:57.140 | INFO     | weekdays.Open_Market_Performance:__init__:20 - Initialising Open Market Performance
+2025-02-24 22:06:58.084 | ERROR    | utils.utils:getting_nasdaq100_sp500_tickers:93 - string indices must be integers, not 'str'
+2025-02-24 22:08:43.892 | INFO     | __main__:__init__:41 - Initialising Main
+2025-02-24 22:08:43.893 | INFO     | utils.utils:send_telegram_message:224 - Using bot_token: 6379257583...
+2025-02-24 22:08:43.893 | INFO     | utils.utils:send_telegram_message:225 - Sending to chat_id: -1002313822545
+2025-02-24 22:08:43.894 | INFO     | utils.utils:send_telegram_message:246 - Attempting to send message to Telegram
+2025-02-24 22:08:44.104 | INFO     | utils.utils:send_telegram_message:252 - Message sent successfully. Status code: 200
+2025-02-24 22:08:44.108 | INFO     | __main__:is_weekend:113 - Monday is a weekday. The market could be open.
+2025-02-24 22:08:44.829 | INFO     | __main__:run:124 - Today the market opens
+2025-02-24 22:08:44.831 | INFO     | __main__:run:149 - The market just closed -> 
+2025-02-24 22:08:44.838 | INFO     | weekdays.Open_Market_Performance:__init__:20 - Initialising Open Market Performance
+2025-02-24 22:08:45.816 | ERROR    | utils.utils:getting_nasdaq100_sp500_tickers:93 - string indices must be integers, not 'str'
+2025-02-24 22:09:12.259 | INFO     | __main__:__init__:41 - Initialising Main
+2025-02-24 22:09:12.259 | INFO     | utils.utils:send_telegram_message:224 - Using bot_token: 6379257583...
+2025-02-24 22:09:12.275 | INFO     | utils.utils:send_telegram_message:225 - Sending to chat_id: -1002313822545
+2025-02-24 22:09:12.275 | INFO     | utils.utils:send_telegram_message:246 - Attempting to send message to Telegram
+2025-02-24 22:09:12.525 | INFO     | utils.utils:send_telegram_message:252 - Message sent successfully. Status code: 200
+2025-02-24 22:09:12.541 | INFO     | __main__:is_weekend:113 - Monday is a weekday. The market could be open.
+2025-02-24 22:09:13.084 | INFO     | __main__:run:124 - Today the market opens
+2025-02-24 22:09:13.099 | INFO     | __main__:run:149 - The market just closed -> 
+2025-02-24 22:09:13.103 | INFO     | weekdays.Open_Market_Performance:__init__:20 - Initialising Open Market Performance
+2025-02-24 22:09:14.077 | ERROR    | utils.utils:getting_nasdaq100_sp500_tickers:93 - string indices must be integers, not 'str'

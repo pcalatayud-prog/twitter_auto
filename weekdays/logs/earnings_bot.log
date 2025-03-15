@@ -705,3 +705,46 @@ Today Publish Results:
 2025-03-15 13:34:50.000 | INFO     | utils.utils:send_telegram_message:296 - Message sent successfully. Status code: 200
 2025-03-15 13:34:50.001 | SUCCESS  | utils.utils:post_twitter:43 - Tweet posted: #Today Saturday, 15th of March of 2025, there are not #Scheduled #Earnings #Releases for #SP500 and #Nasdaq100 #Companies.
 2025-03-15 13:34:50.001 | INFO     | utils.utils:post_twitter:50 - Pausing for 410 seconds to maintain proper intervals between Twitter posts.
+2025-03-15 14:40:55.547 | INFO     | __main__:__init__:21 - Initialising Earnings
+2025-03-15 14:40:55.562 | INFO     | __main__:run:120 - Starting EarningsBot workflow
+2025-03-15 14:40:55.562 | INFO     | utils.utils:get_earnings_calendar:141 - earnings
+2025-03-15 14:40:55.562 | ERROR    | __main__:retrieve_earnings_tickers:77 - Error retrieving earnings tickers: cannot import name 'alpha_key' from 'config.api_keys' (C:\Users\peybo\PycharmProjects\twitter_auto\config\api_keys.py)
+2025-03-15 14:40:55.578 | INFO     | __main__:run:127 - Retrieved 0 tickers for earnings announcements
+2025-03-15 14:40:55.578 | INFO     | __main__:run:130 - Initial Message:
+2025-03-15 14:40:55.578 | INFO     | __main__:run:131 - #Today Saturday, 15th of March of 2025, there are not #Scheduled #Earnings #Releases for #SP500 and #Nasdaq100 #Companies.
+2025-03-15 14:40:55.578 | INFO     | utils.utils:post_twitter:38 - Tweet lenght: 122
+2025-03-15 14:40:55.927 | ERROR    | utils.utils:post_twitter:45 - 403 Forbidden
+You are not allowed to create a Tweet with duplicate content.
+2025-03-15 14:40:55.927 | INFO     | utils.utils:send_telegram_message:268 - Using bot_token: 6379257583...
+2025-03-15 14:40:55.927 | INFO     | utils.utils:send_telegram_message:269 - Sending to chat_id: -1002313822545
+2025-03-15 14:40:55.938 | INFO     | utils.utils:send_telegram_message:290 - Attempting to send message to Telegram
+2025-03-15 14:40:56.292 | INFO     | utils.utils:send_telegram_message:296 - Message sent successfully. Status code: 200
+2025-03-15 14:40:56.356 | ERROR    | utils.utils:post_twitter:47 - Tweet Error
+Tweet Error
+: 403 Forbidden
+You are not allowed to create a Tweet with duplicate content.
+#Today Saturday, 15th of March of 2025, there are not #Scheduled #Earnings #Releases for #SP500 and #Nasdaq100 #Companies.
+2025-03-15 14:40:56.372 | INFO     | utils.utils:post_twitter:50 - Pausing for 315 seconds to maintain proper intervals between Twitter posts.
+2025-03-15 14:41:18.660 | INFO     | __main__:__init__:21 - Initialising Earnings
+2025-03-15 14:41:18.675 | INFO     | __main__:run:120 - Starting EarningsBot workflow
+2025-03-15 14:41:18.675 | INFO     | utils.utils:get_earnings_calendar:141 - earnings
+2025-03-15 14:41:18.675 | ERROR    | __main__:retrieve_earnings_tickers:77 - Error retrieving earnings tickers: cannot import name 'alpha_key' from 'config.api_keys' (C:\Users\peybo\PycharmProjects\twitter_auto\config\api_keys.py)
+2025-03-15 14:41:18.675 | INFO     | __main__:run:127 - Retrieved 0 tickers for earnings announcements
+2025-03-15 14:41:18.693 | INFO     | __main__:run:130 - Initial Message:
+2025-03-15 14:41:18.693 | INFO     | __main__:run:131 - #Today Saturday, 15th of March of 2025, there are not #Scheduled #Earnings #Releases for #SP500 and #Nasdaq100 #Companies.
+2025-03-15 14:41:18.693 | INFO     | utils.utils:post_twitter:38 - Tweet lenght: 122
+2025-03-15 14:41:19.068 | ERROR    | utils.utils:post_twitter:45 - 403 Forbidden
+You are not allowed to create a Tweet with duplicate content.
+2025-03-15 14:41:19.068 | INFO     | utils.utils:send_telegram_message:268 - Using bot_token: 6379257583...
+2025-03-15 14:41:19.068 | INFO     | utils.utils:send_telegram_message:269 - Sending to chat_id: -1002313822545
+2025-03-15 14:41:19.068 | INFO     | utils.utils:send_telegram_message:290 - Attempting to send message to Telegram
+2025-03-15 14:41:19.389 | INFO     | utils.utils:send_telegram_message:296 - Message sent successfully. Status code: 200
+2025-03-15 14:41:19.404 | ERROR    | utils.utils:post_twitter:47 - Tweet Error
+Tweet Error
+: 403 Forbidden
+You are not allowed to create a Tweet with duplicate content.
+#Today Saturday, 15th of March of 2025, there are not #Scheduled #Earnings #Releases for #SP500 and #Nasdaq100 #Companies.
+2025-03-15 14:41:19.404 | INFO     | utils.utils:post_twitter:50 - Pausing for 222 seconds to maintain proper intervals between Twitter posts.
+2025-03-15 14:42:05.577 | INFO     | __main__:__init__:21 - Initialising Earnings
+2025-03-15 14:42:05.577 | INFO     | __main__:run:120 - Starting EarningsBot workflow
+2025-03-15 14:42:05.592 | INFO     | utils.utils:get_earnings_calendar:141 - earnings

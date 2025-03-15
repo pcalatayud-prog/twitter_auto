@@ -556,3 +556,9 @@ Today's Biggest Movers:
 🟢 $MRVL -> 4.67 %
 🟢 $PDD -> 4.52 %
 
+2025-02-24 22:06:57.140 | INFO     | weekdays.Open_Market_Performance:__init__:20 - Initialising Open Market Performance
+2025-02-24 22:06:58.084 | ERROR    | utils.utils:getting_nasdaq100_sp500_tickers:93 - string indices must be integers, not 'str'
+2025-02-24 22:08:44.838 | INFO     | weekdays.Open_Market_Performance:__init__:20 - Initialising Open Market Performance
+2025-02-24 22:08:45.816 | ERROR    | utils.utils:getting_nasdaq100_sp500_tickers:93 - string indices must be integers, not 'str'
+2025-02-24 22:09:13.103 | INFO     | weekdays.Open_Market_Performance:__init__:20 - Initialising Open Market Performance
+2025-02-24 22:09:14.077 | ERROR    | utils.utils:getting_nasdaq100_sp500_tickers:93 - string indices must be integers, not 'str'

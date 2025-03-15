@@ -7,16 +7,15 @@ import tweepy
 import requests
 import pandas as pd
 from loguru import logger
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, UTC
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 import urllib.parse
 import time
 import io
 import random
-import csv
 from typing import List
-
+import yfinance as yf
 from config.auth import api_key
 from config.auth import api_key_secret
 from config.auth import access_token
@@ -171,67 +170,43 @@ def get_earnings_calendar() -> pd.DataFrame():
         logger.error(f"Error getting earnings calendar: {str(e)}")
         return pd.DataFrame()
 
-def get_dividend_calendar(days_forward: int = 5) -> pd.DataFrame:
+def unix_to_yyyy_mm_dd(unix_date: int) -> str:
+    date_str = datetime.fromtimestamp(unix_date,UTC).strftime('%Y-%m-%d')
+    return date_str
+
+
+def get_dividends(tickers_symbol) -> List:
+
+    tickers_to_save = []
+
+    for ticker_symbol in tickers_symbol:
+        try:
+            stock = yf.Ticker(ticker_symbol)
+            info = stock.info
+            dividends_date = info['dividendDate']
+            date_str = unix_to_yyyy_mm_dd(dividends_date)
+
+            today_date_str = datetime.now(UTC).strftime('%Y-%m-%d')
+            print(f'{date_str} = {today_date_str}')
+            print(today_date_str)
+            if date_str==today_date_str:
+                tickers_to_save.append(ticker_symbol)
+        except Exception as e:
+            print(f'Error ticker {ticker_symbol}. {e}')
+        return tickers_to_save
+
+def get_dividend_calendar() -> List:
     """
     Fetch dividend calendar data for SP500 and NASDAQ stocks.
 
-    Args:
-        api_key (str): Financial Modeling Prep API key
-        days_forward (int): Number of days to look forward (default: 5)
-
     Returns:
-        pd.DataFrame: Filtered dividend calendar data for SP500 and NASDAQ stocks
+        List: Filtered dividend calendar data for SP500 and NASDAQ stocks
     """
-    from config.api_keys import api_key
-    try:
-        # Get unique tickers
-        unique_tickers = getting_nasdaq100_sp500_tickers()
-        if not unique_tickers:
-            logger.error("No tickers retrieved")
-            return pd.DataFrame()
 
-        # Calculate date range
-        today_date = datetime.now().strftime('%Y-%m-%d')
-        end_date = (datetime.now() + timedelta(days=days_forward)).strftime('%Y-%m-%d')
+    unique_tickers = getting_nasdaq100_sp500_tickers()
+    tickers = get_dividends(unique_tickers)
+    return tickers
 
-        # Get dividend calendar
-        try:
-            response = requests.get(
-                'https://financialmodelingprep.com/api/v3/stock_dividend_calendar',
-                params={
-                    'from': today_date,
-                    'to': end_date,
-                    'apikey': api_key
-                }
-            )
-            response.raise_for_status()
-
-            # Convert to DataFrame
-            df_dividends = pd.DataFrame(response.json())
-
-            if df_dividends.empty:
-                logger.warning("No dividend data found for the date range")
-                return []
-
-            # Sort by date
-            df_dividends.sort_values(by='date', inplace=True)
-
-            # Filter for our tickers
-            filtered_df = df_dividends[df_dividends["symbol"].isin(unique_tickers)]
-
-            logger.info(f"Found {len(filtered_df)} dividend entries for tracked tickers")
-
-            tickers = filtered_df[filtered_df['date']==today_date]['symbol'].tolist()
-            logger.info(f'Searching for companies that publish dividends today {today_date}')
-            return tickers
-
-        except requests.RequestException as e:
-            logger.error(f"Error getting dividend calendar: {e}")
-            return []
-
-    except Exception as e:
-        logger.error(f"Unexpected error in get_dividend_calendar: {e}")
-        return []
 
 def get_splits_calendar(today: str):
     # Define the API endpoint URL with your API key.
