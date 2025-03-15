@@ -12,7 +12,9 @@ from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 import urllib.parse
 import time
+import io
 import random
+import csv
 from typing import List
 
 from config.auth import api_key
@@ -135,30 +137,41 @@ def get_earnings_calendar() -> pd.DataFrame():
     Returns:
         pd.DataFrame: Filtered earnings calendar data for S&P 500 and NASDAQ stocks
     """
-    from config.api_keys import api_key
+
+    logger.info('earnings')
+
+    from config.api_keys import alpha_key
     try:
-        base_url = 'https://financialmodelingprep.com/api/v3'
 
-        # Get unique tickers
-        unique_tickers = getting_nasdaq100_sp500_tickers()
+        url = f'https://www.alphavantage.co/query?function=EARNINGS_CALENDAR&horizon=1month&apikey={alpha_key}'
 
-        # Get earnings calendar
-        earnings_response = requests.get(
-            f"{base_url}/earning_calendar",
-            params={'apikey': api_key}
-        )
+        # Make the request and get the CSV data
+        with requests.Session() as s:
+            download = s.get(url,timeout=10)
 
-        # Convert to DataFrame and filter
-        df_earnings = pd.DataFrame(earnings_response.json())
-        filtered_df = df_earnings[df_earnings["symbol"].isin(unique_tickers)]
-        logger.info(f'dataframe: \n{filtered_df.head(5)}')
-        return filtered_df
+            # Check if request was successful
+            if download.status_code != 200:
+                raise Exception(f"API request failed with status code {download.status_code}")
+
+            # Decode the content
+            decoded_content = download.content.decode('utf-8')
+
+            # Use pandas to read the CSV directly from the string content
+            df = pd.read_csv(io.StringIO(decoded_content))
+
+            unique_tickers = getting_nasdaq100_sp500_tickers()
+
+            df = df[df['symbol'].isin(unique_tickers)]
+
+            df = df.rename(columns={'reportDate': 'date'})
+
+            return df
 
     except Exception as e:
         logger.error(f"Error getting earnings calendar: {str(e)}")
         return pd.DataFrame()
 
-def get_dividend_calendar(today: str, days_forward: int = 5) -> pd.DataFrame:
+def get_dividend_calendar(days_forward: int = 5) -> pd.DataFrame:
     """
     Fetch dividend calendar data for SP500 and NASDAQ stocks.
 
@@ -178,7 +191,7 @@ def get_dividend_calendar(today: str, days_forward: int = 5) -> pd.DataFrame:
             return pd.DataFrame()
 
         # Calculate date range
-        today_date = today
+        today_date = datetime.now().strftime('%Y-%m-%d')
         end_date = (datetime.now() + timedelta(days=days_forward)).strftime('%Y-%m-%d')
 
         # Get dividend calendar
@@ -348,6 +361,5 @@ def sort_tickers_by_market_cap(tickers: List[str]) -> List[str]:
     return [ticker for ticker, _ in sorted_tickers]
 
 if __name__ == "__main__":
-    tickers = ["AAPL", "MSFT", "GOOGL", "AMZN", "META","NVDA"]
-    sorted_tickers = sort_tickers_by_market_cap(tickers)
-    print(sorted_tickers)
+
+    A = get_dividend_calendar()

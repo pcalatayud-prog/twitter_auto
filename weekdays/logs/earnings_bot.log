@@ -689,3 +689,19 @@ Today Publish Results:
 2025-01-20 14:04:30.625 | INFO     | weekdays.Splits:__init__:47 - Successfully loaded ticker information from C:\Users\peybo\PycharmProjects\twitter_auto\weekdays\../config/top_3000_tickers.csv
 2025-01-20 14:04:30.626 | INFO     | weekdays.Splits:run:243 - Starting SplitBot workflow
 2025-01-20 14:04:32.343 | INFO     | weekdays.Splits:run:249 - No splits scheduled for today
+2025-02-28 18:31:57.168 | INFO     | __main__:__init__:21 - Initialising Earnings
+2025-02-28 18:31:57.169 | INFO     | __main__:run:122 - Starting EarningsBot workflow
+2025-02-28 18:31:57.169 | INFO     | utils.utils:get_earnings_calendar:141 - earnings
+2025-03-15 13:34:47.380 | INFO     | __main__:__init__:21 - Initialising Earnings
+2025-03-15 13:34:47.380 | INFO     | __main__:run:122 - Starting EarningsBot workflow
+2025-03-15 13:34:47.380 | INFO     | utils.utils:get_earnings_calendar:141 - earnings
+2025-03-15 13:34:49.493 | INFO     | __main__:run:129 - Retrieved 0 tickers for earnings announcements
+2025-03-15 13:34:49.493 | INFO     | __main__:run:132 - Initial Message:
+2025-03-15 13:34:49.493 | INFO     | __main__:run:133 - #Today Saturday, 15th of March of 2025, there are not #Scheduled #Earnings #Releases for #SP500 and #Nasdaq100 #Companies.
+2025-03-15 13:34:49.493 | INFO     | utils.utils:post_twitter:38 - Tweet lenght: 122
+2025-03-15 13:34:49.834 | INFO     | utils.utils:send_telegram_message:268 - Using bot_token: 6379257583...
+2025-03-15 13:34:49.834 | INFO     | utils.utils:send_telegram_message:269 - Sending to chat_id: -1002313822545
+2025-03-15 13:34:49.834 | INFO     | utils.utils:send_telegram_message:290 - Attempting to send message to Telegram
+2025-03-15 13:34:50.000 | INFO     | utils.utils:send_telegram_message:296 - Message sent successfully. Status code: 200
+2025-03-15 13:34:50.001 | SUCCESS  | utils.utils:post_twitter:43 - Tweet posted: #Today Saturday, 15th of March of 2025, there are not #Scheduled #Earnings #Releases for #SP500 and #Nasdaq100 #Companies.
+2025-03-15 13:34:50.001 | INFO     | utils.utils:post_twitter:50 - Pausing for 410 seconds to maintain proper intervals between Twitter posts.
