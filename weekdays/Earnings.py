@@ -11,6 +11,27 @@ import time
 from datetime import datetime, timedelta
 from utils.utils import post_twitter, get_market_cap, get_earnings_calendar, sort_tickers_by_market_cap
 
+
+def format_company_message(ticker: str, performance_data: dict, company_info: dict) -> str:
+    """Format the message for a specific company."""
+    try:
+        price_ytd = performance_data["price_change_ytd"]
+        mdd_ytd = performance_data["MDD_ytd"]
+
+        message_0 = (f"Today Publish Results: \n #{company_info['company_name']}, "
+                     f"-> ${ticker} \n ---->  Industry: #{company_info['industry']} "
+                     f"\n ---->   Sector: #{company_info['sector']}")
+
+        message_1 = (f" \n Year To Day Performance: \n ---->  Price Change YTD = "
+                     f"{price_ytd} %, \n ---->  Max DrawDown YTD = {mdd_ytd} %")
+
+        return message_0 + message_1 + "\n #Earnings #Report #Stocks"
+
+    except Exception as e:
+        logger.error(f"Error formatting company message for {ticker}: {e}")
+        return ""
+
+
 class EarningsBot:
     """
     A class to handle earnings announcements and post them to Twitter.
@@ -23,8 +44,6 @@ class EarningsBot:
         self.current_date = datetime.now().strftime('%Y-%m-%d')
 
         self.number_tickers_to_print = 2
-
-
 
     def _get_historical_price(self, ticker: str, start_date: str, end_date: str):
         """Download historical price data for a ticker."""
@@ -79,7 +98,8 @@ class EarningsBot:
             logger.error(f"Error retrieving earnings tickers: {e}")
             return []
 
-    def format_earnings_message(self, tickers: list) -> str:
+    @staticmethod
+    def format_earnings_message(tickers: list) -> str:
         """Format the earnings announcement message."""
         current_date = datetime.now()
         day = current_date.day
@@ -95,27 +115,6 @@ class EarningsBot:
         else:
             return (f"#Today {formatted_date}, there are not #Scheduled #Earnings "
                     f"#Releases for #SP500 and #Nasdaq100 #Companies.")
-
-
-
-    def format_company_message(self, ticker: str, performance_data: dict, company_info: dict) -> str:
-        """Format the message for a specific company."""
-        try:
-            price_ytd = performance_data["price_change_ytd"]
-            mdd_ytd = performance_data["MDD_ytd"]
-
-            message_0 = (f"Today Publish Results: \n #{company_info['company_name']}, "
-                         f"-> ${ticker} \n ---->  Industry: #{company_info['industry']} "
-                         f"\n ---->   Sector: #{company_info['sector']}")
-
-            message_1 = (f" \n Year To Day Performance: \n ---->  Price Change YTD = "
-                         f"{price_ytd} %, \n ---->  Max DrawDown YTD = {mdd_ytd} %")
-
-            return message_0 + message_1 + "\n #Earnings #Report #Stocks"
-
-        except Exception as e:
-            logger.error(f"Error formatting company message for {ticker}: {e}")
-            return ""
 
     def run(self):
         """Execute the main bot workflow."""
@@ -147,7 +146,7 @@ class EarningsBot:
                     company_info = df_data[df_data['ticker']==ticker].iloc[0]
 
                     # Format and post company message
-                    company_message = self.format_company_message(
+                    company_message = format_company_message(
                         ticker, performance_data, company_info
                     )
                     if company_message:
