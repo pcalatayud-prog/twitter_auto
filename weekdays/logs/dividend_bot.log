@@ -69,3 +69,27 @@ You are not allowed to create a Tweet with duplicate content.
 2025-03-15 15:03:02.358 | INFO     | __main__:__init__:26 - Initialising DividendBot
 2025-03-15 15:03:02.389 | INFO     | __main__:__init__:50 - Successfully loaded ticker information from C:\Users\peybo\PycharmProjects\twitter_auto\weekdays\../config/top_3000_tickers.csv
 2025-03-15 15:03:02.389 | INFO     | __main__:run:247 - Starting DividendBot workflow
+2025-03-15 16:38:37.756 | INFO     | __main__:__init__:26 - Initialising DividendBot
+2025-03-15 16:38:37.773 | INFO     | __main__:__init__:50 - Successfully loaded ticker information from C:\Users\peybo\PycharmProjects\twitter_auto\weekdays\../config/top_3000_tickers.csv
+2025-03-15 16:38:37.775 | INFO     | __main__:run:247 - Starting DividendBot workflow
+2025-03-15 16:38:39.616 | INFO     | __main__:run:259 - Retrieved 0 dividend tickers
+2025-03-15 16:38:39.618 | INFO     | utils.utils:post_twitter:37 - Tweet lenght: 115
+2025-03-15 16:38:39.619 | INFO     | utils.utils:send_telegram_message:243 - Using bot_token: 6379257583...
+2025-03-15 16:38:39.621 | INFO     | utils.utils:send_telegram_message:244 - Sending to chat_id: -1002313822545
+2025-03-15 16:38:39.623 | INFO     | utils.utils:send_telegram_message:265 - Attempting to send message to Telegram
+2025-03-15 16:38:39.898 | INFO     | utils.utils:send_telegram_message:271 - Message sent successfully. Status code: 200
+2025-03-15 16:38:39.899 | SUCCESS  | utils.utils:post_twitter:42 - Tweet posted: #Today Saturday, 15th of March, There are not #Scheduled #Dividends #Payments for #SP500 and #Nasdaq100 #Companies.
+2025-03-15 16:38:39.900 | INFO     | utils.utils:post_twitter:49 - Pausing for 550 seconds to maintain proper intervals between Twitter posts.
+2025-03-15 16:47:49.915 | INFO     | __main__:run:266 - Posted no dividends message
+2025-03-23 15:48:59.292 | INFO     | __main__:__init__:26 - Initialising DividendBot
+2025-03-23 15:48:59.373 | INFO     | __main__:__init__:50 - Successfully loaded ticker information from C:\Users\peybo\PycharmProjects\twitter_auto\weekdays\../config/top_3000_tickers.csv
+2025-03-23 15:48:59.377 | INFO     | __main__:run:247 - Starting DividendBot workflow
+2025-03-23 15:49:01.604 | INFO     | __main__:run:259 - Retrieved 0 dividend tickers
+2025-03-23 15:49:01.606 | INFO     | utils.utils:post_twitter:37 - Tweet lenght: 113
+2025-03-23 15:49:02.035 | INFO     | utils.utils:send_telegram_message:243 - Using bot_token: 6379257583...
+2025-03-23 15:49:02.035 | INFO     | utils.utils:send_telegram_message:244 - Sending to chat_id: -1002313822545
+2025-03-23 15:49:02.044 | INFO     | utils.utils:send_telegram_message:265 - Attempting to send message to Telegram
+2025-03-23 15:49:02.307 | INFO     | utils.utils:send_telegram_message:271 - Message sent successfully. Status code: 200
+2025-03-23 15:49:02.308 | SUCCESS  | utils.utils:post_twitter:42 - Tweet posted: #Today Sunday, 23rd of March, There are not #Scheduled #Dividends #Payments for #SP500 and #Nasdaq100 #Companies.
+2025-03-23 15:49:02.310 | INFO     | utils.utils:post_twitter:49 - Pausing for 233 seconds to maintain proper intervals between Twitter posts.
+2025-03-23 15:52:55.318 | INFO     | __main__:run:266 - Posted no dividends message

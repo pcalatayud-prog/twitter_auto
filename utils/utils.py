@@ -37,7 +37,7 @@ def post_twitter(text: str):
     logger.info(f"Tweet lenght: {len(message)}")
     try:
 
-        client.create_tweet(text=message)
+        # client.create_tweet(text=message)
         bot_send_text("Tweet posted: {}".format(message))
         logger.success("Tweet posted: {}".format(message))
     except Exception as e:
@@ -47,7 +47,7 @@ def post_twitter(text: str):
 
     random_number = random.randint(180, 600)
     logger.info(f"Pausing for {random_number} seconds to maintain proper intervals between Twitter posts.")
-    time.sleep(random_number)
+    # time.sleep(random_number)
     return None
 
 
@@ -176,24 +176,41 @@ def unix_to_yyyy_mm_dd(unix_date: int) -> str:
 
 
 def get_dividends(tickers_symbol) -> List:
+    today_str = datetime.now().strftime('%Y-%m-%d')
+
+    today = datetime.now()
+    two_days_later = today + timedelta(days=2)
+    today_str = two_days_later.strftime('%Y-%m-%d')
+    logger.info(f"Today's date: {today_str}")
 
     tickers_to_save = []
-
+    dates_to_save = []
     for ticker_symbol in tickers_symbol:
         try:
             stock = yf.Ticker(ticker_symbol)
             info = stock.info
             dividends_date = info['dividendDate']
             date_str = unix_to_yyyy_mm_dd(dividends_date)
-
-            today_date_str = datetime.now(UTC).strftime('%Y-%m-%d')
-            print(f'{date_str} = {today_date_str}')
-            print(today_date_str)
-            if date_str==today_date_str:
-                tickers_to_save.append(ticker_symbol)
+            tickers_to_save.append(ticker_symbol)
+            dates_to_save.append(date_str)
+            logger.info(f"ticker:{ticker_symbol}, info:{dividends_date}")
+            logger.info(f"ticker:{ticker_symbol}, dates:{date_str}")
         except Exception as e:
-            print(f'Error ticker {ticker_symbol}. {e}')
-        return tickers_to_save
+            logger.warning(f'Error ticker {ticker_symbol}. {e}')
+        time.sleep(0.25)
+    # Create and return DataFrame
+    df = pd.DataFrame({
+        'ticker': tickers_to_save,
+        'date': dates_to_save
+    })
+
+    df['date'] = pd.to_datetime(df['date'])
+
+    df_today = df[df['date']==today_str]
+
+    tickers_today = df_today['df_today'].tolist()
+
+    return tickers_today
 
 def get_dividend_calendar() -> List:
     """
@@ -338,3 +355,5 @@ def sort_tickers_by_market_cap(tickers: List[str]) -> List[str]:
 if __name__ == "__main__":
 
     A = get_dividend_calendar()
+
+    stop=1

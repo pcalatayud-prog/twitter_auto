@@ -313,3 +313,4 @@ class DividendBot:
 if __name__ == "__main__":
     bot = DividendBot()
     bot.run()
+    stop=1
