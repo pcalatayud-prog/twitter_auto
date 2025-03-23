@@ -177,10 +177,6 @@ def unix_to_yyyy_mm_dd(unix_date: int) -> str:
 
 def get_dividends(tickers_symbol) -> List:
     today_str = datetime.now().strftime('%Y-%m-%d')
-
-    today = datetime.now()
-    two_days_later = today + timedelta(days=2)
-    today_str = two_days_later.strftime('%Y-%m-%d')
     logger.info(f"Today's date: {today_str}")
 
     tickers_to_save = []
