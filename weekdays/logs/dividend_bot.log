@@ -93,3 +93,1905 @@ You are not allowed to create a Tweet with duplicate content.
 2025-03-23 15:49:02.308 | SUCCESS  | utils.utils:post_twitter:42 - Tweet posted: #Today Sunday, 23rd of March, There are not #Scheduled #Dividends #Payments for #SP500 and #Nasdaq100 #Companies.
 2025-03-23 15:49:02.310 | INFO     | utils.utils:post_twitter:49 - Pausing for 233 seconds to maintain proper intervals between Twitter posts.
 2025-03-23 15:52:55.318 | INFO     | __main__:run:266 - Posted no dividends message
+2025-03-23 16:26:11.538 | INFO     | __main__:__init__:26 - Initialising DividendBot
+2025-03-23 16:26:11.554 | INFO     | __main__:__init__:50 - Successfully loaded ticker information from C:\Users\peybo\PycharmProjects\twitter_auto\weekdays\../config/top_3000_tickers.csv
+2025-03-23 16:26:11.558 | INFO     | __main__:run:247 - Starting DividendBot workflow
+2025-03-23 16:26:12.696 | INFO     | utils.utils:get_dividends:184 - Today's date: 2025-03-25
+2025-03-23 16:26:13.310 | WARNING  | utils.utils:get_dividends:199 - Error ticker AKAM. 'dividendDate'
+2025-03-23 16:26:13.851 | WARNING  | utils.utils:get_dividends:199 - Error ticker BIIB. 'dividendDate'
+2025-03-23 16:26:14.400 | INFO     | utils.utils:get_dividends:196 - ticker:PPL, info:1743465600
+2025-03-23 16:26:14.401 | INFO     | utils.utils:get_dividends:197 - ticker:PPL, dates:2025-04-01
+2025-03-23 16:26:14.956 | INFO     | utils.utils:get_dividends:196 - ticker:ECL, info:1744675200
+2025-03-23 16:26:14.957 | INFO     | utils.utils:get_dividends:197 - ticker:ECL, dates:2025-04-15
+2025-03-23 16:26:15.500 | WARNING  | utils.utils:get_dividends:199 - Error ticker MOH. 'dividendDate'
+2025-03-23 16:26:16.065 | INFO     | utils.utils:get_dividends:196 - ticker:YUM, info:1741305600
+2025-03-23 16:26:16.066 | INFO     | utils.utils:get_dividends:197 - ticker:YUM, dates:2025-03-07
+2025-03-23 16:26:16.607 | INFO     | utils.utils:get_dividends:196 - ticker:AIG, info:1743379200
+2025-03-23 16:26:16.608 | INFO     | utils.utils:get_dividends:197 - ticker:AIG, dates:2025-03-31
+2025-03-23 16:26:17.144 | WARNING  | utils.utils:get_dividends:199 - Error ticker DXCM. 'dividendDate'
+2025-03-23 16:26:17.682 | INFO     | utils.utils:get_dividends:196 - ticker:FMC, info:1744848000
+2025-03-23 16:26:17.684 | INFO     | utils.utils:get_dividends:197 - ticker:FMC, dates:2025-04-17
+2025-03-23 16:26:18.209 | INFO     | utils.utils:get_dividends:196 - ticker:DFS, info:1741219200
+2025-03-23 16:26:18.209 | INFO     | utils.utils:get_dividends:197 - ticker:DFS, dates:2025-03-06
+2025-03-23 16:26:18.750 | INFO     | utils.utils:get_dividends:196 - ticker:DOW, info:1741910400
+2025-03-23 16:26:18.751 | INFO     | utils.utils:get_dividends:197 - ticker:DOW, dates:2025-03-14
+2025-03-23 16:26:19.289 | INFO     | utils.utils:get_dividends:196 - ticker:GOOGL, info:1742169600
+2025-03-23 16:26:19.290 | INFO     | utils.utils:get_dividends:197 - ticker:GOOGL, dates:2025-03-17
+2025-03-23 16:26:19.829 | WARNING  | utils.utils:get_dividends:199 - Error ticker EW. 'dividendDate'
+2025-03-23 16:26:20.387 | INFO     | utils.utils:get_dividends:196 - ticker:MSFT, info:1749686400
+2025-03-23 16:26:20.388 | INFO     | utils.utils:get_dividends:197 - ticker:MSFT, dates:2025-06-12
+2025-03-23 16:26:20.935 | WARNING  | utils.utils:get_dividends:199 - Error ticker FI. 'dividendDate'
+2025-03-23 16:26:21.498 | INFO     | utils.utils:get_dividends:196 - ticker:EXR, info:1743379200
+2025-03-23 16:26:21.499 | INFO     | utils.utils:get_dividends:197 - ticker:EXR, dates:2025-03-31
+2025-03-23 16:26:22.042 | INFO     | utils.utils:get_dividends:196 - ticker:MCHP, info:1741305600
+2025-03-23 16:26:22.043 | INFO     | utils.utils:get_dividends:197 - ticker:MCHP, dates:2025-03-07
+2025-03-23 16:26:22.594 | INFO     | utils.utils:get_dividends:196 - ticker:PAYX, info:1740614400
+2025-03-23 16:26:22.597 | INFO     | utils.utils:get_dividends:197 - ticker:PAYX, dates:2025-02-27
+2025-03-23 16:26:23.140 | INFO     | utils.utils:get_dividends:196 - ticker:AFL, info:1740960000
+2025-03-23 16:26:23.140 | INFO     | utils.utils:get_dividends:197 - ticker:AFL, dates:2025-03-03
+2025-03-23 16:26:23.702 | INFO     | utils.utils:get_dividends:196 - ticker:SCHW, info:1740700800
+2025-03-23 16:26:23.703 | INFO     | utils.utils:get_dividends:197 - ticker:SCHW, dates:2025-02-28
+2025-03-23 16:26:24.265 | INFO     | utils.utils:get_dividends:196 - ticker:BWA, info:1742169600
+2025-03-23 16:26:24.266 | INFO     | utils.utils:get_dividends:197 - ticker:BWA, dates:2025-03-17
+2025-03-23 16:26:24.816 | INFO     | utils.utils:get_dividends:196 - ticker:OXY, info:1744675200
+2025-03-23 16:26:24.818 | INFO     | utils.utils:get_dividends:197 - ticker:OXY, dates:2025-04-15
+2025-03-23 16:26:25.342 | INFO     | utils.utils:get_dividends:196 - ticker:TT, info:1743379200
+2025-03-23 16:26:25.342 | INFO     | utils.utils:get_dividends:197 - ticker:TT, dates:2025-03-31
+2025-03-23 16:26:25.873 | INFO     | utils.utils:get_dividends:196 - ticker:CPT, info:1744848000
+2025-03-23 16:26:25.873 | INFO     | utils.utils:get_dividends:197 - ticker:CPT, dates:2025-04-17
+2025-03-23 16:26:26.402 | INFO     | utils.utils:get_dividends:196 - ticker:EA, info:1742342400
+2025-03-23 16:26:26.402 | INFO     | utils.utils:get_dividends:197 - ticker:EA, dates:2025-03-19
+2025-03-23 16:26:26.949 | INFO     | utils.utils:get_dividends:196 - ticker:REG, info:1743552000
+2025-03-23 16:26:26.951 | INFO     | utils.utils:get_dividends:197 - ticker:REG, dates:2025-04-02
+2025-03-23 16:26:27.510 | WARNING  | utils.utils:get_dividends:199 - Error ticker BRK.B. 'dividendDate'
+2025-03-23 16:26:28.044 | WARNING  | utils.utils:get_dividends:199 - Error ticker CNC. 'dividendDate'
+2025-03-23 16:26:28.580 | INFO     | utils.utils:get_dividends:196 - ticker:LOW, info:1738713600
+2025-03-23 16:26:28.580 | INFO     | utils.utils:get_dividends:197 - ticker:LOW, dates:2025-02-05
+2025-03-23 16:26:29.124 | INFO     | utils.utils:get_dividends:196 - ticker:WMB, info:1743379200
+2025-03-23 16:26:29.127 | INFO     | utils.utils:get_dividends:197 - ticker:WMB, dates:2025-03-31
+2025-03-23 16:26:29.672 | INFO     | utils.utils:get_dividends:196 - ticker:APH, info:1744156800
+2025-03-23 16:26:29.673 | INFO     | utils.utils:get_dividends:197 - ticker:APH, dates:2025-04-09
+2025-03-23 16:26:30.205 | INFO     | utils.utils:get_dividends:196 - ticker:PNW, info:1740960000
+2025-03-23 16:26:30.206 | INFO     | utils.utils:get_dividends:197 - ticker:PNW, dates:2025-03-03
+2025-03-23 16:26:30.737 | INFO     | utils.utils:get_dividends:196 - ticker:VRSK, info:1743379200
+2025-03-23 16:26:30.737 | INFO     | utils.utils:get_dividends:197 - ticker:VRSK, dates:2025-03-31
+2025-03-23 16:26:31.271 | INFO     | utils.utils:get_dividends:196 - ticker:AEE, info:1743379200
+2025-03-23 16:26:31.272 | INFO     | utils.utils:get_dividends:197 - ticker:AEE, dates:2025-03-31
+2025-03-23 16:26:31.804 | INFO     | utils.utils:get_dividends:196 - ticker:MAR, info:1743379200
+2025-03-23 16:26:31.804 | INFO     | utils.utils:get_dividends:197 - ticker:MAR, dates:2025-03-31
+2025-03-23 16:26:32.336 | INFO     | utils.utils:get_dividends:196 - ticker:TMO, info:1744675200
+2025-03-23 16:26:32.336 | INFO     | utils.utils:get_dividends:197 - ticker:TMO, dates:2025-04-15
+2025-03-23 16:26:32.877 | INFO     | utils.utils:get_dividends:196 - ticker:ROK, info:1741564800
+2025-03-23 16:26:32.878 | INFO     | utils.utils:get_dividends:197 - ticker:ROK, dates:2025-03-10
+2025-03-23 16:26:33.412 | INFO     | utils.utils:get_dividends:196 - ticker:GPC, info:1743552000
+2025-03-23 16:26:33.413 | INFO     | utils.utils:get_dividends:197 - ticker:GPC, dates:2025-04-02
+2025-03-23 16:26:33.977 | INFO     | utils.utils:get_dividends:196 - ticker:MMM, info:1741737600
+2025-03-23 16:26:33.977 | INFO     | utils.utils:get_dividends:197 - ticker:MMM, dates:2025-03-12
+2025-03-23 16:26:34.514 | INFO     | utils.utils:get_dividends:196 - ticker:EL, info:1742169600
+2025-03-23 16:26:34.515 | INFO     | utils.utils:get_dividends:197 - ticker:EL, dates:2025-03-17
+2025-03-23 16:26:35.054 | WARNING  | utils.utils:get_dividends:199 - Error ticker MSTR. 'dividendDate'
+2025-03-23 16:26:35.600 | INFO     | utils.utils:get_dividends:196 - ticker:CCI, info:1743379200
+2025-03-23 16:26:35.601 | INFO     | utils.utils:get_dividends:197 - ticker:CCI, dates:2025-03-31
+2025-03-23 16:26:36.162 | INFO     | utils.utils:get_dividends:196 - ticker:DTE, info:1744675200
+2025-03-23 16:26:36.164 | INFO     | utils.utils:get_dividends:197 - ticker:DTE, dates:2025-04-15
+2025-03-23 16:26:36.702 | INFO     | utils.utils:get_dividends:196 - ticker:PM, info:1744243200
+2025-03-23 16:26:36.703 | INFO     | utils.utils:get_dividends:197 - ticker:PM, dates:2025-04-10
+2025-03-23 16:26:37.241 | INFO     | utils.utils:get_dividends:196 - ticker:CME, info:1742947200
+2025-03-23 16:26:37.241 | INFO     | utils.utils:get_dividends:197 - ticker:CME, dates:2025-03-26
+2025-03-23 16:26:37.784 | INFO     | utils.utils:get_dividends:196 - ticker:INTC, info:1725148800
+2025-03-23 16:26:37.785 | INFO     | utils.utils:get_dividends:197 - ticker:INTC, dates:2024-09-01
+2025-03-23 16:26:38.321 | WARNING  | utils.utils:get_dividends:199 - Error ticker GDDY. 'dividendDate'
+2025-03-23 16:26:38.865 | INFO     | utils.utils:get_dividends:196 - ticker:REGN, info:1742428800
+2025-03-23 16:26:38.866 | INFO     | utils.utils:get_dividends:197 - ticker:REGN, dates:2025-03-20
+2025-03-23 16:26:39.414 | INFO     | utils.utils:get_dividends:196 - ticker:AMCR, info:1742256000
+2025-03-23 16:26:39.415 | INFO     | utils.utils:get_dividends:197 - ticker:AMCR, dates:2025-03-18
+2025-03-23 16:26:39.966 | INFO     | utils.utils:get_dividends:196 - ticker:CSCO, info:1745366400
+2025-03-23 16:26:39.967 | INFO     | utils.utils:get_dividends:197 - ticker:CSCO, dates:2025-04-23
+2025-03-23 16:26:40.507 | INFO     | utils.utils:get_dividends:196 - ticker:V, info:1740960000
+2025-03-23 16:26:40.509 | INFO     | utils.utils:get_dividends:197 - ticker:V, dates:2025-03-03
+2025-03-23 16:26:41.049 | INFO     | utils.utils:get_dividends:196 - ticker:ABBV, info:1747267200
+2025-03-23 16:26:41.050 | INFO     | utils.utils:get_dividends:197 - ticker:ABBV, dates:2025-05-15
+2025-03-23 16:26:41.593 | INFO     | utils.utils:get_dividends:196 - ticker:CNP, info:1741824000
+2025-03-23 16:26:41.594 | INFO     | utils.utils:get_dividends:197 - ticker:CNP, dates:2025-03-13
+2025-03-23 16:26:42.129 | INFO     | utils.utils:get_dividends:196 - ticker:GILD, info:1743120000
+2025-03-23 16:26:42.129 | INFO     | utils.utils:get_dividends:197 - ticker:GILD, dates:2025-03-28
+2025-03-23 16:26:42.689 | INFO     | utils.utils:get_dividends:196 - ticker:AVY, info:1742342400
+2025-03-23 16:26:42.690 | INFO     | utils.utils:get_dividends:197 - ticker:AVY, dates:2025-03-19
+2025-03-23 16:26:43.240 | INFO     | utils.utils:get_dividends:196 - ticker:HII, info:1741910400
+2025-03-23 16:26:43.242 | INFO     | utils.utils:get_dividends:197 - ticker:HII, dates:2025-03-14
+2025-03-23 16:26:43.799 | INFO     | utils.utils:get_dividends:196 - ticker:AVGO, info:1743379200
+2025-03-23 16:26:43.800 | INFO     | utils.utils:get_dividends:197 - ticker:AVGO, dates:2025-03-31
+2025-03-23 16:26:44.353 | INFO     | utils.utils:get_dividends:196 - ticker:RSG, info:1744675200
+2025-03-23 16:26:44.354 | INFO     | utils.utils:get_dividends:197 - ticker:RSG, dates:2025-04-15
+2025-03-23 16:26:44.895 | INFO     | utils.utils:get_dividends:196 - ticker:CPB, info:1745798400
+2025-03-23 16:26:44.897 | INFO     | utils.utils:get_dividends:197 - ticker:CPB, dates:2025-04-28
+2025-03-23 16:26:45.448 | INFO     | utils.utils:get_dividends:196 - ticker:WRB, info:1741737600
+2025-03-23 16:26:45.450 | INFO     | utils.utils:get_dividends:197 - ticker:WRB, dates:2025-03-12
+2025-03-23 16:26:45.993 | INFO     | utils.utils:get_dividends:196 - ticker:CEG, info:1742256000
+2025-03-23 16:26:45.994 | INFO     | utils.utils:get_dividends:197 - ticker:CEG, dates:2025-03-18
+2025-03-23 16:26:46.539 | INFO     | utils.utils:get_dividends:196 - ticker:ZBH, info:1745971200
+2025-03-23 16:26:46.540 | INFO     | utils.utils:get_dividends:197 - ticker:ZBH, dates:2025-04-30
+2025-03-23 16:26:47.081 | INFO     | utils.utils:get_dividends:196 - ticker:DELL, info:1746144000
+2025-03-23 16:26:47.081 | INFO     | utils.utils:get_dividends:197 - ticker:DELL, dates:2025-05-02
+2025-03-23 16:26:47.629 | INFO     | utils.utils:get_dividends:196 - ticker:TXT, info:1743465600
+2025-03-23 16:26:47.630 | INFO     | utils.utils:get_dividends:197 - ticker:TXT, dates:2025-04-01
+2025-03-23 16:26:48.181 | INFO     | utils.utils:get_dividends:196 - ticker:TRGP, info:1739491200
+2025-03-23 16:26:48.182 | INFO     | utils.utils:get_dividends:197 - ticker:TRGP, dates:2025-02-14
+2025-03-23 16:26:48.896 | INFO     | utils.utils:get_dividends:196 - ticker:LYB, info:1742169600
+2025-03-23 16:26:48.896 | INFO     | utils.utils:get_dividends:197 - ticker:LYB, dates:2025-03-17
+2025-03-23 16:26:49.440 | WARNING  | utils.utils:get_dividends:199 - Error ticker DDOG. 'dividendDate'
+2025-03-23 16:26:49.985 | INFO     | utils.utils:get_dividends:196 - ticker:WTW, info:1744675200
+2025-03-23 16:26:49.987 | INFO     | utils.utils:get_dividends:197 - ticker:WTW, dates:2025-04-15
+2025-03-23 16:26:50.530 | INFO     | utils.utils:get_dividends:196 - ticker:META, info:1742947200
+2025-03-23 16:26:50.532 | INFO     | utils.utils:get_dividends:197 - ticker:META, dates:2025-03-26
+2025-03-23 16:26:51.078 | INFO     | utils.utils:get_dividends:196 - ticker:CTRA, info:1743033600
+2025-03-23 16:26:51.080 | INFO     | utils.utils:get_dividends:197 - ticker:CTRA, dates:2025-03-27
+2025-03-23 16:26:51.620 | INFO     | utils.utils:get_dividends:196 - ticker:DD, info:1742169600
+2025-03-23 16:26:51.622 | INFO     | utils.utils:get_dividends:197 - ticker:DD, dates:2025-03-17
+2025-03-23 16:26:52.169 | INFO     | utils.utils:get_dividends:196 - ticker:IVZ, info:1741046400
+2025-03-23 16:26:52.170 | INFO     | utils.utils:get_dividends:197 - ticker:IVZ, dates:2025-03-04
+2025-03-23 16:26:52.725 | INFO     | utils.utils:get_dividends:196 - ticker:BDX, info:1743379200
+2025-03-23 16:26:52.726 | INFO     | utils.utils:get_dividends:197 - ticker:BDX, dates:2025-03-31
+2025-03-23 16:26:53.272 | INFO     | utils.utils:get_dividends:196 - ticker:TGT, info:1748736000
+2025-03-23 16:26:53.273 | INFO     | utils.utils:get_dividends:197 - ticker:TGT, dates:2025-06-01
+2025-03-23 16:26:53.812 | INFO     | utils.utils:get_dividends:196 - ticker:APO, info:1740700800
+2025-03-23 16:26:53.812 | INFO     | utils.utils:get_dividends:197 - ticker:APO, dates:2025-02-28
+2025-03-23 16:26:54.355 | INFO     | utils.utils:get_dividends:196 - ticker:UHS, info:1742169600
+2025-03-23 16:26:54.355 | INFO     | utils.utils:get_dividends:197 - ticker:UHS, dates:2025-03-17
+2025-03-23 16:26:54.909 | INFO     | utils.utils:get_dividends:196 - ticker:SW, info:1742256000
+2025-03-23 16:26:54.910 | INFO     | utils.utils:get_dividends:197 - ticker:SW, dates:2025-03-18
+2025-03-23 16:26:55.444 | INFO     | utils.utils:get_dividends:196 - ticker:LVS, info:1739923200
+2025-03-23 16:26:55.445 | INFO     | utils.utils:get_dividends:197 - ticker:LVS, dates:2025-02-19
+2025-03-23 16:26:55.990 | WARNING  | utils.utils:get_dividends:199 - Error ticker INCY. 'dividendDate'
+2025-03-23 16:26:56.534 | INFO     | utils.utils:get_dividends:196 - ticker:LLY, info:1741564800
+2025-03-23 16:26:56.534 | INFO     | utils.utils:get_dividends:197 - ticker:LLY, dates:2025-03-10
+2025-03-23 16:26:57.085 | INFO     | utils.utils:get_dividends:196 - ticker:FTV, info:1743120000
+2025-03-23 16:26:57.085 | INFO     | utils.utils:get_dividends:197 - ticker:FTV, dates:2025-03-28
+2025-03-23 16:26:57.645 | INFO     | utils.utils:get_dividends:196 - ticker:RL, info:1744329600
+2025-03-23 16:26:57.645 | INFO     | utils.utils:get_dividends:197 - ticker:RL, dates:2025-04-11
+2025-03-23 16:26:58.210 | WARNING  | utils.utils:get_dividends:199 - Error ticker MTD. 'dividendDate'
+2025-03-23 16:26:58.784 | INFO     | utils.utils:get_dividends:196 - ticker:FAST, info:1740700800
+2025-03-23 16:26:58.785 | INFO     | utils.utils:get_dividends:197 - ticker:FAST, dates:2025-02-28
+2025-03-23 16:26:59.330 | INFO     | utils.utils:get_dividends:196 - ticker:PPG, info:1741737600
+2025-03-23 16:26:59.331 | INFO     | utils.utils:get_dividends:197 - ticker:PPG, dates:2025-03-12
+2025-03-23 16:26:59.879 | INFO     | utils.utils:get_dividends:196 - ticker:ABT, info:1747267200
+2025-03-23 16:26:59.881 | INFO     | utils.utils:get_dividends:197 - ticker:ABT, dates:2025-05-15
+2025-03-23 16:27:00.435 | INFO     | utils.utils:get_dividends:196 - ticker:STT, info:1744329600
+2025-03-23 16:27:00.435 | INFO     | utils.utils:get_dividends:197 - ticker:STT, dates:2025-04-11
+2025-03-23 16:27:00.984 | INFO     | utils.utils:get_dividends:196 - ticker:T, info:1738540800
+2025-03-23 16:27:00.984 | INFO     | utils.utils:get_dividends:197 - ticker:T, dates:2025-02-03
+2025-03-23 16:27:01.540 | INFO     | utils.utils:get_dividends:196 - ticker:PAYC, info:1742774400
+2025-03-23 16:27:01.542 | INFO     | utils.utils:get_dividends:197 - ticker:PAYC, dates:2025-03-24
+2025-03-23 16:27:02.102 | INFO     | utils.utils:get_dividends:196 - ticker:JNJ, info:1741046400
+2025-03-23 16:27:02.102 | INFO     | utils.utils:get_dividends:197 - ticker:JNJ, dates:2025-03-04
+2025-03-23 16:27:02.641 | WARNING  | utils.utils:get_dividends:199 - Error ticker MNST. 'dividendDate'
+2025-03-23 16:27:03.199 | INFO     | utils.utils:get_dividends:196 - ticker:GS, info:1743120000
+2025-03-23 16:27:03.200 | INFO     | utils.utils:get_dividends:197 - ticker:GS, dates:2025-03-28
+2025-03-23 16:27:03.759 | WARNING  | utils.utils:get_dividends:199 - Error ticker LULU. 'dividendDate'
+2025-03-23 16:27:04.317 | INFO     | utils.utils:get_dividends:196 - ticker:KR, info:1748736000
+2025-03-23 16:27:04.318 | INFO     | utils.utils:get_dividends:197 - ticker:KR, dates:2025-06-01
+2025-03-23 16:27:04.859 | WARNING  | utils.utils:get_dividends:199 - Error ticker ZS. 'dividendDate'
+2025-03-23 16:27:05.405 | WARNING  | utils.utils:get_dividends:199 - Error ticker NFLX. 'dividendDate'
+2025-03-23 16:27:05.947 | INFO     | utils.utils:get_dividends:196 - ticker:SBUX, info:1740700800
+2025-03-23 16:27:05.950 | INFO     | utils.utils:get_dividends:197 - ticker:SBUX, dates:2025-02-28
+2025-03-23 16:27:06.483 | INFO     | utils.utils:get_dividends:196 - ticker:WST, info:1746576000
+2025-03-23 16:27:06.484 | INFO     | utils.utils:get_dividends:197 - ticker:WST, dates:2025-05-07
+2025-03-23 16:27:07.035 | INFO     | utils.utils:get_dividends:196 - ticker:BA, info:1583452800
+2025-03-23 16:27:07.036 | INFO     | utils.utils:get_dividends:197 - ticker:BA, dates:2020-03-06
+2025-03-23 16:27:07.582 | INFO     | utils.utils:get_dividends:196 - ticker:MLM, info:1743379200
+2025-03-23 16:27:07.583 | INFO     | utils.utils:get_dividends:197 - ticker:MLM, dates:2025-03-31
+2025-03-23 16:27:08.130 | INFO     | utils.utils:get_dividends:196 - ticker:HBAN, info:1743465600
+2025-03-23 16:27:08.131 | INFO     | utils.utils:get_dividends:197 - ticker:HBAN, dates:2025-04-01
+2025-03-23 16:27:08.676 | INFO     | utils.utils:get_dividends:196 - ticker:SYK, info:1745971200
+2025-03-23 16:27:08.678 | INFO     | utils.utils:get_dividends:197 - ticker:SYK, dates:2025-04-30
+2025-03-23 16:27:09.222 | WARNING  | utils.utils:get_dividends:199 - Error ticker WBD. 'dividendDate'
+2025-03-23 16:27:09.791 | INFO     | utils.utils:get_dividends:196 - ticker:NKE, info:1743465600
+2025-03-23 16:27:09.792 | INFO     | utils.utils:get_dividends:197 - ticker:NKE, dates:2025-04-01
+2025-03-23 16:27:10.328 | INFO     | utils.utils:get_dividends:196 - ticker:SPGI, info:1741737600
+2025-03-23 16:27:10.329 | INFO     | utils.utils:get_dividends:197 - ticker:SPGI, dates:2025-03-12
+2025-03-23 16:27:10.885 | INFO     | utils.utils:get_dividends:196 - ticker:MOS, info:1742428800
+2025-03-23 16:27:10.886 | INFO     | utils.utils:get_dividends:197 - ticker:MOS, dates:2025-03-20
+2025-03-23 16:27:11.595 | INFO     | utils.utils:get_dividends:196 - ticker:EXPE, info:1743033600
+2025-03-23 16:27:11.596 | INFO     | utils.utils:get_dividends:197 - ticker:EXPE, dates:2025-03-27
+2025-03-23 16:27:12.137 | INFO     | utils.utils:get_dividends:196 - ticker:BBY, info:1744675200
+2025-03-23 16:27:12.137 | INFO     | utils.utils:get_dividends:197 - ticker:BBY, dates:2025-04-15
+2025-03-23 16:27:12.675 | INFO     | utils.utils:get_dividends:196 - ticker:TEL, info:1749513600
+2025-03-23 16:27:12.676 | INFO     | utils.utils:get_dividends:197 - ticker:TEL, dates:2025-06-10
+2025-03-23 16:27:13.231 | INFO     | utils.utils:get_dividends:196 - ticker:BAC, info:1743120000
+2025-03-23 16:27:13.233 | INFO     | utils.utils:get_dividends:197 - ticker:BAC, dates:2025-03-28
+2025-03-23 16:27:13.780 | INFO     | utils.utils:get_dividends:196 - ticker:GPN, info:1743120000
+2025-03-23 16:27:13.780 | INFO     | utils.utils:get_dividends:197 - ticker:GPN, dates:2025-03-28
+2025-03-23 16:27:14.346 | INFO     | utils.utils:get_dividends:196 - ticker:HCA, info:1743379200
+2025-03-23 16:27:14.348 | INFO     | utils.utils:get_dividends:197 - ticker:HCA, dates:2025-03-31
+2025-03-23 16:27:14.911 | WARNING  | utils.utils:get_dividends:199 - Error ticker ORLY. 'dividendDate'
+2025-03-23 16:27:15.482 | INFO     | utils.utils:get_dividends:196 - ticker:ORCL, info:1745366400
+2025-03-23 16:27:15.484 | INFO     | utils.utils:get_dividends:197 - ticker:ORCL, dates:2025-04-23
+2025-03-23 16:27:16.033 | INFO     | utils.utils:get_dividends:196 - ticker:BEN, info:1744329600
+2025-03-23 16:27:16.035 | INFO     | utils.utils:get_dividends:197 - ticker:BEN, dates:2025-04-11
+2025-03-23 16:27:16.565 | INFO     | utils.utils:get_dividends:196 - ticker:ED, info:1741910400
+2025-03-23 16:27:16.566 | INFO     | utils.utils:get_dividends:197 - ticker:ED, dates:2025-03-14
+2025-03-23 16:27:17.102 | INFO     | utils.utils:get_dividends:196 - ticker:PHM, info:1743552000
+2025-03-23 16:27:17.102 | INFO     | utils.utils:get_dividends:197 - ticker:PHM, dates:2025-04-02
+2025-03-23 16:27:17.643 | INFO     | utils.utils:get_dividends:196 - ticker:CMCSA, info:1745366400
+2025-03-23 16:27:17.644 | INFO     | utils.utils:get_dividends:197 - ticker:CMCSA, dates:2025-04-23
+2025-03-23 16:27:18.184 | INFO     | utils.utils:get_dividends:196 - ticker:KMB, info:1743552000
+2025-03-23 16:27:18.185 | INFO     | utils.utils:get_dividends:197 - ticker:KMB, dates:2025-04-02
+2025-03-23 16:27:18.716 | INFO     | utils.utils:get_dividends:196 - ticker:LIN, info:1743033600
+2025-03-23 16:27:18.717 | INFO     | utils.utils:get_dividends:197 - ticker:LIN, dates:2025-03-27
+2025-03-23 16:27:19.262 | INFO     | utils.utils:get_dividends:196 - ticker:SO, info:1741219200
+2025-03-23 16:27:19.263 | INFO     | utils.utils:get_dividends:197 - ticker:SO, dates:2025-03-06
+2025-03-23 16:27:19.803 | INFO     | utils.utils:get_dividends:196 - ticker:CSX, info:1741910400
+2025-03-23 16:27:19.804 | INFO     | utils.utils:get_dividends:197 - ticker:CSX, dates:2025-03-14
+2025-03-23 16:27:20.357 | INFO     | utils.utils:get_dividends:196 - ticker:ADM, info:1741651200
+2025-03-23 16:27:20.357 | INFO     | utils.utils:get_dividends:197 - ticker:ADM, dates:2025-03-11
+2025-03-23 16:27:20.906 | INFO     | utils.utils:get_dividends:196 - ticker:NOC, info:1742342400
+2025-03-23 16:27:20.906 | INFO     | utils.utils:get_dividends:197 - ticker:NOC, dates:2025-03-19
+2025-03-23 16:27:21.441 | INFO     | utils.utils:get_dividends:196 - ticker:ITW, info:1744243200
+2025-03-23 16:27:21.442 | INFO     | utils.utils:get_dividends:197 - ticker:ITW, dates:2025-04-10
+2025-03-23 16:27:21.990 | INFO     | utils.utils:get_dividends:196 - ticker:GRMN, info:1743120000
+2025-03-23 16:27:21.992 | INFO     | utils.utils:get_dividends:197 - ticker:GRMN, dates:2025-03-28
+2025-03-23 16:27:22.535 | WARNING  | utils.utils:get_dividends:199 - Error ticker DAY. 'dividendDate'
+2025-03-23 16:27:23.069 | WARNING  | utils.utils:get_dividends:199 - Error ticker DLTR. 'dividendDate'
+2025-03-23 16:27:23.605 | INFO     | utils.utils:get_dividends:196 - ticker:ERIE, info:1745280000
+2025-03-23 16:27:23.605 | INFO     | utils.utils:get_dividends:197 - ticker:ERIE, dates:2025-04-22
+2025-03-23 16:27:24.139 | INFO     | utils.utils:get_dividends:196 - ticker:F, info:1740960000
+2025-03-23 16:27:24.140 | INFO     | utils.utils:get_dividends:197 - ticker:F, dates:2025-03-03
+2025-03-23 16:27:24.672 | INFO     | utils.utils:get_dividends:196 - ticker:KVUE, info:1740528000
+2025-03-23 16:27:24.673 | INFO     | utils.utils:get_dividends:197 - ticker:KVUE, dates:2025-02-26
+2025-03-23 16:27:25.213 | INFO     | utils.utils:get_dividends:196 - ticker:RCL, info:1743724800
+2025-03-23 16:27:25.213 | INFO     | utils.utils:get_dividends:197 - ticker:RCL, dates:2025-04-04
+2025-03-23 16:27:25.747 | INFO     | utils.utils:get_dividends:196 - ticker:DOV, info:1741910400
+2025-03-23 16:27:25.748 | INFO     | utils.utils:get_dividends:197 - ticker:DOV, dates:2025-03-14
+2025-03-23 16:27:26.304 | INFO     | utils.utils:get_dividends:196 - ticker:CRM, info:1736380800
+2025-03-23 16:27:26.305 | INFO     | utils.utils:get_dividends:197 - ticker:CRM, dates:2025-01-09
+2025-03-23 16:27:26.842 | INFO     | utils.utils:get_dividends:196 - ticker:NDSN, info:1743638400
+2025-03-23 16:27:26.844 | INFO     | utils.utils:get_dividends:197 - ticker:NDSN, dates:2025-04-03
+2025-03-23 16:27:27.410 | INFO     | utils.utils:get_dividends:196 - ticker:HUM, info:1745539200
+2025-03-23 16:27:27.411 | INFO     | utils.utils:get_dividends:197 - ticker:HUM, dates:2025-04-25
+2025-03-23 16:27:27.968 | INFO     | utils.utils:get_dividends:196 - ticker:NWSA, info:1744156800
+2025-03-23 16:27:27.969 | INFO     | utils.utils:get_dividends:197 - ticker:NWSA, dates:2025-04-09
+2025-03-23 16:27:28.513 | WARNING  | utils.utils:get_dividends:199 - Error ticker IQV. 'dividendDate'
+2025-03-23 16:27:29.052 | INFO     | utils.utils:get_dividends:196 - ticker:OMC, info:1744156800
+2025-03-23 16:27:29.053 | INFO     | utils.utils:get_dividends:197 - ticker:OMC, dates:2025-04-09
+2025-03-23 16:27:29.603 | WARNING  | utils.utils:get_dividends:199 - Error ticker WDAY. 'dividendDate'
+2025-03-23 16:27:30.145 | INFO     | utils.utils:get_dividends:196 - ticker:CTVA, info:1742169600
+2025-03-23 16:27:30.145 | INFO     | utils.utils:get_dividends:197 - ticker:CTVA, dates:2025-03-17
+2025-03-23 16:27:30.699 | INFO     | utils.utils:get_dividends:196 - ticker:AMT, info:1745798400
+2025-03-23 16:27:30.699 | INFO     | utils.utils:get_dividends:197 - ticker:AMT, dates:2025-04-28
+2025-03-23 16:27:31.235 | INFO     | utils.utils:get_dividends:196 - ticker:PARA, info:1743465600
+2025-03-23 16:27:31.236 | INFO     | utils.utils:get_dividends:197 - ticker:PARA, dates:2025-04-01
+2025-03-23 16:27:31.776 | INFO     | utils.utils:get_dividends:196 - ticker:GLW, info:1743120000
+2025-03-23 16:27:31.777 | INFO     | utils.utils:get_dividends:197 - ticker:GLW, dates:2025-03-28
+2025-03-23 16:27:32.316 | INFO     | utils.utils:get_dividends:196 - ticker:FANG, info:1741824000
+2025-03-23 16:27:32.317 | INFO     | utils.utils:get_dividends:197 - ticker:FANG, dates:2025-03-13
+2025-03-23 16:27:32.859 | INFO     | utils.utils:get_dividends:196 - ticker:SYY, info:1745539200
+2025-03-23 16:27:32.860 | INFO     | utils.utils:get_dividends:197 - ticker:SYY, dates:2025-04-25
+2025-03-23 16:27:33.423 | WARNING  | utils.utils:get_dividends:199 - Error ticker ADSK. 'dividendDate'
+2025-03-23 16:27:33.961 | INFO     | utils.utils:get_dividends:196 - ticker:CLX, info:1746748800
+2025-03-23 16:27:33.962 | INFO     | utils.utils:get_dividends:197 - ticker:CLX, dates:2025-05-09
+2025-03-23 16:27:34.511 | INFO     | utils.utils:get_dividends:196 - ticker:SPG, info:1743379200
+2025-03-23 16:27:34.512 | INFO     | utils.utils:get_dividends:197 - ticker:SPG, dates:2025-03-31
+2025-03-23 16:27:35.061 | INFO     | utils.utils:get_dividends:196 - ticker:JPM, info:1738281600
+2025-03-23 16:27:35.062 | INFO     | utils.utils:get_dividends:197 - ticker:JPM, dates:2025-01-31
+2025-03-23 16:27:35.596 | INFO     | utils.utils:get_dividends:196 - ticker:MO, info:1745971200
+2025-03-23 16:27:35.597 | INFO     | utils.utils:get_dividends:197 - ticker:MO, dates:2025-04-30
+2025-03-23 16:27:36.135 | INFO     | utils.utils:get_dividends:196 - ticker:AWK, info:1741046400
+2025-03-23 16:27:36.135 | INFO     | utils.utils:get_dividends:197 - ticker:AWK, dates:2025-03-04
+2025-03-23 16:27:36.670 | INFO     | utils.utils:get_dividends:196 - ticker:DUK, info:1742169600
+2025-03-23 16:27:36.671 | INFO     | utils.utils:get_dividends:197 - ticker:DUK, dates:2025-03-17
+2025-03-23 16:27:37.320 | WARNING  | utils.utils:get_dividends:199 - Error ticker CSGP. 'dividendDate'
+2025-03-23 16:27:37.862 | INFO     | utils.utils:get_dividends:196 - ticker:JCI, info:1744848000
+2025-03-23 16:27:37.862 | INFO     | utils.utils:get_dividends:197 - ticker:JCI, dates:2025-04-17
+2025-03-23 16:27:38.403 | INFO     | utils.utils:get_dividends:196 - ticker:TSCO, info:1741651200
+2025-03-23 16:27:38.403 | INFO     | utils.utils:get_dividends:197 - ticker:TSCO, dates:2025-03-11
+2025-03-23 16:27:38.959 | WARNING  | utils.utils:get_dividends:199 - Error ticker ANET. 'dividendDate'
+2025-03-23 16:27:39.687 | INFO     | utils.utils:get_dividends:196 - ticker:NXPI, info:1744156800
+2025-03-23 16:27:39.688 | INFO     | utils.utils:get_dividends:197 - ticker:NXPI, dates:2025-04-09
+2025-03-23 16:27:40.224 | INFO     | utils.utils:get_dividends:196 - ticker:BAX, info:1743465600
+2025-03-23 16:27:40.225 | INFO     | utils.utils:get_dividends:197 - ticker:BAX, dates:2025-04-01
+2025-03-23 16:27:40.785 | WARNING  | utils.utils:get_dividends:199 - Error ticker TEAM. 'dividendDate'
+2025-03-23 16:27:41.330 | INFO     | utils.utils:get_dividends:196 - ticker:MCD, info:1742169600
+2025-03-23 16:27:41.331 | INFO     | utils.utils:get_dividends:197 - ticker:MCD, dates:2025-03-17
+2025-03-23 16:27:41.885 | WARNING  | utils.utils:get_dividends:199 - Error ticker CRWD. 'dividendDate'
+2025-03-23 16:27:42.425 | WARNING  | utils.utils:get_dividends:199 - Error ticker LYV. 'dividendDate'
+2025-03-23 16:27:42.974 | INFO     | utils.utils:get_dividends:196 - ticker:ETN, info:1743120000
+2025-03-23 16:27:42.975 | INFO     | utils.utils:get_dividends:197 - ticker:ETN, dates:2025-03-28
+2025-03-23 16:27:43.708 | INFO     | utils.utils:get_dividends:196 - ticker:ESS, info:1744675200
+2025-03-23 16:27:43.709 | INFO     | utils.utils:get_dividends:197 - ticker:ESS, dates:2025-04-15
+2025-03-23 16:27:44.255 | INFO     | utils.utils:get_dividends:196 - ticker:URI, info:1740528000
+2025-03-23 16:27:44.256 | INFO     | utils.utils:get_dividends:197 - ticker:URI, dates:2025-02-26
+2025-03-23 16:27:44.799 | INFO     | utils.utils:get_dividends:196 - ticker:LEN, info:1739318400
+2025-03-23 16:27:44.801 | INFO     | utils.utils:get_dividends:197 - ticker:LEN, dates:2025-02-12
+2025-03-23 16:27:45.365 | WARNING  | utils.utils:get_dividends:199 - Error ticker APP. 'dividendDate'
+2025-03-23 16:27:45.908 | INFO     | utils.utils:get_dividends:196 - ticker:FOXA, info:1742947200
+2025-03-23 16:27:45.909 | INFO     | utils.utils:get_dividends:197 - ticker:FOXA, dates:2025-03-26
+2025-03-23 16:27:46.457 | INFO     | utils.utils:get_dividends:196 - ticker:SBAC, info:1743033600
+2025-03-23 16:27:46.458 | INFO     | utils.utils:get_dividends:197 - ticker:SBAC, dates:2025-03-27
+2025-03-23 16:27:47.028 | INFO     | utils.utils:get_dividends:196 - ticker:SRE, info:1744675200
+2025-03-23 16:27:47.028 | INFO     | utils.utils:get_dividends:197 - ticker:SRE, dates:2025-04-15
+2025-03-23 16:27:47.576 | INFO     | utils.utils:get_dividends:196 - ticker:HWM, info:1740441600
+2025-03-23 16:27:47.577 | INFO     | utils.utils:get_dividends:197 - ticker:HWM, dates:2025-02-25
+2025-03-23 16:27:48.121 | INFO     | utils.utils:get_dividends:196 - ticker:TER, info:1741910400
+2025-03-23 16:27:48.122 | INFO     | utils.utils:get_dividends:197 - ticker:TER, dates:2025-03-14
+2025-03-23 16:27:48.668 | INFO     | utils.utils:get_dividends:196 - ticker:APA, info:1747872000
+2025-03-23 16:27:48.669 | INFO     | utils.utils:get_dividends:197 - ticker:APA, dates:2025-05-22
+2025-03-23 16:27:49.225 | INFO     | utils.utils:get_dividends:196 - ticker:FITB, info:1736899200
+2025-03-23 16:27:49.226 | INFO     | utils.utils:get_dividends:197 - ticker:FITB, dates:2025-01-15
+2025-03-23 16:27:49.766 | INFO     | utils.utils:get_dividends:196 - ticker:PCAR, info:1741132800
+2025-03-23 16:27:49.767 | INFO     | utils.utils:get_dividends:197 - ticker:PCAR, dates:2025-03-05
+2025-03-23 16:27:50.314 | INFO     | utils.utils:get_dividends:196 - ticker:MAA, info:1738281600
+2025-03-23 16:27:50.315 | INFO     | utils.utils:get_dividends:197 - ticker:MAA, dates:2025-01-31
+2025-03-23 16:27:50.867 | INFO     | utils.utils:get_dividends:196 - ticker:ELV, info:1742860800
+2025-03-23 16:27:50.868 | INFO     | utils.utils:get_dividends:197 - ticker:ELV, dates:2025-03-25
+2025-03-23 16:27:51.417 | INFO     | utils.utils:get_dividends:196 - ticker:CF, info:1740700800
+2025-03-23 16:27:51.419 | INFO     | utils.utils:get_dividends:197 - ticker:CF, dates:2025-02-28
+2025-03-23 16:27:51.978 | INFO     | utils.utils:get_dividends:196 - ticker:USB, info:1744675200
+2025-03-23 16:27:51.979 | INFO     | utils.utils:get_dividends:197 - ticker:USB, dates:2025-04-15
+2025-03-23 16:27:52.534 | WARNING  | utils.utils:get_dividends:199 - Error ticker ADBE. 'dividendDate'
+2025-03-23 16:27:53.080 | WARNING  | utils.utils:get_dividends:199 - Error ticker FTNT. 'dividendDate'
+2025-03-23 16:27:53.623 | INFO     | utils.utils:get_dividends:196 - ticker:VMC, info:1742774400
+2025-03-23 16:27:53.624 | INFO     | utils.utils:get_dividends:197 - ticker:VMC, dates:2025-03-24
+2025-03-23 16:27:54.199 | INFO     | utils.utils:get_dividends:196 - ticker:ALL, info:1743465600
+2025-03-23 16:27:54.199 | INFO     | utils.utils:get_dividends:197 - ticker:ALL, dates:2025-04-01
+2025-03-23 16:27:54.750 | WARNING  | utils.utils:get_dividends:199 - Error ticker WAT. 'dividendDate'
+2025-03-23 16:27:55.296 | INFO     | utils.utils:get_dividends:196 - ticker:L, info:1741651200
+2025-03-23 16:27:55.298 | INFO     | utils.utils:get_dividends:197 - ticker:L, dates:2025-03-11
+2025-03-23 16:27:55.843 | INFO     | utils.utils:get_dividends:196 - ticker:ZTS, info:1748908800
+2025-03-23 16:27:55.844 | INFO     | utils.utils:get_dividends:197 - ticker:ZTS, dates:2025-06-03
+2025-03-23 16:27:56.394 | INFO     | utils.utils:get_dividends:196 - ticker:UDR, info:1745971200
+2025-03-23 16:27:56.395 | INFO     | utils.utils:get_dividends:197 - ticker:UDR, dates:2025-04-30
+2025-03-23 16:27:56.941 | WARNING  | utils.utils:get_dividends:199 - Error ticker TDY. 'dividendDate'
+2025-03-23 16:27:57.494 | INFO     | utils.utils:get_dividends:196 - ticker:PCG, info:1744675200
+2025-03-23 16:27:57.495 | INFO     | utils.utils:get_dividends:197 - ticker:PCG, dates:2025-04-15
+2025-03-23 16:27:58.036 | WARNING  | utils.utils:get_dividends:199 - Error ticker TYL. 'dividendDate'
+2025-03-23 16:27:58.578 | INFO     | utils.utils:get_dividends:196 - ticker:GEHC, info:1739491200
+2025-03-23 16:27:58.579 | INFO     | utils.utils:get_dividends:197 - ticker:GEHC, dates:2025-02-14
+2025-03-23 16:27:59.131 | INFO     | utils.utils:get_dividends:196 - ticker:HLT, info:1743120000
+2025-03-23 16:27:59.131 | INFO     | utils.utils:get_dividends:197 - ticker:HLT, dates:2025-03-28
+2025-03-23 16:27:59.676 | WARNING  | utils.utils:get_dividends:199 - Error ticker SNPS. 'dividendDate'
+2025-03-23 16:28:00.232 | WARNING  | utils.utils:get_dividends:199 - Error ticker DECK. 'dividendDate'
+2025-03-23 16:28:00.778 | INFO     | utils.utils:get_dividends:196 - ticker:SWK, info:1742256000
+2025-03-23 16:28:00.780 | INFO     | utils.utils:get_dividends:197 - ticker:SWK, dates:2025-03-18
+2025-03-23 16:28:01.324 | INFO     | utils.utils:get_dividends:196 - ticker:IFF, info:1744329600
+2025-03-23 16:28:01.326 | INFO     | utils.utils:get_dividends:197 - ticker:IFF, dates:2025-04-11
+2025-03-23 16:28:01.869 | INFO     | utils.utils:get_dividends:196 - ticker:CCL, info:1584057600
+2025-03-23 16:28:01.870 | INFO     | utils.utils:get_dividends:197 - ticker:CCL, dates:2020-03-13
+2025-03-23 16:28:02.425 | INFO     | utils.utils:get_dividends:196 - ticker:HST, info:1744675200
+2025-03-23 16:28:02.426 | INFO     | utils.utils:get_dividends:197 - ticker:HST, dates:2025-04-15
+2025-03-23 16:28:02.974 | INFO     | utils.utils:get_dividends:196 - ticker:BG, info:1741046400
+2025-03-23 16:28:02.975 | INFO     | utils.utils:get_dividends:197 - ticker:BG, dates:2025-03-04
+2025-03-23 16:28:03.693 | WARNING  | utils.utils:get_dividends:199 - Error ticker BF.B. 'dividendDate'
+2025-03-23 16:28:04.239 | INFO     | utils.utils:get_dividends:196 - ticker:MU, info:1736899200
+2025-03-23 16:28:04.240 | INFO     | utils.utils:get_dividends:197 - ticker:MU, dates:2025-01-15
+2025-03-23 16:28:04.785 | INFO     | utils.utils:get_dividends:196 - ticker:APTV, info:1582070400
+2025-03-23 16:28:04.786 | INFO     | utils.utils:get_dividends:197 - ticker:APTV, dates:2020-02-19
+2025-03-23 16:28:05.329 | INFO     | utils.utils:get_dividends:196 - ticker:KHC, info:1743120000
+2025-03-23 16:28:05.330 | INFO     | utils.utils:get_dividends:197 - ticker:KHC, dates:2025-03-28
+2025-03-23 16:28:05.877 | INFO     | utils.utils:get_dividends:196 - ticker:HPQ, info:1743552000
+2025-03-23 16:28:05.878 | INFO     | utils.utils:get_dividends:197 - ticker:HPQ, dates:2025-04-02
+2025-03-23 16:28:06.423 | INFO     | utils.utils:get_dividends:196 - ticker:NUE, info:1747008000
+2025-03-23 16:28:06.426 | INFO     | utils.utils:get_dividends:197 - ticker:NUE, dates:2025-05-12
+2025-03-23 16:28:06.970 | INFO     | utils.utils:get_dividends:196 - ticker:SYF, info:1739836800
+2025-03-23 16:28:06.971 | INFO     | utils.utils:get_dividends:197 - ticker:SYF, dates:2025-02-18
+2025-03-23 16:28:07.508 | INFO     | utils.utils:get_dividends:196 - ticker:TROW, info:1743120000
+2025-03-23 16:28:07.509 | INFO     | utils.utils:get_dividends:197 - ticker:TROW, dates:2025-03-28
+2025-03-23 16:28:08.051 | INFO     | utils.utils:get_dividends:196 - ticker:ALLE, info:1743379200
+2025-03-23 16:28:08.052 | INFO     | utils.utils:get_dividends:197 - ticker:ALLE, dates:2025-03-31
+2025-03-23 16:28:08.600 | WARNING  | utils.utils:get_dividends:199 - Error ticker TRMB. 'dividendDate'
+2025-03-23 16:28:09.141 | INFO     | utils.utils:get_dividends:196 - ticker:MELI, info:1516060800
+2025-03-23 16:28:09.142 | INFO     | utils.utils:get_dividends:197 - ticker:MELI, dates:2018-01-16
+2025-03-23 16:28:09.691 | INFO     | utils.utils:get_dividends:196 - ticker:RVTY, info:1746748800
+2025-03-23 16:28:09.692 | INFO     | utils.utils:get_dividends:197 - ticker:RVTY, dates:2025-05-09
+2025-03-23 16:28:10.237 | INFO     | utils.utils:get_dividends:196 - ticker:AME, info:1743379200
+2025-03-23 16:28:10.238 | INFO     | utils.utils:get_dividends:197 - ticker:AME, dates:2025-03-31
+2025-03-23 16:28:10.783 | INFO     | utils.utils:get_dividends:196 - ticker:ICE, info:1743379200
+2025-03-23 16:28:10.784 | INFO     | utils.utils:get_dividends:197 - ticker:ICE, dates:2025-03-31
+2025-03-23 16:28:11.345 | WARNING  | utils.utils:get_dividends:199 - Error ticker TTD. 'dividendDate'
+2025-03-23 16:28:11.924 | WARNING  | utils.utils:get_dividends:199 - Error ticker AMZN. 'dividendDate'
+2025-03-23 16:28:12.471 | WARNING  | utils.utils:get_dividends:199 - Error ticker AMD. 'dividendDate'
+2025-03-23 16:28:13.018 | INFO     | utils.utils:get_dividends:196 - ticker:CCEP, info:1733184000
+2025-03-23 16:28:13.019 | INFO     | utils.utils:get_dividends:197 - ticker:CCEP, dates:2024-12-03
+2025-03-23 16:28:13.592 | WARNING  | utils.utils:get_dividends:199 - Error ticker UBER. 'dividendDate'
+2025-03-23 16:28:14.131 | INFO     | utils.utils:get_dividends:196 - ticker:DPZ, info:1743120000
+2025-03-23 16:28:14.132 | INFO     | utils.utils:get_dividends:197 - ticker:DPZ, dates:2025-03-28
+2025-03-23 16:28:14.677 | INFO     | utils.utils:get_dividends:196 - ticker:PGR, info:1744329600
+2025-03-23 16:28:14.678 | INFO     | utils.utils:get_dividends:197 - ticker:PGR, dates:2025-04-11
+2025-03-23 16:28:15.226 | INFO     | utils.utils:get_dividends:196 - ticker:IPG, info:1742169600
+2025-03-23 16:28:15.227 | INFO     | utils.utils:get_dividends:197 - ticker:IPG, dates:2025-03-17
+2025-03-23 16:28:15.777 | WARNING  | utils.utils:get_dividends:199 - Error ticker ZBRA. 'dividendDate'
+2025-03-23 16:28:16.325 | INFO     | utils.utils:get_dividends:196 - ticker:GOOG, info:1742169600
+2025-03-23 16:28:16.326 | INFO     | utils.utils:get_dividends:197 - ticker:GOOG, dates:2025-03-17
+2025-03-23 16:28:16.875 | WARNING  | utils.utils:get_dividends:199 - Error ticker HOLX. 'dividendDate'
+2025-03-23 16:28:17.418 | INFO     | utils.utils:get_dividends:196 - ticker:PLD, info:1743379200
+2025-03-23 16:28:17.420 | INFO     | utils.utils:get_dividends:197 - ticker:PLD, dates:2025-03-31
+2025-03-23 16:28:17.964 | INFO     | utils.utils:get_dividends:196 - ticker:FE, info:1740787200
+2025-03-23 16:28:17.965 | INFO     | utils.utils:get_dividends:197 - ticker:FE, dates:2025-03-01
+2025-03-23 16:28:18.519 | INFO     | utils.utils:get_dividends:196 - ticker:FOX, info:1742947200
+2025-03-23 16:28:18.520 | INFO     | utils.utils:get_dividends:197 - ticker:FOX, dates:2025-03-26
+2025-03-23 16:28:19.075 | INFO     | utils.utils:get_dividends:196 - ticker:JKHY, info:1742860800
+2025-03-23 16:28:19.077 | INFO     | utils.utils:get_dividends:197 - ticker:JKHY, dates:2025-03-25
+2025-03-23 16:28:19.622 | INFO     | utils.utils:get_dividends:196 - ticker:J, info:1742515200
+2025-03-23 16:28:19.623 | INFO     | utils.utils:get_dividends:197 - ticker:J, dates:2025-03-21
+2025-03-23 16:28:20.202 | INFO     | utils.utils:get_dividends:196 - ticker:NEE, info:1742169600
+2025-03-23 16:28:20.203 | INFO     | utils.utils:get_dividends:197 - ticker:NEE, dates:2025-03-17
+2025-03-23 16:28:20.758 | INFO     | utils.utils:get_dividends:196 - ticker:VLTO, info:1745971200
+2025-03-23 16:28:20.759 | INFO     | utils.utils:get_dividends:197 - ticker:VLTO, dates:2025-04-30
+2025-03-23 16:28:21.309 | INFO     | utils.utils:get_dividends:196 - ticker:DVN, info:1743379200
+2025-03-23 16:28:21.310 | INFO     | utils.utils:get_dividends:197 - ticker:DVN, dates:2025-03-31
+2025-03-23 16:28:21.865 | INFO     | utils.utils:get_dividends:196 - ticker:DGX, info:1745193600
+2025-03-23 16:28:21.866 | INFO     | utils.utils:get_dividends:197 - ticker:DGX, dates:2025-04-21
+2025-03-23 16:28:22.420 | WARNING  | utils.utils:get_dividends:199 - Error ticker DVA. 'dividendDate'
+2025-03-23 16:28:22.970 | INFO     | utils.utils:get_dividends:196 - ticker:SJM, info:1740960000
+2025-03-23 16:28:22.971 | INFO     | utils.utils:get_dividends:197 - ticker:SJM, dates:2025-03-03
+2025-03-23 16:28:23.525 | INFO     | utils.utils:get_dividends:196 - ticker:CAG, info:1740614400
+2025-03-23 16:28:23.526 | INFO     | utils.utils:get_dividends:197 - ticker:CAG, dates:2025-02-27
+2025-03-23 16:28:24.078 | INFO     | utils.utils:get_dividends:196 - ticker:KIM, info:1742515200
+2025-03-23 16:28:24.079 | INFO     | utils.utils:get_dividends:197 - ticker:KIM, dates:2025-03-21
+2025-03-23 16:28:24.654 | INFO     | utils.utils:get_dividends:196 - ticker:LDOS, info:1743120000
+2025-03-23 16:28:24.656 | INFO     | utils.utils:get_dividends:197 - ticker:LDOS, dates:2025-03-28
+2025-03-23 16:28:25.202 | INFO     | utils.utils:get_dividends:196 - ticker:CE, info:1741651200
+2025-03-23 16:28:25.203 | INFO     | utils.utils:get_dividends:197 - ticker:CE, dates:2025-03-11
+2025-03-23 16:28:25.759 | INFO     | utils.utils:get_dividends:196 - ticker:AMGN, info:1749168000
+2025-03-23 16:28:25.760 | INFO     | utils.utils:get_dividends:197 - ticker:AMGN, dates:2025-06-06
+2025-03-23 16:28:26.305 | INFO     | utils.utils:get_dividends:196 - ticker:DIS, info:1753228800
+2025-03-23 16:28:26.306 | INFO     | utils.utils:get_dividends:197 - ticker:DIS, dates:2025-07-23
+2025-03-23 16:28:26.860 | INFO     | utils.utils:get_dividends:196 - ticker:CINF, info:1744675200
+2025-03-23 16:28:26.862 | INFO     | utils.utils:get_dividends:197 - ticker:CINF, dates:2025-04-15
+2025-03-23 16:28:27.436 | INFO     | utils.utils:get_dividends:196 - ticker:WBA, info:1733961600
+2025-03-23 16:28:27.437 | INFO     | utils.utils:get_dividends:197 - ticker:WBA, dates:2024-12-12
+2025-03-23 16:28:27.992 | INFO     | utils.utils:get_dividends:196 - ticker:PRU, info:1741824000
+2025-03-23 16:28:27.993 | INFO     | utils.utils:get_dividends:197 - ticker:PRU, dates:2025-03-13
+2025-03-23 16:28:28.546 | INFO     | utils.utils:get_dividends:196 - ticker:AZN, info:1742774400
+2025-03-23 16:28:28.548 | INFO     | utils.utils:get_dividends:197 - ticker:AZN, dates:2025-03-24
+2025-03-23 16:28:29.099 | INFO     | utils.utils:get_dividends:196 - ticker:BMY, info:1746057600
+2025-03-23 16:28:29.100 | INFO     | utils.utils:get_dividends:197 - ticker:BMY, dates:2025-05-01
+2025-03-23 16:28:29.652 | INFO     | utils.utils:get_dividends:196 - ticker:MA, info:1746748800
+2025-03-23 16:28:29.653 | INFO     | utils.utils:get_dividends:197 - ticker:MA, dates:2025-05-09
+2025-03-23 16:28:30.195 | INFO     | utils.utils:get_dividends:196 - ticker:LW, info:1740700800
+2025-03-23 16:28:30.196 | INFO     | utils.utils:get_dividends:197 - ticker:LW, dates:2025-02-28
+2025-03-23 16:28:30.744 | INFO     | utils.utils:get_dividends:196 - ticker:IBM, info:1741564800
+2025-03-23 16:28:30.745 | INFO     | utils.utils:get_dividends:197 - ticker:IBM, dates:2025-03-10
+2025-03-23 16:28:31.292 | INFO     | utils.utils:get_dividends:196 - ticker:MRK, info:1743984000
+2025-03-23 16:28:31.293 | INFO     | utils.utils:get_dividends:197 - ticker:MRK, dates:2025-04-07
+2025-03-23 16:28:31.834 | INFO     | utils.utils:get_dividends:196 - ticker:TPR, info:1742774400
+2025-03-23 16:28:31.835 | INFO     | utils.utils:get_dividends:197 - ticker:TPR, dates:2025-03-24
+2025-03-23 16:28:32.477 | INFO     | utils.utils:get_dividends:196 - ticker:CTSH, info:1740528000
+2025-03-23 16:28:32.478 | INFO     | utils.utils:get_dividends:197 - ticker:CTSH, dates:2025-02-26
+2025-03-23 16:28:33.027 | INFO     | utils.utils:get_dividends:196 - ticker:IR, info:1743033600
+2025-03-23 16:28:33.028 | INFO     | utils.utils:get_dividends:197 - ticker:IR, dates:2025-03-27
+2025-03-23 16:28:33.579 | INFO     | utils.utils:get_dividends:196 - ticker:MMC, info:1747267200
+2025-03-23 16:28:33.580 | INFO     | utils.utils:get_dividends:197 - ticker:MMC, dates:2025-05-15
+2025-03-23 16:28:34.120 | INFO     | utils.utils:get_dividends:196 - ticker:AJG, info:1742515200
+2025-03-23 16:28:34.121 | INFO     | utils.utils:get_dividends:197 - ticker:AJG, dates:2025-03-21
+2025-03-23 16:28:34.669 | INFO     | utils.utils:get_dividends:196 - ticker:KO, info:1743465600
+2025-03-23 16:28:34.670 | INFO     | utils.utils:get_dividends:197 - ticker:KO, dates:2025-04-01
+2025-03-23 16:28:35.220 | INFO     | utils.utils:get_dividends:196 - ticker:GEV, info:1738022400
+2025-03-23 16:28:35.222 | INFO     | utils.utils:get_dividends:197 - ticker:GEV, dates:2025-01-28
+2025-03-23 16:28:35.773 | WARNING  | utils.utils:get_dividends:199 - Error ticker HSIC. 'dividendDate'
+2025-03-23 16:28:36.328 | INFO     | utils.utils:get_dividends:196 - ticker:TJX, info:1741219200
+2025-03-23 16:28:36.329 | INFO     | utils.utils:get_dividends:197 - ticker:TJX, dates:2025-03-06
+2025-03-23 16:28:36.878 | INFO     | utils.utils:get_dividends:196 - ticker:UAL, info:1201046400
+2025-03-23 16:28:36.879 | INFO     | utils.utils:get_dividends:197 - ticker:UAL, dates:2008-01-23
+2025-03-23 16:28:37.428 | WARNING  | utils.utils:get_dividends:199 - Error ticker EPAM. 'dividendDate'
+2025-03-23 16:28:37.978 | INFO     | utils.utils:get_dividends:196 - ticker:TRV, info:1743379200
+2025-03-23 16:28:37.979 | INFO     | utils.utils:get_dividends:197 - ticker:TRV, dates:2025-03-31
+2025-03-23 16:28:38.553 | INFO     | utils.utils:get_dividends:196 - ticker:EMR, info:1741564800
+2025-03-23 16:28:38.555 | INFO     | utils.utils:get_dividends:197 - ticker:EMR, dates:2025-03-10
+2025-03-23 16:28:39.099 | INFO     | utils.utils:get_dividends:196 - ticker:OTIS, info:1741305600
+2025-03-23 16:28:39.100 | INFO     | utils.utils:get_dividends:197 - ticker:OTIS, dates:2025-03-07
+2025-03-23 16:28:39.643 | INFO     | utils.utils:get_dividends:196 - ticker:BKNG, info:1743379200
+2025-03-23 16:28:39.645 | INFO     | utils.utils:get_dividends:197 - ticker:BKNG, dates:2025-03-31
+2025-03-23 16:28:40.186 | INFO     | utils.utils:get_dividends:196 - ticker:NVDA, info:1743552000
+2025-03-23 16:28:40.188 | INFO     | utils.utils:get_dividends:197 - ticker:NVDA, dates:2025-04-02
+2025-03-23 16:28:40.765 | INFO     | utils.utils:get_dividends:196 - ticker:EIX, info:1745971200
+2025-03-23 16:28:40.768 | INFO     | utils.utils:get_dividends:197 - ticker:EIX, dates:2025-04-30
+2025-03-23 16:28:41.309 | INFO     | utils.utils:get_dividends:196 - ticker:WYNN, info:1741132800
+2025-03-23 16:28:41.310 | INFO     | utils.utils:get_dividends:197 - ticker:WYNN, dates:2025-03-05
+2025-03-23 16:28:41.855 | INFO     | utils.utils:get_dividends:196 - ticker:CTAS, info:1741910400
+2025-03-23 16:28:41.857 | INFO     | utils.utils:get_dividends:197 - ticker:CTAS, dates:2025-03-14
+2025-03-23 16:28:42.395 | WARNING  | utils.utils:get_dividends:199 - Error ticker NVR. 'dividendDate'
+2025-03-23 16:28:42.941 | INFO     | utils.utils:get_dividends:196 - ticker:EVRG, info:1742515200
+2025-03-23 16:28:42.943 | INFO     | utils.utils:get_dividends:197 - ticker:EVRG, dates:2025-03-21
+2025-03-23 16:28:43.489 | INFO     | utils.utils:get_dividends:196 - ticker:ARE, info:1744675200
+2025-03-23 16:28:43.490 | INFO     | utils.utils:get_dividends:197 - ticker:ARE, dates:2025-04-15
+2025-03-23 16:28:44.032 | INFO     | utils.utils:get_dividends:196 - ticker:EQIX, info:1742342400
+2025-03-23 16:28:44.033 | INFO     | utils.utils:get_dividends:197 - ticker:EQIX, dates:2025-03-19
+2025-03-23 16:28:44.577 | WARNING  | utils.utils:get_dividends:199 - Error ticker IDXX. 'dividendDate'
+2025-03-23 16:28:45.176 | INFO     | utils.utils:get_dividends:196 - ticker:SNA, info:1741564800
+2025-03-23 16:28:45.177 | INFO     | utils.utils:get_dividends:197 - ticker:SNA, dates:2025-03-10
+2025-03-23 16:28:45.747 | INFO     | utils.utils:get_dividends:196 - ticker:NDAQ, info:1743120000
+2025-03-23 16:28:45.748 | INFO     | utils.utils:get_dividends:197 - ticker:NDAQ, dates:2025-03-28
+2025-03-23 16:28:46.307 | INFO     | utils.utils:get_dividends:196 - ticker:ROST, info:1743379200
+2025-03-23 16:28:46.307 | INFO     | utils.utils:get_dividends:197 - ticker:ROST, dates:2025-03-31
+2025-03-23 16:28:46.852 | INFO     | utils.utils:get_dividends:196 - ticker:PG, info:1739836800
+2025-03-23 16:28:46.853 | INFO     | utils.utils:get_dividends:197 - ticker:PG, dates:2025-02-18
+2025-03-23 16:28:47.415 | WARNING  | utils.utils:get_dividends:199 - Error ticker ON. 'dividendDate'
+2025-03-23 16:28:47.974 | WARNING  | utils.utils:get_dividends:199 - Error ticker CRL. 'dividendDate'
+2025-03-23 16:28:48.692 | INFO     | utils.utils:get_dividends:196 - ticker:C, info:1740700800
+2025-03-23 16:28:48.693 | INFO     | utils.utils:get_dividends:197 - ticker:C, dates:2025-02-28
+2025-03-23 16:28:49.234 | INFO     | utils.utils:get_dividends:196 - ticker:AAPL, info:1739404800
+2025-03-23 16:28:49.236 | INFO     | utils.utils:get_dividends:197 - ticker:AAPL, dates:2025-02-13
+2025-03-23 16:28:49.785 | INFO     | utils.utils:get_dividends:196 - ticker:STX, info:1743552000
+2025-03-23 16:28:49.786 | INFO     | utils.utils:get_dividends:197 - ticker:STX, dates:2025-04-02
+2025-03-23 16:28:50.328 | INFO     | utils.utils:get_dividends:196 - ticker:EG, info:1743120000
+2025-03-23 16:28:50.330 | INFO     | utils.utils:get_dividends:197 - ticker:EG, dates:2025-03-28
+2025-03-23 16:28:50.881 | INFO     | utils.utils:get_dividends:196 - ticker:DHR, info:1745539200
+2025-03-23 16:28:50.883 | INFO     | utils.utils:get_dividends:197 - ticker:DHR, dates:2025-04-25
+2025-03-23 16:28:51.431 | INFO     | utils.utils:get_dividends:196 - ticker:BXP, info:1738195200
+2025-03-23 16:28:51.432 | INFO     | utils.utils:get_dividends:197 - ticker:BXP, dates:2025-01-30
+2025-03-23 16:28:51.975 | INFO     | utils.utils:get_dividends:196 - ticker:PNR, info:1746144000
+2025-03-23 16:28:51.976 | INFO     | utils.utils:get_dividends:197 - ticker:PNR, dates:2025-05-02
+2025-03-23 16:28:52.533 | WARNING  | utils.utils:get_dividends:199 - Error ticker MHK. 'dividendDate'
+2025-03-23 16:28:53.078 | INFO     | utils.utils:get_dividends:196 - ticker:PH, info:1741305600
+2025-03-23 16:28:53.080 | INFO     | utils.utils:get_dividends:197 - ticker:PH, dates:2025-03-07
+2025-03-23 16:28:53.657 | INFO     | utils.utils:get_dividends:196 - ticker:CHRW, info:1743465600
+2025-03-23 16:28:53.658 | INFO     | utils.utils:get_dividends:197 - ticker:CHRW, dates:2025-04-01
+2025-03-23 16:28:54.214 | INFO     | utils.utils:get_dividends:196 - ticker:KDP, info:1744329600
+2025-03-23 16:28:54.216 | INFO     | utils.utils:get_dividends:197 - ticker:KDP, dates:2025-04-11
+2025-03-23 16:28:54.785 | INFO     | utils.utils:get_dividends:196 - ticker:WDC, info:1587081600
+2025-03-23 16:28:54.787 | INFO     | utils.utils:get_dividends:197 - ticker:WDC, dates:2020-04-17
+2025-03-23 16:28:55.330 | WARNING  | utils.utils:get_dividends:199 - Error ticker SOLV. 'dividendDate'
+2025-03-23 16:28:55.881 | INFO     | utils.utils:get_dividends:196 - ticker:EOG, info:1745971200
+2025-03-23 16:28:55.882 | INFO     | utils.utils:get_dividends:197 - ticker:EOG, dates:2025-04-30
+2025-03-23 16:28:56.419 | INFO     | utils.utils:get_dividends:196 - ticker:RMD, info:1742428800
+2025-03-23 16:28:56.420 | INFO     | utils.utils:get_dividends:197 - ticker:RMD, dates:2025-03-20
+2025-03-23 16:28:56.964 | WARNING  | utils.utils:get_dividends:199 - Error ticker CPAY. 'dividendDate'
+2025-03-23 16:28:57.509 | INFO     | utils.utils:get_dividends:196 - ticker:MPWR, info:1744675200
+2025-03-23 16:28:57.510 | INFO     | utils.utils:get_dividends:197 - ticker:MPWR, dates:2025-04-15
+2025-03-23 16:28:58.056 | INFO     | utils.utils:get_dividends:196 - ticker:EQR, info:1737072000
+2025-03-23 16:28:58.057 | INFO     | utils.utils:get_dividends:197 - ticker:EQR, dates:2025-01-17
+2025-03-23 16:28:58.619 | INFO     | utils.utils:get_dividends:196 - ticker:BRO, info:1739318400
+2025-03-23 16:28:58.620 | INFO     | utils.utils:get_dividends:197 - ticker:BRO, dates:2025-02-12
+2025-03-23 16:28:59.166 | INFO     | utils.utils:get_dividends:196 - ticker:HAS, info:1741737600
+2025-03-23 16:28:59.167 | INFO     | utils.utils:get_dividends:197 - ticker:HAS, dates:2025-03-12
+2025-03-23 16:28:59.709 | INFO     | utils.utils:get_dividends:196 - ticker:XEL, info:1745107200
+2025-03-23 16:28:59.710 | INFO     | utils.utils:get_dividends:197 - ticker:XEL, dates:2025-04-20
+2025-03-23 16:29:00.258 | INFO     | utils.utils:get_dividends:196 - ticker:MRVL, info:1738195200
+2025-03-23 16:29:00.259 | INFO     | utils.utils:get_dividends:197 - ticker:MRVL, dates:2025-01-30
+2025-03-23 16:29:00.799 | INFO     | utils.utils:get_dividends:196 - ticker:BALL, info:1742169600
+2025-03-23 16:29:00.800 | INFO     | utils.utils:get_dividends:197 - ticker:BALL, dates:2025-03-17
+2025-03-23 16:29:01.333 | WARNING  | utils.utils:get_dividends:199 - Error ticker TTWO. 'dividendDate'
+2025-03-23 16:29:01.889 | INFO     | utils.utils:get_dividends:196 - ticker:COR, info:1740960000
+2025-03-23 16:29:01.890 | INFO     | utils.utils:get_dividends:197 - ticker:COR, dates:2025-03-03
+2025-03-23 16:29:02.443 | INFO     | utils.utils:get_dividends:196 - ticker:XOM, info:1741564800
+2025-03-23 16:29:02.444 | INFO     | utils.utils:get_dividends:197 - ticker:XOM, dates:2025-03-10
+2025-03-23 16:29:02.999 | INFO     | utils.utils:get_dividends:196 - ticker:NSC, info:1740009600
+2025-03-23 16:29:03.001 | INFO     | utils.utils:get_dividends:197 - ticker:NSC, dates:2025-02-20
+2025-03-23 16:29:03.553 | INFO     | utils.utils:get_dividends:196 - ticker:MSCI, info:1740700800
+2025-03-23 16:29:03.554 | INFO     | utils.utils:get_dividends:197 - ticker:MSCI, dates:2025-02-28
+2025-03-23 16:29:04.097 | INFO     | utils.utils:get_dividends:196 - ticker:MCK, info:1743465600
+2025-03-23 16:29:04.098 | INFO     | utils.utils:get_dividends:197 - ticker:MCK, dates:2025-04-01
+2025-03-23 16:29:04.644 | INFO     | utils.utils:get_dividends:196 - ticker:BLK, info:1742774400
+2025-03-23 16:29:04.646 | INFO     | utils.utils:get_dividends:197 - ticker:BLK, dates:2025-03-24
+2025-03-23 16:29:05.202 | INFO     | utils.utils:get_dividends:196 - ticker:AVB, info:1744675200
+2025-03-23 16:29:05.204 | INFO     | utils.utils:get_dividends:197 - ticker:AVB, dates:2025-04-15
+2025-03-23 16:29:05.759 | INFO     | utils.utils:get_dividends:196 - ticker:UNP, info:1743379200
+2025-03-23 16:29:05.760 | INFO     | utils.utils:get_dividends:197 - ticker:UNP, dates:2025-03-31
+2025-03-23 16:29:06.306 | INFO     | utils.utils:get_dividends:196 - ticker:HES, info:1743379200
+2025-03-23 16:29:06.307 | INFO     | utils.utils:get_dividends:197 - ticker:HES, dates:2025-03-31
+2025-03-23 16:29:06.851 | INFO     | utils.utils:get_dividends:196 - ticker:BX, info:1739836800
+2025-03-23 16:29:06.852 | INFO     | utils.utils:get_dividends:197 - ticker:BX, dates:2025-02-18
+2025-03-23 16:29:07.394 | INFO     | utils.utils:get_dividends:196 - ticker:LMT, info:1743120000
+2025-03-23 16:29:07.395 | INFO     | utils.utils:get_dividends:197 - ticker:LMT, dates:2025-03-28
+2025-03-23 16:29:07.935 | WARNING  | utils.utils:get_dividends:199 - Error ticker BLDR. 'dividendDate'
+2025-03-23 16:29:08.486 | INFO     | utils.utils:get_dividends:196 - ticker:WELL, info:1741219200
+2025-03-23 16:29:08.486 | INFO     | utils.utils:get_dividends:197 - ticker:WELL, dates:2025-03-06
+2025-03-23 16:29:09.035 | INFO     | utils.utils:get_dividends:196 - ticker:NTRS, info:1743465600
+2025-03-23 16:29:09.036 | INFO     | utils.utils:get_dividends:197 - ticker:NTRS, dates:2025-04-01
+2025-03-23 16:29:09.754 | WARNING  | utils.utils:get_dividends:199 - Error ticker TSLA. 'dividendDate'
+2025-03-23 16:29:10.300 | INFO     | utils.utils:get_dividends:196 - ticker:GEN, info:1741737600
+2025-03-23 16:29:10.302 | INFO     | utils.utils:get_dividends:197 - ticker:GEN, dates:2025-03-12
+2025-03-23 16:29:10.844 | INFO     | utils.utils:get_dividends:196 - ticker:FCX, info:1738540800
+2025-03-23 16:29:10.846 | INFO     | utils.utils:get_dividends:197 - ticker:FCX, dates:2025-02-03
+2025-03-23 16:29:11.389 | INFO     | utils.utils:get_dividends:196 - ticker:PKG, info:1744675200
+2025-03-23 16:29:11.390 | INFO     | utils.utils:get_dividends:197 - ticker:PKG, dates:2025-04-15
+2025-03-23 16:29:11.937 | INFO     | utils.utils:get_dividends:196 - ticker:CDW, info:1741651200
+2025-03-23 16:29:11.938 | INFO     | utils.utils:get_dividends:197 - ticker:CDW, dates:2025-03-11
+2025-03-23 16:29:12.474 | WARNING  | utils.utils:get_dividends:199 - Error ticker KEYS. 'dividendDate'
+2025-03-23 16:29:13.071 | INFO     | utils.utils:get_dividends:196 - ticker:HPE, info:1744934400
+2025-03-23 16:29:13.073 | INFO     | utils.utils:get_dividends:197 - ticker:HPE, dates:2025-04-18
+2025-03-23 16:29:13.658 | INFO     | utils.utils:get_dividends:196 - ticker:A, info:1745366400
+2025-03-23 16:29:13.660 | INFO     | utils.utils:get_dividends:197 - ticker:A, dates:2025-04-23
+2025-03-23 16:29:14.207 | INFO     | utils.utils:get_dividends:196 - ticker:MGM, info:1671062400
+2025-03-23 16:29:14.208 | INFO     | utils.utils:get_dividends:197 - ticker:MGM, dates:2022-12-15
+2025-03-23 16:29:14.755 | INFO     | utils.utils:get_dividends:196 - ticker:GNRC, info:1371772800
+2025-03-23 16:29:14.756 | INFO     | utils.utils:get_dividends:197 - ticker:GNRC, dates:2013-06-21
+2025-03-23 16:29:15.305 | INFO     | utils.utils:get_dividends:196 - ticker:BK, info:1738886400
+2025-03-23 16:29:15.307 | INFO     | utils.utils:get_dividends:197 - ticker:BK, dates:2025-02-07
+2025-03-23 16:29:15.854 | WARNING  | utils.utils:get_dividends:199 - Error ticker VRTX. 'dividendDate'
+2025-03-23 16:29:16.394 | WARNING  | utils.utils:get_dividends:199 - Error ticker PYPL. 'dividendDate'
+2025-03-23 16:29:16.943 | INFO     | utils.utils:get_dividends:196 - ticker:TECH, info:1740700800
+2025-03-23 16:29:16.944 | INFO     | utils.utils:get_dividends:197 - ticker:TECH, dates:2025-02-28
+2025-03-23 16:29:17.495 | INFO     | utils.utils:get_dividends:196 - ticker:WEC, info:1740787200
+2025-03-23 16:29:17.496 | INFO     | utils.utils:get_dividends:197 - ticker:WEC, dates:2025-03-01
+2025-03-23 16:29:18.042 | INFO     | utils.utils:get_dividends:196 - ticker:KLAC, info:1741046400
+2025-03-23 16:29:18.043 | INFO     | utils.utils:get_dividends:197 - ticker:KLAC, dates:2025-03-04
+2025-03-23 16:29:18.584 | INFO     | utils.utils:get_dividends:196 - ticker:APD, info:1747008000
+2025-03-23 16:29:18.586 | INFO     | utils.utils:get_dividends:197 - ticker:APD, dates:2025-05-12
+2025-03-23 16:29:19.144 | INFO     | utils.utils:get_dividends:196 - ticker:JBL, info:1741046400
+2025-03-23 16:29:19.145 | INFO     | utils.utils:get_dividends:197 - ticker:JBL, dates:2025-03-04
+2025-03-23 16:29:19.696 | INFO     | utils.utils:get_dividends:196 - ticker:LII, info:1736899200
+2025-03-23 16:29:19.698 | INFO     | utils.utils:get_dividends:197 - ticker:LII, dates:2025-01-15
+2025-03-23 16:29:20.247 | INFO     | utils.utils:get_dividends:196 - ticker:PNC, info:1738713600
+2025-03-23 16:29:20.248 | INFO     | utils.utils:get_dividends:197 - ticker:PNC, dates:2025-02-05
+2025-03-23 16:29:20.795 | INFO     | utils.utils:get_dividends:196 - ticker:COP, info:1740960000
+2025-03-23 16:29:20.796 | INFO     | utils.utils:get_dividends:197 - ticker:COP, dates:2025-03-03
+2025-03-23 16:29:21.346 | INFO     | utils.utils:get_dividends:196 - ticker:AXP, info:1746748800
+2025-03-23 16:29:21.347 | INFO     | utils.utils:get_dividends:197 - ticker:AXP, dates:2025-05-09
+2025-03-23 16:29:21.897 | INFO     | utils.utils:get_dividends:196 - ticker:NWS, info:1744156800
+2025-03-23 16:29:21.898 | INFO     | utils.utils:get_dividends:197 - ticker:NWS, dates:2025-04-09
+2025-03-23 16:29:22.444 | WARNING  | utils.utils:get_dividends:199 - Error ticker ANSS. 'dividendDate'
+2025-03-23 16:29:22.999 | INFO     | utils.utils:get_dividends:196 - ticker:ALB, info:1743465600
+2025-03-23 16:29:23.000 | INFO     | utils.utils:get_dividends:197 - ticker:ALB, dates:2025-04-01
+2025-03-23 16:29:23.548 | INFO     | utils.utils:get_dividends:196 - ticker:CB, info:1743724800
+2025-03-23 16:29:23.549 | INFO     | utils.utils:get_dividends:197 - ticker:CB, dates:2025-04-04
+2025-03-23 16:29:24.131 | INFO     | utils.utils:get_dividends:196 - ticker:GD, info:1746748800
+2025-03-23 16:29:24.132 | INFO     | utils.utils:get_dividends:197 - ticker:GD, dates:2025-05-09
+2025-03-23 16:29:24.681 | WARNING  | utils.utils:get_dividends:199 - Error ticker CMG. 'dividendDate'
+2025-03-23 16:29:25.225 | INFO     | utils.utils:get_dividends:196 - ticker:VICI, info:1743638400
+2025-03-23 16:29:25.226 | INFO     | utils.utils:get_dividends:197 - ticker:VICI, dates:2025-04-03
+2025-03-23 16:29:25.762 | INFO     | utils.utils:get_dividends:196 - ticker:AON, info:1739491200
+2025-03-23 16:29:25.763 | INFO     | utils.utils:get_dividends:197 - ticker:AON, dates:2025-02-14
+2025-03-23 16:29:26.304 | INFO     | utils.utils:get_dividends:196 - ticker:TSN, info:1741910400
+2025-03-23 16:29:26.306 | INFO     | utils.utils:get_dividends:197 - ticker:TSN, dates:2025-03-14
+2025-03-23 16:29:26.852 | INFO     | utils.utils:get_dividends:196 - ticker:GE, info:1745539200
+2025-03-23 16:29:26.855 | INFO     | utils.utils:get_dividends:197 - ticker:GE, dates:2025-04-25
+2025-03-23 16:29:27.425 | INFO     | utils.utils:get_dividends:196 - ticker:HRL, info:1739836800
+2025-03-23 16:29:27.426 | INFO     | utils.utils:get_dividends:197 - ticker:HRL, dates:2025-02-18
+2025-03-23 16:29:27.972 | INFO     | utils.utils:get_dividends:196 - ticker:TMUS, info:1749686400
+2025-03-23 16:29:27.973 | INFO     | utils.utils:get_dividends:197 - ticker:TMUS, dates:2025-06-12
+2025-03-23 16:29:28.521 | INFO     | utils.utils:get_dividends:196 - ticker:KMI, info:1739836800
+2025-03-23 16:29:28.521 | INFO     | utils.utils:get_dividends:197 - ticker:KMI, dates:2025-02-18
+2025-03-23 16:29:29.059 | INFO     | utils.utils:get_dividends:196 - ticker:QCOM, info:1743033600
+2025-03-23 16:29:29.059 | INFO     | utils.utils:get_dividends:197 - ticker:QCOM, dates:2025-03-27
+2025-03-23 16:29:29.598 | INFO     | utils.utils:get_dividends:196 - ticker:COF, info:1740960000
+2025-03-23 16:29:29.599 | INFO     | utils.utils:get_dividends:197 - ticker:COF, dates:2025-03-03
+2025-03-23 16:29:30.144 | WARNING  | utils.utils:get_dividends:199 - Error ticker ISRG. 'dividendDate'
+2025-03-23 16:29:30.700 | INFO     | utils.utils:get_dividends:196 - ticker:HAL, info:1742947200
+2025-03-23 16:29:30.702 | INFO     | utils.utils:get_dividends:197 - ticker:HAL, dates:2025-03-26
+2025-03-23 16:29:31.233 | INFO     | utils.utils:get_dividends:196 - ticker:VLO, info:1740960000
+2025-03-23 16:29:31.233 | INFO     | utils.utils:get_dividends:197 - ticker:VLO, dates:2025-03-03
+2025-03-23 16:29:31.776 | INFO     | utils.utils:get_dividends:196 - ticker:MS, info:1739491200
+2025-03-23 16:29:31.776 | INFO     | utils.utils:get_dividends:197 - ticker:MS, dates:2025-02-14
+2025-03-23 16:29:32.323 | INFO     | utils.utils:get_dividends:196 - ticker:WFC, info:1740787200
+2025-03-23 16:29:32.324 | INFO     | utils.utils:get_dividends:197 - ticker:WFC, dates:2025-03-01
+2025-03-23 16:29:32.880 | INFO     | utils.utils:get_dividends:196 - ticker:ADI, info:1742169600
+2025-03-23 16:29:32.881 | INFO     | utils.utils:get_dividends:197 - ticker:ADI, dates:2025-03-17
+2025-03-23 16:29:33.431 | INFO     | utils.utils:get_dividends:196 - ticker:HIG, info:1743552000
+2025-03-23 16:29:33.431 | INFO     | utils.utils:get_dividends:197 - ticker:HIG, dates:2025-04-02
+2025-03-23 16:29:33.977 | INFO     | utils.utils:get_dividends:196 - ticker:FDS, info:1742428800
+2025-03-23 16:29:33.977 | INFO     | utils.utils:get_dividends:197 - ticker:FDS, dates:2025-03-20
+2025-03-23 16:29:34.712 | INFO     | utils.utils:get_dividends:196 - ticker:VZ, info:1746057600
+2025-03-23 16:29:34.713 | INFO     | utils.utils:get_dividends:197 - ticker:VZ, dates:2025-05-01
+2025-03-23 16:29:35.260 | INFO     | utils.utils:get_dividends:196 - ticker:AMAT, info:1749686400
+2025-03-23 16:29:35.262 | INFO     | utils.utils:get_dividends:197 - ticker:AMAT, dates:2025-06-12
+2025-03-23 16:29:35.805 | INFO     | utils.utils:get_dividends:196 - ticker:MTCH, info:1744848000
+2025-03-23 16:29:35.806 | INFO     | utils.utils:get_dividends:197 - ticker:MTCH, dates:2025-04-17
+2025-03-23 16:29:36.355 | INFO     | utils.utils:get_dividends:196 - ticker:D, info:1742428800
+2025-03-23 16:29:36.356 | INFO     | utils.utils:get_dividends:197 - ticker:D, dates:2025-03-20
+2025-03-23 16:29:36.899 | INFO     | utils.utils:get_dividends:196 - ticker:LRCX, info:1744156800
+2025-03-23 16:29:36.901 | INFO     | utils.utils:get_dividends:197 - ticker:LRCX, dates:2025-04-09
+2025-03-23 16:29:37.442 | INFO     | utils.utils:get_dividends:196 - ticker:MPC, info:1741564800
+2025-03-23 16:29:37.443 | INFO     | utils.utils:get_dividends:197 - ticker:MPC, dates:2025-03-10
+2025-03-23 16:29:37.994 | INFO     | utils.utils:get_dividends:196 - ticker:AES, info:1747267200
+2025-03-23 16:29:37.995 | INFO     | utils.utils:get_dividends:197 - ticker:AES, dates:2025-05-15
+2025-03-23 16:29:38.535 | INFO     | utils.utils:get_dividends:196 - ticker:TXN, info:1739232000
+2025-03-23 16:29:38.537 | INFO     | utils.utils:get_dividends:197 - ticker:TXN, dates:2025-02-11
+2025-03-23 16:29:39.081 | INFO     | utils.utils:get_dividends:196 - ticker:ODFL, info:1742342400
+2025-03-23 16:29:39.082 | INFO     | utils.utils:get_dividends:197 - ticker:ODFL, dates:2025-03-19
+2025-03-23 16:29:39.620 | WARNING  | utils.utils:get_dividends:199 - Error ticker BSX. 'dividendDate'
+2025-03-23 16:29:40.170 | INFO     | utils.utils:get_dividends:196 - ticker:INVH, info:1744848000
+2025-03-23 16:29:40.171 | INFO     | utils.utils:get_dividends:197 - ticker:INVH, dates:2025-04-17
+2025-03-23 16:29:40.713 | WARNING  | utils.utils:get_dividends:199 - Error ticker CBRE. 'dividendDate'
+2025-03-23 16:29:41.259 | INFO     | utils.utils:get_dividends:196 - ticker:LUV, info:1743552000
+2025-03-23 16:29:41.260 | INFO     | utils.utils:get_dividends:197 - ticker:LUV, dates:2025-04-02
+2025-03-23 16:29:41.801 | INFO     | utils.utils:get_dividends:196 - ticker:DLR, info:1743379200
+2025-03-23 16:29:41.802 | INFO     | utils.utils:get_dividends:197 - ticker:DLR, dates:2025-03-31
+2025-03-23 16:29:42.344 | INFO     | utils.utils:get_dividends:196 - ticker:GM, info:1742428800
+2025-03-23 16:29:42.345 | INFO     | utils.utils:get_dividends:197 - ticker:GM, dates:2025-03-20
+2025-03-23 16:29:42.892 | WARNING  | utils.utils:get_dividends:199 - Error ticker PDD. 'dividendDate'
+2025-03-23 16:29:43.452 | INFO     | utils.utils:get_dividends:196 - ticker:PWR, info:1736726400
+2025-03-23 16:29:43.453 | INFO     | utils.utils:get_dividends:197 - ticker:PWR, dates:2025-01-13
+2025-03-23 16:29:43.998 | WARNING  | utils.utils:get_dividends:199 - Error ticker MRNA. 'dividendDate'
+2025-03-23 16:29:44.538 | INFO     | utils.utils:get_dividends:196 - ticker:UNH, info:1742256000
+2025-03-23 16:29:44.539 | INFO     | utils.utils:get_dividends:197 - ticker:UNH, dates:2025-03-18
+2025-03-23 16:29:45.083 | INFO     | utils.utils:get_dividends:196 - ticker:MKTX, info:1741132800
+2025-03-23 16:29:45.085 | INFO     | utils.utils:get_dividends:197 - ticker:MKTX, dates:2025-03-05
+2025-03-23 16:29:45.630 | INFO     | utils.utils:get_dividends:196 - ticker:CI, info:1742428800
+2025-03-23 16:29:45.631 | INFO     | utils.utils:get_dividends:197 - ticker:CI, dates:2025-03-20
+2025-03-23 16:29:46.159 | INFO     | utils.utils:get_dividends:196 - ticker:NI, info:1740009600
+2025-03-23 16:29:46.159 | INFO     | utils.utils:get_dividends:197 - ticker:NI, dates:2025-02-20
+2025-03-23 16:29:46.690 | WARNING  | utils.utils:get_dividends:199 - Error ticker PANW. 'dividendDate'
+2025-03-23 16:29:47.245 | INFO     | utils.utils:get_dividends:196 - ticker:WMT, info:1767571200
+2025-03-23 16:29:47.246 | INFO     | utils.utils:get_dividends:197 - ticker:WMT, dates:2026-01-05
+2025-03-23 16:29:47.798 | INFO     | utils.utils:get_dividends:196 - ticker:WM, info:1743120000
+2025-03-23 16:29:47.799 | INFO     | utils.utils:get_dividends:197 - ticker:WM, dates:2025-03-28
+2025-03-23 16:29:48.337 | INFO     | utils.utils:get_dividends:196 - ticker:IP, info:1742169600
+2025-03-23 16:29:48.338 | INFO     | utils.utils:get_dividends:197 - ticker:IP, dates:2025-03-17
+2025-03-23 16:29:49.071 | INFO     | utils.utils:get_dividends:196 - ticker:RJF, info:1744675200
+2025-03-23 16:29:49.072 | INFO     | utils.utils:get_dividends:197 - ticker:RJF, dates:2025-04-15
+2025-03-23 16:29:49.614 | WARNING  | utils.utils:get_dividends:199 - Error ticker PODD. 'dividendDate'
+2025-03-23 16:29:50.148 | WARNING  | utils.utils:get_dividends:199 - Error ticker ENPH. 'dividendDate'
+2025-03-23 16:29:50.686 | WARNING  | utils.utils:get_dividends:199 - Error ticker CPRT. 'dividendDate'
+2025-03-23 16:29:51.230 | INFO     | utils.utils:get_dividends:196 - ticker:PEP, info:1743379200
+2025-03-23 16:29:51.232 | INFO     | utils.utils:get_dividends:197 - ticker:PEP, dates:2025-03-31
+2025-03-23 16:29:51.772 | INFO     | utils.utils:get_dividends:196 - ticker:DE, info:1746662400
+2025-03-23 16:29:51.773 | INFO     | utils.utils:get_dividends:197 - ticker:DE, dates:2025-05-08
+2025-03-23 16:29:52.316 | WARNING  | utils.utils:get_dividends:199 - Error ticker PTC. 'dividendDate'
+2025-03-23 16:29:52.869 | INFO     | utils.utils:get_dividends:196 - ticker:CAH, info:1744675200
+2025-03-23 16:29:52.870 | INFO     | utils.utils:get_dividends:197 - ticker:CAH, dates:2025-04-15
+2025-03-23 16:29:53.520 | INFO     | utils.utils:get_dividends:196 - ticker:ES, info:1743379200
+2025-03-23 16:29:53.521 | INFO     | utils.utils:get_dividends:197 - ticker:ES, dates:2025-03-31
+2025-03-23 16:29:54.073 | INFO     | utils.utils:get_dividends:196 - ticker:RF, info:1743465600
+2025-03-23 16:29:54.074 | INFO     | utils.utils:get_dividends:197 - ticker:RF, dates:2025-04-01
+2025-03-23 16:29:54.616 | WARNING  | utils.utils:get_dividends:199 - Error ticker IT. 'dividendDate'
+2025-03-23 16:29:55.161 | WARNING  | utils.utils:get_dividends:199 - Error ticker GFS. 'dividendDate'
+2025-03-23 16:29:55.702 | INFO     | utils.utils:get_dividends:196 - ticker:LHX, info:1742515200
+2025-03-23 16:29:55.703 | INFO     | utils.utils:get_dividends:197 - ticker:LHX, dates:2025-03-21
+2025-03-23 16:29:56.246 | INFO     | utils.utils:get_dividends:196 - ticker:GWW, info:1740787200
+2025-03-23 16:29:56.246 | INFO     | utils.utils:get_dividends:197 - ticker:GWW, dates:2025-03-01
+2025-03-23 16:29:56.786 | INFO     | utils.utils:get_dividends:196 - ticker:MAS, info:1741564800
+2025-03-23 16:29:56.788 | INFO     | utils.utils:get_dividends:197 - ticker:MAS, dates:2025-03-10
+2025-03-23 16:29:57.333 | INFO     | utils.utils:get_dividends:196 - ticker:FRT, info:1744675200
+2025-03-23 16:29:57.334 | INFO     | utils.utils:get_dividends:197 - ticker:FRT, dates:2025-04-15
+2025-03-23 16:29:57.891 | WARNING  | utils.utils:get_dividends:199 - Error ticker NOW. 'dividendDate'
+2025-03-23 16:29:58.433 | WARNING  | utils.utils:get_dividends:199 - Error ticker CZR. 'dividendDate'
+2025-03-23 16:29:59.005 | INFO     | utils.utils:get_dividends:196 - ticker:DOC, info:1740528000
+2025-03-23 16:29:59.006 | INFO     | utils.utils:get_dividends:197 - ticker:DOC, dates:2025-02-26
+2025-03-23 16:29:59.547 | INFO     | utils.utils:get_dividends:196 - ticker:PFE, info:1741305600
+2025-03-23 16:29:59.548 | INFO     | utils.utils:get_dividends:197 - ticker:PFE, dates:2025-03-07
+2025-03-23 16:30:00.094 | WARNING  | utils.utils:get_dividends:199 - Error ticker CDNS. 'dividendDate'
+2025-03-23 16:30:00.812 | WARNING  | utils.utils:get_dividends:199 - Error ticker KMX. 'dividendDate'
+2025-03-23 16:30:01.365 | INFO     | utils.utils:get_dividends:196 - ticker:TDG, info:1729209600
+2025-03-23 16:30:01.366 | INFO     | utils.utils:get_dividends:197 - ticker:TDG, dates:2024-10-18
+2025-03-23 16:30:01.920 | INFO     | utils.utils:get_dividends:196 - ticker:CHD, info:1740960000
+2025-03-23 16:30:01.921 | INFO     | utils.utils:get_dividends:197 - ticker:CHD, dates:2025-03-03
+2025-03-23 16:30:02.475 | INFO     | utils.utils:get_dividends:196 - ticker:CL, info:1739491200
+2025-03-23 16:30:02.477 | INFO     | utils.utils:get_dividends:197 - ticker:CL, dates:2025-02-14
+2025-03-23 16:30:03.021 | INFO     | utils.utils:get_dividends:196 - ticker:PEG, info:1743379200
+2025-03-23 16:30:03.022 | INFO     | utils.utils:get_dividends:197 - ticker:PEG, dates:2025-03-31
+2025-03-23 16:30:03.591 | INFO     | utils.utils:get_dividends:196 - ticker:SLB, info:1743638400
+2025-03-23 16:30:03.592 | INFO     | utils.utils:get_dividends:197 - ticker:SLB, dates:2025-04-03
+2025-03-23 16:30:04.276 | INFO     | utils.utils:get_dividends:196 - ticker:HUBB, info:1742169600
+2025-03-23 16:30:04.277 | INFO     | utils.utils:get_dividends:197 - ticker:HUBB, dates:2025-03-17
+2025-03-23 16:30:04.819 | INFO     | utils.utils:get_dividends:196 - ticker:ROP, info:1745280000
+2025-03-23 16:30:04.820 | INFO     | utils.utils:get_dividends:197 - ticker:ROP, dates:2025-04-22
+2025-03-23 16:30:05.361 | INFO     | utils.utils:get_dividends:196 - ticker:LH, info:1741737600
+2025-03-23 16:30:05.362 | INFO     | utils.utils:get_dividends:197 - ticker:LH, dates:2025-03-12
+2025-03-23 16:30:05.900 | INFO     | utils.utils:get_dividends:196 - ticker:EXPD, info:1734307200
+2025-03-23 16:30:05.902 | INFO     | utils.utils:get_dividends:197 - ticker:EXPD, dates:2024-12-16
+2025-03-23 16:30:06.448 | INFO     | utils.utils:get_dividends:196 - ticker:JNPR, info:1742774400
+2025-03-23 16:30:06.448 | INFO     | utils.utils:get_dividends:197 - ticker:JNPR, dates:2025-03-24
+2025-03-23 16:30:06.995 | INFO     | utils.utils:get_dividends:196 - ticker:CARR, info:1738886400
+2025-03-23 16:30:06.996 | INFO     | utils.utils:get_dividends:197 - ticker:CARR, dates:2025-02-07
+2025-03-23 16:30:07.541 | INFO     | utils.utils:get_dividends:196 - ticker:RTX, info:1742428800
+2025-03-23 16:30:07.542 | INFO     | utils.utils:get_dividends:197 - ticker:RTX, dates:2025-03-20
+2025-03-23 16:30:08.081 | INFO     | utils.utils:get_dividends:196 - ticker:MET, info:1741651200
+2025-03-23 16:30:08.082 | INFO     | utils.utils:get_dividends:197 - ticker:MET, dates:2025-03-11
+2025-03-23 16:30:08.625 | INFO     | utils.utils:get_dividends:196 - ticker:INTU, info:1744934400
+2025-03-23 16:30:08.627 | INFO     | utils.utils:get_dividends:197 - ticker:INTU, dates:2025-04-18
+2025-03-23 16:30:09.166 | INFO     | utils.utils:get_dividends:196 - ticker:AIZ, info:1743379200
+2025-03-23 16:30:09.168 | INFO     | utils.utils:get_dividends:197 - ticker:AIZ, dates:2025-03-31
+2025-03-23 16:30:09.719 | INFO     | utils.utils:get_dividends:196 - ticker:ATO, info:1741564800
+2025-03-23 16:30:09.720 | INFO     | utils.utils:get_dividends:197 - ticker:ATO, dates:2025-03-10
+2025-03-23 16:30:10.269 | INFO     | utils.utils:get_dividends:196 - ticker:MCO, info:1741910400
+2025-03-23 16:30:10.270 | INFO     | utils.utils:get_dividends:197 - ticker:MCO, dates:2025-03-14
+2025-03-23 16:30:10.830 | WARNING  | utils.utils:get_dividends:199 - Error ticker MDB. 'dividendDate'
+2025-03-23 16:30:11.403 | WARNING  | utils.utils:get_dividends:199 - Error ticker DASH. 'dividendDate'
+2025-03-23 16:30:11.944 | INFO     | utils.utils:get_dividends:196 - ticker:TAP, info:1741910400
+2025-03-23 16:30:11.944 | INFO     | utils.utils:get_dividends:197 - ticker:TAP, dates:2025-03-14
+2025-03-23 16:30:12.497 | INFO     | utils.utils:get_dividends:196 - ticker:EXC, info:1741910400
+2025-03-23 16:30:12.499 | INFO     | utils.utils:get_dividends:197 - ticker:EXC, dates:2025-03-14
+2025-03-23 16:30:13.046 | INFO     | utils.utils:get_dividends:196 - ticker:DAL, info:1742428800
+2025-03-23 16:30:13.047 | INFO     | utils.utils:get_dividends:197 - ticker:DAL, dates:2025-03-20
+2025-03-23 16:30:13.620 | INFO     | utils.utils:get_dividends:196 - ticker:SWKS, info:1742169600
+2025-03-23 16:30:13.622 | INFO     | utils.utils:get_dividends:197 - ticker:SWKS, dates:2025-03-17
+2025-03-23 16:30:14.191 | INFO     | utils.utils:get_dividends:196 - ticker:VTR, info:1744848000
+2025-03-23 16:30:14.192 | INFO     | utils.utils:get_dividends:197 - ticker:VTR, dates:2025-04-17
+2025-03-23 16:30:14.741 | WARNING  | utils.utils:get_dividends:199 - Error ticker FFIV. 'dividendDate'
+2025-03-23 16:30:15.290 | INFO     | utils.utils:get_dividends:196 - ticker:VST, info:1743379200
+2025-03-23 16:30:15.290 | INFO     | utils.utils:get_dividends:197 - ticker:VST, dates:2025-03-31
+2025-03-23 16:30:15.847 | INFO     | utils.utils:get_dividends:196 - ticker:O, info:1744675200
+2025-03-23 16:30:15.848 | INFO     | utils.utils:get_dividends:197 - ticker:O, dates:2025-04-15
+2025-03-23 16:30:16.377 | WARNING  | utils.utils:get_dividends:199 - Error ticker ABNB. 'dividendDate'
+2025-03-23 16:30:16.920 | INFO     | utils.utils:get_dividends:196 - ticker:FICO, info:1489708800
+2025-03-23 16:30:16.920 | INFO     | utils.utils:get_dividends:197 - ticker:FICO, dates:2017-03-17
+2025-03-23 16:30:17.472 | INFO     | utils.utils:get_dividends:196 - ticker:JBHT, info:1740096000
+2025-03-23 16:30:17.473 | INFO     | utils.utils:get_dividends:197 - ticker:JBHT, dates:2025-02-21
+2025-03-23 16:30:18.019 | INFO     | utils.utils:get_dividends:196 - ticker:SHW, info:1741910400
+2025-03-23 16:30:18.020 | INFO     | utils.utils:get_dividends:197 - ticker:SHW, dates:2025-03-14
+2025-03-23 16:30:18.570 | INFO     | utils.utils:get_dividends:196 - ticker:CVX, info:1741564800
+2025-03-23 16:30:18.573 | INFO     | utils.utils:get_dividends:197 - ticker:CVX, dates:2025-03-10
+2025-03-23 16:30:19.133 | INFO     | utils.utils:get_dividends:196 - ticker:GL, info:1746057600
+2025-03-23 16:30:19.134 | INFO     | utils.utils:get_dividends:197 - ticker:GL, dates:2025-05-01
+2025-03-23 16:30:19.696 | INFO     | utils.utils:get_dividends:196 - ticker:NTAP, info:1745366400
+2025-03-23 16:30:19.697 | INFO     | utils.utils:get_dividends:197 - ticker:NTAP, dates:2025-04-23
+2025-03-23 16:30:20.235 | INFO     | utils.utils:get_dividends:196 - ticker:MSI, info:1744675200
+2025-03-23 16:30:20.236 | INFO     | utils.utils:get_dividends:197 - ticker:MSI, dates:2025-04-15
+2025-03-23 16:30:20.775 | INFO     | utils.utils:get_dividends:196 - ticker:AMP, info:1740700800
+2025-03-23 16:30:20.776 | INFO     | utils.utils:get_dividends:197 - ticker:AMP, dates:2025-02-28
+2025-03-23 16:30:21.320 | WARNING  | utils.utils:get_dividends:199 - Error ticker AXON. 'dividendDate'
+2025-03-23 16:30:21.862 | INFO     | utils.utils:get_dividends:196 - ticker:MDLZ, info:1744588800
+2025-03-23 16:30:21.863 | INFO     | utils.utils:get_dividends:197 - ticker:MDLZ, dates:2025-04-14
+2025-03-23 16:30:22.445 | INFO     | utils.utils:get_dividends:196 - ticker:CAT, info:1740009600
+2025-03-23 16:30:22.446 | INFO     | utils.utils:get_dividends:197 - ticker:CAT, dates:2025-02-20
+2025-03-23 16:30:22.995 | INFO     | utils.utils:get_dividends:196 - ticker:WAB, info:1741305600
+2025-03-23 16:30:22.996 | INFO     | utils.utils:get_dividends:197 - ticker:WAB, dates:2025-03-07
+2025-03-23 16:30:23.546 | INFO     | utils.utils:get_dividends:196 - ticker:AOS, info:1739836800
+2025-03-23 16:30:23.547 | INFO     | utils.utils:get_dividends:197 - ticker:AOS, dates:2025-02-18
+2025-03-23 16:30:24.091 | INFO     | utils.utils:get_dividends:196 - ticker:TFC, info:1740960000
+2025-03-23 16:30:24.092 | INFO     | utils.utils:get_dividends:197 - ticker:TFC, dates:2025-03-03
+2025-03-23 16:30:24.644 | INFO     | utils.utils:get_dividends:196 - ticker:KEY, info:1741910400
+2025-03-23 16:30:24.645 | INFO     | utils.utils:get_dividends:197 - ticker:KEY, dates:2025-03-14
+2025-03-23 16:30:25.188 | INFO     | utils.utils:get_dividends:196 - ticker:LNT, info:1739836800
+2025-03-23 16:30:25.189 | INFO     | utils.utils:get_dividends:197 - ticker:LNT, dates:2025-02-18
+2025-03-23 16:30:25.734 | INFO     | utils.utils:get_dividends:196 - ticker:HD, info:1743033600
+2025-03-23 16:30:25.735 | INFO     | utils.utils:get_dividends:197 - ticker:HD, dates:2025-03-27
+2025-03-23 16:30:26.280 | INFO     | utils.utils:get_dividends:196 - ticker:HSY, info:1741910400
+2025-03-23 16:30:26.281 | INFO     | utils.utils:get_dividends:197 - ticker:HSY, dates:2025-03-14
+2025-03-23 16:30:26.834 | INFO     | utils.utils:get_dividends:196 - ticker:ADP, info:1743465600
+2025-03-23 16:30:26.836 | INFO     | utils.utils:get_dividends:197 - ticker:ADP, dates:2025-04-01
+2025-03-23 16:30:27.380 | INFO     | utils.utils:get_dividends:196 - ticker:LKQ, info:1743033600
+2025-03-23 16:30:27.381 | INFO     | utils.utils:get_dividends:197 - ticker:LKQ, dates:2025-03-27
+2025-03-23 16:30:27.927 | INFO     | utils.utils:get_dividends:196 - ticker:VRSN, info:1305676800
+2025-03-23 16:30:27.928 | INFO     | utils.utils:get_dividends:197 - ticker:VRSN, dates:2011-05-18
+2025-03-23 16:30:28.475 | WARNING  | utils.utils:get_dividends:199 - Error ticker PLTR. 'dividendDate'
+2025-03-23 16:30:29.192 | WARNING  | utils.utils:get_dividends:199 - Error ticker SMCI. 'dividendDate'
+2025-03-23 16:30:29.745 | INFO     | utils.utils:get_dividends:196 - ticker:CMI, info:1741219200
+2025-03-23 16:30:29.745 | INFO     | utils.utils:get_dividends:197 - ticker:CMI, dates:2025-03-06
+2025-03-23 16:30:30.280 | WARNING  | utils.utils:get_dividends:199 - Error ticker CHTR. 'dividendDate'
+2025-03-23 16:30:30.848 | INFO     | utils.utils:get_dividends:196 - ticker:POOL, info:1742947200
+2025-03-23 16:30:30.849 | INFO     | utils.utils:get_dividends:197 - ticker:POOL, dates:2025-03-26
+2025-03-23 16:30:31.381 | WARNING  | utils.utils:get_dividends:199 - Error ticker FSLR. 'dividendDate'
+2025-03-23 16:30:31.922 | INFO     | utils.utils:get_dividends:196 - ticker:TPL, info:1742169600
+2025-03-23 16:30:31.922 | INFO     | utils.utils:get_dividends:197 - ticker:TPL, dates:2025-03-17
+2025-03-23 16:30:32.471 | INFO     | utils.utils:get_dividends:196 - ticker:CBOE, info:1741910400
+2025-03-23 16:30:32.473 | INFO     | utils.utils:get_dividends:197 - ticker:CBOE, dates:2025-03-14
+2025-03-23 16:30:33.008 | INFO     | utils.utils:get_dividends:196 - ticker:EMN, info:1743984000
+2025-03-23 16:30:33.009 | INFO     | utils.utils:get_dividends:197 - ticker:EMN, dates:2025-04-07
+2025-03-23 16:30:33.550 | INFO     | utils.utils:get_dividends:196 - ticker:BR, info:1743638400
+2025-03-23 16:30:33.551 | INFO     | utils.utils:get_dividends:197 - ticker:BR, dates:2025-04-03
+2025-03-23 16:30:34.087 | INFO     | utils.utils:get_dividends:196 - ticker:TFX, info:1742169600
+2025-03-23 16:30:34.089 | INFO     | utils.utils:get_dividends:197 - ticker:TFX, dates:2025-03-17
+2025-03-23 16:30:34.626 | INFO     | utils.utils:get_dividends:196 - ticker:PSA, info:1743120000
+2025-03-23 16:30:34.628 | INFO     | utils.utils:get_dividends:197 - ticker:PSA, dates:2025-03-28
+2025-03-23 16:30:35.172 | INFO     | utils.utils:get_dividends:196 - ticker:CMS, info:1740700800
+2025-03-23 16:30:35.173 | INFO     | utils.utils:get_dividends:197 - ticker:CMS, dates:2025-02-28
+2025-03-23 16:30:35.721 | WARNING  | utils.utils:get_dividends:199 - Error ticker ALGN. 'dividendDate'
+2025-03-23 16:30:36.271 | INFO     | utils.utils:get_dividends:196 - ticker:MKC, info:1736726400
+2025-03-23 16:30:36.274 | INFO     | utils.utils:get_dividends:197 - ticker:MKC, dates:2025-01-13
+2025-03-23 16:30:36.816 | INFO     | utils.utils:get_dividends:196 - ticker:NRG, info:1739836800
+2025-03-23 16:30:36.817 | INFO     | utils.utils:get_dividends:197 - ticker:NRG, dates:2025-02-18
+2025-03-23 16:30:37.359 | INFO     | utils.utils:get_dividends:196 - ticker:ACGL, info:1733270400
+2025-03-23 16:30:37.360 | INFO     | utils.utils:get_dividends:197 - ticker:ACGL, dates:2024-12-04
+2025-03-23 16:30:37.915 | INFO     | utils.utils:get_dividends:196 - ticker:PSX, info:1741132800
+2025-03-23 16:30:37.916 | INFO     | utils.utils:get_dividends:197 - ticker:PSX, dates:2025-03-05
+2025-03-23 16:30:38.472 | INFO     | utils.utils:get_dividends:196 - ticker:ACN, info:1739491200
+2025-03-23 16:30:38.473 | INFO     | utils.utils:get_dividends:197 - ticker:ACN, dates:2025-02-14
+2025-03-23 16:30:39.019 | INFO     | utils.utils:get_dividends:196 - ticker:WY, info:1742515200
+2025-03-23 16:30:39.020 | INFO     | utils.utils:get_dividends:197 - ticker:WY, dates:2025-03-21
+2025-03-23 16:30:39.567 | INFO     | utils.utils:get_dividends:196 - ticker:ULTA, info:1337040000
+2025-03-23 16:30:39.568 | INFO     | utils.utils:get_dividends:197 - ticker:ULTA, dates:2012-05-15
+2025-03-23 16:30:40.116 | INFO     | utils.utils:get_dividends:196 - ticker:EFX, info:1741910400
+2025-03-23 16:30:40.118 | INFO     | utils.utils:get_dividends:197 - ticker:EFX, dates:2025-03-14
+2025-03-23 16:30:40.670 | INFO     | utils.utils:get_dividends:196 - ticker:GIS, info:1746057600
+2025-03-23 16:30:40.672 | INFO     | utils.utils:get_dividends:197 - ticker:GIS, dates:2025-05-01
+2025-03-23 16:30:41.224 | WARNING  | utils.utils:get_dividends:199 - Error ticker NCLH. 'dividendDate'
+2025-03-23 16:30:41.773 | INFO     | utils.utils:get_dividends:196 - ticker:FIS, info:1742860800
+2025-03-23 16:30:41.775 | INFO     | utils.utils:get_dividends:197 - ticker:FIS, dates:2025-03-25
+2025-03-23 16:30:42.326 | INFO     | utils.utils:get_dividends:196 - ticker:BKR, info:1740096000
+2025-03-23 16:30:42.327 | INFO     | utils.utils:get_dividends:197 - ticker:BKR, dates:2025-02-21
+2025-03-23 16:30:42.878 | INFO     | utils.utils:get_dividends:196 - ticker:KKR, info:1740700800
+2025-03-23 16:30:42.880 | INFO     | utils.utils:get_dividends:197 - ticker:KKR, dates:2025-02-28
+2025-03-23 16:30:43.426 | INFO     | utils.utils:get_dividends:196 - ticker:DG, info:1745280000
+2025-03-23 16:30:43.427 | INFO     | utils.utils:get_dividends:197 - ticker:DG, dates:2025-04-22
+2025-03-23 16:30:43.976 | INFO     | utils.utils:get_dividends:196 - ticker:EBAY, info:1743120000
+2025-03-23 16:30:43.976 | INFO     | utils.utils:get_dividends:197 - ticker:EBAY, dates:2025-03-28
+2025-03-23 16:30:44.540 | INFO     | utils.utils:get_dividends:196 - ticker:STLD, info:1744329600
+2025-03-23 16:30:44.540 | INFO     | utils.utils:get_dividends:197 - ticker:STLD, dates:2025-04-11
+2025-03-23 16:30:45.086 | WARNING  | utils.utils:get_dividends:199 - Error ticker AZO. 'dividendDate'
+2025-03-23 16:30:45.641 | INFO     | utils.utils:get_dividends:196 - ticker:EQT, info:1740960000
+2025-03-23 16:30:45.642 | INFO     | utils.utils:get_dividends:197 - ticker:EQT, dates:2025-03-03
+2025-03-23 16:30:46.183 | INFO     | utils.utils:get_dividends:196 - ticker:ROL, info:1741564800
+2025-03-23 16:30:46.184 | INFO     | utils.utils:get_dividends:197 - ticker:ROL, dates:2025-03-10
+2025-03-23 16:30:46.722 | INFO     | utils.utils:get_dividends:196 - ticker:STZ, info:1740096000
+2025-03-23 16:30:46.723 | INFO     | utils.utils:get_dividends:197 - ticker:STZ, dates:2025-02-21
+2025-03-23 16:30:47.252 | WARNING  | utils.utils:get_dividends:199 - Error ticker ARM. 'dividendDate'
+2025-03-23 16:30:47.793 | INFO     | utils.utils:get_dividends:196 - ticker:ASML, info:1746489600
+2025-03-23 16:30:47.793 | INFO     | utils.utils:get_dividends:197 - ticker:ASML, dates:2025-05-06
+2025-03-23 16:30:48.328 | INFO     | utils.utils:get_dividends:196 - ticker:CFG, info:1739491200
+2025-03-23 16:30:48.329 | INFO     | utils.utils:get_dividends:197 - ticker:CFG, dates:2025-02-14
+2025-03-23 16:30:48.868 | INFO     | utils.utils:get_dividends:196 - ticker:PFG, info:1743120000
+2025-03-23 16:30:48.868 | INFO     | utils.utils:get_dividends:197 - ticker:PFG, dates:2025-03-28
+2025-03-23 16:30:49.414 | INFO     | utils.utils:get_dividends:196 - ticker:DHI, info:1739491200
+2025-03-23 16:30:49.415 | INFO     | utils.utils:get_dividends:197 - ticker:DHI, dates:2025-02-14
+2025-03-23 16:30:49.959 | INFO     | utils.utils:get_dividends:196 - ticker:NEM, info:1743033600
+2025-03-23 16:30:49.960 | INFO     | utils.utils:get_dividends:197 - ticker:NEM, dates:2025-03-27
+2025-03-23 16:30:50.507 | INFO     | utils.utils:get_dividends:196 - ticker:FDX, info:1743465600
+2025-03-23 16:30:50.508 | INFO     | utils.utils:get_dividends:197 - ticker:FDX, dates:2025-04-01
+2025-03-23 16:30:51.064 | INFO     | utils.utils:get_dividends:196 - ticker:UPS, info:1741219200
+2025-03-23 16:30:51.065 | INFO     | utils.utils:get_dividends:197 - ticker:UPS, dates:2025-03-06
+2025-03-23 16:30:51.629 | INFO     | utils.utils:get_dividends:196 - ticker:STE, info:1742515200
+2025-03-23 16:30:51.630 | INFO     | utils.utils:get_dividends:197 - ticker:STE, dates:2025-03-21
+2025-03-23 16:30:52.170 | INFO     | utils.utils:get_dividends:196 - ticker:MTB, info:1743379200
+2025-03-23 16:30:52.171 | INFO     | utils.utils:get_dividends:197 - ticker:MTB, dates:2025-03-31
+2025-03-23 16:30:52.728 | INFO     | utils.utils:get_dividends:196 - ticker:HON, info:1741910400
+2025-03-23 16:30:52.730 | INFO     | utils.utils:get_dividends:197 - ticker:HON, dates:2025-03-14
+2025-03-23 16:30:53.294 | INFO     | utils.utils:get_dividends:196 - ticker:COO, info:1691712000
+2025-03-23 16:30:53.296 | INFO     | utils.utils:get_dividends:197 - ticker:COO, dates:2023-08-11
+2025-03-23 16:30:53.844 | INFO     | utils.utils:get_dividends:196 - ticker:IRM, info:1743724800
+2025-03-23 16:30:53.846 | INFO     | utils.utils:get_dividends:197 - ticker:IRM, dates:2025-04-04
+2025-03-23 16:30:54.383 | INFO     | utils.utils:get_dividends:196 - ticker:VTRS, info:1742256000
+2025-03-23 16:30:54.384 | INFO     | utils.utils:get_dividends:197 - ticker:VTRS, dates:2025-03-18
+2025-03-23 16:30:54.934 | INFO     | utils.utils:get_dividends:196 - ticker:MDT, info:1744329600
+2025-03-23 16:30:54.935 | INFO     | utils.utils:get_dividends:197 - ticker:MDT, dates:2025-04-11
+2025-03-23 16:30:55.474 | INFO     | utils.utils:get_dividends:196 - ticker:COST, info:1740096000
+2025-03-23 16:30:55.475 | INFO     | utils.utils:get_dividends:197 - ticker:COST, dates:2025-02-21
+2025-03-23 16:30:56.035 | INFO     | utils.utils:get_dividends:196 - ticker:AEP, info:1741564800
+2025-03-23 16:30:56.036 | INFO     | utils.utils:get_dividends:197 - ticker:AEP, dates:2025-03-10
+2025-03-23 16:30:56.576 | INFO     | utils.utils:get_dividends:196 - ticker:K, info:1741910400
+2025-03-23 16:30:56.578 | INFO     | utils.utils:get_dividends:197 - ticker:K, dates:2025-03-14
+2025-03-23 16:30:57.138 | INFO     | utils.utils:get_dividends:196 - ticker:DRI, info:1738540800
+2025-03-23 16:30:57.139 | INFO     | utils.utils:get_dividends:197 - ticker:DRI, dates:2025-02-03
+2025-03-23 16:30:57.698 | INFO     | utils.utils:get_dividends:196 - ticker:CVS, info:1738540800
+2025-03-23 16:30:57.699 | INFO     | utils.utils:get_dividends:197 - ticker:CVS, dates:2025-02-03
+2025-03-23 16:30:58.244 | INFO     | utils.utils:get_dividends:196 - ticker:IEX, info:1738281600
+2025-03-23 16:30:58.245 | INFO     | utils.utils:get_dividends:197 - ticker:IEX, dates:2025-01-31
+2025-03-23 16:30:58.782 | INFO     | utils.utils:get_dividends:196 - ticker:XYL, info:1742342400
+2025-03-23 16:30:58.784 | INFO     | utils.utils:get_dividends:197 - ticker:XYL, dates:2025-03-19
+2025-03-23 16:30:59.327 | INFO     | utils.utils:get_dividends:196 - ticker:ETR, info:1740960000
+2025-03-23 16:30:59.327 | INFO     | utils.utils:get_dividends:197 - ticker:ETR, dates:2025-03-03
+2025-03-23 16:30:59.866 | INFO     | utils.utils:get_dividends:196 - ticker:OKE, info:1739491200
+2025-03-23 16:30:59.867 | INFO     | utils.utils:get_dividends:197 - ticker:OKE, dates:2025-02-14
+2025-03-23 16:31:00.137 | ERROR    | __main__:run:310 - Error in main workflow: 'df_today'
+2025-03-23 16:38:48.448 | INFO     | __main__:__init__:26 - Initialising DividendBot
+2025-03-23 16:38:48.475 | INFO     | __main__:__init__:50 - Successfully loaded ticker information from C:\Users\peybo\PycharmProjects\twitter_auto\weekdays\../config/top_3000_tickers.csv
+2025-03-23 16:38:48.475 | INFO     | __main__:run:247 - Starting DividendBot workflow
+2025-03-23 16:38:50.239 | INFO     | utils.utils:get_dividends:184 - Today's date: 2025-03-25
+2025-03-23 16:38:50.921 | INFO     | utils.utils:get_dividends:196 - ticker:CVS, info:1738540800
+2025-03-23 16:38:50.923 | INFO     | utils.utils:get_dividends:197 - ticker:CVS, dates:2025-02-03
+2025-03-23 16:38:51.530 | WARNING  | utils.utils:get_dividends:199 - Error ticker TRMB. 'dividendDate'
+2025-03-23 16:38:52.162 | WARNING  | utils.utils:get_dividends:199 - Error ticker AMD. 'dividendDate'
+2025-03-23 16:38:52.771 | INFO     | utils.utils:get_dividends:196 - ticker:EOG, info:1745971200
+2025-03-23 16:38:52.773 | INFO     | utils.utils:get_dividends:197 - ticker:EOG, dates:2025-04-30
+2025-03-23 16:38:53.414 | INFO     | utils.utils:get_dividends:196 - ticker:WM, info:1743120000
+2025-03-23 16:38:53.417 | INFO     | utils.utils:get_dividends:197 - ticker:WM, dates:2025-03-28
+2025-03-23 16:38:54.046 | INFO     | utils.utils:get_dividends:196 - ticker:O, info:1744675200
+2025-03-23 16:38:54.046 | INFO     | utils.utils:get_dividends:197 - ticker:O, dates:2025-04-15
+2025-03-23 16:38:54.685 | INFO     | utils.utils:get_dividends:196 - ticker:RVTY, info:1746748800
+2025-03-23 16:38:54.687 | INFO     | utils.utils:get_dividends:197 - ticker:RVTY, dates:2025-05-09
+2025-03-23 16:38:55.310 | INFO     | utils.utils:get_dividends:196 - ticker:EMN, info:1743984000
+2025-03-23 16:38:55.310 | INFO     | utils.utils:get_dividends:197 - ticker:EMN, dates:2025-04-07
+2025-03-23 16:38:55.942 | INFO     | utils.utils:get_dividends:196 - ticker:PRU, info:1741824000
+2025-03-23 16:38:55.944 | INFO     | utils.utils:get_dividends:197 - ticker:PRU, dates:2025-03-13
+2025-03-23 16:38:56.565 | WARNING  | utils.utils:get_dividends:199 - Error ticker ADBE. 'dividendDate'
+2025-03-23 16:38:57.198 | INFO     | utils.utils:get_dividends:196 - ticker:HSY, info:1741910400
+2025-03-23 16:38:57.205 | INFO     | utils.utils:get_dividends:197 - ticker:HSY, dates:2025-03-14
+2025-03-23 16:38:57.861 | INFO     | utils.utils:get_dividends:196 - ticker:SYK, info:1745971200
+2025-03-23 16:38:57.861 | INFO     | utils.utils:get_dividends:197 - ticker:SYK, dates:2025-04-30
+2025-03-23 16:38:58.489 | INFO     | utils.utils:get_dividends:196 - ticker:PPG, info:1741737600
+2025-03-23 16:38:58.491 | INFO     | utils.utils:get_dividends:197 - ticker:PPG, dates:2025-03-12
+2025-03-23 16:38:59.122 | INFO     | utils.utils:get_dividends:196 - ticker:AON, info:1739491200
+2025-03-23 16:38:59.122 | INFO     | utils.utils:get_dividends:197 - ticker:AON, dates:2025-02-14
+2025-03-23 16:38:59.751 | INFO     | utils.utils:get_dividends:196 - ticker:WMT, info:1767571200
+2025-03-23 16:38:59.756 | INFO     | utils.utils:get_dividends:197 - ticker:WMT, dates:2026-01-05
+2025-03-23 16:39:00.386 | INFO     | utils.utils:get_dividends:196 - ticker:SO, info:1741219200
+2025-03-23 16:39:00.389 | INFO     | utils.utils:get_dividends:197 - ticker:SO, dates:2025-03-06
+2025-03-23 16:39:01.013 | WARNING  | utils.utils:get_dividends:199 - Error ticker SNPS. 'dividendDate'
+2025-03-23 16:39:01.613 | INFO     | utils.utils:get_dividends:196 - ticker:T, info:1738540800
+2025-03-23 16:39:01.617 | INFO     | utils.utils:get_dividends:197 - ticker:T, dates:2025-02-03
+2025-03-23 16:39:02.270 | INFO     | utils.utils:get_dividends:196 - ticker:ETR, info:1740960000
+2025-03-23 16:39:02.272 | INFO     | utils.utils:get_dividends:197 - ticker:ETR, dates:2025-03-03
+2025-03-23 16:39:02.901 | INFO     | utils.utils:get_dividends:196 - ticker:DIS, info:1753228800
+2025-03-23 16:39:02.901 | INFO     | utils.utils:get_dividends:197 - ticker:DIS, dates:2025-07-23
+2025-03-23 16:39:03.531 | INFO     | utils.utils:get_dividends:196 - ticker:JNPR, info:1742774400
+2025-03-23 16:39:03.533 | INFO     | utils.utils:get_dividends:197 - ticker:JNPR, dates:2025-03-24
+2025-03-23 16:39:04.158 | INFO     | utils.utils:get_dividends:196 - ticker:APA, info:1747872000
+2025-03-23 16:39:04.168 | INFO     | utils.utils:get_dividends:197 - ticker:APA, dates:2025-05-22
+2025-03-23 16:39:04.775 | INFO     | utils.utils:get_dividends:196 - ticker:AJG, info:1742515200
+2025-03-23 16:39:04.775 | INFO     | utils.utils:get_dividends:197 - ticker:AJG, dates:2025-03-21
+2025-03-23 16:39:05.389 | INFO     | utils.utils:get_dividends:196 - ticker:CVX, info:1741564800
+2025-03-23 16:39:05.394 | INFO     | utils.utils:get_dividends:197 - ticker:CVX, dates:2025-03-10
+2025-03-23 16:39:05.994 | INFO     | utils.utils:get_dividends:196 - ticker:FICO, info:1489708800
+2025-03-23 16:39:05.996 | INFO     | utils.utils:get_dividends:197 - ticker:FICO, dates:2017-03-17
+2025-03-23 16:39:06.620 | INFO     | utils.utils:get_dividends:196 - ticker:VLTO, info:1745971200
+2025-03-23 16:39:06.620 | INFO     | utils.utils:get_dividends:197 - ticker:VLTO, dates:2025-04-30
+2025-03-23 16:39:07.262 | INFO     | utils.utils:get_dividends:196 - ticker:KDP, info:1744329600
+2025-03-23 16:39:07.265 | INFO     | utils.utils:get_dividends:197 - ticker:KDP, dates:2025-04-11
+2025-03-23 16:39:07.880 | INFO     | utils.utils:get_dividends:196 - ticker:ROP, info:1745280000
+2025-03-23 16:39:07.886 | INFO     | utils.utils:get_dividends:197 - ticker:ROP, dates:2025-04-22
+2025-03-23 16:39:08.535 | WARNING  | utils.utils:get_dividends:199 - Error ticker ZBRA. 'dividendDate'
+2025-03-23 16:39:09.154 | INFO     | utils.utils:get_dividends:196 - ticker:SPG, info:1743379200
+2025-03-23 16:39:09.154 | INFO     | utils.utils:get_dividends:197 - ticker:SPG, dates:2025-03-31
+2025-03-23 16:39:09.792 | INFO     | utils.utils:get_dividends:196 - ticker:CCEP, info:1733184000
+2025-03-23 16:39:09.798 | INFO     | utils.utils:get_dividends:197 - ticker:CCEP, dates:2024-12-03
+2025-03-23 16:39:10.432 | INFO     | utils.utils:get_dividends:196 - ticker:REGN, info:1742428800
+2025-03-23 16:39:10.435 | INFO     | utils.utils:get_dividends:197 - ticker:REGN, dates:2025-03-20
+2025-03-23 16:39:11.065 | INFO     | utils.utils:get_dividends:196 - ticker:KMI, info:1739836800
+2025-03-23 16:39:11.065 | INFO     | utils.utils:get_dividends:197 - ticker:KMI, dates:2025-02-18
+2025-03-23 16:39:11.726 | INFO     | utils.utils:get_dividends:196 - ticker:HST, info:1744675200
+2025-03-23 16:39:11.728 | INFO     | utils.utils:get_dividends:197 - ticker:HST, dates:2025-04-15
+2025-03-23 16:39:12.351 | INFO     | utils.utils:get_dividends:196 - ticker:WDC, info:1587081600
+2025-03-23 16:39:12.355 | INFO     | utils.utils:get_dividends:197 - ticker:WDC, dates:2020-04-17
+2025-03-23 16:39:12.982 | INFO     | utils.utils:get_dividends:196 - ticker:IBM, info:1741564800
+2025-03-23 16:39:12.984 | INFO     | utils.utils:get_dividends:197 - ticker:IBM, dates:2025-03-10
+2025-03-23 16:39:13.614 | INFO     | utils.utils:get_dividends:196 - ticker:GEV, info:1738022400
+2025-03-23 16:39:13.614 | INFO     | utils.utils:get_dividends:197 - ticker:GEV, dates:2025-01-28
+2025-03-23 16:39:14.243 | WARNING  | utils.utils:get_dividends:199 - Error ticker LULU. 'dividendDate'
+2025-03-23 16:39:14.844 | INFO     | utils.utils:get_dividends:196 - ticker:KLAC, info:1741046400
+2025-03-23 16:39:14.844 | INFO     | utils.utils:get_dividends:197 - ticker:KLAC, dates:2025-03-04
+2025-03-23 16:39:15.469 | INFO     | utils.utils:get_dividends:196 - ticker:AEE, info:1743379200
+2025-03-23 16:39:15.469 | INFO     | utils.utils:get_dividends:197 - ticker:AEE, dates:2025-03-31
+2025-03-23 16:39:16.074 | INFO     | utils.utils:get_dividends:196 - ticker:CCL, info:1584057600
+2025-03-23 16:39:16.079 | INFO     | utils.utils:get_dividends:197 - ticker:CCL, dates:2020-03-13
+2025-03-23 16:39:16.701 | INFO     | utils.utils:get_dividends:196 - ticker:BWA, info:1742169600
+2025-03-23 16:39:16.701 | INFO     | utils.utils:get_dividends:197 - ticker:BWA, dates:2025-03-17
+2025-03-23 16:39:17.330 | INFO     | utils.utils:get_dividends:196 - ticker:NKE, info:1743465600
+2025-03-23 16:39:17.330 | INFO     | utils.utils:get_dividends:197 - ticker:NKE, dates:2025-04-01
+2025-03-23 16:39:17.934 | INFO     | utils.utils:get_dividends:196 - ticker:LII, info:1736899200
+2025-03-23 16:39:17.934 | INFO     | utils.utils:get_dividends:197 - ticker:LII, dates:2025-01-15
+2025-03-23 16:39:18.534 | INFO     | utils.utils:get_dividends:196 - ticker:WY, info:1742515200
+2025-03-23 16:39:18.537 | INFO     | utils.utils:get_dividends:197 - ticker:WY, dates:2025-03-21
+2025-03-23 16:39:19.210 | INFO     | utils.utils:get_dividends:196 - ticker:MCHP, info:1741305600
+2025-03-23 16:39:19.220 | INFO     | utils.utils:get_dividends:197 - ticker:MCHP, dates:2025-03-07
+2025-03-23 16:39:19.847 | INFO     | utils.utils:get_dividends:196 - ticker:ROK, info:1741564800
+2025-03-23 16:39:19.855 | INFO     | utils.utils:get_dividends:197 - ticker:ROK, dates:2025-03-10
+2025-03-23 16:39:20.488 | INFO     | utils.utils:get_dividends:196 - ticker:EBAY, info:1743120000
+2025-03-23 16:39:20.488 | INFO     | utils.utils:get_dividends:197 - ticker:EBAY, dates:2025-03-28
+2025-03-23 16:39:21.110 | INFO     | utils.utils:get_dividends:196 - ticker:MMC, info:1747267200
+2025-03-23 16:39:21.110 | INFO     | utils.utils:get_dividends:197 - ticker:MMC, dates:2025-05-15
+2025-03-23 16:39:21.746 | INFO     | utils.utils:get_dividends:196 - ticker:DUK, info:1742169600
+2025-03-23 16:39:21.748 | INFO     | utils.utils:get_dividends:197 - ticker:DUK, dates:2025-03-17
+2025-03-23 16:39:22.371 | INFO     | utils.utils:get_dividends:196 - ticker:PHM, info:1743552000
+2025-03-23 16:39:22.371 | INFO     | utils.utils:get_dividends:197 - ticker:PHM, dates:2025-04-02
+2025-03-23 16:39:22.996 | INFO     | utils.utils:get_dividends:196 - ticker:EA, info:1742342400
+2025-03-23 16:39:22.996 | INFO     | utils.utils:get_dividends:197 - ticker:EA, dates:2025-03-19
+2025-03-23 16:39:23.631 | INFO     | utils.utils:get_dividends:196 - ticker:LEN, info:1739318400
+2025-03-23 16:39:23.631 | INFO     | utils.utils:get_dividends:197 - ticker:LEN, dates:2025-02-12
+2025-03-23 16:39:24.274 | INFO     | utils.utils:get_dividends:196 - ticker:NI, info:1740009600
+2025-03-23 16:39:24.277 | INFO     | utils.utils:get_dividends:197 - ticker:NI, dates:2025-02-20
+2025-03-23 16:39:24.922 | INFO     | utils.utils:get_dividends:196 - ticker:AXP, info:1746748800
+2025-03-23 16:39:24.927 | INFO     | utils.utils:get_dividends:197 - ticker:AXP, dates:2025-05-09
+2025-03-23 16:39:25.560 | INFO     | utils.utils:get_dividends:196 - ticker:ADM, info:1741651200
+2025-03-23 16:39:25.560 | INFO     | utils.utils:get_dividends:197 - ticker:ADM, dates:2025-03-11
+2025-03-23 16:39:26.180 | INFO     | utils.utils:get_dividends:196 - ticker:NXPI, info:1744156800
+2025-03-23 16:39:26.182 | INFO     | utils.utils:get_dividends:197 - ticker:NXPI, dates:2025-04-09
+2025-03-23 16:39:26.760 | INFO     | utils.utils:get_dividends:196 - ticker:PSX, info:1741132800
+2025-03-23 16:39:26.762 | INFO     | utils.utils:get_dividends:197 - ticker:PSX, dates:2025-03-05
+2025-03-23 16:39:27.387 | INFO     | utils.utils:get_dividends:196 - ticker:K, info:1741910400
+2025-03-23 16:39:27.387 | INFO     | utils.utils:get_dividends:197 - ticker:K, dates:2025-03-14
+2025-03-23 16:39:28.014 | INFO     | utils.utils:get_dividends:196 - ticker:OXY, info:1744675200
+2025-03-23 16:39:28.014 | INFO     | utils.utils:get_dividends:197 - ticker:OXY, dates:2025-04-15
+2025-03-23 16:39:28.602 | INFO     | utils.utils:get_dividends:196 - ticker:PEG, info:1743379200
+2025-03-23 16:39:28.605 | INFO     | utils.utils:get_dividends:197 - ticker:PEG, dates:2025-03-31
+2025-03-23 16:39:29.241 | INFO     | utils.utils:get_dividends:196 - ticker:WST, info:1746576000
+2025-03-23 16:39:29.247 | INFO     | utils.utils:get_dividends:197 - ticker:WST, dates:2025-05-07
+2025-03-23 16:39:29.895 | WARNING  | utils.utils:get_dividends:199 - Error ticker ISRG. 'dividendDate'
+2025-03-23 16:39:30.534 | INFO     | utils.utils:get_dividends:196 - ticker:AWK, info:1741046400
+2025-03-23 16:39:30.536 | INFO     | utils.utils:get_dividends:197 - ticker:AWK, dates:2025-03-04
+2025-03-23 16:39:31.137 | WARNING  | utils.utils:get_dividends:199 - Error ticker PODD. 'dividendDate'
+2025-03-23 16:39:31.752 | INFO     | utils.utils:get_dividends:196 - ticker:ODFL, info:1742342400
+2025-03-23 16:39:31.752 | INFO     | utils.utils:get_dividends:197 - ticker:ODFL, dates:2025-03-19
+2025-03-23 16:39:32.406 | WARNING  | utils.utils:get_dividends:199 - Error ticker KMX. 'dividendDate'
+2025-03-23 16:39:33.025 | WARNING  | utils.utils:get_dividends:199 - Error ticker CRWD. 'dividendDate'
+2025-03-23 16:39:33.648 | INFO     | utils.utils:get_dividends:196 - ticker:NDSN, info:1743638400
+2025-03-23 16:39:33.648 | INFO     | utils.utils:get_dividends:197 - ticker:NDSN, dates:2025-04-03
+2025-03-23 16:39:34.285 | INFO     | utils.utils:get_dividends:196 - ticker:JNJ, info:1741046400
+2025-03-23 16:39:34.287 | INFO     | utils.utils:get_dividends:197 - ticker:JNJ, dates:2025-03-04
+2025-03-23 16:39:34.920 | INFO     | utils.utils:get_dividends:196 - ticker:MSCI, info:1740700800
+2025-03-23 16:39:34.922 | INFO     | utils.utils:get_dividends:197 - ticker:MSCI, dates:2025-02-28
+2025-03-23 16:39:35.544 | INFO     | utils.utils:get_dividends:196 - ticker:AAPL, info:1739404800
+2025-03-23 16:39:35.544 | INFO     | utils.utils:get_dividends:197 - ticker:AAPL, dates:2025-02-13
+2025-03-23 16:39:36.171 | INFO     | utils.utils:get_dividends:196 - ticker:J, info:1742515200
+2025-03-23 16:39:36.171 | INFO     | utils.utils:get_dividends:197 - ticker:J, dates:2025-03-21
+2025-03-23 16:39:36.776 | INFO     | utils.utils:get_dividends:196 - ticker:DE, info:1746662400
+2025-03-23 16:39:36.786 | INFO     | utils.utils:get_dividends:197 - ticker:DE, dates:2025-05-08
+2025-03-23 16:39:37.408 | INFO     | utils.utils:get_dividends:196 - ticker:DOC, info:1740528000
+2025-03-23 16:39:37.413 | INFO     | utils.utils:get_dividends:197 - ticker:DOC, dates:2025-02-26
+2025-03-23 16:39:38.022 | WARNING  | utils.utils:get_dividends:199 - Error ticker BIIB. 'dividendDate'
+2025-03-23 16:39:38.692 | INFO     | utils.utils:get_dividends:196 - ticker:TSCO, info:1741651200
+2025-03-23 16:39:38.696 | INFO     | utils.utils:get_dividends:197 - ticker:TSCO, dates:2025-03-11
+2025-03-23 16:39:39.324 | INFO     | utils.utils:get_dividends:196 - ticker:STE, info:1742515200
+2025-03-23 16:39:39.326 | INFO     | utils.utils:get_dividends:197 - ticker:STE, dates:2025-03-21
+2025-03-23 16:39:39.952 | INFO     | utils.utils:get_dividends:196 - ticker:NVDA, info:1743552000
+2025-03-23 16:39:39.957 | INFO     | utils.utils:get_dividends:197 - ticker:NVDA, dates:2025-04-02
+2025-03-23 16:39:40.563 | INFO     | utils.utils:get_dividends:196 - ticker:BAX, info:1743465600
+2025-03-23 16:39:40.565 | INFO     | utils.utils:get_dividends:197 - ticker:BAX, dates:2025-04-01
+2025-03-23 16:39:41.173 | INFO     | utils.utils:get_dividends:196 - ticker:BKR, info:1740096000
+2025-03-23 16:39:41.173 | INFO     | utils.utils:get_dividends:197 - ticker:BKR, dates:2025-02-21
+2025-03-23 16:39:41.786 | WARNING  | utils.utils:get_dividends:199 - Error ticker TSLA. 'dividendDate'
+2025-03-23 16:39:42.396 | INFO     | utils.utils:get_dividends:196 - ticker:JBHT, info:1740096000
+2025-03-23 16:39:42.407 | INFO     | utils.utils:get_dividends:197 - ticker:JBHT, dates:2025-02-21
+2025-03-23 16:39:43.051 | INFO     | utils.utils:get_dividends:196 - ticker:SPGI, info:1741737600
+2025-03-23 16:39:43.051 | INFO     | utils.utils:get_dividends:197 - ticker:SPGI, dates:2025-03-12
+2025-03-23 16:39:43.677 | INFO     | utils.utils:get_dividends:196 - ticker:AZN, info:1742774400
+2025-03-23 16:39:43.680 | INFO     | utils.utils:get_dividends:197 - ticker:AZN, dates:2025-03-24
+2025-03-23 16:39:44.308 | INFO     | utils.utils:get_dividends:196 - ticker:CI, info:1742428800
+2025-03-23 16:39:44.312 | INFO     | utils.utils:get_dividends:197 - ticker:CI, dates:2025-03-20
+2025-03-23 16:39:44.924 | INFO     | utils.utils:get_dividends:196 - ticker:CHD, info:1740960000
+2025-03-23 16:39:44.924 | INFO     | utils.utils:get_dividends:197 - ticker:CHD, dates:2025-03-03
+2025-03-23 16:39:45.563 | WARNING  | utils.utils:get_dividends:199 - Error ticker HOLX. 'dividendDate'
+2025-03-23 16:39:46.371 | INFO     | utils.utils:get_dividends:196 - ticker:PH, info:1741305600
+2025-03-23 16:39:46.371 | INFO     | utils.utils:get_dividends:197 - ticker:PH, dates:2025-03-07
+2025-03-23 16:39:46.993 | INFO     | utils.utils:get_dividends:196 - ticker:TJX, info:1741219200
+2025-03-23 16:39:46.998 | INFO     | utils.utils:get_dividends:197 - ticker:TJX, dates:2025-03-06
+2025-03-23 16:39:47.637 | INFO     | utils.utils:get_dividends:196 - ticker:MAR, info:1743379200
+2025-03-23 16:39:47.637 | INFO     | utils.utils:get_dividends:197 - ticker:MAR, dates:2025-03-31
+2025-03-23 16:39:48.264 | INFO     | utils.utils:get_dividends:196 - ticker:DOV, info:1741910400
+2025-03-23 16:39:48.266 | INFO     | utils.utils:get_dividends:197 - ticker:DOV, dates:2025-03-14
+2025-03-23 16:39:48.887 | WARNING  | utils.utils:get_dividends:199 - Error ticker SMCI. 'dividendDate'
+2025-03-23 16:39:49.484 | WARNING  | utils.utils:get_dividends:199 - Error ticker BLDR. 'dividendDate'
+2025-03-23 16:39:50.089 | WARNING  | utils.utils:get_dividends:199 - Error ticker TTWO. 'dividendDate'
+2025-03-23 16:39:50.709 | INFO     | utils.utils:get_dividends:196 - ticker:CFG, info:1739491200
+2025-03-23 16:39:50.711 | INFO     | utils.utils:get_dividends:197 - ticker:CFG, dates:2025-02-14
+2025-03-23 16:39:51.329 | INFO     | utils.utils:get_dividends:196 - ticker:EXPE, info:1743033600
+2025-03-23 16:39:51.329 | INFO     | utils.utils:get_dividends:197 - ticker:EXPE, dates:2025-03-27
+2025-03-23 16:39:51.988 | INFO     | utils.utils:get_dividends:196 - ticker:XYL, info:1742342400
+2025-03-23 16:39:51.988 | INFO     | utils.utils:get_dividends:197 - ticker:XYL, dates:2025-03-19
+2025-03-23 16:39:52.610 | INFO     | utils.utils:get_dividends:196 - ticker:VRSK, info:1743379200
+2025-03-23 16:39:52.618 | INFO     | utils.utils:get_dividends:197 - ticker:VRSK, dates:2025-03-31
+2025-03-23 16:39:53.325 | INFO     | utils.utils:get_dividends:196 - ticker:ETN, info:1743120000
+2025-03-23 16:39:53.327 | INFO     | utils.utils:get_dividends:197 - ticker:ETN, dates:2025-03-28
+2025-03-23 16:39:53.929 | INFO     | utils.utils:get_dividends:196 - ticker:ATO, info:1741564800
+2025-03-23 16:39:53.931 | INFO     | utils.utils:get_dividends:197 - ticker:ATO, dates:2025-03-10
+2025-03-23 16:39:54.546 | INFO     | utils.utils:get_dividends:196 - ticker:COO, info:1691712000
+2025-03-23 16:39:54.546 | INFO     | utils.utils:get_dividends:197 - ticker:COO, dates:2023-08-11
+2025-03-23 16:39:55.171 | INFO     | utils.utils:get_dividends:196 - ticker:HBAN, info:1743465600
+2025-03-23 16:39:55.171 | INFO     | utils.utils:get_dividends:197 - ticker:HBAN, dates:2025-04-01
+2025-03-23 16:39:55.827 | INFO     | utils.utils:get_dividends:196 - ticker:CSCO, info:1745366400
+2025-03-23 16:39:55.829 | INFO     | utils.utils:get_dividends:197 - ticker:CSCO, dates:2025-04-23
+2025-03-23 16:39:56.444 | WARNING  | utils.utils:get_dividends:199 - Error ticker CPAY. 'dividendDate'
+2025-03-23 16:39:57.069 | INFO     | utils.utils:get_dividends:196 - ticker:EXPD, info:1734307200
+2025-03-23 16:39:57.071 | INFO     | utils.utils:get_dividends:197 - ticker:EXPD, dates:2024-12-16
+2025-03-23 16:39:57.742 | WARNING  | utils.utils:get_dividends:199 - Error ticker NVR. 'dividendDate'
+2025-03-23 16:39:58.356 | INFO     | utils.utils:get_dividends:196 - ticker:AVB, info:1744675200
+2025-03-23 16:39:58.356 | INFO     | utils.utils:get_dividends:197 - ticker:AVB, dates:2025-04-15
+2025-03-23 16:39:58.944 | INFO     | utils.utils:get_dividends:196 - ticker:BEN, info:1744329600
+2025-03-23 16:39:58.944 | INFO     | utils.utils:get_dividends:197 - ticker:BEN, dates:2025-04-11
+2025-03-23 16:39:59.593 | INFO     | utils.utils:get_dividends:196 - ticker:AIZ, info:1743379200
+2025-03-23 16:39:59.596 | INFO     | utils.utils:get_dividends:197 - ticker:AIZ, dates:2025-03-31
+2025-03-23 16:40:00.218 | INFO     | utils.utils:get_dividends:196 - ticker:HWM, info:1740441600
+2025-03-23 16:40:00.228 | INFO     | utils.utils:get_dividends:197 - ticker:HWM, dates:2025-02-25
+2025-03-23 16:40:00.835 | INFO     | utils.utils:get_dividends:196 - ticker:ED, info:1741910400
+2025-03-23 16:40:00.845 | INFO     | utils.utils:get_dividends:197 - ticker:ED, dates:2025-03-14
+2025-03-23 16:40:01.469 | INFO     | utils.utils:get_dividends:196 - ticker:CMI, info:1741219200
+2025-03-23 16:40:01.469 | INFO     | utils.utils:get_dividends:197 - ticker:CMI, dates:2025-03-06
+2025-03-23 16:40:02.108 | INFO     | utils.utils:get_dividends:196 - ticker:WTW, info:1744675200
+2025-03-23 16:40:02.119 | INFO     | utils.utils:get_dividends:197 - ticker:WTW, dates:2025-04-15
+2025-03-23 16:40:02.747 | WARNING  | utils.utils:get_dividends:199 - Error ticker PANW. 'dividendDate'
+2025-03-23 16:40:03.367 | WARNING  | utils.utils:get_dividends:199 - Error ticker INCY. 'dividendDate'
+2025-03-23 16:40:04.001 | INFO     | utils.utils:get_dividends:196 - ticker:BKNG, info:1743379200
+2025-03-23 16:40:04.001 | INFO     | utils.utils:get_dividends:197 - ticker:BKNG, dates:2025-03-31
+2025-03-23 16:40:04.628 | INFO     | utils.utils:get_dividends:196 - ticker:MMM, info:1741737600
+2025-03-23 16:40:04.633 | INFO     | utils.utils:get_dividends:197 - ticker:MMM, dates:2025-03-12
+2025-03-23 16:40:05.419 | INFO     | utils.utils:get_dividends:196 - ticker:SLB, info:1743638400
+2025-03-23 16:40:05.419 | INFO     | utils.utils:get_dividends:197 - ticker:SLB, dates:2025-04-03
+2025-03-23 16:40:06.038 | INFO     | utils.utils:get_dividends:196 - ticker:GWW, info:1740787200
+2025-03-23 16:40:06.038 | INFO     | utils.utils:get_dividends:197 - ticker:GWW, dates:2025-03-01
+2025-03-23 16:40:06.665 | INFO     | utils.utils:get_dividends:196 - ticker:HAL, info:1742947200
+2025-03-23 16:40:06.669 | INFO     | utils.utils:get_dividends:197 - ticker:HAL, dates:2025-03-26
+2025-03-23 16:40:07.275 | INFO     | utils.utils:get_dividends:196 - ticker:ACGL, info:1733270400
+2025-03-23 16:40:07.275 | INFO     | utils.utils:get_dividends:197 - ticker:ACGL, dates:2024-12-04
+2025-03-23 16:40:07.880 | INFO     | utils.utils:get_dividends:196 - ticker:PAYC, info:1742774400
+2025-03-23 16:40:07.887 | INFO     | utils.utils:get_dividends:197 - ticker:PAYC, dates:2025-03-24
+2025-03-23 16:40:08.501 | INFO     | utils.utils:get_dividends:196 - ticker:APTV, info:1582070400
+2025-03-23 16:40:08.501 | INFO     | utils.utils:get_dividends:197 - ticker:APTV, dates:2020-02-19
+2025-03-23 16:40:09.127 | WARNING  | utils.utils:get_dividends:199 - Error ticker CZR. 'dividendDate'
+2025-03-23 16:40:09.774 | WARNING  | utils.utils:get_dividends:199 - Error ticker NFLX. 'dividendDate'
+2025-03-23 16:40:10.393 | INFO     | utils.utils:get_dividends:196 - ticker:NRG, info:1739836800
+2025-03-23 16:40:10.393 | INFO     | utils.utils:get_dividends:197 - ticker:NRG, dates:2025-02-18
+2025-03-23 16:40:11.052 | INFO     | utils.utils:get_dividends:196 - ticker:TMUS, info:1749686400
+2025-03-23 16:40:11.054 | INFO     | utils.utils:get_dividends:197 - ticker:TMUS, dates:2025-06-12
+2025-03-23 16:40:11.642 | INFO     | utils.utils:get_dividends:196 - ticker:WMB, info:1743379200
+2025-03-23 16:40:11.642 | INFO     | utils.utils:get_dividends:197 - ticker:WMB, dates:2025-03-31
+2025-03-23 16:40:12.257 | WARNING  | utils.utils:get_dividends:199 - Error ticker IQV. 'dividendDate'
+2025-03-23 16:40:12.850 | INFO     | utils.utils:get_dividends:196 - ticker:MGM, info:1671062400
+2025-03-23 16:40:12.856 | INFO     | utils.utils:get_dividends:197 - ticker:MGM, dates:2022-12-15
+2025-03-23 16:40:13.435 | INFO     | utils.utils:get_dividends:196 - ticker:PAYX, info:1740614400
+2025-03-23 16:40:13.435 | INFO     | utils.utils:get_dividends:197 - ticker:PAYX, dates:2025-02-27
+2025-03-23 16:40:14.008 | WARNING  | utils.utils:get_dividends:199 - Error ticker ON. 'dividendDate'
+2025-03-23 16:40:14.583 | WARNING  | utils.utils:get_dividends:199 - Error ticker ORLY. 'dividendDate'
+2025-03-23 16:40:15.149 | WARNING  | utils.utils:get_dividends:199 - Error ticker DLTR. 'dividendDate'
+2025-03-23 16:40:15.739 | INFO     | utils.utils:get_dividends:196 - ticker:AME, info:1743379200
+2025-03-23 16:40:15.739 | INFO     | utils.utils:get_dividends:197 - ticker:AME, dates:2025-03-31
+2025-03-23 16:40:16.361 | INFO     | utils.utils:get_dividends:196 - ticker:EQR, info:1737072000
+2025-03-23 16:40:16.363 | INFO     | utils.utils:get_dividends:197 - ticker:EQR, dates:2025-01-17
+2025-03-23 16:40:16.995 | INFO     | utils.utils:get_dividends:196 - ticker:RL, info:1744329600
+2025-03-23 16:40:16.995 | INFO     | utils.utils:get_dividends:197 - ticker:RL, dates:2025-04-11
+2025-03-23 16:40:17.625 | INFO     | utils.utils:get_dividends:196 - ticker:TPR, info:1742774400
+2025-03-23 16:40:17.627 | INFO     | utils.utils:get_dividends:197 - ticker:TPR, dates:2025-03-24
+2025-03-23 16:40:18.251 | INFO     | utils.utils:get_dividends:196 - ticker:AES, info:1747267200
+2025-03-23 16:40:18.255 | INFO     | utils.utils:get_dividends:197 - ticker:AES, dates:2025-05-15
+2025-03-23 16:40:18.920 | INFO     | utils.utils:get_dividends:196 - ticker:STT, info:1744329600
+2025-03-23 16:40:18.920 | INFO     | utils.utils:get_dividends:197 - ticker:STT, dates:2025-04-11
+2025-03-23 16:40:19.515 | INFO     | utils.utils:get_dividends:196 - ticker:CDW, info:1741651200
+2025-03-23 16:40:19.521 | INFO     | utils.utils:get_dividends:197 - ticker:CDW, dates:2025-03-11
+2025-03-23 16:40:20.117 | WARNING  | utils.utils:get_dividends:199 - Error ticker BSX. 'dividendDate'
+2025-03-23 16:40:20.717 | INFO     | utils.utils:get_dividends:196 - ticker:AMT, info:1745798400
+2025-03-23 16:40:20.719 | INFO     | utils.utils:get_dividends:197 - ticker:AMT, dates:2025-04-28
+2025-03-23 16:40:21.332 | WARNING  | utils.utils:get_dividends:199 - Error ticker CBRE. 'dividendDate'
+2025-03-23 16:40:21.939 | INFO     | utils.utils:get_dividends:196 - ticker:EQIX, info:1742342400
+2025-03-23 16:40:21.942 | INFO     | utils.utils:get_dividends:197 - ticker:EQIX, dates:2025-03-19
+2025-03-23 16:40:22.578 | INFO     | utils.utils:get_dividends:196 - ticker:PNC, info:1738713600
+2025-03-23 16:40:22.578 | INFO     | utils.utils:get_dividends:197 - ticker:PNC, dates:2025-02-05
+2025-03-23 16:40:23.206 | INFO     | utils.utils:get_dividends:196 - ticker:UNP, info:1743379200
+2025-03-23 16:40:23.212 | INFO     | utils.utils:get_dividends:197 - ticker:UNP, dates:2025-03-31
+2025-03-23 16:40:23.828 | INFO     | utils.utils:get_dividends:196 - ticker:TDG, info:1729209600
+2025-03-23 16:40:23.828 | INFO     | utils.utils:get_dividends:197 - ticker:TDG, dates:2024-10-18
+2025-03-23 16:40:24.461 | INFO     | utils.utils:get_dividends:196 - ticker:AMP, info:1740700800
+2025-03-23 16:40:24.465 | INFO     | utils.utils:get_dividends:197 - ticker:AMP, dates:2025-02-28
+2025-03-23 16:40:25.121 | INFO     | utils.utils:get_dividends:196 - ticker:BLK, info:1742774400
+2025-03-23 16:40:25.121 | INFO     | utils.utils:get_dividends:197 - ticker:BLK, dates:2025-03-24
+2025-03-23 16:40:25.740 | INFO     | utils.utils:get_dividends:196 - ticker:GD, info:1746748800
+2025-03-23 16:40:25.740 | INFO     | utils.utils:get_dividends:197 - ticker:GD, dates:2025-05-09
+2025-03-23 16:40:26.385 | WARNING  | utils.utils:get_dividends:199 - Error ticker NOW. 'dividendDate'
+2025-03-23 16:40:26.955 | INFO     | utils.utils:get_dividends:196 - ticker:ALLE, info:1743379200
+2025-03-23 16:40:26.955 | INFO     | utils.utils:get_dividends:197 - ticker:ALLE, dates:2025-03-31
+2025-03-23 16:40:27.580 | INFO     | utils.utils:get_dividends:196 - ticker:TRGP, info:1739491200
+2025-03-23 16:40:27.582 | INFO     | utils.utils:get_dividends:197 - ticker:TRGP, dates:2025-02-14
+2025-03-23 16:40:28.345 | WARNING  | utils.utils:get_dividends:199 - Error ticker EW. 'dividendDate'
+2025-03-23 16:40:28.929 | INFO     | utils.utils:get_dividends:196 - ticker:CSX, info:1741910400
+2025-03-23 16:40:28.931 | INFO     | utils.utils:get_dividends:197 - ticker:CSX, dates:2025-03-14
+2025-03-23 16:40:29.559 | WARNING  | utils.utils:get_dividends:199 - Error ticker MOH. 'dividendDate'
+2025-03-23 16:40:30.177 | WARNING  | utils.utils:get_dividends:199 - Error ticker DASH. 'dividendDate'
+2025-03-23 16:40:30.787 | INFO     | utils.utils:get_dividends:196 - ticker:FMC, info:1744848000
+2025-03-23 16:40:30.789 | INFO     | utils.utils:get_dividends:197 - ticker:FMC, dates:2025-04-17
+2025-03-23 16:40:31.402 | INFO     | utils.utils:get_dividends:196 - ticker:HCA, info:1743379200
+2025-03-23 16:40:31.408 | INFO     | utils.utils:get_dividends:197 - ticker:HCA, dates:2025-03-31
+2025-03-23 16:40:32.016 | INFO     | utils.utils:get_dividends:196 - ticker:PWR, info:1736726400
+2025-03-23 16:40:32.018 | INFO     | utils.utils:get_dividends:197 - ticker:PWR, dates:2025-01-13
+2025-03-23 16:40:32.686 | INFO     | utils.utils:get_dividends:196 - ticker:IR, info:1743033600
+2025-03-23 16:40:32.689 | INFO     | utils.utils:get_dividends:197 - ticker:IR, dates:2025-03-27
+2025-03-23 16:40:33.277 | INFO     | utils.utils:get_dividends:196 - ticker:EFX, info:1741910400
+2025-03-23 16:40:33.277 | INFO     | utils.utils:get_dividends:197 - ticker:EFX, dates:2025-03-14
+2025-03-23 16:40:33.912 | WARNING  | utils.utils:get_dividends:199 - Error ticker TDY. 'dividendDate'
+2025-03-23 16:40:34.539 | INFO     | utils.utils:get_dividends:196 - ticker:MKTX, info:1741132800
+2025-03-23 16:40:34.539 | INFO     | utils.utils:get_dividends:197 - ticker:MKTX, dates:2025-03-05
+2025-03-23 16:40:35.144 | INFO     | utils.utils:get_dividends:196 - ticker:D, info:1742428800
+2025-03-23 16:40:35.154 | INFO     | utils.utils:get_dividends:197 - ticker:D, dates:2025-03-20
+2025-03-23 16:40:35.759 | INFO     | utils.utils:get_dividends:196 - ticker:WFC, info:1740787200
+2025-03-23 16:40:35.770 | INFO     | utils.utils:get_dividends:197 - ticker:WFC, dates:2025-03-01
+2025-03-23 16:40:36.360 | INFO     | utils.utils:get_dividends:196 - ticker:CMCSA, info:1745366400
+2025-03-23 16:40:36.360 | INFO     | utils.utils:get_dividends:197 - ticker:CMCSA, dates:2025-04-23
+2025-03-23 16:40:36.986 | WARNING  | utils.utils:get_dividends:199 - Error ticker CRL. 'dividendDate'
+2025-03-23 16:40:37.631 | INFO     | utils.utils:get_dividends:196 - ticker:RTX, info:1742428800
+2025-03-23 16:40:37.631 | INFO     | utils.utils:get_dividends:197 - ticker:RTX, dates:2025-03-20
+2025-03-23 16:40:38.296 | WARNING  | utils.utils:get_dividends:199 - Error ticker AZO. 'dividendDate'
+2025-03-23 16:40:38.915 | INFO     | utils.utils:get_dividends:196 - ticker:DHR, info:1745539200
+2025-03-23 16:40:38.915 | INFO     | utils.utils:get_dividends:197 - ticker:DHR, dates:2025-04-25
+2025-03-23 16:40:39.593 | INFO     | utils.utils:get_dividends:196 - ticker:FRT, info:1744675200
+2025-03-23 16:40:39.593 | INFO     | utils.utils:get_dividends:197 - ticker:FRT, dates:2025-04-15
+2025-03-23 16:40:40.197 | INFO     | utils.utils:get_dividends:196 - ticker:GPC, info:1743552000
+2025-03-23 16:40:40.197 | INFO     | utils.utils:get_dividends:197 - ticker:GPC, dates:2025-04-02
+2025-03-23 16:40:40.834 | INFO     | utils.utils:get_dividends:196 - ticker:CE, info:1741651200
+2025-03-23 16:40:40.845 | INFO     | utils.utils:get_dividends:197 - ticker:CE, dates:2025-03-11
+2025-03-23 16:40:41.468 | INFO     | utils.utils:get_dividends:196 - ticker:TMO, info:1744675200
+2025-03-23 16:40:41.478 | INFO     | utils.utils:get_dividends:197 - ticker:TMO, dates:2025-04-15
+2025-03-23 16:40:42.103 | WARNING  | utils.utils:get_dividends:199 - Error ticker FSLR. 'dividendDate'
+2025-03-23 16:40:42.705 | INFO     | utils.utils:get_dividends:196 - ticker:CTAS, info:1741910400
+2025-03-23 16:40:42.715 | INFO     | utils.utils:get_dividends:197 - ticker:CTAS, dates:2025-03-14
+2025-03-23 16:40:43.360 | INFO     | utils.utils:get_dividends:196 - ticker:SHW, info:1741910400
+2025-03-23 16:40:43.360 | INFO     | utils.utils:get_dividends:197 - ticker:SHW, dates:2025-03-14
+2025-03-23 16:40:43.990 | WARNING  | utils.utils:get_dividends:199 - Error ticker NCLH. 'dividendDate'
+2025-03-23 16:40:44.602 | WARNING  | utils.utils:get_dividends:199 - Error ticker APP. 'dividendDate'
+2025-03-23 16:40:45.257 | INFO     | utils.utils:get_dividends:196 - ticker:BAC, info:1743120000
+2025-03-23 16:40:45.268 | INFO     | utils.utils:get_dividends:197 - ticker:BAC, dates:2025-03-28
+2025-03-23 16:40:45.863 | WARNING  | utils.utils:get_dividends:199 - Error ticker WAT. 'dividendDate'
+2025-03-23 16:40:46.500 | INFO     | utils.utils:get_dividends:196 - ticker:MCK, info:1743465600
+2025-03-23 16:40:46.501 | INFO     | utils.utils:get_dividends:197 - ticker:MCK, dates:2025-04-01
+2025-03-23 16:40:47.108 | INFO     | utils.utils:get_dividends:196 - ticker:EXC, info:1741910400
+2025-03-23 16:40:47.110 | INFO     | utils.utils:get_dividends:197 - ticker:EXC, dates:2025-03-14
+2025-03-23 16:40:47.701 | INFO     | utils.utils:get_dividends:196 - ticker:PSA, info:1743120000
+2025-03-23 16:40:47.704 | INFO     | utils.utils:get_dividends:197 - ticker:PSA, dates:2025-03-28
+2025-03-23 16:40:48.340 | INFO     | utils.utils:get_dividends:196 - ticker:AFL, info:1740960000
+2025-03-23 16:40:48.342 | INFO     | utils.utils:get_dividends:197 - ticker:AFL, dates:2025-03-03
+2025-03-23 16:40:48.945 | INFO     | utils.utils:get_dividends:196 - ticker:A, info:1745366400
+2025-03-23 16:40:48.948 | INFO     | utils.utils:get_dividends:197 - ticker:A, dates:2025-04-23
+2025-03-23 16:40:49.602 | INFO     | utils.utils:get_dividends:196 - ticker:GE, info:1745539200
+2025-03-23 16:40:49.602 | INFO     | utils.utils:get_dividends:197 - ticker:GE, dates:2025-04-25
+2025-03-23 16:40:50.213 | INFO     | utils.utils:get_dividends:196 - ticker:KHC, info:1743120000
+2025-03-23 16:40:50.213 | INFO     | utils.utils:get_dividends:197 - ticker:KHC, dates:2025-03-28
+2025-03-23 16:40:50.838 | INFO     | utils.utils:get_dividends:196 - ticker:PNR, info:1746144000
+2025-03-23 16:40:50.849 | INFO     | utils.utils:get_dividends:197 - ticker:PNR, dates:2025-05-02
+2025-03-23 16:40:51.462 | INFO     | utils.utils:get_dividends:196 - ticker:LIN, info:1743033600
+2025-03-23 16:40:51.462 | INFO     | utils.utils:get_dividends:197 - ticker:LIN, dates:2025-03-27
+2025-03-23 16:40:52.096 | WARNING  | utils.utils:get_dividends:199 - Error ticker BRK.B. 'dividendDate'
+2025-03-23 16:40:52.717 | INFO     | utils.utils:get_dividends:196 - ticker:NOC, info:1742342400
+2025-03-23 16:40:52.717 | INFO     | utils.utils:get_dividends:197 - ticker:NOC, dates:2025-03-19
+2025-03-23 16:40:53.327 | INFO     | utils.utils:get_dividends:196 - ticker:DELL, info:1746144000
+2025-03-23 16:40:53.327 | INFO     | utils.utils:get_dividends:197 - ticker:DELL, dates:2025-05-02
+2025-03-23 16:40:53.941 | INFO     | utils.utils:get_dividends:196 - ticker:SNA, info:1741564800
+2025-03-23 16:40:53.941 | INFO     | utils.utils:get_dividends:197 - ticker:SNA, dates:2025-03-10
+2025-03-23 16:40:54.577 | INFO     | utils.utils:get_dividends:196 - ticker:HON, info:1741910400
+2025-03-23 16:40:54.577 | INFO     | utils.utils:get_dividends:197 - ticker:HON, dates:2025-03-14
+2025-03-23 16:40:55.215 | INFO     | utils.utils:get_dividends:196 - ticker:FDS, info:1742428800
+2025-03-23 16:40:55.221 | INFO     | utils.utils:get_dividends:197 - ticker:FDS, dates:2025-03-20
+2025-03-23 16:40:55.857 | INFO     | utils.utils:get_dividends:196 - ticker:INTU, info:1744934400
+2025-03-23 16:40:55.857 | INFO     | utils.utils:get_dividends:197 - ticker:INTU, dates:2025-04-18
+2025-03-23 16:40:56.474 | INFO     | utils.utils:get_dividends:196 - ticker:BBY, info:1744675200
+2025-03-23 16:40:56.484 | INFO     | utils.utils:get_dividends:197 - ticker:BBY, dates:2025-04-15
+2025-03-23 16:40:57.080 | INFO     | utils.utils:get_dividends:196 - ticker:INTC, info:1725148800
+2025-03-23 16:40:57.080 | INFO     | utils.utils:get_dividends:197 - ticker:INTC, dates:2024-09-01
+2025-03-23 16:40:57.701 | INFO     | utils.utils:get_dividends:196 - ticker:XOM, info:1741564800
+2025-03-23 16:40:57.701 | INFO     | utils.utils:get_dividends:197 - ticker:XOM, dates:2025-03-10
+2025-03-23 16:40:58.318 | INFO     | utils.utils:get_dividends:196 - ticker:JBL, info:1741046400
+2025-03-23 16:40:58.318 | INFO     | utils.utils:get_dividends:197 - ticker:JBL, dates:2025-03-04
+2025-03-23 16:40:58.920 | INFO     | utils.utils:get_dividends:196 - ticker:ES, info:1743379200
+2025-03-23 16:40:58.920 | INFO     | utils.utils:get_dividends:197 - ticker:ES, dates:2025-03-31
+2025-03-23 16:40:59.544 | INFO     | utils.utils:get_dividends:196 - ticker:NTRS, info:1743465600
+2025-03-23 16:40:59.544 | INFO     | utils.utils:get_dividends:197 - ticker:NTRS, dates:2025-04-01
+2025-03-23 16:41:00.141 | INFO     | utils.utils:get_dividends:196 - ticker:DG, info:1745280000
+2025-03-23 16:41:00.141 | INFO     | utils.utils:get_dividends:197 - ticker:DG, dates:2025-04-22
+2025-03-23 16:41:00.766 | INFO     | utils.utils:get_dividends:196 - ticker:TPL, info:1742169600
+2025-03-23 16:41:00.770 | INFO     | utils.utils:get_dividends:197 - ticker:TPL, dates:2025-03-17
+2025-03-23 16:41:01.393 | INFO     | utils.utils:get_dividends:196 - ticker:KO, info:1743465600
+2025-03-23 16:41:01.393 | INFO     | utils.utils:get_dividends:197 - ticker:KO, dates:2025-04-01
+2025-03-23 16:41:02.019 | INFO     | utils.utils:get_dividends:196 - ticker:KR, info:1748736000
+2025-03-23 16:41:02.030 | INFO     | utils.utils:get_dividends:197 - ticker:KR, dates:2025-06-01
+2025-03-23 16:41:02.655 | WARNING  | utils.utils:get_dividends:199 - Error ticker TYL. 'dividendDate'
+2025-03-23 16:41:03.276 | INFO     | utils.utils:get_dividends:196 - ticker:TFX, info:1742169600
+2025-03-23 16:41:03.276 | INFO     | utils.utils:get_dividends:197 - ticker:TFX, dates:2025-03-17
+2025-03-23 16:41:03.917 | INFO     | utils.utils:get_dividends:196 - ticker:UHS, info:1742169600
+2025-03-23 16:41:03.917 | INFO     | utils.utils:get_dividends:197 - ticker:UHS, dates:2025-03-17
+2025-03-23 16:41:04.612 | INFO     | utils.utils:get_dividends:196 - ticker:IEX, info:1738281600
+2025-03-23 16:41:04.617 | INFO     | utils.utils:get_dividends:197 - ticker:IEX, dates:2025-01-31
+2025-03-23 16:41:05.234 | INFO     | utils.utils:get_dividends:196 - ticker:MELI, info:1516060800
+2025-03-23 16:41:05.234 | INFO     | utils.utils:get_dividends:197 - ticker:MELI, dates:2018-01-16
+2025-03-23 16:41:05.891 | INFO     | utils.utils:get_dividends:196 - ticker:APH, info:1744156800
+2025-03-23 16:41:05.891 | INFO     | utils.utils:get_dividends:197 - ticker:APH, dates:2025-04-09
+2025-03-23 16:41:06.527 | INFO     | utils.utils:get_dividends:196 - ticker:MLM, info:1743379200
+2025-03-23 16:41:06.527 | INFO     | utils.utils:get_dividends:197 - ticker:MLM, dates:2025-03-31
+2025-03-23 16:41:07.151 | INFO     | utils.utils:get_dividends:196 - ticker:F, info:1740960000
+2025-03-23 16:41:07.153 | INFO     | utils.utils:get_dividends:197 - ticker:F, dates:2025-03-03
+2025-03-23 16:41:07.785 | INFO     | utils.utils:get_dividends:196 - ticker:L, info:1741651200
+2025-03-23 16:41:07.789 | INFO     | utils.utils:get_dividends:197 - ticker:L, dates:2025-03-11
+2025-03-23 16:41:08.405 | INFO     | utils.utils:get_dividends:196 - ticker:VRSN, info:1305676800
+2025-03-23 16:41:08.408 | INFO     | utils.utils:get_dividends:197 - ticker:VRSN, dates:2011-05-18
+2025-03-23 16:41:09.010 | INFO     | utils.utils:get_dividends:196 - ticker:DLR, info:1743379200
+2025-03-23 16:41:09.021 | INFO     | utils.utils:get_dividends:197 - ticker:DLR, dates:2025-03-31
+2025-03-23 16:41:09.646 | INFO     | utils.utils:get_dividends:196 - ticker:QCOM, info:1743033600
+2025-03-23 16:41:09.658 | INFO     | utils.utils:get_dividends:197 - ticker:QCOM, dates:2025-03-27
+2025-03-23 16:41:10.293 | INFO     | utils.utils:get_dividends:196 - ticker:CL, info:1739491200
+2025-03-23 16:41:10.293 | INFO     | utils.utils:get_dividends:197 - ticker:CL, dates:2025-02-14
+2025-03-23 16:41:10.899 | INFO     | utils.utils:get_dividends:196 - ticker:IRM, info:1743724800
+2025-03-23 16:41:10.899 | INFO     | utils.utils:get_dividends:197 - ticker:IRM, dates:2025-04-04
+2025-03-23 16:41:11.534 | INFO     | utils.utils:get_dividends:196 - ticker:LNT, info:1739836800
+2025-03-23 16:41:11.534 | INFO     | utils.utils:get_dividends:197 - ticker:LNT, dates:2025-02-18
+2025-03-23 16:41:12.160 | INFO     | utils.utils:get_dividends:196 - ticker:BK, info:1738886400
+2025-03-23 16:41:12.160 | INFO     | utils.utils:get_dividends:197 - ticker:BK, dates:2025-02-07
+2025-03-23 16:41:12.796 | INFO     | utils.utils:get_dividends:196 - ticker:IP, info:1742169600
+2025-03-23 16:41:12.796 | INFO     | utils.utils:get_dividends:197 - ticker:IP, dates:2025-03-17
+2025-03-23 16:41:13.443 | WARNING  | utils.utils:get_dividends:199 - Error ticker VRTX. 'dividendDate'
+2025-03-23 16:41:14.057 | INFO     | utils.utils:get_dividends:196 - ticker:ECL, info:1744675200
+2025-03-23 16:41:14.060 | INFO     | utils.utils:get_dividends:197 - ticker:ECL, dates:2025-04-15
+2025-03-23 16:41:14.690 | INFO     | utils.utils:get_dividends:196 - ticker:CPT, info:1744848000
+2025-03-23 16:41:14.692 | INFO     | utils.utils:get_dividends:197 - ticker:CPT, dates:2025-04-17
+2025-03-23 16:41:15.318 | INFO     | utils.utils:get_dividends:196 - ticker:ORCL, info:1745366400
+2025-03-23 16:41:15.320 | INFO     | utils.utils:get_dividends:197 - ticker:ORCL, dates:2025-04-23
+2025-03-23 16:41:15.954 | INFO     | utils.utils:get_dividends:196 - ticker:AMAT, info:1749686400
+2025-03-23 16:41:15.957 | INFO     | utils.utils:get_dividends:197 - ticker:AMAT, dates:2025-06-12
+2025-03-23 16:41:16.575 | INFO     | utils.utils:get_dividends:196 - ticker:APD, info:1747008000
+2025-03-23 16:41:16.575 | INFO     | utils.utils:get_dividends:197 - ticker:APD, dates:2025-05-12
+2025-03-23 16:41:17.212 | WARNING  | utils.utils:get_dividends:199 - Error ticker GFS. 'dividendDate'
+2025-03-23 16:41:17.832 | INFO     | utils.utils:get_dividends:196 - ticker:DFS, info:1741219200
+2025-03-23 16:41:17.832 | INFO     | utils.utils:get_dividends:197 - ticker:DFS, dates:2025-03-06
+2025-03-23 16:41:18.436 | INFO     | utils.utils:get_dividends:196 - ticker:FTV, info:1743120000
+2025-03-23 16:41:18.446 | INFO     | utils.utils:get_dividends:197 - ticker:FTV, dates:2025-03-28
+2025-03-23 16:41:19.061 | INFO     | utils.utils:get_dividends:196 - ticker:COF, info:1740960000
+2025-03-23 16:41:19.072 | INFO     | utils.utils:get_dividends:197 - ticker:COF, dates:2025-03-03
+2025-03-23 16:41:19.677 | INFO     | utils.utils:get_dividends:196 - ticker:BRO, info:1739318400
+2025-03-23 16:41:19.677 | INFO     | utils.utils:get_dividends:197 - ticker:BRO, dates:2025-02-12
+2025-03-23 16:41:20.297 | INFO     | utils.utils:get_dividends:196 - ticker:FIS, info:1742860800
+2025-03-23 16:41:20.297 | INFO     | utils.utils:get_dividends:197 - ticker:FIS, dates:2025-03-25
+2025-03-23 16:41:20.919 | WARNING  | utils.utils:get_dividends:199 - Error ticker WDAY. 'dividendDate'
+2025-03-23 16:41:21.552 | INFO     | utils.utils:get_dividends:196 - ticker:CNP, info:1741824000
+2025-03-23 16:41:21.552 | INFO     | utils.utils:get_dividends:197 - ticker:CNP, dates:2025-03-13
+2025-03-23 16:41:22.154 | INFO     | utils.utils:get_dividends:196 - ticker:AMCR, info:1742256000
+2025-03-23 16:41:22.154 | INFO     | utils.utils:get_dividends:197 - ticker:AMCR, dates:2025-03-18
+2025-03-23 16:41:22.814 | INFO     | utils.utils:get_dividends:196 - ticker:MDT, info:1744329600
+2025-03-23 16:41:22.814 | INFO     | utils.utils:get_dividends:197 - ticker:MDT, dates:2025-04-11
+2025-03-23 16:41:23.440 | INFO     | utils.utils:get_dividends:196 - ticker:AOS, info:1739836800
+2025-03-23 16:41:23.440 | INFO     | utils.utils:get_dividends:197 - ticker:AOS, dates:2025-02-18
+2025-03-23 16:41:24.049 | INFO     | utils.utils:get_dividends:196 - ticker:STLD, info:1744329600
+2025-03-23 16:41:24.049 | INFO     | utils.utils:get_dividends:197 - ticker:STLD, dates:2025-04-11
+2025-03-23 16:41:24.670 | INFO     | utils.utils:get_dividends:196 - ticker:CME, info:1742947200
+2025-03-23 16:41:24.681 | INFO     | utils.utils:get_dividends:197 - ticker:CME, dates:2025-03-26
+2025-03-23 16:41:25.326 | INFO     | utils.utils:get_dividends:196 - ticker:NWSA, info:1744156800
+2025-03-23 16:41:25.326 | INFO     | utils.utils:get_dividends:197 - ticker:NWSA, dates:2025-04-09
+2025-03-23 16:41:25.961 | WARNING  | utils.utils:get_dividends:199 - Error ticker AKAM. 'dividendDate'
+2025-03-23 16:41:26.614 | INFO     | utils.utils:get_dividends:196 - ticker:JPM, info:1738281600
+2025-03-23 16:41:26.614 | INFO     | utils.utils:get_dividends:197 - ticker:JPM, dates:2025-01-31
+2025-03-23 16:41:27.224 | WARNING  | utils.utils:get_dividends:199 - Error ticker AXON. 'dividendDate'
+2025-03-23 16:41:27.857 | WARNING  | utils.utils:get_dividends:199 - Error ticker IDXX. 'dividendDate'
+2025-03-23 16:41:28.433 | INFO     | utils.utils:get_dividends:196 - ticker:PARA, info:1743465600
+2025-03-23 16:41:28.433 | INFO     | utils.utils:get_dividends:197 - ticker:PARA, dates:2025-04-01
+2025-03-23 16:41:29.012 | INFO     | utils.utils:get_dividends:196 - ticker:NWS, info:1744156800
+2025-03-23 16:41:29.013 | INFO     | utils.utils:get_dividends:197 - ticker:NWS, dates:2025-04-09
+2025-03-23 16:41:29.617 | INFO     | utils.utils:get_dividends:196 - ticker:OMC, info:1744156800
+2025-03-23 16:41:29.617 | INFO     | utils.utils:get_dividends:197 - ticker:OMC, dates:2025-04-09
+2025-03-23 16:41:30.197 | WARNING  | utils.utils:get_dividends:199 - Error ticker MHK. 'dividendDate'
+2025-03-23 16:41:30.790 | INFO     | utils.utils:get_dividends:196 - ticker:BMY, info:1746057600
+2025-03-23 16:41:30.790 | INFO     | utils.utils:get_dividends:197 - ticker:BMY, dates:2025-05-01
+2025-03-23 16:41:31.423 | WARNING  | utils.utils:get_dividends:199 - Error ticker CPRT. 'dividendDate'
+2025-03-23 16:41:32.056 | INFO     | utils.utils:get_dividends:196 - ticker:ACN, info:1739491200
+2025-03-23 16:41:32.060 | INFO     | utils.utils:get_dividends:197 - ticker:ACN, dates:2025-02-14
+2025-03-23 16:41:32.692 | INFO     | utils.utils:get_dividends:196 - ticker:MAA, info:1738281600
+2025-03-23 16:41:32.692 | INFO     | utils.utils:get_dividends:197 - ticker:MAA, dates:2025-01-31
+2025-03-23 16:41:33.303 | INFO     | utils.utils:get_dividends:196 - ticker:GL, info:1746057600
+2025-03-23 16:41:33.303 | INFO     | utils.utils:get_dividends:197 - ticker:GL, dates:2025-05-01
+2025-03-23 16:41:33.916 | INFO     | utils.utils:get_dividends:196 - ticker:VST, info:1743379200
+2025-03-23 16:41:33.916 | INFO     | utils.utils:get_dividends:197 - ticker:VST, dates:2025-03-31
+2025-03-23 16:41:34.700 | INFO     | utils.utils:get_dividends:196 - ticker:FOX, info:1742947200
+2025-03-23 16:41:34.701 | INFO     | utils.utils:get_dividends:197 - ticker:FOX, dates:2025-03-26
+2025-03-23 16:41:35.328 | INFO     | utils.utils:get_dividends:196 - ticker:VTRS, info:1742256000
+2025-03-23 16:41:35.331 | INFO     | utils.utils:get_dividends:197 - ticker:VTRS, dates:2025-03-18
+2025-03-23 16:41:35.939 | WARNING  | utils.utils:get_dividends:199 - Error ticker TTD. 'dividendDate'
+2025-03-23 16:41:36.558 | INFO     | utils.utils:get_dividends:196 - ticker:WYNN, info:1741132800
+2025-03-23 16:41:36.558 | INFO     | utils.utils:get_dividends:197 - ticker:WYNN, dates:2025-03-05
+2025-03-23 16:41:37.165 | INFO     | utils.utils:get_dividends:196 - ticker:SW, info:1742256000
+2025-03-23 16:41:37.165 | INFO     | utils.utils:get_dividends:197 - ticker:SW, dates:2025-03-18
+2025-03-23 16:41:37.756 | WARNING  | utils.utils:get_dividends:199 - Error ticker PYPL. 'dividendDate'
+2025-03-23 16:41:38.349 | INFO     | utils.utils:get_dividends:196 - ticker:AVY, info:1742342400
+2025-03-23 16:41:38.349 | INFO     | utils.utils:get_dividends:197 - ticker:AVY, dates:2025-03-19
+2025-03-23 16:41:38.986 | INFO     | utils.utils:get_dividends:196 - ticker:BX, info:1739836800
+2025-03-23 16:41:38.993 | INFO     | utils.utils:get_dividends:197 - ticker:BX, dates:2025-02-18
+2025-03-23 16:41:39.613 | INFO     | utils.utils:get_dividends:196 - ticker:ITW, info:1744243200
+2025-03-23 16:41:39.617 | INFO     | utils.utils:get_dividends:197 - ticker:ITW, dates:2025-04-10
+2025-03-23 16:41:40.215 | INFO     | utils.utils:get_dividends:196 - ticker:IVZ, info:1741046400
+2025-03-23 16:41:40.215 | INFO     | utils.utils:get_dividends:197 - ticker:IVZ, dates:2025-03-04
+2025-03-23 16:41:40.874 | INFO     | utils.utils:get_dividends:196 - ticker:YUM, info:1741305600
+2025-03-23 16:41:40.878 | INFO     | utils.utils:get_dividends:197 - ticker:YUM, dates:2025-03-07
+2025-03-23 16:41:41.510 | INFO     | utils.utils:get_dividends:196 - ticker:COP, info:1740960000
+2025-03-23 16:41:41.510 | INFO     | utils.utils:get_dividends:197 - ticker:COP, dates:2025-03-03
+2025-03-23 16:41:42.120 | INFO     | utils.utils:get_dividends:196 - ticker:GPN, info:1743120000
+2025-03-23 16:41:42.124 | INFO     | utils.utils:get_dividends:197 - ticker:GPN, dates:2025-03-28
+2025-03-23 16:41:42.716 | INFO     | utils.utils:get_dividends:196 - ticker:ESS, info:1744675200
+2025-03-23 16:41:42.716 | INFO     | utils.utils:get_dividends:197 - ticker:ESS, dates:2025-04-15
+2025-03-23 16:41:43.333 | INFO     | utils.utils:get_dividends:196 - ticker:VLO, info:1740960000
+2025-03-23 16:41:43.333 | INFO     | utils.utils:get_dividends:197 - ticker:VLO, dates:2025-03-03
+2025-03-23 16:41:44.128 | INFO     | utils.utils:get_dividends:196 - ticker:MSFT, info:1749686400
+2025-03-23 16:41:44.128 | INFO     | utils.utils:get_dividends:197 - ticker:MSFT, dates:2025-06-12
+2025-03-23 16:41:44.748 | WARNING  | utils.utils:get_dividends:199 - Error ticker DAY. 'dividendDate'
+2025-03-23 16:41:45.377 | INFO     | utils.utils:get_dividends:196 - ticker:BA, info:1583452800
+2025-03-23 16:41:45.384 | INFO     | utils.utils:get_dividends:197 - ticker:BA, dates:2020-03-06
+2025-03-23 16:41:46.006 | INFO     | utils.utils:get_dividends:196 - ticker:DTE, info:1744675200
+2025-03-23 16:41:46.010 | INFO     | utils.utils:get_dividends:197 - ticker:DTE, dates:2025-04-15
+2025-03-23 16:41:46.613 | INFO     | utils.utils:get_dividends:196 - ticker:TXN, info:1739232000
+2025-03-23 16:41:46.623 | INFO     | utils.utils:get_dividends:197 - ticker:TXN, dates:2025-02-11
+2025-03-23 16:41:47.235 | WARNING  | utils.utils:get_dividends:199 - Error ticker FFIV. 'dividendDate'
+2025-03-23 16:41:47.872 | INFO     | utils.utils:get_dividends:196 - ticker:TGT, info:1748736000
+2025-03-23 16:41:47.882 | INFO     | utils.utils:get_dividends:197 - ticker:TGT, dates:2025-06-01
+2025-03-23 16:41:48.494 | INFO     | utils.utils:get_dividends:196 - ticker:LW, info:1740700800
+2025-03-23 16:41:48.505 | INFO     | utils.utils:get_dividends:197 - ticker:LW, dates:2025-02-28
+2025-03-23 16:41:49.130 | INFO     | utils.utils:get_dividends:196 - ticker:DGX, info:1745193600
+2025-03-23 16:41:49.133 | INFO     | utils.utils:get_dividends:197 - ticker:DGX, dates:2025-04-21
+2025-03-23 16:41:49.777 | INFO     | utils.utils:get_dividends:196 - ticker:PKG, info:1744675200
+2025-03-23 16:41:49.787 | INFO     | utils.utils:get_dividends:197 - ticker:PKG, dates:2025-04-15
+2025-03-23 16:41:50.412 | INFO     | utils.utils:get_dividends:196 - ticker:HLT, info:1743120000
+2025-03-23 16:41:50.412 | INFO     | utils.utils:get_dividends:197 - ticker:HLT, dates:2025-03-28
+2025-03-23 16:41:51.025 | INFO     | utils.utils:get_dividends:196 - ticker:RJF, info:1744675200
+2025-03-23 16:41:51.027 | INFO     | utils.utils:get_dividends:197 - ticker:RJF, dates:2025-04-15
+2025-03-23 16:41:51.621 | INFO     | utils.utils:get_dividends:196 - ticker:PCG, info:1744675200
+2025-03-23 16:41:51.627 | INFO     | utils.utils:get_dividends:197 - ticker:PCG, dates:2025-04-15
+2025-03-23 16:41:52.244 | INFO     | utils.utils:get_dividends:196 - ticker:TAP, info:1741910400
+2025-03-23 16:41:52.253 | INFO     | utils.utils:get_dividends:197 - ticker:TAP, dates:2025-03-14
+2025-03-23 16:41:52.883 | INFO     | utils.utils:get_dividends:196 - ticker:NUE, info:1747008000
+2025-03-23 16:41:52.885 | INFO     | utils.utils:get_dividends:197 - ticker:NUE, dates:2025-05-12
+2025-03-23 16:41:53.505 | INFO     | utils.utils:get_dividends:196 - ticker:UDR, info:1745971200
+2025-03-23 16:41:53.507 | INFO     | utils.utils:get_dividends:197 - ticker:UDR, dates:2025-04-30
+2025-03-23 16:41:54.140 | INFO     | utils.utils:get_dividends:196 - ticker:WEC, info:1740787200
+2025-03-23 16:41:54.144 | INFO     | utils.utils:get_dividends:197 - ticker:WEC, dates:2025-03-01
+2025-03-23 16:41:54.769 | INFO     | utils.utils:get_dividends:196 - ticker:MPC, info:1741564800
+2025-03-23 16:41:54.774 | INFO     | utils.utils:get_dividends:197 - ticker:MPC, dates:2025-03-10
+2025-03-23 16:41:55.394 | INFO     | utils.utils:get_dividends:196 - ticker:KVUE, info:1740528000
+2025-03-23 16:41:55.394 | INFO     | utils.utils:get_dividends:197 - ticker:KVUE, dates:2025-02-26
+2025-03-23 16:41:56.026 | INFO     | utils.utils:get_dividends:196 - ticker:MSI, info:1744675200
+2025-03-23 16:41:56.026 | INFO     | utils.utils:get_dividends:197 - ticker:MSI, dates:2025-04-15
+2025-03-23 16:41:56.650 | WARNING  | utils.utils:get_dividends:199 - Error ticker AMZN. 'dividendDate'
+2025-03-23 16:41:57.462 | INFO     | utils.utils:get_dividends:196 - ticker:BALL, info:1742169600
+2025-03-23 16:41:57.465 | INFO     | utils.utils:get_dividends:197 - ticker:BALL, dates:2025-03-17
+2025-03-23 16:41:58.058 | INFO     | utils.utils:get_dividends:196 - ticker:IFF, info:1744329600
+2025-03-23 16:41:58.063 | INFO     | utils.utils:get_dividends:197 - ticker:IFF, dates:2025-04-11
+2025-03-23 16:41:58.662 | INFO     | utils.utils:get_dividends:196 - ticker:WELL, info:1741219200
+2025-03-23 16:41:58.662 | INFO     | utils.utils:get_dividends:197 - ticker:WELL, dates:2025-03-06
+2025-03-23 16:41:59.266 | INFO     | utils.utils:get_dividends:196 - ticker:MCD, info:1742169600
+2025-03-23 16:41:59.266 | INFO     | utils.utils:get_dividends:197 - ticker:MCD, dates:2025-03-17
+2025-03-23 16:41:59.891 | WARNING  | utils.utils:get_dividends:199 - Error ticker EPAM. 'dividendDate'
+2025-03-23 16:42:00.527 | INFO     | utils.utils:get_dividends:196 - ticker:AMGN, info:1749168000
+2025-03-23 16:42:00.527 | INFO     | utils.utils:get_dividends:197 - ticker:AMGN, dates:2025-06-06
+2025-03-23 16:42:01.127 | INFO     | utils.utils:get_dividends:196 - ticker:TEL, info:1749513600
+2025-03-23 16:42:01.132 | INFO     | utils.utils:get_dividends:197 - ticker:TEL, dates:2025-06-10
+2025-03-23 16:42:01.764 | INFO     | utils.utils:get_dividends:196 - ticker:COR, info:1740960000
+2025-03-23 16:42:01.764 | INFO     | utils.utils:get_dividends:197 - ticker:COR, dates:2025-03-03
+2025-03-23 16:42:02.346 | INFO     | utils.utils:get_dividends:196 - ticker:TER, info:1741910400
+2025-03-23 16:42:02.357 | INFO     | utils.utils:get_dividends:197 - ticker:TER, dates:2025-03-14
+2025-03-23 16:42:02.991 | INFO     | utils.utils:get_dividends:196 - ticker:HUBB, info:1742169600
+2025-03-23 16:42:02.991 | INFO     | utils.utils:get_dividends:197 - ticker:HUBB, dates:2025-03-17
+2025-03-23 16:42:03.612 | WARNING  | utils.utils:get_dividends:199 - Error ticker ZS. 'dividendDate'
+2025-03-23 16:42:04.237 | INFO     | utils.utils:get_dividends:196 - ticker:KMB, info:1743552000
+2025-03-23 16:42:04.239 | INFO     | utils.utils:get_dividends:197 - ticker:KMB, dates:2025-04-02
+2025-03-23 16:42:04.835 | INFO     | utils.utils:get_dividends:196 - ticker:EIX, info:1745971200
+2025-03-23 16:42:04.835 | INFO     | utils.utils:get_dividends:197 - ticker:EIX, dates:2025-04-30
+2025-03-23 16:42:05.426 | INFO     | utils.utils:get_dividends:196 - ticker:OKE, info:1739491200
+2025-03-23 16:42:05.428 | INFO     | utils.utils:get_dividends:197 - ticker:OKE, dates:2025-02-14
+2025-03-23 16:42:06.048 | INFO     | utils.utils:get_dividends:196 - ticker:DRI, info:1738540800
+2025-03-23 16:42:06.053 | INFO     | utils.utils:get_dividends:197 - ticker:DRI, dates:2025-02-03
+2025-03-23 16:42:06.681 | INFO     | utils.utils:get_dividends:196 - ticker:VMC, info:1742774400
+2025-03-23 16:42:06.681 | INFO     | utils.utils:get_dividends:197 - ticker:VMC, dates:2025-03-24
+2025-03-23 16:42:07.300 | INFO     | utils.utils:get_dividends:196 - ticker:DVN, info:1743379200
+2025-03-23 16:42:07.301 | INFO     | utils.utils:get_dividends:197 - ticker:DVN, dates:2025-03-31
+2025-03-23 16:42:07.922 | INFO     | utils.utils:get_dividends:196 - ticker:RSG, info:1744675200
+2025-03-23 16:42:07.922 | INFO     | utils.utils:get_dividends:197 - ticker:RSG, dates:2025-04-15
+2025-03-23 16:42:08.529 | INFO     | utils.utils:get_dividends:196 - ticker:TFC, info:1740960000
+2025-03-23 16:42:08.529 | INFO     | utils.utils:get_dividends:197 - ticker:TFC, dates:2025-03-03
+2025-03-23 16:42:09.140 | INFO     | utils.utils:get_dividends:196 - ticker:LUV, info:1743552000
+2025-03-23 16:42:09.142 | INFO     | utils.utils:get_dividends:197 - ticker:LUV, dates:2025-04-02
+2025-03-23 16:42:09.800 | WARNING  | utils.utils:get_dividends:199 - Error ticker WBD. 'dividendDate'
+2025-03-23 16:42:10.391 | INFO     | utils.utils:get_dividends:196 - ticker:PG, info:1739836800
+2025-03-23 16:42:10.401 | INFO     | utils.utils:get_dividends:197 - ticker:PG, dates:2025-02-18
+2025-03-23 16:42:11.005 | INFO     | utils.utils:get_dividends:196 - ticker:UNH, info:1742256000
+2025-03-23 16:42:11.005 | INFO     | utils.utils:get_dividends:197 - ticker:UNH, dates:2025-03-18
+2025-03-23 16:42:11.625 | INFO     | utils.utils:get_dividends:196 - ticker:VICI, info:1743638400
+2025-03-23 16:42:11.631 | INFO     | utils.utils:get_dividends:197 - ticker:VICI, dates:2025-04-03
+2025-03-23 16:42:12.260 | INFO     | utils.utils:get_dividends:196 - ticker:CEG, info:1742256000
+2025-03-23 16:42:12.266 | INFO     | utils.utils:get_dividends:197 - ticker:CEG, dates:2025-03-18
+2025-03-23 16:42:12.882 | INFO     | utils.utils:get_dividends:196 - ticker:WRB, info:1741737600
+2025-03-23 16:42:12.882 | INFO     | utils.utils:get_dividends:197 - ticker:WRB, dates:2025-03-12
+2025-03-23 16:42:13.486 | INFO     | utils.utils:get_dividends:196 - ticker:FAST, info:1740700800
+2025-03-23 16:42:13.486 | INFO     | utils.utils:get_dividends:197 - ticker:FAST, dates:2025-02-28
+2025-03-23 16:42:14.110 | INFO     | utils.utils:get_dividends:196 - ticker:ABT, info:1747267200
+2025-03-23 16:42:14.110 | INFO     | utils.utils:get_dividends:197 - ticker:ABT, dates:2025-05-15
+2025-03-23 16:42:14.716 | INFO     | utils.utils:get_dividends:196 - ticker:NEM, info:1743033600
+2025-03-23 16:42:14.716 | INFO     | utils.utils:get_dividends:197 - ticker:NEM, dates:2025-03-27
+2025-03-23 16:42:15.347 | INFO     | utils.utils:get_dividends:196 - ticker:SYY, info:1745539200
+2025-03-23 16:42:15.347 | INFO     | utils.utils:get_dividends:197 - ticker:SYY, dates:2025-04-25
+2025-03-23 16:42:15.997 | INFO     | utils.utils:get_dividends:196 - ticker:NEE, info:1742169600
+2025-03-23 16:42:15.997 | INFO     | utils.utils:get_dividends:197 - ticker:NEE, dates:2025-03-17
+2025-03-23 16:42:16.601 | INFO     | utils.utils:get_dividends:196 - ticker:GILD, info:1743120000
+2025-03-23 16:42:16.610 | INFO     | utils.utils:get_dividends:197 - ticker:GILD, dates:2025-03-28
+2025-03-23 16:42:17.220 | INFO     | utils.utils:get_dividends:196 - ticker:ALL, info:1743465600
+2025-03-23 16:42:17.220 | INFO     | utils.utils:get_dividends:197 - ticker:ALL, dates:2025-04-01
+2025-03-23 16:42:17.853 | INFO     | utils.utils:get_dividends:196 - ticker:APO, info:1740700800
+2025-03-23 16:42:17.855 | INFO     | utils.utils:get_dividends:197 - ticker:APO, dates:2025-02-28
+2025-03-23 16:42:18.472 | INFO     | utils.utils:get_dividends:196 - ticker:RCL, info:1743724800
+2025-03-23 16:42:18.472 | INFO     | utils.utils:get_dividends:197 - ticker:RCL, dates:2025-04-04
+2025-03-23 16:42:19.098 | INFO     | utils.utils:get_dividends:196 - ticker:CPB, info:1745798400
+2025-03-23 16:42:19.098 | INFO     | utils.utils:get_dividends:197 - ticker:CPB, dates:2025-04-28
+2025-03-23 16:42:19.713 | INFO     | utils.utils:get_dividends:196 - ticker:KIM, info:1742515200
+2025-03-23 16:42:19.715 | INFO     | utils.utils:get_dividends:197 - ticker:KIM, dates:2025-03-21
+2025-03-23 16:42:20.304 | INFO     | utils.utils:get_dividends:196 - ticker:GS, info:1743120000
+2025-03-23 16:42:20.308 | INFO     | utils.utils:get_dividends:197 - ticker:GS, dates:2025-03-28
+2025-03-23 16:42:20.930 | INFO     | utils.utils:get_dividends:196 - ticker:POOL, info:1742947200
+2025-03-23 16:42:20.930 | INFO     | utils.utils:get_dividends:197 - ticker:POOL, dates:2025-03-26
+2025-03-23 16:42:21.553 | INFO     | utils.utils:get_dividends:196 - ticker:STZ, info:1740096000
+2025-03-23 16:42:21.553 | INFO     | utils.utils:get_dividends:197 - ticker:STZ, dates:2025-02-21
+2025-03-23 16:42:22.183 | WARNING  | utils.utils:get_dividends:199 - Error ticker PTC. 'dividendDate'
+2025-03-23 16:42:22.786 | INFO     | utils.utils:get_dividends:196 - ticker:NTAP, info:1745366400
+2025-03-23 16:42:22.786 | INFO     | utils.utils:get_dividends:197 - ticker:NTAP, dates:2025-04-23
+2025-03-23 16:42:23.389 | INFO     | utils.utils:get_dividends:196 - ticker:HUM, info:1745539200
+2025-03-23 16:42:23.395 | INFO     | utils.utils:get_dividends:197 - ticker:HUM, dates:2025-04-25
+2025-03-23 16:42:24.008 | WARNING  | utils.utils:get_dividends:199 - Error ticker KEYS. 'dividendDate'
+2025-03-23 16:42:24.646 | WARNING  | utils.utils:get_dividends:199 - Error ticker DVA. 'dividendDate'
+2025-03-23 16:42:25.250 | INFO     | utils.utils:get_dividends:196 - ticker:NSC, info:1740009600
+2025-03-23 16:42:25.254 | INFO     | utils.utils:get_dividends:197 - ticker:NSC, dates:2025-02-20
+2025-03-23 16:42:25.877 | INFO     | utils.utils:get_dividends:196 - ticker:FE, info:1740787200
+2025-03-23 16:42:25.879 | INFO     | utils.utils:get_dividends:197 - ticker:FE, dates:2025-03-01
+2025-03-23 16:42:26.506 | INFO     | utils.utils:get_dividends:196 - ticker:TXT, info:1743465600
+2025-03-23 16:42:26.506 | INFO     | utils.utils:get_dividends:197 - ticker:TXT, dates:2025-04-01
+2025-03-23 16:42:27.128 | INFO     | utils.utils:get_dividends:196 - ticker:CLX, info:1746748800
+2025-03-23 16:42:27.128 | INFO     | utils.utils:get_dividends:197 - ticker:CLX, dates:2025-05-09
+2025-03-23 16:42:27.775 | WARNING  | utils.utils:get_dividends:199 - Error ticker MSTR. 'dividendDate'
+2025-03-23 16:42:28.400 | INFO     | utils.utils:get_dividends:196 - ticker:CAH, info:1744675200
+2025-03-23 16:42:28.400 | INFO     | utils.utils:get_dividends:197 - ticker:CAH, dates:2025-04-15
+2025-03-23 16:42:29.025 | INFO     | utils.utils:get_dividends:196 - ticker:STX, info:1743552000
+2025-03-23 16:42:29.030 | INFO     | utils.utils:get_dividends:197 - ticker:STX, dates:2025-04-02
+2025-03-23 16:42:29.656 | INFO     | utils.utils:get_dividends:196 - ticker:CINF, info:1744675200
+2025-03-23 16:42:29.658 | INFO     | utils.utils:get_dividends:197 - ticker:CINF, dates:2025-04-15
+2025-03-23 16:42:30.244 | INFO     | utils.utils:get_dividends:196 - ticker:GLW, info:1743120000
+2025-03-23 16:42:30.244 | INFO     | utils.utils:get_dividends:197 - ticker:GLW, dates:2025-03-28
+2025-03-23 16:42:30.881 | INFO     | utils.utils:get_dividends:196 - ticker:VTR, info:1744848000
+2025-03-23 16:42:30.881 | INFO     | utils.utils:get_dividends:197 - ticker:VTR, dates:2025-04-17
+2025-03-23 16:42:31.482 | INFO     | utils.utils:get_dividends:196 - ticker:RMD, info:1742428800
+2025-03-23 16:42:31.492 | INFO     | utils.utils:get_dividends:197 - ticker:RMD, dates:2025-03-20
+2025-03-23 16:42:32.112 | INFO     | utils.utils:get_dividends:196 - ticker:LLY, info:1741564800
+2025-03-23 16:42:32.117 | INFO     | utils.utils:get_dividends:197 - ticker:LLY, dates:2025-03-10
+2025-03-23 16:42:32.712 | INFO     | utils.utils:get_dividends:196 - ticker:UPS, info:1741219200
+2025-03-23 16:42:32.712 | INFO     | utils.utils:get_dividends:197 - ticker:UPS, dates:2025-03-06
+2025-03-23 16:42:33.344 | INFO     | utils.utils:get_dividends:196 - ticker:PLD, info:1743379200
+2025-03-23 16:42:33.349 | INFO     | utils.utils:get_dividends:197 - ticker:PLD, dates:2025-03-31
+2025-03-23 16:42:33.962 | INFO     | utils.utils:get_dividends:196 - ticker:BDX, info:1743379200
+2025-03-23 16:42:33.962 | INFO     | utils.utils:get_dividends:197 - ticker:BDX, dates:2025-03-31
+2025-03-23 16:42:34.579 | INFO     | utils.utils:get_dividends:196 - ticker:LH, info:1741737600
+2025-03-23 16:42:34.579 | INFO     | utils.utils:get_dividends:197 - ticker:LH, dates:2025-03-12
+2025-03-23 16:42:35.201 | INFO     | utils.utils:get_dividends:196 - ticker:MO, info:1745971200
+2025-03-23 16:42:35.212 | INFO     | utils.utils:get_dividends:197 - ticker:MO, dates:2025-04-30
+2025-03-23 16:42:35.853 | INFO     | utils.utils:get_dividends:196 - ticker:AEP, info:1741564800
+2025-03-23 16:42:35.853 | INFO     | utils.utils:get_dividends:197 - ticker:AEP, dates:2025-03-10
+2025-03-23 16:42:36.467 | INFO     | utils.utils:get_dividends:196 - ticker:CMS, info:1740700800
+2025-03-23 16:42:36.469 | INFO     | utils.utils:get_dividends:197 - ticker:CMS, dates:2025-02-28
+2025-03-23 16:42:37.103 | WARNING  | utils.utils:get_dividends:199 - Error ticker ALGN. 'dividendDate'
+2025-03-23 16:42:37.732 | INFO     | utils.utils:get_dividends:196 - ticker:SWK, info:1742256000
+2025-03-23 16:42:37.732 | INFO     | utils.utils:get_dividends:197 - ticker:SWK, dates:2025-03-18
+2025-03-23 16:42:38.358 | INFO     | utils.utils:get_dividends:196 - ticker:JKHY, info:1742860800
+2025-03-23 16:42:38.358 | INFO     | utils.utils:get_dividends:197 - ticker:JKHY, dates:2025-03-25
+2025-03-23 16:42:38.986 | INFO     | utils.utils:get_dividends:196 - ticker:GEHC, info:1739491200
+2025-03-23 16:42:38.988 | INFO     | utils.utils:get_dividends:197 - ticker:GEHC, dates:2025-02-14
+2025-03-23 16:42:39.620 | INFO     | utils.utils:get_dividends:196 - ticker:LHX, info:1742515200
+2025-03-23 16:42:39.622 | INFO     | utils.utils:get_dividends:197 - ticker:LHX, dates:2025-03-21
+2025-03-23 16:42:40.217 | WARNING  | utils.utils:get_dividends:199 - Error ticker CSGP. 'dividendDate'
+2025-03-23 16:42:40.821 | INFO     | utils.utils:get_dividends:196 - ticker:JCI, info:1744848000
+2025-03-23 16:42:40.821 | INFO     | utils.utils:get_dividends:197 - ticker:JCI, dates:2025-04-17
+2025-03-23 16:42:41.592 | INFO     | utils.utils:get_dividends:196 - ticker:XEL, info:1745107200
+2025-03-23 16:42:41.594 | INFO     | utils.utils:get_dividends:197 - ticker:XEL, dates:2025-04-20
+2025-03-23 16:42:42.190 | INFO     | utils.utils:get_dividends:196 - ticker:PFE, info:1741305600
+2025-03-23 16:42:42.190 | INFO     | utils.utils:get_dividends:197 - ticker:PFE, dates:2025-03-07
+2025-03-23 16:42:42.797 | INFO     | utils.utils:get_dividends:196 - ticker:ICE, info:1743379200
+2025-03-23 16:42:42.798 | INFO     | utils.utils:get_dividends:197 - ticker:ICE, dates:2025-03-31
+2025-03-23 16:42:43.432 | INFO     | utils.utils:get_dividends:196 - ticker:ULTA, info:1337040000
+2025-03-23 16:42:43.432 | INFO     | utils.utils:get_dividends:197 - ticker:ULTA, dates:2012-05-15
+2025-03-23 16:42:44.021 | INFO     | utils.utils:get_dividends:196 - ticker:MAS, info:1741564800
+2025-03-23 16:42:44.021 | INFO     | utils.utils:get_dividends:197 - ticker:MAS, dates:2025-03-10
+2025-03-23 16:42:44.601 | WARNING  | utils.utils:get_dividends:199 - Error ticker IT. 'dividendDate'
+2025-03-23 16:42:45.207 | INFO     | utils.utils:get_dividends:196 - ticker:PEP, info:1743379200
+2025-03-23 16:42:45.207 | INFO     | utils.utils:get_dividends:197 - ticker:PEP, dates:2025-03-31
+2025-03-23 16:42:45.801 | WARNING  | utils.utils:get_dividends:199 - Error ticker ANSS. 'dividendDate'
+2025-03-23 16:42:46.426 | INFO     | utils.utils:get_dividends:196 - ticker:DOW, info:1741910400
+2025-03-23 16:42:46.430 | INFO     | utils.utils:get_dividends:197 - ticker:DOW, dates:2025-03-14
+2025-03-23 16:42:47.050 | INFO     | utils.utils:get_dividends:196 - ticker:PGR, info:1744329600
+2025-03-23 16:42:47.060 | INFO     | utils.utils:get_dividends:197 - ticker:PGR, dates:2025-04-11
+2025-03-23 16:42:47.684 | INFO     | utils.utils:get_dividends:196 - ticker:PNW, info:1740960000
+2025-03-23 16:42:47.684 | INFO     | utils.utils:get_dividends:197 - ticker:PNW, dates:2025-03-03
+2025-03-23 16:42:48.324 | INFO     | utils.utils:get_dividends:196 - ticker:GNRC, info:1371772800
+2025-03-23 16:42:48.326 | INFO     | utils.utils:get_dividends:197 - ticker:GNRC, dates:2013-06-21
+2025-03-23 16:42:48.956 | INFO     | utils.utils:get_dividends:196 - ticker:ASML, info:1746489600
+2025-03-23 16:42:48.956 | INFO     | utils.utils:get_dividends:197 - ticker:ASML, dates:2025-05-06
+2025-03-23 16:42:49.558 | INFO     | utils.utils:get_dividends:196 - ticker:TROW, info:1743120000
+2025-03-23 16:42:49.569 | INFO     | utils.utils:get_dividends:197 - ticker:TROW, dates:2025-03-28
+2025-03-23 16:42:50.211 | INFO     | utils.utils:get_dividends:196 - ticker:FOXA, info:1742947200
+2025-03-23 16:42:50.214 | INFO     | utils.utils:get_dividends:197 - ticker:FOXA, dates:2025-03-26
+2025-03-23 16:42:50.840 | INFO     | utils.utils:get_dividends:196 - ticker:TRV, info:1743379200
+2025-03-23 16:42:50.844 | INFO     | utils.utils:get_dividends:197 - ticker:TRV, dates:2025-03-31
+2025-03-23 16:42:51.497 | INFO     | utils.utils:get_dividends:196 - ticker:GM, info:1742428800
+2025-03-23 16:42:51.497 | INFO     | utils.utils:get_dividends:197 - ticker:GM, dates:2025-03-20
+2025-03-23 16:42:52.130 | WARNING  | utils.utils:get_dividends:199 - Error ticker MNST. 'dividendDate'
+2025-03-23 16:42:52.760 | INFO     | utils.utils:get_dividends:196 - ticker:DAL, info:1742428800
+2025-03-23 16:42:52.767 | INFO     | utils.utils:get_dividends:197 - ticker:DAL, dates:2025-03-20
+2025-03-23 16:42:53.409 | INFO     | utils.utils:get_dividends:196 - ticker:FITB, info:1736899200
+2025-03-23 16:42:53.411 | INFO     | utils.utils:get_dividends:197 - ticker:FITB, dates:2025-01-15
+2025-03-23 16:42:54.149 | INFO     | utils.utils:get_dividends:196 - ticker:NDAQ, info:1743120000
+2025-03-23 16:42:54.149 | INFO     | utils.utils:get_dividends:197 - ticker:NDAQ, dates:2025-03-28
+2025-03-23 16:42:54.767 | WARNING  | utils.utils:get_dividends:199 - Error ticker CHTR. 'dividendDate'
+2025-03-23 16:42:55.398 | INFO     | utils.utils:get_dividends:196 - ticker:DD, info:1742169600
+2025-03-23 16:42:55.402 | INFO     | utils.utils:get_dividends:197 - ticker:DD, dates:2025-03-17
+2025-03-23 16:42:56.043 | INFO     | utils.utils:get_dividends:196 - ticker:GIS, info:1746057600
+2025-03-23 16:42:56.049 | INFO     | utils.utils:get_dividends:197 - ticker:GIS, dates:2025-05-01
+2025-03-23 16:42:56.681 | INFO     | utils.utils:get_dividends:196 - ticker:WAB, info:1741305600
+2025-03-23 16:42:56.683 | INFO     | utils.utils:get_dividends:197 - ticker:WAB, dates:2025-03-07
+2025-03-23 16:42:57.282 | INFO     | utils.utils:get_dividends:196 - ticker:HII, info:1741910400
+2025-03-23 16:42:57.282 | INFO     | utils.utils:get_dividends:197 - ticker:HII, dates:2025-03-14
+2025-03-23 16:42:57.934 | INFO     | utils.utils:get_dividends:196 - ticker:OTIS, info:1741305600
+2025-03-23 16:42:57.936 | INFO     | utils.utils:get_dividends:197 - ticker:OTIS, dates:2025-03-07
+2025-03-23 16:42:58.555 | INFO     | utils.utils:get_dividends:196 - ticker:GOOG, info:1742169600
+2025-03-23 16:42:58.561 | INFO     | utils.utils:get_dividends:197 - ticker:GOOG, dates:2025-03-17
+2025-03-23 16:42:59.159 | WARNING  | utils.utils:get_dividends:199 - Error ticker ANET. 'dividendDate'
+2025-03-23 16:42:59.782 | INFO     | utils.utils:get_dividends:196 - ticker:LOW, info:1738713600
+2025-03-23 16:42:59.782 | INFO     | utils.utils:get_dividends:197 - ticker:LOW, dates:2025-02-05
+2025-03-23 16:43:00.376 | WARNING  | utils.utils:get_dividends:199 - Error ticker UBER. 'dividendDate'
+2025-03-23 16:43:01.010 | INFO     | utils.utils:get_dividends:196 - ticker:INVH, info:1744848000
+2025-03-23 16:43:01.012 | INFO     | utils.utils:get_dividends:197 - ticker:INVH, dates:2025-04-17
+2025-03-23 16:43:01.670 | INFO     | utils.utils:get_dividends:196 - ticker:SWKS, info:1742169600
+2025-03-23 16:43:01.670 | INFO     | utils.utils:get_dividends:197 - ticker:SWKS, dates:2025-03-17
+2025-03-23 16:43:02.276 | INFO     | utils.utils:get_dividends:196 - ticker:LRCX, info:1744156800
+2025-03-23 16:43:02.282 | INFO     | utils.utils:get_dividends:197 - ticker:LRCX, dates:2025-04-09
+2025-03-23 16:43:02.898 | INFO     | utils.utils:get_dividends:196 - ticker:DHI, info:1739491200
+2025-03-23 16:43:02.899 | INFO     | utils.utils:get_dividends:197 - ticker:DHI, dates:2025-02-14
+2025-03-23 16:43:03.525 | INFO     | utils.utils:get_dividends:196 - ticker:EL, info:1742169600
+2025-03-23 16:43:03.525 | INFO     | utils.utils:get_dividends:197 - ticker:EL, dates:2025-03-17
+2025-03-23 16:43:04.158 | INFO     | utils.utils:get_dividends:196 - ticker:HAS, info:1741737600
+2025-03-23 16:43:04.161 | INFO     | utils.utils:get_dividends:197 - ticker:HAS, dates:2025-03-12
+2025-03-23 16:43:04.792 | INFO     | utils.utils:get_dividends:196 - ticker:DPZ, info:1743120000
+2025-03-23 16:43:04.794 | INFO     | utils.utils:get_dividends:197 - ticker:DPZ, dates:2025-03-28
+2025-03-23 16:43:05.444 | INFO     | utils.utils:get_dividends:196 - ticker:HES, info:1743379200
+2025-03-23 16:43:05.444 | INFO     | utils.utils:get_dividends:197 - ticker:HES, dates:2025-03-31
+2025-03-23 16:43:06.080 | INFO     | utils.utils:get_dividends:196 - ticker:SJM, info:1740960000
+2025-03-23 16:43:06.084 | INFO     | utils.utils:get_dividends:197 - ticker:SJM, dates:2025-03-03
+2025-03-23 16:43:06.707 | WARNING  | utils.utils:get_dividends:199 - Error ticker LYV. 'dividendDate'
+2025-03-23 16:43:07.341 | INFO     | utils.utils:get_dividends:196 - ticker:PM, info:1744243200
+2025-03-23 16:43:07.343 | INFO     | utils.utils:get_dividends:197 - ticker:PM, dates:2025-04-10
+2025-03-23 16:43:07.977 | WARNING  | utils.utils:get_dividends:199 - Error ticker CNC. 'dividendDate'
+2025-03-23 16:43:08.751 | INFO     | utils.utils:get_dividends:196 - ticker:LDOS, info:1743120000
+2025-03-23 16:43:08.751 | INFO     | utils.utils:get_dividends:197 - ticker:LDOS, dates:2025-03-28
+2025-03-23 16:43:09.411 | INFO     | utils.utils:get_dividends:196 - ticker:ABBV, info:1747267200
+2025-03-23 16:43:09.413 | INFO     | utils.utils:get_dividends:197 - ticker:ABBV, dates:2025-05-15
+2025-03-23 16:43:10.033 | INFO     | utils.utils:get_dividends:196 - ticker:LYB, info:1742169600
+2025-03-23 16:43:10.033 | INFO     | utils.utils:get_dividends:197 - ticker:LYB, dates:2025-03-17
+2025-03-23 16:43:10.625 | INFO     | utils.utils:get_dividends:196 - ticker:MPWR, info:1744675200
+2025-03-23 16:43:10.629 | INFO     | utils.utils:get_dividends:197 - ticker:MPWR, dates:2025-04-15
+2025-03-23 16:43:11.244 | INFO     | utils.utils:get_dividends:196 - ticker:MTB, info:1743379200
+2025-03-23 16:43:11.249 | INFO     | utils.utils:get_dividends:197 - ticker:MTB, dates:2025-03-31
+2025-03-23 16:43:11.875 | INFO     | utils.utils:get_dividends:196 - ticker:LKQ, info:1743033600
+2025-03-23 16:43:11.877 | INFO     | utils.utils:get_dividends:197 - ticker:LKQ, dates:2025-03-27
+2025-03-23 16:43:12.486 | WARNING  | utils.utils:get_dividends:199 - Error ticker FI. 'dividendDate'
+2025-03-23 16:43:13.102 | INFO     | utils.utils:get_dividends:196 - ticker:SRE, info:1744675200
+2025-03-23 16:43:13.106 | INFO     | utils.utils:get_dividends:197 - ticker:SRE, dates:2025-04-15
+2025-03-23 16:43:13.768 | INFO     | utils.utils:get_dividends:196 - ticker:BXP, info:1738195200
+2025-03-23 16:43:13.768 | INFO     | utils.utils:get_dividends:197 - ticker:BXP, dates:2025-01-30
+2025-03-23 16:43:14.392 | INFO     | utils.utils:get_dividends:196 - ticker:ROST, info:1743379200
+2025-03-23 16:43:14.393 | INFO     | utils.utils:get_dividends:197 - ticker:ROST, dates:2025-03-31
+2025-03-23 16:43:15.024 | INFO     | utils.utils:get_dividends:196 - ticker:CF, info:1740700800
+2025-03-23 16:43:15.024 | INFO     | utils.utils:get_dividends:197 - ticker:CF, dates:2025-02-28
+2025-03-23 16:43:15.628 | INFO     | utils.utils:get_dividends:196 - ticker:CTRA, info:1743033600
+2025-03-23 16:43:15.628 | INFO     | utils.utils:get_dividends:197 - ticker:CTRA, dates:2025-03-27
+2025-03-23 16:43:16.255 | INFO     | utils.utils:get_dividends:196 - ticker:CCI, info:1743379200
+2025-03-23 16:43:16.255 | INFO     | utils.utils:get_dividends:197 - ticker:CCI, dates:2025-03-31
+2025-03-23 16:43:16.882 | WARNING  | utils.utils:get_dividends:199 - Error ticker ADSK. 'dividendDate'
+2025-03-23 16:43:17.661 | INFO     | utils.utils:get_dividends:196 - ticker:LMT, info:1743120000
+2025-03-23 16:43:17.665 | INFO     | utils.utils:get_dividends:197 - ticker:LMT, dates:2025-03-28
+2025-03-23 16:43:18.275 | WARNING  | utils.utils:get_dividends:199 - Error ticker DDOG. 'dividendDate'
+2025-03-23 16:43:18.891 | INFO     | utils.utils:get_dividends:196 - ticker:HPQ, info:1743552000
+2025-03-23 16:43:18.894 | INFO     | utils.utils:get_dividends:197 - ticker:HPQ, dates:2025-04-02
+2025-03-23 16:43:19.523 | INFO     | utils.utils:get_dividends:196 - ticker:MDLZ, info:1744588800
+2025-03-23 16:43:19.525 | INFO     | utils.utils:get_dividends:197 - ticker:MDLZ, dates:2025-04-14
+2025-03-23 16:43:20.116 | INFO     | utils.utils:get_dividends:196 - ticker:V, info:1740960000
+2025-03-23 16:43:20.118 | INFO     | utils.utils:get_dividends:197 - ticker:V, dates:2025-03-03
+2025-03-23 16:43:20.723 | INFO     | utils.utils:get_dividends:196 - ticker:CTSH, info:1740528000
+2025-03-23 16:43:20.723 | INFO     | utils.utils:get_dividends:197 - ticker:CTSH, dates:2025-02-26
+2025-03-23 16:43:21.318 | INFO     | utils.utils:get_dividends:196 - ticker:GRMN, info:1743120000
+2025-03-23 16:43:21.318 | INFO     | utils.utils:get_dividends:197 - ticker:GRMN, dates:2025-03-28
+2025-03-23 16:43:21.943 | INFO     | utils.utils:get_dividends:196 - ticker:MKC, info:1736726400
+2025-03-23 16:43:21.943 | INFO     | utils.utils:get_dividends:197 - ticker:MKC, dates:2025-01-13
+2025-03-23 16:43:22.550 | INFO     | utils.utils:get_dividends:196 - ticker:HPE, info:1744934400
+2025-03-23 16:43:22.550 | INFO     | utils.utils:get_dividends:197 - ticker:HPE, dates:2025-04-18
+2025-03-23 16:43:23.184 | INFO     | utils.utils:get_dividends:196 - ticker:ZBH, info:1745971200
+2025-03-23 16:43:23.187 | INFO     | utils.utils:get_dividends:197 - ticker:ZBH, dates:2025-04-30
+2025-03-23 16:43:23.812 | INFO     | utils.utils:get_dividends:196 - ticker:PFG, info:1743120000
+2025-03-23 16:43:23.812 | INFO     | utils.utils:get_dividends:197 - ticker:PFG, dates:2025-03-28
+2025-03-23 16:43:24.413 | WARNING  | utils.utils:get_dividends:199 - Error ticker FTNT. 'dividendDate'
+2025-03-23 16:43:25.042 | INFO     | utils.utils:get_dividends:196 - ticker:CARR, info:1738886400
+2025-03-23 16:43:25.044 | INFO     | utils.utils:get_dividends:197 - ticker:CARR, dates:2025-02-07
+2025-03-23 16:43:25.643 | INFO     | utils.utils:get_dividends:196 - ticker:IPG, info:1742169600
+2025-03-23 16:43:25.646 | INFO     | utils.utils:get_dividends:197 - ticker:IPG, dates:2025-03-17
+2025-03-23 16:43:26.248 | WARNING  | utils.utils:get_dividends:199 - Error ticker HSIC. 'dividendDate'
+2025-03-23 16:43:27.023 | INFO     | utils.utils:get_dividends:196 - ticker:EG, info:1743120000
+2025-03-23 16:43:27.023 | INFO     | utils.utils:get_dividends:197 - ticker:EG, dates:2025-03-28
+2025-03-23 16:43:27.650 | INFO     | utils.utils:get_dividends:196 - ticker:CAG, info:1740614400
+2025-03-23 16:43:27.651 | INFO     | utils.utils:get_dividends:197 - ticker:CAG, dates:2025-02-27
+2025-03-23 16:43:28.250 | WARNING  | utils.utils:get_dividends:199 - Error ticker PLTR. 'dividendDate'
+2025-03-23 16:43:29.137 | INFO     | utils.utils:get_dividends:196 - ticker:EVRG, info:1742515200
+2025-03-23 16:43:29.139 | INFO     | utils.utils:get_dividends:197 - ticker:EVRG, dates:2025-03-21
+2025-03-23 16:43:30.013 | WARNING  | utils.utils:get_dividends:199 - Error ticker ARM. 'dividendDate'
+2025-03-23 16:43:30.633 | INFO     | utils.utils:get_dividends:196 - ticker:CBOE, info:1741910400
+2025-03-23 16:43:30.633 | INFO     | utils.utils:get_dividends:197 - ticker:CBOE, dates:2025-03-14
+2025-03-23 16:43:31.406 | INFO     | utils.utils:get_dividends:196 - ticker:CRM, info:1736380800
+2025-03-23 16:43:31.407 | INFO     | utils.utils:get_dividends:197 - ticker:CRM, dates:2025-01-09
+2025-03-23 16:43:32.028 | INFO     | utils.utils:get_dividends:196 - ticker:CTVA, info:1742169600
+2025-03-23 16:43:32.034 | INFO     | utils.utils:get_dividends:197 - ticker:CTVA, dates:2025-03-17
+2025-03-23 16:43:32.864 | WARNING  | utils.utils:get_dividends:199 - Error ticker MRNA. 'dividendDate'
+2025-03-23 16:43:33.467 | WARNING  | utils.utils:get_dividends:199 - Error ticker GDDY. 'dividendDate'
+2025-03-23 16:43:34.097 | INFO     | utils.utils:get_dividends:196 - ticker:URI, info:1740528000
+2025-03-23 16:43:34.103 | INFO     | utils.utils:get_dividends:197 - ticker:URI, dates:2025-02-26
+2025-03-23 16:43:34.737 | WARNING  | utils.utils:get_dividends:199 - Error ticker MDB. 'dividendDate'
+2025-03-23 16:43:35.333 | INFO     | utils.utils:get_dividends:196 - ticker:ZTS, info:1748908800
+2025-03-23 16:43:35.333 | INFO     | utils.utils:get_dividends:197 - ticker:ZTS, dates:2025-06-03
+2025-03-23 16:43:35.943 | INFO     | utils.utils:get_dividends:196 - ticker:VZ, info:1746057600
+2025-03-23 16:43:35.945 | INFO     | utils.utils:get_dividends:197 - ticker:VZ, dates:2025-05-01
+2025-03-23 16:43:36.533 | WARNING  | utils.utils:get_dividends:199 - Error ticker ENPH. 'dividendDate'
+2025-03-23 16:43:37.159 | INFO     | utils.utils:get_dividends:196 - ticker:GEN, info:1741737600
+2025-03-23 16:43:37.161 | INFO     | utils.utils:get_dividends:197 - ticker:GEN, dates:2025-03-12
+2025-03-23 16:43:37.760 | INFO     | utils.utils:get_dividends:196 - ticker:MA, info:1746748800
+2025-03-23 16:43:37.764 | INFO     | utils.utils:get_dividends:197 - ticker:MA, dates:2025-05-09
+2025-03-23 16:43:38.345 | INFO     | utils.utils:get_dividends:196 - ticker:MOS, info:1742428800
+2025-03-23 16:43:38.345 | INFO     | utils.utils:get_dividends:197 - ticker:MOS, dates:2025-03-20
+2025-03-23 16:43:38.967 | WARNING  | utils.utils:get_dividends:199 - Error ticker CMG. 'dividendDate'
+2025-03-23 16:43:39.590 | WARNING  | utils.utils:get_dividends:199 - Error ticker DECK. 'dividendDate'
+2025-03-23 16:43:40.218 | WARNING  | utils.utils:get_dividends:199 - Error ticker BF.B. 'dividendDate'
+2025-03-23 16:43:40.814 | INFO     | utils.utils:get_dividends:196 - ticker:ROL, info:1741564800
+2025-03-23 16:43:40.814 | INFO     | utils.utils:get_dividends:197 - ticker:ROL, dates:2025-03-10
+2025-03-23 16:43:41.425 | INFO     | utils.utils:get_dividends:196 - ticker:AVGO, info:1743379200
+2025-03-23 16:43:41.425 | INFO     | utils.utils:get_dividends:197 - ticker:AVGO, dates:2025-03-31
+2025-03-23 16:43:42.036 | INFO     | utils.utils:get_dividends:196 - ticker:BR, info:1743638400
+2025-03-23 16:43:42.046 | INFO     | utils.utils:get_dividends:197 - ticker:BR, dates:2025-04-03
+2025-03-23 16:43:42.669 | INFO     | utils.utils:get_dividends:196 - ticker:MCO, info:1741910400
+2025-03-23 16:43:42.677 | INFO     | utils.utils:get_dividends:197 - ticker:MCO, dates:2025-03-14
+2025-03-23 16:43:43.282 | INFO     | utils.utils:get_dividends:196 - ticker:FCX, info:1738540800
+2025-03-23 16:43:43.286 | INFO     | utils.utils:get_dividends:197 - ticker:FCX, dates:2025-02-03
+2025-03-23 16:43:43.901 | INFO     | utils.utils:get_dividends:196 - ticker:HIG, info:1743552000
+2025-03-23 16:43:43.911 | INFO     | utils.utils:get_dividends:197 - ticker:HIG, dates:2025-04-02
+2025-03-23 16:43:44.506 | INFO     | utils.utils:get_dividends:196 - ticker:ERIE, info:1745280000
+2025-03-23 16:43:44.506 | INFO     | utils.utils:get_dividends:197 - ticker:ERIE, dates:2025-04-22
+2025-03-23 16:43:45.120 | INFO     | utils.utils:get_dividends:196 - ticker:C, info:1740700800
+2025-03-23 16:43:45.122 | INFO     | utils.utils:get_dividends:197 - ticker:C, dates:2025-02-28
+2025-03-23 16:43:45.740 | INFO     | utils.utils:get_dividends:196 - ticker:CB, info:1743724800
+2025-03-23 16:43:45.740 | INFO     | utils.utils:get_dividends:197 - ticker:CB, dates:2025-04-04
+2025-03-23 16:43:46.341 | INFO     | utils.utils:get_dividends:196 - ticker:SYF, info:1739836800
+2025-03-23 16:43:46.341 | INFO     | utils.utils:get_dividends:197 - ticker:SYF, dates:2025-02-18
+2025-03-23 16:43:46.967 | INFO     | utils.utils:get_dividends:196 - ticker:USB, info:1744675200
+2025-03-23 16:43:46.978 | INFO     | utils.utils:get_dividends:197 - ticker:USB, dates:2025-04-15
+2025-03-23 16:43:47.560 | WARNING  | utils.utils:get_dividends:199 - Error ticker DXCM. 'dividendDate'
+2025-03-23 16:43:48.228 | INFO     | utils.utils:get_dividends:196 - ticker:META, info:1742947200
+2025-03-23 16:43:48.228 | INFO     | utils.utils:get_dividends:197 - ticker:META, dates:2025-03-26
+2025-03-23 16:43:48.843 | INFO     | utils.utils:get_dividends:196 - ticker:KKR, info:1740700800
+2025-03-23 16:43:48.843 | INFO     | utils.utils:get_dividends:197 - ticker:KKR, dates:2025-02-28
+2025-03-23 16:43:49.456 | INFO     | utils.utils:get_dividends:196 - ticker:SCHW, info:1740700800
+2025-03-23 16:43:49.456 | INFO     | utils.utils:get_dividends:197 - ticker:SCHW, dates:2025-02-28
+2025-03-23 16:43:50.110 | INFO     | utils.utils:get_dividends:196 - ticker:HD, info:1743033600
+2025-03-23 16:43:50.114 | INFO     | utils.utils:get_dividends:197 - ticker:HD, dates:2025-03-27
+2025-03-23 16:43:50.749 | INFO     | utils.utils:get_dividends:196 - ticker:MS, info:1739491200
+2025-03-23 16:43:50.749 | INFO     | utils.utils:get_dividends:197 - ticker:MS, dates:2025-02-14
+2025-03-23 16:43:51.375 | INFO     | utils.utils:get_dividends:196 - ticker:ELV, info:1742860800
+2025-03-23 16:43:51.375 | INFO     | utils.utils:get_dividends:197 - ticker:ELV, dates:2025-03-25
+2025-03-23 16:43:52.012 | INFO     | utils.utils:get_dividends:196 - ticker:WBA, info:1733961600
+2025-03-23 16:43:52.012 | INFO     | utils.utils:get_dividends:197 - ticker:WBA, dates:2024-12-12
+2025-03-23 16:43:52.610 | WARNING  | utils.utils:get_dividends:199 - Error ticker CDNS. 'dividendDate'
+2025-03-23 16:43:53.215 | INFO     | utils.utils:get_dividends:196 - ticker:PPL, info:1743465600
+2025-03-23 16:43:53.217 | INFO     | utils.utils:get_dividends:197 - ticker:PPL, dates:2025-04-01
+2025-03-23 16:43:53.842 | INFO     | utils.utils:get_dividends:196 - ticker:FANG, info:1741824000
+2025-03-23 16:43:53.844 | INFO     | utils.utils:get_dividends:197 - ticker:FANG, dates:2025-03-13
+2025-03-23 16:43:54.448 | INFO     | utils.utils:get_dividends:196 - ticker:SBUX, info:1740700800
+2025-03-23 16:43:54.448 | INFO     | utils.utils:get_dividends:197 - ticker:SBUX, dates:2025-02-28
+2025-03-23 16:43:55.072 | INFO     | utils.utils:get_dividends:196 - ticker:PCAR, info:1741132800
+2025-03-23 16:43:55.076 | INFO     | utils.utils:get_dividends:197 - ticker:PCAR, dates:2025-03-05
+2025-03-23 16:43:55.706 | INFO     | utils.utils:get_dividends:196 - ticker:EQT, info:1740960000
+2025-03-23 16:43:55.706 | INFO     | utils.utils:get_dividends:197 - ticker:EQT, dates:2025-03-03
+2025-03-23 16:43:56.355 | INFO     | utils.utils:get_dividends:196 - ticker:REG, info:1743552000
+2025-03-23 16:43:56.355 | INFO     | utils.utils:get_dividends:197 - ticker:REG, dates:2025-04-02
+2025-03-23 16:43:56.954 | INFO     | utils.utils:get_dividends:196 - ticker:HRL, info:1739836800
+2025-03-23 16:43:56.956 | INFO     | utils.utils:get_dividends:197 - ticker:HRL, dates:2025-02-18
+2025-03-23 16:43:57.565 | INFO     | utils.utils:get_dividends:196 - ticker:CHRW, info:1743465600
+2025-03-23 16:43:57.565 | INFO     | utils.utils:get_dividends:197 - ticker:CHRW, dates:2025-04-01
+2025-03-23 16:43:58.192 | INFO     | utils.utils:get_dividends:196 - ticker:SBAC, info:1743033600
+2025-03-23 16:43:58.194 | INFO     | utils.utils:get_dividends:197 - ticker:SBAC, dates:2025-03-27
+2025-03-23 16:43:58.815 | INFO     | utils.utils:get_dividends:196 - ticker:EXR, info:1743379200
+2025-03-23 16:43:58.817 | INFO     | utils.utils:get_dividends:197 - ticker:EXR, dates:2025-03-31
+2025-03-23 16:43:59.394 | INFO     | utils.utils:get_dividends:196 - ticker:TECH, info:1740700800
+2025-03-23 16:43:59.396 | INFO     | utils.utils:get_dividends:197 - ticker:TECH, dates:2025-02-28
+2025-03-23 16:43:59.988 | INFO     | utils.utils:get_dividends:196 - ticker:ADI, info:1742169600
+2025-03-23 16:43:59.994 | INFO     | utils.utils:get_dividends:197 - ticker:ADI, dates:2025-03-17
+2025-03-23 16:44:00.574 | INFO     | utils.utils:get_dividends:196 - ticker:COST, info:1740096000
+2025-03-23 16:44:00.582 | INFO     | utils.utils:get_dividends:197 - ticker:COST, dates:2025-02-21
+2025-03-23 16:44:01.186 | INFO     | utils.utils:get_dividends:196 - ticker:MU, info:1736899200
+2025-03-23 16:44:01.186 | INFO     | utils.utils:get_dividends:197 - ticker:MU, dates:2025-01-15
+2025-03-23 16:44:01.823 | INFO     | utils.utils:get_dividends:196 - ticker:ALB, info:1743465600
+2025-03-23 16:44:01.825 | INFO     | utils.utils:get_dividends:197 - ticker:ALB, dates:2025-04-01
+2025-03-23 16:44:02.431 | INFO     | utils.utils:get_dividends:196 - ticker:LVS, info:1739923200
+2025-03-23 16:44:02.433 | INFO     | utils.utils:get_dividends:197 - ticker:LVS, dates:2025-02-19
+2025-03-23 16:44:03.050 | WARNING  | utils.utils:get_dividends:199 - Error ticker ABNB. 'dividendDate'
+2025-03-23 16:44:03.651 | WARNING  | utils.utils:get_dividends:199 - Error ticker PDD. 'dividendDate'
+2025-03-23 16:44:04.231 | WARNING  | utils.utils:get_dividends:199 - Error ticker SOLV. 'dividendDate'
+2025-03-23 16:44:04.835 | INFO     | utils.utils:get_dividends:196 - ticker:AIG, info:1743379200
+2025-03-23 16:44:04.835 | INFO     | utils.utils:get_dividends:197 - ticker:AIG, dates:2025-03-31
+2025-03-23 16:44:05.428 | INFO     | utils.utils:get_dividends:196 - ticker:ARE, info:1744675200
+2025-03-23 16:44:05.433 | INFO     | utils.utils:get_dividends:197 - ticker:ARE, dates:2025-04-15
+2025-03-23 16:44:06.043 | INFO     | utils.utils:get_dividends:196 - ticker:RF, info:1743465600
+2025-03-23 16:44:06.051 | INFO     | utils.utils:get_dividends:197 - ticker:RF, dates:2025-04-01
+2025-03-23 16:44:06.676 | INFO     | utils.utils:get_dividends:196 - ticker:ADP, info:1743465600
+2025-03-23 16:44:06.676 | INFO     | utils.utils:get_dividends:197 - ticker:ADP, dates:2025-04-01
+2025-03-23 16:44:07.330 | INFO     | utils.utils:get_dividends:196 - ticker:UAL, info:1201046400
+2025-03-23 16:44:07.334 | INFO     | utils.utils:get_dividends:197 - ticker:UAL, dates:2008-01-23
+2025-03-23 16:44:07.942 | WARNING  | utils.utils:get_dividends:199 - Error ticker TEAM. 'dividendDate'
+2025-03-23 16:44:08.537 | INFO     | utils.utils:get_dividends:196 - ticker:MTCH, info:1744848000
+2025-03-23 16:44:08.547 | INFO     | utils.utils:get_dividends:197 - ticker:MTCH, dates:2025-04-17
+2025-03-23 16:44:09.207 | INFO     | utils.utils:get_dividends:196 - ticker:MET, info:1741651200
+2025-03-23 16:44:09.207 | INFO     | utils.utils:get_dividends:197 - ticker:MET, dates:2025-03-11
+2025-03-23 16:44:09.832 | INFO     | utils.utils:get_dividends:196 - ticker:KEY, info:1741910400
+2025-03-23 16:44:09.840 | INFO     | utils.utils:get_dividends:197 - ticker:KEY, dates:2025-03-14
+2025-03-23 16:44:10.434 | INFO     | utils.utils:get_dividends:196 - ticker:MRVL, info:1738195200
+2025-03-23 16:44:10.434 | INFO     | utils.utils:get_dividends:197 - ticker:MRVL, dates:2025-01-30
+2025-03-23 16:44:11.051 | INFO     | utils.utils:get_dividends:196 - ticker:BG, info:1741046400
+2025-03-23 16:44:11.060 | INFO     | utils.utils:get_dividends:197 - ticker:BG, dates:2025-03-04
+2025-03-23 16:44:11.690 | INFO     | utils.utils:get_dividends:196 - ticker:TSN, info:1741910400
+2025-03-23 16:44:11.692 | INFO     | utils.utils:get_dividends:197 - ticker:TSN, dates:2025-03-14
+2025-03-23 16:44:12.311 | INFO     | utils.utils:get_dividends:196 - ticker:EMR, info:1741564800
+2025-03-23 16:44:12.323 | INFO     | utils.utils:get_dividends:197 - ticker:EMR, dates:2025-03-10
+2025-03-23 16:44:12.946 | INFO     | utils.utils:get_dividends:196 - ticker:FDX, info:1743465600
+2025-03-23 16:44:12.946 | INFO     | utils.utils:get_dividends:197 - ticker:FDX, dates:2025-04-01
+2025-03-23 16:44:13.528 | INFO     | utils.utils:get_dividends:196 - ticker:CAT, info:1740009600
+2025-03-23 16:44:13.528 | INFO     | utils.utils:get_dividends:197 - ticker:CAT, dates:2025-02-20
+2025-03-23 16:44:14.154 | INFO     | utils.utils:get_dividends:196 - ticker:MRK, info:1743984000
+2025-03-23 16:44:14.164 | INFO     | utils.utils:get_dividends:197 - ticker:MRK, dates:2025-04-07
+2025-03-23 16:44:14.868 | WARNING  | utils.utils:get_dividends:199 - Error ticker MTD. 'dividendDate'
+2025-03-23 16:44:15.473 | INFO     | utils.utils:get_dividends:196 - ticker:TT, info:1743379200
+2025-03-23 16:44:15.473 | INFO     | utils.utils:get_dividends:197 - ticker:TT, dates:2025-03-31
+2025-03-23 16:44:16.108 | INFO     | utils.utils:get_dividends:196 - ticker:GOOGL, info:1742169600
+2025-03-23 16:44:16.111 | INFO     | utils.utils:get_dividends:197 - ticker:GOOGL, dates:2025-03-17
+2025-03-23 16:44:16.394 | ERROR    | __main__:run:310 - Error in main workflow: 'df_today'

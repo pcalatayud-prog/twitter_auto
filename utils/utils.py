@@ -193,7 +193,6 @@ def get_dividends(tickers_symbol) -> List:
             date_str = unix_to_yyyy_mm_dd(dividends_date)
             tickers_to_save.append(ticker_symbol)
             dates_to_save.append(date_str)
-            logger.info(f"ticker:{ticker_symbol}, info:{dividends_date}")
             logger.info(f"ticker:{ticker_symbol}, dates:{date_str}")
         except Exception as e:
             logger.warning(f'Error ticker {ticker_symbol}. {e}')
@@ -205,10 +204,8 @@ def get_dividends(tickers_symbol) -> List:
     })
 
     df['date'] = pd.to_datetime(df['date'])
-
     df_today = df[df['date']==today_str]
-
-    tickers_today = df_today['df_today'].tolist()
+    tickers_today = df_today['ticker'].tolist()
 
     return tickers_today
 

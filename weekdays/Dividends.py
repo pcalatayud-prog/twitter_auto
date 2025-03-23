@@ -129,6 +129,7 @@ class DividendBot:
             df = pd.DataFrame(data)
 
             stock = yf.Ticker(ticker)
+            time.sleep(0.25)
             info = stock.info
 
             # Handle potential missing keys with get()
@@ -204,7 +205,6 @@ class DividendBot:
         """Format the dividend message for a specific company."""
         try:
             company_info = self.get_ticker_info(ticker)
-
             company_name = company_info.get('company_name', ticker)
             industry = company_info.get('industry', 'Unknown')
             sector = company_info.get('sector', 'Unknown')
