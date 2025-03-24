@@ -8,6 +8,7 @@ import numpy as np
 import datetime
 import yfinance as yf
 import warnings
+import time
 from loguru import logger
 from datetime import timedelta
 from typing import List, Dict, Tuple, Optional
@@ -28,7 +29,7 @@ class MarketPerformanceTracker:
             "symbol": ["^NDX", "^GSPC", "^RUT", "^DJI", "^FTSE",
                        "^N225", "^GDAXI", "^FCHI", "^STOXX50E", "^IBEX"]
         }
-        self.hashtags = ['\n#StockMarkets #Performance']
+        self.hashtags = ['\n#StockMarkets']
         self.performance_df = None
         self.merged_df = None
         self.green = "\U0001F7E2"  # Green Circle
@@ -44,6 +45,7 @@ class MarketPerformanceTracker:
         """Post a tweet with the given text."""
         logger.info(text)
         post_twitter(text)
+        time.sleep(300)
 
     def calculate_returns(self, stock_data: pd.DataFrame, start_date: datetime) -> float:
         """Calculate returns for a given time period."""

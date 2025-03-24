@@ -152,31 +152,31 @@ class DividendBot:
             logger.error(f"Error getting dividend info for {ticker}: {e}")
             return pd.DataFrame()
 
-    def get_dividend_for_ticker(self, ticker: str) -> Dict:
-        """Get current dividend information for a specific ticker."""
-        try:
-            params = {
-                'from': self.current_date_str,
-                'to': self.current_date_str,
-                'apikey': self.api_key
-            }
-
-            response = requests.get(f"{self.base_url}/stock_dividend_calendar", params=params)
-            response.raise_for_status()
-
-            data = response.json()
-            dividends = [div for div in data if div.get('symbol') == ticker]
-
-            if dividends:
-                logger.info(f"Found dividend information for {ticker}")
-                return dividends[0]
-            else:
-                logger.warning(f"No dividend information found for {ticker}")
-                return {}
-
-        except Exception as e:
-            logger.error(f"Error getting dividend for ticker {ticker}: {e}")
-            return {}
+    # def get_dividend_for_ticker(self, ticker: str) -> Dict:
+    #     """Get current dividend information for a specific ticker."""
+    #     try:
+    #         params = {
+    #             'from': self.current_date_str,
+    #             'to': self.current_date_str,
+    #             'apikey': self.api_key
+    #         }
+    #
+    #         response = requests.get(f"{self.base_url}/stock_dividend_calendar", params=params)
+    #         response.raise_for_status()
+    #
+    #         data = response.json()
+    #         dividends = [div for div in data if div.get('symbol') == ticker]
+    #
+    #         if dividends:
+    #             logger.info(f"Found dividend information for {ticker}")
+    #             return dividends[0]
+    #         else:
+    #             logger.warning(f"No dividend information found for {ticker}")
+    #             return {}
+    #
+    #     except Exception as e:
+    #         logger.error(f"Error getting dividend for ticker {ticker}: {e}")
+    #         return {}
 
     def format_dividend_message(self, tickers: List[str]) -> str:
         """Format the dividend announcement message."""
@@ -209,23 +209,21 @@ class DividendBot:
             industry = company_info.get('industry', 'Unknown')
             sector = company_info.get('sector', 'Unknown')
 
-            message_0 = f"Today Report Dividends: \n #{company_name}, -> ${ticker}"
+            message_0 = f"Today Pay Dividends: \n #{company_name}, -> ${ticker}"
 
             if dividend_info.empty:
                 logger.warning(f"No dividend info available for {ticker}")
                 return ""
 
-            payment_date = api_info.get('paymentDate', 'N/A')
-            adj_dividend = api_info.get('adjDividend', 'N/A')
+            adj_dividend = api_info.get('lastDividendValue', 'N/A')
             div_yield = dividend_info.iloc[0]['dividendYield']
             five_year = dividend_info.iloc[0]['fiveYearAvgDividendYield']
 
-            message_2 = (f"\n -> Payment Date = {payment_date} "
-                         f"\n -> Dividend = {adj_dividend} $ "
-                         f"\n -> Dividend Yield = {div_yield} %, "
-                         f"\n -> Five Years Avg Dividend Yield = {five_year} % "
-                         f"\n -> Industry: #{industry} "
-                         f"\n -> Sector: #{sector}")
+            message_2 = (f"\n -> Industry: #{industry} "
+                         f"\n -> Sector: #{sector}"
+                         f"\n -> Dividend Payment= {adj_dividend} $"
+                         f"\n -> Dividend Yield = {div_yield} %"
+                         f"\n -> Five Years Avg Dividend Yield = {five_year} %")
 
             final_message = message_0 + message_2 + "\n #Dividends #Stocks"
 
@@ -283,14 +281,15 @@ class DividendBot:
                         continue
 
                     # Get API dividend information
-                    api_info = self.get_dividend_for_ticker(ticker)
-                    if not api_info:
+                    stock = yf.Ticker(ticker)
+                    info = stock.info
+                    if not info:
                         logger.warning(f"No API dividend info found for {ticker}")
                         continue
 
                     # Format and post message
                     company_message = self.format_company_dividend_message(
-                        ticker, dividend_info, api_info
+                        ticker, dividend_info, info
                     )
 
                     if company_message:
@@ -313,4 +312,3 @@ class DividendBot:
 if __name__ == "__main__":
     bot = DividendBot()
     bot.run()
-    stop=1

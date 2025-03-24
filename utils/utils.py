@@ -37,7 +37,7 @@ def post_twitter(text: str):
     logger.info(f"Tweet lenght: {len(message)}")
     try:
 
-        # client.create_tweet(text=message)
+        client.create_tweet(text=message)
         bot_send_text("Tweet posted: {}".format(message))
         logger.success("Tweet posted: {}".format(message))
     except Exception as e:
@@ -181,6 +181,7 @@ def get_dividends(tickers_symbol) -> List:
 
     tickers_to_save = []
     dates_to_save = []
+
     for ticker_symbol in tickers_symbol:
         try:
             stock = yf.Ticker(ticker_symbol)
