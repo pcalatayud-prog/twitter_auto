@@ -544,3 +544,88 @@ Global Markets YTD:
 
 #StockMarkets
 2025-03-24 18:34:19.200 | INFO     | utils.utils:post_twitter:49 - Pausing for 269 seconds to maintain proper intervals between Twitter posts.
+2025-05-09 16:00:13.477 | INFO     | __main__:__init__:24 - initialize Performance Markets
+2025-05-09 16:00:19.873 | INFO     | __main__:post_performance:124 - Posting message (260 chars):
+2025-05-09 16:00:19.874 | INFO     | __main__:post_tweet:46 - 
+Global Markets 1-WTD:
+🟢 #DAX -> 1.89 %
+🟢 #Nikkei_225 -> 1.62 %
+🟢 #Russell_2000 -> 1.58 %
+🟢 #NASDAQ_100 -> 1.24 %
+🟢 #EuroStoxx_50 -> 0.85 %
+🟢 #DowJones -> 0.68 %
+🟢 #Ibex_35 -> 0.59 %
+🟢 #CAC_40 -> 0.25 %
+🟢 #SP_500 -> 0.15 %
+🔴 #FTSE_100 -> -0.49 %
+
+#StockMarkets
+2025-05-09 16:00:19.875 | INFO     | utils.utils:post_twitter:37 - Tweet lenght: 282
+2025-05-09 16:00:20.110 | ERROR    | utils.utils:post_twitter:44 - 403 Forbidden
+You are not permitted to perform this action.
+2025-05-09 16:00:20.111 | INFO     | utils.utils:send_telegram_message:254 - Using bot_token: 6379257583...
+2025-05-09 16:00:20.113 | INFO     | utils.utils:send_telegram_message:255 - Sending to chat_id: -1002313822545
+2025-05-09 16:00:20.115 | INFO     | utils.utils:send_telegram_message:276 - Attempting to send message to Telegram
+2025-05-09 16:00:20.482 | INFO     | utils.utils:send_telegram_message:282 - Message sent successfully. Status code: 200
+2025-05-09 16:00:20.483 | ERROR    | utils.utils:post_twitter:46 - Tweet Error
+Tweet Error
+: 403 Forbidden
+You are not permitted to perform this action.
+
+Global Markets 1-WTD:
+🟢 #DAX -> 1.89 %
+🟢 #Nikkei_225 -> 1.62 %
+🟢 #Russell_2000 -> 1.58 %
+🟢 #NASDAQ_100 -> 1.24 %
+🟢 #EuroStoxx_50 -> 0.85 %
+🟢 #DowJones -> 0.68 %
+🟢 #Ibex_35 -> 0.59 %
+🟢 #CAC_40 -> 0.25 %
+🟢 #SP_500 -> 0.15 %
+🔴 #FTSE_100 -> -0.49 %
+
+#StockMarkets
+@Grok provide context
+2025-05-09 16:00:20.484 | INFO     | utils.utils:post_twitter:49 - Pausing for 381 seconds to maintain proper intervals between Twitter posts.
+2025-05-09 16:05:20.505 | INFO     | __main__:post_performance:124 - Posting message (263 chars):
+2025-05-09 16:05:20.506 | INFO     | __main__:post_tweet:46 - 
+Global Markets YTD:
+🟢 #DAX -> 17.95 %
+🟢 #Ibex_35 -> 16.73 %
+🟢 #EuroStoxx_50 -> 8.13 %
+🟢 #CAC_40 -> 5.15 %
+🟢 #FTSE_100 -> 4.67 %
+🔴 #DowJones -> -2.83 %
+🔴 #SP_500 -> -4.05 %
+🔴 #NASDAQ_100 -> -4.47 %
+🔴 #Nikkei_225 -> -6.11 %
+🔴 #Russell_2000 -> -9.2 %
+
+#StockMarkets
+2025-05-09 16:05:20.507 | INFO     | utils.utils:post_twitter:37 - Tweet lenght: 285
+2025-05-09 16:05:20.761 | ERROR    | utils.utils:post_twitter:44 - 403 Forbidden
+You are not permitted to perform this action.
+2025-05-09 16:05:20.762 | INFO     | utils.utils:send_telegram_message:254 - Using bot_token: 6379257583...
+2025-05-09 16:05:20.762 | INFO     | utils.utils:send_telegram_message:255 - Sending to chat_id: -1002313822545
+2025-05-09 16:05:20.764 | INFO     | utils.utils:send_telegram_message:276 - Attempting to send message to Telegram
+2025-05-09 16:05:21.068 | INFO     | utils.utils:send_telegram_message:282 - Message sent successfully. Status code: 200
+2025-05-09 16:05:21.070 | ERROR    | utils.utils:post_twitter:46 - Tweet Error
+Tweet Error
+: 403 Forbidden
+You are not permitted to perform this action.
+
+Global Markets YTD:
+🟢 #DAX -> 17.95 %
+🟢 #Ibex_35 -> 16.73 %
+🟢 #EuroStoxx_50 -> 8.13 %
+🟢 #CAC_40 -> 5.15 %
+🟢 #FTSE_100 -> 4.67 %
+🔴 #DowJones -> -2.83 %
+🔴 #SP_500 -> -4.05 %
+🔴 #NASDAQ_100 -> -4.47 %
+🔴 #Nikkei_225 -> -6.11 %
+🔴 #Russell_2000 -> -9.2 %
+
+#StockMarkets
+@Grok provide context
+2025-05-09 16:05:21.071 | INFO     | utils.utils:post_twitter:49 - Pausing for 216 seconds to maintain proper intervals between Twitter posts.

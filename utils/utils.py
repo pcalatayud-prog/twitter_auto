@@ -24,7 +24,7 @@ from config.auth import bearer
 from config.telegram import bot_token, bot_chatID
 
 def post_twitter(text: str):
-
+    text = text + "\n@Grok provide context"
     client = tweepy.Client(
         bearer_token=bearer,
         consumer_key=api_key,
@@ -37,7 +37,7 @@ def post_twitter(text: str):
     logger.info(f"Tweet lenght: {len(message)}")
     try:
 
-        client.create_tweet(text=message)
+        client.create_tweet(text=message[0:280])
         bot_send_text("Tweet posted: {}".format(message))
         logger.success("Tweet posted: {}".format(message))
     except Exception as e:

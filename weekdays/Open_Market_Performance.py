@@ -47,7 +47,7 @@ class Market_Daily_Performance:
                 if len(stock_data) >= 2:
                     last_close = stock_data['Close'].iloc[-1].item()
                     prev_close = stock_data['Close'].iloc[-2].item()
-                    daily_return = round(((last_close / prev_close) - 1) * 100, 2)
+                    daily_return = round(((last_close / prev_close) - 1) * 100, 1)
                 else:
                     daily_return = np.nan
                 row['dtd'] = daily_return
@@ -56,7 +56,7 @@ class Market_Daily_Performance:
                     if len(period_data) >= 2:
                         start_price = period_data['Close'].iloc[0].item()
                         end_price = period_data['Close'].iloc[-1].item()
-                        period_return = round(((end_price / start_price) - 1) * 100, 2)
+                        period_return = round(((end_price / start_price) - 1) * 100, 1)
                     else:
                         period_return = np.nan
                     row[period] = period_return
@@ -215,8 +215,8 @@ if __name__ == "__main__":
     print('main')
     market = Market_Daily_Performance()
     #
-    market.market_just_open()
-    # market.market_is_open()
+    # market.market_just_open()
+    market.market_is_open()
     # market.market_is_just_closed()
     # market.market_1_week()
     # market.market_1_year()
