@@ -23,8 +23,9 @@ from config.auth import access_token_secret
 from config.auth import bearer
 from config.telegram import bot_token, bot_chatID
 
+
 def post_twitter(text: str):
-    text = text + "\n@Grok provide context"
+    text = text + "\n@Grok context"
     client = tweepy.Client(
         bearer_token=bearer,
         consumer_key=api_key,
@@ -99,8 +100,8 @@ def get_sp500_tickers():
         print(f"Error retrieving S&P 500 tickers: {e}")
         return []
 
-def getting_nasdaq100_sp500_tickers():
 
+def getting_nasdaq100_sp500_tickers():
     from config.api_keys import api_key
     try:
         base_url = 'https://financialmodelingprep.com/api/v3'
@@ -149,7 +150,7 @@ def get_earnings_calendar() -> pd.DataFrame():
 
         # Make the request and get the CSV data
         with requests.Session() as s:
-            download = s.get(url,timeout=10)
+            download = s.get(url, timeout=10)
 
             # Check if request was successful
             if download.status_code != 200:
@@ -173,8 +174,9 @@ def get_earnings_calendar() -> pd.DataFrame():
         logger.error(f"Error getting earnings calendar: {str(e)}")
         return pd.DataFrame()
 
+
 def unix_to_yyyy_mm_dd(unix_date: int) -> str:
-    date_str = datetime.fromtimestamp(unix_date,UTC).strftime('%Y-%m-%d')
+    date_str = datetime.fromtimestamp(unix_date, UTC).strftime('%Y-%m-%d')
     return date_str
 
 
@@ -204,10 +206,11 @@ def get_dividends(tickers_symbol) -> List:
     })
 
     df['date'] = pd.to_datetime(df['date'])
-    df_today = df[df['date']==today_str]
+    df_today = df[df['date'] == today_str]
     tickers_today = df_today['ticker'].tolist()
 
     return tickers_today
+
 
 def get_dividend_calendar() -> List:
     """
@@ -239,11 +242,12 @@ def get_splits_calendar(today: str):
         df_tickers = pd.DataFrame(data)
         df = df_tickers[df_tickers["symbol"].isin(getting_nasdaq100_sp500_tickers())]
         df['date'] = pd.to_datetime(df['date'])
-        df = df[df['date']==today]
+        df = df[df['date'] == today]
 
         return df
     else:
         return pd.DataFrame()
+
 
 def send_telegram_message(bot_message, max_retries=3):
     """
@@ -310,6 +314,7 @@ def send_telegram_message(bot_message, max_retries=3):
         logger.error(f"Unexpected error sending message: {e}")
         raise
 
+
 def bot_send_text(message):
     """Wrapper function for sending Telegram messages."""
     try:
@@ -349,8 +354,8 @@ def sort_tickers_by_market_cap(tickers: List[str]) -> List[str]:
     # Return just the sorted ticker symbols
     return [ticker for ticker, _ in sorted_tickers]
 
-if __name__ == "__main__":
 
+if __name__ == "__main__":
     A = get_dividend_calendar()
 
-    stop=1
+    stop = 1
