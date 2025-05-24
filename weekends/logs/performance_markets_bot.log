@@ -629,3 +629,80 @@ Global Markets YTD:
 #StockMarkets
 @Grok provide context
 2025-05-09 16:05:21.071 | INFO     | utils.utils:post_twitter:49 - Pausing for 216 seconds to maintain proper intervals between Twitter posts.
+2025-05-24 13:22:07.456 | INFO     | __main__:__init__:24 - initialize Performance Markets
+2025-05-24 13:22:11.760 | INFO     | __main__:post_performance:124 - Posting message (243 chars):
+2025-05-24 13:22:11.760 | INFO     | __main__:post_tweet:46 - 
+Global Markets 1-WTD:
+🟢 #FTSE_100 -> 0.4 %
+🟢 #Ibex_35 -> 0.2 %
+🔴 #DAX -> -0.3 %
+🔴 #Nikkei_225 -> -1.1 %
+🔴 #NASDAQ_100 -> -1.1 %
+🔴 #EuroStoxx_50 -> -1.5 %
+🔴 #CAC_40 -> -1.5 %
+🔴 #SP_500 -> -1.7 %
+🔴 #Russell_2000 -> -2.0 %
+🔴 #DowJones -> -2.2 %
+
+2025-05-24 13:22:11.761 | INFO     | utils.utils:post_twitter:38 - Tweet lenght: 257
+2025-05-24 13:22:11.761 | INFO     | utils.utils:send_telegram_message:261 - Using bot_token: 6379257583...
+2025-05-24 13:22:11.762 | INFO     | utils.utils:send_telegram_message:262 - Sending to chat_id: -1002313822545
+2025-05-24 13:22:11.762 | INFO     | utils.utils:send_telegram_message:283 - Attempting to send message to Telegram
+2025-05-24 13:22:12.005 | INFO     | utils.utils:send_telegram_message:289 - Message sent successfully. Status code: 200
+2025-05-24 13:22:12.408 | INFO     | utils.utils:send_telegram_message:261 - Using bot_token: 6379257583...
+2025-05-24 13:22:12.409 | INFO     | utils.utils:send_telegram_message:262 - Sending to chat_id: -1002313822545
+2025-05-24 13:22:12.411 | INFO     | utils.utils:send_telegram_message:283 - Attempting to send message to Telegram
+2025-05-24 13:22:12.680 | INFO     | utils.utils:send_telegram_message:289 - Message sent successfully. Status code: 200
+2025-05-24 13:22:12.680 | SUCCESS  | utils.utils:post_twitter:46 - Tweet posted: 
+Global Markets 1-WTD:
+🟢 #FTSE_100 -> 0.4 %
+🟢 #Ibex_35 -> 0.2 %
+🔴 #DAX -> -0.3 %
+🔴 #Nikkei_225 -> -1.1 %
+🔴 #NASDAQ_100 -> -1.1 %
+🔴 #EuroStoxx_50 -> -1.5 %
+🔴 #CAC_40 -> -1.5 %
+🔴 #SP_500 -> -1.7 %
+🔴 #Russell_2000 -> -2.0 %
+🔴 #DowJones -> -2.2 %
+
+@Grok context
+2025-05-24 13:22:12.681 | INFO     | utils.utils:post_twitter:53 - Pausing for 491 seconds to maintain proper intervals between Twitter posts.
+2025-05-24 13:27:12.692 | INFO     | __main__:post_performance:124 - Posting message (240 chars):
+2025-05-24 13:27:12.692 | INFO     | __main__:post_tweet:46 - 
+Global Markets YTD:
+🟢 #Ibex_35 -> 21.5 %
+🟢 #DAX -> 18.6 %
+🟢 #EuroStoxx_50 -> 8.4 %
+🟢 #FTSE_100 -> 6.7 %
+🟢 #CAC_40 -> 4.9 %
+🔴 #NASDAQ_100 -> -1.0 %
+🔴 #SP_500 -> -1.7 %
+🔴 #DowJones -> -2.5 %
+🔴 #Nikkei_225 -> -7.0 %
+🔴 #Russell_2000 -> -9.0 %
+
+2025-05-24 13:27:12.693 | INFO     | utils.utils:post_twitter:38 - Tweet lenght: 254
+2025-05-24 13:27:12.694 | INFO     | utils.utils:send_telegram_message:261 - Using bot_token: 6379257583...
+2025-05-24 13:27:12.694 | INFO     | utils.utils:send_telegram_message:262 - Sending to chat_id: -1002313822545
+2025-05-24 13:27:12.695 | INFO     | utils.utils:send_telegram_message:283 - Attempting to send message to Telegram
+2025-05-24 13:27:12.935 | INFO     | utils.utils:send_telegram_message:289 - Message sent successfully. Status code: 200
+2025-05-24 13:27:13.325 | INFO     | utils.utils:send_telegram_message:261 - Using bot_token: 6379257583...
+2025-05-24 13:27:13.328 | INFO     | utils.utils:send_telegram_message:262 - Sending to chat_id: -1002313822545
+2025-05-24 13:27:13.329 | INFO     | utils.utils:send_telegram_message:283 - Attempting to send message to Telegram
+2025-05-24 13:27:13.551 | INFO     | utils.utils:send_telegram_message:289 - Message sent successfully. Status code: 200
+2025-05-24 13:27:13.552 | SUCCESS  | utils.utils:post_twitter:46 - Tweet posted: 
+Global Markets YTD:
+🟢 #Ibex_35 -> 21.5 %
+🟢 #DAX -> 18.6 %
+🟢 #EuroStoxx_50 -> 8.4 %
+🟢 #FTSE_100 -> 6.7 %
+🟢 #CAC_40 -> 4.9 %
+🔴 #NASDAQ_100 -> -1.0 %
+🔴 #SP_500 -> -1.7 %
+🔴 #DowJones -> -2.5 %
+🔴 #Nikkei_225 -> -7.0 %
+🔴 #Russell_2000 -> -9.0 %
+
+@Grok context
+2025-05-24 13:27:13.552 | INFO     | utils.utils:post_twitter:53 - Pausing for 570 seconds to maintain proper intervals between Twitter posts.

@@ -1,3 +1,69 @@
 2025-01-20 00:18:21.349 | INFO     | __main__:__init__:24 - initialize Analyzing Interesting Company
 2025-01-20 00:18:34.855 | INFO     | __main__:__init__:24 - initialize Analyzing Interesting Company
 2025-01-20 00:18:39.133 | INFO     | __main__:filtering_tickers:57 - Number of tickets to evaluate: 20
+2025-05-24 13:35:13.189 | INFO     | __main__:__init__:24 - initialize Analyzing Interesting Company
+2025-05-24 13:35:17.365 | INFO     | __main__:filtering_tickers:57 - Number of tickets to evaluate: 20
+2025-05-24 13:43:00.532 | INFO     | __main__:__init__:24 - initialize Analyzing Interesting Company
+2025-05-24 13:43:05.023 | INFO     | __main__:filtering_tickers:57 - Number of tickets to evaluate: 20
+2025-05-24 14:07:28.938 | INFO     | __main__:__init__:24 - initialize Analyzing Interesting Company
+2025-05-24 14:07:33.172 | INFO     | __main__:filtering_tickers:57 - Number of tickets to evaluate: 20
+2025-05-24 14:08:45.862 | INFO     | __main__:__init__:24 - initialize Analyzing Interesting Company
+2025-05-24 14:08:50.419 | INFO     | __main__:filtering_tickers:57 - Number of tickets to evaluate: 20
+2025-05-24 14:09:42.938 | INFO     | __main__:__init__:24 - initialize Analyzing Interesting Company
+2025-05-24 14:09:47.019 | INFO     | __main__:filtering_tickers:57 - Number of tickets to evaluate: 20
+2025-05-24 14:10:27.453 | INFO     | __main__:__init__:24 - initialize Analyzing Interesting Company
+2025-05-24 14:10:32.003 | INFO     | __main__:filtering_tickers:57 - Number of tickets to evaluate: 20
+2025-05-24 14:13:44.364 | INFO     | __main__:__init__:24 - initialize Analyzing Interesting Company
+2025-05-24 14:13:48.703 | INFO     | __main__:filtering_tickers:57 - Number of tickets to evaluate: 20
+2025-05-24 14:16:55.335 | INFO     | __main__:__init__:24 - initialize Analyzing Interesting Company
+2025-05-24 14:16:57.624 | INFO     | __main__:filtering_tickers:57 - Number of tickets to evaluate: 20
+2025-05-24 14:18:47.487 | INFO     | __main__:__init__:24 - initialize Analyzing Interesting Company
+2025-05-24 14:18:51.837 | INFO     | __main__:filtering_tickers:57 - Number of tickets to evaluate: 50
+2025-05-24 14:24:01.180 | INFO     | __main__:__init__:24 - initialize Analyzing Interesting Company
+2025-05-24 14:24:39.303 | INFO     | __main__:__init__:24 - initialize Analyzing Interesting Company
+2025-05-24 14:24:43.813 | INFO     | __main__:filtering_tickers:57 - Number of tickets to evaluate: 6350
+2025-05-24 14:25:35.790 | INFO     | __main__:filtering_tickers:68 - Processed: 100 out of 6350
+2025-05-24 14:25:35.806 | INFO     | __main__:filtering_tickers:70 - Processed: 1.57
+2025-05-24 14:26:29.131 | INFO     | __main__:filtering_tickers:68 - Processed: 200 out of 6350
+2025-05-24 14:26:29.131 | INFO     | __main__:filtering_tickers:70 - Processed: 3.15
+2025-05-24 14:27:22.679 | INFO     | __main__:filtering_tickers:68 - Processed: 300 out of 6350
+2025-05-24 14:27:22.685 | INFO     | __main__:filtering_tickers:70 - Processed: 4.72
+2025-05-24 14:28:15.438 | INFO     | __main__:filtering_tickers:68 - Processed: 400 out of 6350
+2025-05-24 14:28:15.454 | INFO     | __main__:filtering_tickers:70 - Processed: 6.3
+2025-05-24 14:29:07.188 | INFO     | __main__:filtering_tickers:68 - Processed: 500 out of 6350
+2025-05-24 14:29:07.190 | INFO     | __main__:filtering_tickers:70 - Processed: 7.87
+2025-05-24 14:29:59.359 | INFO     | __main__:filtering_tickers:68 - Processed: 600 out of 6350
+2025-05-24 14:29:59.359 | INFO     | __main__:filtering_tickers:70 - Processed: 9.45
+2025-05-24 14:30:51.146 | INFO     | __main__:filtering_tickers:68 - Processed: 700 out of 6350
+2025-05-24 14:30:51.148 | INFO     | __main__:filtering_tickers:70 - Processed: 11.02
+2025-05-24 14:31:43.330 | INFO     | __main__:filtering_tickers:68 - Processed: 800 out of 6350
+2025-05-24 14:31:43.330 | INFO     | __main__:filtering_tickers:70 - Processed: 12.6
+2025-05-24 14:32:36.111 | INFO     | __main__:filtering_tickers:68 - Processed: 900 out of 6350
+2025-05-24 14:32:36.116 | INFO     | __main__:filtering_tickers:70 - Processed: 14.17
+2025-05-24 14:33:32.272 | INFO     | __main__:filtering_tickers:68 - Processed: 1000 out of 6350
+2025-05-24 14:33:32.272 | INFO     | __main__:filtering_tickers:70 - Processed: 15.75
+2025-05-24 14:34:22.940 | INFO     | __main__:filtering_tickers:68 - Processed: 1100 out of 6350
+2025-05-24 14:34:22.944 | INFO     | __main__:filtering_tickers:70 - Processed: 17.32
+2025-05-24 14:35:14.303 | INFO     | __main__:filtering_tickers:68 - Processed: 1200 out of 6350
+2025-05-24 14:35:14.303 | INFO     | __main__:filtering_tickers:70 - Processed: 18.9
+2025-05-24 14:36:06.020 | INFO     | __main__:filtering_tickers:68 - Processed: 1300 out of 6350
+2025-05-24 14:36:06.020 | INFO     | __main__:filtering_tickers:70 - Processed: 20.47
+2025-05-24 14:36:57.651 | INFO     | __main__:filtering_tickers:68 - Processed: 1400 out of 6350
+2025-05-24 14:36:57.651 | INFO     | __main__:filtering_tickers:70 - Processed: 22.05
+2025-05-24 14:37:49.511 | INFO     | __main__:filtering_tickers:68 - Processed: 1500 out of 6350
+2025-05-24 14:37:49.511 | INFO     | __main__:filtering_tickers:70 - Processed: 23.62
+2025-05-24 14:38:41.287 | INFO     | __main__:filtering_tickers:68 - Processed: 1600 out of 6350
+2025-05-24 14:38:41.289 | INFO     | __main__:filtering_tickers:70 - Processed: 25.2
+2025-05-24 14:39:33.449 | INFO     | __main__:filtering_tickers:68 - Processed: 1700 out of 6350
+2025-05-24 14:39:33.451 | INFO     | __main__:filtering_tickers:70 - Processed: 26.77
+2025-05-24 14:40:26.245 | INFO     | __main__:filtering_tickers:68 - Processed: 1800 out of 6350
+2025-05-24 14:40:26.249 | INFO     | __main__:filtering_tickers:70 - Processed: 28.35
+2025-05-24 14:41:18.297 | INFO     | __main__:filtering_tickers:68 - Processed: 1900 out of 6350
+2025-05-24 14:41:18.299 | INFO     | __main__:filtering_tickers:70 - Processed: 29.92
+2025-05-24 14:42:10.063 | INFO     | __main__:filtering_tickers:68 - Processed: 2000 out of 6350
+2025-05-24 14:42:10.063 | INFO     | __main__:filtering_tickers:70 - Processed: 31.5
+2025-05-24 14:43:02.886 | INFO     | __main__:filtering_tickers:68 - Processed: 2100 out of 6350
+2025-05-24 14:43:02.890 | INFO     | __main__:filtering_tickers:70 - Processed: 33.07
+2025-05-24 14:43:54.027 | INFO     | __main__:filtering_tickers:68 - Processed: 2200 out of 6350
+2025-05-24 14:43:54.028 | INFO     | __main__:filtering_tickers:70 - Processed: 34.65
+2025-05-24 14:44:36.468 | INFO     | __main__:__init__:32 - initialize Analyzing Interesting Company

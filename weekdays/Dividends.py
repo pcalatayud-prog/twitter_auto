@@ -15,6 +15,8 @@ from utils.utils import post_twitter, get_dividend_calendar, sort_tickers_by_mar
 from typing import List, Dict, Optional
 from datetime import datetime, timedelta
 
+from constants import green_icon,red_icon, sector_emojis, industry_emojis
+
 class DividendBot:
     """
     A class to handle dividend announcements and post them to Twitter.
@@ -219,8 +221,17 @@ class DividendBot:
             div_yield = dividend_info.iloc[0]['dividendYield']
             five_year = dividend_info.iloc[0]['fiveYearAvgDividendYield']
 
-            message_2 = (f"\n -> Industry: #{industry} "
-                         f"\n -> Sector: #{sector}"
+            try:
+                icon_sector = sector_emojis[sector]
+            except:
+                icon_sector = ''
+            try:
+                icon_industry = industry_emojis[industry]
+            except:
+                icon_industry = ''
+
+            message_2 = (f"\n -> Industry {icon_industry}: #{industry} "
+                         f"\n -> Sector {icon_sector}: #{sector}"
                          f"\n -> Dividend Payment= {adj_dividend} $"
                          f"\n -> Dividend Yield = {div_yield} %"
                          f"\n -> Five Years Avg Dividend Yield = {five_year} %")

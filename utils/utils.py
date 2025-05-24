@@ -70,10 +70,6 @@ def get_market_cap(symbol):
     else:
         return None  # API request failed
 
-
-import pandas as pd
-
-
 def get_sp500_tickers():
     """
     Retrieves the current list of S&P 500 constituent tickers from Wikipedia.

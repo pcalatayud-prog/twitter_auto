@@ -10,6 +10,7 @@ import time
 
 from datetime import datetime, timedelta
 from utils.utils import post_twitter, get_market_cap, get_earnings_calendar, sort_tickers_by_market_cap
+from constants import green_icon,red_icon, sector_emojis, industry_emojis
 
 
 def format_company_message(ticker: str, performance_data: dict, company_info: dict) -> str:
@@ -18,12 +19,27 @@ def format_company_message(ticker: str, performance_data: dict, company_info: di
         price_ytd = performance_data["price_change_ytd"]
         mdd_ytd = performance_data["MDD_ytd"]
 
+        try:
+            icon_sector = sector_emojis[company_info['sector']]
+        except:
+            icon_sector = ''
+        try:
+            icon_industry = industry_emojis[company_info['industry']]
+        except:
+            icon_industry = ''
+
+
         message_0 = (f"Today Publish Results: \n #{company_info['company_name']}, "
-                     f"-> ${ticker} \n ---->  Industry: #{company_info['industry']} "
-                     f"\n ---->   Sector: #{company_info['sector']}")
+                     f"-> ${ticker} \n ---->  Industry {icon_industry}: #{company_info['industry']} "
+                     f"\n ---->   Sector {icon_sector}: #{company_info['sector']}")
 
         message_1 = (f" \n Year To Day Performance: \n ---->  Price Change YTD = "
-                     f"{price_ytd} %, \n ---->  Max DrawDown YTD = {mdd_ytd} %")
+                     f"{price_ytd} % icono, \n ---->  Max DrawDown YTD = {mdd_ytd} %")
+
+        if price_ytd>=0:
+            message_1.replace('\U0001F7E2','icono')
+        else:
+            message_1.replace('\U0001F534', 'icono')
 
         return message_0 + message_1 + "\n #Earnings #Report #Stocks"
 
@@ -43,6 +59,9 @@ class EarningsBot:
         # Set up date information
         self.current_date = datetime.now().strftime('%Y-%m-%d')
 
+        # Add emoji indicators
+        self.green = "\U0001F7E2"  # Green Circle
+        self.red = "\U0001F534"  # Red Circle
         self.number_tickers_to_print = 2
 
     def _get_historical_price(self, ticker: str, start_date: str, end_date: str):
