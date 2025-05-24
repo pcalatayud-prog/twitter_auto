@@ -24,7 +24,7 @@ class StockSevenMagnificenPerformance:
         self.tickers = tickers or ["NVDA", "META", "AMZN", "MSFT", "GOOG", "AAPL", "TSLA"]
         self.df = pd.DataFrame({"symbol": self.tickers})
         self.df_performance = pd.DataFrame(columns=["ticker", "ytd", "hf", "3mtd", "mtd", "wtd", "dtd","3y"])
-        self.lista_hastaghs = ["\n#Stocks", ' #Nasdaq', ' #Investor', ' #StockMarket', ' #trader',' #tradigng',' #SP500',]
+        self.lista_hastaghs = ["\n#Stocks"," #StockMarket"]
 
         # Emojis for positive/negative returns
         self.green = "\U0001F7E2"  # Green Circle
@@ -95,14 +95,14 @@ class StockSevenMagnificenPerformance:
         if len(stock_data_period) > 1:
             price_open = stock_data_period["Open"].iloc[0]
             price_close = stock_data_period["Close"].iloc[-1]
-            return round(100 * (price_close - price_open) / price_open, 2).item()
+            return round(100 * (price_close - price_open) / price_open, 1).item()
         else:
             return np.nan
 
     def calculate_dtd(self, stock_data):
         """ Calculate Day-to-Day return """
         stock_data_dtd = stock_data.tail(2)
-        stock_data_dtd["returns"] = round(100 * stock_data_dtd["Close"].pct_change(), 2)
+        stock_data_dtd["returns"] = round(100 * stock_data_dtd["Close"].pct_change(), 1)
         return stock_data_dtd["returns"].iloc[-1] if len(stock_data_dtd) > 1 else np.nan
 
     def merge_data(self):

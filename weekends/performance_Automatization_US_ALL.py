@@ -63,7 +63,7 @@ class US_StocksPerformance:
             count += 1
             if count % 100 == 0:
                 logger.info(f'Processed: {count} out of {len(filtered_tickers)}')
-                perc_process = round(count / len(filtered_tickers) * 100, 2)
+                perc_process = round(count / len(filtered_tickers) * 100, 1)
                 logger.info(f'Processed: {perc_process}')
 
         tickers["marketCap"] = marketcap_all

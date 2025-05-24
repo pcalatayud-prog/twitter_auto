@@ -29,7 +29,7 @@ class MarketPerformanceTracker:
             "symbol": ["^NDX", "^GSPC", "^RUT", "^DJI", "^FTSE",
                        "^N225", "^GDAXI", "^FCHI", "^STOXX50E", "^IBEX"]
         }
-        self.hashtags = ['\n#StockMarkets']
+        self.hashtags = ['']
         self.performance_df = None
         self.merged_df = None
         self.green = "\U0001F7E2"  # Green Circle
@@ -55,7 +55,7 @@ class MarketPerformanceTracker:
 
         price_open = filtered_data["Open"].iloc[0]
         price_close = filtered_data["Close"].iloc[-1]
-        return round(100 * (price_close - price_open) / price_open, 2)
+        return round(100 * (price_close - price_open) / price_open, 1)
 
     def fetch_stock_data(self, ticker: str) -> Dict[str, float]:
         """Fetch and calculate performance metrics for a given ticker."""
@@ -78,7 +78,7 @@ class MarketPerformanceTracker:
 
             # Calculate day-to-day return
             stock_data_dtd = stock_data.tail(2)
-            returns['dtd'] = round(100 * stock_data_dtd["Close"].pct_change().iloc[-1], 2)
+            returns['dtd'] = round(100 * stock_data_dtd["Close"].pct_change().iloc[-1], 1)
 
             return returns
 
