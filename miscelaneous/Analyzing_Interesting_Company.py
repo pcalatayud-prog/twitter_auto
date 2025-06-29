@@ -10,8 +10,9 @@ import datetime
 import numpy as np
 import yfinance as yf
 from finvizfinance.quote import finvizfinance
-from utils.utils import post_twitter,bot_send_text
+from utils.utils import post_twitter, bot_send_text
 from config.api_keys import api_key
+
 
 class finviz_companies:
     def __init__(self):
@@ -60,7 +61,6 @@ class finviz_companies:
         import asyncio
         from utils.utils_async import fetch_all_market_caps
 
-
         marketcap_all = asyncio.run(fetch_all_market_caps(filtered_tickers))
 
         tickers["marketCap"] = marketcap_all
@@ -71,7 +71,6 @@ class finviz_companies:
         tickers = tickers[tickers["marketCap"] > billion]
 
         self.tickers = tickers["symbol"].tolist()
-
 
     def run(self):
 
@@ -87,9 +86,9 @@ class finviz_companies:
                 time.sleep(0.2)
                 stock = finvizfinance(ticker)
                 stock_fundament = stock.ticker_fundament()
-                new_tickers= {"ticker" : ticker}
+                new_tickers = {"ticker": ticker}
 
-                stock_fundamental_update = {**new_tickers,**stock_fundament}
+                stock_fundamental_update = {**new_tickers, **stock_fundament}
                 data.loc[len(data)] = stock_fundamental_update
             except Exception as e:
                 logger.info(f'Error with ticker {ticker}, \nError:{e}')
@@ -309,6 +308,7 @@ def generate_performance_tweet(df):
 💡 Market insights: Performance varies across timeframes 📈 🎯 ✨"""
 
     return tweet
+
 
 if __name__ == "__main__":
     companies = finviz_companies()

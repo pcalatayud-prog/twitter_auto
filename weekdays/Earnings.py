@@ -37,11 +37,11 @@ def format_company_message(ticker: str, performance_data: dict, company_info: di
                      f"{price_ytd} % icono, \n ---->  Max DrawDown YTD = {mdd_ytd} %")
 
         if price_ytd>=0:
-            message_1.replace('\U0001F7E2','icono')
+            message_1.replace("icono",'\U0001F7E2')
         else:
-            message_1.replace('\U0001F534', 'icono')
+            message_1.replace("icono",'\U0001F534')
 
-        return message_0 + message_1 + "\n #Earnings #Report #Stocks"
+        return message_0 + message_1 + "\n #Earnings"
 
     except Exception as e:
         logger.error(f"Error formatting company message for {ticker}: {e}")
