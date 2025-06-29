@@ -30,11 +30,11 @@ def format_company_message(ticker: str, performance_data: dict, company_info: di
 
 
         message_0 = (f"Today Publish Results: \n #{company_info['company_name']}, "
-                     f"-> ${ticker} \n ---->  Industry {icon_industry}: #{company_info['industry']} "
-                     f"\n ---->   Sector {icon_sector}: #{company_info['sector']}")
+                     f"-> ${ticker} \n ->  Industry {icon_industry}: #{company_info['industry']} "
+                     f"\n ->   Sector {icon_sector}: #{company_info['sector']}")
 
-        message_1 = (f" \n Year To Day Performance: \n ---->  Price Change YTD = "
-                     f"{price_ytd} % icono, \n ---->  Max DrawDown YTD = {mdd_ytd} %")
+        message_1 = (f" \n Year To Day Performance: \n ->  Price Change YTD = "
+                     f"{price_ytd} % icono, \n ->  Max DrawDown YTD = {mdd_ytd} %")
 
         if price_ytd>=0:
             message_1.replace("icono",'\U0001F7E2')
