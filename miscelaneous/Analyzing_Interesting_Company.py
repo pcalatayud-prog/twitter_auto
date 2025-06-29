@@ -56,18 +56,12 @@ class finviz_companies:
         marketcap_all = []
         logger.info('Number of tickets to evaluate: {}'.format(len(filtered_tickers)))
         count = 0
-        for ticker in filtered_tickers:
-            try:
-                market_cap = get_market_cap(ticker)
-                marketcap_all.append(market_cap)
-            except Exception as e:
-                logger.error(f'Error downloaded {ticker}. Tickers {count} out of {len(filtered_tickers)}. \nError: {e}')
-                marketcap_all.append(np.nan)
-            count += 1
-            if count % 100 == 0:
-                logger.info(f'Processed: {count} out of {len(filtered_tickers)}')
-                perc_process = round(count / len(filtered_tickers) * 100, 2)
-                logger.info(f'Processed: {perc_process}')
+
+        import asyncio
+        from utils.utils_async import fetch_all_market_caps
+
+
+        marketcap_all = asyncio.run(fetch_all_market_caps(filtered_tickers))
 
         tickers["marketCap"] = marketcap_all
 

@@ -54,21 +54,19 @@ def post_twitter(text: str):
     # time.sleep(random_number)
     return None
 
+def get_market_cap(symbol) -> int:
+    try:
+        ticker = yf.Ticker(symbol)
+        info = ticker.info
+        marketcap = info.get('marketCap')
 
-def get_market_cap(symbol):
-    from config.api_keys import api_key
-    url = f"https://financialmodelingprep.com/api/v3/market-capitalization/{symbol}?apikey={api_key}"
-    response = requests.get(url)
+    except:
 
-    if response.status_code == 200:
-        data = response.json()
-        if data:
-            market_cap = data[0].get('marketCap', None)
-            return market_cap
-        else:
-            return None  # No data for the given symbol
-    else:
-        return None  # API request failed
+        marketcap = 0
+        logger.warning(f'Error downloading the marketCap for ticker {symbol}')
+
+    return  marketcap
+
 
 def get_sp500_tickers():
     """
