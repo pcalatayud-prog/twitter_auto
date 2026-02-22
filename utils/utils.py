@@ -105,7 +105,18 @@ def getting_nasdaq100_sp500_tickers():
             f"{base_url}/nasdaq_constituent",
             params={'apikey': api_key}
         )
-        nasdaq = [item["symbol"] for item in nasdaq_response.json()]
+
+        # Check if the request was successful
+        nasdaq = []
+        if nasdaq_response.status_code == 200:
+            nasdaq_data = nasdaq_response.json()
+            # Verify the response is a list and not an error dict/string
+            if isinstance(nasdaq_data, list):
+                nasdaq = [item["symbol"] for item in nasdaq_data]
+            else:
+                logger.warning(f"NASDAQ API returned unexpected format: {nasdaq_data}")
+        else:
+            logger.warning(f"NASDAQ API request failed with status {nasdaq_response.status_code}")
 
         # # Get S&P 500 constituents
         # sp500_response = requests.get(

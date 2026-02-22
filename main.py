@@ -41,7 +41,7 @@ class Execution_twitter_information:
         logger.info('Initialising Main')
 
         self.time = None
-        self.exchange = "NYSE"
+        self.exchange = "NASDAQ"
         self.api_key = api_key
         self.current_year = datetime.datetime.now().year
         self.today = datetime.datetime.now().date()
@@ -59,7 +59,7 @@ class Execution_twitter_information:
         ecxchange: str exchange of the american stock exchange to check if it is open or not today
         returns -> str: A message indicating whether the market is open or closed.
         """
-        url = f"https://financialmodelingprep.com/api/v3/is-the-market-open?exchange={self.exchange}"
+        url = f"https://financialmodelingprep.com/stable/exchange-market-hours?exchange={self.exchange}"
         params = {"apikey": self.api_key}
 
         try:
@@ -67,37 +67,37 @@ class Execution_twitter_information:
             response.raise_for_status()
             data = response.json()
 
-            data_stockMarketHolidays = data['stockMarketHolidays']
+            # New API format returns a list with one item
+            if isinstance(data, list) and len(data) > 0:
+                market_info = data[0]
+                is_open = market_info.get('isMarketOpen', False)
+                opening_hour = market_info.get('openingHour', 'N/A')
+                closing_hour = market_info.get('closingHour', 'N/A')
 
-            holidays_this_year = next(item for item in data_stockMarketHolidays if item['year'] == self.current_year)
+                current_date = self.today.strftime("%A, %d of %B")
 
-            if holidays_this_year:
-                holidays_this_year = {value: key for key, value in holidays_this_year.items()}
-            else:
-                holidays_this_year = {}
-
-            today_str = self.today.strftime('%Y-%m-%d')
-            current_date = self.today.strftime("%A, %d of %B")
-
-            if today_str in holidays_this_year:
-                reason = holidays_this_year[today_str]
-                if self.morning_update[0]==self.current_hour:
-                    logger.info(f"Today {current_date} the market is closed due to: {reason}.")
-                    post_twitter(f"Today {current_date} the market is closed due to: {reason}.")
-                self.market_open = False
-            else:
-                open_hour = data['stockMarketHours']['openingHour']
-                close_hour = data['stockMarketHours']['closingHour']
                 if self.morning_update[0] == self.current_hour:
-                    logger.info(
-                        f"Today {current_date} the market is open from {open_hour} to {close_hour}."
-                    )
-                    post_twitter(f"Today {current_date} the NYSE is open from {open_hour} to {close_hour}.")
+                    if is_open:
+                        logger.info(f"Today {current_date} the {self.exchange} is open from {opening_hour} to {closing_hour}.")
+                        post_twitter(f"Today {current_date} the {self.exchange} is open from {opening_hour} to {closing_hour}.")
+                    else:
+                        logger.info(f"Today {current_date} the {self.exchange} is closed.")
+                        post_twitter(f"Today {current_date} the {self.exchange} is closed.")
+
+                self.market_open = is_open
+            else:
+                logger.warning("Unexpected API response format")
                 self.market_open = True
 
         except requests.RequestException as e:
             logger.error(f"Failed to fetch market data: {e}")
-            self.market_open = None
+            bot_send_text(f"⚠️ API Error: Failed to fetch market data - {e}\nAssuming market is open on weekday.")
+            # Default to True on weekdays if API fails (safer to assume open than miss scheduled tasks)
+            self.market_open = True
+        except Exception as e:
+            logger.error(f"Error parsing market data: {e}")
+            bot_send_text(f"⚠️ Error parsing market data - {e}\nAssuming market is open on weekday.")
+            self.market_open = True
 
         return None
 
@@ -126,48 +126,94 @@ class Execution_twitter_information:
 
             if self.current_hour == self.morning_update[0]:
                 logger.info("Running Earnings + Dividends + Splits")
-                bot = EarningsBot()
-                bot.run()
+                try:
+                    bot = EarningsBot()
+                    bot.run()
+                except Exception as e:
+                    logger.error(f"EarningsBot failed: {e}")
+                    bot_send_text(f"❌ EarningsBot Error: {type(e).__name__}: {str(e)}")
+
                 time.sleep(300)
-                bot = DividendBot()
-                bot.run()
+
+                try:
+                    bot = DividendBot()
+                    bot.run()
+                except Exception as e:
+                    logger.error(f"DividendBot failed: {e}")
+                    bot_send_text(f"❌ DividendBot Error: {type(e).__name__}: {str(e)}")
+
                 time.sleep(300)
-                bot = SplitBot()
-                bot.run()
+
+                try:
+                    bot = SplitBot()
+                    bot.run()
+                except Exception as e:
+                    logger.error(f"SplitBot failed: {e}")
+                    bot_send_text(f"❌ SplitBot Error: {type(e).__name__}: {str(e)}")
 
             elif self.current_hour == self.time_open[0] and self.current_minute >= self.time_open[1]:
                 logger.info('The market just opened -> ')
-                market = Market_Daily_Performance()
-                market.market_just_open()
+                try:
+                    market = Market_Daily_Performance()
+                    market.market_just_open()
+                except Exception as e:
+                    logger.error(f"Market open performance failed: {e}")
+                    bot_send_text(f"❌ Market Open Error: {type(e).__name__}: {str(e)}")
 
             elif self.current_hour == self.time_performance[0]:
                 logger.info('The market has been opened for 3 hours -> ')
-                market = Market_Daily_Performance()
-                market.market_is_open()
+                try:
+                    market = Market_Daily_Performance()
+                    market.market_is_open()
+                except Exception as e:
+                    logger.error(f"Market performance check failed: {e}")
+                    bot_send_text(f"❌ Market Performance Error: {type(e).__name__}: {str(e)}")
 
             elif self.current_hour == self.time_close[0]:
                 logger.info('The market just closed -> ')
-                market = Market_Daily_Performance()
-                market.market_is_just_closed()
-                market.market_1_week()
+                try:
+                    market = Market_Daily_Performance()
+                    market.market_is_just_closed()
+                    market.market_1_week()
+                except Exception as e:
+                    logger.error(f"Market close performance failed: {e}")
+                    bot_send_text(f"❌ Market Close Error: {type(e).__name__}: {str(e)}")
 
         elif self.day_of_week in self.WEEKENDS:
             logger.info('Today the market is closed -> Weekend.')
 
             if self.day_of_week == self.performance_markets[0] and self.current_hour == self.performance_markets[1]:
+                try:
                     tracker = MarketPerformanceTracker()
                     tracker.run()
+                except Exception as e:
+                    logger.error(f"MarketPerformanceTracker failed: {e}")
+                    bot_send_text(f"❌ Market Performance Tracker Error: {type(e).__name__}: {str(e)}")
 
             elif self.day_of_week == self.performance_US_ALL[0] and self.current_hour == self.performance_US_ALL[1]:
+                try:
                     US_stocks = US_StocksPerformance()
                     US_stocks.run()
+                except Exception as e:
+                    logger.error(f"US_StocksPerformance failed: {e}")
+                    bot_send_text(f"❌ US Stocks Performance Error: {type(e).__name__}: {str(e)}")
+
             elif self.day_of_week == self.performance_mag_7[0] and self.current_hour == self.performance_mag_7[1]:
+                try:
                     stock_performance = StockSevenMagnificenPerformance()
                     stock_performance.run()
+                except Exception as e:
+                    logger.error(f"Magnificent 7 Performance failed: {e}")
+                    bot_send_text(f"❌ Mag 7 Performance Error: {type(e).__name__}: {str(e)}")
 
             elif self.day_of_week == self.performance_Sector[0] and self.current_hour == self.performance_Sector[1]:
+                try:
                     stock_perf = SectorPerformance()
                     stock_perf.run()
+                except Exception as e:
+                    logger.error(f"SectorPerformance failed: {e}")
+                    bot_send_text(f"❌ Sector Performance Error: {type(e).__name__}: {str(e)}")
+
             else:
                 logger.info('Nothing to post...')
                 bot_send_text('Nothing to post...')
@@ -177,6 +223,14 @@ class Execution_twitter_information:
         return None
 
 if __name__ == "__main__":
-
-    twitting = Execution_twitter_information()
-    processed_data = twitting.run()
+    try:
+        twitting = Execution_twitter_information()
+        processed_data = twitting.run()
+    except Exception as e:
+        error_msg = f"🚨 CRITICAL ERROR in main.py:\n{type(e).__name__}: {str(e)}"
+        logger.exception("Critical error in main execution")
+        try:
+            bot_send_text(error_msg)
+        except:
+            pass  # Don't fail if telegram notification fails
+        raise  # Re-raise to see full traceback
