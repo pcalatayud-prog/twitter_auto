@@ -2951,3 +2951,726 @@ TypeError: list indices must be integers or slices, not str
 2026-02-22 23:31:10.942 | INFO     | __main__:run:290 - Nothing to post...
 2026-02-22 23:31:10.942 | INFO     | __main__:run:290 - Nothing to post...
 2026-02-22 23:31:10.942 | INFO     | __main__:run:290 - Nothing to post...
+2026-02-23 09:20:48.533 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:20:48.533 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Monday, 2025-02-24, 08:00
+2026-02-23 09:20:48.533 | INFO     | __main__:is_weekend:135 - Monday is a weekday. The market could be open.
+2026-02-23 09:20:48.535 | INFO     | __main__:is_market_open:102 - Today Monday, 24 of February the NASDAQ is open.
+2026-02-23 09:20:48.535 | INFO     | __main__:run:152 - Today the market opens
+2026-02-23 09:20:48.535 | INFO     | __main__:run:157 - Running Earnings + Dividends + Splits
+2026-02-23 09:20:48.538 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:20:48.538 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:20:48.538 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Monday, 2025-02-24, 15:30
+2026-02-23 09:20:48.538 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Monday, 2025-02-24, 15:30
+2026-02-23 09:20:48.538 | INFO     | __main__:is_weekend:135 - Monday is a weekday. The market could be open.
+2026-02-23 09:20:48.538 | INFO     | __main__:is_weekend:135 - Monday is a weekday. The market could be open.
+2026-02-23 09:20:48.538 | INFO     | __main__:run:152 - Today the market opens
+2026-02-23 09:20:48.538 | INFO     | __main__:run:152 - Today the market opens
+2026-02-23 09:20:48.538 | INFO     | __main__:run:191 - The market just opened -> 
+2026-02-23 09:20:48.538 | INFO     | __main__:run:191 - The market just opened -> 
+2026-02-23 09:20:48.541 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:20:48.541 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:20:48.541 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:20:48.541 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Tuesday, 2025-02-25, 18:30
+2026-02-23 09:20:48.541 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Tuesday, 2025-02-25, 18:30
+2026-02-23 09:20:48.541 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Tuesday, 2025-02-25, 18:30
+2026-02-23 09:20:48.541 | INFO     | __main__:is_weekend:135 - Tuesday is a weekday. The market could be open.
+2026-02-23 09:20:48.541 | INFO     | __main__:is_weekend:135 - Tuesday is a weekday. The market could be open.
+2026-02-23 09:20:48.541 | INFO     | __main__:is_weekend:135 - Tuesday is a weekday. The market could be open.
+2026-02-23 09:20:48.541 | INFO     | __main__:run:152 - Today the market opens
+2026-02-23 09:20:48.541 | INFO     | __main__:run:152 - Today the market opens
+2026-02-23 09:20:48.541 | INFO     | __main__:run:152 - Today the market opens
+2026-02-23 09:20:48.541 | INFO     | __main__:run:205 - The market has been opened for 3 hours -> 
+2026-02-23 09:20:48.541 | INFO     | __main__:run:205 - The market has been opened for 3 hours -> 
+2026-02-23 09:20:48.541 | INFO     | __main__:run:205 - The market has been opened for 3 hours -> 
+2026-02-23 09:20:48.545 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:20:48.545 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:20:48.545 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:20:48.545 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:20:48.545 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Wednesday, 2025-02-26, 22:00
+2026-02-23 09:20:48.545 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Wednesday, 2025-02-26, 22:00
+2026-02-23 09:20:48.545 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Wednesday, 2025-02-26, 22:00
+2026-02-23 09:20:48.545 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Wednesday, 2025-02-26, 22:00
+2026-02-23 09:20:48.545 | INFO     | __main__:is_weekend:135 - Wednesday is a weekday. The market could be open.
+2026-02-23 09:20:48.545 | INFO     | __main__:is_weekend:135 - Wednesday is a weekday. The market could be open.
+2026-02-23 09:20:48.545 | INFO     | __main__:is_weekend:135 - Wednesday is a weekday. The market could be open.
+2026-02-23 09:20:48.545 | INFO     | __main__:is_weekend:135 - Wednesday is a weekday. The market could be open.
+2026-02-23 09:20:48.545 | INFO     | __main__:run:152 - Today the market opens
+2026-02-23 09:20:48.545 | INFO     | __main__:run:152 - Today the market opens
+2026-02-23 09:20:48.545 | INFO     | __main__:run:152 - Today the market opens
+2026-02-23 09:20:48.545 | INFO     | __main__:run:152 - Today the market opens
+2026-02-23 09:20:48.545 | INFO     | __main__:run:219 - The market just closed -> 
+2026-02-23 09:20:48.545 | INFO     | __main__:run:219 - The market just closed -> 
+2026-02-23 09:20:48.545 | INFO     | __main__:run:219 - The market just closed -> 
+2026-02-23 09:20:48.545 | INFO     | __main__:run:219 - The market just closed -> 
+2026-02-23 09:20:48.548 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:20:48.548 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:20:48.548 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:20:48.548 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:20:48.548 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:20:48.548 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Thursday, 2025-02-27, 12:00
+2026-02-23 09:20:48.548 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Thursday, 2025-02-27, 12:00
+2026-02-23 09:20:48.548 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Thursday, 2025-02-27, 12:00
+2026-02-23 09:20:48.548 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Thursday, 2025-02-27, 12:00
+2026-02-23 09:20:48.548 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Thursday, 2025-02-27, 12:00
+2026-02-23 09:20:48.549 | INFO     | __main__:is_weekend:135 - Thursday is a weekday. The market could be open.
+2026-02-23 09:20:48.549 | INFO     | __main__:is_weekend:135 - Thursday is a weekday. The market could be open.
+2026-02-23 09:20:48.549 | INFO     | __main__:is_weekend:135 - Thursday is a weekday. The market could be open.
+2026-02-23 09:20:48.549 | INFO     | __main__:is_weekend:135 - Thursday is a weekday. The market could be open.
+2026-02-23 09:20:48.549 | INFO     | __main__:is_weekend:135 - Thursday is a weekday. The market could be open.
+2026-02-23 09:20:48.549 | INFO     | __main__:run:152 - Today the market opens
+2026-02-23 09:20:48.549 | INFO     | __main__:run:152 - Today the market opens
+2026-02-23 09:20:48.549 | INFO     | __main__:run:152 - Today the market opens
+2026-02-23 09:20:48.549 | INFO     | __main__:run:152 - Today the market opens
+2026-02-23 09:20:48.549 | INFO     | __main__:run:152 - Today the market opens
+2026-02-23 09:20:48.552 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:20:48.552 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:20:48.552 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:20:48.552 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:20:48.552 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:20:48.552 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:20:48.552 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Saturday, 2025-02-22, 08:00
+2026-02-23 09:20:48.552 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Saturday, 2025-02-22, 08:00
+2026-02-23 09:20:48.552 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Saturday, 2025-02-22, 08:00
+2026-02-23 09:20:48.552 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Saturday, 2025-02-22, 08:00
+2026-02-23 09:20:48.552 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Saturday, 2025-02-22, 08:00
+2026-02-23 09:20:48.552 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Saturday, 2025-02-22, 08:00
+2026-02-23 09:20:48.552 | INFO     | __main__:is_weekend:131 - Saturday is a weekend. The market is closed.
+2026-02-23 09:20:48.552 | INFO     | __main__:is_weekend:131 - Saturday is a weekend. The market is closed.
+2026-02-23 09:20:48.552 | INFO     | __main__:is_weekend:131 - Saturday is a weekend. The market is closed.
+2026-02-23 09:20:48.552 | INFO     | __main__:is_weekend:131 - Saturday is a weekend. The market is closed.
+2026-02-23 09:20:48.552 | INFO     | __main__:is_weekend:131 - Saturday is a weekend. The market is closed.
+2026-02-23 09:20:48.552 | INFO     | __main__:is_weekend:131 - Saturday is a weekend. The market is closed.
+2026-02-23 09:20:48.552 | INFO     | __main__:run:236 - Today the market is closed -> Weekend.
+2026-02-23 09:20:48.552 | INFO     | __main__:run:236 - Today the market is closed -> Weekend.
+2026-02-23 09:20:48.552 | INFO     | __main__:run:236 - Today the market is closed -> Weekend.
+2026-02-23 09:20:48.552 | INFO     | __main__:run:236 - Today the market is closed -> Weekend.
+2026-02-23 09:20:48.552 | INFO     | __main__:run:236 - Today the market is closed -> Weekend.
+2026-02-23 09:20:48.552 | INFO     | __main__:run:236 - Today the market is closed -> Weekend.
+2026-02-23 09:20:48.555 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:20:48.555 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:20:48.555 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:20:48.555 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:20:48.555 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:20:48.555 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:20:48.555 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:20:48.555 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Saturday, 2025-02-22, 17:00
+2026-02-23 09:20:48.555 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Saturday, 2025-02-22, 17:00
+2026-02-23 09:20:48.555 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Saturday, 2025-02-22, 17:00
+2026-02-23 09:20:48.555 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Saturday, 2025-02-22, 17:00
+2026-02-23 09:20:48.555 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Saturday, 2025-02-22, 17:00
+2026-02-23 09:20:48.555 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Saturday, 2025-02-22, 17:00
+2026-02-23 09:20:48.555 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Saturday, 2025-02-22, 17:00
+2026-02-23 09:20:48.556 | INFO     | __main__:is_weekend:131 - Saturday is a weekend. The market is closed.
+2026-02-23 09:20:48.556 | INFO     | __main__:is_weekend:131 - Saturday is a weekend. The market is closed.
+2026-02-23 09:20:48.556 | INFO     | __main__:is_weekend:131 - Saturday is a weekend. The market is closed.
+2026-02-23 09:20:48.556 | INFO     | __main__:is_weekend:131 - Saturday is a weekend. The market is closed.
+2026-02-23 09:20:48.556 | INFO     | __main__:is_weekend:131 - Saturday is a weekend. The market is closed.
+2026-02-23 09:20:48.556 | INFO     | __main__:is_weekend:131 - Saturday is a weekend. The market is closed.
+2026-02-23 09:20:48.556 | INFO     | __main__:is_weekend:131 - Saturday is a weekend. The market is closed.
+2026-02-23 09:20:48.556 | INFO     | __main__:run:236 - Today the market is closed -> Weekend.
+2026-02-23 09:20:48.556 | INFO     | __main__:run:236 - Today the market is closed -> Weekend.
+2026-02-23 09:20:48.556 | INFO     | __main__:run:236 - Today the market is closed -> Weekend.
+2026-02-23 09:20:48.556 | INFO     | __main__:run:236 - Today the market is closed -> Weekend.
+2026-02-23 09:20:48.556 | INFO     | __main__:run:236 - Today the market is closed -> Weekend.
+2026-02-23 09:20:48.556 | INFO     | __main__:run:236 - Today the market is closed -> Weekend.
+2026-02-23 09:20:48.556 | INFO     | __main__:run:236 - Today the market is closed -> Weekend.
+2026-02-23 09:20:48.559 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:20:48.559 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:20:48.559 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:20:48.559 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:20:48.559 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:20:48.559 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:20:48.559 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:20:48.559 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:20:48.559 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Sunday, 2025-02-23, 08:00
+2026-02-23 09:20:48.559 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Sunday, 2025-02-23, 08:00
+2026-02-23 09:20:48.559 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Sunday, 2025-02-23, 08:00
+2026-02-23 09:20:48.559 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Sunday, 2025-02-23, 08:00
+2026-02-23 09:20:48.559 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Sunday, 2025-02-23, 08:00
+2026-02-23 09:20:48.559 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Sunday, 2025-02-23, 08:00
+2026-02-23 09:20:48.559 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Sunday, 2025-02-23, 08:00
+2026-02-23 09:20:48.559 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Sunday, 2025-02-23, 08:00
+2026-02-23 09:20:48.559 | INFO     | __main__:is_weekend:131 - Sunday is a weekend. The market is closed.
+2026-02-23 09:20:48.559 | INFO     | __main__:is_weekend:131 - Sunday is a weekend. The market is closed.
+2026-02-23 09:20:48.559 | INFO     | __main__:is_weekend:131 - Sunday is a weekend. The market is closed.
+2026-02-23 09:20:48.559 | INFO     | __main__:is_weekend:131 - Sunday is a weekend. The market is closed.
+2026-02-23 09:20:48.559 | INFO     | __main__:is_weekend:131 - Sunday is a weekend. The market is closed.
+2026-02-23 09:20:48.559 | INFO     | __main__:is_weekend:131 - Sunday is a weekend. The market is closed.
+2026-02-23 09:20:48.559 | INFO     | __main__:is_weekend:131 - Sunday is a weekend. The market is closed.
+2026-02-23 09:20:48.559 | INFO     | __main__:is_weekend:131 - Sunday is a weekend. The market is closed.
+2026-02-23 09:20:48.560 | INFO     | __main__:run:236 - Today the market is closed -> Weekend.
+2026-02-23 09:20:48.560 | INFO     | __main__:run:236 - Today the market is closed -> Weekend.
+2026-02-23 09:20:48.560 | INFO     | __main__:run:236 - Today the market is closed -> Weekend.
+2026-02-23 09:20:48.560 | INFO     | __main__:run:236 - Today the market is closed -> Weekend.
+2026-02-23 09:20:48.560 | INFO     | __main__:run:236 - Today the market is closed -> Weekend.
+2026-02-23 09:20:48.560 | INFO     | __main__:run:236 - Today the market is closed -> Weekend.
+2026-02-23 09:20:48.560 | INFO     | __main__:run:236 - Today the market is closed -> Weekend.
+2026-02-23 09:20:48.560 | INFO     | __main__:run:236 - Today the market is closed -> Weekend.
+2026-02-23 09:20:48.562 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:20:48.562 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:20:48.562 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:20:48.562 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:20:48.562 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:20:48.562 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:20:48.562 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:20:48.562 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:20:48.562 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:20:48.563 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Sunday, 2025-02-23, 17:00
+2026-02-23 09:20:48.563 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Sunday, 2025-02-23, 17:00
+2026-02-23 09:20:48.563 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Sunday, 2025-02-23, 17:00
+2026-02-23 09:20:48.563 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Sunday, 2025-02-23, 17:00
+2026-02-23 09:20:48.563 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Sunday, 2025-02-23, 17:00
+2026-02-23 09:20:48.563 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Sunday, 2025-02-23, 17:00
+2026-02-23 09:20:48.563 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Sunday, 2025-02-23, 17:00
+2026-02-23 09:20:48.563 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Sunday, 2025-02-23, 17:00
+2026-02-23 09:20:48.563 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Sunday, 2025-02-23, 17:00
+2026-02-23 09:20:48.563 | INFO     | __main__:is_weekend:131 - Sunday is a weekend. The market is closed.
+2026-02-23 09:20:48.563 | INFO     | __main__:is_weekend:131 - Sunday is a weekend. The market is closed.
+2026-02-23 09:20:48.563 | INFO     | __main__:is_weekend:131 - Sunday is a weekend. The market is closed.
+2026-02-23 09:20:48.563 | INFO     | __main__:is_weekend:131 - Sunday is a weekend. The market is closed.
+2026-02-23 09:20:48.563 | INFO     | __main__:is_weekend:131 - Sunday is a weekend. The market is closed.
+2026-02-23 09:20:48.563 | INFO     | __main__:is_weekend:131 - Sunday is a weekend. The market is closed.
+2026-02-23 09:20:48.563 | INFO     | __main__:is_weekend:131 - Sunday is a weekend. The market is closed.
+2026-02-23 09:20:48.563 | INFO     | __main__:is_weekend:131 - Sunday is a weekend. The market is closed.
+2026-02-23 09:20:48.563 | INFO     | __main__:is_weekend:131 - Sunday is a weekend. The market is closed.
+2026-02-23 09:20:48.563 | INFO     | __main__:run:236 - Today the market is closed -> Weekend.
+2026-02-23 09:20:48.563 | INFO     | __main__:run:236 - Today the market is closed -> Weekend.
+2026-02-23 09:20:48.563 | INFO     | __main__:run:236 - Today the market is closed -> Weekend.
+2026-02-23 09:20:48.563 | INFO     | __main__:run:236 - Today the market is closed -> Weekend.
+2026-02-23 09:20:48.563 | INFO     | __main__:run:236 - Today the market is closed -> Weekend.
+2026-02-23 09:20:48.563 | INFO     | __main__:run:236 - Today the market is closed -> Weekend.
+2026-02-23 09:20:48.563 | INFO     | __main__:run:236 - Today the market is closed -> Weekend.
+2026-02-23 09:20:48.563 | INFO     | __main__:run:236 - Today the market is closed -> Weekend.
+2026-02-23 09:20:48.563 | INFO     | __main__:run:236 - Today the market is closed -> Weekend.
+2026-02-23 09:20:48.566 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:20:48.566 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:20:48.566 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:20:48.566 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:20:48.566 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:20:48.566 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:20:48.566 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:20:48.566 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:20:48.566 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:20:48.566 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:20:48.566 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Sunday, 2025-02-23, 12:00
+2026-02-23 09:20:48.566 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Sunday, 2025-02-23, 12:00
+2026-02-23 09:20:48.566 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Sunday, 2025-02-23, 12:00
+2026-02-23 09:20:48.566 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Sunday, 2025-02-23, 12:00
+2026-02-23 09:20:48.566 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Sunday, 2025-02-23, 12:00
+2026-02-23 09:20:48.566 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Sunday, 2025-02-23, 12:00
+2026-02-23 09:20:48.566 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Sunday, 2025-02-23, 12:00
+2026-02-23 09:20:48.566 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Sunday, 2025-02-23, 12:00
+2026-02-23 09:20:48.566 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Sunday, 2025-02-23, 12:00
+2026-02-23 09:20:48.566 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Sunday, 2025-02-23, 12:00
+2026-02-23 09:20:48.566 | INFO     | __main__:is_weekend:131 - Sunday is a weekend. The market is closed.
+2026-02-23 09:20:48.566 | INFO     | __main__:is_weekend:131 - Sunday is a weekend. The market is closed.
+2026-02-23 09:20:48.566 | INFO     | __main__:is_weekend:131 - Sunday is a weekend. The market is closed.
+2026-02-23 09:20:48.566 | INFO     | __main__:is_weekend:131 - Sunday is a weekend. The market is closed.
+2026-02-23 09:20:48.566 | INFO     | __main__:is_weekend:131 - Sunday is a weekend. The market is closed.
+2026-02-23 09:20:48.566 | INFO     | __main__:is_weekend:131 - Sunday is a weekend. The market is closed.
+2026-02-23 09:20:48.566 | INFO     | __main__:is_weekend:131 - Sunday is a weekend. The market is closed.
+2026-02-23 09:20:48.566 | INFO     | __main__:is_weekend:131 - Sunday is a weekend. The market is closed.
+2026-02-23 09:20:48.566 | INFO     | __main__:is_weekend:131 - Sunday is a weekend. The market is closed.
+2026-02-23 09:20:48.566 | INFO     | __main__:is_weekend:131 - Sunday is a weekend. The market is closed.
+2026-02-23 09:20:48.567 | INFO     | __main__:run:236 - Today the market is closed -> Weekend.
+2026-02-23 09:20:48.567 | INFO     | __main__:run:236 - Today the market is closed -> Weekend.
+2026-02-23 09:20:48.567 | INFO     | __main__:run:236 - Today the market is closed -> Weekend.
+2026-02-23 09:20:48.567 | INFO     | __main__:run:236 - Today the market is closed -> Weekend.
+2026-02-23 09:20:48.567 | INFO     | __main__:run:236 - Today the market is closed -> Weekend.
+2026-02-23 09:20:48.567 | INFO     | __main__:run:236 - Today the market is closed -> Weekend.
+2026-02-23 09:20:48.567 | INFO     | __main__:run:236 - Today the market is closed -> Weekend.
+2026-02-23 09:20:48.567 | INFO     | __main__:run:236 - Today the market is closed -> Weekend.
+2026-02-23 09:20:48.567 | INFO     | __main__:run:236 - Today the market is closed -> Weekend.
+2026-02-23 09:20:48.567 | INFO     | __main__:run:236 - Today the market is closed -> Weekend.
+2026-02-23 09:20:48.567 | INFO     | __main__:run:292 - Nothing to post...
+2026-02-23 09:20:48.567 | INFO     | __main__:run:292 - Nothing to post...
+2026-02-23 09:20:48.567 | INFO     | __main__:run:292 - Nothing to post...
+2026-02-23 09:20:48.567 | INFO     | __main__:run:292 - Nothing to post...
+2026-02-23 09:20:48.567 | INFO     | __main__:run:292 - Nothing to post...
+2026-02-23 09:20:48.567 | INFO     | __main__:run:292 - Nothing to post...
+2026-02-23 09:20:48.567 | INFO     | __main__:run:292 - Nothing to post...
+2026-02-23 09:20:48.567 | INFO     | __main__:run:292 - Nothing to post...
+2026-02-23 09:20:48.567 | INFO     | __main__:run:292 - Nothing to post...
+2026-02-23 09:20:48.567 | INFO     | __main__:run:292 - Nothing to post...
+2026-02-23 09:22:32.563 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:22:32.563 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Monday, 2025-02-24, 08:00
+2026-02-23 09:22:32.563 | INFO     | __main__:is_weekend:135 - Monday is a weekday. The market could be open.
+2026-02-23 09:22:32.564 | INFO     | __main__:is_market_open:102 - Today Monday, 24 of February the NASDAQ is open.
+2026-02-23 09:22:32.564 | INFO     | __main__:run:152 - Today the market opens
+2026-02-23 09:22:32.564 | INFO     | __main__:run:157 - Running Earnings + Dividends + Splits
+2026-02-23 09:22:32.567 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:22:32.567 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:22:32.567 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Monday, 2025-02-24, 15:30
+2026-02-23 09:22:32.567 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Monday, 2025-02-24, 15:30
+2026-02-23 09:22:32.567 | INFO     | __main__:is_weekend:135 - Monday is a weekday. The market could be open.
+2026-02-23 09:22:32.567 | INFO     | __main__:is_weekend:135 - Monday is a weekday. The market could be open.
+2026-02-23 09:22:32.567 | INFO     | __main__:run:152 - Today the market opens
+2026-02-23 09:22:32.567 | INFO     | __main__:run:152 - Today the market opens
+2026-02-23 09:22:32.567 | INFO     | __main__:run:191 - The market just opened -> 
+2026-02-23 09:22:32.567 | INFO     | __main__:run:191 - The market just opened -> 
+2026-02-23 09:22:32.570 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:22:32.570 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:22:32.570 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:22:32.570 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Tuesday, 2025-02-25, 18:30
+2026-02-23 09:22:32.570 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Tuesday, 2025-02-25, 18:30
+2026-02-23 09:22:32.570 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Tuesday, 2025-02-25, 18:30
+2026-02-23 09:22:32.570 | INFO     | __main__:is_weekend:135 - Tuesday is a weekday. The market could be open.
+2026-02-23 09:22:32.570 | INFO     | __main__:is_weekend:135 - Tuesday is a weekday. The market could be open.
+2026-02-23 09:22:32.570 | INFO     | __main__:is_weekend:135 - Tuesday is a weekday. The market could be open.
+2026-02-23 09:22:32.570 | INFO     | __main__:run:152 - Today the market opens
+2026-02-23 09:22:32.570 | INFO     | __main__:run:152 - Today the market opens
+2026-02-23 09:22:32.570 | INFO     | __main__:run:152 - Today the market opens
+2026-02-23 09:22:32.570 | INFO     | __main__:run:205 - The market has been opened for 3 hours -> 
+2026-02-23 09:22:32.570 | INFO     | __main__:run:205 - The market has been opened for 3 hours -> 
+2026-02-23 09:22:32.570 | INFO     | __main__:run:205 - The market has been opened for 3 hours -> 
+2026-02-23 09:22:32.573 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:22:32.573 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:22:32.573 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:22:32.573 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:22:32.573 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Wednesday, 2025-02-26, 22:00
+2026-02-23 09:22:32.573 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Wednesday, 2025-02-26, 22:00
+2026-02-23 09:22:32.573 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Wednesday, 2025-02-26, 22:00
+2026-02-23 09:22:32.573 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Wednesday, 2025-02-26, 22:00
+2026-02-23 09:22:32.573 | INFO     | __main__:is_weekend:135 - Wednesday is a weekday. The market could be open.
+2026-02-23 09:22:32.573 | INFO     | __main__:is_weekend:135 - Wednesday is a weekday. The market could be open.
+2026-02-23 09:22:32.573 | INFO     | __main__:is_weekend:135 - Wednesday is a weekday. The market could be open.
+2026-02-23 09:22:32.573 | INFO     | __main__:is_weekend:135 - Wednesday is a weekday. The market could be open.
+2026-02-23 09:22:32.573 | INFO     | __main__:run:152 - Today the market opens
+2026-02-23 09:22:32.573 | INFO     | __main__:run:152 - Today the market opens
+2026-02-23 09:22:32.573 | INFO     | __main__:run:152 - Today the market opens
+2026-02-23 09:22:32.573 | INFO     | __main__:run:152 - Today the market opens
+2026-02-23 09:22:32.574 | INFO     | __main__:run:219 - The market just closed -> 
+2026-02-23 09:22:32.574 | INFO     | __main__:run:219 - The market just closed -> 
+2026-02-23 09:22:32.574 | INFO     | __main__:run:219 - The market just closed -> 
+2026-02-23 09:22:32.574 | INFO     | __main__:run:219 - The market just closed -> 
+2026-02-23 09:22:32.576 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:22:32.576 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:22:32.576 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:22:32.576 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:22:32.576 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:22:32.576 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Thursday, 2025-02-27, 12:00
+2026-02-23 09:22:32.576 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Thursday, 2025-02-27, 12:00
+2026-02-23 09:22:32.576 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Thursday, 2025-02-27, 12:00
+2026-02-23 09:22:32.576 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Thursday, 2025-02-27, 12:00
+2026-02-23 09:22:32.576 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Thursday, 2025-02-27, 12:00
+2026-02-23 09:22:32.577 | INFO     | __main__:is_weekend:135 - Thursday is a weekday. The market could be open.
+2026-02-23 09:22:32.577 | INFO     | __main__:is_weekend:135 - Thursday is a weekday. The market could be open.
+2026-02-23 09:22:32.577 | INFO     | __main__:is_weekend:135 - Thursday is a weekday. The market could be open.
+2026-02-23 09:22:32.577 | INFO     | __main__:is_weekend:135 - Thursday is a weekday. The market could be open.
+2026-02-23 09:22:32.577 | INFO     | __main__:is_weekend:135 - Thursday is a weekday. The market could be open.
+2026-02-23 09:22:32.577 | INFO     | __main__:run:152 - Today the market opens
+2026-02-23 09:22:32.577 | INFO     | __main__:run:152 - Today the market opens
+2026-02-23 09:22:32.577 | INFO     | __main__:run:152 - Today the market opens
+2026-02-23 09:22:32.577 | INFO     | __main__:run:152 - Today the market opens
+2026-02-23 09:22:32.577 | INFO     | __main__:run:152 - Today the market opens
+2026-02-23 09:22:32.580 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:22:32.580 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:22:32.580 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:22:32.580 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:22:32.580 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:22:32.580 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:22:32.580 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Saturday, 2025-02-22, 08:00
+2026-02-23 09:22:32.580 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Saturday, 2025-02-22, 08:00
+2026-02-23 09:22:32.580 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Saturday, 2025-02-22, 08:00
+2026-02-23 09:22:32.580 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Saturday, 2025-02-22, 08:00
+2026-02-23 09:22:32.580 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Saturday, 2025-02-22, 08:00
+2026-02-23 09:22:32.580 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Saturday, 2025-02-22, 08:00
+2026-02-23 09:22:32.580 | INFO     | __main__:is_weekend:131 - Saturday is a weekend. The market is closed.
+2026-02-23 09:22:32.580 | INFO     | __main__:is_weekend:131 - Saturday is a weekend. The market is closed.
+2026-02-23 09:22:32.580 | INFO     | __main__:is_weekend:131 - Saturday is a weekend. The market is closed.
+2026-02-23 09:22:32.580 | INFO     | __main__:is_weekend:131 - Saturday is a weekend. The market is closed.
+2026-02-23 09:22:32.580 | INFO     | __main__:is_weekend:131 - Saturday is a weekend. The market is closed.
+2026-02-23 09:22:32.580 | INFO     | __main__:is_weekend:131 - Saturday is a weekend. The market is closed.
+2026-02-23 09:22:32.580 | INFO     | __main__:run:236 - Today the market is closed -> Weekend.
+2026-02-23 09:22:32.580 | INFO     | __main__:run:236 - Today the market is closed -> Weekend.
+2026-02-23 09:22:32.580 | INFO     | __main__:run:236 - Today the market is closed -> Weekend.
+2026-02-23 09:22:32.580 | INFO     | __main__:run:236 - Today the market is closed -> Weekend.
+2026-02-23 09:22:32.580 | INFO     | __main__:run:236 - Today the market is closed -> Weekend.
+2026-02-23 09:22:32.580 | INFO     | __main__:run:236 - Today the market is closed -> Weekend.
+2026-02-23 09:22:32.583 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:22:32.583 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:22:32.583 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:22:32.583 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:22:32.583 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:22:32.583 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:22:32.583 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:22:32.584 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Saturday, 2025-02-22, 17:00
+2026-02-23 09:22:32.584 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Saturday, 2025-02-22, 17:00
+2026-02-23 09:22:32.584 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Saturday, 2025-02-22, 17:00
+2026-02-23 09:22:32.584 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Saturday, 2025-02-22, 17:00
+2026-02-23 09:22:32.584 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Saturday, 2025-02-22, 17:00
+2026-02-23 09:22:32.584 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Saturday, 2025-02-22, 17:00
+2026-02-23 09:22:32.584 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Saturday, 2025-02-22, 17:00
+2026-02-23 09:22:32.584 | INFO     | __main__:is_weekend:131 - Saturday is a weekend. The market is closed.
+2026-02-23 09:22:32.584 | INFO     | __main__:is_weekend:131 - Saturday is a weekend. The market is closed.
+2026-02-23 09:22:32.584 | INFO     | __main__:is_weekend:131 - Saturday is a weekend. The market is closed.
+2026-02-23 09:22:32.584 | INFO     | __main__:is_weekend:131 - Saturday is a weekend. The market is closed.
+2026-02-23 09:22:32.584 | INFO     | __main__:is_weekend:131 - Saturday is a weekend. The market is closed.
+2026-02-23 09:22:32.584 | INFO     | __main__:is_weekend:131 - Saturday is a weekend. The market is closed.
+2026-02-23 09:22:32.584 | INFO     | __main__:is_weekend:131 - Saturday is a weekend. The market is closed.
+2026-02-23 09:22:32.584 | INFO     | __main__:run:236 - Today the market is closed -> Weekend.
+2026-02-23 09:22:32.584 | INFO     | __main__:run:236 - Today the market is closed -> Weekend.
+2026-02-23 09:22:32.584 | INFO     | __main__:run:236 - Today the market is closed -> Weekend.
+2026-02-23 09:22:32.584 | INFO     | __main__:run:236 - Today the market is closed -> Weekend.
+2026-02-23 09:22:32.584 | INFO     | __main__:run:236 - Today the market is closed -> Weekend.
+2026-02-23 09:22:32.584 | INFO     | __main__:run:236 - Today the market is closed -> Weekend.
+2026-02-23 09:22:32.584 | INFO     | __main__:run:236 - Today the market is closed -> Weekend.
+2026-02-23 09:22:32.587 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:22:32.587 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:22:32.587 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:22:32.587 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:22:32.587 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:22:32.587 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:22:32.587 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:22:32.587 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:22:32.587 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Sunday, 2025-02-23, 08:00
+2026-02-23 09:22:32.587 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Sunday, 2025-02-23, 08:00
+2026-02-23 09:22:32.587 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Sunday, 2025-02-23, 08:00
+2026-02-23 09:22:32.587 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Sunday, 2025-02-23, 08:00
+2026-02-23 09:22:32.587 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Sunday, 2025-02-23, 08:00
+2026-02-23 09:22:32.587 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Sunday, 2025-02-23, 08:00
+2026-02-23 09:22:32.587 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Sunday, 2025-02-23, 08:00
+2026-02-23 09:22:32.587 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Sunday, 2025-02-23, 08:00
+2026-02-23 09:22:32.587 | INFO     | __main__:is_weekend:131 - Sunday is a weekend. The market is closed.
+2026-02-23 09:22:32.587 | INFO     | __main__:is_weekend:131 - Sunday is a weekend. The market is closed.
+2026-02-23 09:22:32.587 | INFO     | __main__:is_weekend:131 - Sunday is a weekend. The market is closed.
+2026-02-23 09:22:32.587 | INFO     | __main__:is_weekend:131 - Sunday is a weekend. The market is closed.
+2026-02-23 09:22:32.587 | INFO     | __main__:is_weekend:131 - Sunday is a weekend. The market is closed.
+2026-02-23 09:22:32.587 | INFO     | __main__:is_weekend:131 - Sunday is a weekend. The market is closed.
+2026-02-23 09:22:32.587 | INFO     | __main__:is_weekend:131 - Sunday is a weekend. The market is closed.
+2026-02-23 09:22:32.587 | INFO     | __main__:is_weekend:131 - Sunday is a weekend. The market is closed.
+2026-02-23 09:22:32.588 | INFO     | __main__:run:236 - Today the market is closed -> Weekend.
+2026-02-23 09:22:32.588 | INFO     | __main__:run:236 - Today the market is closed -> Weekend.
+2026-02-23 09:22:32.588 | INFO     | __main__:run:236 - Today the market is closed -> Weekend.
+2026-02-23 09:22:32.588 | INFO     | __main__:run:236 - Today the market is closed -> Weekend.
+2026-02-23 09:22:32.588 | INFO     | __main__:run:236 - Today the market is closed -> Weekend.
+2026-02-23 09:22:32.588 | INFO     | __main__:run:236 - Today the market is closed -> Weekend.
+2026-02-23 09:22:32.588 | INFO     | __main__:run:236 - Today the market is closed -> Weekend.
+2026-02-23 09:22:32.588 | INFO     | __main__:run:236 - Today the market is closed -> Weekend.
+2026-02-23 09:22:32.591 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:22:32.591 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:22:32.591 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:22:32.591 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:22:32.591 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:22:32.591 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:22:32.591 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:22:32.591 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:22:32.591 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:22:32.591 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Sunday, 2025-02-23, 17:00
+2026-02-23 09:22:32.591 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Sunday, 2025-02-23, 17:00
+2026-02-23 09:22:32.591 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Sunday, 2025-02-23, 17:00
+2026-02-23 09:22:32.591 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Sunday, 2025-02-23, 17:00
+2026-02-23 09:22:32.591 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Sunday, 2025-02-23, 17:00
+2026-02-23 09:22:32.591 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Sunday, 2025-02-23, 17:00
+2026-02-23 09:22:32.591 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Sunday, 2025-02-23, 17:00
+2026-02-23 09:22:32.591 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Sunday, 2025-02-23, 17:00
+2026-02-23 09:22:32.591 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Sunday, 2025-02-23, 17:00
+2026-02-23 09:22:32.591 | INFO     | __main__:is_weekend:131 - Sunday is a weekend. The market is closed.
+2026-02-23 09:22:32.591 | INFO     | __main__:is_weekend:131 - Sunday is a weekend. The market is closed.
+2026-02-23 09:22:32.591 | INFO     | __main__:is_weekend:131 - Sunday is a weekend. The market is closed.
+2026-02-23 09:22:32.591 | INFO     | __main__:is_weekend:131 - Sunday is a weekend. The market is closed.
+2026-02-23 09:22:32.591 | INFO     | __main__:is_weekend:131 - Sunday is a weekend. The market is closed.
+2026-02-23 09:22:32.591 | INFO     | __main__:is_weekend:131 - Sunday is a weekend. The market is closed.
+2026-02-23 09:22:32.591 | INFO     | __main__:is_weekend:131 - Sunday is a weekend. The market is closed.
+2026-02-23 09:22:32.591 | INFO     | __main__:is_weekend:131 - Sunday is a weekend. The market is closed.
+2026-02-23 09:22:32.591 | INFO     | __main__:is_weekend:131 - Sunday is a weekend. The market is closed.
+2026-02-23 09:22:32.591 | INFO     | __main__:run:236 - Today the market is closed -> Weekend.
+2026-02-23 09:22:32.591 | INFO     | __main__:run:236 - Today the market is closed -> Weekend.
+2026-02-23 09:22:32.591 | INFO     | __main__:run:236 - Today the market is closed -> Weekend.
+2026-02-23 09:22:32.591 | INFO     | __main__:run:236 - Today the market is closed -> Weekend.
+2026-02-23 09:22:32.591 | INFO     | __main__:run:236 - Today the market is closed -> Weekend.
+2026-02-23 09:22:32.591 | INFO     | __main__:run:236 - Today the market is closed -> Weekend.
+2026-02-23 09:22:32.591 | INFO     | __main__:run:236 - Today the market is closed -> Weekend.
+2026-02-23 09:22:32.591 | INFO     | __main__:run:236 - Today the market is closed -> Weekend.
+2026-02-23 09:22:32.591 | INFO     | __main__:run:236 - Today the market is closed -> Weekend.
+2026-02-23 09:22:32.595 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:22:32.595 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:22:32.595 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:22:32.595 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:22:32.595 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:22:32.595 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:22:32.595 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:22:32.595 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:22:32.595 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:22:32.595 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:22:32.595 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Sunday, 2025-02-23, 12:00
+2026-02-23 09:22:32.595 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Sunday, 2025-02-23, 12:00
+2026-02-23 09:22:32.595 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Sunday, 2025-02-23, 12:00
+2026-02-23 09:22:32.595 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Sunday, 2025-02-23, 12:00
+2026-02-23 09:22:32.595 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Sunday, 2025-02-23, 12:00
+2026-02-23 09:22:32.595 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Sunday, 2025-02-23, 12:00
+2026-02-23 09:22:32.595 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Sunday, 2025-02-23, 12:00
+2026-02-23 09:22:32.595 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Sunday, 2025-02-23, 12:00
+2026-02-23 09:22:32.595 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Sunday, 2025-02-23, 12:00
+2026-02-23 09:22:32.595 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Sunday, 2025-02-23, 12:00
+2026-02-23 09:22:32.595 | INFO     | __main__:is_weekend:131 - Sunday is a weekend. The market is closed.
+2026-02-23 09:22:32.595 | INFO     | __main__:is_weekend:131 - Sunday is a weekend. The market is closed.
+2026-02-23 09:22:32.595 | INFO     | __main__:is_weekend:131 - Sunday is a weekend. The market is closed.
+2026-02-23 09:22:32.595 | INFO     | __main__:is_weekend:131 - Sunday is a weekend. The market is closed.
+2026-02-23 09:22:32.595 | INFO     | __main__:is_weekend:131 - Sunday is a weekend. The market is closed.
+2026-02-23 09:22:32.595 | INFO     | __main__:is_weekend:131 - Sunday is a weekend. The market is closed.
+2026-02-23 09:22:32.595 | INFO     | __main__:is_weekend:131 - Sunday is a weekend. The market is closed.
+2026-02-23 09:22:32.595 | INFO     | __main__:is_weekend:131 - Sunday is a weekend. The market is closed.
+2026-02-23 09:22:32.595 | INFO     | __main__:is_weekend:131 - Sunday is a weekend. The market is closed.
+2026-02-23 09:22:32.595 | INFO     | __main__:is_weekend:131 - Sunday is a weekend. The market is closed.
+2026-02-23 09:22:32.595 | INFO     | __main__:run:236 - Today the market is closed -> Weekend.
+2026-02-23 09:22:32.595 | INFO     | __main__:run:236 - Today the market is closed -> Weekend.
+2026-02-23 09:22:32.595 | INFO     | __main__:run:236 - Today the market is closed -> Weekend.
+2026-02-23 09:22:32.595 | INFO     | __main__:run:236 - Today the market is closed -> Weekend.
+2026-02-23 09:22:32.595 | INFO     | __main__:run:236 - Today the market is closed -> Weekend.
+2026-02-23 09:22:32.595 | INFO     | __main__:run:236 - Today the market is closed -> Weekend.
+2026-02-23 09:22:32.595 | INFO     | __main__:run:236 - Today the market is closed -> Weekend.
+2026-02-23 09:22:32.595 | INFO     | __main__:run:236 - Today the market is closed -> Weekend.
+2026-02-23 09:22:32.595 | INFO     | __main__:run:236 - Today the market is closed -> Weekend.
+2026-02-23 09:22:32.595 | INFO     | __main__:run:236 - Today the market is closed -> Weekend.
+2026-02-23 09:22:32.596 | INFO     | __main__:run:292 - Nothing to post...
+2026-02-23 09:22:32.596 | INFO     | __main__:run:292 - Nothing to post...
+2026-02-23 09:22:32.596 | INFO     | __main__:run:292 - Nothing to post...
+2026-02-23 09:22:32.596 | INFO     | __main__:run:292 - Nothing to post...
+2026-02-23 09:22:32.596 | INFO     | __main__:run:292 - Nothing to post...
+2026-02-23 09:22:32.596 | INFO     | __main__:run:292 - Nothing to post...
+2026-02-23 09:22:32.596 | INFO     | __main__:run:292 - Nothing to post...
+2026-02-23 09:22:32.596 | INFO     | __main__:run:292 - Nothing to post...
+2026-02-23 09:22:32.596 | INFO     | __main__:run:292 - Nothing to post...
+2026-02-23 09:22:32.596 | INFO     | __main__:run:292 - Nothing to post...
+2026-02-23 09:23:10.882 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:23:10.882 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Monday, 2025-02-24, 08:00
+2026-02-23 09:23:10.882 | INFO     | __main__:is_weekend:135 - Monday is a weekday. The market could be open.
+2026-02-23 09:23:10.882 | INFO     | __main__:is_market_open:102 - Today Monday, 24 of February the NASDAQ is open.
+2026-02-23 09:23:10.882 | INFO     | __main__:run:152 - Today the market opens
+2026-02-23 09:23:10.882 | INFO     | __main__:run:157 - Running Earnings + Dividends + Splits
+2026-02-23 09:23:10.885 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:23:10.885 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:23:10.885 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Monday, 2025-02-24, 15:30
+2026-02-23 09:23:10.885 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Monday, 2025-02-24, 15:30
+2026-02-23 09:23:10.885 | INFO     | __main__:is_weekend:135 - Monday is a weekday. The market could be open.
+2026-02-23 09:23:10.885 | INFO     | __main__:is_weekend:135 - Monday is a weekday. The market could be open.
+2026-02-23 09:23:10.885 | INFO     | __main__:run:152 - Today the market opens
+2026-02-23 09:23:10.885 | INFO     | __main__:run:152 - Today the market opens
+2026-02-23 09:23:10.885 | INFO     | __main__:run:191 - The market just opened -> 
+2026-02-23 09:23:10.885 | INFO     | __main__:run:191 - The market just opened -> 
+2026-02-23 09:23:10.889 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:23:10.889 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:23:10.889 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:23:10.889 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Tuesday, 2025-02-25, 18:30
+2026-02-23 09:23:10.889 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Tuesday, 2025-02-25, 18:30
+2026-02-23 09:23:10.889 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Tuesday, 2025-02-25, 18:30
+2026-02-23 09:23:10.889 | INFO     | __main__:is_weekend:135 - Tuesday is a weekday. The market could be open.
+2026-02-23 09:23:10.889 | INFO     | __main__:is_weekend:135 - Tuesday is a weekday. The market could be open.
+2026-02-23 09:23:10.889 | INFO     | __main__:is_weekend:135 - Tuesday is a weekday. The market could be open.
+2026-02-23 09:23:10.889 | INFO     | __main__:run:152 - Today the market opens
+2026-02-23 09:23:10.889 | INFO     | __main__:run:152 - Today the market opens
+2026-02-23 09:23:10.889 | INFO     | __main__:run:152 - Today the market opens
+2026-02-23 09:23:10.889 | INFO     | __main__:run:205 - The market has been opened for 3 hours -> 
+2026-02-23 09:23:10.889 | INFO     | __main__:run:205 - The market has been opened for 3 hours -> 
+2026-02-23 09:23:10.889 | INFO     | __main__:run:205 - The market has been opened for 3 hours -> 
+2026-02-23 09:23:10.892 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:23:10.892 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:23:10.892 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:23:10.892 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:23:10.893 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Wednesday, 2025-02-26, 22:00
+2026-02-23 09:23:10.893 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Wednesday, 2025-02-26, 22:00
+2026-02-23 09:23:10.893 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Wednesday, 2025-02-26, 22:00
+2026-02-23 09:23:10.893 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Wednesday, 2025-02-26, 22:00
+2026-02-23 09:23:10.893 | INFO     | __main__:is_weekend:135 - Wednesday is a weekday. The market could be open.
+2026-02-23 09:23:10.893 | INFO     | __main__:is_weekend:135 - Wednesday is a weekday. The market could be open.
+2026-02-23 09:23:10.893 | INFO     | __main__:is_weekend:135 - Wednesday is a weekday. The market could be open.
+2026-02-23 09:23:10.893 | INFO     | __main__:is_weekend:135 - Wednesday is a weekday. The market could be open.
+2026-02-23 09:23:10.893 | INFO     | __main__:run:152 - Today the market opens
+2026-02-23 09:23:10.893 | INFO     | __main__:run:152 - Today the market opens
+2026-02-23 09:23:10.893 | INFO     | __main__:run:152 - Today the market opens
+2026-02-23 09:23:10.893 | INFO     | __main__:run:152 - Today the market opens
+2026-02-23 09:23:10.893 | INFO     | __main__:run:219 - The market just closed -> 
+2026-02-23 09:23:10.893 | INFO     | __main__:run:219 - The market just closed -> 
+2026-02-23 09:23:10.893 | INFO     | __main__:run:219 - The market just closed -> 
+2026-02-23 09:23:10.893 | INFO     | __main__:run:219 - The market just closed -> 
+2026-02-23 09:23:10.896 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:23:10.896 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:23:10.896 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:23:10.896 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:23:10.896 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:23:10.896 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Thursday, 2025-02-27, 12:00
+2026-02-23 09:23:10.896 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Thursday, 2025-02-27, 12:00
+2026-02-23 09:23:10.896 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Thursday, 2025-02-27, 12:00
+2026-02-23 09:23:10.896 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Thursday, 2025-02-27, 12:00
+2026-02-23 09:23:10.896 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Thursday, 2025-02-27, 12:00
+2026-02-23 09:23:10.896 | INFO     | __main__:is_weekend:135 - Thursday is a weekday. The market could be open.
+2026-02-23 09:23:10.896 | INFO     | __main__:is_weekend:135 - Thursday is a weekday. The market could be open.
+2026-02-23 09:23:10.896 | INFO     | __main__:is_weekend:135 - Thursday is a weekday. The market could be open.
+2026-02-23 09:23:10.896 | INFO     | __main__:is_weekend:135 - Thursday is a weekday. The market could be open.
+2026-02-23 09:23:10.896 | INFO     | __main__:is_weekend:135 - Thursday is a weekday. The market could be open.
+2026-02-23 09:23:10.896 | INFO     | __main__:run:152 - Today the market opens
+2026-02-23 09:23:10.896 | INFO     | __main__:run:152 - Today the market opens
+2026-02-23 09:23:10.896 | INFO     | __main__:run:152 - Today the market opens
+2026-02-23 09:23:10.896 | INFO     | __main__:run:152 - Today the market opens
+2026-02-23 09:23:10.896 | INFO     | __main__:run:152 - Today the market opens
+2026-02-23 09:23:10.899 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:23:10.899 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:23:10.899 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:23:10.899 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:23:10.899 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:23:10.899 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:23:10.899 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Saturday, 2025-02-22, 08:00
+2026-02-23 09:23:10.899 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Saturday, 2025-02-22, 08:00
+2026-02-23 09:23:10.899 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Saturday, 2025-02-22, 08:00
+2026-02-23 09:23:10.899 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Saturday, 2025-02-22, 08:00
+2026-02-23 09:23:10.899 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Saturday, 2025-02-22, 08:00
+2026-02-23 09:23:10.899 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Saturday, 2025-02-22, 08:00
+2026-02-23 09:23:10.900 | INFO     | __main__:is_weekend:131 - Saturday is a weekend. The market is closed.
+2026-02-23 09:23:10.900 | INFO     | __main__:is_weekend:131 - Saturday is a weekend. The market is closed.
+2026-02-23 09:23:10.900 | INFO     | __main__:is_weekend:131 - Saturday is a weekend. The market is closed.
+2026-02-23 09:23:10.900 | INFO     | __main__:is_weekend:131 - Saturday is a weekend. The market is closed.
+2026-02-23 09:23:10.900 | INFO     | __main__:is_weekend:131 - Saturday is a weekend. The market is closed.
+2026-02-23 09:23:10.900 | INFO     | __main__:is_weekend:131 - Saturday is a weekend. The market is closed.
+2026-02-23 09:23:10.900 | INFO     | __main__:run:236 - Today the market is closed -> Weekend.
+2026-02-23 09:23:10.900 | INFO     | __main__:run:236 - Today the market is closed -> Weekend.
+2026-02-23 09:23:10.900 | INFO     | __main__:run:236 - Today the market is closed -> Weekend.
+2026-02-23 09:23:10.900 | INFO     | __main__:run:236 - Today the market is closed -> Weekend.
+2026-02-23 09:23:10.900 | INFO     | __main__:run:236 - Today the market is closed -> Weekend.
+2026-02-23 09:23:10.900 | INFO     | __main__:run:236 - Today the market is closed -> Weekend.
+2026-02-23 09:23:10.903 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:23:10.903 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:23:10.903 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:23:10.903 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:23:10.903 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:23:10.903 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:23:10.903 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:23:10.904 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Saturday, 2025-02-22, 17:00
+2026-02-23 09:23:10.904 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Saturday, 2025-02-22, 17:00
+2026-02-23 09:23:10.904 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Saturday, 2025-02-22, 17:00
+2026-02-23 09:23:10.904 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Saturday, 2025-02-22, 17:00
+2026-02-23 09:23:10.904 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Saturday, 2025-02-22, 17:00
+2026-02-23 09:23:10.904 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Saturday, 2025-02-22, 17:00
+2026-02-23 09:23:10.904 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Saturday, 2025-02-22, 17:00
+2026-02-23 09:23:10.904 | INFO     | __main__:is_weekend:131 - Saturday is a weekend. The market is closed.
+2026-02-23 09:23:10.904 | INFO     | __main__:is_weekend:131 - Saturday is a weekend. The market is closed.
+2026-02-23 09:23:10.904 | INFO     | __main__:is_weekend:131 - Saturday is a weekend. The market is closed.
+2026-02-23 09:23:10.904 | INFO     | __main__:is_weekend:131 - Saturday is a weekend. The market is closed.
+2026-02-23 09:23:10.904 | INFO     | __main__:is_weekend:131 - Saturday is a weekend. The market is closed.
+2026-02-23 09:23:10.904 | INFO     | __main__:is_weekend:131 - Saturday is a weekend. The market is closed.
+2026-02-23 09:23:10.904 | INFO     | __main__:is_weekend:131 - Saturday is a weekend. The market is closed.
+2026-02-23 09:23:10.904 | INFO     | __main__:run:236 - Today the market is closed -> Weekend.
+2026-02-23 09:23:10.904 | INFO     | __main__:run:236 - Today the market is closed -> Weekend.
+2026-02-23 09:23:10.904 | INFO     | __main__:run:236 - Today the market is closed -> Weekend.
+2026-02-23 09:23:10.904 | INFO     | __main__:run:236 - Today the market is closed -> Weekend.
+2026-02-23 09:23:10.904 | INFO     | __main__:run:236 - Today the market is closed -> Weekend.
+2026-02-23 09:23:10.904 | INFO     | __main__:run:236 - Today the market is closed -> Weekend.
+2026-02-23 09:23:10.904 | INFO     | __main__:run:236 - Today the market is closed -> Weekend.
+2026-02-23 09:23:10.907 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:23:10.907 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:23:10.907 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:23:10.907 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:23:10.907 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:23:10.907 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:23:10.907 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:23:10.907 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:23:10.908 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Sunday, 2025-02-23, 08:00
+2026-02-23 09:23:10.908 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Sunday, 2025-02-23, 08:00
+2026-02-23 09:23:10.908 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Sunday, 2025-02-23, 08:00
+2026-02-23 09:23:10.908 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Sunday, 2025-02-23, 08:00
+2026-02-23 09:23:10.908 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Sunday, 2025-02-23, 08:00
+2026-02-23 09:23:10.908 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Sunday, 2025-02-23, 08:00
+2026-02-23 09:23:10.908 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Sunday, 2025-02-23, 08:00
+2026-02-23 09:23:10.908 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Sunday, 2025-02-23, 08:00
+2026-02-23 09:23:10.908 | INFO     | __main__:is_weekend:131 - Sunday is a weekend. The market is closed.
+2026-02-23 09:23:10.908 | INFO     | __main__:is_weekend:131 - Sunday is a weekend. The market is closed.
+2026-02-23 09:23:10.908 | INFO     | __main__:is_weekend:131 - Sunday is a weekend. The market is closed.
+2026-02-23 09:23:10.908 | INFO     | __main__:is_weekend:131 - Sunday is a weekend. The market is closed.
+2026-02-23 09:23:10.908 | INFO     | __main__:is_weekend:131 - Sunday is a weekend. The market is closed.
+2026-02-23 09:23:10.908 | INFO     | __main__:is_weekend:131 - Sunday is a weekend. The market is closed.
+2026-02-23 09:23:10.908 | INFO     | __main__:is_weekend:131 - Sunday is a weekend. The market is closed.
+2026-02-23 09:23:10.908 | INFO     | __main__:is_weekend:131 - Sunday is a weekend. The market is closed.
+2026-02-23 09:23:10.908 | INFO     | __main__:run:236 - Today the market is closed -> Weekend.
+2026-02-23 09:23:10.908 | INFO     | __main__:run:236 - Today the market is closed -> Weekend.
+2026-02-23 09:23:10.908 | INFO     | __main__:run:236 - Today the market is closed -> Weekend.
+2026-02-23 09:23:10.908 | INFO     | __main__:run:236 - Today the market is closed -> Weekend.
+2026-02-23 09:23:10.908 | INFO     | __main__:run:236 - Today the market is closed -> Weekend.
+2026-02-23 09:23:10.908 | INFO     | __main__:run:236 - Today the market is closed -> Weekend.
+2026-02-23 09:23:10.908 | INFO     | __main__:run:236 - Today the market is closed -> Weekend.
+2026-02-23 09:23:10.908 | INFO     | __main__:run:236 - Today the market is closed -> Weekend.
+2026-02-23 09:23:10.911 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:23:10.911 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:23:10.911 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:23:10.911 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:23:10.911 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:23:10.911 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:23:10.911 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:23:10.911 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:23:10.911 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:23:10.911 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Sunday, 2025-02-23, 17:00
+2026-02-23 09:23:10.911 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Sunday, 2025-02-23, 17:00
+2026-02-23 09:23:10.911 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Sunday, 2025-02-23, 17:00
+2026-02-23 09:23:10.911 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Sunday, 2025-02-23, 17:00
+2026-02-23 09:23:10.911 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Sunday, 2025-02-23, 17:00
+2026-02-23 09:23:10.911 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Sunday, 2025-02-23, 17:00
+2026-02-23 09:23:10.911 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Sunday, 2025-02-23, 17:00
+2026-02-23 09:23:10.911 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Sunday, 2025-02-23, 17:00
+2026-02-23 09:23:10.911 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Sunday, 2025-02-23, 17:00
+2026-02-23 09:23:10.911 | INFO     | __main__:is_weekend:131 - Sunday is a weekend. The market is closed.
+2026-02-23 09:23:10.911 | INFO     | __main__:is_weekend:131 - Sunday is a weekend. The market is closed.
+2026-02-23 09:23:10.911 | INFO     | __main__:is_weekend:131 - Sunday is a weekend. The market is closed.
+2026-02-23 09:23:10.911 | INFO     | __main__:is_weekend:131 - Sunday is a weekend. The market is closed.
+2026-02-23 09:23:10.911 | INFO     | __main__:is_weekend:131 - Sunday is a weekend. The market is closed.
+2026-02-23 09:23:10.911 | INFO     | __main__:is_weekend:131 - Sunday is a weekend. The market is closed.
+2026-02-23 09:23:10.911 | INFO     | __main__:is_weekend:131 - Sunday is a weekend. The market is closed.
+2026-02-23 09:23:10.911 | INFO     | __main__:is_weekend:131 - Sunday is a weekend. The market is closed.
+2026-02-23 09:23:10.911 | INFO     | __main__:is_weekend:131 - Sunday is a weekend. The market is closed.
+2026-02-23 09:23:10.912 | INFO     | __main__:run:236 - Today the market is closed -> Weekend.
+2026-02-23 09:23:10.912 | INFO     | __main__:run:236 - Today the market is closed -> Weekend.
+2026-02-23 09:23:10.912 | INFO     | __main__:run:236 - Today the market is closed -> Weekend.
+2026-02-23 09:23:10.912 | INFO     | __main__:run:236 - Today the market is closed -> Weekend.
+2026-02-23 09:23:10.912 | INFO     | __main__:run:236 - Today the market is closed -> Weekend.
+2026-02-23 09:23:10.912 | INFO     | __main__:run:236 - Today the market is closed -> Weekend.
+2026-02-23 09:23:10.912 | INFO     | __main__:run:236 - Today the market is closed -> Weekend.
+2026-02-23 09:23:10.912 | INFO     | __main__:run:236 - Today the market is closed -> Weekend.
+2026-02-23 09:23:10.912 | INFO     | __main__:run:236 - Today the market is closed -> Weekend.
+2026-02-23 09:23:10.914 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:23:10.914 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:23:10.914 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:23:10.914 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:23:10.914 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:23:10.914 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:23:10.914 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:23:10.914 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:23:10.914 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:23:10.914 | INFO     | __main__:__init__:48 - Initialising TEST Main
+2026-02-23 09:23:10.915 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Sunday, 2025-02-23, 12:00
+2026-02-23 09:23:10.915 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Sunday, 2025-02-23, 12:00
+2026-02-23 09:23:10.915 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Sunday, 2025-02-23, 12:00
+2026-02-23 09:23:10.915 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Sunday, 2025-02-23, 12:00
+2026-02-23 09:23:10.915 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Sunday, 2025-02-23, 12:00
+2026-02-23 09:23:10.915 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Sunday, 2025-02-23, 12:00
+2026-02-23 09:23:10.915 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Sunday, 2025-02-23, 12:00
+2026-02-23 09:23:10.915 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Sunday, 2025-02-23, 12:00
+2026-02-23 09:23:10.915 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Sunday, 2025-02-23, 12:00
+2026-02-23 09:23:10.915 | INFO     | __main__:__init__:63 - 🧪 TEST MODE - Mocked to: Sunday, 2025-02-23, 12:00
+2026-02-23 09:23:10.915 | INFO     | __main__:is_weekend:131 - Sunday is a weekend. The market is closed.
+2026-02-23 09:23:10.915 | INFO     | __main__:is_weekend:131 - Sunday is a weekend. The market is closed.
+2026-02-23 09:23:10.915 | INFO     | __main__:is_weekend:131 - Sunday is a weekend. The market is closed.
+2026-02-23 09:23:10.915 | INFO     | __main__:is_weekend:131 - Sunday is a weekend. The market is closed.
+2026-02-23 09:23:10.915 | INFO     | __main__:is_weekend:131 - Sunday is a weekend. The market is closed.
+2026-02-23 09:23:10.915 | INFO     | __main__:is_weekend:131 - Sunday is a weekend. The market is closed.
+2026-02-23 09:23:10.915 | INFO     | __main__:is_weekend:131 - Sunday is a weekend. The market is closed.
+2026-02-23 09:23:10.915 | INFO     | __main__:is_weekend:131 - Sunday is a weekend. The market is closed.
+2026-02-23 09:23:10.915 | INFO     | __main__:is_weekend:131 - Sunday is a weekend. The market is closed.
+2026-02-23 09:23:10.915 | INFO     | __main__:is_weekend:131 - Sunday is a weekend. The market is closed.
+2026-02-23 09:23:10.915 | INFO     | __main__:run:236 - Today the market is closed -> Weekend.
+2026-02-23 09:23:10.915 | INFO     | __main__:run:236 - Today the market is closed -> Weekend.
+2026-02-23 09:23:10.915 | INFO     | __main__:run:236 - Today the market is closed -> Weekend.
+2026-02-23 09:23:10.915 | INFO     | __main__:run:236 - Today the market is closed -> Weekend.
+2026-02-23 09:23:10.915 | INFO     | __main__:run:236 - Today the market is closed -> Weekend.
+2026-02-23 09:23:10.915 | INFO     | __main__:run:236 - Today the market is closed -> Weekend.
+2026-02-23 09:23:10.915 | INFO     | __main__:run:236 - Today the market is closed -> Weekend.
+2026-02-23 09:23:10.915 | INFO     | __main__:run:236 - Today the market is closed -> Weekend.
+2026-02-23 09:23:10.915 | INFO     | __main__:run:236 - Today the market is closed -> Weekend.
+2026-02-23 09:23:10.915 | INFO     | __main__:run:236 - Today the market is closed -> Weekend.
+2026-02-23 09:23:10.916 | INFO     | __main__:run:292 - Nothing to post...
+2026-02-23 09:23:10.916 | INFO     | __main__:run:292 - Nothing to post...
+2026-02-23 09:23:10.916 | INFO     | __main__:run:292 - Nothing to post...
+2026-02-23 09:23:10.916 | INFO     | __main__:run:292 - Nothing to post...
+2026-02-23 09:23:10.916 | INFO     | __main__:run:292 - Nothing to post...
+2026-02-23 09:23:10.916 | INFO     | __main__:run:292 - Nothing to post...
+2026-02-23 09:23:10.916 | INFO     | __main__:run:292 - Nothing to post...
+2026-02-23 09:23:10.916 | INFO     | __main__:run:292 - Nothing to post...
+2026-02-23 09:23:10.916 | INFO     | __main__:run:292 - Nothing to post...
+2026-02-23 09:23:10.916 | INFO     | __main__:run:292 - Nothing to post...

@@ -53,50 +53,48 @@ class Execution_twitter_information:
 
     def is_market_open(self):
         """
-        Check if the specified market is open using the Financial Modeling Prep API.
+        Check if the market is open by checking against local holiday calendar.
+        Uses config/market_holidays.json to determine if today is a market holiday.
 
-        params: str api_key of financial modelling
-        ecxchange: str exchange of the american stock exchange to check if it is open or not today
-        returns -> str: A message indicating whether the market is open or closed.
+        returns -> None (sets self.market_open to True/False)
         """
-        url = f"https://financialmodelingprep.com/stable/exchange-market-hours?exchange={self.exchange}"
-        params = {"apikey": self.api_key}
+        import json
+        import os
 
         try:
-            response = requests.get(url, params=params)
-            response.raise_for_status()
-            data = response.json()
+            # Load market holidays from local JSON file
+            holidays_file = os.path.join(os.path.dirname(__file__), 'utils', 'market_holidays.json')
+            with open(holidays_file, 'r') as f:
+                all_holidays = json.load(f)
 
-            # New API format returns a list with one item
-            if isinstance(data, list) and len(data) > 0:
-                market_info = data[0]
-                is_open = market_info.get('isMarketOpen', False)
-                opening_hour = market_info.get('openingHour', 'N/A')
-                closing_hour = market_info.get('closingHour', 'N/A')
+            # Get holidays for current year
+            year_str = str(self.current_year)
+            holidays_this_year = all_holidays.get(year_str, {})
 
-                current_date = self.today.strftime("%A, %d of %B")
+            today_str = self.today.strftime('%Y-%m-%d')
+            current_date = self.today.strftime("%A, %d of %B")
 
+            # Check if today is a holiday
+            if today_str in holidays_this_year:
+                reason = holidays_this_year[today_str]
                 if self.morning_update[0] == self.current_hour:
-                    if is_open:
-                        logger.info(f"Today {current_date} the {self.exchange} is open from {opening_hour} to {closing_hour}.")
-                        post_twitter(f"Today {current_date} the {self.exchange} is open from {opening_hour} to {closing_hour}.")
-                    else:
-                        logger.info(f"Today {current_date} the {self.exchange} is closed.")
-                        post_twitter(f"Today {current_date} the {self.exchange} is closed.")
-
-                self.market_open = is_open
+                    logger.info(f"Today {current_date} the market is closed due to: {reason}.")
+                    post_twitter(f"Today {current_date} the market is closed due to: {reason}.")
+                self.market_open = False
             else:
-                logger.warning("Unexpected API response format")
+                # Not a holiday - market is open
+                if self.morning_update[0] == self.current_hour:
+                    logger.info(f"Today {current_date} the {self.exchange} is open.")
+                    post_twitter(f"Today {current_date} the {self.exchange} is open (09:30 - 16:00 ET).")
                 self.market_open = True
 
-        except requests.RequestException as e:
-            logger.error(f"Failed to fetch market data: {e}")
-            bot_send_text(f"⚠️ API Error: Failed to fetch market data - {e}\nAssuming market is open on weekday.")
-            # Default to True on weekdays if API fails (safer to assume open than miss scheduled tasks)
+        except FileNotFoundError:
+            logger.error(f"Market holidays file not found. Assuming market is open.")
+            bot_send_text(f"⚠️ Market holidays file not found. Assuming market is open.")
             self.market_open = True
         except Exception as e:
-            logger.error(f"Error parsing market data: {e}")
-            bot_send_text(f"⚠️ Error parsing market data - {e}\nAssuming market is open on weekday.")
+            logger.error(f"Error checking market holidays: {e}")
+            bot_send_text(f"⚠️ Error checking market holidays: {e}\nAssuming market is open on weekday.")
             self.market_open = True
 
         return None
