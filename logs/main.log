@@ -879,3 +879,10 @@ Today's Biggest Movers:
 2025-02-24 22:09:13.099 | INFO     | __main__:run:149 - The market just closed -> 
 2025-02-24 22:09:13.103 | INFO     | weekdays.Open_Market_Performance:__init__:20 - Initialising Open Market Performance
 2025-02-24 22:09:14.077 | ERROR    | utils.utils:getting_nasdaq100_sp500_tickers:93 - string indices must be integers, not 'str'
+2026-02-23 09:30:35.798 | INFO     | __main__:__init__:41 - Initialising Main
+2026-02-23 09:30:35.798 | INFO     | utils.utils:send_telegram_message:266 - Using bot_token: 6379257583...
+2026-02-23 09:30:35.798 | INFO     | utils.utils:send_telegram_message:267 - Sending to chat_id: -1002313822545
+2026-02-23 09:30:35.799 | INFO     | utils.utils:send_telegram_message:288 - Attempting to send message to Telegram
+2026-02-23 09:30:35.936 | INFO     | utils.utils:send_telegram_message:294 - Message sent successfully. Status code: 200
+2026-02-23 09:30:35.936 | INFO     | __main__:is_weekend:111 - Monday is a weekday. The market could be open.
+2026-02-23 09:30:35.937 | INFO     | __main__:run:122 - Today the market opens

@@ -154,15 +154,58 @@ class EarningsBot:
             if not tickers:
                 return
 
+            # Load ticker information once (outside the loop)
+            import os
+            script_dir = os.path.dirname(os.path.abspath(__file__))
+            possible_paths = [
+                "config/top_3000_tickers.csv",
+                os.path.join(script_dir, "config/top_3000_tickers.csv"),
+                os.path.join(script_dir, "../config/top_3000_tickers.csv"),
+            ]
+
+            df_data = None
+            for path in possible_paths:
+                if os.path.exists(path):
+                    df_data = pd.read_csv(path)
+                    logger.info(f"Successfully loaded ticker information from {path}")
+                    break
+
+            if df_data is None:
+                logger.error(f"Could not find top_3000_tickers.csv in any of these locations: {possible_paths}")
+                return
+
             for ticker in tickers[:self.number_tickers_to_print]:  # Limit to first 10 tickers
                 try:
                     # Calculate performance metrics
                     performance_data = self.calculate_performance_score(ticker)
 
-                    # Get company information
-                    df_data = pd.read_csv('C:/Users/peybo/PycharmProjects/twitter_auto/config/top_3000_tickers.csv')
+                    if performance_data is None:
+                        logger.warning(f"Could not calculate performance for {ticker}, skipping")
+                        continue
 
-                    company_info = df_data[df_data['ticker']==ticker].iloc[0]
+                    # Get company information from CSV first
+                    ticker_data = df_data[df_data['ticker']==ticker]
+
+                    if ticker_data.empty:
+                        # Ticker not in CSV, fetch from Yahoo Finance
+                        logger.info(f"Ticker {ticker} not in CSV, fetching from Yahoo Finance")
+                        try:
+                            stock = yf.Ticker(ticker)
+                            info = stock.info
+
+                            # Create a company_info dict from yfinance data
+                            company_info = {
+                                'ticker': ticker,
+                                'company_name': info.get('longName', ticker),
+                                'industry': info.get('industry', 'Unknown'),
+                                'sector': info.get('sector', 'Unknown')
+                            }
+                            logger.info(f"Successfully fetched info for {ticker} from Yahoo Finance")
+                        except Exception as e:
+                            logger.error(f"Could not fetch {ticker} from Yahoo Finance: {e}")
+                            continue
+                    else:
+                        company_info = ticker_data.iloc[0]
 
                     # Format and post company message
                     company_message = format_company_message(
@@ -170,7 +213,7 @@ class EarningsBot:
                     )
                     if company_message:
                         post_twitter(company_message)
-                        time.sleep(20)  # Wait 2 minutes between tweets
+                        time.sleep(20)  # Wait between tweets
 
                 except Exception as e:
                     logger.error(f"Error processing ticker {ticker}: {e}")

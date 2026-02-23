@@ -1,0 +1,16 @@
+{
+  "tickers": [
+    "AAPL", "MSFT", "AMZN", "NVDA", "META", "GOOGL", "GOOG", "TSLA", "AVGO", "COST",
+    "NFLX", "ADBE", "AMD", "PEP", "CSCO", "CMCSA", "TMUS", "INTC", "TXN", "INTU",
+    "HON", "QCOM", "AMGN", "SBUX", "BKNG", "ISRG", "GILD", "VRTX", "ADI", "REGN",
+    "MDLZ", "MU", "ADP", "PYPL", "LRCX", "PANW", "SNPS", "KLAC", "AMAT", "MRVL",
+    "CDNS", "NXPI", "ABNB", "CRWD", "MAR", "ORLY", "MNST", "CSX", "ADSK", "FTNT",
+    "MELI", "DASH", "ASML", "WDAY", "ROP", "AEP", "CPRT", "PAYX", "ROST", "PCAR",
+    "MCHP", "KDP", "ODFL", "KHC", "DXCM", "FAST", "EA", "IDXX", "CTAS", "CTSH",
+    "BKR", "EXC", "GEHC", "XEL", "DDOG", "TEAM", "VRSK", "CCEP", "BIIB", "ANSS",
+    "TTWO", "ZS", "ON", "FANG", "CDW", "ILMN", "MDB", "WBD", "GFS", "MRNA",
+    "CSGP", "ARM", "ZM", "DLTR", "WBA", "ALGN", "SMCI"
+  ],
+  "last_updated": "2025-02-23",
+  "source": "Manual compilation of NASDAQ-100 components"
+}

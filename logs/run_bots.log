@@ -1,45 +1,3 @@
-2025-01-17 11:26:10.420 | INFO     | weekdays.Dividends:__init__:26 - Initializing DividendBot
-2025-01-17 11:26:10.498 | INFO     | weekdays.Dividends:__init__:50 - Successfully loaded ticker information from config/top_3000_tickers.csv
-2025-01-17 11:26:10.498 | INFO     | weekdays.Dividends:run:247 - Starting DividendBot workflow
-2025-01-17 11:26:13.388 | INFO     | utils.utils:get_dividend_calendar:173 - Found 500 dividend entries for tracked tickers
-2025-01-17 11:26:13.388 | INFO     | utils.utils:get_dividend_calendar:176 - Searching for companies that publish dividends today 2025-01-17 11:26:10.435730
-2025-01-17 11:26:13.404 | INFO     | weekdays.Dividends:run:259 - Retrieved 0 dividend tickers
-2025-01-17 11:26:13.404 | INFO     | utils.utils:post_twitter:35 - Tweet lenght: 115
-2025-01-17 11:26:13.764 | INFO     | utils.utils:send_telegram_message:219 - Using bot_token: 6379257583...
-2025-01-17 11:26:13.779 | INFO     | utils.utils:send_telegram_message:220 - Sending to chat_id: -1002313822545
-2025-01-17 11:26:13.779 | INFO     | utils.utils:send_telegram_message:241 - Attempting to send message to Telegram
-2025-01-17 11:26:14.217 | INFO     | utils.utils:send_telegram_message:247 - Message sent successfully. Status code: 200
-2025-01-17 11:26:14.217 | SUCCESS  | utils.utils:post_twitter:39 - Tweet posted: #Today Friday, 17th of January, There are not #Scheduled #Dividends #Payments for #SP500 and #Nasdaq100 #Companies.
-2025-01-17 11:26:14.232 | INFO     | weekdays.Dividends:run:266 - Posted no dividends message
-2025-01-17 11:28:14.250 | INFO     | weekdays.Splits:__init__:26 - Initializing SplitBot
-2025-01-17 11:28:14.281 | INFO     | weekdays.Splits:__init__:47 - Successfully loaded ticker information from config/top_3000_tickers.csv
-2025-01-17 11:28:14.281 | INFO     | weekdays.Splits:run:243 - Starting SplitBot workflow
-2025-01-17 11:28:16.047 | INFO     | weekdays.Splits:run:249 - No splits scheduled for today
-2025-01-17 11:38:47.420 | INFO     | weekdays.Dividends:__init__:26 - Initializing DividendBot
-2025-01-17 11:38:47.454 | INFO     | weekdays.Dividends:__init__:50 - Successfully loaded ticker information from config/top_3000_tickers.csv
-2025-01-17 11:38:47.454 | INFO     | weekdays.Dividends:run:247 - Starting DividendBot workflow
-2025-01-17 11:38:50.283 | INFO     | utils.utils:get_dividend_calendar:173 - Found 500 dividend entries for tracked tickers
-2025-01-17 11:38:50.283 | INFO     | utils.utils:get_dividend_calendar:176 - Searching for companies that publish dividends today 2025-01-17 11:38:47.423199
-2025-01-17 11:38:50.299 | INFO     | weekdays.Dividends:run:259 - Retrieved 0 dividend tickers
-2025-01-17 11:38:50.304 | INFO     | utils.utils:post_twitter:35 - Tweet lenght: 115
-2025-01-17 11:38:50.600 | ERROR    | utils.utils:post_twitter:41 - 403 Forbidden
-You are not allowed to create a Tweet with duplicate content.
-2025-01-17 11:38:50.600 | INFO     | utils.utils:send_telegram_message:219 - Using bot_token: 6379257583...
-2025-01-17 11:38:50.610 | INFO     | utils.utils:send_telegram_message:220 - Sending to chat_id: -1002313822545
-2025-01-17 11:38:50.616 | INFO     | utils.utils:send_telegram_message:241 - Attempting to send message to Telegram
-2025-01-17 11:38:50.886 | INFO     | utils.utils:send_telegram_message:247 - Message sent successfully. Status code: 200
-2025-01-17 11:38:50.886 | INFO     | weekdays.Dividends:run:266 - Posted no dividends message
-2025-01-17 11:40:50.896 | INFO     | weekdays.Splits:__init__:26 - Initializing SplitBot
-2025-01-17 11:40:50.917 | INFO     | weekdays.Splits:__init__:47 - Successfully loaded ticker information from config/top_3000_tickers.csv
-2025-01-17 11:40:50.917 | INFO     | weekdays.Splits:run:243 - Starting SplitBot workflow
-2025-01-17 11:40:52.645 | INFO     | weekdays.Splits:run:249 - No splits scheduled for today
-2026-02-23 09:28:14.898 | INFO     | weekdays.Dividends:__init__:28 - Initialising DividendBot
-2026-02-23 09:28:14.908 | INFO     | weekdays.Dividends:__init__:52 - Successfully loaded ticker information from config/top_3000_tickers.csv
-2026-02-23 09:28:14.909 | INFO     | weekdays.Dividends:run:256 - Starting DividendBot workflow
-2026-02-23 09:28:15.347 | WARNING  | utils.utils:getting_nasdaq100_sp500_tickers:119 - NASDAQ API request failed with status 403
-2026-02-23 09:28:15.348 | INFO     | utils.utils:get_dividends:190 - Today's date: 2026-02-23
-2026-02-23 09:28:15.354 | INFO     | weekdays.Dividends:run:268 - Retrieved 0 dividend tickers
-2026-02-23 09:28:15.355 | INFO     | weekdays.Dividends:run:275 - Posted no dividends message
 2026-02-23 09:31:33.827 | INFO     | weekdays.Dividends:__init__:28 - Initialising DividendBot
 2026-02-23 09:31:33.834 | INFO     | weekdays.Dividends:__init__:52 - Successfully loaded ticker information from config/top_3000_tickers.csv
 2026-02-23 09:31:33.834 | INFO     | weekdays.Dividends:run:256 - Starting DividendBot workflow
@@ -680,3 +638,34 @@ You are not allowed to create a Tweet with duplicate content.
 2026-02-23 09:49:04.276 | INFO     | utils.utils:send_telegram_message:336 - Message sent successfully. Status code: 200
 2026-02-23 09:49:04.278 | INFO     | utils.utils:post_twitter:62 - Pausing for 558 seconds to maintain proper intervals between Twitter posts.
 2026-02-23 09:49:04.279 | INFO     | weekdays.Dividends:run:275 - Posted no dividends message
+2026-02-23 09:51:16.560 | INFO     | weekdays.Earnings:__init__:58 - Initialising Earnings
+2026-02-23 09:51:16.560 | INFO     | weekdays.Earnings:run:140 - Starting EarningsBot workflow
+2026-02-23 09:51:16.560 | INFO     | utils.utils:get_earnings_calendar:191 - earnings
+2026-02-23 09:51:17.639 | WARNING  | utils.utils:getting_nasdaq100_sp500_tickers:139 - NASDAQ API request failed with status 403
+2026-02-23 09:51:17.640 | INFO     | utils.utils:getting_nasdaq100_sp500_tickers:150 - Loaded 97 NASDAQ tickers from local file
+2026-02-23 09:51:17.766 | INFO     | utils.utils:getting_nasdaq100_sp500_tickers:169 - Loaded 410 S&P 500 tickers from local file
+2026-02-23 09:51:17.767 | INFO     | utils.utils:getting_nasdaq100_sp500_tickers:175 - Total unique tickers: 433
+2026-02-23 09:51:24.373 | INFO     | weekdays.Earnings:run:147 - Retrieved 5 tickers for earnings announcements
+2026-02-23 09:51:24.375 | INFO     | weekdays.Earnings:run:150 - Initial Message:
+2026-02-23 09:51:24.375 | INFO     | weekdays.Earnings:run:151 - #SP500 and #NASDAQ100 Companies that #publish #results today Monday, 23rd of February of 2026: 
+ #tickers -> $WMB $D $OKE $FANG $KEYS 
+ More #information in the next tweets -> 
+
+2026-02-23 09:51:24.376 | INFO     | utils.utils:post_twitter:38 - Tweet lenght: 191
+2026-02-23 09:51:24.377 | INFO     | utils.utils:send_telegram_message:308 - Using bot_token: 6379257583...
+2026-02-23 09:51:24.377 | INFO     | utils.utils:send_telegram_message:309 - Sending to chat_id: -1002313822545
+2026-02-23 09:51:24.377 | INFO     | utils.utils:send_telegram_message:330 - Attempting to send message to Telegram
+2026-02-23 09:51:24.545 | INFO     | utils.utils:send_telegram_message:336 - Message sent successfully. Status code: 200
+2026-02-23 09:51:24.948 | INFO     | utils.utils:send_telegram_message:308 - Using bot_token: 6379257583...
+2026-02-23 09:51:24.949 | INFO     | utils.utils:send_telegram_message:309 - Sending to chat_id: -1002313822545
+2026-02-23 09:51:24.949 | INFO     | utils.utils:send_telegram_message:330 - Attempting to send message to Telegram
+2026-02-23 09:51:25.103 | INFO     | utils.utils:send_telegram_message:336 - Message sent successfully. Status code: 200
+2026-02-23 09:51:25.104 | SUCCESS  | utils.utils:post_twitter:45 - Tweet posted: #SP500 and #NASDAQ100 Companies that #publish #results today Monday, 23rd of February of 2026: 
+ #tickers -> $WMB $D $OKE $FANG $KEYS 
+ More #information in the next tweets -> 
+
+@Grok context
+2026-02-23 09:51:25.105 | INFO     | utils.utils:post_twitter:62 - Pausing for 287 seconds to maintain proper intervals between Twitter posts.
+2026-02-23 09:51:25.406 | ERROR    | weekdays.Earnings:run:176 - Error processing ticker WMB: [Errno 2] No such file or directory: 'C:/Users/peybo/PycharmProjects/twitter_auto/config/top_3000_tickers.csv'
+2026-02-23 09:51:25.730 | ERROR    | weekdays.Earnings:run:176 - Error processing ticker D: [Errno 2] No such file or directory: 'C:/Users/peybo/PycharmProjects/twitter_auto/config/top_3000_tickers.csv'
+2026-02-23 09:51:25.730 | INFO     | weekdays.Earnings:run:179 - Completed EarningsBot workflow successfully

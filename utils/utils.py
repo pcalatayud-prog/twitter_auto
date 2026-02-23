@@ -40,14 +40,23 @@ def post_twitter(text: str):
     message = message[0:280]
 
     try:
-
         client.create_tweet(text=message)
         bot_send_text("Tweet posted: {}".format(message))
         logger.success("Tweet posted: {}".format(message))
     except Exception as e:
-        logger.error(e)
-        bot_send_text(f"Tweet Error\nTweet Error\n: {e}\n{message}")
-        logger.error(f"Tweet Error\nTweet Error\n: {e}\n{message}")
+        error_message = str(e)
+
+        # Check if it's a duplicate content error
+        if "duplicate content" in error_message.lower():
+            logger.warning(f"Skipping duplicate tweet: {message[:50]}...")
+            bot_send_text(f"⚠️ Skipped duplicate tweet")
+        else:
+            # For other errors, log as error
+            logger.error(f"Tweet Error: {e}")
+            bot_send_text(f"❌ Tweet Error: {e}")
+
+        # Continue execution regardless of error type
+        pass
 
     random_number = random.randint(180, 600)
     logger.info(f"Pausing for {random_number} seconds to maintain proper intervals between Twitter posts.")
@@ -96,43 +105,76 @@ def get_sp500_tickers():
 
 
 def getting_nasdaq100_sp500_tickers():
+    """
+    Get combined list of S&P 500 and NASDAQ 100 tickers.
+    Uses local JSON files as fallback when APIs fail.
+
+    Returns:
+        list: Combined unique tickers from both indices
+    """
+    import json
+    import os
     from config.api_keys import api_key
+
+    nasdaq = []
+    sp500 = []
+
+    # Try to get NASDAQ from API
     try:
         base_url = 'https://financialmodelingprep.com/api/v3'
-
-        # Get NASDAQ constituents
         nasdaq_response = requests.get(
             f"{base_url}/nasdaq_constituent",
-            params={'apikey': api_key}
+            params={'apikey': api_key},
+            timeout=10
         )
 
-        # Check if the request was successful
-        nasdaq = []
         if nasdaq_response.status_code == 200:
             nasdaq_data = nasdaq_response.json()
-            # Verify the response is a list and not an error dict/string
             if isinstance(nasdaq_data, list):
                 nasdaq = [item["symbol"] for item in nasdaq_data]
+                logger.info(f"Successfully fetched {len(nasdaq)} NASDAQ tickers from API")
             else:
-                logger.warning(f"NASDAQ API returned unexpected format: {nasdaq_data}")
+                logger.warning(f"NASDAQ API returned unexpected format")
         else:
             logger.warning(f"NASDAQ API request failed with status {nasdaq_response.status_code}")
-
-        # # Get S&P 500 constituents
-        # sp500_response = requests.get(
-        #     f"{base_url}/sp500_constituent",
-        #     params={'apikey': api_key}
-        # )
-
-        sp500 = get_sp500_tickers()
-
-        # Get unique tickers
-        unique_tickers = list(set(nasdaq + sp500))
-
-        return unique_tickers
     except Exception as e:
-        logger.error(e)
-        return []
+        logger.warning(f"NASDAQ API error: {e}")
+
+    # If NASDAQ API failed, use local file
+    if not nasdaq:
+        try:
+            nasdaq_file = os.path.join(os.path.dirname(__file__), 'nasdaq100_tickers.json')
+            with open(nasdaq_file, 'r') as f:
+                nasdaq_data = json.load(f)
+                nasdaq = nasdaq_data.get('tickers', [])
+                logger.info(f"Loaded {len(nasdaq)} NASDAQ tickers from local file")
+        except Exception as e:
+            logger.error(f"Error loading NASDAQ from local file: {e}")
+
+    # Try to get S&P 500 from Wikipedia
+    try:
+        sp500 = get_sp500_tickers()
+        if sp500:
+            logger.info(f"Successfully fetched {len(sp500)} S&P 500 tickers")
+    except Exception as e:
+        logger.warning(f"S&P 500 scraping error: {e}")
+
+    # If S&P 500 scraping failed, use local file
+    if not sp500:
+        try:
+            sp500_file = os.path.join(os.path.dirname(__file__), 'sp500_tickers.json')
+            with open(sp500_file, 'r') as f:
+                sp500_data = json.load(f)
+                sp500 = sp500_data.get('tickers', [])
+                logger.info(f"Loaded {len(sp500)} S&P 500 tickers from local file")
+        except Exception as e:
+            logger.error(f"Error loading S&P 500 from local file: {e}")
+
+    # Get unique tickers
+    unique_tickers = list(set(nasdaq + sp500))
+    logger.info(f"Total unique tickers: {len(unique_tickers)}")
+
+    return unique_tickers
 
 
 def get_earnings_calendar() -> pd.DataFrame():
@@ -332,6 +374,7 @@ def bot_send_text(message):
 def sort_tickers_by_market_cap(tickers: List[str]) -> List[str]:
     """
     Sort a list of stock tickers by their market capitalization.
+    Tickers with no market cap data (0 or None) are placed at the end.
 
     Args:
         tickers (List[str]): List of stock ticker symbols
@@ -346,14 +389,17 @@ def sort_tickers_by_market_cap(tickers: List[str]) -> List[str]:
     for ticker in tickers:
         market_cap = get_market_cap(ticker)
 
-        # Only include tickers with valid market cap data
-        if market_cap is not None:
+        # Include all tickers, use 0 for missing/invalid market cap
+        if market_cap is None or market_cap == 0:
+            market_caps.append((ticker, 0))
+        else:
             market_caps.append((ticker, market_cap))
 
         # Add delay between API calls
         time.sleep(1)
 
     # Sort the list by market cap in descending order
+    # Tickers with 0 market cap will naturally go to the end
     sorted_tickers = sorted(market_caps, key=lambda x: x[1], reverse=True)
 
     # Return just the sorted ticker symbols
