@@ -3,6 +3,8 @@
 # LinkedIn: https://www.linkedin.com/in/pablo-calatayud-pelayo/
 # Copyright (c) 2025, Pablo Calatayud. All rights reserved.
 
+import os
+import re
 import tweepy
 import requests
 import pandas as pd
@@ -24,8 +26,85 @@ from config.auth import bearer
 from config.telegram import bot_token, bot_chatID
 
 
-def post_twitter(text: str):
-    text = text + "\n@Grok context"
+_SECRET_RE = re.compile(r"(apikey=|api_key=|/bot)([A-Za-z0-9:_-]{6,})", re.IGNORECASE)
+
+
+def _redact_secrets(record):
+    """Mask API keys / bot tokens that appear in log lines (e.g. inside request URLs)."""
+    record["message"] = _SECRET_RE.sub(lambda m: m.group(1) + "***", record["message"])
+
+
+logger.configure(patcher=_redact_secrets)
+
+
+_URL_RE = re.compile(r"(?:https?://|www\.)\S+", re.IGNORECASE)
+_DOMAIN_RE = re.compile(
+    r"\b([A-Za-z0-9-]+)\.(?:com|net|org|io|co|ai|app|ly|me|info|biz|us|uk|es|de|fr|it|eu|tv|gg|xyz|finance|news|dev)\b",
+    re.IGNORECASE,
+)
+
+
+def remove_links(text: str) -> str:
+    """Strip anything X would turn into a link: posts with links cost ~13x more via the API."""
+    cleaned = _URL_RE.sub("", text)
+    cleaned = _DOMAIN_RE.sub(r"\1", cleaned)  # "Amazon.com" -> "Amazon"
+    cleaned = re.sub(r"[ \t]{2,}", " ", cleaned)
+    if cleaned != text:
+        logger.warning("Removed link(s) from tweet to avoid the X API link surcharge")
+    return cleaned
+
+
+TWEET_LIMIT = 280
+GROK_TAG = "\n@Grok context"
+_credits_depleted = False  # set after a 402 so the remaining bots stop spending calls
+
+
+def _char_weight(ch: str) -> int:
+    """X counts Latin/most punctuation as 1 and everything else (emoji, CJK...) as 2."""
+    cp = ord(ch)
+    if cp <= 4351 or 8192 <= cp <= 8205 or 8208 <= cp <= 8223 or 8242 <= cp <= 8247:
+        return 1
+    return 2
+
+
+def tweet_length(text: str) -> int:
+    """Approximate X's weighted length (slightly conservative for emoji sequences)."""
+    return sum(_char_weight(ch) for ch in text)
+
+
+def fit_tweet(text: str, limit: int = TWEET_LIMIT) -> str:
+    """Trim text to X's weighted limit, dropping whole lines first so nothing is cut mid-word."""
+    if tweet_length(text) <= limit:
+        return text
+    lines = text.split("\n")
+    while len(lines) > 1 and tweet_length("\n".join(lines)) > limit:
+        lines.pop(-2 if len(lines) > 2 else -1)  # keep the last line (usually hashtags)
+    text = "\n".join(lines)
+    while tweet_length(text) > limit:
+        text = text[:-1]
+    return text.rstrip()
+
+
+def post_twitter(text: str, reply_to: str | None = None, add_grok: bool = True):
+    """Post a tweet (optionally as a reply, to build threads). Returns the tweet id or None.
+
+    Set the env var TWEET_DRY_RUN=1 to only log the tweet without calling the X API (free).
+    """
+    global _credits_depleted
+    text = remove_links(text).strip()
+    if add_grok and tweet_length(text + GROK_TAG) <= TWEET_LIMIT:
+        text = text + GROK_TAG
+    message = fit_tweet(text)
+    logger.info(f"Tweet length (X weighted): {tweet_length(message)}")
+
+    if os.getenv("TWEET_DRY_RUN") == "1":
+        logger.info(f"[DRY RUN] Would post{' (reply)' if reply_to else ''}:\n{message}")
+        return "dry-run"
+
+    if _credits_depleted:
+        logger.warning("Skipping tweet: X API credits are depleted")
+        return None
+
     client = tweepy.Client(
         bearer_token=bearer,
         consumer_key=api_key,
@@ -34,34 +113,25 @@ def post_twitter(text: str):
         access_token_secret=access_token_secret
     )
 
-    message = text
-    logger.info(f"Tweet lenght: {len(message)}")
-    bot_send_text(f"Tweet lenght: {len(message)}")
-    message = message[0:280]
-
     try:
-        client.create_tweet(text=message)
+        response = client.create_tweet(text=message, in_reply_to_tweet_id=reply_to)
         bot_send_text("Tweet posted: {}".format(message))
         logger.success("Tweet posted: {}".format(message))
+        return response.data["id"]
     except Exception as e:
         error_message = str(e)
 
-        # Check if it's a duplicate content error
         if "duplicate content" in error_message.lower():
             logger.warning(f"Skipping duplicate tweet: {message[:50]}...")
             bot_send_text(f"⚠️ Skipped duplicate tweet")
+        elif "402" in error_message:
+            _credits_depleted = True
+            logger.error(f"Tweet Error: {e}")
+            bot_send_text("❌ X API credits depleted. Top up in the developer console; skipping remaining tweets.")
         else:
-            # For other errors, log as error
             logger.error(f"Tweet Error: {e}")
             bot_send_text(f"❌ Tweet Error: {e}")
-
-        # Continue execution regardless of error type
-        pass
-
-    random_number = random.randint(180, 600)
-    logger.info(f"Pausing for {random_number} seconds to maintain proper intervals between Twitter posts.")
-    # time.sleep(random_number)
-    return None
+        return None
 
 def get_market_cap(symbol) -> int:
     try:
@@ -87,8 +157,9 @@ def get_sp500_tickers():
     url = "https://en.wikipedia.org/wiki/List_of_S%26P_500_companies"
 
     try:
-        # Read the first table from the Wikipedia page
-        tables = pd.read_html(url)
+        # Wikipedia returns 403 without a browser-like User-Agent
+        html = requests.get(url, headers={"User-Agent": "Mozilla/5.0 (twitter_auto bot)"}, timeout=15).text
+        tables = pd.read_html(io.StringIO(html))
         sp500_table = tables[0]
 
         # Extract the ticker symbols (usually in the first column)
@@ -304,10 +375,6 @@ def send_telegram_message(bot_message, max_retries=3):
         max_retries (int): Maximum number of retry attempts
     """
     try:
-        # Log the credentials (be careful with this in production)
-        logger.info(f"Using bot_token: {bot_token[:10]}...")
-        logger.info(f"Sending to chat_id: {bot_chatID}")
-
         # Create session with retry strategy
         session = requests.Session()
         retry_strategy = Retry(
@@ -363,12 +430,29 @@ def send_telegram_message(bot_message, max_retries=3):
 
 
 def bot_send_text(message):
-    """Wrapper function for sending Telegram messages."""
+    """Wrapper function for sending Telegram messages. Never raises."""
     try:
         return send_telegram_message(message)
     except Exception as e:
         logger.error(f"Failed to send Telegram message: {e}")
         return None
+
+
+def wait_for_internet(max_wait_seconds: int = 300, check_every: int = 10) -> bool:
+    """After the PC wakes from sleep Wi-Fi can take a while to reconnect; wait for it."""
+    import socket
+    waited = 0
+    while waited <= max_wait_seconds:
+        try:
+            socket.create_connection(("api.x.com", 443), timeout=5).close()
+            if waited:
+                logger.info(f"Internet available after {waited}s")
+            return True
+        except OSError:
+            time.sleep(check_every)
+            waited += check_every
+    logger.error(f"No internet connection after {max_wait_seconds}s")
+    return False
 
 
 def sort_tickers_by_market_cap(tickers: List[str]) -> List[str]:

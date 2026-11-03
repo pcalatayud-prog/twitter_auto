@@ -1,1 +1,7 @@
 /config/
+# Local runtime files (may contain API URLs)
+logs/
+*.log
+!logs/**/.gitkeep
+__pycache__/
+*.pyc

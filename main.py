@@ -51,6 +51,23 @@ class Execution_twitter_information:
         self.day_of_week = self.today.strftime('%A')
         self.market_open = None
 
+        # Weekday slots are decided in New York time, so US/EU daylight-saving mismatches
+        # (a few weeks in March and Oct/Nov) and a few minutes of delay after waking the PC don't matter.
+        from zoneinfo import ZoneInfo
+        ny = datetime.datetime.now(ZoneInfo("America/New_York"))
+        ny_minutes = ny.hour * 60 + ny.minute
+        if ny_minutes < 6 * 60:
+            self.weekday_slot = "morning"       # scheduler 08:00 Spain  -> 02:00/03:00 ET
+        elif 9 * 60 + 30 <= ny_minutes < 11 * 60:
+            self.weekday_slot = "open"          # scheduler 15:31 Spain  -> 09:31/10:31 ET
+        elif 12 * 60 <= ny_minutes < 14 * 60 + 30:
+            self.weekday_slot = "midday"        # scheduler 18:30 Spain  -> 12:30/13:30 ET
+        elif 16 * 60 <= ny_minutes < 18 * 60:
+            self.weekday_slot = "close"         # scheduler 22:00 Spain  -> 16:00/17:00 ET
+        else:
+            self.weekday_slot = None
+        logger.info(f"New York time {ny:%H:%M} -> weekday slot: {self.weekday_slot}")
+
     def is_market_open(self):
         """
         Check if the market is open by checking against local holiday calendar.
@@ -77,15 +94,16 @@ class Execution_twitter_information:
             # Check if today is a holiday
             if today_str in holidays_this_year:
                 reason = holidays_this_year[today_str]
-                if self.morning_update[0] == self.current_hour:
+                if self.weekday_slot == "morning":
                     logger.info(f"Today {current_date} the market is closed due to: {reason}.")
-                    post_twitter(f"Today {current_date} the market is closed due to: {reason}.")
+                    post_twitter(f"🏖️ US markets are closed today ({current_date}) for {reason}.\n\nSee you next session! #StockMarket")
                 self.market_open = False
             else:
                 # Not a holiday - market is open
-                if self.morning_update[0] == self.current_hour:
+                if self.weekday_slot == "morning":
                     logger.info(f"Today {current_date} the {self.exchange} is open.")
-                    post_twitter(f"Today {current_date} the {self.exchange} is open (09:30 - 16:00 ET).")
+                    post_twitter(f"🔔 Good morning! US markets are open today, {current_date}.\n\n"
+                                 f"🕤 09:30 – 16:00 ET (15:30 – 22:00 CET)\n\n#StockMarket #NASDAQ #SP500")
                 self.market_open = True
 
         except FileNotFoundError:
@@ -115,14 +133,16 @@ class Execution_twitter_information:
 
 
     def run(self):
-        send_telegram_message('Running main.py')
+        if not wait_for_internet():
+            return None
+        bot_send_text('Running main.py')
         self.is_weekend()
 
         if self.day_of_week in self.WEEKDAYS and self.market_open==True:
             logger.info("Today the market opens")
 
 
-            if self.current_hour == self.morning_update[0]:
+            if self.weekday_slot == "morning":
                 logger.info("Running Earnings + Dividends + Splits")
                 try:
                     bot = EarningsBot()
@@ -149,7 +169,7 @@ class Execution_twitter_information:
                     logger.error(f"SplitBot failed: {e}")
                     bot_send_text(f"❌ SplitBot Error: {type(e).__name__}: {str(e)}")
 
-            elif self.current_hour == self.time_open[0] and self.current_minute >= self.time_open[1]:
+            elif self.weekday_slot == "open":
                 logger.info('The market just opened -> ')
                 try:
                     market = Market_Daily_Performance()
@@ -158,7 +178,7 @@ class Execution_twitter_information:
                     logger.error(f"Market open performance failed: {e}")
                     bot_send_text(f"❌ Market Open Error: {type(e).__name__}: {str(e)}")
 
-            elif self.current_hour == self.time_performance[0]:
+            elif self.weekday_slot == "midday":
                 logger.info('The market has been opened for 3 hours -> ')
                 try:
                     market = Market_Daily_Performance()
@@ -167,7 +187,7 @@ class Execution_twitter_information:
                     logger.error(f"Market performance check failed: {e}")
                     bot_send_text(f"❌ Market Performance Error: {type(e).__name__}: {str(e)}")
 
-            elif self.current_hour == self.time_close[0]:
+            elif self.weekday_slot == "close":
                 logger.info('The market just closed -> ')
                 try:
                     market = Market_Daily_Performance()

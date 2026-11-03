@@ -3,228 +3,199 @@
 # LinkedIn: https://www.linkedin.com/in/pablo-calatayud-pelayo/
 # Copyright (c) 2025, Pablo Calatayud. All rights reserved.
 
+import os
+import sys
+import time
+from datetime import datetime, timedelta
+
 import pandas as pd
 import yfinance as yf
 from loguru import logger
-import time
 
-from datetime import datetime, timedelta
-from utils.utils import post_twitter, get_market_cap, get_earnings_calendar, sort_tickers_by_market_cap
-from constants import green_icon,red_icon, sector_emojis, industry_emojis
+from utils.utils import post_twitter, get_earnings_calendar, sort_tickers_by_market_cap, fit_tweet, tweet_length
+from constants import sector_emojis
+
+GREEN = "\U0001F7E2"
+RED = "\U0001F534"
+SESSION_LABEL = {"pre-market": ("🌅", "before the open"), "post-market": ("🌙", "after the close")}
 
 
-def format_company_message(ticker: str, performance_data: dict, company_info: dict) -> str:
-    """Format the message for a specific company."""
+def fmt_market_cap(value) -> str:
     try:
-        price_ytd = performance_data["price_change_ytd"]
-        mdd_ytd = performance_data["MDD_ytd"]
-
-        try:
-            icon_sector = sector_emojis[company_info['sector']]
-        except:
-            icon_sector = ''
-        try:
-            icon_industry = industry_emojis[company_info['industry']]
-        except:
-            icon_industry = ''
-
-
-        message_0 = (f"Today Publish Results: \n #{company_info['company_name']}, "
-                     f"-> ${ticker} \n ->  Industry {icon_industry}: #{company_info['industry']} "
-                     f"\n ->   Sector {icon_sector}: #{company_info['sector']}")
-
-        message_1 = (f" \n Year To Day Performance: \n ->  Price Change YTD = "
-                     f"{price_ytd} % icono, \n ->  Max DrawDown YTD = {mdd_ytd} %")
-
-        if price_ytd>=0:
-            message_1.replace("icono",'\U0001F7E2')
-        else:
-            message_1.replace("icono",'\U0001F534')
-
-        return message_0 + message_1 + "\n #Earnings"
-
-    except Exception as e:
-        logger.error(f"Error formatting company message for {ticker}: {e}")
+        value = float(value)
+    except (TypeError, ValueError):
         return ""
+    for unit, size in (("T", 1e12), ("B", 1e9), ("M", 1e6)):
+        if value >= size:
+            return f"${value / size:.1f}{unit}"
+    return ""
+
+
+def fmt_pct(value: float) -> str:
+    return f"{value:+.1f}%"
+
+
+def ticker_line(label: str, tickers: list, budget: int) -> str:
+    """'🌅 Before open: $A $B $C +5 more' trimmed to fit `budget` weighted chars."""
+    for n in range(len(tickers), 0, -1):
+        rest = len(tickers) - n
+        line = f"{label} " + " ".join(f"${t}" for t in tickers[:n]) + (f" +{rest} more" if rest else "")
+        if tweet_length(line) <= budget:
+            return line
+    return f"{label} {len(tickers)} companies"
+
+
+def format_company_message(ticker: str, performance: dict, info: dict, when_word: str) -> str:
+    """Build the per-company tweet."""
+    emoji, session_text = SESSION_LABEL.get(info.get("session"), ("📊", ""))
+    name = info.get("company_name") or ticker
+    header = f"{emoji} ${ticker} | {name} reports {when_word}" + (f" {session_text}" if session_text else "")
+
+    lines = [header, ""]
+    sector, industry = info.get("sector"), info.get("industry")
+    if sector:
+        lines.append(f"{sector_emojis.get(sector, '🏢')} {sector}" + (f" · {industry}" if industry else ""))
+    cap = fmt_market_cap(info.get("market_cap"))
+    if cap:
+        lines.append(f"🏦 Market cap: {cap}")
+    eps = info.get("eps_estimate")
+    if eps is not None and not pd.isna(eps):
+        lines.append(f"🎯 EPS estimate: ${eps:.2f}")
+    lines.append("")
+
+    ytd = performance["price_change_ytd"]
+    lines.append(f"📈 YTD: {fmt_pct(ytd)} {GREEN if ytd >= 0 else RED}")
+    lines.append(f"📉 Max drawdown YTD: -{performance['MDD_ytd']:.1f}%")
+    off_high = performance.get("off_52w_high")
+    if off_high is not None:
+        lines.append("🚀 At its 52-week high" if off_high < 0.5 else f"📍 {off_high:.1f}% below 52-week high")
+
+    lines += ["", "Beat or miss? 👇 #Earnings"]
+    return fit_tweet("\n".join(lines))
 
 
 class EarningsBot:
-    """
-    A class to handle earnings announcements and post them to Twitter.
-    """
-    def __init__(self):
-        """Initialize the EarningsBot with necessary configurations."""
+    """Posts an earnings thread: one summary tweet + replies for the biggest reporters."""
+
+    def __init__(self, target_date: str | None = None, number_tickers_to_print: int = 2):
         logger.add("logs/earnings_bot.log", rotation="500 MB")
-        logger.info('Initialising Earnings')
-        # Set up date information
-        self.current_date = datetime.now().strftime('%Y-%m-%d')
+        logger.info("Initialising Earnings")
+        today = datetime.now().date()
+        self.target = datetime.strptime(target_date, "%Y-%m-%d").date() if target_date else today
+        self.current_date = self.target.strftime("%Y-%m-%d")
+        if self.target == today:
+            self.when_word = "today"
+        elif self.target == today + timedelta(days=1):
+            self.when_word = "tomorrow"
+        else:
+            self.when_word = "on " + self.target.strftime("%a %b %-d") if os.name != "nt" else "on " + self.target.strftime("%a %b %#d")
+        self.number_tickers_to_print = number_tickers_to_print
 
-        # Add emoji indicators
-        self.green = "\U0001F7E2"  # Green Circle
-        self.red = "\U0001F534"  # Red Circle
-        self.number_tickers_to_print = 2
-
-    def _get_historical_price(self, ticker: str, start_date: str, end_date: str):
-        """Download historical price data for a ticker."""
+    def calculate_performance_score(self, ticker: str) -> dict | None:
+        """YTD return, YTD max drawdown and distance from the 52-week high (data up to now)."""
         try:
-            return yf.download(ticker, start=start_date, end=end_date, progress=False)
+            now = datetime.now()
+            df = yf.download(ticker, start=(now - timedelta(days=372)).strftime("%Y-%m-%d"),
+                             end=(now + timedelta(days=1)).strftime("%Y-%m-%d"), progress=False, auto_adjust=True)
+            close = df["Close"]
+            if isinstance(close, pd.DataFrame):  # newer yfinance returns multi-index columns
+                close = close.iloc[:, 0]
+            close = close.dropna()
+            ytd = close[close.index >= pd.Timestamp(now.year, 1, 1)]
+            # Base YTD on last year's final close so the first trading day counts too
+            prev = close[close.index < pd.Timestamp(now.year, 1, 1)]
+            base = prev.iloc[-1] if not prev.empty else ytd.iloc[0]
+            series = pd.concat([pd.Series([base]), ytd.reset_index(drop=True)])
+            drawdown = (series.cummax() - series) / series.cummax()
+            high_52w = close[close.index >= pd.Timestamp(now - timedelta(days=365))].max()
+            return {
+                "price_change_ytd": float(100 * (ytd.iloc[-1] / base - 1)),
+                "MDD_ytd": float(100 * drawdown.max()),
+                "off_52w_high": float(100 * (1 - close.iloc[-1] / high_52w)),
+            }
         except Exception as e:
-            logger.error(f"Error downloading historical data for {ticker}: {e}")
+            logger.error(f"Error calculating performance for {ticker}: {e}")
             return None
 
-    def calculate_performance_score(self, ticker: str) -> dict:
-        """Calculate performance metrics for a given ticker."""
-        try:
-            # Initialize DataFrame for performance metrics
-
-            # Calculate dates
-            current_date_date = datetime.strptime(self.current_date, '%Y-%m-%d')
-            first_day_current_year = current_date_date.replace(month=1, day=1).strftime('%Y-%m-%d')
-            current_date_str = current_date_date.strftime('%Y-%m-%d')
-            current_date_plus_one_day = current_date_date + timedelta(days=1)
-            current_date_plus_one_day_str = current_date_plus_one_day.strftime('%Y-%m-%d')
-
-            # Get historical data
-            df_1y = self._get_historical_price(ticker, first_day_current_year, current_date_plus_one_day_str)
-
-            # Calculate returns and metrics
-            df_1y["returns"] = df_1y["Close"].pct_change()
-            df_1y["returns_perc"] = df_1y["returns"] + 1
-            df_1y["creturns"] = df_1y["returns_perc"].cumprod()
-            df_1y["cummax_BH"] = df_1y.creturns.cummax()
-            df_1y["drawdown_BH"] = (df_1y["cummax_BH"] - df_1y["creturns"]) / df_1y["cummax_BH"]
-
-
-            metrics = {}
-
-            metrics["price_change_ytd"] = round(100 * (df_1y["creturns"].iloc[-1] - 1),2)
-            metrics["MDD_ytd"] = round(100 * df_1y["drawdown_BH"].max(),2)
-            metrics = {key: float(value) for key, value in metrics.items()}
-
-            return metrics
-
-        except Exception as e:
-            logger.error(f"Error calculating performance score for {ticker}: {e}")
-            return None
-
-    def retrieve_earnings_tickers(self) -> list:
-        """Retrieve list of tickers with earnings announcements."""
+    def retrieve_earnings(self) -> pd.DataFrame:
         try:
             df = get_earnings_calendar()
-            df_today = df[df['date']==self.current_date]
-            return df_today['symbol'].to_list()
+            return df[df["date"] == self.current_date].copy()
         except Exception as e:
-            logger.error(f"Error retrieving earnings tickers: {e}")
-            return []
+            logger.error(f"Error retrieving earnings calendar: {e}")
+            return pd.DataFrame()
 
-    @staticmethod
-    def format_earnings_message(tickers: list) -> str:
-        """Format the earnings announcement message."""
-        current_date = datetime.now()
-        day = current_date.day
-        suffix = "th" if 11 <= day <= 13 else {1: "st", 2: "nd", 3: "rd"}.get(day % 10, "th")
-        formatted_date = current_date.strftime(f"%A, %d{suffix} of %B of %Y")
+    def format_earnings_message(self, df: pd.DataFrame) -> str:
+        """Summary tweet split by session, trimmed to fit."""
+        nice_date = self.target.strftime("%a, %b ") + str(self.target.day)
+        if df.empty:
+            return (f"📅 No S&P 500 or Nasdaq-100 earnings {self.when_word} ({nice_date}).\n\n"
+                    f"Quiet day on the calendar. #Earnings")
 
-        tickers_symbol = ' '.join(f'${ticker}' for ticker in tickers)
+        head = f"📅 Earnings {self.when_word} · {nice_date}\n\n{len(df)} S&P 500 & Nasdaq-100 companies report\n\n"
+        tail = "\n\nWhich one are you watching? 👇\n#Earnings"
+        pre = df[df["timeOfTheDay"] == "pre-market"]["symbol"].tolist()
+        post = df[df["timeOfTheDay"] == "post-market"]["symbol"].tolist()
+        other = df[~df["timeOfTheDay"].isin(["pre-market", "post-market"])]["symbol"].tolist()
+        groups = [g for g in (("🌅 Before open:", pre), ("🌙 After close:", post), ("🕒 Time TBA:", other)) if g[1]]
 
-        if tickers:
-            return (f"#SP500 and #NASDAQ100 Companies that #publish #results today "
-                    f"{formatted_date}: \n #tickers -> {tickers_symbol} \n "
-                    f"More #information in the next tweets -> \n")
-        else:
-            return (f"#Today {formatted_date}, there are not #Scheduled #Earnings "
-                    f"#Releases for #SP500 and #Nasdaq100 #Companies.")
+        budget = 280 - tweet_length(head + tail) - (len(groups) - 1)
+        per_line = budget // max(len(groups), 1)
+        body = "\n".join(ticker_line(label, tickers, per_line) for label, tickers in groups)
+        return fit_tweet(head + body + tail)
+
+    def company_info(self, ticker: str, row: pd.Series, df_data: pd.DataFrame | None) -> dict:
+        info = {"session": row.get("timeOfTheDay"), "eps_estimate": row.get("estimate")}
+        try:
+            yinfo = yf.Ticker(ticker).info
+            info.update(company_name=yinfo.get("shortName") or yinfo.get("longName"),
+                        sector=yinfo.get("sector"), industry=yinfo.get("industry"),
+                        market_cap=yinfo.get("marketCap"))
+        except Exception as e:
+            logger.warning(f"Yahoo Finance info failed for {ticker}: {e}")
+        if df_data is not None and not info.get("company_name"):
+            match = df_data[df_data["ticker"] == ticker]
+            if not match.empty:
+                r = match.iloc[0]
+                info.update(company_name=r["company_name"], sector=r["sector"], industry=r["industry"],
+                            market_cap=r["marketCap"])
+        info["company_name"] = info.get("company_name") or str(row.get("name", ticker)).title()
+        return info
 
     def run(self):
-        """Execute the main bot workflow."""
-        logger.info("Starting EarningsBot workflow")
-
+        logger.info(f"Starting EarningsBot workflow for {self.current_date}")
         try:
-            # Get earnings tickers for today
-            tickers = self.retrieve_earnings_tickers()
-            tickers = sort_tickers_by_market_cap(tickers)
+            df = self.retrieve_earnings()
+            if not df.empty:
+                order = sort_tickers_by_market_cap(df["symbol"].tolist())
+                df = df.set_index("symbol").loc[order].reset_index()
+            logger.info(f"Retrieved {len(df)} tickers for earnings announcements")
 
-            logger.info(f"Retrieved {len(tickers)} tickers for earnings announcements")
-
-            initial_message = self.format_earnings_message(tickers)
-            logger.info('Initial Message:')
-            logger.info(initial_message)
-            post_twitter(initial_message)
-
-            if not tickers:
+            thread_id = post_twitter(self.format_earnings_message(df))
+            if df.empty:
                 return
 
-            # Load ticker information once (outside the loop)
-            import os
-            script_dir = os.path.dirname(os.path.abspath(__file__))
-            possible_paths = [
-                "config/top_3000_tickers.csv",
-                os.path.join(script_dir, "config/top_3000_tickers.csv"),
-                os.path.join(script_dir, "../config/top_3000_tickers.csv"),
-            ]
+            csv_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "config", "top_3000_tickers.csv")
+            df_data = pd.read_csv(csv_path) if os.path.exists(csv_path) else None
 
-            df_data = None
-            for path in possible_paths:
-                if os.path.exists(path):
-                    df_data = pd.read_csv(path)
-                    logger.info(f"Successfully loaded ticker information from {path}")
-                    break
-
-            if df_data is None:
-                logger.error(f"Could not find top_3000_tickers.csv in any of these locations: {possible_paths}")
-                return
-
-            for ticker in tickers[:self.number_tickers_to_print]:  # Limit to first 10 tickers
-                try:
-                    # Calculate performance metrics
-                    performance_data = self.calculate_performance_score(ticker)
-
-                    if performance_data is None:
-                        logger.warning(f"Could not calculate performance for {ticker}, skipping")
-                        continue
-
-                    # Get company information from CSV first
-                    ticker_data = df_data[df_data['ticker']==ticker]
-
-                    if ticker_data.empty:
-                        # Ticker not in CSV, fetch from Yahoo Finance
-                        logger.info(f"Ticker {ticker} not in CSV, fetching from Yahoo Finance")
-                        try:
-                            stock = yf.Ticker(ticker)
-                            info = stock.info
-
-                            # Create a company_info dict from yfinance data
-                            company_info = {
-                                'ticker': ticker,
-                                'company_name': info.get('longName', ticker),
-                                'industry': info.get('industry', 'Unknown'),
-                                'sector': info.get('sector', 'Unknown')
-                            }
-                            logger.info(f"Successfully fetched info for {ticker} from Yahoo Finance")
-                        except Exception as e:
-                            logger.error(f"Could not fetch {ticker} from Yahoo Finance: {e}")
-                            continue
-                    else:
-                        company_info = ticker_data.iloc[0]
-
-                    # Format and post company message
-                    company_message = format_company_message(
-                        ticker, performance_data, company_info
-                    )
-                    if company_message:
-                        post_twitter(company_message)
-                        time.sleep(20)  # Wait between tweets
-
-                except Exception as e:
-                    logger.error(f"Error processing ticker {ticker}: {e}")
+            for _, row in df.head(self.number_tickers_to_print).iterrows():
+                ticker = row["symbol"]
+                performance = self.calculate_performance_score(ticker)
+                if performance is None:
                     continue
+                message = format_company_message(ticker, performance, self.company_info(ticker, row, df_data),
+                                                 self.when_word)
+                # Reply to the previous tweet so everything reads as one thread
+                new_id = post_twitter(message, reply_to=thread_id if thread_id != "dry-run" else None,
+                                      add_grok=False)
+                thread_id = new_id or thread_id
+                time.sleep(0 if os.getenv("TWEET_DRY_RUN") == "1" else 20)
 
             logger.info("Completed EarningsBot workflow successfully")
-
         except Exception as e:
             logger.error(f"Error in main workflow: {e}")
 
 
 if __name__ == "__main__":
-    bot = EarningsBot()
-    bot.run()
+    # Usage: python -m weekdays.Earnings [YYYY-MM-DD]   (set TWEET_DRY_RUN=1 to preview for free)
+    EarningsBot(target_date=sys.argv[1] if len(sys.argv) > 1 else None).run()

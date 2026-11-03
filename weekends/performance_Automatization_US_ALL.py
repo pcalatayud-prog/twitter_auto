@@ -28,52 +28,22 @@ class US_StocksPerformance:
         self.df_performance = pd.DataFrame(columns=["ticker", "weekly", "yearly"])
 
     def filtering_tickers(self):
-        url = self.url
-        api_key = self.api_key
-        # Parameters
-        params = {
-            "apikey": api_key
-        }
-        response = requests.get(url, params=params)
+        """US stocks (NYSE/NASDAQ) above $1B market cap, from the local top-3000 list.
 
-        if response.status_code == 200:
-            # Extract tickers from response JSON
-            data = response.json()
+        The old FMP /api/v3/stock/list endpoint is no longer available on this plan (403),
+        which made this bot crash every weekend.
+        """
+        import os
+        csv_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "config", "top_3000_tickers.csv")
+        tickers = pd.read_csv(csv_path)
+        tickers = tickers[tickers["exchange"].isin(["NYSE", "NASDAQ"])]
+        tickers = tickers[~tickers["ticker"].astype(str).str.contains(r"[-.]")]
+        tickers = tickers[tickers["sector"].notna()]  # drops mutual funds / ETFs (no sector)
+        tickers["marketCap"] = pd.to_numeric(tickers["marketCap"], errors="coerce")
+        tickers = tickers[tickers["marketCap"] > 1_000_000_000]
 
-        tickers = pd.DataFrame(data)
-        tickers = tickers[tickers["exchangeShortName"].isin(['NYSE', 'NASDAQ'])]
-        tickers = tickers[tickers["type"] == "stock"]
-        tickers = tickers[tickers["price"] > 5]
-        tickers = tickers[~tickers['symbol'].str.contains(r'[-.]')]
-        filtered_tickers = tickers["symbol"].tolist()
-
-        # filtered_tickers = filtered_tickers[:20]
-        # tickers = tickers[tickers['symbol'].isin(filtered_tickers)]
-
-        marketcap_all = []
-        logger.info('Number of tickets to evaluate: {}'.format(len(filtered_tickers)))
-        count = 0
-        for ticker in filtered_tickers:
-            try:
-                market_cap = get_market_cap(ticker)
-                marketcap_all.append(market_cap)
-            except Exception as e:
-                logger.error(f'Error downloaded {ticker}. Tickers {count} out of {len(filtered_tickers)}. \nError: {e}')
-                marketcap_all.append(np.nan)
-            count += 1
-            if count % 100 == 0:
-                logger.info(f'Processed: {count} out of {len(filtered_tickers)}')
-                perc_process = round(count / len(filtered_tickers) * 100, 1)
-                logger.info(f'Processed: {perc_process}')
-
-        tickers["marketCap"] = marketcap_all
-
-        billion = 1_000_000_000
-        tickers['marketCap'] = pd.to_numeric(tickers['marketCap'], errors='coerce')
-        tickers.dropna(inplace=True)
-        tickers = tickers[tickers["marketCap"] > billion]
-
-        self.tickers = tickers["symbol"].tolist()
+        self.tickers = tickers["ticker"].tolist()
+        logger.info(f"Number of tickers to evaluate: {len(self.tickers)}")
 
     def fetch_stock_data(self, ticker: str, period: str) -> pd.DataFrame:
         """Fetch stock data for a given ticker and period."""
